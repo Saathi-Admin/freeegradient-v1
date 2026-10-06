@@ -1,0 +1,27 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Variant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'brand';
+type Props = HTMLAttributes<'button'> & {
+  variant?: Variant;
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  iconOnly?: boolean;
+};
+
+const {
+  variant = 'primary',
+  size = 'md',
+  iconOnly = false,
+  class: className,
+  type = 'button',
+  ...attributes
+} = Astro.props;
+if (iconOnly && !attributes['aria-label'] && !attributes['aria-labelledby']) {
+  throw new Error('Icon-only buttons need aria-label or aria-labelledby.');
+}
+---
+<button type={type} class:list={['btn', `btn-${variant}`, `btn-${size}`, { 'btn-icon': iconOnly }, className]} {...attributes}>
+  <slot name="leading-icon" />
+  <slot />
+  <slot name="trailing-icon" />
+</button>

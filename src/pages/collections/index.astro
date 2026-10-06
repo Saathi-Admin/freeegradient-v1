@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import CollectionCard from '../../components/CollectionCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { Search, X } from '@lucide/astro';
+import Button from '../../components/ui/Button.astro';
+import { collections } from '../../data/collections';
+import { gradients } from '../../data/gradients';
+import '../../styles/library.css';
+---
+<BaseLayout title="Gradient collections — FreeeGradients" description="Explore free landing page, smooth, mesh, glow, grain and wave gradient collections. Download CSS, SVG, PNG and JPEG for light and dark designs.">
+  <Header />
+  <main id="main-content" class="collection-detail container">
+    <div class="collection-detail-hero">
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Collections' }]} />
+      <div class="collection-detail-intro">
+        <h1 id="collections-title"><span class="hero-heading-neutral">Find your collection.</span></h1>
+        <p class="hero-description text-body-md">From soft blends to glowing horizons. Explore every style, find your colours and download them in CSS, SVG, PNG or JPEG. Completely free.</p>
+        <div class="collections-search">
+          <Search size={16} aria-hidden="true" />
+          <input id="collections-search" type="search" aria-label="Search collections" placeholder="Search collections or styles…" autocomplete="off" />
+          <Button variant="ghost" size="sm" iconOnly id="clear-collections-search" aria-label="Clear search" hidden><X aria-hidden="true" /></Button>
+        </div>
+      </div>
+    </div>
+    <section class="collections-results" aria-labelledby="collections-title">
+      <div class="collection-grid collections-list-grid">
+        {collections.map(collection => {
+          const templates = gradients.filter(g => g.category === collection.id);
+          return <CollectionCard id={collection.id} title={collection.title} preview={collection.preview} variations={templates.reduce((count, template) => count + template.variations.length, 0)} />;
+        })}
+      </div>
+      <div class="collections-empty" id="collections-empty" role="status" hidden>
+        <Search size={24} aria-hidden="true" />
+        <h2 class="text-h5">No collections found</h2>
+        <p class="text-body-sm">Try mesh, glow, grain or waves.</p>
+        <Button variant="secondary" size="md" id="reset-collections-search">Show all collections</Button>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <script>
+    const input = document.querySelector<HTMLInputElement>('#collections-search')!;
+    const clear = document.querySelector<HTMLButtonElement>('#clear-collections-search')!;
+    const cards = [...document.querySelectorAll<HTMLAnchorElement>('.collections-list-grid .collection-card')];
+    const results = document.querySelector<HTMLElement>('.collections-results')!;
+    const grid = document.querySelector<HTMLElement>('.collections-list-grid')!;
+    new ResizeObserver(() => {
+      if (!input.value.trim()) results.style.minHeight = `${grid.offsetHeight}px`;
+    }).observe(grid);
+    function filterCollections() {
+      const query = input.value.trim().toLowerCase();
+      if (cards.every(card => !card.hidden)) results.style.minHeight = `${grid.offsetHeight}px`;
+      cards.forEach(card => { card.hidden = !card.dataset.search!.includes(query); });
+      clear.hidden = input.value.length === 0;
+      document.querySelector<HTMLElement>('#collections-empty')!.hidden = cards.some(card => !card.hidden);
+    }
+    input.addEventListener('input', filterCollections);
+    const reset = () => { input.value = ''; filterCollections(); input.focus(); };
+    clear.addEventListener('click', reset);
+    document.querySelector('#reset-collections-search')!.addEventListener('click', reset);
+  </script>
+</BaseLayout>

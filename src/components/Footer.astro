@@ -1,0 +1,68 @@
+---
+import { Coffee } from '@lucide/astro';
+import Button from './ui/Button.astro';
+import { collections } from '../data/collections';
+const donationUrl = import.meta.env.PUBLIC_DONATION_URL;
+const collectionColumns = [collections.slice(0, 4), collections.slice(4)];
+interface Props { preview?: boolean; }
+const { preview = false } = Astro.props;
+const FooterLink = preview ? 'span' : 'a';
+---
+<footer class:list={['brand-footer', { 'brand-footer-preview': preview }]} style={preview ? 'background-image: var(--preview-gradient);' : undefined}>
+  <div class="container brand-footer-content">
+    {!preview && <section class="footer-support" aria-labelledby="footer-support-title">
+      <img class="footer-support-art" src="/love.png" alt="" width="64" height="64" loading="lazy" decoding="async" />
+      <h2 id="footer-support-title">Love the gradients?<br /><span class="text-serif-italic">Help us make more.</span></h2>
+      {donationUrl ? <a class="btn btn-primary btn-md" href={donationUrl} target="_blank" rel="noopener noreferrer"><Coffee aria-hidden="true" />Buy us a coffee</a> : <Button variant="primary" size="md" disabled><Coffee slot="leading-icon" aria-hidden="true" />Buy us a coffee</Button>}
+    </section>}
+    <div class="brand-footer-main">
+      <div class="footer-brand-stack">
+        <div class="footer-brand"><FooterLink class="footer-wordmark" href={preview ? undefined : '/'}>freeegradients.</FooterLink><p class="text-body-sm">A little colour for your next idea.</p></div>
+        <div class="footer-credit">
+          <span class="text-caption">Created by</span>
+          <FooterLink class="footer-creator text-body-lg" href={preview ? undefined : 'https://www.arclinkedge.com/'} target={preview ? undefined : '_blank'} rel={preview ? undefined : 'noopener noreferrer'}><span class="footer-creator-logo"><img src="/aelogo.png" alt="" width="24" height="24" loading="lazy" decoding="async" /></span><span>Arclink Edge</span></FooterLink>
+        </div>
+      </div>
+      <div class="footer-link-columns">
+        <nav class="brand-footer-links" aria-label="Footer navigation">
+          <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/gradients/'}>All gradients</FooterLink>
+          <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/collections/'}>Collections</FooterLink>
+          <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/#how-to-use'}>How to use</FooterLink>
+          <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/#faq'}>FAQs</FooterLink>
+        </nav>
+        {collectionColumns.map((column, index) => <nav class="brand-footer-links" aria-label={`Footer collections ${index + 1}`}>
+          {column.map(collection => <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : `/collections/${collection.id}/`}>{collection.title}</FooterLink>)}
+        </nav>)}
+      </div>
+    </div>
+    <div class="brand-footer-bottom text-caption"><p>Free for personal and commercial use.</p><p>© {new Date().getFullYear()} FreeeGradients</p></div>
+  </div>
+</footer>
+<style>
+  .brand-footer { background-color: var(--surface-canvas); background-image: linear-gradient(to bottom, var(--surface-canvas) 0%, transparent 45%), url('/gradients/afterglow-01.svg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+  .brand-footer-preview { width: 100%; min-width: 0; border-radius: var(--radius-12); overflow: hidden; }
+  .brand-footer-preview .brand-footer-content { padding-block: var(--space-16); }
+  .brand-footer-preview .btn { cursor: default; pointer-events: none; }
+  .brand-footer-content { padding-top: var(--section-padding-y); padding-bottom: var(--space-16); display: grid; gap: var(--space-16); }
+  .footer-support { display: grid; align-content: center; justify-items: center; min-height: 600px; gap: var(--space-6); text-align: center; padding-block: var(--section-padding-y); }
+  .footer-support .btn { margin-top: var(--space-6); }
+  .footer-support .btn:disabled { opacity: 1; }
+  .footer-support-art { width: var(--space-32); height: var(--space-32); object-fit: contain; margin-bottom: var(--space-4); }
+  .brand-footer-main, .brand-footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-12); }
+  .footer-wordmark { color: var(--text-primary); font-size: var(--font-size-24); font-weight: var(--font-weight-medium); text-decoration: none; }
+  .brand-footer-main p { margin-top: var(--space-2); color: var(--text-secondary); }
+  .footer-brand-stack { display: grid; gap: var(--space-16); }
+  .footer-credit { display: grid; gap: var(--space-2); }
+  .footer-credit > span { color: var(--text-muted); }
+  .footer-credit .footer-creator { justify-self: start; color: var(--text-primary); text-decoration: none; }
+  .footer-credit a:hover { text-decoration: underline; }
+  .footer-creator { display: inline-flex; flex-direction: row; flex-wrap: nowrap; align-items: center; column-gap: 8px; font-size: var(--font-size-16); white-space: nowrap; }
+  .footer-creator-logo { display: block; flex: 0 0 24px; width: 24px; height: 24px; border-radius: 25%; overflow: hidden; }
+  .footer-creator img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+  .footer-link-columns { display: grid; grid-template-columns: repeat(3, auto); align-items: start; gap: var(--space-16); margin-left: auto; }
+  .brand-footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+  @media (max-width: 799px) { .footer-link-columns { width: 100%; margin-left: calc(-1 * var(--button-padding-x-sm)); } }
+  @media (max-width: 479px) { .footer-link-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-12); } .brand-footer-links .btn { white-space: normal; height: auto; min-height: var(--button-height-sm); text-align: left; justify-content: flex-start; } }
+  .brand-footer-bottom { padding-top: var(--space-16); border-top: 1px solid var(--border-subtle); color: var(--text-secondary); }
+  .brand-footer-bottom a { color: inherit; }
+</style>

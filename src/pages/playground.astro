@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/Footer.astro';
+import TabBar from '../components/ui/TabBar.astro';
+import Button from '../components/ui/Button.astro';
+import { ArrowLeft, ArrowUpRight, SlidersHorizontal, X } from '@lucide/astro';
+import { gradients } from '../data/gradients';
+import { collections } from '../data/collections';
+import '../styles/library.css';
+import '../styles/playground.css';
+const initial = gradients[0].variations[0];
+---
+<BaseLayout title="Gradient playground | FreeeGradients" description="Preview free gradients in a landing page, cards and a page background. Choose a template and try its colour variations.">
+  <div class="playground-shell">
+    <aside class="playground-sidebar" id="playground-sidebar" aria-label="Gradient controls">
+      <div class="playground-sidebar-heading"><button class="btn btn-ghost btn-sm btn-icon playground-close" aria-label="Close gradient controls" type="button"><X size={16} /></button></div>
+      <TabBar size="sm" class="playground-sidebar-tabs" role="tablist" label="Browse gradients"><button class="btn btn-sm" id="browse-collections" role="tab" aria-controls="sidebar-scroll" aria-selected="false" tabindex="-1" data-browse-tab="collections" type="button">Collections</button><button class="btn btn-sm" id="browse-templates" role="tab" aria-controls="sidebar-scroll" aria-selected="true" data-browse-tab="templates" type="button">Templates</button></TabBar>
+      <div class="playground-sidebar-toolbar"><Button variant="ghost" size="xs" id="templates-back" hidden><ArrowLeft slot="leading-icon" size={16} />Back to templates</Button></div>
+      <div class="playground-sidebar-scroll" id="sidebar-scroll" role="tabpanel" aria-labelledby="browse-templates">
+        <div class="playground-templates" id="playground-collections" hidden>
+          {collections.map(collection => { const items = gradients.filter(g => g.category === collection.id); return <button class="playground-template" type="button" data-collection-choice={collection.id} data-title={collection.title}><img src={collection.preview} alt="" width="160" height="90" loading="lazy" /><span class="playground-card-copy"><span class="text-body-sm">{collection.title}</span><span class="text-caption">{items.length} templates</span></span></button>; })}
+        </div>
+        <div class="playground-templates" id="playground-templates">
+          {gradients.map((g, index) => <button class="playground-template" type="button" data-template-choice={g.slug} data-category={g.category} aria-label={`Choose ${g.name} template`}><img src={g.variations[index % g.variations.length].src} alt="" width="160" height="90" loading="lazy" /><span class="playground-card-copy"><span class="text-body-sm">{g.name}</span><span class="text-caption">{g.variations.length} colours</span></span></button>)}
+        </div>
+        {gradients.map(g => <div class="playground-variations" data-template-panel={g.slug} hidden>
+          {(['dark', 'light'] as const).map(mode => <section class="playground-palette-group" aria-label={`${mode} variations`}><h3 class="text-caption">For {mode} mode</h3><div class="playground-palette-grid">{g.variations.filter(v => v.mode === mode).map(v => <button class="playground-variation" type="button" data-variation-choice={v.id} data-src={v.src} data-mode={v.mode} data-name={g.name} aria-pressed="false" aria-label={`Preview ${g.name}, ${v.name}`}><img src={v.src} alt="" width="160" height="90" loading="lazy" /><span class="playground-card-copy"><span class="text-caption">{v.name}</span></span></button>)}</div></section>)}
+        </div>)}
+      </div>
+      <a class="btn btn-ghost btn-sm playground-home" href="/gradients/"><ArrowLeft size={16} />All gradients</a>
+    </aside>
+    <div class="playground-right">
+
+      <main id="main-content" class="playground-main">
+        <div class="playground-controls"><a class="playground-brand" href="/" aria-label="FreeeGradients home">freeegradients.</a><button class="btn btn-secondary btn-md playground-open" aria-controls="playground-sidebar" aria-expanded="false" type="button"><SlidersHorizontal size={16} />Choose gradient</button><TabBar class="playground-layout-tabs" role="tablist" label="Preview layout"><button class="btn btn-sm" role="tab" id="tab-landing" aria-controls="preview-landing" aria-selected="true" data-preview-tab="landing" type="button">Landing page</button><button class="btn btn-sm" role="tab" id="tab-cards" aria-controls="preview-cards" aria-selected="false" tabindex="-1" data-preview-tab="cards" type="button">Cards</button><button class="btn btn-sm" role="tab" id="tab-page" aria-controls="preview-page" aria-selected="false" tabindex="-1" data-preview-tab="page" type="button">Page background</button><button class="btn btn-sm" role="tab" id="tab-footer" aria-controls="preview-footer" aria-selected="false" tabindex="-1" data-preview-tab="footer" type="button">Footer</button><a class="btn btn-secondary btn-sm" id="preview-details-link" href={`/gradients/${initial.id}/`}>Gradient details <ArrowUpRight size={16} /></a></TabBar><span class="playground-gradient-name text-caption" id="preview-selected-label" role="status" aria-live="polite">{initial.id}</span></div>
+        <div class="playground-preview" data-mode={initial.mode} style={`--preview-gradient:url('${initial.src}')`}>
+          <section class="preview-panel" id="preview-landing" role="tabpanel" aria-labelledby="tab-landing">
+            <nav class="sample-nav" aria-label="Sample landing page"><span class="sample-brand">freeegradients.</span><span class="sample-nav-label">Our work <ArrowUpRight size={16} /></span></nav>
+            <div class="sample-hero"><span class="sample-eyebrow text-caption">A little space for big ideas</span><h2>Make something<br /><span class="text-serif-italic">worth looking at.</span></h2><p class="text-body-md">Thoughtful design. Fresh perspectives. A brighter place for your next idea.</p><span class="sample-button">Explore our work <ArrowUpRight size={16} /></span></div>
+          </section>
+          <section class="preview-panel sample-cards-panel" id="preview-cards" role="tabpanel" aria-labelledby="tab-cards" hidden><div class="sample-card-grid"><article class="sample-gradient-card"><span class="text-caption">Featured project</span><h3 class="text-h4">Ideas in motion.</h3><p class="text-body-sm">A bold background for your next big thing.</p></article><article class="sample-image-card"><div class="sample-card-art"></div><div><span class="text-caption">Fresh perspective</span><h3 class="text-h6">A new point of view.</h3><p class="text-body-sm">Colour that makes an impression.</p></div></article><article class="sample-gradient-card sample-quote"><span class="text-caption">A little inspiration</span><h3 class="text-serif-italic">“Good ideas deserve a little colour.”</h3><p class="text-body-sm">The studio journal</p></article></div></section>
+          <section class="preview-panel sample-page-panel" id="preview-page" role="tabpanel" aria-labelledby="tab-page" hidden><nav class="sample-nav"><span class="sample-brand">freeegradients.</span><span class="text-caption">Design / Inspiration</span></nav><article class="sample-article"><span class="text-caption">The creative process</span><h2>A fresh canvas<br />for your next idea.</h2><p class="text-body-md">Great design starts with curiosity. Give your ideas room to grow, and let a little colour set the mood.</p><div class="sample-reading-card"><h3 class="text-h6">Start with a feeling.</h3><p class="text-body-sm">Soft blends bring calm. A little glow adds energy. Choose a background that supports your content and makes every detail feel considered.</p></div></article></section>
+          <section class="preview-panel sample-footer-panel" id="preview-footer" role="tabpanel" aria-labelledby="tab-footer" hidden><Footer preview /></section>
+        </div>
+        
+      </main>
+    </div>
+  </div>
+  <script>import '../scripts/playground';</script>
+</BaseLayout>

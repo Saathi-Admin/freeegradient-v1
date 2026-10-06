@@ -1,0 +1,93 @@
+/*
+ * BUTTON COMPONENT CLASSES.
+ * Values live in tokens.css — this file only applies them.
+ * Not wired into any component yet — available for the redesign to
+ * consume as we go section by section.
+ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-icon-gap);
+  font-family: var(--text-button-family);
+  font-size: var(--text-button-size);
+  font-weight: var(--text-button-weight);
+  line-height: var(--text-button-line-height);
+  letter-spacing: var(--text-button-letter-spacing);
+  border-radius: var(--button-radius);
+  white-space: nowrap;
+  cursor: pointer;
+  /* Only two interaction effects anywhere on a button: a color shift on
+     hover, and a scale-down on press. Nothing else animates. */
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(var(--button-active-scale));
+}
+
+.btn-sm {
+  padding-top: var(--button-padding-y-sm);
+  padding-bottom: var(--button-padding-y-sm);
+  padding-left: var(--button-padding-x-sm);
+  padding-right: var(--button-padding-x-sm);
+}
+
+.btn-md {
+  padding-top: var(--button-padding-y-md);
+  padding-bottom: var(--button-padding-y-md);
+  padding-left: var(--button-padding-x-md);
+  padding-right: var(--button-padding-x-md);
+}
+
+.btn-lg {
+  padding-top: var(--button-padding-y-lg);
+  padding-bottom: var(--button-padding-y-lg);
+  padding-left: var(--button-padding-x-lg);
+  padding-right: var(--button-padding-x-lg);
+}
+
+.btn-xl {
+  padding-top: var(--button-padding-y-xl);
+  padding-bottom: var(--button-padding-y-xl);
+  padding-left: var(--button-padding-x-xl);
+  padding-right: var(--button-padding-x-xl);
+}
+
+.btn-on-dark {
+  background-color: var(--button-on-dark-bg);
+  color: var(--button-on-dark-text);
+}
+
+.btn-on-dark:hover {
+  background-color: var(--button-on-dark-bg-hover);
+}
+
+.btn-on-light {
+  background-color: var(--button-on-light-bg);
+  color: var(--button-on-light-text);
+}
+
+.btn-on-light:hover {
+  background-color: var(--button-on-light-bg-hover);
+}
+
+/* Secondary — filled with a muted tint, no border. */
+.btn-secondary-on-dark {
+  background-color: var(--button-secondary-on-dark-bg);
+  color: var(--button-secondary-on-dark-text);
+}
+
+.btn-secondary-on-dark:hover {
+  background-color: var(--button-secondary-on-dark-bg-hover);
+}
+
+.btn-secondary-on-light {
+  background-color: var(--button-secondary-on-light-bg);
+  color: var(--button-secondary-on-light-text);
+}
+
+.btn-secondary-on-light:hover {
+  background-color: var(--button-secondary-on-light-bg-hover);
+}

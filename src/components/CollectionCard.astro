@@ -1,0 +1,12 @@
+---
+import { ArrowUpRight } from '@lucide/astro';
+interface Props { id: string; title: string; preview: string; variations: number; }
+const { id, title, preview, variations } = Astro.props;
+---
+<a class="collection-card" href={`/collections/${id}/`} data-search={`${id} ${title} ${id === 'vintage' ? 'grain texture retro' : ''} ${id === 'smooth' ? 'soft blend' : ''}`.toLowerCase()}>
+  <img src={preview} alt={`${title} gradient preview`} width="1600" height="900" loading="eager" decoding="async" />
+  <div class="collection-card-footer">
+    <div><h2 class="text-body-md">{title}</h2><p class="text-caption">{variations} colour variations</p></div>
+    <ArrowUpRight size={20} aria-hidden="true" />
+  </div>
+</a>

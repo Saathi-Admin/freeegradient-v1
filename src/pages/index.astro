@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/Footer.astro';
+import Faq from '../components/Faq.astro';
+import HowTo from '../components/HowTo.astro';
+import PlaygroundShowcase from '../components/PlaygroundShowcase.astro';
+import Header from '../components/Header.astro';
+import GradientCard from '../components/GradientCard.astro';
+import CollectionCard from '../components/CollectionCard.astro';
+import GradientPreview from '../components/GradientPreview.astro';
+import { collections } from '../data/collections';
+import Button from '../components/ui/Button.astro';
+import { ArrowUpRight } from '@lucide/astro';
+import { gradients } from '../data/gradients';
+import '../styles/library.css';
+
+---
+<BaseLayout title="FreeeGradients — Beautiful gradients. Completely free." description="Explore free gradient templates for light and dark designs. Choose your colours, copy CSS and download SVG, PNG or JPEG.">
+  <Header />
+  <main id="main-content">
+    <section class="hero container" id="gradients" aria-labelledby="hero-title">
+      <div class="hero-intro">
+      <div class="hero-copy">
+        <div class="hero-eyebrow hero-format-chip text-caption">
+          <div class="hero-format-list" role="group" aria-label="Available formats">
+            {['.css', '.svg', '.png', '.jpeg'].map((format, index) => <span class="hero-format-item" style={`--format-gradient:var(--gradient-format-${index + 1})`}>{format}</span>)}
+          </div>
+          <span class="hero-chip-note">No sign-up. No limits on downloads.</span>
+        </div>
+        <h1 id="hero-title"><span class="hero-heading-neutral">Beautiful gradients.</span><br /><span class="text-serif-italic"><span class="hero-heading-neutral">Completely</span> <span class="hero-free">free</span><span class="hero-heading-neutral">.</span></span></h1>
+        <p class="hero-description text-body-md">Find your colours. Pick a variation. Download a background or copy the CSS. Your next idea starts here.</p>
+      </div>
+      </div>
+      <div class="collection-grid">{collections.slice(0, 4).map(collection => {
+        const templates = gradients.filter(g => g.category === collection.id);
+        return <CollectionCard id={collection.id} title={collection.title} preview={collection.preview} variations={templates.reduce((count, template) => count + template.variations.length, 0)} />;
+      })}</div>
+      <div class="section-link"><a class="btn btn-secondary btn-md" href="/collections/">Explore all collections <ArrowUpRight aria-hidden="true" /></a></div>
+    </section>
+    <div id="collections" class="container">
+      {collections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
+        <div class="section-heading"><h2 id={`${collection.id}-title`}>{collection.title}</h2><p class="text-body-md">{collection.description}</p></div>
+        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => gradients.filter(g => g.category === collection.id).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
+        <div class="section-link"><a class="btn btn-secondary btn-md" href={`/collections/${collection.id}/`} aria-label={`Explore ${collection.title}`}>Explore the collection <ArrowUpRight aria-hidden="true" /></a></div>
+      </section>)}
+      <div class="empty-state" id="library-empty" hidden><p>No gradients for this mode yet. Try another design background.</p><Button variant="secondary" size="sm" id="clear-filters">Clear filters</Button></div>
+    </div>
+    <PlaygroundShowcase />
+    <HowTo />
+    <Faq />
+  </main>
+  <Footer />
+  <GradientPreview />
+  <script>
+    import '../scripts/library';
+  </script>
+</BaseLayout>

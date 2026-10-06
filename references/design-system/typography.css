@@ -1,0 +1,125 @@
+/*
+ * TYPOGRAPHY COMPONENT CLASSES.
+ * Values live in tokens.css — this file only applies them.
+ * Not wired into any component yet — available for the redesign to
+ * consume as we go section by section.
+ *
+ * Weight is capped at Medium (500) across every style, headings
+ * included — nothing in this system goes to semibold/bold.
+ */
+
+.text-h1 {
+  font-family: var(--text-h1-family);
+  font-size: var(--text-h1-size);
+  font-weight: var(--text-h1-weight);
+  line-height: var(--text-h1-line-height);
+  letter-spacing: var(--text-h1-letter-spacing);
+}
+
+.text-h2 {
+  font-family: var(--text-h2-family);
+  font-size: var(--text-h2-size);
+  font-weight: var(--text-h2-weight);
+  line-height: var(--text-h2-line-height);
+  letter-spacing: var(--text-h2-letter-spacing);
+}
+
+.text-h3 {
+  font-family: var(--text-h3-family);
+  font-size: var(--text-h3-size);
+  font-weight: var(--text-h3-weight);
+  line-height: var(--text-h3-line-height);
+  letter-spacing: var(--text-h3-letter-spacing);
+}
+
+.text-h4 {
+  font-family: var(--text-h4-family);
+  font-size: var(--text-h4-size);
+  font-weight: var(--text-h4-weight);
+  line-height: var(--text-h4-line-height);
+  letter-spacing: var(--text-h4-letter-spacing);
+}
+
+.text-h5 {
+  font-family: var(--text-h5-family);
+  font-size: var(--text-h5-size);
+  font-weight: var(--text-h5-weight);
+  line-height: var(--text-h5-line-height);
+  letter-spacing: var(--text-h5-letter-spacing);
+}
+
+.text-h6 {
+  font-family: var(--text-h6-family);
+  font-size: var(--text-h6-size);
+  font-weight: var(--text-h6-weight);
+  line-height: var(--text-h6-line-height);
+  letter-spacing: var(--text-h6-letter-spacing);
+}
+
+.text-body-lg {
+  font-family: var(--text-body-lg-family);
+  font-size: var(--text-body-lg-size);
+  font-weight: var(--text-body-lg-weight);
+  line-height: var(--text-body-lg-line-height);
+  letter-spacing: var(--text-body-lg-letter-spacing);
+}
+
+.text-body-md {
+  font-family: var(--text-body-md-family);
+  font-size: var(--text-body-md-size);
+  font-weight: var(--text-body-md-weight);
+  line-height: var(--text-body-md-line-height);
+  letter-spacing: var(--text-body-md-letter-spacing);
+}
+
+.text-body-sm {
+  font-family: var(--text-body-sm-family);
+  font-size: var(--text-body-sm-size);
+  font-weight: var(--text-body-sm-weight);
+  line-height: var(--text-body-sm-line-height);
+  letter-spacing: var(--text-body-sm-letter-spacing);
+}
+
+.text-caption {
+  font-family: var(--text-caption-family);
+  font-size: var(--text-caption-size);
+  font-weight: var(--text-caption-weight);
+  line-height: var(--text-caption-line-height);
+  letter-spacing: var(--text-caption-letter-spacing);
+}
+
+.text-caption-sm {
+  font-family: var(--text-caption-sm-family);
+  font-size: var(--text-caption-sm-size);
+  font-weight: var(--text-caption-sm-weight);
+  line-height: var(--text-caption-sm-line-height);
+  letter-spacing: var(--text-caption-sm-letter-spacing);
+}
+
+/* Button text style — same values buttons.css uses, exposed here too
+   for anything that needs button typography without the button box
+   (e.g. a text-only link styled to match). */
+.text-button {
+  font-family: var(--text-button-family);
+  font-size: var(--text-button-size);
+  font-weight: var(--text-button-weight);
+  line-height: var(--text-button-line-height);
+  letter-spacing: var(--text-button-letter-spacing);
+}
+
+/* Accent gradient text — fills the glyphs with --gradient-accent-text
+   instead of a flat color. Use in place of a `color` style.
+   padding-bottom + line-height here (not on the heading's own tight
+   token) give descenders (g, y, p...) room inside the background-clip
+   box — without it, tight line-height clips them at the baseline in
+   Chromium/WebKit's gradient-text rendering. */
+.text-gradient-accent {
+  background-image: var(--gradient-accent-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  line-height: 1.25;
+  padding-bottom: 0.12em;
+}

@@ -1,0 +1,693 @@
+/*
+ * DESIGN TOKENS — single source of truth for every raw value and its
+ * meaning-based alias. Nothing here is wired into existing components
+ * yet; the redesign will consume these as we go, section by section.
+ *
+ *   PRIMITIVES — raw values only, no meaning attached (colors, spacing,
+ *                radius). Never reference these directly from a
+ *                component — go through the semantic layer below.
+ *   SEMANTIC   — meaning-based aliases that point at primitives. This
+ *                is what components should actually use.
+ */
+
+:root {
+   /* ============================================================
+     PRIMITIVES — GRAYSCALE
+     Pure neutral gray (R=G=B at every step). No blue/accent tint.
+     ============================================================ */
+   --gray-0: #ffffff;
+   --gray-50: #fafafa;
+   --gray-100: #f2f2f2;
+   --gray-200: #e0e0e0;
+   --gray-300: #c7c7c7;
+   --gray-400: #a3a3a3;
+   --gray-500: #7a7a7a;
+   --gray-600: #5c5c5c;
+   --gray-700: #404040;
+   --gray-800: #262626;
+   --gray-900: #121212;
+
+   /* Literal, non-scale colors used for hard black/white needs (buttons etc.) */
+   --color-white: #ffffff;
+   --color-black: #000000;
+
+   /* ============================================================
+     PRIMITIVES — ACCENT (BLUE)
+     Base picked from the hero background blue (#0056EC) — sits at 500.
+     Tints (0-400) lighten toward white, shades (600-900) darken toward
+     the hero's deep navy so the ramp visually matches the site's blue
+     theme end to end. 900 intentionally lands on the hero's own navy
+     (#051026) to tie the two together.
+     ============================================================ */
+   --blue-0: #eff4ff;
+   --blue-50: #dce8ff;
+   --blue-100: #b8d2ff;
+   --blue-200: #8fb6ff;
+   --blue-300: #639aff;
+   --blue-400: #337bf7;
+   --blue-500: #0056ec;
+   /* accent base */
+   --blue-600: #0046c4;
+   --blue-700: #00379d;
+   --blue-800: #012868;
+   --blue-900: #051026;
+
+   /* ============================================================
+     PRIMITIVES — SURFACE NEUTRAL (cool-tinted)
+     A separate, slightly cool-tinted neutral ramp (B channel a touch
+     higher than R/G) used only for the elevation surfaces below —
+     deliberately distinct from the pure R=G=B --gray-* scale above, to
+     read as cohesive with the site's blue accent. Semantic surface
+     tokens must reference these, never repeat the hex directly.
+     ============================================================ */
+   --surface-neutral-dark-0: #0a0a0b;
+   --surface-neutral-dark-1: #141416;
+   --surface-neutral-dark-2: #1c1c1f;
+   --surface-neutral-dark-3: #242428;
+
+   --surface-neutral-light-1: #f7f7f8;
+   --surface-neutral-light-2: #f0f0f2;
+   --surface-neutral-light-3: #e8e8eb;
+
+   /* ============================================================
+     PRIMITIVES — SPACING / SIZE SCALE
+     Raw px scale, 2px step. Every size (text, padding, gaps, radius
+     inputs, etc.) should be built from this instead of a one-off
+     magic number, so everything stays on the same rhythm.
+     ============================================================ */
+   --marketing-copy-width: 760px;
+   --page-hero-copy-width: 640px;
+   --page-hero-header-offset: calc(var(--space-28) + var(--marketing-border-width));
+   --marketing-border-width: 1px;
+   --space-0: 0px;
+   --space-1: 2px;
+   --space-2: 4px;
+   --space-3: 6px;
+   --space-4: 8px;
+   --space-5: 10px;
+   --space-6: 12px;
+   --space-7: 14px;
+   --space-8: 16px;
+   --space-9: 18px;
+   --space-10: 20px;
+   --space-11: 22px;
+   --space-12: 24px;
+   --space-13: 26px;
+   --space-14: 28px;
+   --space-15: 30px;
+   --space-16: 32px;
+   --space-17: 34px;
+   --space-18: 36px;
+   --space-19: 38px;
+   --space-20: 40px;
+   --space-21: 42px;
+   --space-22: 44px;
+   --space-23: 46px;
+   --space-24: 48px;
+   --space-25: 50px;
+   --space-26: 52px;
+   --space-27: 54px;
+   --space-28: 56px;
+   --space-29: 58px;
+   --space-30: 60px;
+   --space-31: 62px;
+   --space-32: 64px;
+   --space-33: 66px;
+   --space-34: 68px;
+   --space-35: 70px;
+   --space-36: 72px;
+   --space-37: 74px;
+   --space-38: 76px;
+   --space-39: 78px;
+   --space-40: 80px;
+   --space-41: 82px;
+   --space-42: 84px;
+   --space-43: 86px;
+   --space-44: 88px;
+   --space-45: 90px;
+   --space-46: 92px;
+   --space-47: 94px;
+   --space-48: 96px;
+   --space-49: 98px;
+   --space-50: 100px;
+   --space-51: 102px;
+   --space-52: 104px;
+   --space-53: 106px;
+   --space-54: 108px;
+   --space-55: 110px;
+   --space-56: 112px;
+   --space-57: 114px;
+   --space-58: 116px;
+   --space-59: 118px;
+   --space-60: 120px;
+   --space-61: 122px;
+   --space-62: 124px;
+   --space-63: 126px;
+   --space-64: 128px;
+
+   /* ============================================================
+     PRIMITIVES — RADIUS SCALE
+     Same shape as the spacing scale above (2px step, 0-12), plus a
+     "full" step for pill/circle shapes.
+     ============================================================ */
+   --radius-0: 0px;
+   --radius-1: 2px;
+   --radius-2: 4px;
+   --radius-3: 6px;
+   --radius-4: 8px;
+   --radius-5: 10px;
+   --radius-6: 12px;
+   --radius-7: 14px;
+   --radius-8: 16px;
+   --radius-9: 18px;
+   --radius-10: 20px;
+   --radius-11: 22px;
+   --radius-12: 24px;
+   --radius-13: 26px;
+   --radius-14: 28px;
+   --radius-15: 30px;
+   --radius-16: 32px;
+   --radius-full: 9999px;
+
+   /* ============================================================
+     PRIMITIVES — FONT FAMILY
+     Host Grotesk — loaded in layout.tsx as --font-host-grotesk. Inter /
+     Inter Tight are no longer used by this design system (they stay
+     loaded only because the pre-existing .type-legacy-* classes and
+     body{} font-family still depend on them). Host Grotesk has no
+     separate "tight" cut, so both tokens point at the same family.
+     ============================================================ */
+   --font-family-sans: var(--font-host-grotesk);
+   --font-family-sans-tight: var(--font-host-grotesk);
+   /* Instrument Serif — loaded in layout.tsx as --font-instrument-serif.
+     For a single highlighted word/phrase inside a heading only, never
+     full body copy. */
+   --font-family-serif-accent: var(--font-instrument-serif);
+
+   /* ============================================================
+     PRIMITIVES — FONT WEIGHT
+     Headings/buttons/nav still cap at --font-weight-medium (500) per
+     the earlier rule — semibold/bold exist as options for whatever
+     explicitly asks for them, not as a default anywhere yet.
+     ============================================================ */
+   --font-weight-regular: 400;
+   --font-weight-medium: 500;
+   --font-weight-semibold: 600;
+   --font-weight-bold: 700;
+
+   /* ============================================================
+     PRIMITIVES — FONT SIZE SCALE
+     ============================================================ */
+   --font-size-11: 11px;
+   --font-size-12: 12px;
+   --font-size-14: 14px;
+   --font-size-16: 16px;
+   --font-size-18: 18px;
+   --font-size-20: 20px;
+   --font-size-24: 24px;
+   --font-size-32: 32px;
+   --font-size-40: 40px;
+   --font-size-56: 56px;
+
+   /* ============================================================
+     PRIMITIVES — LINE HEIGHT (unitless ratios)
+     ============================================================ */
+   --line-height-tight: 1.1;
+   --line-height-snug: 1.25;
+   --line-height-normal: 1.45;
+   --line-height-relaxed: 1.6;
+
+   /* ============================================================
+     PRIMITIVES — LETTER SPACING
+     ============================================================ */
+   --letter-spacing-tight: -0.02em;
+   --letter-spacing-snug: -0.01em;
+   --letter-spacing-normal: 0em;
+   --letter-spacing-wide: 0.01em;
+
+   /* ============================================================
+     SEMANTIC — ACCENT
+     ============================================================ */
+   --color-accent: var(--blue-500);
+   --color-accent-hover: var(--blue-600);
+   --color-accent-active: var(--blue-700);
+   --color-accent-subtle: var(--blue-50);
+   --color-accent-muted: var(--blue-100);
+
+   /* Accent text gradient — for headings that shouldn't read as flat
+     white or a single flat color. 135deg; base white most of the way,
+     with the bright accent tint squeezed into a thin band right at the
+     center (40%-60%) instead of spread across the whole gradient, so it
+     reads as a narrow shine/streak rather than a broad soft blend. */
+   --gradient-accent-text: linear-gradient(135deg,
+         var(--gray-0) 0%,
+         var(--gray-0) 30%,
+         var(--blue-100) 50%,
+         var(--gray-0) 70%,
+         var(--gray-0) 100%);
+
+   /* ============================================================
+     SEMANTIC — SURFACE / ON-SURFACE (dark sections + light sections)
+     Same "on-dark / on-light" idea already used for buttons, applied
+     to whole sections — a page can mix a dark-bg section with a
+     light-bg section, and each one pulls its own set below.
+     Hero's own gradient background is a separate case, handled later.
+
+     Elevation ladder (canvas -> 1 -> 2 -> 3) is how big systems
+     (Material Design 3, Radix, Vercel/Geist) show "this sits on top
+     of that": dark sections get lighter as they elevate (light hits
+     a raised surface), light sections get slightly more gray as they
+     elevate (a subtle shadow-toned tint), canvas being the page itself.
+
+     Text/border on top of a surface are kept as white/black at an
+     opacity rather than a fixed gray hex, so they stay correctly
+     legible on every elevation step automatically instead of being
+     hand-tuned per surface.
+     ============================================================ */
+
+   /* Dark section */
+   --surface-dark-canvas: var(--surface-neutral-dark-0);
+   /* page background */
+   --surface-dark-1: var(--surface-neutral-dark-1);
+   /* cards */
+   --surface-dark-2: var(--surface-neutral-dark-2);
+   /* modals, dropdowns, popovers */
+   --surface-dark-3: var(--surface-neutral-dark-3);
+   /* tooltips — most elevated */
+
+   --on-dark-primary: var(--color-white);
+   /* headings, main text */
+   --on-dark-secondary: rgba(255, 255, 255, 0.72);
+   /* body/supporting text */
+   --on-dark-tertiary: rgba(255, 255, 255, 0.5);
+   /* 0.45 measured ~4.4:1 against dark backgrounds — just under WCAG AA's
+      4.5:1 for normal text. 0.5 clears 4.5:1 with margin across every dark
+      surface the site uses (canvas, pure black, and dark-3, the lightest
+      one), while staying visually near-identical to the old value. */
+   /* placeholder/disabled */
+
+   --border-dark-subtle: rgba(255, 255, 255, 0.08);
+   --border-dark-default: rgba(255, 255, 255, 0.16);
+
+   /* Light section */
+   --surface-light-canvas: var(--color-white);
+   /* page background */
+   --surface-light-1: var(--surface-neutral-light-1);
+   /* cards */
+   --surface-light-2: var(--surface-neutral-light-2);
+   /* modals, dropdowns, popovers */
+   --surface-light-3: var(--surface-neutral-light-3);
+   /* tooltips — most elevated */
+
+   --on-light-primary: var(--color-black);
+   /* headings, main text */
+   --on-light-secondary: rgba(0, 0, 0, 0.72);
+   /* body/supporting text */
+   --on-light-tertiary: rgba(0, 0, 0, 0.6);
+   /* placeholder/disabled — 0.6 keeps ~4.6:1 contrast on white (WCAG AA) */
+
+   --border-light-subtle: rgba(0, 0, 0, 0.08);
+   --border-light-default: rgba(0, 0, 0, 0.16);
+
+   /* ============================================================
+     SEMANTIC — LAYOUT (page side padding + max-width)
+     --page-padding is the one components should use — it changes
+     value at each breakpoint below instead of being picked manually
+     per screen size. The per-breakpoint tokens exist so the scale
+     itself is visible/documented in one place.
+       < 640px  : 16px
+       >= 640px : 32px
+       >= 1024px: 64px
+       >= 1440px: 80px
+     --page-max-width caps line length on very wide screens; past it,
+     --page-padding effectively becomes centering space.
+     ============================================================ */
+   --page-padding-mobile: var(--space-8);
+   /* 16px */
+   --page-padding-tablet: 32px;
+   --page-padding-desktop: 64px;
+   --page-padding-desktop-lg: 80px;
+   --page-padding: var(--page-padding-mobile);
+
+   --page-max-width: 1280px;
+
+   /* ============================================================
+     SEMANTIC — SECTION SPACING
+     Every top-level section (Hero, Services, Gallery, ...) should use
+     this pair instead of picking its own padding values, so the whole
+     page's rhythm stays consistent and can be changed from one place.
+     --section-padding-x just aliases --page-padding (same horizontal
+     inset everything else already uses) — kept as its own name so a
+     section's code reads "section-padding-x/y" as a matched pair.
+     ============================================================ */
+   --section-padding-y: var(--space-64);
+   /* 128px */
+   --section-padding-x: var(--page-padding);
+
+   /* ============================================================
+     SEMANTIC — BUTTON
+     Typography is identical across every size — only vertical
+     padding changes, which is what produces the final height:
+       sm: padding-3 (6px)  + line-height-10 (20px) + padding-3 (6px)  = 32px
+       md: padding-4 (8px)  + line-height-10 (20px) + padding-4 (8px)  = 36px  (common/default)
+       lg: padding-5 (10px) + line-height-10 (20px) + padding-5 (10px) = 40px
+       xl: padding-6 (12px) + line-height-10 (20px) + padding-6 (12px) = 44px
+     Radius set to 8px.
+     ============================================================ */
+   --button-font-size: var(--space-7);
+   /* 14px */
+   --button-font-weight: 500;
+   --button-line-height: var(--space-10);
+   /* 20px */
+   --button-icon-gap: var(--space-4);
+   /* 8px — same for every size */
+   --button-icon-size: 16px;
+   /* fixed regardless of button size (sm/md/lg/xl) */
+   --button-group-gap: var(--space-4);
+   /* 8px — gap between separate buttons sitting next to each other */
+
+   --button-padding-y-sm: var(--space-3);
+   /* 6px  -> 32px total */
+   --button-padding-y-md: var(--space-4);
+   /* 8px  -> 36px total (common/default) */
+   --button-padding-y-lg: var(--space-5);
+   /* 10px -> 40px total */
+   --button-padding-y-xl: var(--space-6);
+   /* 12px -> 44px total */
+
+   --button-padding-x-sm: var(--space-5);
+   /* 8px */
+   --button-padding-x-md: var(--space-6);
+   /* 10px */
+   --button-padding-x-lg: var(--space-7);
+   /* 12px */
+   --button-padding-x-xl: var(--space-8);
+   /* 14px */
+
+   --button-radius: var(--radius-4);
+   /* 10px */
+
+   /* Two solid color variants, chosen by the background the button sits on.
+     -hover is the only interaction effect a button gets besides the
+     active-press scale — a slightly dimmed shade of the same color,
+     not a different hue. */
+   --button-on-dark-bg: var(--color-white);
+   /* black bg page -> white button */
+   --button-on-dark-bg-hover: var(--gray-100);
+   --button-on-dark-text: var(--color-black);
+   --button-on-light-bg: var(--color-black);
+   /* white bg page -> black button */
+   --button-on-light-bg-hover: var(--gray-800);
+   --button-on-light-text: var(--color-white);
+
+   /* Press feedback — the only "on click" effect: button scales down
+     slightly. No color change on press, only on hover. */
+   --button-active-scale: 0.96;
+
+   /* Secondary variant — filled, not outlined. A muted tint of the
+     section's own foreground color (white-on-dark / black-on-light)
+     so it's still clearly lower-emphasis than the solid primary button
+     without relying on a border. Hover = a touch more opaque, same
+     "just a color shift" rule as everything else. */
+   --button-secondary-on-dark-bg: rgba(255, 255, 255, 0.08);
+   /* black bg page -> white-tint secondary */
+   --button-secondary-on-dark-text: var(--color-white);
+   --button-secondary-on-dark-bg-hover: rgba(255, 255, 255, 0.12);
+   --button-secondary-on-light-bg: rgba(0, 0, 0, 0.06);
+   /* white bg page -> black-tint secondary */
+   --button-secondary-on-light-text: var(--color-black);
+   --button-secondary-on-light-bg-hover: rgba(0, 0, 0, 0.1);
+
+   /* Button text style, folded into the typography semantic layer below
+     so it's documented alongside heading/body/caption instead of only
+     living next to the button-specific tokens above. Values are aliases
+     of the ones already defined above — the button tokens stay the
+     single source of truth. */
+   --text-button-family: var(--font-family-sans-tight);
+   --text-button-size: var(--button-font-size);
+   --text-button-weight: var(--button-font-weight);
+   --text-button-line-height: var(--button-line-height);
+   --text-button-letter-spacing: var(--letter-spacing-normal);
+
+   /* ============================================================
+     SEMANTIC — NAV ITEM
+     A menu link's own clickable container (header nav, future menus).
+     Padding produces the box; hover is a background color only (same
+     "just a color shift" rule as buttons) — no other effect. Gap is
+     for when a link carries an icon next to its label.
+     ============================================================ */
+   --nav-item-padding-x: var(--space-5);
+   /* 8px */
+   --nav-item-padding-y: var(--space-3);
+   /* 6px */
+   --nav-item-gap: var(--space-3);
+   /* 8px, icon-to-label */
+   --nav-item-radius: var(--radius-4);
+   /* 8px, matches button radius family */
+   --nav-item-hover-bg-on-dark: rgba(255, 255, 255, 0.08);
+   --nav-item-hover-bg-on-light: rgba(0, 0, 0, 0.08);
+
+   /* Gap between separate nav items sitting next to each other in a
+     menu row (not the icon-to-label gap inside one item — that's
+     --nav-item-gap above). */
+   --nav-gap: var(--space-2);
+   /* 4px */
+
+   /* Nav item text style — every nav link (desktop + mobile) reads this,
+     never a hardcoded size/weight. Line-height is a fixed px (not a
+     ratio) so padding + line-height always add up to a clean total
+     height, same rule the button sizes use:
+       6px + 20px + 6px = 32px */
+   --text-nav-item-family: var(--font-family-sans);
+   --text-nav-item-size: var(--font-size-14);
+   --text-nav-item-weight: var(--font-weight-medium);
+   --text-nav-item-line-height: var(--space-10);
+   /* 20px */
+   --text-nav-item-letter-spacing: var(--letter-spacing-normal);
+
+   /* ============================================================
+     SEMANTIC — NAV DROPDOWN MENU
+     The white mega-menu panel that opens under a header nav item
+     (Services, Hire, ...). Component reads these instead of any
+     hardcoded px — add a new token here first if a new value is
+     needed, never hardcode a number in the component itself.
+     ============================================================ */
+   --nav-dropdown-trigger-gap: var(--space-0);
+   /* 0px — the panel is now anchored to <nav> itself (see Header.tsx),
+     whose own bottom padding (--space-6, 12px) already sits below the
+     nav items, so that alone provides the 12px visual gap. Adding this
+     on top of that padding was double-counting it and made the gap
+     look ~2x too large. */
+   --nav-dropdown-padding: var(--space-12);
+   /* 24px, inner panel's own overall padding */
+   --nav-dropdown-radius: var(--radius-14);
+   /* 28px, inner panel's own corner radius */
+   --nav-dropdown-bg: var(--surface-light-canvas);
+   /* inner panel background — plain white/"primary" surface */
+   --nav-dropdown-border: 1px solid var(--border-light-subtle);
+   /* inner panel gets a border now that it sits inside a colored wrapper */
+   --nav-dropdown-row-gap: var(--space-6);
+   /* 12px, gap between rows/columns inside the panel grid */
+   --nav-dropdown-shadow: 0 24px 64px rgba(0, 0, 0, 0.18);
+
+   /* Outer wrapper — sits around the white inner panel above, giving it a
+     colored "frame". Radius is concentric with the inner panel: outer
+     padding (4px) + inner panel radius (28px) = 32px. */
+   --nav-dropdown-wrapper-padding: var(--space-2);
+   /* 4px */
+   --nav-dropdown-wrapper-radius: var(--radius-16);
+   /* 32px = --nav-dropdown-wrapper-padding (4px) + --nav-dropdown-radius (28px) */
+   --nav-dropdown-wrapper-bg: var(--surface-light-1);
+   /* "secondary" light surface — one step off the inner panel's white/primary */
+
+   --nav-dropdown-row-padding: var(--space-4);
+   /* 8px, one row's own padding (top/bottom/left) */
+   --nav-dropdown-row-padding-right: var(--space-6);
+   /* 12px, right side only — wider than the other 3 sides */
+   --nav-dropdown-row-radius: var(--radius-9);
+   /* 18px = icon radius (10px) + row padding (8px), concentric with the
+     icon box sitting inside the row */
+   --nav-dropdown-row-icon-gap: var(--space-6);
+   /* 12px, gap between the icon and the title/description column */
+   --nav-dropdown-row-hover-bg: var(--gray-100);
+   /* row hover fill — never reference --gray-50 directly from a component */
+   --nav-dropdown-icon-size: var(--space-28);
+   /* 56px, fixed square icon placeholder */
+   --nav-dropdown-icon-padding: var(--space-6);
+   /* 12px inset on each side -> the actual glyph renders at 56 - 12*2 =
+     32px, independent of --nav-dropdown-row-padding (a different value,
+     the row's own outer padding) */
+   --nav-dropdown-icon-radius: var(--radius-5);
+   /* 10px */
+   --nav-dropdown-icon-bg: var(--gray-50);
+   /* no fill — just the border below now defines the container */
+   --nav-dropdown-icon-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.02),
+      0 12px 24px rgba(0, 0, 0, 0.04);
+   /* layered near+far shadow for a raised, 3D "floating card" depth */
+   --nav-dropdown-title-description-gap: var(--space-1);
+   /* 2px */
+   --nav-dropdown-row-arrow-size: var(--space-8);
+   /* 16px, hover-reveal arrow icon on the row's right side */
+   --nav-dropdown-row-arrow-color: var(--on-light-primary);
+   /* accent-500 */
+
+   /* Categorized panel (e.g. Services: Design / Development / Growth & AI
+     columns) — same NavDropdownRow design as every other dropdown, just
+     grouped into labeled columns instead of laid out flat. */
+   --nav-dropdown-category-gap-y: var(--space-6);
+   /* 12px — vertical gap between the label and its rows, and between
+     rows themselves, inside one category column */
+   --nav-dropdown-category-gap-x: var(--space-16);
+   /* 32px — horizontal gap between the category columns themselves */
+   --nav-dropdown-category-label-color: var(--on-light-tertiary);
+
+   /* ============================================================
+     SEMANTIC — HOMEPAGE SERVICES SECTION
+     The "What We Offer" section's category cards (components/sections/
+     Services.tsx) — intentionally its own tokens, separate from the
+     header dropdown's --nav-dropdown-* ones, so tuning one never moves
+     the other.
+     ============================================================ */
+   --services-row-icon-gap: var(--space-8);
+   /* 16px — gap between a row's icon and its title/description */
+
+   /* ============================================================
+     SEMANTIC — ICON
+     Icon library: lucide-react. Every icon in the system should use
+     this stroke weight — pass it as the icon's `strokeWidth` prop
+     (a plain number, e.g. strokeWidth={2}, not this CSS value itself —
+     lucide can't read CSS custom properties, so keep the JS constant
+     next to whatever renders the icon in sync with this by hand).
+     ============================================================ */
+   --icon-stroke-width: 2px;
+
+   /* ============================================================
+     SEMANTIC — TYPOGRAPHY (headings, body, caption)
+     Heading weight is capped at Medium (500) everywhere — no
+     semibold/bold anywhere in this system.
+     ============================================================ */
+   --text-h1-family: var(--font-family-sans-tight);
+   /* Responsive: scales down on narrow screens instead of staying fixed
+     at 56px and wrapping into 4+ lines on mobile. 56px only once the
+     viewport is wide enough (desktop); shrinks smoothly below that. */
+   --text-h1-size: clamp(1.75rem, 1.1rem + 4.5vw, var(--font-size-56));
+   --text-h1-weight: var(--font-weight-medium);
+   --text-h1-line-height: var(--line-height-tight);
+   --text-h1-letter-spacing: var(--letter-spacing-tight);
+
+   --text-h2-family: var(--font-family-sans-tight);
+   /* Responsive like h1 — fixed 40px wrapped too aggressively on mobile. */
+   --text-h2-size: clamp(1.5rem, 1rem + 3.5vw, var(--font-size-40));
+   --text-h2-weight: var(--font-weight-medium);
+   --text-h2-line-height: var(--line-height-tight);
+   --text-h2-letter-spacing: var(--letter-spacing-tight);
+
+   --text-h3-family: var(--font-family-sans-tight);
+   --text-h3-size: clamp(1.25rem, 0.9rem + 3vw, var(--font-size-32));
+   --text-h3-weight: var(--font-weight-medium);
+   --text-h3-line-height: var(--line-height-snug);
+   --text-h3-letter-spacing: var(--letter-spacing-tight);
+
+   --text-h4-family: var(--font-family-sans-tight);
+   --text-h4-size: clamp(1.125rem, 0.85rem + 2vw, var(--font-size-24));
+   --text-h4-weight: var(--font-weight-medium);
+   --text-h4-line-height: var(--line-height-snug);
+   --text-h4-letter-spacing: var(--letter-spacing-snug);
+
+   --text-h5-family: var(--font-family-sans-tight);
+   --text-h5-size: var(--font-size-20);
+   --text-h5-weight: var(--font-weight-medium);
+   --text-h5-line-height: var(--line-height-normal);
+   --text-h5-letter-spacing: var(--letter-spacing-snug);
+
+   --text-h6-family: var(--font-family-sans-tight);
+   --text-h6-size: var(--font-size-16);
+   --text-h6-weight: var(--font-weight-medium);
+   --text-h6-line-height: var(--line-height-normal);
+   --text-h6-letter-spacing: var(--letter-spacing-normal);
+
+   --text-body-lg-family: var(--font-family-sans);
+   --text-body-lg-size: var(--font-size-18);
+   --text-body-lg-weight: var(--font-weight-regular);
+   --text-body-lg-line-height: var(--line-height-relaxed);
+   --text-body-lg-letter-spacing: var(--letter-spacing-normal);
+
+   --text-body-md-family: var(--font-family-sans);
+   --text-body-md-size: var(--font-size-16);
+   --text-body-md-weight: var(--font-weight-regular);
+   --text-body-md-line-height: var(--line-height-relaxed);
+   --text-body-md-letter-spacing: var(--letter-spacing-normal);
+
+   --text-body-sm-family: var(--font-family-sans);
+   --text-body-sm-size: var(--font-size-14);
+   --text-body-sm-weight: var(--font-weight-regular);
+   --text-body-sm-line-height: var(--line-height-normal);
+   --text-body-sm-letter-spacing: var(--letter-spacing-normal);
+
+   --text-caption-family: var(--font-family-sans);
+   --text-caption-size: var(--font-size-12);
+   --text-caption-weight: var(--font-weight-regular);
+   --text-caption-line-height: var(--line-height-normal);
+   --text-caption-letter-spacing: var(--letter-spacing-wide);
+
+   --text-caption-sm-family: var(--font-family-sans);
+   --text-caption-sm-size: var(--font-size-11);
+   --text-caption-sm-weight: var(--font-weight-regular);
+   --text-caption-sm-line-height: var(--line-height-normal);
+   --text-caption-sm-letter-spacing: var(--letter-spacing-wide);
+}
+
+@theme inline {
+   --color-gray-0: var(--gray-0);
+   --color-gray-50: var(--gray-50);
+   --color-gray-100: var(--gray-100);
+   --color-gray-200: var(--gray-200);
+   --color-gray-300: var(--gray-300);
+   --color-gray-400: var(--gray-400);
+   --color-gray-500: var(--gray-500);
+   --color-gray-600: var(--gray-600);
+   --color-gray-700: var(--gray-700);
+   --color-gray-800: var(--gray-800);
+   --color-gray-900: var(--gray-900);
+
+   --color-blue-0: var(--blue-0);
+   --color-blue-50: var(--blue-50);
+   --color-blue-100: var(--blue-100);
+   --color-blue-200: var(--blue-200);
+   --color-blue-300: var(--blue-300);
+   --color-blue-400: var(--blue-400);
+   --color-blue-500: var(--blue-500);
+   --color-blue-600: var(--blue-600);
+   --color-blue-700: var(--blue-700);
+   --color-blue-800: var(--blue-800);
+   --color-blue-900: var(--blue-900);
+
+   --color-accent: var(--color-accent);
+   --color-accent-hover: var(--color-accent-hover);
+   --color-accent-active: var(--color-accent-active);
+   --color-accent-subtle: var(--color-accent-subtle);
+   --color-accent-muted: var(--color-accent-muted);
+}
+
+/* --page-padding responsive steps — see the LAYOUT section above. */
+@media (min-width: 640px) {
+   :root {
+      --page-padding: var(--page-padding-tablet);
+      /* 32px */
+   }
+}
+
+@media (min-width: 1024px) {
+   :root {
+      --page-padding: var(--page-padding-desktop);
+      /* 64px */
+   }
+}
+
+@media (min-width: 1440px) {
+   :root {
+      --page-padding: var(--page-padding-desktop-lg);
+      /* 80px */
+   }
+}

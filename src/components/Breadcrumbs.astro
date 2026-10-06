@@ -1,0 +1,21 @@
+---
+import { ChevronRight } from '@lucide/astro';
+interface Props { items: { label: string; href?: string }[]; }
+const { items } = Astro.props;
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <ol>
+    {items.map((item, index) => <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      {index > 0 && <ChevronRight size={16} aria-hidden="true" />}
+      {item.href ? <a class="btn btn-ghost btn-sm" href={item.href} itemprop="item"><span itemprop="name">{item.label}</span></a> : <span class="breadcrumb-current" itemprop="name" aria-current="page">{item.label}</span>}
+      <meta itemprop="position" content={String(index + 1)} />
+    </li>)}
+  </ol>
+</nav>
+<style>
+  .breadcrumbs { justify-self: start; align-self: start; width: max-content; max-width: 100%; min-width: 0; min-height: var(--button-height-sm); }
+  ol { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-0); margin: 0; padding: 0; list-style: none; }
+  li { display: flex; align-items: center; gap: var(--space-0); min-width: 0; }
+  li > :global(svg) { flex-shrink: 0; color: var(--text-muted); }
+  .breadcrumb-current { display: inline-flex; align-items: center; min-height: var(--button-height-sm); padding-inline: var(--button-padding-x-sm); font-size: var(--text-button-size); font-weight: var(--text-button-weight); line-height: var(--text-button-line-height); color: var(--text-primary); }
+</style>

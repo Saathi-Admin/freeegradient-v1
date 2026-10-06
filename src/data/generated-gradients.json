@@ -1,0 +1,2360 @@
+[
+  {
+    "slug": "velvet",
+    "name": "Velvet",
+    "category": "smooth",
+    "shape": "wash",
+    "position": 0,
+    "tags": [
+      "smooth",
+      "wash",
+      "soft",
+      "blur"
+    ],
+    "id": "FG-001",
+    "variations": [
+      {
+        "id": "velvet-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/velvet-01.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 6.666666666666667%, #ee6fba 0%, #ee6fba00 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 10% 82.22222222222223%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "velvet-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/velvet-02.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 6.666666666666667%, #b5c7f4 0%, #b5c7f400 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 10% 82.22222222222223%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "velvet-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/velvet-03.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 6.666666666666667%, #f0788c 0%, #f0788c00 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 10% 82.22222222222223%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "velvet-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/velvet-04.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 6.666666666666667%, #3078c0 0%, #3078c000 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 10% 82.22222222222223%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "daybreak",
+    "name": "Daybreak",
+    "category": "smooth",
+    "shape": "wash",
+    "position": 1,
+    "tags": [
+      "smooth",
+      "wash",
+      "soft",
+      "blur"
+    ],
+    "id": "FG-002",
+    "variations": [
+      {
+        "id": "daybreak-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/daybreak-01.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 18.22222222222222%, #ee6fba 0%, #ee6fba00 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 16.5% 82.22222222222223%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "daybreak-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/daybreak-02.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 18.22222222222222%, #b5c7f4 0%, #b5c7f400 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 16.5% 82.22222222222223%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "daybreak-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/daybreak-03.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 18.22222222222222%, #f0788c 0%, #f0788c00 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 16.5% 82.22222222222223%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "daybreak-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/daybreak-04.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 18.22222222222222%, #3078c0 0%, #3078c000 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 16.5% 82.22222222222223%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "tideline",
+    "name": "Tideline",
+    "category": "smooth",
+    "shape": "wash",
+    "position": 2,
+    "tags": [
+      "smooth",
+      "wash",
+      "soft",
+      "blur"
+    ],
+    "id": "FG-003",
+    "variations": [
+      {
+        "id": "tideline-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/tideline-01.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 29.77777777777778%, #ee6fba 0%, #ee6fba00 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 23% 82.22222222222223%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "tideline-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/tideline-02.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 29.77777777777778%, #b5c7f4 0%, #b5c7f400 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 23% 82.22222222222223%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "tideline-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/tideline-03.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 29.77777777777778%, #f0788c 0%, #f0788c00 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 23% 82.22222222222223%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "tideline-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/tideline-04.svg",
+        "css": "radial-gradient(ellipse 71.875% 100% at 90.625% 29.77777777777778%, #3078c0 0%, #3078c000 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 23% 82.22222222222223%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "orbit",
+    "name": "Orbit",
+    "category": "mesh",
+    "shape": "mesh",
+    "position": 0,
+    "tags": [
+      "mesh",
+      "mesh",
+      "organic"
+    ],
+    "id": "FG-004",
+    "variations": [
+      {
+        "id": "orbit-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/orbit-01.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 4.444444444444445%, #ee6fbab3 0%, #ee6fba00 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 89.375% 85.55555555555556%, #ee6fba 0%, #ee6fba00 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 10% 22.22222222222222%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "orbit-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/orbit-02.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 4.444444444444445%, #b5c7f4b3 0%, #b5c7f400 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 89.375% 85.55555555555556%, #b5c7f4 0%, #b5c7f400 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 10% 22.22222222222222%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "orbit-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/orbit-03.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 4.444444444444445%, #f0788cb3 0%, #f0788c00 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 89.375% 85.55555555555556%, #f0788c 0%, #f0788c00 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 10% 22.22222222222222%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "orbit-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/orbit-04.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 4.444444444444445%, #3078c0b3 0%, #3078c000 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 89.375% 85.55555555555556%, #3078c0 0%, #3078c000 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 10% 22.22222222222222%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "bloom",
+    "name": "Bloom",
+    "category": "mesh",
+    "shape": "mesh",
+    "position": 1,
+    "tags": [
+      "mesh",
+      "mesh",
+      "organic"
+    ],
+    "id": "FG-005",
+    "variations": [
+      {
+        "id": "bloom-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/bloom-01.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 21.77777777777778%, #ee6fbab3 0%, #ee6fba00 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 83.6875% 85.55555555555556%, #ee6fba 0%, #ee6fba00 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 18.125% 22.22222222222222%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "bloom-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/bloom-02.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 21.77777777777778%, #b5c7f4b3 0%, #b5c7f400 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 83.6875% 85.55555555555556%, #b5c7f4 0%, #b5c7f400 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 18.125% 22.22222222222222%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "bloom-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/bloom-03.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 21.77777777777778%, #f0788cb3 0%, #f0788c00 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 83.6875% 85.55555555555556%, #f0788c 0%, #f0788c00 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 18.125% 22.22222222222222%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "bloom-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/bloom-04.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 21.77777777777778%, #3078c0b3 0%, #3078c000 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 83.6875% 85.55555555555556%, #3078c0 0%, #3078c000 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 18.125% 22.22222222222222%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "nectar",
+    "name": "Nectar",
+    "category": "mesh",
+    "shape": "mesh",
+    "position": 2,
+    "tags": [
+      "mesh",
+      "mesh",
+      "organic"
+    ],
+    "id": "FG-006",
+    "variations": [
+      {
+        "id": "nectar-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/nectar-01.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 39.111111111111114%, #ee6fbab3 0%, #ee6fba00 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 78% 85.55555555555556%, #ee6fba 0%, #ee6fba00 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 26.25% 22.22222222222222%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "nectar-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/nectar-02.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 39.111111111111114%, #b5c7f4b3 0%, #b5c7f400 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 78% 85.55555555555556%, #b5c7f4 0%, #b5c7f400 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 26.25% 22.22222222222222%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "nectar-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/nectar-03.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 39.111111111111114%, #f0788cb3 0%, #f0788c00 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 78% 85.55555555555556%, #f0788c 0%, #f0788c00 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 26.25% 22.22222222222222%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "nectar-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/nectar-04.svg",
+        "css": "radial-gradient(ellipse 34.375% 60% at 55% 39.111111111111114%, #3078c0b3 0%, #3078c000 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 78% 85.55555555555556%, #3078c0 0%, #3078c000 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 26.25% 22.22222222222222%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "halo",
+    "name": "Halo",
+    "category": "glow",
+    "shape": "glow",
+    "position": 0,
+    "tags": [
+      "glow",
+      "glow",
+      "aurora",
+      "light"
+    ],
+    "id": "FG-007",
+    "variations": [
+      {
+        "id": "halo-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/halo-01.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #ee6fbacc 0%, #ee6fba00 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 50% 75.55555555555556%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "halo-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/halo-02.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #b5c7f4cc 0%, #b5c7f400 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 50% 75.55555555555556%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "halo-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/halo-03.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #f0788ccc 0%, #f0788c00 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 50% 75.55555555555556%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "halo-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/halo-04.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #3078c0cc 0%, #3078c000 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 50% 75.55555555555556%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "aurora",
+    "name": "Aurora",
+    "category": "glow",
+    "shape": "glow",
+    "position": 1,
+    "tags": [
+      "glow",
+      "glow",
+      "aurora",
+      "light"
+    ],
+    "id": "FG-008",
+    "variations": [
+      {
+        "id": "aurora-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/aurora-01.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #ee6fbacc 0%, #ee6fba00 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 62.1875% 62.55555555555556%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "aurora-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/aurora-02.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #b5c7f4cc 0%, #b5c7f400 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 62.1875% 62.55555555555556%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "aurora-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/aurora-03.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #f0788ccc 0%, #f0788c00 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 62.1875% 62.55555555555556%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "aurora-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/aurora-04.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #3078c0cc 0%, #3078c000 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 62.1875% 62.55555555555556%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "ember",
+    "name": "Ember",
+    "category": "glow",
+    "shape": "glow",
+    "position": 2,
+    "tags": [
+      "glow",
+      "glow",
+      "aurora",
+      "light"
+    ],
+    "id": "FG-009",
+    "variations": [
+      {
+        "id": "ember-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/ember-01.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #ee6fbacc 0%, #ee6fba00 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 74.375% 49.55555555555556%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18)",
+        "cssKind": "native"
+      },
+      {
+        "id": "ember-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/ember-02.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #b5c7f4cc 0%, #b5c7f400 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 74.375% 49.55555555555556%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee)",
+        "cssKind": "native"
+      },
+      {
+        "id": "ember-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/ember-03.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #f0788ccc 0%, #f0788c00 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 74.375% 49.55555555555556%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df)",
+        "cssKind": "native"
+      },
+      {
+        "id": "ember-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/ember-04.svg",
+        "css": "radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #3078c0cc 0%, #3078c000 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 74.375% 49.55555555555556%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d)",
+        "cssKind": "native"
+      }
+    ]
+  },
+  {
+    "slug": "analogue",
+    "name": "Analogue",
+    "category": "vintage",
+    "shape": "grain",
+    "position": 0,
+    "tags": [
+      "vintage",
+      "grain",
+      "grain",
+      "retro",
+      "texture"
+    ],
+    "id": "FG-010",
+    "variations": [
+      {
+        "id": "analogue-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/analogue-01.svg",
+        "css": "url(\"/gradients/analogue-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "analogue-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/analogue-02.svg",
+        "css": "url(\"/gradients/analogue-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "analogue-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/analogue-03.svg",
+        "css": "url(\"/gradients/analogue-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "analogue-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/analogue-04.svg",
+        "css": "url(\"/gradients/analogue-04.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "haze",
+    "name": "Haze",
+    "category": "vintage",
+    "shape": "grain",
+    "position": 1,
+    "tags": [
+      "vintage",
+      "grain",
+      "grain",
+      "retro",
+      "texture"
+    ],
+    "id": "FG-011",
+    "variations": [
+      {
+        "id": "haze-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/haze-01.svg",
+        "css": "url(\"/gradients/haze-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "haze-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/haze-02.svg",
+        "css": "url(\"/gradients/haze-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "haze-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/haze-03.svg",
+        "css": "url(\"/gradients/haze-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "haze-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/haze-04.svg",
+        "css": "url(\"/gradients/haze-04.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "film",
+    "name": "Film",
+    "category": "vintage",
+    "shape": "grain",
+    "position": 2,
+    "tags": [
+      "vintage",
+      "grain",
+      "grain",
+      "retro",
+      "texture"
+    ],
+    "id": "FG-012",
+    "variations": [
+      {
+        "id": "film-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/film-01.svg",
+        "css": "url(\"/gradients/film-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "film-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/film-02.svg",
+        "css": "url(\"/gradients/film-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "film-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/film-03.svg",
+        "css": "url(\"/gradients/film-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "film-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/film-04.svg",
+        "css": "url(\"/gradients/film-04.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "ripple",
+    "name": "Ripple",
+    "category": "waves",
+    "shape": "wave",
+    "position": 0,
+    "tags": [
+      "waves",
+      "wave",
+      "wave",
+      "abstract",
+      "flow"
+    ],
+    "id": "FG-013",
+    "variations": [
+      {
+        "id": "ripple-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/ripple-01.svg",
+        "css": "url(\"/gradients/ripple-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "ripple-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/ripple-02.svg",
+        "css": "url(\"/gradients/ripple-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "ripple-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/ripple-03.svg",
+        "css": "url(\"/gradients/ripple-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "ripple-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/ripple-04.svg",
+        "css": "url(\"/gradients/ripple-04.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "drift",
+    "name": "Drift",
+    "category": "waves",
+    "shape": "wave",
+    "position": 1,
+    "tags": [
+      "waves",
+      "wave",
+      "wave",
+      "abstract",
+      "flow"
+    ],
+    "id": "FG-014",
+    "variations": [
+      {
+        "id": "drift-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/drift-01.svg",
+        "css": "url(\"/gradients/drift-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "drift-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/drift-02.svg",
+        "css": "url(\"/gradients/drift-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "drift-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/drift-03.svg",
+        "css": "url(\"/gradients/drift-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "drift-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/drift-04.svg",
+        "css": "url(\"/gradients/drift-04.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "flux",
+    "name": "Flux",
+    "category": "waves",
+    "shape": "wave",
+    "position": 2,
+    "tags": [
+      "waves",
+      "wave",
+      "wave",
+      "abstract",
+      "flow"
+    ],
+    "id": "FG-015",
+    "variations": [
+      {
+        "id": "flux-01",
+        "name": "After hours",
+        "mode": "dark",
+        "colors": [
+          "#080b18",
+          "#6655ed",
+          "#ee6fba"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/flux-01.svg",
+        "css": "url(\"/gradients/flux-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "flux-02",
+        "name": "Mint condition",
+        "mode": "light",
+        "colors": [
+          "#eef8ee",
+          "#90e6c1",
+          "#b5c7f4"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel",
+          "blue"
+        ],
+        "src": "/gradients/flux-02.svg",
+        "css": "url(\"/gradients/flux-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "flux-03",
+        "name": "Golden hour",
+        "mode": "light",
+        "colors": [
+          "#fff0df",
+          "#ffad66",
+          "#f0788c"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink",
+          "peach",
+          "warm",
+          "sunset"
+        ],
+        "src": "/gradients/flux-03.svg",
+        "css": "url(\"/gradients/flux-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "flux-04",
+        "name": "Deep current",
+        "mode": "dark",
+        "colors": [
+          "#06191d",
+          "#32bfae",
+          "#3078c0"
+        ],
+        "tags": [
+          "blue",
+          "green",
+          "cyan",
+          "teal",
+          "sea"
+        ],
+        "src": "/gradients/flux-04.svg",
+        "css": "url(\"/gradients/flux-04.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "horizon",
+    "name": "Horizon",
+    "category": "landing",
+    "shape": "horizon",
+    "position": 0,
+    "tags": [
+      "landing",
+      "horizon"
+    ],
+    "id": "FG-016",
+    "variations": [
+      {
+        "id": "horizon-01",
+        "name": "Violet horizon",
+        "mode": "dark",
+        "colors": [
+          "#030313",
+          "#7041bd",
+          "#d8c3ff"
+        ],
+        "tags": [
+          "purple",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/horizon-01.svg",
+        "css": "url(\"/gradients/horizon-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "horizon-02",
+        "name": "Blue horizon",
+        "mode": "dark",
+        "colors": [
+          "#020916",
+          "#2465ad",
+          "#b4ddff"
+        ],
+        "tags": [
+          "blue",
+          "sky"
+        ],
+        "src": "/gradients/horizon-02.svg",
+        "css": "url(\"/gradients/horizon-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "horizon-03",
+        "name": "Rose horizon",
+        "mode": "dark",
+        "colors": [
+          "#14040c",
+          "#af407d",
+          "#ffd0e5"
+        ],
+        "tags": [
+          "pink",
+          "rose"
+        ],
+        "src": "/gradients/horizon-03.svg",
+        "css": "url(\"/gradients/horizon-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "horizon-04",
+        "name": "Emerald horizon",
+        "mode": "dark",
+        "colors": [
+          "#03120f",
+          "#248c73",
+          "#b8f4dc"
+        ],
+        "tags": [
+          "green",
+          "emerald"
+        ],
+        "src": "/gradients/horizon-04.svg",
+        "css": "url(\"/gradients/horizon-04.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "horizon-05",
+        "name": "Lavender dawn",
+        "mode": "light",
+        "colors": [
+          "#faf7ff",
+          "#dbcbf3",
+          "#ae8edd"
+        ],
+        "tags": [
+          "purple",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/horizon-05.svg",
+        "css": "url(\"/gradients/horizon-05.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "horizon-06",
+        "name": "Ocean dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fbff",
+          "#c0e4f7",
+          "#7fb8dd"
+        ],
+        "tags": [
+          "blue",
+          "ocean",
+          "pastel"
+        ],
+        "src": "/gradients/horizon-06.svg",
+        "css": "url(\"/gradients/horizon-06.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "horizon-07",
+        "name": "Peach dawn",
+        "mode": "light",
+        "colors": [
+          "#fff9f4",
+          "#fbd5c1",
+          "#eca480"
+        ],
+        "tags": [
+          "orange",
+          "peach",
+          "warm"
+        ],
+        "src": "/gradients/horizon-07.svg",
+        "css": "url(\"/gradients/horizon-07.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "horizon-08",
+        "name": "Mint dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fff9",
+          "#c1eddb",
+          "#80c4aa"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/horizon-08.svg",
+        "css": "url(\"/gradients/horizon-08.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "dawnlight",
+    "name": "Dawnlight",
+    "category": "landing",
+    "shape": "horizon",
+    "position": 1,
+    "tags": [
+      "landing",
+      "horizon"
+    ],
+    "id": "FG-017",
+    "variations": [
+      {
+        "id": "dawnlight-01",
+        "name": "Violet horizon",
+        "mode": "dark",
+        "colors": [
+          "#030313",
+          "#7041bd",
+          "#d8c3ff"
+        ],
+        "tags": [
+          "purple",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/dawnlight-01.svg",
+        "css": "url(\"/gradients/dawnlight-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "dawnlight-02",
+        "name": "Blue horizon",
+        "mode": "dark",
+        "colors": [
+          "#020916",
+          "#2465ad",
+          "#b4ddff"
+        ],
+        "tags": [
+          "blue",
+          "sky"
+        ],
+        "src": "/gradients/dawnlight-02.svg",
+        "css": "url(\"/gradients/dawnlight-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "dawnlight-03",
+        "name": "Rose horizon",
+        "mode": "dark",
+        "colors": [
+          "#14040c",
+          "#af407d",
+          "#ffd0e5"
+        ],
+        "tags": [
+          "pink",
+          "rose"
+        ],
+        "src": "/gradients/dawnlight-03.svg",
+        "css": "url(\"/gradients/dawnlight-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "dawnlight-04",
+        "name": "Emerald horizon",
+        "mode": "dark",
+        "colors": [
+          "#03120f",
+          "#248c73",
+          "#b8f4dc"
+        ],
+        "tags": [
+          "green",
+          "emerald"
+        ],
+        "src": "/gradients/dawnlight-04.svg",
+        "css": "url(\"/gradients/dawnlight-04.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "dawnlight-05",
+        "name": "Lavender dawn",
+        "mode": "light",
+        "colors": [
+          "#faf7ff",
+          "#dbcbf3",
+          "#ae8edd"
+        ],
+        "tags": [
+          "purple",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/dawnlight-05.svg",
+        "css": "url(\"/gradients/dawnlight-05.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "dawnlight-06",
+        "name": "Ocean dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fbff",
+          "#c0e4f7",
+          "#7fb8dd"
+        ],
+        "tags": [
+          "blue",
+          "ocean",
+          "pastel"
+        ],
+        "src": "/gradients/dawnlight-06.svg",
+        "css": "url(\"/gradients/dawnlight-06.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "dawnlight-07",
+        "name": "Peach dawn",
+        "mode": "light",
+        "colors": [
+          "#fff9f4",
+          "#fbd5c1",
+          "#eca480"
+        ],
+        "tags": [
+          "orange",
+          "peach",
+          "warm"
+        ],
+        "src": "/gradients/dawnlight-07.svg",
+        "css": "url(\"/gradients/dawnlight-07.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "dawnlight-08",
+        "name": "Mint dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fff9",
+          "#c1eddb",
+          "#80c4aa"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/dawnlight-08.svg",
+        "css": "url(\"/gradients/dawnlight-08.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "atmosphere",
+    "name": "Atmosphere",
+    "category": "landing",
+    "shape": "horizon",
+    "position": 2,
+    "tags": [
+      "landing",
+      "horizon"
+    ],
+    "id": "FG-018",
+    "variations": [
+      {
+        "id": "atmosphere-01",
+        "name": "Violet horizon",
+        "mode": "dark",
+        "colors": [
+          "#030313",
+          "#7041bd",
+          "#d8c3ff"
+        ],
+        "tags": [
+          "purple",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/atmosphere-01.svg",
+        "css": "url(\"/gradients/atmosphere-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "atmosphere-02",
+        "name": "Blue horizon",
+        "mode": "dark",
+        "colors": [
+          "#020916",
+          "#2465ad",
+          "#b4ddff"
+        ],
+        "tags": [
+          "blue",
+          "sky"
+        ],
+        "src": "/gradients/atmosphere-02.svg",
+        "css": "url(\"/gradients/atmosphere-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "atmosphere-03",
+        "name": "Rose horizon",
+        "mode": "dark",
+        "colors": [
+          "#14040c",
+          "#af407d",
+          "#ffd0e5"
+        ],
+        "tags": [
+          "pink",
+          "rose"
+        ],
+        "src": "/gradients/atmosphere-03.svg",
+        "css": "url(\"/gradients/atmosphere-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "atmosphere-04",
+        "name": "Emerald horizon",
+        "mode": "dark",
+        "colors": [
+          "#03120f",
+          "#248c73",
+          "#b8f4dc"
+        ],
+        "tags": [
+          "green",
+          "emerald"
+        ],
+        "src": "/gradients/atmosphere-04.svg",
+        "css": "url(\"/gradients/atmosphere-04.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "atmosphere-05",
+        "name": "Lavender dawn",
+        "mode": "light",
+        "colors": [
+          "#faf7ff",
+          "#dbcbf3",
+          "#ae8edd"
+        ],
+        "tags": [
+          "purple",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/atmosphere-05.svg",
+        "css": "url(\"/gradients/atmosphere-05.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "atmosphere-06",
+        "name": "Ocean dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fbff",
+          "#c0e4f7",
+          "#7fb8dd"
+        ],
+        "tags": [
+          "blue",
+          "ocean",
+          "pastel"
+        ],
+        "src": "/gradients/atmosphere-06.svg",
+        "css": "url(\"/gradients/atmosphere-06.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "atmosphere-07",
+        "name": "Peach dawn",
+        "mode": "light",
+        "colors": [
+          "#fff9f4",
+          "#fbd5c1",
+          "#eca480"
+        ],
+        "tags": [
+          "orange",
+          "peach",
+          "warm"
+        ],
+        "src": "/gradients/atmosphere-07.svg",
+        "css": "url(\"/gradients/atmosphere-07.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "atmosphere-08",
+        "name": "Mint dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fff9",
+          "#c1eddb",
+          "#80c4aa"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/atmosphere-08.svg",
+        "css": "url(\"/gradients/atmosphere-08.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "afterglow",
+    "name": "Afterglow",
+    "category": "footer",
+    "shape": "beam",
+    "position": 0,
+    "tags": [
+      "footer",
+      "beam"
+    ],
+    "id": "FG-019",
+    "variations": [
+      {
+        "id": "afterglow-01",
+        "name": "Violet horizon",
+        "mode": "dark",
+        "colors": [
+          "#030313",
+          "#7041bd",
+          "#d8c3ff"
+        ],
+        "tags": [
+          "purple",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/afterglow-01.svg",
+        "css": "url(\"/gradients/afterglow-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "afterglow-02",
+        "name": "Blue horizon",
+        "mode": "dark",
+        "colors": [
+          "#020916",
+          "#2465ad",
+          "#b4ddff"
+        ],
+        "tags": [
+          "blue",
+          "sky"
+        ],
+        "src": "/gradients/afterglow-02.svg",
+        "css": "url(\"/gradients/afterglow-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "afterglow-03",
+        "name": "Rose horizon",
+        "mode": "dark",
+        "colors": [
+          "#14040c",
+          "#af407d",
+          "#ffd0e5"
+        ],
+        "tags": [
+          "pink",
+          "rose"
+        ],
+        "src": "/gradients/afterglow-03.svg",
+        "css": "url(\"/gradients/afterglow-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "afterglow-04",
+        "name": "Emerald horizon",
+        "mode": "dark",
+        "colors": [
+          "#03120f",
+          "#248c73",
+          "#b8f4dc"
+        ],
+        "tags": [
+          "green",
+          "emerald"
+        ],
+        "src": "/gradients/afterglow-04.svg",
+        "css": "url(\"/gradients/afterglow-04.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "afterglow-05",
+        "name": "Lavender dawn",
+        "mode": "light",
+        "colors": [
+          "#faf7ff",
+          "#dbcbf3",
+          "#ae8edd"
+        ],
+        "tags": [
+          "purple",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/afterglow-05.svg",
+        "css": "url(\"/gradients/afterglow-05.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "afterglow-06",
+        "name": "Ocean dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fbff",
+          "#c0e4f7",
+          "#7fb8dd"
+        ],
+        "tags": [
+          "blue",
+          "ocean",
+          "pastel"
+        ],
+        "src": "/gradients/afterglow-06.svg",
+        "css": "url(\"/gradients/afterglow-06.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "afterglow-07",
+        "name": "Peach dawn",
+        "mode": "light",
+        "colors": [
+          "#fff9f4",
+          "#fbd5c1",
+          "#eca480"
+        ],
+        "tags": [
+          "orange",
+          "peach",
+          "warm"
+        ],
+        "src": "/gradients/afterglow-07.svg",
+        "css": "url(\"/gradients/afterglow-07.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "afterglow-08",
+        "name": "Mint dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fff9",
+          "#c1eddb",
+          "#80c4aa"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/afterglow-08.svg",
+        "css": "url(\"/gradients/afterglow-08.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "uplift",
+    "name": "Uplift",
+    "category": "footer",
+    "shape": "beam",
+    "position": 1,
+    "tags": [
+      "footer",
+      "beam"
+    ],
+    "id": "FG-020",
+    "variations": [
+      {
+        "id": "uplift-01",
+        "name": "Violet horizon",
+        "mode": "dark",
+        "colors": [
+          "#030313",
+          "#7041bd",
+          "#d8c3ff"
+        ],
+        "tags": [
+          "purple",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/uplift-01.svg",
+        "css": "url(\"/gradients/uplift-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "uplift-02",
+        "name": "Blue horizon",
+        "mode": "dark",
+        "colors": [
+          "#020916",
+          "#2465ad",
+          "#b4ddff"
+        ],
+        "tags": [
+          "blue",
+          "sky"
+        ],
+        "src": "/gradients/uplift-02.svg",
+        "css": "url(\"/gradients/uplift-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "uplift-03",
+        "name": "Rose horizon",
+        "mode": "dark",
+        "colors": [
+          "#14040c",
+          "#af407d",
+          "#ffd0e5"
+        ],
+        "tags": [
+          "pink",
+          "rose"
+        ],
+        "src": "/gradients/uplift-03.svg",
+        "css": "url(\"/gradients/uplift-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "uplift-04",
+        "name": "Emerald horizon",
+        "mode": "dark",
+        "colors": [
+          "#03120f",
+          "#248c73",
+          "#b8f4dc"
+        ],
+        "tags": [
+          "green",
+          "emerald"
+        ],
+        "src": "/gradients/uplift-04.svg",
+        "css": "url(\"/gradients/uplift-04.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "uplift-05",
+        "name": "Lavender dawn",
+        "mode": "light",
+        "colors": [
+          "#faf7ff",
+          "#dbcbf3",
+          "#ae8edd"
+        ],
+        "tags": [
+          "purple",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/uplift-05.svg",
+        "css": "url(\"/gradients/uplift-05.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "uplift-06",
+        "name": "Ocean dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fbff",
+          "#c0e4f7",
+          "#7fb8dd"
+        ],
+        "tags": [
+          "blue",
+          "ocean",
+          "pastel"
+        ],
+        "src": "/gradients/uplift-06.svg",
+        "css": "url(\"/gradients/uplift-06.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "uplift-07",
+        "name": "Peach dawn",
+        "mode": "light",
+        "colors": [
+          "#fff9f4",
+          "#fbd5c1",
+          "#eca480"
+        ],
+        "tags": [
+          "orange",
+          "peach",
+          "warm"
+        ],
+        "src": "/gradients/uplift-07.svg",
+        "css": "url(\"/gradients/uplift-07.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "uplift-08",
+        "name": "Mint dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fff9",
+          "#c1eddb",
+          "#80c4aa"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/uplift-08.svg",
+        "css": "url(\"/gradients/uplift-08.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "nightfall",
+    "name": "Nightfall",
+    "category": "footer",
+    "shape": "beam",
+    "position": 2,
+    "tags": [
+      "footer",
+      "beam"
+    ],
+    "id": "FG-021",
+    "variations": [
+      {
+        "id": "nightfall-01",
+        "name": "Violet horizon",
+        "mode": "dark",
+        "colors": [
+          "#030313",
+          "#7041bd",
+          "#d8c3ff"
+        ],
+        "tags": [
+          "purple",
+          "violet",
+          "night"
+        ],
+        "src": "/gradients/nightfall-01.svg",
+        "css": "url(\"/gradients/nightfall-01.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "nightfall-02",
+        "name": "Blue horizon",
+        "mode": "dark",
+        "colors": [
+          "#020916",
+          "#2465ad",
+          "#b4ddff"
+        ],
+        "tags": [
+          "blue",
+          "sky"
+        ],
+        "src": "/gradients/nightfall-02.svg",
+        "css": "url(\"/gradients/nightfall-02.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "nightfall-03",
+        "name": "Rose horizon",
+        "mode": "dark",
+        "colors": [
+          "#14040c",
+          "#af407d",
+          "#ffd0e5"
+        ],
+        "tags": [
+          "pink",
+          "rose"
+        ],
+        "src": "/gradients/nightfall-03.svg",
+        "css": "url(\"/gradients/nightfall-03.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "nightfall-04",
+        "name": "Emerald horizon",
+        "mode": "dark",
+        "colors": [
+          "#03120f",
+          "#248c73",
+          "#b8f4dc"
+        ],
+        "tags": [
+          "green",
+          "emerald"
+        ],
+        "src": "/gradients/nightfall-04.svg",
+        "css": "url(\"/gradients/nightfall-04.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "nightfall-05",
+        "name": "Lavender dawn",
+        "mode": "light",
+        "colors": [
+          "#faf7ff",
+          "#dbcbf3",
+          "#ae8edd"
+        ],
+        "tags": [
+          "purple",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/nightfall-05.svg",
+        "css": "url(\"/gradients/nightfall-05.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "nightfall-06",
+        "name": "Ocean dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fbff",
+          "#c0e4f7",
+          "#7fb8dd"
+        ],
+        "tags": [
+          "blue",
+          "ocean",
+          "pastel"
+        ],
+        "src": "/gradients/nightfall-06.svg",
+        "css": "url(\"/gradients/nightfall-06.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "nightfall-07",
+        "name": "Peach dawn",
+        "mode": "light",
+        "colors": [
+          "#fff9f4",
+          "#fbd5c1",
+          "#eca480"
+        ],
+        "tags": [
+          "orange",
+          "peach",
+          "warm"
+        ],
+        "src": "/gradients/nightfall-07.svg",
+        "css": "url(\"/gradients/nightfall-07.svg\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "nightfall-08",
+        "name": "Mint dawn",
+        "mode": "light",
+        "colors": [
+          "#f5fff9",
+          "#c1eddb",
+          "#80c4aa"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/nightfall-08.svg",
+        "css": "url(\"/gradients/nightfall-08.svg\")",
+        "cssKind": "asset"
+      }
+    ]
+  }
+]

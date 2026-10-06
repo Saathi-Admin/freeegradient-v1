@@ -1,0 +1,22 @@
+---
+import { ArrowUp } from '@lucide/astro';
+---
+<button class="btn btn-secondary btn-xl back-to-top" type="button" aria-label="Back to top" hidden>
+  <ArrowUp aria-hidden="true" /><span>Back to top</span>
+</button>
+<script>
+  const button = document.querySelector<HTMLButtonElement>('.back-to-top')!;
+  const update = () => { button.hidden = window.scrollY < 300; };
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+  button.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  });
+</script>
+<style>
+  .back-to-top { position: fixed; right: var(--space-12); bottom: var(--space-12); z-index: 30; --btn-bg: rgba(20, 20, 22, 0.72); --btn-border: var(--border-subtle); color: var(--text-primary); }
+  .back-to-top::before { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .back-to-top:hover { --btn-bg: rgba(28, 28, 31, 0.88); }
+  .back-to-top[hidden] { display: none; }
+  @media (max-width: 639px) { .back-to-top { right: var(--space-8); bottom: max(var(--space-8), env(safe-area-inset-bottom)); width: var(--button-height-xl); padding: 0; } .back-to-top span { display: none; } }
+</style>

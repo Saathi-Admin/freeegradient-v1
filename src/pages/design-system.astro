@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/ui/Button.astro';
+import { Download, ArrowUpRight } from '@lucide/astro';
+const variants = ['primary', 'secondary', 'outline', 'ghost', 'brand'] as const;
+const label = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
+const sizes = [ ['sm', 32], ['md', 36], ['lg', 40], ['xl', 44] ] as const;
+const swatches = [
+  ['Canvas', '--surface-canvas'], ['Card', '--surface-card'],
+  ['Raised', '--surface-raised'], ['Overlay', '--surface-overlay'],
+  ['Accent', '--color-accent'], ['Accent hover', '--color-accent-hover'],
+  ['Primary text', '--text-primary'], ['Secondary text', '--text-secondary'],
+];
+---
+<BaseLayout title="Design System — FreeeGradients" description="FreeeGradients foundation: colour, typography, spacing and 36px buttons.">
+  <main id="main-content" class="container specimen">
+    <header>
+      <a class="text-caption" href="/">FREEEGRADIENTS ↗</a>
+      <h1 class="text-h1">Design <span class="text-serif-italic">foundation.</span></h1>
+      <p class="text-body-md">Dark by default. Host Grotesk for clarity. Instrument Serif for character.</p>
+    </header>
+    <section aria-labelledby="colour-title">
+      <h2 id="colour-title" class="text-h4">01 / Colour & surfaces</h2>
+      <p class="text-body-sm muted">The blue accent is inherited from the supplied tokens and can be changed centrally.</p>
+      <div class="swatches">
+        {swatches.map(([name, token]) => <div class="swatch"><div class="swatch-fill" style={`background:var(${token})`}></div><p class="text-body-sm">{name}</p><code class="text-caption muted">{token}</code></div>)}
+      </div>
+    </section>
+    <section aria-labelledby="type-title">
+      <h2 id="type-title" class="text-h4">02 / Typography</h2>
+      <p class="text-body-sm muted">Only Regular (400) and Medium (500). Fluid headings scale from mobile to desktop; captions start at 12px.</p>
+      <div class="type-sample"><p class="text-caption muted">HOST GROTESK · HEADINGS 500 / BODY 400</p><p class="text-h2">Every colour. Every possibility.</p><p class="text-body-md muted">A generous library of free gradients for your next idea.</p></div>
+      <div class="type-sample"><p class="text-caption muted">INSTRUMENT SERIF · REGULAR / ITALIC 400</p><p class="text-h2 text-serif">Made of colour.</p><p class="text-h2 text-serif-italic">Made for everyone.</p></div>
+      <div class="type-scale">{['h1','h2','h3','h4','h5','h6'].map(level => <p class={`text-${level}`}>{level.toUpperCase()} — Gradient library</p>)}</div>
+      <div class="type-sample">
+        <p class="text-caption muted">BODY & UI · REGULAR 400</p>
+        <p class="text-body-lg">Large · Discover gradients for light and dark designs.</p>
+        <p class="text-body-md">Body · Choose your colours and download your gradient.</p>
+        <p class="text-body-sm">Small · PNG, JPEG, SVG and CSS options.</p>
+        <p class="text-caption">Caption · No sign-up required.</p>
+        <p class="text-button">Button & navigation · Medium 500 · 14px / 20px</p>
+      </div>
+    </section>
+    <section aria-labelledby="buttons-title">
+      <h2 id="buttons-title" class="text-h4">03 / Buttons · 36px</h2>
+      <p class="text-body-sm muted">Hover to inspect colour changes. Tab to inspect focus. Press to inspect feedback.</p>
+      <div class="button-examples">
+        {variants.map(variant => <div class="button-example"><p class="text-caption muted">{label(variant)}</p><Button variant={variant}>Download</Button><Button variant={variant} disabled>Disabled</Button></div>)}
+      </div>
+      <div class="button-row">
+        <Button variant="secondary"><Download slot="leading-icon" aria-hidden="true" />With icon</Button>
+        <a class="btn btn-ghost" href="/">Link button <ArrowUpRight aria-hidden="true" /></a>
+      </div>
+      <h3 class="text-h6">Icon-only · 36 × 36px</h3>
+      <div class="button-examples">
+        {(['primary', 'secondary'] as const).map(variant => <div class="button-example">
+          <p class="text-caption muted">{label(variant)}</p>
+          <Button variant={variant} iconOnly aria-label={`${label(variant)} download example`}><Download aria-hidden="true" /></Button>
+          <Button variant={variant} iconOnly disabled aria-label={`${label(variant)} download example, disabled`}><Download aria-hidden="true" /></Button>
+        </div>)}
+      </div>
+      <p class="text-caption muted">These are component specimens; download actions will be connected with the library.</p>
+      <h3 class="text-h6">Size variants · MD is the default</h3>
+      <div class="size-examples">
+        {sizes.map(([size, height]) => <div class="size-example">
+          <p class="text-caption muted">{size.toUpperCase()} · {height}px</p>
+          <div class="button-row">
+            {variants.map(variant => <Button variant={variant} size={size}>{label(variant)}</Button>)}
+          </div>
+          <div class="button-row">
+            <Button variant="primary" size={size} iconOnly aria-label={`Primary download ${size}`}><Download aria-hidden="true" /></Button>
+            <Button variant="secondary" size={size} iconOnly aria-label={`Secondary download ${size}`}><Download aria-hidden="true" /></Button>
+            <Button variant="secondary" size={size}><Download slot="leading-icon" aria-hidden="true" />With icon</Button>
+            <Button size={size} disabled>Disabled</Button>
+          </div>
+        </div>)}
+      </div>
+    </section>
+    <section aria-labelledby="spacing-title">
+      <h2 id="spacing-title" class="text-h4">04 / Spacing & radius</h2>
+      <div class="spacing-list">{[4,8,12,16,24,32,48,64].map(size => <div class="spacing-item"><span class="text-caption muted">{size}px</span><span style={`width:var(--space-${size / 2})`} class="spacing-bar"></span></div>)}</div>
+      <p class="text-body-sm muted">2px spacing scale · Full button radius · responsive page gutters</p>
+    </section>
+  </main>
+</BaseLayout>
+<style>
+  .specimen { padding-block: var(--space-32); }
+  header, section { display: grid; gap: var(--space-12); }
+  header { padding-bottom: var(--space-32); }
+  header > p, .muted { color: var(--text-secondary); }
+  section { padding-block: var(--space-24); border-top: 1px solid var(--border-subtle); }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: var(--space-12); }
+  .swatch { display: grid; gap: var(--space-4); }
+  .swatch-fill { height: var(--space-48); border: 1px solid var(--border-default); border-radius: var(--radius-4); }
+  code { overflow-wrap: anywhere; }
+  .type-sample { display: grid; gap: var(--space-8); padding: var(--space-12); background: var(--surface-card); border-radius: var(--radius-6); }
+  .type-scale { display: grid; gap: var(--space-8); }
+  .button-examples { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: var(--space-12); }
+  .button-example { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-6); }
+  .button-row { display: flex; flex-wrap: wrap; gap: var(--button-group-gap); }
+  .size-examples { display: grid; gap: var(--space-12); }
+  .size-example { display: grid; gap: var(--space-8); padding: var(--space-12); background: var(--surface-card); border-radius: var(--radius-6); }
+  .spacing-list { display: grid; gap: var(--space-4); }
+  .spacing-item { display: flex; align-items: center; gap: var(--space-8); }
+  .spacing-item > span:first-child { width: var(--space-24); }
+  .spacing-bar { height: var(--space-6); background: var(--color-accent); border-radius: var(--radius-1); }
+</style>
+

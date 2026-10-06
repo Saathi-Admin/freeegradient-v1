@@ -1,0 +1,24 @@
+---
+import { ArrowUpRight } from '@lucide/astro';
+---
+<section class="section container playground-showcase" id="try-playground" aria-labelledby="playground-showcase-title">
+  <div class="section-heading"><h2 id="playground-showcase-title">See your gradient.<br /><span class="text-serif-italic">In a real layout.</span></h2><p class="text-body-md">Try colours on landing pages, cards and footers. Find your perfect fit.</p></div>
+  <div class="playground-showcase-frame">
+    <iframe src="/playground/?embed=1" title="Interactive gradient playground preview" loading="lazy" width="1280" height="800"></iframe>
+  </div>
+  <div class="section-link"><a class="btn btn-primary btn-md" href="/playground/">Open the playground<ArrowUpRight aria-hidden="true" /></a></div>
+</section>
+<style>
+  .playground-showcase-frame { position: relative; width: 100%; aspect-ratio: 1280 / 800; border-radius: var(--gradient-card-radius); border: 1px solid var(--border-subtle); overflow: hidden; background: var(--surface-canvas); }
+  iframe { display: block; position: absolute; inset: 0; width: 1280px; height: 800px; border: 0; transform-origin: top left; }
+  @media (max-width: 639px) { .playground-showcase-frame { border-radius: var(--radius-8); } }
+</style>
+<script>
+  const frame = document.querySelector<HTMLElement>('.playground-showcase-frame');
+  const iframe = frame?.querySelector<HTMLIFrameElement>('iframe');
+  if (frame && iframe) {
+    const fit = () => { iframe.style.transform = `scale(${frame.clientWidth / 1280})`; };
+    new ResizeObserver(fit).observe(frame);
+    fit();
+  }
+</script>
