@@ -1,0 +1,20 @@
+/* FreeeGradients: Tidal mist only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tidal-mist-01: radial-gradient(ellipse 50% 62% at 95% 68%,#d5ebee99 0%,#d5ebee5c 40%,#d5ebee00 100%),radial-gradient(ellipse 58% 43% at 75% 102%,#eadee9b3 0%,#eadee96b 40%,#eadee900 100%),radial-gradient(ellipse 76% 45% at 25% 37%,#063d48e6 0%,#063d488a 40%,#063d4800 100%),linear-gradient(180deg,#063d48 0%,#137885 38%,#d5ebee 93%),linear-gradient(#063d48,#063d48);
+  --fg-tidal-mist-02: radial-gradient(ellipse 50% 62% at 95% 68%,#a363ef99 0%,#a363ef5c 40%,#a363ef00 100%),radial-gradient(ellipse 58% 43% at 75% 102%,#eacbf9b3 0%,#eacbf96b 40%,#eacbf900 100%),radial-gradient(ellipse 76% 45% at 25% 37%,#0c0923e6 0%,#0c09238a 40%,#0c092300 100%),linear-gradient(180deg,#0c0923 0%,#5835d4 38%,#a363ef 93%),linear-gradient(#0c0923,#0c0923);
+  --fg-tidal-mist-03: radial-gradient(ellipse 50% 62% at 95% 68%,#46d7c599 0%,#46d7c55c 40%,#46d7c500 100%),radial-gradient(ellipse 58% 43% at 75% 102%,#b9f3e5b3 0%,#b9f3e56b 40%,#b9f3e500 100%),radial-gradient(ellipse 76% 45% at 25% 37%,#021917e6 0%,#0219178a 40%,#02191700 100%),linear-gradient(180deg,#021917 0%,#087c88 38%,#46d7c5 93%),linear-gradient(#021917,#021917);
+  --fg-tidal-mist-04: radial-gradient(ellipse 50% 62% at 95% 68%,#f3795799 0%,#f379575c 40%,#f3795700 100%),radial-gradient(ellipse 58% 43% at 75% 102%,#ffd0a0b3 0%,#ffd0a06b 40%,#ffd0a000 100%),radial-gradient(ellipse 76% 45% at 25% 37%,#210c13e6 0%,#210c138a 40%,#210c1300 100%),linear-gradient(180deg,#210c13 0%,#ca314d 38%,#f37957 93%),linear-gradient(#210c13,#210c13);
+  --fg-tidal-mist-05: radial-gradient(ellipse 50% 62% at 95% 68%,#9dddeb99 0%,#9dddeb5c 40%,#9dddeb00 100%),radial-gradient(ellipse 58% 43% at 75% 102%,#d4c5ecb3 0%,#d4c5ec6b 40%,#d4c5ec00 100%),radial-gradient(ellipse 76% 45% at 25% 37%,#f9fcffe6 0%,#f9fcff8a 40%,#f9fcff00 100%),linear-gradient(180deg,#f9fcff 0%,#508fe0 38%,#9dddeb 93%),linear-gradient(#f9fcff,#f9fcff);
+  --fg-tidal-mist-06: radial-gradient(ellipse 50% 62% at 95% 68%,#f5b8ce99 0%,#f5b8ce5c 40%,#f5b8ce00 100%),radial-gradient(ellipse 58% 43% at 75% 102%,#eadfd5b3 0%,#eadfd56b 40%,#eadfd500 100%),radial-gradient(ellipse 76% 45% at 25% 37%,#fff7f1e6 0%,#fff7f18a 40%,#fff7f100 100%),linear-gradient(180deg,#fff7f1 0%,#f09872 38%,#f5b8ce 93%),linear-gradient(#fff7f1,#fff7f1);
+  --fg-tidal-mist-07: radial-gradient(ellipse 50% 62% at 95% 68%,#bae4c699 0%,#bae4c65c 40%,#bae4c600 100%),radial-gradient(ellipse 58% 43% at 75% 102%,#d5e5a2b3 0%,#d5e5a26b 40%,#d5e5a200 100%),radial-gradient(ellipse 76% 45% at 25% 37%,#f6fbf4e6 0%,#f6fbf48a 40%,#f6fbf400 100%),linear-gradient(180deg,#f6fbf4 0%,#6ba891 38%,#bae4c6 93%),linear-gradient(#f6fbf4,#f6fbf4);
+  --fg-tidal-mist-08: radial-gradient(ellipse 50% 62% at 95% 68%,#edb4dd99 0%,#edb4dd5c 40%,#edb4dd00 100%),radial-gradient(ellipse 58% 43% at 75% 102%,#d6e5f4b3 0%,#d6e5f46b 40%,#d6e5f400 100%),radial-gradient(ellipse 76% 45% at 25% 37%,#faf4ffe6 0%,#faf4ff8a 40%,#faf4ff00 100%),linear-gradient(180deg,#faf4ff 0%,#ad80de 38%,#edb4dd 93%),linear-gradient(#faf4ff,#faf4ff);
+}
+.fg-tidal-mist-01 { background-color: #063d48; background-image: var(--fg-tidal-mist-01); }
+.fg-tidal-mist-02 { background-color: #0c0923; background-image: var(--fg-tidal-mist-02); }
+.fg-tidal-mist-03 { background-color: #021917; background-image: var(--fg-tidal-mist-03); }
+.fg-tidal-mist-04 { background-color: #210c13; background-image: var(--fg-tidal-mist-04); }
+.fg-tidal-mist-05 { background-color: #f9fcff; background-image: var(--fg-tidal-mist-05); }
+.fg-tidal-mist-06 { background-color: #fff7f1; background-image: var(--fg-tidal-mist-06); }
+.fg-tidal-mist-07 { background-color: #f6fbf4; background-image: var(--fg-tidal-mist-07); }
+.fg-tidal-mist-08 { background-color: #faf4ff; background-image: var(--fg-tidal-mist-08); }

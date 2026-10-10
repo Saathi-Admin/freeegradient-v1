@@ -1,0 +1,20 @@
+/* FreeeGradients: Forest floor only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-forest-floor-01: linear-gradient(225deg, #07152680 0%, #07152600 70%, #386ba840 100%), radial-gradient(ellipse 115% 19.5% at 60% 81%, #d7efffbf 0%, #d7efff00 100%), radial-gradient(ellipse 30% 115% at 40% 8%, #386ba8cc 0%, #386ba800 100%), linear-gradient(#071526, #071526);
+  --fg-forest-floor-02: linear-gradient(225deg, #0b191580 0%, #0b191500 70%, #547e6640 100%), radial-gradient(ellipse 115% 19.5% at 60% 81%, #aeb8a0bf 0%, #aeb8a000 100%), radial-gradient(ellipse 30% 115% at 40% 8%, #547e66cc 0%, #547e6600 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-forest-floor-03: linear-gradient(225deg, #1c101b80 0%, #1c101b00 70%, #813c6940 100%), radial-gradient(ellipse 115% 19.5% at 60% 81%, #e8a5c5bf 0%, #e8a5c500 100%), radial-gradient(ellipse 30% 115% at 40% 8%, #813c69cc 0%, #813c6900 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-forest-floor-04: linear-gradient(225deg, #25120e80 0%, #25120e00 70%, #ff5c3440 100%), radial-gradient(ellipse 115% 19.5% at 60% 81%, #f4c47cbf 0%, #f4c47c00 100%), radial-gradient(ellipse 30% 115% at 40% 8%, #ff5c34cc 0%, #ff5c3400 100%), linear-gradient(#25120e, #25120e);
+  --fg-forest-floor-05: linear-gradient(225deg, #f6fbff80 0%, #f6fbff00 70%, #d7efff40 100%), radial-gradient(ellipse 115% 19.5% at 60% 81%, #82b5debf 0%, #82b5de00 100%), radial-gradient(ellipse 30% 115% at 40% 8%, #d7efffcc 0%, #d7efff00 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-forest-floor-06: linear-gradient(225deg, #fafbf480 0%, #fafbf400 70%, #d9e4c740 100%), radial-gradient(ellipse 115% 19.5% at 60% 81%, #aeb8a0bf 0%, #aeb8a000 100%), radial-gradient(ellipse 30% 115% at 40% 8%, #d9e4c7cc 0%, #d9e4c700 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-forest-floor-07: linear-gradient(225deg, #fff6f780 0%, #fff6f700 70%, #f3cadb40 100%), radial-gradient(ellipse 115% 19.5% at 60% 81%, #bb9cddbf 0%, #bb9cdd00 100%), radial-gradient(ellipse 30% 115% at 40% 8%, #f3cadbcc 0%, #f3cadb00 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-forest-floor-08: linear-gradient(225deg, #fffbea80 0%, #fffbea00 70%, #e9f05640 100%), radial-gradient(ellipse 115% 19.5% at 60% 81%, #ffae87bf 0%, #ffae8700 100%), radial-gradient(ellipse 30% 115% at 40% 8%, #e9f056cc 0%, #e9f05600 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-forest-floor-01 { background-color: #071526; background-image: var(--fg-forest-floor-01); }
+.fg-forest-floor-02 { background-color: #0b1915; background-image: var(--fg-forest-floor-02); }
+.fg-forest-floor-03 { background-color: #1c101b; background-image: var(--fg-forest-floor-03); }
+.fg-forest-floor-04 { background-color: #25120e; background-image: var(--fg-forest-floor-04); }
+.fg-forest-floor-05 { background-color: #f6fbff; background-image: var(--fg-forest-floor-05); }
+.fg-forest-floor-06 { background-color: #fafbf4; background-image: var(--fg-forest-floor-06); }
+.fg-forest-floor-07 { background-color: #fff6f7; background-image: var(--fg-forest-floor-07); }
+.fg-forest-floor-08 { background-color: #fffbea; background-image: var(--fg-forest-floor-08); }

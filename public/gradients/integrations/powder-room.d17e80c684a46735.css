@@ -1,0 +1,20 @@
+/* FreeeGradients: Powder room only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-powder-room-01: radial-gradient(ellipse 40% 70% at 50% 74%, #071526a6 0%, #07152600 100%), radial-gradient(ellipse 28% 110% at 8% 42%, #d7efffb3 0%, #d7efff00 100%), radial-gradient(ellipse 110% 28% at 92% 58%, #386ba8cc 0%, #386ba800 100%), linear-gradient(#071526, #071526);
+  --fg-powder-room-02: radial-gradient(ellipse 40% 70% at 50% 74%, #0b1915a6 0%, #0b191500 100%), radial-gradient(ellipse 28% 110% at 8% 42%, #aeb8a0b3 0%, #aeb8a000 100%), radial-gradient(ellipse 110% 28% at 92% 58%, #547e66cc 0%, #547e6600 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-powder-room-03: radial-gradient(ellipse 40% 70% at 50% 74%, #1c101ba6 0%, #1c101b00 100%), radial-gradient(ellipse 28% 110% at 8% 42%, #e8a5c5b3 0%, #e8a5c500 100%), radial-gradient(ellipse 110% 28% at 92% 58%, #813c69cc 0%, #813c6900 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-powder-room-04: radial-gradient(ellipse 40% 70% at 50% 74%, #25120ea6 0%, #25120e00 100%), radial-gradient(ellipse 28% 110% at 8% 42%, #f4c47cb3 0%, #f4c47c00 100%), radial-gradient(ellipse 110% 28% at 92% 58%, #ff5c34cc 0%, #ff5c3400 100%), linear-gradient(#25120e, #25120e);
+  --fg-powder-room-05: radial-gradient(ellipse 40% 70% at 50% 74%, #f6fbffa6 0%, #f6fbff00 100%), radial-gradient(ellipse 28% 110% at 8% 42%, #82b5deb3 0%, #82b5de00 100%), radial-gradient(ellipse 110% 28% at 92% 58%, #d7efffcc 0%, #d7efff00 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-powder-room-06: radial-gradient(ellipse 40% 70% at 50% 74%, #fafbf4a6 0%, #fafbf400 100%), radial-gradient(ellipse 28% 110% at 8% 42%, #aeb8a0b3 0%, #aeb8a000 100%), radial-gradient(ellipse 110% 28% at 92% 58%, #d9e4c7cc 0%, #d9e4c700 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-powder-room-07: radial-gradient(ellipse 40% 70% at 50% 74%, #fff6f7a6 0%, #fff6f700 100%), radial-gradient(ellipse 28% 110% at 8% 42%, #bb9cddb3 0%, #bb9cdd00 100%), radial-gradient(ellipse 110% 28% at 92% 58%, #f3cadbcc 0%, #f3cadb00 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-powder-room-08: radial-gradient(ellipse 40% 70% at 50% 74%, #fffbeaa6 0%, #fffbea00 100%), radial-gradient(ellipse 28% 110% at 8% 42%, #ffae87b3 0%, #ffae8700 100%), radial-gradient(ellipse 110% 28% at 92% 58%, #e9f056cc 0%, #e9f05600 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-powder-room-01 { background-color: #071526; background-image: var(--fg-powder-room-01); }
+.fg-powder-room-02 { background-color: #0b1915; background-image: var(--fg-powder-room-02); }
+.fg-powder-room-03 { background-color: #1c101b; background-image: var(--fg-powder-room-03); }
+.fg-powder-room-04 { background-color: #25120e; background-image: var(--fg-powder-room-04); }
+.fg-powder-room-05 { background-color: #f6fbff; background-image: var(--fg-powder-room-05); }
+.fg-powder-room-06 { background-color: #fafbf4; background-image: var(--fg-powder-room-06); }
+.fg-powder-room-07 { background-color: #fff6f7; background-image: var(--fg-powder-room-07); }
+.fg-powder-room-08 { background-color: #fffbea; background-image: var(--fg-powder-room-08); }

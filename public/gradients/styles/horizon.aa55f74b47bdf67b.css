@@ -1,0 +1,20 @@
+/* FreeeGradients: Horizon only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-horizon-01: url("../assets/horizon-01.9bcedfad74f78fa0.webp");
+  --fg-horizon-02: url("../assets/horizon-02.de720895c6f6192b.webp");
+  --fg-horizon-03: url("../assets/horizon-03.5c8bc485bc7ca6f9.webp");
+  --fg-horizon-04: url("../assets/horizon-04.0ce85e23758e78de.webp");
+  --fg-horizon-05: url("../assets/horizon-05.90b5239f7d69f63c.webp");
+  --fg-horizon-06: url("../assets/horizon-06.9d98227276bff54e.webp");
+  --fg-horizon-07: url("../assets/horizon-07.b6cb86f1fd45419f.webp");
+  --fg-horizon-08: url("../assets/horizon-08.b12c992257a49d96.webp");
+}
+.fg-horizon-01 { background-image: var(--fg-horizon-01); }
+.fg-horizon-02 { background-image: var(--fg-horizon-02); }
+.fg-horizon-03 { background-image: var(--fg-horizon-03); }
+.fg-horizon-04 { background-image: var(--fg-horizon-04); }
+.fg-horizon-05 { background-image: var(--fg-horizon-05); }
+.fg-horizon-06 { background-image: var(--fg-horizon-06); }
+.fg-horizon-07 { background-image: var(--fg-horizon-07); }
+.fg-horizon-08 { background-image: var(--fg-horizon-08); }

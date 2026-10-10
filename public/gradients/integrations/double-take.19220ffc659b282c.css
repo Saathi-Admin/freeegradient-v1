@@ -1,0 +1,20 @@
+/* FreeeGradients: Double take only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-double-take-01: radial-gradient(ellipse 60% 64% at 30% 62%, #071526a6 0%, #07152600 100%), linear-gradient(315deg, #386ba8 0%, #386ba8 40%, #d7efff 67%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-double-take-02: radial-gradient(ellipse 60% 64% at 30% 62%, #0b1915a6 0%, #0b191500 100%), linear-gradient(315deg, #547e66 0%, #547e66 40%, #aeb8a0 67%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-double-take-03: radial-gradient(ellipse 60% 64% at 30% 62%, #1c101ba6 0%, #1c101b00 100%), linear-gradient(315deg, #813c69 0%, #813c69 40%, #e8a5c5 67%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-double-take-04: radial-gradient(ellipse 60% 64% at 30% 62%, #25120ea6 0%, #25120e00 100%), linear-gradient(315deg, #ff5c34 0%, #ff5c34 40%, #f4c47c 67%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-double-take-05: radial-gradient(ellipse 60% 64% at 30% 62%, #f6fbffa6 0%, #f6fbff00 100%), linear-gradient(315deg, #d7efff 0%, #d7efff 40%, #82b5de 67%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-double-take-06: radial-gradient(ellipse 60% 64% at 30% 62%, #fafbf4a6 0%, #fafbf400 100%), linear-gradient(315deg, #d9e4c7 0%, #d9e4c7 40%, #aeb8a0 67%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-double-take-07: radial-gradient(ellipse 60% 64% at 30% 62%, #fff6f7a6 0%, #fff6f700 100%), linear-gradient(315deg, #f3cadb 0%, #f3cadb 40%, #bb9cdd 67%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-double-take-08: radial-gradient(ellipse 60% 64% at 30% 62%, #fffbeaa6 0%, #fffbea00 100%), linear-gradient(315deg, #e9f056 0%, #e9f056 40%, #ffae87 67%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-double-take-01 { background-color: #071526; background-image: var(--fg-double-take-01); }
+.fg-double-take-02 { background-color: #0b1915; background-image: var(--fg-double-take-02); }
+.fg-double-take-03 { background-color: #1c101b; background-image: var(--fg-double-take-03); }
+.fg-double-take-04 { background-color: #25120e; background-image: var(--fg-double-take-04); }
+.fg-double-take-05 { background-color: #f6fbff; background-image: var(--fg-double-take-05); }
+.fg-double-take-06 { background-color: #fafbf4; background-image: var(--fg-double-take-06); }
+.fg-double-take-07 { background-color: #fff6f7; background-image: var(--fg-double-take-07); }
+.fg-double-take-08 { background-color: #fffbea; background-image: var(--fg-double-take-08); }

@@ -1,0 +1,20 @@
+/* FreeeGradients: Angular cascade 05 only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-angular-cascade-05-01: linear-gradient(127deg, #07152600 0%, #d7efff99 35%, #386ba8b3 60%, #07152600 100%), radial-gradient(ellipse 26% 37% at 47.1% 44.5%, #d7efff40 0%, #d7efff00 100%), conic-gradient(from 12deg at 47.1% 44.5%, #071526 0deg, #386ba8 120deg, #d7efff 240deg, #071526 360deg), linear-gradient(#071526, #071526);
+  --fg-angular-cascade-05-02: linear-gradient(127deg, #0b191500 0%, #aeb8a099 35%, #547e66b3 60%, #0b191500 100%), radial-gradient(ellipse 26% 37% at 47.1% 44.5%, #aeb8a040 0%, #aeb8a000 100%), conic-gradient(from 12deg at 47.1% 44.5%, #0b1915 0deg, #547e66 120deg, #aeb8a0 240deg, #0b1915 360deg), linear-gradient(#0b1915, #0b1915);
+  --fg-angular-cascade-05-03: linear-gradient(127deg, #1c101b00 0%, #e8a5c599 35%, #813c69b3 60%, #1c101b00 100%), radial-gradient(ellipse 26% 37% at 47.1% 44.5%, #e8a5c540 0%, #e8a5c500 100%), conic-gradient(from 12deg at 47.1% 44.5%, #1c101b 0deg, #813c69 120deg, #e8a5c5 240deg, #1c101b 360deg), linear-gradient(#1c101b, #1c101b);
+  --fg-angular-cascade-05-04: linear-gradient(127deg, #25120e00 0%, #f4c47c99 35%, #ff5c34b3 60%, #25120e00 100%), radial-gradient(ellipse 26% 37% at 47.1% 44.5%, #f4c47c40 0%, #f4c47c00 100%), conic-gradient(from 12deg at 47.1% 44.5%, #25120e 0deg, #ff5c34 120deg, #f4c47c 240deg, #25120e 360deg), linear-gradient(#25120e, #25120e);
+  --fg-angular-cascade-05-05: linear-gradient(127deg, #f6fbff00 0%, #82b5de99 35%, #d7efffb3 60%, #f6fbff00 100%), radial-gradient(ellipse 26% 37% at 47.1% 44.5%, #82b5de40 0%, #82b5de00 100%), conic-gradient(from 12deg at 47.1% 44.5%, #f6fbff 0deg, #d7efff 120deg, #82b5de 240deg, #f6fbff 360deg), linear-gradient(#f6fbff, #f6fbff);
+  --fg-angular-cascade-05-06: linear-gradient(127deg, #fafbf400 0%, #aeb8a099 35%, #d9e4c7b3 60%, #fafbf400 100%), radial-gradient(ellipse 26% 37% at 47.1% 44.5%, #aeb8a040 0%, #aeb8a000 100%), conic-gradient(from 12deg at 47.1% 44.5%, #fafbf4 0deg, #d9e4c7 120deg, #aeb8a0 240deg, #fafbf4 360deg), linear-gradient(#fafbf4, #fafbf4);
+  --fg-angular-cascade-05-07: linear-gradient(127deg, #fff6f700 0%, #bb9cdd99 35%, #f3cadbb3 60%, #fff6f700 100%), radial-gradient(ellipse 26% 37% at 47.1% 44.5%, #bb9cdd40 0%, #bb9cdd00 100%), conic-gradient(from 12deg at 47.1% 44.5%, #fff6f7 0deg, #f3cadb 120deg, #bb9cdd 240deg, #fff6f7 360deg), linear-gradient(#fff6f7, #fff6f7);
+  --fg-angular-cascade-05-08: linear-gradient(127deg, #fffbea00 0%, #ffae8799 35%, #e9f056b3 60%, #fffbea00 100%), radial-gradient(ellipse 26% 37% at 47.1% 44.5%, #ffae8740 0%, #ffae8700 100%), conic-gradient(from 12deg at 47.1% 44.5%, #fffbea 0deg, #e9f056 120deg, #ffae87 240deg, #fffbea 360deg), linear-gradient(#fffbea, #fffbea);
+}
+.fg-angular-cascade-05-01 { background-color: #071526; background-image: var(--fg-angular-cascade-05-01); }
+.fg-angular-cascade-05-02 { background-color: #0b1915; background-image: var(--fg-angular-cascade-05-02); }
+.fg-angular-cascade-05-03 { background-color: #1c101b; background-image: var(--fg-angular-cascade-05-03); }
+.fg-angular-cascade-05-04 { background-color: #25120e; background-image: var(--fg-angular-cascade-05-04); }
+.fg-angular-cascade-05-05 { background-color: #f6fbff; background-image: var(--fg-angular-cascade-05-05); }
+.fg-angular-cascade-05-06 { background-color: #fafbf4; background-image: var(--fg-angular-cascade-05-06); }
+.fg-angular-cascade-05-07 { background-color: #fff6f7; background-image: var(--fg-angular-cascade-05-07); }
+.fg-angular-cascade-05-08 { background-color: #fffbea; background-image: var(--fg-angular-cascade-05-08); }

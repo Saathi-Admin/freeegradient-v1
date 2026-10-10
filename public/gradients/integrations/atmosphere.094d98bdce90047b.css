@@ -1,0 +1,20 @@
+/* FreeeGradients: Atmosphere only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-atmosphere-01: url("../assets/atmosphere-01.f318681761c7d608.webp");
+  --fg-atmosphere-02: url("../assets/atmosphere-02.408422ca84252d3d.webp");
+  --fg-atmosphere-03: url("../assets/atmosphere-03.d9f99320a0fc53c8.webp");
+  --fg-atmosphere-04: url("../assets/atmosphere-04.e96dff427b1b2b60.webp");
+  --fg-atmosphere-05: url("../assets/atmosphere-05.614f91ce3177353c.webp");
+  --fg-atmosphere-06: url("../assets/atmosphere-06.47c3acad65447abc.webp");
+  --fg-atmosphere-07: url("../assets/atmosphere-07.f54ccb15f9fad505.webp");
+  --fg-atmosphere-08: url("../assets/atmosphere-08.5332ac3ce93488fc.webp");
+}
+.fg-atmosphere-01 { background-image: var(--fg-atmosphere-01); }
+.fg-atmosphere-02 { background-image: var(--fg-atmosphere-02); }
+.fg-atmosphere-03 { background-image: var(--fg-atmosphere-03); }
+.fg-atmosphere-04 { background-image: var(--fg-atmosphere-04); }
+.fg-atmosphere-05 { background-image: var(--fg-atmosphere-05); }
+.fg-atmosphere-06 { background-image: var(--fg-atmosphere-06); }
+.fg-atmosphere-07 { background-image: var(--fg-atmosphere-07); }
+.fg-atmosphere-08 { background-image: var(--fg-atmosphere-08); }

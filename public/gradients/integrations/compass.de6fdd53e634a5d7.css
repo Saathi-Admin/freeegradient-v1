@@ -1,0 +1,20 @@
+/* FreeeGradients: Compass only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-compass-01: radial-gradient(ellipse 48% 18% at 12% 28%, #d7efff40 0%, #d7efff00 100%), conic-gradient(from 45deg at 12% 28%, #071526 0deg, #386ba8 120deg, #d7efff 240deg, #071526 360deg), linear-gradient(#071526, #071526);
+  --fg-compass-02: radial-gradient(ellipse 48% 18% at 12% 28%, #aeb8a040 0%, #aeb8a000 100%), conic-gradient(from 45deg at 12% 28%, #0b1915 0deg, #547e66 120deg, #aeb8a0 240deg, #0b1915 360deg), linear-gradient(#0b1915, #0b1915);
+  --fg-compass-03: radial-gradient(ellipse 48% 18% at 12% 28%, #e8a5c540 0%, #e8a5c500 100%), conic-gradient(from 45deg at 12% 28%, #1c101b 0deg, #813c69 120deg, #e8a5c5 240deg, #1c101b 360deg), linear-gradient(#1c101b, #1c101b);
+  --fg-compass-04: radial-gradient(ellipse 48% 18% at 12% 28%, #f4c47c40 0%, #f4c47c00 100%), conic-gradient(from 45deg at 12% 28%, #25120e 0deg, #ff5c34 120deg, #f4c47c 240deg, #25120e 360deg), linear-gradient(#25120e, #25120e);
+  --fg-compass-05: radial-gradient(ellipse 48% 18% at 12% 28%, #82b5de40 0%, #82b5de00 100%), conic-gradient(from 45deg at 12% 28%, #f6fbff 0deg, #d7efff 120deg, #82b5de 240deg, #f6fbff 360deg), linear-gradient(#f6fbff, #f6fbff);
+  --fg-compass-06: radial-gradient(ellipse 48% 18% at 12% 28%, #aeb8a040 0%, #aeb8a000 100%), conic-gradient(from 45deg at 12% 28%, #fafbf4 0deg, #d9e4c7 120deg, #aeb8a0 240deg, #fafbf4 360deg), linear-gradient(#fafbf4, #fafbf4);
+  --fg-compass-07: radial-gradient(ellipse 48% 18% at 12% 28%, #bb9cdd40 0%, #bb9cdd00 100%), conic-gradient(from 45deg at 12% 28%, #fff6f7 0deg, #f3cadb 120deg, #bb9cdd 240deg, #fff6f7 360deg), linear-gradient(#fff6f7, #fff6f7);
+  --fg-compass-08: radial-gradient(ellipse 48% 18% at 12% 28%, #ffae8740 0%, #ffae8700 100%), conic-gradient(from 45deg at 12% 28%, #fffbea 0deg, #e9f056 120deg, #ffae87 240deg, #fffbea 360deg), linear-gradient(#fffbea, #fffbea);
+}
+.fg-compass-01 { background-image: var(--fg-compass-01); }
+.fg-compass-02 { background-image: var(--fg-compass-02); }
+.fg-compass-03 { background-image: var(--fg-compass-03); }
+.fg-compass-04 { background-image: var(--fg-compass-04); }
+.fg-compass-05 { background-image: var(--fg-compass-05); }
+.fg-compass-06 { background-image: var(--fg-compass-06); }
+.fg-compass-07 { background-image: var(--fg-compass-07); }
+.fg-compass-08 { background-image: var(--fg-compass-08); }

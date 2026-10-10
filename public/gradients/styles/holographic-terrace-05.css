@@ -1,0 +1,20 @@
+/* FreeeGradients: Holographic terrace 05 only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-holographic-terrace-05-01: radial-gradient(ellipse 26% 92% at 45% 46%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(304deg, #07152600 0%, #a1f4da8c 28%, #f4abdf8c 60%, #07152600 100%), linear-gradient(214deg, #071526 0%, #386ba8 23%, #d7efff 47%, #386ba8 72%, #071526 100%), linear-gradient(#071526, #071526);
+  --fg-holographic-terrace-05-02: radial-gradient(ellipse 26% 92% at 45% 46%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(304deg, #0b191500 0%, #a1f4da8c 28%, #f4abdf8c 60%, #0b191500 100%), linear-gradient(214deg, #0b1915 0%, #547e66 23%, #aeb8a0 47%, #547e66 72%, #0b1915 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-holographic-terrace-05-03: radial-gradient(ellipse 26% 92% at 45% 46%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(304deg, #1c101b00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #1c101b00 100%), linear-gradient(214deg, #1c101b 0%, #813c69 23%, #e8a5c5 47%, #813c69 72%, #1c101b 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-holographic-terrace-05-04: radial-gradient(ellipse 26% 92% at 45% 46%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(304deg, #25120e00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #25120e00 100%), linear-gradient(214deg, #25120e 0%, #ff5c34 23%, #f4c47c 47%, #ff5c34 72%, #25120e 100%), linear-gradient(#25120e, #25120e);
+  --fg-holographic-terrace-05-05: radial-gradient(ellipse 26% 92% at 45% 46%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(304deg, #f6fbff00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #f6fbff00 100%), linear-gradient(214deg, #f6fbff 0%, #d7efff 23%, #82b5de 47%, #d7efff 72%, #f6fbff 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-holographic-terrace-05-06: radial-gradient(ellipse 26% 92% at 45% 46%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(304deg, #fafbf400 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fafbf400 100%), linear-gradient(214deg, #fafbf4 0%, #d9e4c7 23%, #aeb8a0 47%, #d9e4c7 72%, #fafbf4 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-holographic-terrace-05-07: radial-gradient(ellipse 26% 92% at 45% 46%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(304deg, #fff6f700 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fff6f700 100%), linear-gradient(214deg, #fff6f7 0%, #f3cadb 23%, #bb9cdd 47%, #f3cadb 72%, #fff6f7 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-holographic-terrace-05-08: radial-gradient(ellipse 26% 92% at 45% 46%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(304deg, #fffbea00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fffbea00 100%), linear-gradient(214deg, #fffbea 0%, #e9f056 23%, #ffae87 47%, #e9f056 72%, #fffbea 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-holographic-terrace-05-01 { background-color: #071526; background-image: var(--fg-holographic-terrace-05-01); }
+.fg-holographic-terrace-05-02 { background-color: #0b1915; background-image: var(--fg-holographic-terrace-05-02); }
+.fg-holographic-terrace-05-03 { background-color: #1c101b; background-image: var(--fg-holographic-terrace-05-03); }
+.fg-holographic-terrace-05-04 { background-color: #25120e; background-image: var(--fg-holographic-terrace-05-04); }
+.fg-holographic-terrace-05-05 { background-color: #f6fbff; background-image: var(--fg-holographic-terrace-05-05); }
+.fg-holographic-terrace-05-06 { background-color: #fafbf4; background-image: var(--fg-holographic-terrace-05-06); }
+.fg-holographic-terrace-05-07 { background-color: #fff6f7; background-image: var(--fg-holographic-terrace-05-07); }
+.fg-holographic-terrace-05-08 { background-color: #fffbea; background-image: var(--fg-holographic-terrace-05-08); }

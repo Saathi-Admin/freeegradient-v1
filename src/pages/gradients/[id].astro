@@ -5,7 +5,7 @@ import Header from '../../components/Header.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import GradientPreview from '../../components/GradientPreview.astro';
 import Button from '../../components/ui/Button.astro';
-import { Code, Download, Sun, Moon, Hash, ArrowUpRight } from '@lucide/astro';
+import { Code, Copy, Download, Sun, Moon, Hash, ArrowUpRight } from '@lucide/astro';
 import { gradients } from '../../data/gradients';
 import { collections } from '../../data/collections';
 import '../../styles/library.css';
@@ -14,20 +14,28 @@ export function getStaticPaths() {
 }
 const { gradient, variation } = Astro.props;
 const collection = collections.find(c => c.id === gradient.category)!;
+const primary = gradient.variations[0].id === variation.id;
+const related = gradients.filter(g=>g.category===gradient.category && g.slug!==gradient.slug).slice(0,4);
 
 ---
-<BaseLayout title={`${gradient.name} — ${variation.name} gradient | FreeeGradients`} description={`Download ${variation.name}, a ${variation.mode} ${gradient.name} gradient, free as CSS, SVG, PNG or JPEG. No sign-up required.`}>
+<BaseLayout canonicalPath={`/gradients/${gradient.variations[0].id}/`} image={variation.thumbnail} title={primary ? `${gradient.name} CSS Gradient — ${gradient.variations.length} Colour Variations | FreeeGradients` : `${gradient.name} — ${variation.name} gradient | FreeeGradients`} description={primary ? `${gradient.name}: a ${collection.title.toLowerCase()} background with ${gradient.variations.length} light and dark colour variations. Copy CSS, preview a real layout or download SVG, PNG and JPEG. No sign-up.` : `Download ${variation.name}, a ${variation.mode} ${gradient.name} gradient, free as CSS, SVG, PNG or JPEG. No sign-up required.`}>
   <Header />
   <main id="main-content" class="gradient-detail container">
     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Collections', href: '/collections/' }, { label: collection.title, href: `/collections/${collection.id}/` }, { label: variation.id }]} />
     <article class="gradient-card gradient-detail-layout" data-template={gradient.slug} data-variation={variation.id} data-fixed-variation={variation.id}>
-      <div class="gradient-detail-preview"><img src={variation.src} alt={`${gradient.name}, ${variation.name} gradient`} width="1600" height="900" fetchpriority="high" decoding="async" /></div>
+      <div class="gradient-detail-preview"><img src={variation.backgroundSrc ?? variation.src} alt={`${gradient.name}, ${variation.name} gradient`} width="1600" height="900" fetchpriority="high" decoding="async" /></div>
       <div class="gradient-detail-info">
         <div class="gradient-detail-heading">
           <h1 class="text-h2">{gradient.name}</h1>
           <div class="gradient-detail-meta text-caption"><a class="gradient-meta-chip gradient-collection-chip" href={`/collections/${collection.id}/`}>Collection: {collection.title}</a><span class="gradient-meta-chip"><Hash size={14} aria-hidden="true" /><span class="card-id">{variation.id}</span></span><span class="gradient-meta-chip">{variation.mode === 'light' ? <Sun size={14} aria-hidden="true" /> : <Moon size={14} aria-hidden="true" />}For {variation.mode} mode</span></div>
         </div>
-        <div class="gradient-detail-colours"><h2 class="text-body-sm gradient-variations-title">More colour variations</h2><div class="gradient-variation-links">{gradient.variations.map(v => <a class="palette-swatch" style={`--swatch:url("${v.src}")`} href={`/gradients/${v.id}/`} aria-label={`${v.name}, ${v.mode} designs`} aria-current={v.id === variation.id ? 'page' : undefined} title={v.name}></a>)}</div></div>
+        <div class="gradient-detail-colours"><h2 class="text-body-sm gradient-variations-title">More colour variations</h2><div class="gradient-variation-links">{gradient.variations.map(v => <a class="palette-swatch" style={`--swatch:url("${v.thumbnail}")`} href={`/gradients/${v.id}/`} aria-label={`${v.name}, ${v.mode} designs`} aria-current={v.id === variation.id ? 'page' : undefined} title={v.name}></a>)}</div></div>
+        <div class="gradient-hex" aria-label="Gradient colours">{variation.colors.map(colour=><button type="button" data-copy-class={colour} aria-label={`Copy colour ${colour}`}><span style={`background:${colour}`} /><code>{colour}</code></button>)}</div>
+        <div class="gradient-install">
+          <div class="gradient-install-heading"><h2 class="text-body-sm">Use with a class</h2><Button size="sm" variant="secondary" data-copy-stylesheet={gradient.stylesheet}><Copy slot="leading-icon" aria-hidden="true" />Copy stylesheet link</Button></div>
+          <button class="gradient-class-copy" type="button" data-copy-class={`fg-gradient fg-${variation.id}`} aria-label={`Copy HTML classes for ${variation.id}`}><code>fg-gradient fg-{variation.id}</code><span class="text-caption"><Copy size={16} aria-hidden="true" />Copy class</span></button>
+          <p class="text-caption">Link once in your HTML head. Add these classes to your element.</p>
+        </div>
         <div class="gradient-detail-downloads">
           <Button size="md" variant="secondary" data-action="css"><Code slot="leading-icon" aria-hidden="true" />Copy CSS</Button>
           {(['svg', 'png', 'jpeg'] as const).map(format => <Button size="md" variant="secondary" data-action={format}><Download slot="leading-icon" aria-hidden="true" />{format.toUpperCase()}</Button>)}
@@ -35,9 +43,21 @@ const collection = collections.find(c => c.id === gradient.category)!;
         </div>
       </div>
     </article>
+    {primary && <nav class="gradient-related" aria-label="Related gradient templates"><h2 class="text-body-sm">More {collection.title.toLowerCase()} gradients</h2>{related.map(g=><a href={`/gradients/${g.variations[0].id}/`}>{g.name}</a>)}<a href="/guides/use-css-gradients/">How to use CSS gradients</a></nav>}
     <div id="library-empty" hidden></div>
   </main>
   <Footer />
-  <GradientPreview />
+  <GradientPreview templates={[gradient]} />
   <script>import '../../scripts/library';</script>
 </BaseLayout>
+<style>
+  .gradient-hex{display:flex;flex-wrap:wrap;gap:var(--space-4)}.gradient-hex button{display:flex;align-items:center;gap:var(--space-4);background:var(--surface-card);color:var(--text-secondary);border:0;border-radius:var(--radius-full);padding:var(--space-4) var(--space-8);cursor:pointer;font-size:12px}.gradient-hex span{width:14px;height:14px;border-radius:50%}.gradient-related{display:flex;flex-wrap:wrap;gap:var(--space-8);margin-top:var(--space-16);color:var(--text-secondary)}.gradient-related h2{width:100%}.gradient-related a{color:var(--text-secondary)}
+
+  .gradient-install { padding: var(--space-8); border-radius: var(--radius-12); background: var(--surface-card); display: grid; gap: var(--space-4); min-width: 0; }
+  .gradient-install-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); }
+  .gradient-install-heading .btn { font-size: var(--font-size-12); }
+  .gradient-class-copy { appearance: none; width: 100%; min-width: 0; border: 0; border-radius: var(--radius-4); background: var(--surface-canvas); color: var(--text-primary); padding: var(--space-6) var(--space-8); cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); text-align: left; }
+  .gradient-class-copy code { font-size: var(--font-size-12); overflow-wrap: anywhere; min-width: 0; }
+  .gradient-class-copy span { display: flex; align-items: center; gap: var(--space-3); flex-shrink: 0; }
+  .gradient-install p { color: var(--text-secondary); }
+</style>

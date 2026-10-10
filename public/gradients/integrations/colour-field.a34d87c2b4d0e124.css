@@ -1,0 +1,20 @@
+/* FreeeGradients: Colour field only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-colour-field-01: radial-gradient(ellipse 34% 42% at 50% 50%, #071526a6 0%, #07152600 100%), linear-gradient(135deg, #386ba8 0%, #386ba8 20%, #d7efff 82%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-colour-field-02: radial-gradient(ellipse 34% 42% at 50% 50%, #0b1915a6 0%, #0b191500 100%), linear-gradient(135deg, #547e66 0%, #547e66 20%, #aeb8a0 82%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-colour-field-03: radial-gradient(ellipse 34% 42% at 50% 50%, #1c101ba6 0%, #1c101b00 100%), linear-gradient(135deg, #813c69 0%, #813c69 20%, #e8a5c5 82%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-colour-field-04: radial-gradient(ellipse 34% 42% at 50% 50%, #25120ea6 0%, #25120e00 100%), linear-gradient(135deg, #ff5c34 0%, #ff5c34 20%, #f4c47c 82%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-colour-field-05: radial-gradient(ellipse 34% 42% at 50% 50%, #f6fbffa6 0%, #f6fbff00 100%), linear-gradient(135deg, #d7efff 0%, #d7efff 20%, #82b5de 82%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-colour-field-06: radial-gradient(ellipse 34% 42% at 50% 50%, #fafbf4a6 0%, #fafbf400 100%), linear-gradient(135deg, #d9e4c7 0%, #d9e4c7 20%, #aeb8a0 82%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-colour-field-07: radial-gradient(ellipse 34% 42% at 50% 50%, #fff6f7a6 0%, #fff6f700 100%), linear-gradient(135deg, #f3cadb 0%, #f3cadb 20%, #bb9cdd 82%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-colour-field-08: radial-gradient(ellipse 34% 42% at 50% 50%, #fffbeaa6 0%, #fffbea00 100%), linear-gradient(135deg, #e9f056 0%, #e9f056 20%, #ffae87 82%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-colour-field-01 { background-image: var(--fg-colour-field-01); }
+.fg-colour-field-02 { background-image: var(--fg-colour-field-02); }
+.fg-colour-field-03 { background-image: var(--fg-colour-field-03); }
+.fg-colour-field-04 { background-image: var(--fg-colour-field-04); }
+.fg-colour-field-05 { background-image: var(--fg-colour-field-05); }
+.fg-colour-field-06 { background-image: var(--fg-colour-field-06); }
+.fg-colour-field-07 { background-image: var(--fg-colour-field-07); }
+.fg-colour-field-08 { background-image: var(--fg-colour-field-08); }

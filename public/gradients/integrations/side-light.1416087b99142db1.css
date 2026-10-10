@@ -1,0 +1,20 @@
+/* FreeeGradients: Side light only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-side-light-01: linear-gradient(180deg, #07152600 0%, #071526a6 100%), radial-gradient(ellipse 16% 54% at 72% 78%, #d7efffe6 0%, #d7efff00 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #386ba899 0%, #386ba800 100%), linear-gradient(#071526, #071526);
+  --fg-side-light-02: linear-gradient(180deg, #0b191500 0%, #0b1915a6 100%), radial-gradient(ellipse 16% 54% at 72% 78%, #aeb8a0e6 0%, #aeb8a000 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #547e6699 0%, #547e6600 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-side-light-03: linear-gradient(180deg, #1c101b00 0%, #1c101ba6 100%), radial-gradient(ellipse 16% 54% at 72% 78%, #e8a5c5e6 0%, #e8a5c500 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #813c6999 0%, #813c6900 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-side-light-04: linear-gradient(180deg, #25120e00 0%, #25120ea6 100%), radial-gradient(ellipse 16% 54% at 72% 78%, #f4c47ce6 0%, #f4c47c00 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #ff5c3499 0%, #ff5c3400 100%), linear-gradient(#25120e, #25120e);
+  --fg-side-light-05: linear-gradient(180deg, #f6fbff00 0%, #f6fbffa6 100%), radial-gradient(ellipse 16% 54% at 72% 78%, #82b5dee6 0%, #82b5de00 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #d7efff99 0%, #d7efff00 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-side-light-06: linear-gradient(180deg, #fafbf400 0%, #fafbf4a6 100%), radial-gradient(ellipse 16% 54% at 72% 78%, #aeb8a0e6 0%, #aeb8a000 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #d9e4c799 0%, #d9e4c700 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-side-light-07: linear-gradient(180deg, #fff6f700 0%, #fff6f7a6 100%), radial-gradient(ellipse 16% 54% at 72% 78%, #bb9cdde6 0%, #bb9cdd00 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #f3cadb99 0%, #f3cadb00 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-side-light-08: linear-gradient(180deg, #fffbea00 0%, #fffbeaa6 100%), radial-gradient(ellipse 16% 54% at 72% 78%, #ffae87e6 0%, #ffae8700 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #e9f05699 0%, #e9f05600 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-side-light-01 { background-color: #071526; background-image: var(--fg-side-light-01); }
+.fg-side-light-02 { background-color: #0b1915; background-image: var(--fg-side-light-02); }
+.fg-side-light-03 { background-color: #1c101b; background-image: var(--fg-side-light-03); }
+.fg-side-light-04 { background-color: #25120e; background-image: var(--fg-side-light-04); }
+.fg-side-light-05 { background-color: #f6fbff; background-image: var(--fg-side-light-05); }
+.fg-side-light-06 { background-color: #fafbf4; background-image: var(--fg-side-light-06); }
+.fg-side-light-07 { background-color: #fff6f7; background-image: var(--fg-side-light-07); }
+.fg-side-light-08 { background-color: #fffbea; background-image: var(--fg-side-light-08); }

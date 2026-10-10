@@ -1,5 +1,5 @@
-import { gradients } from '../data/gradients';
 import type { GradientTemplate, GradientVariation } from '../types/gradient';
+const gradients = JSON.parse(document.querySelector('#gradient-catalogue')?.textContent ?? '[]') as GradientTemplate[];
 
 const cards = [...document.querySelectorAll<HTMLElement>('.gradient-card')];
 cards.forEach(card => {
@@ -40,7 +40,7 @@ const variationFor = (card: HTMLElement) => {
 function updateCard(card: HTMLElement, variation: GradientVariation) {
   card.dataset.variation = variation.id;
   const image = card.querySelector<HTMLImageElement>('img')!;
-  image.src = variation.src;
+  image.src = variation.thumbnail;
   image.alt = `${variationFor(card).template.name}, ${variation.name} colour palette`;
   const previewLink = card.querySelector<HTMLAnchorElement>('a.card-preview');
   if (previewLink) {
@@ -94,14 +94,14 @@ function populateDialog(template: GradientTemplate) {
   document.querySelector('#dialog-title')!.textContent = template.name;
   document.querySelector('#dialog-id')!.textContent = v.id;
   const image = document.querySelector<HTMLImageElement>('#dialog-image')!;
-  image.src = v.src; image.alt = `${template.name}, ${v.name}`;
+  image.src = v.backgroundSrc ?? v.src; image.alt = `${template.name}, ${v.name}`;
   document.querySelector<HTMLElement>('#preview-copy')!.dataset.mode = v.mode;
   document.querySelector('#dialog-palette-name')!.textContent = v.name;
-  document.querySelector('#dialog-note')!.textContent = v.cssKind === 'native' ? 'Native CSS · Scalable SVG · PNG / JPEG: 1920 × 1080. Downloads contain only the gradient.' : 'Asset-based CSS: download the SVG alongside your copied snippet. PNG / JPEG: 1920 × 1080.';
+  document.querySelector('#dialog-note')!.textContent = v.cssKind === 'native' ? 'Native CSS · Scalable SVG · PNG / JPEG: 1920 × 1080. Downloads contain only the gradient.' : 'CSS loads only this gradient’s optimized background. SVG, PNG and JPEG downloads are also available.';
   const swatches = document.querySelector('#dialog-palettes')!;
   swatches.replaceChildren(...template.variations.filter(palette => palette.mode === v.mode).map(palette => {
     const button = document.createElement('button'); button.className = 'palette-swatch';
-    button.style.setProperty('--swatch', `url("${palette.src}")`);
+    button.style.setProperty('--swatch', `url("${palette.thumbnail}")`);
     button.setAttribute('aria-label', palette.name); button.setAttribute('aria-pressed', String(v.id === palette.id));
     button.addEventListener('click', () => { choose(template, palette.id); document.querySelector<HTMLButtonElement>(`#dialog-palettes button[aria-pressed=true]`)?.focus(); });
     return button;
@@ -114,9 +114,9 @@ const download = (blob: Blob, name: string) => {
 };
 async function exportGradient(v: GradientVariation, format: string) {
   if (format === 'css') {
-    const value = v.cssKind === 'native' ? v.css : `url("./${v.id}.svg")`;
-    const snippet = `${v.cssKind === 'asset' ? `/* Download ${v.id}.svg and place it next to this CSS file. */\n` : ''}.fg-${v.id} {\n  background-image: ${value};\n  background-size: cover;\n  background-position: center;\n}`;
-    try { await navigator.clipboard.writeText(snippet); notify(v.cssKind === 'native' ? `${v.id} CSS copied.` : 'CSS copied. Download the matching SVG for your project.'); }
+    const value = v.cssKind === 'native' ? v.css : `url("${new URL(v.backgroundSrc ?? v.src, location.origin).href}")`;
+    const snippet = `.fg-${v.id} {\n  background-color: ${v.colors[0]};\n  background-image: ${value};\n  background-size: cover;\n  background-position: center;\n}`;
+    try { await navigator.clipboard.writeText(snippet); notify(`${v.id} CSS copied.`); }
     catch { download(new Blob([snippet], {type:'text/css'}), `${v.id}.css`); notify('Clipboard unavailable. CSS downloaded instead.'); }
     return;
   }
@@ -135,6 +135,13 @@ async function exportGradient(v: GradientVariation, format: string) {
   } finally { URL.revokeObjectURL(url); }
 }
 document.addEventListener('click', async event => {
+  const copy = (event.target as Element).closest<HTMLElement>('[data-copy-stylesheet], [data-copy-class]');
+  if (copy) {
+    const value = copy.dataset.copyClass ?? `<link rel="stylesheet" href="${new URL(copy.dataset.copyStylesheet!, location.origin).href}">`;
+    try { await navigator.clipboard.writeText(value); notify(copy.dataset.copyClass ? (value.startsWith('#') ? 'Colour copied.' : 'Class names copied. Add them to your HTML element.') : 'Stylesheet link copied. Add it to your HTML head.'); }
+    catch { notify('Clipboard unavailable. Please copy the displayed class or use the How to use example.'); }
+    return;
+  }
   const target = (event.target as Element).closest<HTMLElement>('[data-action], [data-palette], [data-export]');
   if (!target) return;
   const card = target.closest<HTMLElement>('.gradient-card');

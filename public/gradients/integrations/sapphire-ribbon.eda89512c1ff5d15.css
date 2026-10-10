@@ -1,0 +1,20 @@
+/* FreeeGradients: Sapphire ribbon only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-sapphire-ribbon-01: url("../assets/sapphire-ribbon-01.bd111fb10c0f03ac.webp");
+  --fg-sapphire-ribbon-02: url("../assets/sapphire-ribbon-02.013e42bc4a0e2f0e.webp");
+  --fg-sapphire-ribbon-03: url("../assets/sapphire-ribbon-03.d7dab49e56dc5aad.webp");
+  --fg-sapphire-ribbon-04: url("../assets/sapphire-ribbon-04.3cbe39be63e8e466.webp");
+  --fg-sapphire-ribbon-05: url("../assets/sapphire-ribbon-05.5823cb33ab499dca.webp");
+  --fg-sapphire-ribbon-06: url("../assets/sapphire-ribbon-06.89e97ef42809a539.webp");
+  --fg-sapphire-ribbon-07: url("../assets/sapphire-ribbon-07.4b7f5383a1222894.webp");
+  --fg-sapphire-ribbon-08: url("../assets/sapphire-ribbon-08.66e517f2f864e46e.webp");
+}
+.fg-sapphire-ribbon-01 { background-color: #090b10; background-image: var(--fg-sapphire-ribbon-01); }
+.fg-sapphire-ribbon-02 { background-color: #13100e; background-image: var(--fg-sapphire-ribbon-02); }
+.fg-sapphire-ribbon-03 { background-color: #070d1c; background-image: var(--fg-sapphire-ribbon-03); }
+.fg-sapphire-ribbon-04 { background-color: #180c13; background-image: var(--fg-sapphire-ribbon-04); }
+.fg-sapphire-ribbon-05 { background-color: #f8fafc; background-image: var(--fg-sapphire-ribbon-05); }
+.fg-sapphire-ribbon-06 { background-color: #fcf9f3; background-image: var(--fg-sapphire-ribbon-06); }
+.fg-sapphire-ribbon-07 { background-color: #f5f8f3; background-image: var(--fg-sapphire-ribbon-07); }
+.fg-sapphire-ribbon-08 { background-color: #fcf6fa; background-image: var(--fg-sapphire-ribbon-08); }

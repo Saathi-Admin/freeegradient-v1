@@ -1,0 +1,20 @@
+/* FreeeGradients: Pastel veil 08 only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-pastel-veil-08-01: radial-gradient(ellipse 90% 14.96% at 48.5% 22.5%, #071526cc 0%, #07152600 100%), radial-gradient(ellipse 40% 70% at 50% 83%, #071526a6 0%, #07152600 100%), radial-gradient(ellipse 68% 60% at 51.5% 22.5%, #d7efffb3 0%, #d7efff00 100%), radial-gradient(ellipse 60% 68% at 48.5% 77.5%, #386ba8cc 0%, #386ba800 100%), linear-gradient(#071526, #071526);
+  --fg-pastel-veil-08-02: radial-gradient(ellipse 90% 14.96% at 48.5% 22.5%, #0b1915cc 0%, #0b191500 100%), radial-gradient(ellipse 40% 70% at 50% 83%, #0b1915a6 0%, #0b191500 100%), radial-gradient(ellipse 68% 60% at 51.5% 22.5%, #aeb8a0b3 0%, #aeb8a000 100%), radial-gradient(ellipse 60% 68% at 48.5% 77.5%, #547e66cc 0%, #547e6600 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-pastel-veil-08-03: radial-gradient(ellipse 90% 14.96% at 48.5% 22.5%, #1c101bcc 0%, #1c101b00 100%), radial-gradient(ellipse 40% 70% at 50% 83%, #1c101ba6 0%, #1c101b00 100%), radial-gradient(ellipse 68% 60% at 51.5% 22.5%, #e8a5c5b3 0%, #e8a5c500 100%), radial-gradient(ellipse 60% 68% at 48.5% 77.5%, #813c69cc 0%, #813c6900 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-pastel-veil-08-04: radial-gradient(ellipse 90% 14.96% at 48.5% 22.5%, #25120ecc 0%, #25120e00 100%), radial-gradient(ellipse 40% 70% at 50% 83%, #25120ea6 0%, #25120e00 100%), radial-gradient(ellipse 68% 60% at 51.5% 22.5%, #f4c47cb3 0%, #f4c47c00 100%), radial-gradient(ellipse 60% 68% at 48.5% 77.5%, #ff5c34cc 0%, #ff5c3400 100%), linear-gradient(#25120e, #25120e);
+  --fg-pastel-veil-08-05: radial-gradient(ellipse 90% 14.96% at 48.5% 22.5%, #f6fbffcc 0%, #f6fbff00 100%), radial-gradient(ellipse 40% 70% at 50% 83%, #f6fbffa6 0%, #f6fbff00 100%), radial-gradient(ellipse 68% 60% at 51.5% 22.5%, #82b5deb3 0%, #82b5de00 100%), radial-gradient(ellipse 60% 68% at 48.5% 77.5%, #d7efffcc 0%, #d7efff00 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-pastel-veil-08-06: radial-gradient(ellipse 90% 14.96% at 48.5% 22.5%, #fafbf4cc 0%, #fafbf400 100%), radial-gradient(ellipse 40% 70% at 50% 83%, #fafbf4a6 0%, #fafbf400 100%), radial-gradient(ellipse 68% 60% at 51.5% 22.5%, #aeb8a0b3 0%, #aeb8a000 100%), radial-gradient(ellipse 60% 68% at 48.5% 77.5%, #d9e4c7cc 0%, #d9e4c700 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-pastel-veil-08-07: radial-gradient(ellipse 90% 14.96% at 48.5% 22.5%, #fff6f7cc 0%, #fff6f700 100%), radial-gradient(ellipse 40% 70% at 50% 83%, #fff6f7a6 0%, #fff6f700 100%), radial-gradient(ellipse 68% 60% at 51.5% 22.5%, #bb9cddb3 0%, #bb9cdd00 100%), radial-gradient(ellipse 60% 68% at 48.5% 77.5%, #f3cadbcc 0%, #f3cadb00 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-pastel-veil-08-08: radial-gradient(ellipse 90% 14.96% at 48.5% 22.5%, #fffbeacc 0%, #fffbea00 100%), radial-gradient(ellipse 40% 70% at 50% 83%, #fffbeaa6 0%, #fffbea00 100%), radial-gradient(ellipse 68% 60% at 51.5% 22.5%, #ffae87b3 0%, #ffae8700 100%), radial-gradient(ellipse 60% 68% at 48.5% 77.5%, #e9f056cc 0%, #e9f05600 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-pastel-veil-08-01 { background-color: #071526; background-image: var(--fg-pastel-veil-08-01); }
+.fg-pastel-veil-08-02 { background-color: #0b1915; background-image: var(--fg-pastel-veil-08-02); }
+.fg-pastel-veil-08-03 { background-color: #1c101b; background-image: var(--fg-pastel-veil-08-03); }
+.fg-pastel-veil-08-04 { background-color: #25120e; background-image: var(--fg-pastel-veil-08-04); }
+.fg-pastel-veil-08-05 { background-color: #f6fbff; background-image: var(--fg-pastel-veil-08-05); }
+.fg-pastel-veil-08-06 { background-color: #fafbf4; background-image: var(--fg-pastel-veil-08-06); }
+.fg-pastel-veil-08-07 { background-color: #fff6f7; background-image: var(--fg-pastel-veil-08-07); }
+.fg-pastel-veil-08-08 { background-color: #fffbea; background-image: var(--fg-pastel-veil-08-08); }

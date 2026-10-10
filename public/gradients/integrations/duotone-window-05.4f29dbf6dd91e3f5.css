@@ -1,0 +1,20 @@
+/* FreeeGradients: Duotone window 05 only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-duotone-window-05-01: radial-gradient(ellipse 36% 28% at 88% 88%, #386ba8a6 0%, #386ba800 100%), radial-gradient(ellipse 36% 28% at 12% 12%, #d7efffa6 0%, #d7efff00 100%), radial-gradient(ellipse 72% 56% at 49.2% 43%, #071526a6 0%, #07152600 100%), linear-gradient(92deg, #386ba8 0%, #386ba8 28%, #d7efff 76%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-duotone-window-05-02: radial-gradient(ellipse 36% 28% at 88% 88%, #547e66a6 0%, #547e6600 100%), radial-gradient(ellipse 36% 28% at 12% 12%, #aeb8a0a6 0%, #aeb8a000 100%), radial-gradient(ellipse 72% 56% at 49.2% 43%, #0b1915a6 0%, #0b191500 100%), linear-gradient(92deg, #547e66 0%, #547e66 28%, #aeb8a0 76%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-duotone-window-05-03: radial-gradient(ellipse 36% 28% at 88% 88%, #813c69a6 0%, #813c6900 100%), radial-gradient(ellipse 36% 28% at 12% 12%, #e8a5c5a6 0%, #e8a5c500 100%), radial-gradient(ellipse 72% 56% at 49.2% 43%, #1c101ba6 0%, #1c101b00 100%), linear-gradient(92deg, #813c69 0%, #813c69 28%, #e8a5c5 76%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-duotone-window-05-04: radial-gradient(ellipse 36% 28% at 88% 88%, #ff5c34a6 0%, #ff5c3400 100%), radial-gradient(ellipse 36% 28% at 12% 12%, #f4c47ca6 0%, #f4c47c00 100%), radial-gradient(ellipse 72% 56% at 49.2% 43%, #25120ea6 0%, #25120e00 100%), linear-gradient(92deg, #ff5c34 0%, #ff5c34 28%, #f4c47c 76%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-duotone-window-05-05: radial-gradient(ellipse 36% 28% at 88% 88%, #d7efffa6 0%, #d7efff00 100%), radial-gradient(ellipse 36% 28% at 12% 12%, #82b5dea6 0%, #82b5de00 100%), radial-gradient(ellipse 72% 56% at 49.2% 43%, #f6fbffa6 0%, #f6fbff00 100%), linear-gradient(92deg, #d7efff 0%, #d7efff 28%, #82b5de 76%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-duotone-window-05-06: radial-gradient(ellipse 36% 28% at 88% 88%, #d9e4c7a6 0%, #d9e4c700 100%), radial-gradient(ellipse 36% 28% at 12% 12%, #aeb8a0a6 0%, #aeb8a000 100%), radial-gradient(ellipse 72% 56% at 49.2% 43%, #fafbf4a6 0%, #fafbf400 100%), linear-gradient(92deg, #d9e4c7 0%, #d9e4c7 28%, #aeb8a0 76%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-duotone-window-05-07: radial-gradient(ellipse 36% 28% at 88% 88%, #f3cadba6 0%, #f3cadb00 100%), radial-gradient(ellipse 36% 28% at 12% 12%, #bb9cdda6 0%, #bb9cdd00 100%), radial-gradient(ellipse 72% 56% at 49.2% 43%, #fff6f7a6 0%, #fff6f700 100%), linear-gradient(92deg, #f3cadb 0%, #f3cadb 28%, #bb9cdd 76%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-duotone-window-05-08: radial-gradient(ellipse 36% 28% at 88% 88%, #e9f056a6 0%, #e9f05600 100%), radial-gradient(ellipse 36% 28% at 12% 12%, #ffae87a6 0%, #ffae8700 100%), radial-gradient(ellipse 72% 56% at 49.2% 43%, #fffbeaa6 0%, #fffbea00 100%), linear-gradient(92deg, #e9f056 0%, #e9f056 28%, #ffae87 76%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-duotone-window-05-01 { background-color: #071526; background-image: var(--fg-duotone-window-05-01); }
+.fg-duotone-window-05-02 { background-color: #0b1915; background-image: var(--fg-duotone-window-05-02); }
+.fg-duotone-window-05-03 { background-color: #1c101b; background-image: var(--fg-duotone-window-05-03); }
+.fg-duotone-window-05-04 { background-color: #25120e; background-image: var(--fg-duotone-window-05-04); }
+.fg-duotone-window-05-05 { background-color: #f6fbff; background-image: var(--fg-duotone-window-05-05); }
+.fg-duotone-window-05-06 { background-color: #fafbf4; background-image: var(--fg-duotone-window-05-06); }
+.fg-duotone-window-05-07 { background-color: #fff6f7; background-image: var(--fg-duotone-window-05-07); }
+.fg-duotone-window-05-08 { background-color: #fffbea; background-image: var(--fg-duotone-window-05-08); }

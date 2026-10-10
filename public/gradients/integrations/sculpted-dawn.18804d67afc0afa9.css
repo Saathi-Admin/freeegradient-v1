@@ -1,0 +1,20 @@
+/* FreeeGradients: Sculpted dawn only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-sculpted-dawn-01: url("../assets/sculpted-dawn-01.20b99dc470d8a0a2.webp");
+  --fg-sculpted-dawn-02: url("../assets/sculpted-dawn-02.084cbffc58593b1a.webp");
+  --fg-sculpted-dawn-03: url("../assets/sculpted-dawn-03.f22948af95cec00f.webp");
+  --fg-sculpted-dawn-04: url("../assets/sculpted-dawn-04.a244229a4c92d165.webp");
+  --fg-sculpted-dawn-05: url("../assets/sculpted-dawn-05.5d1fafe7abeb3aad.webp");
+  --fg-sculpted-dawn-06: url("../assets/sculpted-dawn-06.06109e26490d9bfe.webp");
+  --fg-sculpted-dawn-07: url("../assets/sculpted-dawn-07.4c2b4ba93ec9b7b7.webp");
+  --fg-sculpted-dawn-08: url("../assets/sculpted-dawn-08.74013fc99b0be86c.webp");
+}
+.fg-sculpted-dawn-01 { background-color: #fcf6fa; background-image: var(--fg-sculpted-dawn-01); }
+.fg-sculpted-dawn-02 { background-color: #090b10; background-image: var(--fg-sculpted-dawn-02); }
+.fg-sculpted-dawn-03 { background-color: #13100e; background-image: var(--fg-sculpted-dawn-03); }
+.fg-sculpted-dawn-04 { background-color: #070d1c; background-image: var(--fg-sculpted-dawn-04); }
+.fg-sculpted-dawn-05 { background-color: #180c13; background-image: var(--fg-sculpted-dawn-05); }
+.fg-sculpted-dawn-06 { background-color: #f8fafc; background-image: var(--fg-sculpted-dawn-06); }
+.fg-sculpted-dawn-07 { background-color: #fcf9f3; background-image: var(--fg-sculpted-dawn-07); }
+.fg-sculpted-dawn-08 { background-color: #f5f8f3; background-image: var(--fg-sculpted-dawn-08); }

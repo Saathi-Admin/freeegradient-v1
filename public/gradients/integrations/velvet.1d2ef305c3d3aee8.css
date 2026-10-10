@@ -1,0 +1,12 @@
+/* FreeeGradients: Velvet only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-velvet-01: radial-gradient(ellipse 71.875% 100% at 90.625% 6.666666666666667%, #ee6fba 0%, #ee6fba00 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 10% 82.22222222222223%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18);
+  --fg-velvet-02: radial-gradient(ellipse 71.875% 100% at 90.625% 6.666666666666667%, #b5c7f4 0%, #b5c7f400 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 10% 82.22222222222223%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee);
+  --fg-velvet-03: radial-gradient(ellipse 71.875% 100% at 90.625% 6.666666666666667%, #f0788c 0%, #f0788c00 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 10% 82.22222222222223%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df);
+  --fg-velvet-04: radial-gradient(ellipse 71.875% 100% at 90.625% 6.666666666666667%, #3078c0 0%, #3078c000 100%), radial-gradient(ellipse 90.625% 88.88888888888889% at 10% 82.22222222222223%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d);
+}
+.fg-velvet-01 { background-image: var(--fg-velvet-01); }
+.fg-velvet-02 { background-image: var(--fg-velvet-02); }
+.fg-velvet-03 { background-image: var(--fg-velvet-03); }
+.fg-velvet-04 { background-image: var(--fg-velvet-04); }

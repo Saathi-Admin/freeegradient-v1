@@ -1,0 +1,20 @@
+/* FreeeGradients: Lilac breath only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-lilac-breath-01: url("../assets/lilac-breath-01.6a2c640b396f53f9.webp");
+  --fg-lilac-breath-02: url("../assets/lilac-breath-02.d0c2621fa034490b.webp");
+  --fg-lilac-breath-03: url("../assets/lilac-breath-03.998f0bb8457bd999.webp");
+  --fg-lilac-breath-04: url("../assets/lilac-breath-04.dd070e2310bbbb55.webp");
+  --fg-lilac-breath-05: url("../assets/lilac-breath-05.5b074cff5f898ccd.webp");
+  --fg-lilac-breath-06: url("../assets/lilac-breath-06.3338b72adfba5cd8.webp");
+  --fg-lilac-breath-07: url("../assets/lilac-breath-07.c23a1c987f0d9737.webp");
+  --fg-lilac-breath-08: url("../assets/lilac-breath-08.6302533a438e8eb7.webp");
+}
+.fg-lilac-breath-01 { background-color: #f6f0fa; background-image: var(--fg-lilac-breath-01); }
+.fg-lilac-breath-02 { background-color: #18112d; background-image: var(--fg-lilac-breath-02); }
+.fg-lilac-breath-03 { background-color: #092b32; background-image: var(--fg-lilac-breath-03); }
+.fg-lilac-breath-04 { background-color: #32202d; background-image: var(--fg-lilac-breath-04); }
+.fg-lilac-breath-05 { background-color: #f8f4fd; background-image: var(--fg-lilac-breath-05); }
+.fg-lilac-breath-06 { background-color: #fff5e9; background-image: var(--fg-lilac-breath-06); }
+.fg-lilac-breath-07 { background-color: #f5f7e6; background-image: var(--fg-lilac-breath-07); }
+.fg-lilac-breath-08 { background-color: #fdf0f4; background-image: var(--fg-lilac-breath-08); }

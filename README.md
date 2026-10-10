@@ -1,53 +1,83 @@
 # FreeeGradients
 
-Static Astro foundation for a fully free gradient library. Dark mode only; Host Grotesk and Instrument Serif are self-hosted through Fontsource. Button sizes are sm (32px), md (36px, default), lg (40px) and xl (44px), with border-box sizing. Pass `size="sm"`, `size="md"`, `size="lg"` or `size="xl"`; icon-only buttons stay square at every size. Typography and 16px icons stay consistent across sizes.
+Static Astro gradient library with 1,026 templates and 8,148 light/dark colour variations. New collections appear in the header, footer, collection directory and playground; the homepage keeps its curated featured sections.
 
-## Local development
+## Development
 
-Use Node 22.19+ (supported even-numbered releases). The bundled Codex Node runtime can also be used if the system Node is older.
+Use Node 22.19+ (or the bundled Node runtime).
 
 ```sh
 npm install
-npm run dev
+npm run dev -- --host 0.0.0.0 --port 2000
 npm run check
 npm run build
-npm run preview
+node scripts/verify-library.mjs
 ```
 
-`/` is the working library homepage; `/design-system/` is the component specimen. Both are intentionally noindex during development. No hosting accounts or paid services have been configured.
+`npm run assets` regenerates catalogue data and artwork after recipe changes. Sharp is a direct dependency for WebP generation. Builds are static and currently noindex. No permanent domain or hosting account has been configured.
+
+## User integration
+
+Details pages offer two independent approaches:
+
+- **Copy CSS:** standalone CSS for the selected variation. Native gradients require no image request; textured gradients reference only their selected optimized, versioned background image.
+- **Copy stylesheet link + Copy class:** add one template stylesheet to the HTML head, then add `fg-gradient` and its colour class to the element. Swap only the colour class to change variations within that template. A different template requires its own stylesheet link.
+
+Stylesheets contain no font imports, JavaScript, animations, page resets or layout dimensions. Each class has a solid fallback colour. The user controls their element size and text contrast. Individual SVG/PNG/JPEG export remains available; there is no bulk ZIP or combined catalogue stylesheet.
+
+Copied URLs use the currently viewed origin. A development tunnel is temporary and Astro intentionally restricts cross-site subresource loading on its development server. Real integrations need the permanent static production origin; do not ship tunnel URLs in users’ websites.
+
+## Loading and caching
+
+- Template CSS and artwork have versioned filenames. Published immutable files are retained instead of overwritten so existing copied links keep their original appearance.
+- `/gradients/integrations/`, `/gradients/assets/` and `/gradients/thumbnails/` are configured for long immutable caching in `public/_headers`. Unversioned catalogue JSON and compatibility CSS are revalidated.
+- Gallery cards, collection covers, sidebar cards and variation selectors use 384 × 216 WebP thumbnails. SVG is fetched when needed for individual exports, rather than rendered repeatedly for thumbnail grids.
+- Textured website backgrounds use pre-rendered WebP, avoiding live SVG filter work on consumers’ pages. Native gradients use CSS directly in the playground.
+- Global and collection listings render at most 48 variations per page. Light/dark filters apply across the complete collection, not just the visible page.
+- Search and collection/colour filters load their compact index on interaction, then display 24 template results at a time. Filters are stored in the URL and restored after returning from a details page.
+- The playground initially renders 24 template cards and no hidden variation cards. Only the opened template JSON is fetched; only its variations are created. Back restores the browser page, search and scroll position. The in-memory template cache is bounded to eight entries.
+- How-to presents a short set of example templates; every template can be integrated from its own details page.
+
+Cache headers become active on a host that supports the `_headers` format, such as Cloudflare Pages. Compression and CDN delivery must be verified on the deployed host, not inferred from development behaviour.
+
+## Validation and the 10k target
+
+`node scripts/verify-library.mjs` checks duplicate IDs, stylesheet and asset references, both design modes, fallback colours and budgets: 8 KiB template CSS, 16 KiB thumbnail and 256 KiB textured background. Artwork generation rejects exact duplicate first-colour compositions. Similar-looking designs still require visual review.
+
+The current batch has been tested for clipboard copying, native and textured class swaps, individual image downloads, paginated filters, search, on-demand playground loading and mobile overflow. See `PERFORMANCE.md` for measurements and outstanding deployment work.
+
+10k distinct templates are a future content milestone, not a claim that the current 1,000-template library has passed a 10k production load test. Before that expansion:
+
+1. Choose and configure the permanent domain/CDN, compression and asset hosting.
+2. Account for the number of immutable assets and variation detail pages. The current static packaging will exceed Cloudflare Pages Free’s 20,000-file limit at 10k templates; even the paid 100,000-file limit is not enough for an unrestricted multi-asset, multi-page-per-variation build. Plan separate asset storage and fewer generated detail pages or server-rendered/on-demand routes before reaching those limits.
+3. Measure Core Web Vitals and resource loading on real mobile devices and slower networks, including a representative 10k catalogue.
+4. Review batches for duplicate-looking compositions, useful palettes and texture quality before publishing.
+
+Official hosting references: [Cloudflare Pages limits](https://developers.cloudflare.com/pages/platform/limits/) and [header matching](https://developers.cloudflare.com/pages/configuration/headers/).
 
 ## Structure
 
-- `src/styles/`: adapted tokens, typography, button styles and global reset. Change shared values in `tokens.css`; components use semantic aliases.
-- `src/components/ui/`: reusable native Button component, with primary, secondary, outline, ghost and brand variants. Use real links for navigation; buttons for actions.
-- Icons use `@lucide/astro` named imports and inline SVG. Icon-only buttons support primary and secondary variants at every size (default 36 × 36px); add an accessible label. Shared icon size is 16px with a 2px stroke.
-- `src/layouts/`: dark HTML shell, metadata and local fonts.
-- `src/pages/`: library homepage and design system preview.
-- `src/types/gradient.ts`: template/variation metadata contract.
-- `src/data/recipes.mjs`: 15 original procedural templates with 4 palettes each, inspired by the reference styles. Stable named IDs.
-- `scripts/build-gradients.mjs`: prepares 60 SVG assets, typed catalogue input, reusable CSS variables/classes and a complete downloadable ZIP. Runs before development/build; run `npm run assets` after changing recipes.
-- `src/scripts/library.ts`: search, light/dark filtering, palette switching, preview dialog, clipboard and browser PNG/JPEG export.
-- `images/`: all 31 supplied reference images, preserved unchanged and excluded from the published build. These are not yet library downloads.
-- `references/design-system/`: untouched original CSS supplied by the user.
-- `public/`: assets deliberately included in the site, plus Cloudflare Pages cache/security headers.
+- `src/data/recipes.mjs`, `expanded-recipes.mjs`: original composition recipes and stable names.
+- `scripts/build-gradients.mjs`: versioned SVG/WebP artwork, per-template CSS and small catalogue endpoints.
+- `src/components/ui/`: shared buttons and tab bars.
+- `src/scripts/library.ts`: standalone copy and individual export behaviour.
+- `src/scripts/catalogue.ts`, `gradient-search.ts`, `playground.ts`: bounded browsing, filtering and on-demand data loading.
+- `src/styles/tokens.css`: shared typography, radii and spacing; section padding is 96px per side.
+- `public/_headers`: production caching and response headers.
+- `references/`, `images/`: preserved reference material; not included as library downloads.
 
-Inherited blue accent (#0056ec) is provisional. The original 2px spacing scale, heading weight cap of 500, full pill button radius and dark neutral surfaces are preserved; typography sizes have been refined for the library. Next.js font variables are now defined locally; Tailwind-only `@theme` aliases and unrelated light mega-menu/service tokens were removed. Existing dark primary/secondary colour variants are retained; border reset, exact heights, focus, disabled and reduced-motion states are added.
+## SEO launch configuration
 
-## Budget and publishing
+Set `PUBLIC_SITE_URL` to the permanent HTTPS origin in the production build environment, then build. Development and unconfigured builds remain noindex. Production builds with this origin emit canonical URLs, Open Graph metadata, WebPage structured data, an indexable robots.txt and a sitemap. Each template has one canonical variation page; sibling variations canonicalize to it. Light/dark filter pages and playground are not indexed; all-mode paginated listings remain crawlable. No final domain, Search Console verification or public deployment has been configured.
 
-Typography uses only Regular (400) and Medium (500). Host Grotesk headings use Medium; body copy and Instrument Serif use Regular. Native headings and emphasis follow the same weight policy. H1 scales 36–64px, H2 28–40px, H3 24–32px, H4 20–24px, H5 18px and H6 16px. Large body scales 16–18px; normal body is 16px/24px, small is 14px/20px, captions are 12px/16px. Button/nav typography stays 14px/20px at Medium. Instrument Serif is a selective heading accent, inheriting its heading size.
+Three guides live at `/guides/`, linked from the footer and template detail pages. The homepage remains curated. Template detail pages include copyable palette hex values and related designs.
 
-Keep the deployment static on Cloudflare Pages Free. No paid image APIs, R2, database or server functions are required. Asset preparation runs locally. Audit built file count and per-file size before publishing (currently Pages Free supports 20,000 files and 25 MiB per asset).
+`npm run review` writes a similarity report and a sample contact sheet in `reports/`. This is a screening tool, not proof every composition is perceptually unique or a replacement for full editorial review. The 1,000-template batch has 5 low-distance pairs among previous designs and none involving new designs at the current threshold.
 
-Choose the domain before adding Astro's `site`, canonical URLs, sitemap and public indexing. Dedicated indexable template pages, expanded artwork, managed content and monetization remain future work. The current variation engine uses procedural SVG/CSS; it does not recolour arbitrary uploaded bitmap references.
+The current public asset directory has 27,302 files before adding generated HTML. It already exceeds Cloudflare Pages Free’s file limit. The local preview works, but production hosting must account for this count before launch.
 
-## Layout and exports
+## Reference-inspired original studies
 
-The floating header uses 32px navigation/action sizing. Card actions use 40px icon buttons over the image, with 8px bottom/right inset and 8px gaps. They appear on image hover or keyboard focus; touch devices show them directly. Names appear on hover/focus. The hero uses content height rather than a full-viewport spacer.
+26 hand-composed templates (208 variants) are added in Colour studies, Liquid flow and Iridescent silk. They are authored in `src/data/reference-recipes.mjs`, rather than importing the supplied Pinterest screenshots. The artwork contains no text, watermark, grid overlay, logo or card frame. Native blends use CSS; sculpted paths, glass textures and grain use an optimized image fetched only when used. Six different holographic compositions include a fold, current, sail, loop, fan and orbit.
 
-Sections use shared vertical padding (32–56px per side), so adjacent section spacing equals the preceding bottom padding plus the next top padding (64–112px). Section heading/content spacing, grid gap, hero clearance and card padding are tokens; there is no separate margin between sections.
-
-Each card can copy CSS, download native SVG, or export PNG/JPEG at 1920 × 1080 locally in the browser. Smooth/mesh/glow templates use native CSS; grain/wave templates use an SVG background URL. Copied asset-based CSS explains where to put the downloaded SVG. The library ZIP includes all relative assets and usage instructions. Both light and dark palettes are available while the site stays dark.
-
-
-
+`node scripts/review-studies.mjs` generates a text-free contact sheet. Each study has eight variants, a versioned stylesheet, copyable classes and all existing export formats. Homepage featured content remains curated; header/footer collections, listing and playground include these collections.

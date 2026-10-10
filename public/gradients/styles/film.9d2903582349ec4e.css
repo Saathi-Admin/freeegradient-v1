@@ -1,0 +1,12 @@
+/* FreeeGradients: Film only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-film-01: url("../assets/film-01.1d9dcf61846b7804.webp");
+  --fg-film-02: url("../assets/film-02.e6c4a60e2700dd23.webp");
+  --fg-film-03: url("../assets/film-03.8b1893ebd1d5ce21.webp");
+  --fg-film-04: url("../assets/film-04.a6a06a136e236520.webp");
+}
+.fg-film-01 { background-image: var(--fg-film-01); }
+.fg-film-02 { background-image: var(--fg-film-02); }
+.fg-film-03 { background-image: var(--fg-film-03); }
+.fg-film-04 { background-image: var(--fg-film-04); }

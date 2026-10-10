@@ -1,0 +1,12 @@
+/* FreeeGradients: Haze only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-haze-01: url("../assets/haze-01.088a5392d1a72681.webp");
+  --fg-haze-02: url("../assets/haze-02.255ce9e90ed87a4c.webp");
+  --fg-haze-03: url("../assets/haze-03.e0d772d109d4dd30.webp");
+  --fg-haze-04: url("../assets/haze-04.3ec8df49960274c9.webp");
+}
+.fg-haze-01 { background-image: var(--fg-haze-01); }
+.fg-haze-02 { background-image: var(--fg-haze-02); }
+.fg-haze-03 { background-image: var(--fg-haze-03); }
+.fg-haze-04 { background-image: var(--fg-haze-04); }

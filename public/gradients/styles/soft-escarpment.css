@@ -1,0 +1,20 @@
+/* FreeeGradients: Soft escarpment only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-soft-escarpment-01: url("../assets/soft-escarpment-01.ccf344dbc3148b22.webp");
+  --fg-soft-escarpment-02: url("../assets/soft-escarpment-02.34843ac89592f695.webp");
+  --fg-soft-escarpment-03: url("../assets/soft-escarpment-03.5af92b6c3b0bae10.webp");
+  --fg-soft-escarpment-04: url("../assets/soft-escarpment-04.6c4541f8f9c962c7.webp");
+  --fg-soft-escarpment-05: url("../assets/soft-escarpment-05.61ca173884b35c9a.webp");
+  --fg-soft-escarpment-06: url("../assets/soft-escarpment-06.8269eb4a64f5814d.webp");
+  --fg-soft-escarpment-07: url("../assets/soft-escarpment-07.be82e319ad53d24c.webp");
+  --fg-soft-escarpment-08: url("../assets/soft-escarpment-08.bb9ed5f6f32adf98.webp");
+}
+.fg-soft-escarpment-01 { background-color: #13100e; background-image: var(--fg-soft-escarpment-01); }
+.fg-soft-escarpment-02 { background-color: #070d1c; background-image: var(--fg-soft-escarpment-02); }
+.fg-soft-escarpment-03 { background-color: #180c13; background-image: var(--fg-soft-escarpment-03); }
+.fg-soft-escarpment-04 { background-color: #f8fafc; background-image: var(--fg-soft-escarpment-04); }
+.fg-soft-escarpment-05 { background-color: #fcf9f3; background-image: var(--fg-soft-escarpment-05); }
+.fg-soft-escarpment-06 { background-color: #f5f8f3; background-image: var(--fg-soft-escarpment-06); }
+.fg-soft-escarpment-07 { background-color: #fcf6fa; background-image: var(--fg-soft-escarpment-07); }
+.fg-soft-escarpment-08 { background-color: #090b10; background-image: var(--fg-soft-escarpment-08); }

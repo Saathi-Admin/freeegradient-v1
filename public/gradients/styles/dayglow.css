@@ -1,0 +1,20 @@
+/* FreeeGradients: Dayglow only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-dayglow-01: radial-gradient(ellipse 48% 32% at 70% 38%, #071526b3 0%, #07152600 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #d7efffa6 0%, #d7efff00 100%), linear-gradient(315deg, #071526 0%, #386ba8 69%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-dayglow-02: radial-gradient(ellipse 48% 32% at 70% 38%, #0b1915b3 0%, #0b191500 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #aeb8a0a6 0%, #aeb8a000 100%), linear-gradient(315deg, #0b1915 0%, #547e66 69%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-dayglow-03: radial-gradient(ellipse 48% 32% at 70% 38%, #1c101bb3 0%, #1c101b00 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #e8a5c5a6 0%, #e8a5c500 100%), linear-gradient(315deg, #1c101b 0%, #813c69 69%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-dayglow-04: radial-gradient(ellipse 48% 32% at 70% 38%, #25120eb3 0%, #25120e00 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #f4c47ca6 0%, #f4c47c00 100%), linear-gradient(315deg, #25120e 0%, #ff5c34 69%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-dayglow-05: radial-gradient(ellipse 48% 32% at 70% 38%, #f6fbffb3 0%, #f6fbff00 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #82b5dea6 0%, #82b5de00 100%), linear-gradient(315deg, #f6fbff 0%, #d7efff 69%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-dayglow-06: radial-gradient(ellipse 48% 32% at 70% 38%, #fafbf4b3 0%, #fafbf400 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #aeb8a0a6 0%, #aeb8a000 100%), linear-gradient(315deg, #fafbf4 0%, #d9e4c7 69%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-dayglow-07: radial-gradient(ellipse 48% 32% at 70% 38%, #fff6f7b3 0%, #fff6f700 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #bb9cdda6 0%, #bb9cdd00 100%), linear-gradient(315deg, #fff6f7 0%, #f3cadb 69%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-dayglow-08: radial-gradient(ellipse 48% 32% at 70% 38%, #fffbeab3 0%, #fffbea00 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #ffae87a6 0%, #ffae8700 100%), linear-gradient(315deg, #fffbea 0%, #e9f056 69%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-dayglow-01 { background-color: #071526; background-image: var(--fg-dayglow-01); }
+.fg-dayglow-02 { background-color: #0b1915; background-image: var(--fg-dayglow-02); }
+.fg-dayglow-03 { background-color: #1c101b; background-image: var(--fg-dayglow-03); }
+.fg-dayglow-04 { background-color: #25120e; background-image: var(--fg-dayglow-04); }
+.fg-dayglow-05 { background-color: #f6fbff; background-image: var(--fg-dayglow-05); }
+.fg-dayglow-06 { background-color: #fafbf4; background-image: var(--fg-dayglow-06); }
+.fg-dayglow-07 { background-color: #fff6f7; background-image: var(--fg-dayglow-07); }
+.fg-dayglow-08 { background-color: #fffbea; background-image: var(--fg-dayglow-08); }

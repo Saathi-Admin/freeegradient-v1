@@ -1,0 +1,12 @@
+/* FreeeGradients: Orbit only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-orbit-01: radial-gradient(ellipse 34.375% 60% at 55% 4.444444444444445%, #ee6fbab3 0%, #ee6fba00 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 89.375% 85.55555555555556%, #ee6fba 0%, #ee6fba00 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 10% 22.22222222222222%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18);
+  --fg-orbit-02: radial-gradient(ellipse 34.375% 60% at 55% 4.444444444444445%, #b5c7f4b3 0%, #b5c7f400 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 89.375% 85.55555555555556%, #b5c7f4 0%, #b5c7f400 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 10% 22.22222222222222%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee);
+  --fg-orbit-03: radial-gradient(ellipse 34.375% 60% at 55% 4.444444444444445%, #f0788cb3 0%, #f0788c00 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 89.375% 85.55555555555556%, #f0788c 0%, #f0788c00 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 10% 22.22222222222222%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df);
+  --fg-orbit-04: radial-gradient(ellipse 34.375% 60% at 55% 4.444444444444445%, #3078c0b3 0%, #3078c000 100%), radial-gradient(ellipse 71.875% 86.66666666666667% at 89.375% 85.55555555555556%, #3078c0 0%, #3078c000 100%), radial-gradient(ellipse 65.625% 71.11111111111111% at 10% 22.22222222222222%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d);
+}
+.fg-orbit-01 { background-image: var(--fg-orbit-01); }
+.fg-orbit-02 { background-image: var(--fg-orbit-02); }
+.fg-orbit-03 { background-image: var(--fg-orbit-03); }
+.fg-orbit-04 { background-image: var(--fg-orbit-04); }

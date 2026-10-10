@@ -1,0 +1,20 @@
+/* FreeeGradients: Velvet afterhours only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-velvet-afterhours-01: radial-gradient(ellipse 80% 75% at 13% 0%,#f8fafcf0 0%,#f8fafc84 42%,#f8fafc00 100%),radial-gradient(ellipse 39.9% 23.68% at 13% 100%,#d4e3ede6 0%,#d4e3ed7e 42%,#d4e3ed00 100%),radial-gradient(ellipse 57% 74% at 87% 108%,#8aaec6a6 0%,#8aaec65b 42%,#8aaec600 100%),linear-gradient(290deg,#f8fafc 0%,#d4e3ed 75%,#8aaec6 100%),linear-gradient(#f8fafc,#f8fafc);
+  --fg-velvet-afterhours-02: radial-gradient(ellipse 80% 75% at 13% 0%,#fcf9f3f0 0%,#fcf9f384 42%,#fcf9f300 100%),radial-gradient(ellipse 39.9% 23.68% at 13% 100%,#e4d8c2e6 0%,#e4d8c27e 42%,#e4d8c200 100%),radial-gradient(ellipse 57% 74% at 87% 108%,#b5a086a6 0%,#b5a0865b 42%,#b5a08600 100%),linear-gradient(290deg,#fcf9f3 0%,#e4d8c2 75%,#b5a086 100%),linear-gradient(#fcf9f3,#fcf9f3);
+  --fg-velvet-afterhours-03: radial-gradient(ellipse 80% 75% at 13% 0%,#f5f8f3f0 0%,#f5f8f384 42%,#f5f8f300 100%),radial-gradient(ellipse 39.9% 23.68% at 13% 100%,#d4dfd0e6 0%,#d4dfd07e 42%,#d4dfd000 100%),radial-gradient(ellipse 57% 74% at 87% 108%,#88a49ca6 0%,#88a49c5b 42%,#88a49c00 100%),linear-gradient(290deg,#f5f8f3 0%,#d4dfd0 75%,#88a49c 100%),linear-gradient(#f5f8f3,#f5f8f3);
+  --fg-velvet-afterhours-04: radial-gradient(ellipse 80% 75% at 13% 0%,#fcf6faf0 0%,#fcf6fa84 42%,#fcf6fa00 100%),radial-gradient(ellipse 39.9% 23.68% at 13% 100%,#e9d4e1e6 0%,#e9d4e17e 42%,#e9d4e100 100%),radial-gradient(ellipse 57% 74% at 87% 108%,#b49bbca6 0%,#b49bbc5b 42%,#b49bbc00 100%),linear-gradient(290deg,#fcf6fa 0%,#e9d4e1 75%,#b49bbc 100%),linear-gradient(#fcf6fa,#fcf6fa);
+  --fg-velvet-afterhours-05: radial-gradient(ellipse 80% 75% at 13% 0%,#090b10f0 0%,#090b1084 42%,#090b1000 100%),radial-gradient(ellipse 39.9% 23.68% at 13% 100%,#526176e6 0%,#5261767e 42%,#52617600 100%),radial-gradient(ellipse 57% 74% at 87% 108%,#b7c9d5a6 0%,#b7c9d55b 42%,#b7c9d500 100%),linear-gradient(290deg,#090b10 0%,#526176 75%,#b7c9d5 100%),linear-gradient(#090b10,#090b10);
+  --fg-velvet-afterhours-06: radial-gradient(ellipse 80% 75% at 13% 0%,#13100ef0 0%,#13100e84 42%,#13100e00 100%),radial-gradient(ellipse 39.9% 23.68% at 13% 100%,#8b7153e6 0%,#8b71537e 42%,#8b715300 100%),radial-gradient(ellipse 57% 74% at 87% 108%,#ddc5a3a6 0%,#ddc5a35b 42%,#ddc5a300 100%),linear-gradient(290deg,#13100e 0%,#8b7153 75%,#ddc5a3 100%),linear-gradient(#13100e,#13100e);
+  --fg-velvet-afterhours-07: radial-gradient(ellipse 80% 75% at 13% 0%,#070d1cf0 0%,#070d1c84 42%,#070d1c00 100%),radial-gradient(ellipse 39.9% 23.68% at 13% 100%,#294f82e6 0%,#294f827e 42%,#294f8200 100%),radial-gradient(ellipse 57% 74% at 87% 108%,#92badda6 0%,#92badd5b 42%,#92badd00 100%),linear-gradient(290deg,#070d1c 0%,#294f82 75%,#92badd 100%),linear-gradient(#070d1c,#070d1c);
+  --fg-velvet-afterhours-08: radial-gradient(ellipse 80% 75% at 13% 0%,#180c13f0 0%,#180c1384 42%,#180c1300 100%),radial-gradient(ellipse 39.9% 23.68% at 13% 100%,#793953e6 0%,#7939537e 42%,#79395300 100%),radial-gradient(ellipse 57% 74% at 87% 108%,#c89caaa6 0%,#c89caa5b 42%,#c89caa00 100%),linear-gradient(290deg,#180c13 0%,#793953 75%,#c89caa 100%),linear-gradient(#180c13,#180c13);
+}
+.fg-velvet-afterhours-01 { background-color: #f8fafc; background-image: var(--fg-velvet-afterhours-01); }
+.fg-velvet-afterhours-02 { background-color: #fcf9f3; background-image: var(--fg-velvet-afterhours-02); }
+.fg-velvet-afterhours-03 { background-color: #f5f8f3; background-image: var(--fg-velvet-afterhours-03); }
+.fg-velvet-afterhours-04 { background-color: #fcf6fa; background-image: var(--fg-velvet-afterhours-04); }
+.fg-velvet-afterhours-05 { background-color: #090b10; background-image: var(--fg-velvet-afterhours-05); }
+.fg-velvet-afterhours-06 { background-color: #13100e; background-image: var(--fg-velvet-afterhours-06); }
+.fg-velvet-afterhours-07 { background-color: #070d1c; background-image: var(--fg-velvet-afterhours-07); }
+.fg-velvet-afterhours-08 { background-color: #180c13; background-image: var(--fg-velvet-afterhours-08); }

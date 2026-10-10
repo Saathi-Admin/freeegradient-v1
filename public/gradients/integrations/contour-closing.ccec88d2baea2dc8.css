@@ -1,0 +1,20 @@
+/* FreeeGradients: Contour closing only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-contour-closing-01: url("../assets/contour-closing-01.2b39bb22c269bf6c.webp");
+  --fg-contour-closing-02: url("../assets/contour-closing-02.77bde97d2b7168e5.webp");
+  --fg-contour-closing-03: url("../assets/contour-closing-03.46bd0063d1940044.webp");
+  --fg-contour-closing-04: url("../assets/contour-closing-04.f495228344594c21.webp");
+  --fg-contour-closing-05: url("../assets/contour-closing-05.cdae2ac36bdd38e7.webp");
+  --fg-contour-closing-06: url("../assets/contour-closing-06.cfd1f87cd26a0e54.webp");
+  --fg-contour-closing-07: url("../assets/contour-closing-07.48883dafbdfee854.webp");
+  --fg-contour-closing-08: url("../assets/contour-closing-08.158230c9f577a282.webp");
+}
+.fg-contour-closing-01 { background-color: #090b10; background-image: var(--fg-contour-closing-01); }
+.fg-contour-closing-02 { background-color: #13100e; background-image: var(--fg-contour-closing-02); }
+.fg-contour-closing-03 { background-color: #070d1c; background-image: var(--fg-contour-closing-03); }
+.fg-contour-closing-04 { background-color: #180c13; background-image: var(--fg-contour-closing-04); }
+.fg-contour-closing-05 { background-color: #f8fafc; background-image: var(--fg-contour-closing-05); }
+.fg-contour-closing-06 { background-color: #fcf9f3; background-image: var(--fg-contour-closing-06); }
+.fg-contour-closing-07 { background-color: #f5f8f3; background-image: var(--fg-contour-closing-07); }
+.fg-contour-closing-08 { background-color: #fcf6fa; background-image: var(--fg-contour-closing-08); }

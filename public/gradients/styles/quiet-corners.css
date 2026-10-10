@@ -1,0 +1,20 @@
+/* FreeeGradients: Quiet corners only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-quiet-corners-01: radial-gradient(ellipse 55% 65% at 50% 12%,#070d1ce0 0%,#070d1c7b 42%,#070d1c00 100%),radial-gradient(ellipse 58.24% 45.36% at 50% 116%,#92badd8c 0%,#92badd4d 42%,#92badd00 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#294f82e6 0%,#294f827e 42%,#294f8200 100%),linear-gradient(#070d1c,#070d1c);
+  --fg-quiet-corners-02: radial-gradient(ellipse 55% 65% at 50% 12%,#180c13e0 0%,#180c137b 42%,#180c1300 100%),radial-gradient(ellipse 58.24% 45.36% at 50% 116%,#c89caa8c 0%,#c89caa4d 42%,#c89caa00 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#793953e6 0%,#7939537e 42%,#79395300 100%),linear-gradient(#180c13,#180c13);
+  --fg-quiet-corners-03: radial-gradient(ellipse 55% 65% at 50% 12%,#f8fafce0 0%,#f8fafc7b 42%,#f8fafc00 100%),radial-gradient(ellipse 58.24% 45.36% at 50% 116%,#8aaec68c 0%,#8aaec64d 42%,#8aaec600 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#d4e3ede6 0%,#d4e3ed7e 42%,#d4e3ed00 100%),linear-gradient(#f8fafc,#f8fafc);
+  --fg-quiet-corners-04: radial-gradient(ellipse 55% 65% at 50% 12%,#fcf9f3e0 0%,#fcf9f37b 42%,#fcf9f300 100%),radial-gradient(ellipse 58.24% 45.36% at 50% 116%,#b5a0868c 0%,#b5a0864d 42%,#b5a08600 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#e4d8c2e6 0%,#e4d8c27e 42%,#e4d8c200 100%),linear-gradient(#fcf9f3,#fcf9f3);
+  --fg-quiet-corners-05: radial-gradient(ellipse 55% 65% at 50% 12%,#f5f8f3e0 0%,#f5f8f37b 42%,#f5f8f300 100%),radial-gradient(ellipse 58.24% 45.36% at 50% 116%,#88a49c8c 0%,#88a49c4d 42%,#88a49c00 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#d4dfd0e6 0%,#d4dfd07e 42%,#d4dfd000 100%),linear-gradient(#f5f8f3,#f5f8f3);
+  --fg-quiet-corners-06: radial-gradient(ellipse 55% 65% at 50% 12%,#fcf6fae0 0%,#fcf6fa7b 42%,#fcf6fa00 100%),radial-gradient(ellipse 58.24% 45.36% at 50% 116%,#b49bbc8c 0%,#b49bbc4d 42%,#b49bbc00 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#e9d4e1e6 0%,#e9d4e17e 42%,#e9d4e100 100%),linear-gradient(#fcf6fa,#fcf6fa);
+  --fg-quiet-corners-07: radial-gradient(ellipse 55% 65% at 50% 12%,#090b10e0 0%,#090b107b 42%,#090b1000 100%),radial-gradient(ellipse 58.24% 45.36% at 50% 116%,#b7c9d58c 0%,#b7c9d54d 42%,#b7c9d500 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#526176e6 0%,#5261767e 42%,#52617600 100%),linear-gradient(#090b10,#090b10);
+  --fg-quiet-corners-08: radial-gradient(ellipse 55% 65% at 50% 12%,#13100ee0 0%,#13100e7b 42%,#13100e00 100%),radial-gradient(ellipse 58.24% 45.36% at 50% 116%,#ddc5a38c 0%,#ddc5a34d 42%,#ddc5a300 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#8b7153e6 0%,#8b71537e 42%,#8b715300 100%),linear-gradient(#13100e,#13100e);
+}
+.fg-quiet-corners-01 { background-color: #070d1c; background-image: var(--fg-quiet-corners-01); }
+.fg-quiet-corners-02 { background-color: #180c13; background-image: var(--fg-quiet-corners-02); }
+.fg-quiet-corners-03 { background-color: #f8fafc; background-image: var(--fg-quiet-corners-03); }
+.fg-quiet-corners-04 { background-color: #fcf9f3; background-image: var(--fg-quiet-corners-04); }
+.fg-quiet-corners-05 { background-color: #f5f8f3; background-image: var(--fg-quiet-corners-05); }
+.fg-quiet-corners-06 { background-color: #fcf6fa; background-image: var(--fg-quiet-corners-06); }
+.fg-quiet-corners-07 { background-color: #090b10; background-image: var(--fg-quiet-corners-07); }
+.fg-quiet-corners-08 { background-color: #13100e; background-image: var(--fg-quiet-corners-08); }

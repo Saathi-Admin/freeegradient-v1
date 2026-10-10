@@ -1,0 +1,31 @@
+{
+  "templates": 1000,
+  "metric": "16x9 RGB RMS, all collections; less than 5 flagged for review, not proof of equivalence",
+  "flaggedPairs": [
+    {
+      "a": "dawnlight",
+      "b": "atmosphere",
+      "rms": 3.24
+    },
+    {
+      "a": "horizon",
+      "b": "dawnlight",
+      "rms": 3.37
+    },
+    {
+      "a": "nectar",
+      "b": "film",
+      "rms": 4.23
+    },
+    {
+      "a": "bloom",
+      "b": "haze",
+      "rms": 4.43
+    },
+    {
+      "a": "orbit",
+      "b": "analogue",
+      "rms": 4.64
+    }
+  ]
+}

@@ -1,4 +1,8 @@
+import { premiumRecipes } from './premium-recipes.mjs';
+import { floralRecipes } from './floral-recipes.mjs';
 // Original procedural compositions. Keep published IDs stable.
+import { referenceRecipes } from './reference-recipes.mjs';
+import { expandedRecipes } from './expanded-recipes.mjs';
 export const palettes = [
   { id: '01', name: 'After hours', mode: 'dark', colors: ['#080b18', '#6655ed', '#ee6fba'], tags: ['purple','pink','violet','night'] },
   { id: '02', name: 'Mint condition', mode: 'light', colors: ['#eef8ee', '#90e6c1', '#b5c7f4'], tags: ['green','mint','pastel','blue'] },
@@ -25,3 +29,10 @@ export const recipes = [
   ['afterglow','Afterglow','footer','beam'], ['uplift','Uplift','footer','beam'], ['nightfall','Nightfall','footer','beam'],
 ].map(([slug,name,category,shape],i)=>({slug,name,category,shape,position:i%3,tags:[category,shape,...({smooth:['soft','blur'],mesh:['organic'],glow:['aurora','light'],vintage:['grain','retro','texture'],waves:['wave','abstract','flow']}[category] ?? [])]}));
 for (const recipe of recipes) if (recipe.category === 'landing' || recipe.category === 'footer') recipe.palettes = landingPalettes;
+recipes.push(...expandedRecipes);
+
+recipes.push(...referenceRecipes);
+
+recipes.push(...floralRecipes);
+
+recipes.push(...premiumRecipes);

@@ -1,0 +1,20 @@
+/* FreeeGradients: Aperture dawn only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-aperture-dawn-01: radial-gradient(ellipse 60% 68% at 13% 30%,#f5f8f3bf 0%,#f5f8f369 42%,#f5f8f300 100%),radial-gradient(ellipse 48% 88% at 87% 22%,#d4dfd099 0%,#d4dfd054 42%,#d4dfd000 100%),linear-gradient(132deg,#f5f8f300 0%,#f5f8f300 36%,#d4dfd080 46%,#88a49ccc 50%,#d4dfd038 55%,#f5f8f300 67%,#f5f8f300 100%),linear-gradient(#f5f8f3,#f5f8f3);
+  --fg-aperture-dawn-02: radial-gradient(ellipse 60% 68% at 13% 30%,#fcf6fabf 0%,#fcf6fa69 42%,#fcf6fa00 100%),radial-gradient(ellipse 48% 88% at 87% 22%,#e9d4e199 0%,#e9d4e154 42%,#e9d4e100 100%),linear-gradient(132deg,#fcf6fa00 0%,#fcf6fa00 36%,#e9d4e180 46%,#b49bbccc 50%,#e9d4e138 55%,#fcf6fa00 67%,#fcf6fa00 100%),linear-gradient(#fcf6fa,#fcf6fa);
+  --fg-aperture-dawn-03: radial-gradient(ellipse 60% 68% at 13% 30%,#090b10bf 0%,#090b1069 42%,#090b1000 100%),radial-gradient(ellipse 48% 88% at 87% 22%,#52617699 0%,#52617654 42%,#52617600 100%),linear-gradient(132deg,#090b1000 0%,#090b1000 36%,#52617680 46%,#b7c9d5cc 50%,#52617638 55%,#090b1000 67%,#090b1000 100%),linear-gradient(#090b10,#090b10);
+  --fg-aperture-dawn-04: radial-gradient(ellipse 60% 68% at 13% 30%,#13100ebf 0%,#13100e69 42%,#13100e00 100%),radial-gradient(ellipse 48% 88% at 87% 22%,#8b715399 0%,#8b715354 42%,#8b715300 100%),linear-gradient(132deg,#13100e00 0%,#13100e00 36%,#8b715380 46%,#ddc5a3cc 50%,#8b715338 55%,#13100e00 67%,#13100e00 100%),linear-gradient(#13100e,#13100e);
+  --fg-aperture-dawn-05: radial-gradient(ellipse 60% 68% at 13% 30%,#070d1cbf 0%,#070d1c69 42%,#070d1c00 100%),radial-gradient(ellipse 48% 88% at 87% 22%,#294f8299 0%,#294f8254 42%,#294f8200 100%),linear-gradient(132deg,#070d1c00 0%,#070d1c00 36%,#294f8280 46%,#92baddcc 50%,#294f8238 55%,#070d1c00 67%,#070d1c00 100%),linear-gradient(#070d1c,#070d1c);
+  --fg-aperture-dawn-06: radial-gradient(ellipse 60% 68% at 13% 30%,#180c13bf 0%,#180c1369 42%,#180c1300 100%),radial-gradient(ellipse 48% 88% at 87% 22%,#79395399 0%,#79395354 42%,#79395300 100%),linear-gradient(132deg,#180c1300 0%,#180c1300 36%,#79395380 46%,#c89caacc 50%,#79395338 55%,#180c1300 67%,#180c1300 100%),linear-gradient(#180c13,#180c13);
+  --fg-aperture-dawn-07: radial-gradient(ellipse 60% 68% at 13% 30%,#f8fafcbf 0%,#f8fafc69 42%,#f8fafc00 100%),radial-gradient(ellipse 48% 88% at 87% 22%,#d4e3ed99 0%,#d4e3ed54 42%,#d4e3ed00 100%),linear-gradient(132deg,#f8fafc00 0%,#f8fafc00 36%,#d4e3ed80 46%,#8aaec6cc 50%,#d4e3ed38 55%,#f8fafc00 67%,#f8fafc00 100%),linear-gradient(#f8fafc,#f8fafc);
+  --fg-aperture-dawn-08: radial-gradient(ellipse 60% 68% at 13% 30%,#fcf9f3bf 0%,#fcf9f369 42%,#fcf9f300 100%),radial-gradient(ellipse 48% 88% at 87% 22%,#e4d8c299 0%,#e4d8c254 42%,#e4d8c200 100%),linear-gradient(132deg,#fcf9f300 0%,#fcf9f300 36%,#e4d8c280 46%,#b5a086cc 50%,#e4d8c238 55%,#fcf9f300 67%,#fcf9f300 100%),linear-gradient(#fcf9f3,#fcf9f3);
+}
+.fg-aperture-dawn-01 { background-color: #f5f8f3; background-image: var(--fg-aperture-dawn-01); }
+.fg-aperture-dawn-02 { background-color: #fcf6fa; background-image: var(--fg-aperture-dawn-02); }
+.fg-aperture-dawn-03 { background-color: #090b10; background-image: var(--fg-aperture-dawn-03); }
+.fg-aperture-dawn-04 { background-color: #13100e; background-image: var(--fg-aperture-dawn-04); }
+.fg-aperture-dawn-05 { background-color: #070d1c; background-image: var(--fg-aperture-dawn-05); }
+.fg-aperture-dawn-06 { background-color: #180c13; background-image: var(--fg-aperture-dawn-06); }
+.fg-aperture-dawn-07 { background-color: #f8fafc; background-image: var(--fg-aperture-dawn-07); }
+.fg-aperture-dawn-08 { background-color: #fcf9f3; background-image: var(--fg-aperture-dawn-08); }

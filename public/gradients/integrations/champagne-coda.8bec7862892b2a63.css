@@ -1,0 +1,20 @@
+/* FreeeGradients: Champagne coda only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-champagne-coda-01: url("../assets/champagne-coda-01.40d93bb5a2f1ed99.webp");
+  --fg-champagne-coda-02: url("../assets/champagne-coda-02.883d37164f62602c.webp");
+  --fg-champagne-coda-03: url("../assets/champagne-coda-03.5c6994c7dab77d05.webp");
+  --fg-champagne-coda-04: url("../assets/champagne-coda-04.a46b5712645eb96a.webp");
+  --fg-champagne-coda-05: url("../assets/champagne-coda-05.0fa2dd5622373698.webp");
+  --fg-champagne-coda-06: url("../assets/champagne-coda-06.a2d84ac96847443d.webp");
+  --fg-champagne-coda-07: url("../assets/champagne-coda-07.1ccdeed78337fc77.webp");
+  --fg-champagne-coda-08: url("../assets/champagne-coda-08.a81bb15468edffd0.webp");
+}
+.fg-champagne-coda-01 { background-color: #13100e; background-image: var(--fg-champagne-coda-01); }
+.fg-champagne-coda-02 { background-color: #070d1c; background-image: var(--fg-champagne-coda-02); }
+.fg-champagne-coda-03 { background-color: #180c13; background-image: var(--fg-champagne-coda-03); }
+.fg-champagne-coda-04 { background-color: #f8fafc; background-image: var(--fg-champagne-coda-04); }
+.fg-champagne-coda-05 { background-color: #fcf9f3; background-image: var(--fg-champagne-coda-05); }
+.fg-champagne-coda-06 { background-color: #f5f8f3; background-image: var(--fg-champagne-coda-06); }
+.fg-champagne-coda-07 { background-color: #fcf6fa; background-image: var(--fg-champagne-coda-07); }
+.fg-champagne-coda-08 { background-color: #090b10; background-image: var(--fg-champagne-coda-08); }

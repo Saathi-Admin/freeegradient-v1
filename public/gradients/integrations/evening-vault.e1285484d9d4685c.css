@@ -1,0 +1,20 @@
+/* FreeeGradients: Evening vault only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-evening-vault-01: url("../assets/evening-vault-01.85a55684a851c7b8.webp");
+  --fg-evening-vault-02: url("../assets/evening-vault-02.852aee8bd18ae6bb.webp");
+  --fg-evening-vault-03: url("../assets/evening-vault-03.55acc3626f2a5212.webp");
+  --fg-evening-vault-04: url("../assets/evening-vault-04.fadf92777f115c73.webp");
+  --fg-evening-vault-05: url("../assets/evening-vault-05.85590b1bff2147a7.webp");
+  --fg-evening-vault-06: url("../assets/evening-vault-06.c3d9b873b31601d4.webp");
+  --fg-evening-vault-07: url("../assets/evening-vault-07.c29c4b5671c1ed35.webp");
+  --fg-evening-vault-08: url("../assets/evening-vault-08.5417141afb9b0393.webp");
+}
+.fg-evening-vault-01 { background-color: #070d1c; background-image: var(--fg-evening-vault-01); }
+.fg-evening-vault-02 { background-color: #180c13; background-image: var(--fg-evening-vault-02); }
+.fg-evening-vault-03 { background-color: #f8fafc; background-image: var(--fg-evening-vault-03); }
+.fg-evening-vault-04 { background-color: #fcf9f3; background-image: var(--fg-evening-vault-04); }
+.fg-evening-vault-05 { background-color: #f5f8f3; background-image: var(--fg-evening-vault-05); }
+.fg-evening-vault-06 { background-color: #fcf6fa; background-image: var(--fg-evening-vault-06); }
+.fg-evening-vault-07 { background-color: #090b10; background-image: var(--fg-evening-vault-07); }
+.fg-evening-vault-08 { background-color: #13100e; background-image: var(--fg-evening-vault-08); }

@@ -1,0 +1,20 @@
+/* FreeeGradients: Falling marble only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-falling-marble-01: url("../assets/falling-marble-01.28ea1a798168f808.webp");
+  --fg-falling-marble-02: url("../assets/falling-marble-02.a9d9bb6d2260d001.webp");
+  --fg-falling-marble-03: url("../assets/falling-marble-03.41f333aa632a2cc6.webp");
+  --fg-falling-marble-04: url("../assets/falling-marble-04.ff4ce5cce35491af.webp");
+  --fg-falling-marble-05: url("../assets/falling-marble-05.da8459b20cec138b.webp");
+  --fg-falling-marble-06: url("../assets/falling-marble-06.af882ef6d75774df.webp");
+  --fg-falling-marble-07: url("../assets/falling-marble-07.f474c93ffd0cf76f.webp");
+  --fg-falling-marble-08: url("../assets/falling-marble-08.35e774922e55e303.webp");
+}
+.fg-falling-marble-01 { background-color: #070d1c; background-image: var(--fg-falling-marble-01); }
+.fg-falling-marble-02 { background-color: #180c13; background-image: var(--fg-falling-marble-02); }
+.fg-falling-marble-03 { background-color: #f8fafc; background-image: var(--fg-falling-marble-03); }
+.fg-falling-marble-04 { background-color: #fcf9f3; background-image: var(--fg-falling-marble-04); }
+.fg-falling-marble-05 { background-color: #f5f8f3; background-image: var(--fg-falling-marble-05); }
+.fg-falling-marble-06 { background-color: #fcf6fa; background-image: var(--fg-falling-marble-06); }
+.fg-falling-marble-07 { background-color: #090b10; background-image: var(--fg-falling-marble-07); }
+.fg-falling-marble-08 { background-color: #13100e; background-image: var(--fg-falling-marble-08); }

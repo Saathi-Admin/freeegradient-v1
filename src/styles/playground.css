@@ -15,6 +15,13 @@
 .playground-template .text-caption { color: var(--text-muted); }
 .playground-variation[aria-pressed=true] { outline: 2px solid var(--text-primary); outline-offset: 0; }
 .playground-variations { display: grid; gap: var(--space-12); }
+.playground-search-label { display: block; margin-bottom: var(--space-8); }
+.playground-search-label input { width: 100%; min-width: 0; border: 1px solid var(--border-subtle); border-radius: var(--radius-full); background: var(--surface-canvas); color: var(--text-primary); padding: var(--space-5) var(--space-6); font: inherit; font-size: var(--font-size-12); }
+.playground-pagination { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); margin-top: var(--space-8); }
+.playground-pagination .custom-select { flex:0 0 auto; width:max-content; }
+.playground-pagination .btn { height:36px; flex-shrink:0; }
+#playground-browser-status { color: var(--text-secondary); }
+#playground-browser-status { margin-block: var(--space-8); }
 .playground-palette-group h3 { margin-bottom: var(--space-4); color: var(--text-muted); }
 .playground-home { align-self: start; }
 .playground-right { margin-left: var(--playground-offset); }

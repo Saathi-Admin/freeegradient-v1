@@ -1,0 +1,184 @@
+[
+  {
+    "slug": "ion-ribbon",
+    "name": "Ion ribbon",
+    "category": "studies",
+    "preview": "/gradients/assets/ion-ribbon-01.13368f1d4c7cf0ae.svg",
+    "variations": 8
+  },
+  {
+    "slug": "spectral-rise",
+    "name": "Spectral rise",
+    "category": "studies",
+    "preview": "/gradients/assets/spectral-rise-01.20f350e9f5fdb342.svg",
+    "variations": 8
+  },
+  {
+    "slug": "ember-well",
+    "name": "Ember well",
+    "category": "studies",
+    "preview": "/gradients/assets/ember-well-01.cb34caf9941c212a.svg",
+    "variations": 8
+  },
+  {
+    "slug": "acid-pocket",
+    "name": "Acid pocket",
+    "category": "studies",
+    "preview": "/gradients/assets/acid-pocket-01.5ccad72d097f28c3.svg",
+    "variations": 8
+  },
+  {
+    "slug": "jade-vault",
+    "name": "Jade vault",
+    "category": "studies",
+    "preview": "/gradients/assets/jade-vault-01.e15dae7e0dd1eaa5.svg",
+    "variations": 8
+  },
+  {
+    "slug": "cyan-crossing",
+    "name": "Cyan crossing",
+    "category": "studies",
+    "preview": "/gradients/assets/cyan-crossing-01.8d2000d575f42d00.svg",
+    "variations": 8
+  },
+  {
+    "slug": "orchid-well",
+    "name": "Orchid well",
+    "category": "studies",
+    "preview": "/gradients/assets/orchid-well-01.9692a2d02c26db96.svg",
+    "variations": 8
+  },
+  {
+    "slug": "electric-capsule",
+    "name": "Electric capsule",
+    "category": "studies",
+    "preview": "/gradients/assets/electric-capsule-01.6b2acc30524f064a.svg",
+    "variations": 8
+  },
+  {
+    "slug": "rose-current",
+    "name": "Rose current",
+    "category": "studies",
+    "preview": "/gradients/assets/rose-current-01.c83caed5b752968e.svg",
+    "variations": 8
+  },
+  {
+    "slug": "cobalt-cloud",
+    "name": "Cobalt cloud",
+    "category": "studies",
+    "preview": "/gradients/assets/cobalt-cloud-01.c9e3a241d429e87d.svg",
+    "variations": 8
+  },
+  {
+    "slug": "daydream-drift",
+    "name": "Daydream drift",
+    "category": "studies",
+    "preview": "/gradients/assets/daydream-drift-01.2040811f408a81f5.svg",
+    "variations": 8
+  },
+  {
+    "slug": "solar-veil",
+    "name": "Solar veil",
+    "category": "studies",
+    "preview": "/gradients/assets/solar-veil-01.ca45c3043d429a1f.svg",
+    "variations": 8
+  },
+  {
+    "slug": "blush-atmosphere",
+    "name": "Blush atmosphere",
+    "category": "studies",
+    "preview": "/gradients/assets/blush-atmosphere-01.2391f5b12d529e10.svg",
+    "variations": 8
+  },
+  {
+    "slug": "arctic-tide",
+    "name": "Arctic tide",
+    "category": "studies",
+    "preview": "/gradients/assets/arctic-tide-01.5d37cd766dfcf7a2.svg",
+    "variations": 8
+  },
+  {
+    "slug": "coral-tension",
+    "name": "Coral tension",
+    "category": "studies",
+    "preview": "/gradients/assets/coral-tension-01.c260ca4c8ba40bf4.svg",
+    "variations": 8
+  },
+  {
+    "slug": "reeded-lustre",
+    "name": "Reeded lustre",
+    "category": "liquid",
+    "preview": "/gradients/assets/reeded-lustre-01.5fb957f1b3af7573.svg",
+    "variations": 8
+  },
+  {
+    "slug": "tidal-mist",
+    "name": "Tidal mist",
+    "category": "studies",
+    "preview": "/gradients/assets/tidal-mist-01.531dbfa8030d3c9e.svg",
+    "variations": 8
+  },
+  {
+    "slug": "chromatic-seam",
+    "name": "Chromatic seam",
+    "category": "studies",
+    "preview": "/gradients/assets/chromatic-seam-01.a8490ed04dece09f.svg",
+    "variations": 8
+  },
+  {
+    "slug": "bloom-cushion",
+    "name": "Bloom cushion",
+    "category": "studies",
+    "preview": "/gradients/assets/bloom-cushion-01.8dc1fee2d3cf7844.svg",
+    "variations": 8
+  },
+  {
+    "slug": "fern-contour",
+    "name": "Fern contour",
+    "category": "liquid",
+    "preview": "/gradients/assets/fern-contour-01.0e591cba2d0d58f2.svg",
+    "variations": 8
+  },
+  {
+    "slug": "aurora-fold",
+    "name": "Aurora fold",
+    "category": "iridescent",
+    "preview": "/gradients/assets/aurora-fold-01.39d090f5d7d43360.svg",
+    "variations": 8
+  },
+  {
+    "slug": "pearl-current",
+    "name": "Pearl current",
+    "category": "iridescent",
+    "preview": "/gradients/assets/pearl-current-01.e5c851378043ac27.svg",
+    "variations": 8
+  },
+  {
+    "slug": "chromatic-sail",
+    "name": "Chromatic sail",
+    "category": "iridescent",
+    "preview": "/gradients/assets/chromatic-sail-01.96ca1ebe964d3565.svg",
+    "variations": 8
+  },
+  {
+    "slug": "opal-loop",
+    "name": "Opal loop",
+    "category": "iridescent",
+    "preview": "/gradients/assets/opal-loop-01.8f7080da6e37a496.svg",
+    "variations": 8
+  },
+  {
+    "slug": "prism-fan",
+    "name": "Prism fan",
+    "category": "iridescent",
+    "preview": "/gradients/assets/prism-fan-01.9b3228d83c7e1471.svg",
+    "variations": 8
+  },
+  {
+    "slug": "silk-orbit",
+    "name": "Silk orbit",
+    "category": "iridescent",
+    "preview": "/gradients/assets/silk-orbit-01.8fda0c73522bc7b0.svg",
+    "variations": 8
+  }
+]

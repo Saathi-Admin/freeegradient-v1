@@ -10,7 +10,7 @@ const variation = available.find(v => v.id === variationId) ?? available[(order 
 <article class="gradient-card" data-template={gradient.slug} data-variation={variation.id} data-design-mode={designMode} data-fixed-variation={variationId}>
   <div class="card-media">
   <a class="card-preview" href={`/gradients/${variation.id}/`} aria-label={`View ${gradient.name}, ${variation.name}`}>
-    <img src={variation.src} alt={`${gradient.name}, ${variation.name} colour palette`} width="1600" height="900" loading={featured && order < 3 ? 'eager' : 'lazy'} fetchpriority={featured && order === 0 ? 'high' : 'auto'} decoding="async" />
+    <img src={variation.thumbnail} alt={`${gradient.name}, ${variation.name} colour palette`} width="384" height="216" loading={featured && order < 3 ? 'eager' : 'lazy'} fetchpriority={featured && order === 0 ? 'high' : 'auto'} decoding="async" />
   </a>
     <div class="card-actions">
       {([['css',Copy,'Copy CSS'],['svg',Download,'Download SVG'],['png',Download,'Download PNG'],['jpeg',Download,'Download JPEG']] as const).map(([action,Icon,label]) => <Button size="sm" variant="secondary" data-action={action} aria-label={`${label}: ${gradient.name}`}><Icon slot="leading-icon" aria-hidden="true" />{action.toUpperCase()}</Button>)}
@@ -19,7 +19,7 @@ const variation = available.find(v => v.id === variationId) ?? available[(order 
   <div class="card-footer">
     <div class="card-title"><h3 class="text-body-sm">{gradient.name}</h3><span class="card-id text-caption">{variation.id}</span></div>
     {!variationId && <div class:list={['swatches', { 'swatches-expanded': gradient.variations.length > 4 }]} aria-label={`${gradient.name} colour variations`}>
-      {gradient.variations.map(v => <button class="palette-swatch" style={`--swatch:url("${v.src}")`} data-palette={v.id} aria-label={`${v.name}, for ${v.mode} designs`} aria-pressed={v.id === variation.id} hidden={v.mode !== variation.mode} title={v.name}></button>)}
+      {gradient.variations.map(v => <button class="palette-swatch" style={`--swatch:url("${v.thumbnail}")`} data-palette={v.id} aria-label={`${v.name}, for ${v.mode} designs`} aria-pressed={v.id === variation.id} hidden={v.mode !== variation.mode} title={v.name}></button>)}
     </div>}
   </div>
 </article>

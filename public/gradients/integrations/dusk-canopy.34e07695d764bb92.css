@@ -1,0 +1,20 @@
+/* FreeeGradients: Dusk canopy only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-dusk-canopy-01: url("../assets/dusk-canopy-01.328e631bc1e8b080.webp");
+  --fg-dusk-canopy-02: url("../assets/dusk-canopy-02.d85196ac4e6c4bfa.webp");
+  --fg-dusk-canopy-03: url("../assets/dusk-canopy-03.b8e361a6d7386413.webp");
+  --fg-dusk-canopy-04: url("../assets/dusk-canopy-04.36ed1c52f2f9df4b.webp");
+  --fg-dusk-canopy-05: url("../assets/dusk-canopy-05.9f4831377fa5f65c.webp");
+  --fg-dusk-canopy-06: url("../assets/dusk-canopy-06.61b842d13e2c297a.webp");
+  --fg-dusk-canopy-07: url("../assets/dusk-canopy-07.88ef7ec076b5ba74.webp");
+  --fg-dusk-canopy-08: url("../assets/dusk-canopy-08.58df98aea785fda2.webp");
+}
+.fg-dusk-canopy-01 { background-color: #f8fafc; background-image: var(--fg-dusk-canopy-01); }
+.fg-dusk-canopy-02 { background-color: #fcf9f3; background-image: var(--fg-dusk-canopy-02); }
+.fg-dusk-canopy-03 { background-color: #f5f8f3; background-image: var(--fg-dusk-canopy-03); }
+.fg-dusk-canopy-04 { background-color: #fcf6fa; background-image: var(--fg-dusk-canopy-04); }
+.fg-dusk-canopy-05 { background-color: #090b10; background-image: var(--fg-dusk-canopy-05); }
+.fg-dusk-canopy-06 { background-color: #13100e; background-image: var(--fg-dusk-canopy-06); }
+.fg-dusk-canopy-07 { background-color: #070d1c; background-image: var(--fg-dusk-canopy-07); }
+.fg-dusk-canopy-08 { background-color: #180c13; background-image: var(--fg-dusk-canopy-08); }

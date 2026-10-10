@@ -1,0 +1,20 @@
+/* FreeeGradients: Ion ribbon only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-ion-ribbon-01: url("../assets/ion-ribbon-01.fa5f1e553100a372.webp");
+  --fg-ion-ribbon-02: url("../assets/ion-ribbon-02.4434d7a4c11ae910.webp");
+  --fg-ion-ribbon-03: url("../assets/ion-ribbon-03.42f03e6829c8efe6.webp");
+  --fg-ion-ribbon-04: url("../assets/ion-ribbon-04.7065002c7a609a8e.webp");
+  --fg-ion-ribbon-05: url("../assets/ion-ribbon-05.baa846efb63a5255.webp");
+  --fg-ion-ribbon-06: url("../assets/ion-ribbon-06.f6d1cbaf49c73e32.webp");
+  --fg-ion-ribbon-07: url("../assets/ion-ribbon-07.8d1089805003ee5e.webp");
+  --fg-ion-ribbon-08: url("../assets/ion-ribbon-08.dd0acc35bb9c6fab.webp");
+}
+.fg-ion-ribbon-01 { background-color: #020518; background-image: var(--fg-ion-ribbon-01); }
+.fg-ion-ribbon-02 { background-color: #0c0923; background-image: var(--fg-ion-ribbon-02); }
+.fg-ion-ribbon-03 { background-color: #021917; background-image: var(--fg-ion-ribbon-03); }
+.fg-ion-ribbon-04 { background-color: #210c13; background-image: var(--fg-ion-ribbon-04); }
+.fg-ion-ribbon-05 { background-color: #f9fcff; background-image: var(--fg-ion-ribbon-05); }
+.fg-ion-ribbon-06 { background-color: #fff7f1; background-image: var(--fg-ion-ribbon-06); }
+.fg-ion-ribbon-07 { background-color: #f6fbf4; background-image: var(--fg-ion-ribbon-07); }
+.fg-ion-ribbon-08 { background-color: #faf4ff; background-image: var(--fg-ion-ribbon-08); }

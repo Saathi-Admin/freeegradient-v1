@@ -1,0 +1,20 @@
+/* FreeeGradients: Afterglow only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-afterglow-01: url("../assets/afterglow-01.7e2f1cd54682a36b.webp");
+  --fg-afterglow-02: url("../assets/afterglow-02.617f4fd92527a349.webp");
+  --fg-afterglow-03: url("../assets/afterglow-03.b0a738860061743f.webp");
+  --fg-afterglow-04: url("../assets/afterglow-04.ed1ef04829c60253.webp");
+  --fg-afterglow-05: url("../assets/afterglow-05.b9f2984b24039594.webp");
+  --fg-afterglow-06: url("../assets/afterglow-06.c3fbf7342b79a946.webp");
+  --fg-afterglow-07: url("../assets/afterglow-07.a564f4219232ec79.webp");
+  --fg-afterglow-08: url("../assets/afterglow-08.8c334dd54c4a0c94.webp");
+}
+.fg-afterglow-01 { background-color: #030313; background-image: var(--fg-afterglow-01); }
+.fg-afterglow-02 { background-color: #020916; background-image: var(--fg-afterglow-02); }
+.fg-afterglow-03 { background-color: #14040c; background-image: var(--fg-afterglow-03); }
+.fg-afterglow-04 { background-color: #03120f; background-image: var(--fg-afterglow-04); }
+.fg-afterglow-05 { background-color: #faf7ff; background-image: var(--fg-afterglow-05); }
+.fg-afterglow-06 { background-color: #f5fbff; background-image: var(--fg-afterglow-06); }
+.fg-afterglow-07 { background-color: #fff9f4; background-image: var(--fg-afterglow-07); }
+.fg-afterglow-08 { background-color: #f5fff9; background-image: var(--fg-afterglow-08); }

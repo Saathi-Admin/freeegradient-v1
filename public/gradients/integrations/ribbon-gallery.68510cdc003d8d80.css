@@ -1,0 +1,20 @@
+/* FreeeGradients: Ribbon gallery only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-ribbon-gallery-01: url("../assets/ribbon-gallery-01.71192c27762cc7c0.webp");
+  --fg-ribbon-gallery-02: url("../assets/ribbon-gallery-02.21ff993e713a2e08.webp");
+  --fg-ribbon-gallery-03: url("../assets/ribbon-gallery-03.b665a6f46e002574.webp");
+  --fg-ribbon-gallery-04: url("../assets/ribbon-gallery-04.c8e7a940a67ae8e5.webp");
+  --fg-ribbon-gallery-05: url("../assets/ribbon-gallery-05.e80d4165718bc19d.webp");
+  --fg-ribbon-gallery-06: url("../assets/ribbon-gallery-06.03079b462af66f65.webp");
+  --fg-ribbon-gallery-07: url("../assets/ribbon-gallery-07.d70037feef416263.webp");
+  --fg-ribbon-gallery-08: url("../assets/ribbon-gallery-08.ca8e9a5b1c4e29b3.webp");
+}
+.fg-ribbon-gallery-01 { background-color: #070d1c; background-image: var(--fg-ribbon-gallery-01); }
+.fg-ribbon-gallery-02 { background-color: #180c13; background-image: var(--fg-ribbon-gallery-02); }
+.fg-ribbon-gallery-03 { background-color: #f8fafc; background-image: var(--fg-ribbon-gallery-03); }
+.fg-ribbon-gallery-04 { background-color: #fcf9f3; background-image: var(--fg-ribbon-gallery-04); }
+.fg-ribbon-gallery-05 { background-color: #f5f8f3; background-image: var(--fg-ribbon-gallery-05); }
+.fg-ribbon-gallery-06 { background-color: #fcf6fa; background-image: var(--fg-ribbon-gallery-06); }
+.fg-ribbon-gallery-07 { background-color: #090b10; background-image: var(--fg-ribbon-gallery-07); }
+.fg-ribbon-gallery-08 { background-color: #13100e; background-image: var(--fg-ribbon-gallery-08); }

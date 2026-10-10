@@ -1,0 +1,20 @@
+/* FreeeGradients: Dahlia dusk only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-dahlia-dusk-01: url("../assets/dahlia-dusk-01.e8510852b7a8ec76.webp");
+  --fg-dahlia-dusk-02: url("../assets/dahlia-dusk-02.daa331424db9120d.webp");
+  --fg-dahlia-dusk-03: url("../assets/dahlia-dusk-03.873c527149aaabb3.webp");
+  --fg-dahlia-dusk-04: url("../assets/dahlia-dusk-04.cabf13a6b71eaaf9.webp");
+  --fg-dahlia-dusk-05: url("../assets/dahlia-dusk-05.bf91087eb890b375.webp");
+  --fg-dahlia-dusk-06: url("../assets/dahlia-dusk-06.59c1e484fed98aaa.webp");
+  --fg-dahlia-dusk-07: url("../assets/dahlia-dusk-07.575c01d46316c395.webp");
+  --fg-dahlia-dusk-08: url("../assets/dahlia-dusk-08.ad0703c611bca90e.webp");
+}
+.fg-dahlia-dusk-01 { background-color: #171b3b; background-image: var(--fg-dahlia-dusk-01); }
+.fg-dahlia-dusk-02 { background-color: #18112d; background-image: var(--fg-dahlia-dusk-02); }
+.fg-dahlia-dusk-03 { background-color: #092b32; background-image: var(--fg-dahlia-dusk-03); }
+.fg-dahlia-dusk-04 { background-color: #32202d; background-image: var(--fg-dahlia-dusk-04); }
+.fg-dahlia-dusk-05 { background-color: #f8f4fd; background-image: var(--fg-dahlia-dusk-05); }
+.fg-dahlia-dusk-06 { background-color: #fff5e9; background-image: var(--fg-dahlia-dusk-06); }
+.fg-dahlia-dusk-07 { background-color: #f5f7e6; background-image: var(--fg-dahlia-dusk-07); }
+.fg-dahlia-dusk-08 { background-color: #fdf0f4; background-image: var(--fg-dahlia-dusk-08); }

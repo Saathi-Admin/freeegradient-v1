@@ -1,0 +1,20 @@
+/* FreeeGradients: Cobalt cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-cobalt-cloud-01: url("../assets/cobalt-cloud-01.acb513a85a6fbc0c.webp");
+  --fg-cobalt-cloud-02: url("../assets/cobalt-cloud-02.8dd507f039d9e923.webp");
+  --fg-cobalt-cloud-03: url("../assets/cobalt-cloud-03.4cfed15e6efceead.webp");
+  --fg-cobalt-cloud-04: url("../assets/cobalt-cloud-04.d17c3c8f8cd16e01.webp");
+  --fg-cobalt-cloud-05: url("../assets/cobalt-cloud-05.f9433229c25125c2.webp");
+  --fg-cobalt-cloud-06: url("../assets/cobalt-cloud-06.fa09b9a76bcb712a.webp");
+  --fg-cobalt-cloud-07: url("../assets/cobalt-cloud-07.0c706e0e07f5efd1.webp");
+  --fg-cobalt-cloud-08: url("../assets/cobalt-cloud-08.59991d5c5814c8db.webp");
+}
+.fg-cobalt-cloud-01 { background-color: #ffffff; background-image: var(--fg-cobalt-cloud-01); }
+.fg-cobalt-cloud-02 { background-color: #0c0923; background-image: var(--fg-cobalt-cloud-02); }
+.fg-cobalt-cloud-03 { background-color: #021917; background-image: var(--fg-cobalt-cloud-03); }
+.fg-cobalt-cloud-04 { background-color: #210c13; background-image: var(--fg-cobalt-cloud-04); }
+.fg-cobalt-cloud-05 { background-color: #f9fcff; background-image: var(--fg-cobalt-cloud-05); }
+.fg-cobalt-cloud-06 { background-color: #fff7f1; background-image: var(--fg-cobalt-cloud-06); }
+.fg-cobalt-cloud-07 { background-color: #f6fbf4; background-image: var(--fg-cobalt-cloud-07); }
+.fg-cobalt-cloud-08 { background-color: #faf4ff; background-image: var(--fg-cobalt-cloud-08); }

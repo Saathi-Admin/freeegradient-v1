@@ -1,0 +1,20 @@
+/* FreeeGradients: Halfway only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-halfway-01: radial-gradient(ellipse 50% 72% at 72% 78%, #071526a6 0%, #07152600 100%), linear-gradient(180deg, #386ba8 0%, #386ba8 28%, #d7efff 76%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-halfway-02: radial-gradient(ellipse 50% 72% at 72% 78%, #0b1915a6 0%, #0b191500 100%), linear-gradient(180deg, #547e66 0%, #547e66 28%, #aeb8a0 76%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-halfway-03: radial-gradient(ellipse 50% 72% at 72% 78%, #1c101ba6 0%, #1c101b00 100%), linear-gradient(180deg, #813c69 0%, #813c69 28%, #e8a5c5 76%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-halfway-04: radial-gradient(ellipse 50% 72% at 72% 78%, #25120ea6 0%, #25120e00 100%), linear-gradient(180deg, #ff5c34 0%, #ff5c34 28%, #f4c47c 76%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-halfway-05: radial-gradient(ellipse 50% 72% at 72% 78%, #f6fbffa6 0%, #f6fbff00 100%), linear-gradient(180deg, #d7efff 0%, #d7efff 28%, #82b5de 76%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-halfway-06: radial-gradient(ellipse 50% 72% at 72% 78%, #fafbf4a6 0%, #fafbf400 100%), linear-gradient(180deg, #d9e4c7 0%, #d9e4c7 28%, #aeb8a0 76%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-halfway-07: radial-gradient(ellipse 50% 72% at 72% 78%, #fff6f7a6 0%, #fff6f700 100%), linear-gradient(180deg, #f3cadb 0%, #f3cadb 28%, #bb9cdd 76%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-halfway-08: radial-gradient(ellipse 50% 72% at 72% 78%, #fffbeaa6 0%, #fffbea00 100%), linear-gradient(180deg, #e9f056 0%, #e9f056 28%, #ffae87 76%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-halfway-01 { background-image: var(--fg-halfway-01); }
+.fg-halfway-02 { background-image: var(--fg-halfway-02); }
+.fg-halfway-03 { background-image: var(--fg-halfway-03); }
+.fg-halfway-04 { background-image: var(--fg-halfway-04); }
+.fg-halfway-05 { background-image: var(--fg-halfway-05); }
+.fg-halfway-06 { background-image: var(--fg-halfway-06); }
+.fg-halfway-07 { background-image: var(--fg-halfway-07); }
+.fg-halfway-08 { background-image: var(--fg-halfway-08); }

@@ -1,10 +1,15 @@
 ---
-import { Download, Code, Copy, Check } from '@lucide/astro';
-const setupCode = '<link rel="stylesheet" href="./gradients/freeegradients.css">\n\n<section class="fg-gradient fg-aurora-01">\n  Your next idea\n</section>';
+import { Code, Copy, Check } from '@lucide/astro';
+import Select from './ui/Select.astro';
+import { gradients } from '../data/gradients';
+const demoTemplates = gradients.filter(g=>['aurora','horizon','velvet','orbit','opaline','liquid-chrome','nebula','refraction','twofold','pivot'].includes(g.slug));
+const demoOptions=demoTemplates.map(g=>({value:g.slug,label:g.name,image:g.variations[0].thumbnail}));
+const demoSetup=demoTemplates.map(g=>({value:g.slug,stylesheet:g.stylesheet,firstClass:`fg-${g.variations[0].id}`,secondClass:`fg-${g.variations[1].id}`}));
+const setupCode = '<section class="fg-gradient fg-aurora-01">\n  Your next idea\n</section>';
 const steps = [
   { number: '01', icon: '/layers.png', title: 'Find your gradient.', text: 'Explore the collections or browse all gradients. Choose a style that fits your next idea.' },
   { number: '02', icon: '/color.png', title: 'Pick your colours.', text: 'Open a gradient and choose a colour variation. Find the right match for your light or dark design.' },
-  { number: '03', icon: '/download.png', title: 'Copy or download.', text: 'Copy CSS for your website, or download SVG, PNG or JPEG for your design. Ready when you are.' },
+  { number: '03', icon: '/download.png', title: 'Add a class. Swap the look.', text: 'Add the stylesheet once. Use fg-gradient with your chosen gradient class, then change the class to switch colours.' },
 ];
 ---
 <section id="how-to-use" class="section container" aria-labelledby="usage-title">
@@ -16,12 +21,19 @@ const steps = [
     </article>)}
   </div>
   <div class="usage-library">
-    <div class="usage-library-copy"><h3 class="text-h6">All gradients. One download.</h3><p class="text-body-sm">Unzip, link the stylesheet and use a gradient class.</p></div>
-    <a class="btn btn-primary btn-md" href="/gradients/freeegradients.zip" download><Download aria-hidden="true" />Download the CSS library</a>
+    <div class="usage-library-copy"><h3 class="text-h6">One template. One small link.</h3><p class="text-body-sm">Load only the template you need. Change its class to swap colours.</p></div>
+    <button class="btn btn-primary btn-md" type="button" id="copy-stylesheet"><Copy aria-hidden="true" />Copy CSS link</button>
+    <div class="usage-code-panel usage-import">
+      <div class="usage-template-label"><span class="text-body-sm" id="stylesheet-template-label">Try a template</span><Select id="stylesheet-template" labelId="stylesheet-template-label" options={demoOptions} value="aurora" /><a class="btn btn-ghost btn-xs" href="/gradients/">All templates</a></div>
+      <script type="application/json" id="stylesheet-template-data" set:html={JSON.stringify(demoSetup).replaceAll('<','\\u003c')} />
+      <span class="text-caption">1. Add this stylesheet to your HTML head</span>
+      <pre><code id="stylesheet-code">&lt;link rel="stylesheet" href="/gradients/styles/aurora.css"&gt;</code></pre>
+    </div>
     <div class="usage-example">
       <div class="usage-code-panel">
-        <div class="usage-code-header"><span class="text-caption"><Code size={16} aria-hidden="true" />HTML example</span><button class="btn btn-ghost btn-sm" type="button" id="copy-setup-code"><Copy class="setup-copy-icon" size={16} aria-hidden="true" /><Check class="setup-check-icon" size={16} aria-hidden="true" /><span>Copy code</span></button></div>
+        <div class="usage-code-header"><span class="text-caption"><Code size={16} aria-hidden="true" />2. Add to your HTML</span><button class="btn btn-ghost btn-sm" type="button" id="copy-setup-code"><Copy class="setup-copy-icon" size={16} aria-hidden="true" /><Check class="setup-check-icon" size={16} aria-hidden="true" /><span>Copy code</span></button></div>
         <pre><code id="setup-code">{setupCode}</code></pre>
+        <p class="text-body-sm usage-swap">Keep <code>fg-gradient</code>. Swap <code id="swap-from">fg-aurora-01</code> for <code id="swap-to">fg-aurora-04</code> or another colour class from this template.</p>
       </div>
     </div>
   </div>
@@ -38,6 +50,11 @@ const steps = [
   .usage-step-copy p, .usage-library-copy p { color: var(--text-secondary); }
   .usage-library { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--space-12); margin-top: var(--space-12); }
   .usage-example { grid-column: 1 / -1; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr); }
+  .usage-import { grid-column: 1 / -1; }
+  .usage-template-label { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-6); color: var(--text-secondary); }
+
+  .usage-import > span, .usage-swap { color: var(--text-secondary); }
+  .usage-import pre { padding: 0; background: transparent; white-space: pre-wrap; overflow-wrap: anywhere; }
   .usage-code-panel { background: var(--surface-canvas); border-radius: var(--gradient-card-image-radius); padding: var(--space-8); min-width: 0; display: grid; gap: var(--space-8); }
   .usage-code-header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
   .usage-code-header > span { display: flex; align-items: center; gap: var(--space-4); color: var(--text-muted); }
@@ -46,9 +63,34 @@ const steps = [
   [data-copied] .setup-check-icon { display: block; }
   @media (max-width: 799px) { .usage-steps { grid-template-columns: 1fr; } .usage-library { grid-template-columns: minmax(0, 1fr); } .usage-library > .btn { justify-self: start; } }
   @media (max-width: 799px) { .usage-example { grid-template-columns: minmax(0, 1fr); } }
-  @media (max-width: 479px) { .usage-step, .usage-library { padding: var(--space-8); } .usage-library > .btn { width: 100%; font-size: var(--font-size-14); } }
+  @media (max-width: 479px) { .usage-template-label > span { width:100%; } .usage-template-label :global(.custom-select) { flex:1; width:auto; } .usage-template-label > a { flex-shrink:0; } .usage-step, .usage-library { padding: var(--space-8); } .usage-library > .btn { width: 100%; font-size: var(--font-size-14); } }
 </style>
 <script>
+  const stylesheetCode = document.querySelector<HTMLElement>('#stylesheet-code');
+  const templateSelect = document.querySelector<HTMLElement>('#stylesheet-template')!;
+  const setups = JSON.parse(document.querySelector('#stylesheet-template-data')!.textContent!) as {value:string;stylesheet:string;firstClass:string;secondClass:string}[];
+  const updateSetup = () => {
+    const option = setups.find(option=>option.value===templateSelect.dataset.value)!;
+    const stylesheetUrl = new URL(option.stylesheet, window.location.origin).href;
+    if (stylesheetCode) stylesheetCode.textContent = `<link rel="stylesheet" href="${stylesheetUrl}">`;
+    const code = document.querySelector('#setup-code');
+    if (code) code.textContent = `<section class="fg-gradient ${option.firstClass}">\n  Your next idea\n</section>`;
+    document.querySelector('#swap-from')!.textContent = option.firstClass!;
+    document.querySelector('#swap-to')!.textContent = option.secondClass!;
+  };
+  templateSelect.addEventListener('select-change', updateSetup);
+  updateSetup();
+  document.querySelector('#copy-stylesheet')?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(stylesheetCode?.textContent ?? '');
+      notify('Template stylesheet copied. Paste it into your HTML head.');
+    } catch {
+      if (!stylesheetCode) return;
+      const range = document.createRange(); range.selectNodeContents(stylesheetCode);
+      const selection = window.getSelection(); selection?.removeAllRanges(); selection?.addRange(range);
+      notify('Select and copy the highlighted stylesheet link.');
+    }
+  });
   const copyButton = document.querySelector<HTMLButtonElement>('#copy-setup-code');
   const code = document.querySelector<HTMLElement>('#setup-code');
   const notify = (message: string) => document.dispatchEvent(new CustomEvent('library-notify', { detail: message }));

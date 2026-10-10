@@ -1,0 +1,6 @@
+{
+  "newTemplates": 100,
+  "newVariations": 800,
+  "metric": "16x9 RGB RMS < 5, new templates compared with entire library; review signal, not proof of equivalence",
+  "flagged": []
+}

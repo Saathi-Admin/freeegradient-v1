@@ -1,0 +1,20 @@
+/* FreeeGradients: Prism terrace 02 only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-prism-terrace-02-01: radial-gradient(ellipse 17.4% 86% at 45% 12%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(184deg, #07152600 0%, #07152600 25%, #d7efffbf 48%, #386ba81a 58%, #071526b3 100%), linear-gradient(112deg, #071526 0%, #386ba8 48%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-prism-terrace-02-02: radial-gradient(ellipse 17.4% 86% at 45% 12%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(184deg, #0b191500 0%, #0b191500 25%, #aeb8a0bf 48%, #547e661a 58%, #0b1915b3 100%), linear-gradient(112deg, #0b1915 0%, #547e66 48%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-prism-terrace-02-03: radial-gradient(ellipse 17.4% 86% at 45% 12%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(184deg, #1c101b00 0%, #1c101b00 25%, #e8a5c5bf 48%, #813c691a 58%, #1c101bb3 100%), linear-gradient(112deg, #1c101b 0%, #813c69 48%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-prism-terrace-02-04: radial-gradient(ellipse 17.4% 86% at 45% 12%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(184deg, #25120e00 0%, #25120e00 25%, #f4c47cbf 48%, #ff5c341a 58%, #25120eb3 100%), linear-gradient(112deg, #25120e 0%, #ff5c34 48%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-prism-terrace-02-05: radial-gradient(ellipse 17.4% 86% at 45% 12%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(184deg, #f6fbff00 0%, #f6fbff00 25%, #82b5debf 48%, #d7efff1a 58%, #f6fbffb3 100%), linear-gradient(112deg, #f6fbff 0%, #d7efff 48%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-prism-terrace-02-06: radial-gradient(ellipse 17.4% 86% at 45% 12%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(184deg, #fafbf400 0%, #fafbf400 25%, #aeb8a0bf 48%, #d9e4c71a 58%, #fafbf4b3 100%), linear-gradient(112deg, #fafbf4 0%, #d9e4c7 48%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-prism-terrace-02-07: radial-gradient(ellipse 17.4% 86% at 45% 12%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(184deg, #fff6f700 0%, #fff6f700 25%, #bb9cddbf 48%, #f3cadb1a 58%, #fff6f7b3 100%), linear-gradient(112deg, #fff6f7 0%, #f3cadb 48%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-prism-terrace-02-08: radial-gradient(ellipse 17.4% 86% at 45% 12%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(184deg, #fffbea00 0%, #fffbea00 25%, #ffae87bf 48%, #e9f0561a 58%, #fffbeab3 100%), linear-gradient(112deg, #fffbea 0%, #e9f056 48%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-prism-terrace-02-01 { background-color: #071526; background-image: var(--fg-prism-terrace-02-01); }
+.fg-prism-terrace-02-02 { background-color: #0b1915; background-image: var(--fg-prism-terrace-02-02); }
+.fg-prism-terrace-02-03 { background-color: #1c101b; background-image: var(--fg-prism-terrace-02-03); }
+.fg-prism-terrace-02-04 { background-color: #25120e; background-image: var(--fg-prism-terrace-02-04); }
+.fg-prism-terrace-02-05 { background-color: #f6fbff; background-image: var(--fg-prism-terrace-02-05); }
+.fg-prism-terrace-02-06 { background-color: #fafbf4; background-image: var(--fg-prism-terrace-02-06); }
+.fg-prism-terrace-02-07 { background-color: #fff6f7; background-image: var(--fg-prism-terrace-02-07); }
+.fg-prism-terrace-02-08 { background-color: #fffbea; background-image: var(--fg-prism-terrace-02-08); }

@@ -1,0 +1,20 @@
+/* FreeeGradients: Bloom cushion only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-bloom-cushion-01: url("../assets/bloom-cushion-01.15cc588b337971d2.webp");
+  --fg-bloom-cushion-02: url("../assets/bloom-cushion-02.7fcbcb6c58dde219.webp");
+  --fg-bloom-cushion-03: url("../assets/bloom-cushion-03.e2856694573495ce.webp");
+  --fg-bloom-cushion-04: url("../assets/bloom-cushion-04.b915a02ff3a4fb63.webp");
+  --fg-bloom-cushion-05: url("../assets/bloom-cushion-05.8d124d2129fd10ab.webp");
+  --fg-bloom-cushion-06: url("../assets/bloom-cushion-06.9587ede528aae7ed.webp");
+  --fg-bloom-cushion-07: url("../assets/bloom-cushion-07.f6072a15642d58fa.webp");
+  --fg-bloom-cushion-08: url("../assets/bloom-cushion-08.15325976922d495e.webp");
+}
+.fg-bloom-cushion-01 { background-color: #101327; background-image: var(--fg-bloom-cushion-01); }
+.fg-bloom-cushion-02 { background-color: #0c0923; background-image: var(--fg-bloom-cushion-02); }
+.fg-bloom-cushion-03 { background-color: #021917; background-image: var(--fg-bloom-cushion-03); }
+.fg-bloom-cushion-04 { background-color: #210c13; background-image: var(--fg-bloom-cushion-04); }
+.fg-bloom-cushion-05 { background-color: #f9fcff; background-image: var(--fg-bloom-cushion-05); }
+.fg-bloom-cushion-06 { background-color: #fff7f1; background-image: var(--fg-bloom-cushion-06); }
+.fg-bloom-cushion-07 { background-color: #f6fbf4; background-image: var(--fg-bloom-cushion-07); }
+.fg-bloom-cushion-08 { background-color: #faf4ff; background-image: var(--fg-bloom-cushion-08); }

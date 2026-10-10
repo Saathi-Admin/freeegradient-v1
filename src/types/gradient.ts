@@ -1,9 +1,12 @@
+import type { collections } from '../data/collections';
 export interface GradientVariation {
   id: string;
   name: string;
   colors: string[];
   mode: 'light' | 'dark';
   src: string;
+  thumbnail: string;
+  backgroundSrc?: string;
   css: string;
   cssKind: 'native' | 'asset';
   tags: string[];
@@ -13,7 +16,8 @@ export interface GradientTemplate {
   id: string;
   slug: string;
   name: string;
-  category: 'smooth' | 'mesh' | 'glow' | 'vintage' | 'waves' | 'landing' | 'footer';
+  stylesheet: string;
+  category: (typeof collections)[number]['id'];
   tags: string[];
   variations: GradientVariation[];
 }

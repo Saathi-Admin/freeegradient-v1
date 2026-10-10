@@ -1,7 +1,12 @@
 ---
 import Button from "./ui/Button.astro";
 import { X, Code, Download } from "@lucide/astro";
+import { gradients } from '../data/gradients';
+import type { GradientTemplate } from '../types/gradient';
+interface Props { templates?: GradientTemplate[]; }
+const { templates = gradients } = Astro.props;
 ---
+  <script id="gradient-catalogue" type="application/json" is:inline set:html={JSON.stringify(templates).replaceAll('<', '\\u003c')} />
   <dialog class="gradient-dialog" aria-labelledby="dialog-title">
     <div class="dialog-header"><div><h2 class="text-h5" id="dialog-title"></h2><p class="text-caption" id="dialog-id"></p></div><Button size="sm" variant="secondary" iconOnly aria-label="Close preview" id="close-preview"><X aria-hidden="true" /></Button></div>
     <div class="dialog-preview"><img id="dialog-image" alt="" width="1600" height="900" /><div class="preview-copy" id="preview-copy"><p class="text-caption">YOUR NEXT IDEA</p><p class="text-h2">Make something<br /><span class="text-serif-italic">beautiful.</span></p></div></div>

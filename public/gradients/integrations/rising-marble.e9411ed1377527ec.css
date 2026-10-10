@@ -1,0 +1,20 @@
+/* FreeeGradients: Rising marble only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-rising-marble-01: url("../assets/rising-marble-01.5265c6ca1bf57b55.webp");
+  --fg-rising-marble-02: url("../assets/rising-marble-02.c18cad9e23d88168.webp");
+  --fg-rising-marble-03: url("../assets/rising-marble-03.2c35b9f85f0f69c1.webp");
+  --fg-rising-marble-04: url("../assets/rising-marble-04.9871abf3dcec8ea7.webp");
+  --fg-rising-marble-05: url("../assets/rising-marble-05.20faa4eeeacf8c66.webp");
+  --fg-rising-marble-06: url("../assets/rising-marble-06.45a70af47eb22baf.webp");
+  --fg-rising-marble-07: url("../assets/rising-marble-07.11c2bdb601868a26.webp");
+  --fg-rising-marble-08: url("../assets/rising-marble-08.89985291405955de.webp");
+}
+.fg-rising-marble-01 { background-color: #070d1c; background-image: var(--fg-rising-marble-01); }
+.fg-rising-marble-02 { background-color: #180c13; background-image: var(--fg-rising-marble-02); }
+.fg-rising-marble-03 { background-color: #f8fafc; background-image: var(--fg-rising-marble-03); }
+.fg-rising-marble-04 { background-color: #fcf9f3; background-image: var(--fg-rising-marble-04); }
+.fg-rising-marble-05 { background-color: #f5f8f3; background-image: var(--fg-rising-marble-05); }
+.fg-rising-marble-06 { background-color: #fcf6fa; background-image: var(--fg-rising-marble-06); }
+.fg-rising-marble-07 { background-color: #090b10; background-image: var(--fg-rising-marble-07); }
+.fg-rising-marble-08 { background-color: #13100e; background-image: var(--fg-rising-marble-08); }

@@ -1,0 +1,13 @@
+---
+import GradientListing from '../../../../../components/GradientListing.astro';
+import { collections } from '../../../../../data/collections';
+import { gradientResults, gradientPageSize, type BrowseMode } from '../../../../../data/gradient-pages';
+export function getStaticPaths() {
+  return collections.flatMap(collection=>(['all','light','dark'] as BrowseMode[]).flatMap(mode=>
+    Array.from({length:Math.ceil(gradientResults(mode,collection.id).length/gradientPageSize)},(_,index)=>({
+      params:{slug:collection.id,mode,page:String(index+1)},props:{category:collection.id,mode,page:index+1},
+    })))).filter(route=>route.params.mode!=='all'||route.params.page!=='1');
+}
+const { category, mode, page } = Astro.props;
+---
+<GradientListing category={category} mode={mode} page={page} />

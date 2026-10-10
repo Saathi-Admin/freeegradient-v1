@@ -1,0 +1,20 @@
+/* FreeeGradients: Gliding dawn only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-gliding-dawn-01: url("../assets/gliding-dawn-01.8c03819689e659b7.webp");
+  --fg-gliding-dawn-02: url("../assets/gliding-dawn-02.fda94a4705015010.webp");
+  --fg-gliding-dawn-03: url("../assets/gliding-dawn-03.8c106eb85f2e938d.webp");
+  --fg-gliding-dawn-04: url("../assets/gliding-dawn-04.ffab492e0010f441.webp");
+  --fg-gliding-dawn-05: url("../assets/gliding-dawn-05.83f543b7c601c3ba.webp");
+  --fg-gliding-dawn-06: url("../assets/gliding-dawn-06.71e6dd771f8ae2b4.webp");
+  --fg-gliding-dawn-07: url("../assets/gliding-dawn-07.3f2d39ffa6bc7611.webp");
+  --fg-gliding-dawn-08: url("../assets/gliding-dawn-08.ad88ea0433ecf0c4.webp");
+}
+.fg-gliding-dawn-01 { background-color: #f8fafc; background-image: var(--fg-gliding-dawn-01); }
+.fg-gliding-dawn-02 { background-color: #fcf9f3; background-image: var(--fg-gliding-dawn-02); }
+.fg-gliding-dawn-03 { background-color: #f5f8f3; background-image: var(--fg-gliding-dawn-03); }
+.fg-gliding-dawn-04 { background-color: #fcf6fa; background-image: var(--fg-gliding-dawn-04); }
+.fg-gliding-dawn-05 { background-color: #090b10; background-image: var(--fg-gliding-dawn-05); }
+.fg-gliding-dawn-06 { background-color: #13100e; background-image: var(--fg-gliding-dawn-06); }
+.fg-gliding-dawn-07 { background-color: #070d1c; background-image: var(--fg-gliding-dawn-07); }
+.fg-gliding-dawn-08 { background-color: #180c13; background-image: var(--fg-gliding-dawn-08); }

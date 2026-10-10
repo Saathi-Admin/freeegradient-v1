@@ -1,0 +1,20 @@
+/* FreeeGradients: Nightfall only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-nightfall-01: url("../assets/nightfall-01.38e604968f73a2d2.webp");
+  --fg-nightfall-02: url("../assets/nightfall-02.9ba13206829cf3c0.webp");
+  --fg-nightfall-03: url("../assets/nightfall-03.17e221f277b20559.webp");
+  --fg-nightfall-04: url("../assets/nightfall-04.65bcae420567d21f.webp");
+  --fg-nightfall-05: url("../assets/nightfall-05.225025c03d06336a.webp");
+  --fg-nightfall-06: url("../assets/nightfall-06.5c798175075956b7.webp");
+  --fg-nightfall-07: url("../assets/nightfall-07.68e7012d2fac989e.webp");
+  --fg-nightfall-08: url("../assets/nightfall-08.795988ba3abb06f1.webp");
+}
+.fg-nightfall-01 { background-color: #030313; background-image: var(--fg-nightfall-01); }
+.fg-nightfall-02 { background-color: #020916; background-image: var(--fg-nightfall-02); }
+.fg-nightfall-03 { background-color: #14040c; background-image: var(--fg-nightfall-03); }
+.fg-nightfall-04 { background-color: #03120f; background-image: var(--fg-nightfall-04); }
+.fg-nightfall-05 { background-color: #faf7ff; background-image: var(--fg-nightfall-05); }
+.fg-nightfall-06 { background-color: #f5fbff; background-image: var(--fg-nightfall-06); }
+.fg-nightfall-07 { background-color: #fff9f4; background-image: var(--fg-nightfall-07); }
+.fg-nightfall-08 { background-color: #f5fff9; background-image: var(--fg-nightfall-08); }

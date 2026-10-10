@@ -1,0 +1,20 @@
+/* FreeeGradients: Marigold air only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-marigold-air-01: url("../assets/marigold-air-01.4685fc051c112415.webp");
+  --fg-marigold-air-02: url("../assets/marigold-air-02.22ad877c235e9a42.webp");
+  --fg-marigold-air-03: url("../assets/marigold-air-03.716805b770248b7f.webp");
+  --fg-marigold-air-04: url("../assets/marigold-air-04.c42ddab362448725.webp");
+  --fg-marigold-air-05: url("../assets/marigold-air-05.b4313f2177a78c7c.webp");
+  --fg-marigold-air-06: url("../assets/marigold-air-06.40f8c8795cfb971a.webp");
+  --fg-marigold-air-07: url("../assets/marigold-air-07.c290dc492c0a501e.webp");
+  --fg-marigold-air-08: url("../assets/marigold-air-08.00d97e5531f275a3.webp");
+}
+.fg-marigold-air-01 { background-color: #fdf3d8; background-image: var(--fg-marigold-air-01); }
+.fg-marigold-air-02 { background-color: #18112d; background-image: var(--fg-marigold-air-02); }
+.fg-marigold-air-03 { background-color: #092b32; background-image: var(--fg-marigold-air-03); }
+.fg-marigold-air-04 { background-color: #32202d; background-image: var(--fg-marigold-air-04); }
+.fg-marigold-air-05 { background-color: #f8f4fd; background-image: var(--fg-marigold-air-05); }
+.fg-marigold-air-06 { background-color: #fff5e9; background-image: var(--fg-marigold-air-06); }
+.fg-marigold-air-07 { background-color: #f5f7e6; background-image: var(--fg-marigold-air-07); }
+.fg-marigold-air-08 { background-color: #fdf0f4; background-image: var(--fg-marigold-air-08); }

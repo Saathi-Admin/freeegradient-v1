@@ -1,0 +1,20 @@
+/* FreeeGradients: Dawnlight only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-dawnlight-01: url("../assets/dawnlight-01.bbbc35c223fb3d0a.webp");
+  --fg-dawnlight-02: url("../assets/dawnlight-02.818a9d2f22d64659.webp");
+  --fg-dawnlight-03: url("../assets/dawnlight-03.bfc2b989320dd6f6.webp");
+  --fg-dawnlight-04: url("../assets/dawnlight-04.ec92401adaa4ae9b.webp");
+  --fg-dawnlight-05: url("../assets/dawnlight-05.ea7a6531202cf25e.webp");
+  --fg-dawnlight-06: url("../assets/dawnlight-06.7b823f4b90224fcf.webp");
+  --fg-dawnlight-07: url("../assets/dawnlight-07.2074940b0c411882.webp");
+  --fg-dawnlight-08: url("../assets/dawnlight-08.9be432219e631b8d.webp");
+}
+.fg-dawnlight-01 { background-image: var(--fg-dawnlight-01); }
+.fg-dawnlight-02 { background-image: var(--fg-dawnlight-02); }
+.fg-dawnlight-03 { background-image: var(--fg-dawnlight-03); }
+.fg-dawnlight-04 { background-image: var(--fg-dawnlight-04); }
+.fg-dawnlight-05 { background-image: var(--fg-dawnlight-05); }
+.fg-dawnlight-06 { background-image: var(--fg-dawnlight-06); }
+.fg-dawnlight-07 { background-image: var(--fg-dawnlight-07); }
+.fg-dawnlight-08 { background-image: var(--fg-dawnlight-08); }

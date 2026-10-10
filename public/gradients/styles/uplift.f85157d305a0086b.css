@@ -1,0 +1,20 @@
+/* FreeeGradients: Uplift only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-uplift-01: url("../assets/uplift-01.aae22f838999ef49.webp");
+  --fg-uplift-02: url("../assets/uplift-02.f71b79142e096430.webp");
+  --fg-uplift-03: url("../assets/uplift-03.2fbca54cbe13d238.webp");
+  --fg-uplift-04: url("../assets/uplift-04.1befe854bf395e00.webp");
+  --fg-uplift-05: url("../assets/uplift-05.6cffd1490c5a142c.webp");
+  --fg-uplift-06: url("../assets/uplift-06.d3a7a8d86ce32439.webp");
+  --fg-uplift-07: url("../assets/uplift-07.76bdd0caff753b3d.webp");
+  --fg-uplift-08: url("../assets/uplift-08.3b1120a53aff6be4.webp");
+}
+.fg-uplift-01 { background-image: var(--fg-uplift-01); }
+.fg-uplift-02 { background-image: var(--fg-uplift-02); }
+.fg-uplift-03 { background-image: var(--fg-uplift-03); }
+.fg-uplift-04 { background-image: var(--fg-uplift-04); }
+.fg-uplift-05 { background-image: var(--fg-uplift-05); }
+.fg-uplift-06 { background-image: var(--fg-uplift-06); }
+.fg-uplift-07 { background-image: var(--fg-uplift-07); }
+.fg-uplift-08 { background-image: var(--fg-uplift-08); }

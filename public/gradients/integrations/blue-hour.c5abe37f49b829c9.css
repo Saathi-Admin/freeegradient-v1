@@ -1,0 +1,20 @@
+/* FreeeGradients: Blue hour only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-blue-hour-01: radial-gradient(ellipse 40% 36% at 28% 22%, #071526b3 0%, #07152600 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #d7efffa6 0%, #d7efff00 100%), linear-gradient(180deg, #071526 0%, #386ba8 60%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-blue-hour-02: radial-gradient(ellipse 40% 36% at 28% 22%, #0b1915b3 0%, #0b191500 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #aeb8a0a6 0%, #aeb8a000 100%), linear-gradient(180deg, #0b1915 0%, #547e66 60%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-blue-hour-03: radial-gradient(ellipse 40% 36% at 28% 22%, #1c101bb3 0%, #1c101b00 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #e8a5c5a6 0%, #e8a5c500 100%), linear-gradient(180deg, #1c101b 0%, #813c69 60%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-blue-hour-04: radial-gradient(ellipse 40% 36% at 28% 22%, #25120eb3 0%, #25120e00 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #f4c47ca6 0%, #f4c47c00 100%), linear-gradient(180deg, #25120e 0%, #ff5c34 60%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-blue-hour-05: radial-gradient(ellipse 40% 36% at 28% 22%, #f6fbffb3 0%, #f6fbff00 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #82b5dea6 0%, #82b5de00 100%), linear-gradient(180deg, #f6fbff 0%, #d7efff 60%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-blue-hour-06: radial-gradient(ellipse 40% 36% at 28% 22%, #fafbf4b3 0%, #fafbf400 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #aeb8a0a6 0%, #aeb8a000 100%), linear-gradient(180deg, #fafbf4 0%, #d9e4c7 60%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-blue-hour-07: radial-gradient(ellipse 40% 36% at 28% 22%, #fff6f7b3 0%, #fff6f700 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #bb9cdda6 0%, #bb9cdd00 100%), linear-gradient(180deg, #fff6f7 0%, #f3cadb 60%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-blue-hour-08: radial-gradient(ellipse 40% 36% at 28% 22%, #fffbeab3 0%, #fffbea00 100%), radial-gradient(ellipse 50% 72% at 72% 78%, #ffae87a6 0%, #ffae8700 100%), linear-gradient(180deg, #fffbea 0%, #e9f056 60%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-blue-hour-01 { background-color: #071526; background-image: var(--fg-blue-hour-01); }
+.fg-blue-hour-02 { background-color: #0b1915; background-image: var(--fg-blue-hour-02); }
+.fg-blue-hour-03 { background-color: #1c101b; background-image: var(--fg-blue-hour-03); }
+.fg-blue-hour-04 { background-color: #25120e; background-image: var(--fg-blue-hour-04); }
+.fg-blue-hour-05 { background-color: #f6fbff; background-image: var(--fg-blue-hour-05); }
+.fg-blue-hour-06 { background-color: #fafbf4; background-image: var(--fg-blue-hour-06); }
+.fg-blue-hour-07 { background-color: #fff6f7; background-image: var(--fg-blue-hour-07); }
+.fg-blue-hour-08 { background-color: #fffbea; background-image: var(--fg-blue-hour-08); }

@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import {guides} from '../../data/guides';
+export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
+const {guide}=Astro.props;
+---
+<BaseLayout title={`${guide.title} | FreeeGradients`} description={guide.description}>
+<Header /><main id="main-content" class="container guide"><Breadcrumbs items={[{label:'Home',href:'/'},{label:'Guides',href:'/guides/'},{label:guide.title}]} /><article><h1 class="text-h2">{guide.title}</h1><p class="text-body-md">{guide.description}</p>{guide.sections.map(([heading,text])=><section><h2 class="text-body-md">{heading}</h2><p class="text-body-sm">{text}</p></section>)}{'source' in guide && <p><a href={guide.source}>WCAG contrast requirements</a></p>}<a class="btn btn-secondary btn-md" href={`/collections/${guide.collection}/`}>Explore these gradients</a><a class="btn btn-secondary btn-md" href="/playground/">Try a real layout</a></article></main><Footer />
+</BaseLayout>
+<style>.guide{padding-block:var(--space-24) var(--section-padding-y)}article{max-width:780px;margin:var(--space-24) auto 0}section{margin-top:var(--space-16)}p{color:var(--text-secondary);margin-block:var(--space-8);line-height:1.7}a{color:var(--text-primary)}.btn{margin:var(--space-8) var(--space-4) 0 0}h1{line-height:1.15}</style>

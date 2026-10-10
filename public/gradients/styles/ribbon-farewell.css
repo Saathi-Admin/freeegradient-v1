@@ -1,0 +1,20 @@
+/* FreeeGradients: Ribbon farewell only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-ribbon-farewell-01: url("../assets/ribbon-farewell-01.017c5fcae2adb1f6.webp");
+  --fg-ribbon-farewell-02: url("../assets/ribbon-farewell-02.cbd7ab70aee1b7d8.webp");
+  --fg-ribbon-farewell-03: url("../assets/ribbon-farewell-03.90059891b4645735.webp");
+  --fg-ribbon-farewell-04: url("../assets/ribbon-farewell-04.cb23c7a5feb5936b.webp");
+  --fg-ribbon-farewell-05: url("../assets/ribbon-farewell-05.323b5e96d4080b3e.webp");
+  --fg-ribbon-farewell-06: url("../assets/ribbon-farewell-06.f9f155bf74c623c4.webp");
+  --fg-ribbon-farewell-07: url("../assets/ribbon-farewell-07.e252930c75c5d2cb.webp");
+  --fg-ribbon-farewell-08: url("../assets/ribbon-farewell-08.ea36dd19c5ae3243.webp");
+}
+.fg-ribbon-farewell-01 { background-color: #070d1c; background-image: var(--fg-ribbon-farewell-01); }
+.fg-ribbon-farewell-02 { background-color: #180c13; background-image: var(--fg-ribbon-farewell-02); }
+.fg-ribbon-farewell-03 { background-color: #f8fafc; background-image: var(--fg-ribbon-farewell-03); }
+.fg-ribbon-farewell-04 { background-color: #fcf9f3; background-image: var(--fg-ribbon-farewell-04); }
+.fg-ribbon-farewell-05 { background-color: #f5f8f3; background-image: var(--fg-ribbon-farewell-05); }
+.fg-ribbon-farewell-06 { background-color: #fcf6fa; background-image: var(--fg-ribbon-farewell-06); }
+.fg-ribbon-farewell-07 { background-color: #090b10; background-image: var(--fg-ribbon-farewell-07); }
+.fg-ribbon-farewell-08 { background-color: #13100e; background-image: var(--fg-ribbon-farewell-08); }

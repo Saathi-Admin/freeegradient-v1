@@ -1,0 +1,20 @@
+/* FreeeGradients: Soft colonnade only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-soft-colonnade-01: url("../assets/soft-colonnade-01.dfdf65df364f49c8.webp");
+  --fg-soft-colonnade-02: url("../assets/soft-colonnade-02.fa1f3f9d9b82df51.webp");
+  --fg-soft-colonnade-03: url("../assets/soft-colonnade-03.6b751dfa18b981e2.webp");
+  --fg-soft-colonnade-04: url("../assets/soft-colonnade-04.dbd7f90ad3b6e93b.webp");
+  --fg-soft-colonnade-05: url("../assets/soft-colonnade-05.5adde4bbc6278d35.webp");
+  --fg-soft-colonnade-06: url("../assets/soft-colonnade-06.aae877b7098683b7.webp");
+  --fg-soft-colonnade-07: url("../assets/soft-colonnade-07.3b8c4a9babb8dca3.webp");
+  --fg-soft-colonnade-08: url("../assets/soft-colonnade-08.166a6109005be65d.webp");
+}
+.fg-soft-colonnade-01 { background-color: #180c13; background-image: var(--fg-soft-colonnade-01); }
+.fg-soft-colonnade-02 { background-color: #f8fafc; background-image: var(--fg-soft-colonnade-02); }
+.fg-soft-colonnade-03 { background-color: #fcf9f3; background-image: var(--fg-soft-colonnade-03); }
+.fg-soft-colonnade-04 { background-color: #f5f8f3; background-image: var(--fg-soft-colonnade-04); }
+.fg-soft-colonnade-05 { background-color: #fcf6fa; background-image: var(--fg-soft-colonnade-05); }
+.fg-soft-colonnade-06 { background-color: #090b10; background-image: var(--fg-soft-colonnade-06); }
+.fg-soft-colonnade-07 { background-color: #13100e; background-image: var(--fg-soft-colonnade-07); }
+.fg-soft-colonnade-08 { background-color: #070d1c; background-image: var(--fg-soft-colonnade-08); }

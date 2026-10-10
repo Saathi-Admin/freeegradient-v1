@@ -13,9 +13,13 @@ import Button from '../components/ui/Button.astro';
 import { ArrowUpRight } from '@lucide/astro';
 import { gradients } from '../data/gradients';
 import '../styles/library.css';
-
+const featuredCollections = collections.slice(0, 7);
+const gradientTotal = new Set(gradients.flatMap(template => template.variations.map(variation => variation.id))).size;
+const gradientCount = gradientTotal.toLocaleString('en-US');
+const gradientMilestone = gradientTotal >= 1000 ? `${Math.floor(gradientTotal / 1000) * 1000}+` : gradientCount;
+const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline','orbit','bloom','nectar','halo','aurora','ember','analogue','haze','film','ripple','drift','flux','horizon','dawnlight','atmosphere','afterglow','uplift','nightfall'].includes(g.slug));
 ---
-<BaseLayout title="FreeeGradients — Beautiful gradients. Completely free." description="Explore free gradient templates for light and dark designs. Choose your colours, copy CSS and download SVG, PNG or JPEG.">
+<BaseLayout title={`${gradientCount} Free CSS Gradients for Personal & Commercial Use | FreeeGradients`} description={`Explore ${gradientCount} free gradient backgrounds for personal and commercial use. Copy CSS or download SVG, PNG and JPEG. No sign-up. No download limits.`}>
   <Header />
   <main id="main-content">
     <section class="hero container" id="gradients" aria-labelledby="hero-title">
@@ -25,10 +29,9 @@ import '../styles/library.css';
           <div class="hero-format-list" role="group" aria-label="Available formats">
             {['.css', '.svg', '.png', '.jpeg'].map((format, index) => <span class="hero-format-item" style={`--format-gradient:var(--gradient-format-${index + 1})`}>{format}</span>)}
           </div>
-          <span class="hero-chip-note">No sign-up. No limits on downloads.</span>
         </div>
-        <h1 id="hero-title"><span class="hero-heading-neutral">Beautiful gradients.</span><br /><span class="text-serif-italic"><span class="hero-heading-neutral">Completely</span> <span class="hero-free">free</span><span class="hero-heading-neutral">.</span></span></h1>
-        <p class="hero-description text-body-md">Find your colours. Pick a variation. Download a background or copy the CSS. Your next idea starts here.</p>
+        <h1 id="hero-title"><span class="hero-heading-neutral"><span class="text-serif-italic">{gradientMilestone}</span> gradients <span class="text-serif-italic">free</span> for personal and commercial use.</span></h1>
+        <p class="hero-description text-body-md">Free gradient backgrounds for personal and commercial use. Copy CSS or download SVG, PNG and JPEG. No sign-up. No download limits.</p>
       </div>
       </div>
       <div class="collection-grid">{collections.slice(0, 4).map(collection => {
@@ -38,9 +41,9 @@ import '../styles/library.css';
       <div class="section-link"><a class="btn btn-secondary btn-md" href="/collections/">Explore all collections <ArrowUpRight aria-hidden="true" /></a></div>
     </section>
     <div id="collections" class="container">
-      {collections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
+      {featuredCollections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
         <div class="section-heading"><h2 id={`${collection.id}-title`}>{collection.title}</h2><p class="text-body-md">{collection.description}</p></div>
-        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => gradients.filter(g => g.category === collection.id).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
+        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => featuredGradients.filter(g => g.category === collection.id).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
         <div class="section-link"><a class="btn btn-secondary btn-md" href={`/collections/${collection.id}/`} aria-label={`Explore ${collection.title}`}>Explore the collection <ArrowUpRight aria-hidden="true" /></a></div>
       </section>)}
       <div class="empty-state" id="library-empty" hidden><p>No gradients for this mode yet. Try another design background.</p><Button variant="secondary" size="sm" id="clear-filters">Clear filters</Button></div>
@@ -50,8 +53,10 @@ import '../styles/library.css';
     <Faq />
   </main>
   <Footer />
-  <GradientPreview />
+  <GradientPreview templates={featuredGradients} />
   <script>
     import '../scripts/library';
   </script>
 </BaseLayout>
+
+

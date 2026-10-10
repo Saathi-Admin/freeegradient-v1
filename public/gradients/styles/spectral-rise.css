@@ -1,0 +1,20 @@
+/* FreeeGradients: Spectral rise only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-spectral-rise-01: url("../assets/spectral-rise-01.94310ca2b52e6666.webp");
+  --fg-spectral-rise-02: url("../assets/spectral-rise-02.6d4c82f7cb3d491d.webp");
+  --fg-spectral-rise-03: url("../assets/spectral-rise-03.07924920bfa8e974.webp");
+  --fg-spectral-rise-04: url("../assets/spectral-rise-04.6a2360fc441854a3.webp");
+  --fg-spectral-rise-05: url("../assets/spectral-rise-05.501a68b01161d532.webp");
+  --fg-spectral-rise-06: url("../assets/spectral-rise-06.410cd8f9cc1e6b19.webp");
+  --fg-spectral-rise-07: url("../assets/spectral-rise-07.1fe1566bd893e02a.webp");
+  --fg-spectral-rise-08: url("../assets/spectral-rise-08.2e6063d05ad60f49.webp");
+}
+.fg-spectral-rise-01 { background-color: #141517; background-image: var(--fg-spectral-rise-01); }
+.fg-spectral-rise-02 { background-color: #0c0923; background-image: var(--fg-spectral-rise-02); }
+.fg-spectral-rise-03 { background-color: #021917; background-image: var(--fg-spectral-rise-03); }
+.fg-spectral-rise-04 { background-color: #210c13; background-image: var(--fg-spectral-rise-04); }
+.fg-spectral-rise-05 { background-color: #f9fcff; background-image: var(--fg-spectral-rise-05); }
+.fg-spectral-rise-06 { background-color: #fff7f1; background-image: var(--fg-spectral-rise-06); }
+.fg-spectral-rise-07 { background-color: #f6fbf4; background-image: var(--fg-spectral-rise-07); }
+.fg-spectral-rise-08 { background-color: #faf4ff; background-image: var(--fg-spectral-rise-08); }

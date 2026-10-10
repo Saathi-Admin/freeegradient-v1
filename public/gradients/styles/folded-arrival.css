@@ -1,0 +1,20 @@
+/* FreeeGradients: Folded arrival only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-folded-arrival-01: url("../assets/folded-arrival-01.c71d3c3cc14c0d67.webp");
+  --fg-folded-arrival-02: url("../assets/folded-arrival-02.1e4b11815374ff0f.webp");
+  --fg-folded-arrival-03: url("../assets/folded-arrival-03.291026db12cb2fca.webp");
+  --fg-folded-arrival-04: url("../assets/folded-arrival-04.6394f4a050c6b1b6.webp");
+  --fg-folded-arrival-05: url("../assets/folded-arrival-05.42c6ad9a009eeda0.webp");
+  --fg-folded-arrival-06: url("../assets/folded-arrival-06.ccef21d1ed840659.webp");
+  --fg-folded-arrival-07: url("../assets/folded-arrival-07.a5bbc3d6aa5f3b00.webp");
+  --fg-folded-arrival-08: url("../assets/folded-arrival-08.830c5834e916b5f0.webp");
+}
+.fg-folded-arrival-01 { background-color: #180c13; background-image: var(--fg-folded-arrival-01); }
+.fg-folded-arrival-02 { background-color: #f8fafc; background-image: var(--fg-folded-arrival-02); }
+.fg-folded-arrival-03 { background-color: #fcf9f3; background-image: var(--fg-folded-arrival-03); }
+.fg-folded-arrival-04 { background-color: #f5f8f3; background-image: var(--fg-folded-arrival-04); }
+.fg-folded-arrival-05 { background-color: #fcf6fa; background-image: var(--fg-folded-arrival-05); }
+.fg-folded-arrival-06 { background-color: #090b10; background-image: var(--fg-folded-arrival-06); }
+.fg-folded-arrival-07 { background-color: #13100e; background-image: var(--fg-folded-arrival-07); }
+.fg-folded-arrival-08 { background-color: #070d1c; background-image: var(--fg-folded-arrival-08); }

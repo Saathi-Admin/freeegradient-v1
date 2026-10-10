@@ -1,0 +1,20 @@
+/* FreeeGradients: Counterpoint only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-counterpoint-01: radial-gradient(ellipse 42% 90% at 82% 18%, #071526a6 0%, #07152600 100%), linear-gradient(90deg, #386ba8 0%, #386ba8 16%, #d7efff 85%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-counterpoint-02: radial-gradient(ellipse 42% 90% at 82% 18%, #0b1915a6 0%, #0b191500 100%), linear-gradient(90deg, #547e66 0%, #547e66 16%, #aeb8a0 85%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-counterpoint-03: radial-gradient(ellipse 42% 90% at 82% 18%, #1c101ba6 0%, #1c101b00 100%), linear-gradient(90deg, #813c69 0%, #813c69 16%, #e8a5c5 85%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-counterpoint-04: radial-gradient(ellipse 42% 90% at 82% 18%, #25120ea6 0%, #25120e00 100%), linear-gradient(90deg, #ff5c34 0%, #ff5c34 16%, #f4c47c 85%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-counterpoint-05: radial-gradient(ellipse 42% 90% at 82% 18%, #f6fbffa6 0%, #f6fbff00 100%), linear-gradient(90deg, #d7efff 0%, #d7efff 16%, #82b5de 85%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-counterpoint-06: radial-gradient(ellipse 42% 90% at 82% 18%, #fafbf4a6 0%, #fafbf400 100%), linear-gradient(90deg, #d9e4c7 0%, #d9e4c7 16%, #aeb8a0 85%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-counterpoint-07: radial-gradient(ellipse 42% 90% at 82% 18%, #fff6f7a6 0%, #fff6f700 100%), linear-gradient(90deg, #f3cadb 0%, #f3cadb 16%, #bb9cdd 85%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-counterpoint-08: radial-gradient(ellipse 42% 90% at 82% 18%, #fffbeaa6 0%, #fffbea00 100%), linear-gradient(90deg, #e9f056 0%, #e9f056 16%, #ffae87 85%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-counterpoint-01 { background-image: var(--fg-counterpoint-01); }
+.fg-counterpoint-02 { background-image: var(--fg-counterpoint-02); }
+.fg-counterpoint-03 { background-image: var(--fg-counterpoint-03); }
+.fg-counterpoint-04 { background-image: var(--fg-counterpoint-04); }
+.fg-counterpoint-05 { background-image: var(--fg-counterpoint-05); }
+.fg-counterpoint-06 { background-image: var(--fg-counterpoint-06); }
+.fg-counterpoint-07 { background-image: var(--fg-counterpoint-07); }
+.fg-counterpoint-08 { background-image: var(--fg-counterpoint-08); }

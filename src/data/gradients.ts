@@ -2,6 +2,10 @@ import type { GradientTemplate } from '../types/gradient';
 import catalogue from './generated-gradients.json';
 
 export const gradients = catalogue as GradientTemplate[];
+const variationsById = new Map(gradients.flatMap(g=>g.variations.map(v=>[v.id,v] as const)));
+export function collectionThumbnail(preview: string) {
+  return variationsById.get(preview.split('/').pop()?.replace('.svg','') ?? '')?.thumbnail ?? preview;
+}
 
 export function collectionVariations(category: GradientTemplate['category']) {
   const seenIds = new Set<string>();

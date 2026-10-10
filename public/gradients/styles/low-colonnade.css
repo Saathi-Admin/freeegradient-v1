@@ -1,0 +1,20 @@
+/* FreeeGradients: Low colonnade only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-low-colonnade-01: url("../assets/low-colonnade-01.95028427d6131609.webp");
+  --fg-low-colonnade-02: url("../assets/low-colonnade-02.b850df877117ce23.webp");
+  --fg-low-colonnade-03: url("../assets/low-colonnade-03.62a0dcd46518df76.webp");
+  --fg-low-colonnade-04: url("../assets/low-colonnade-04.6db408c4b9713114.webp");
+  --fg-low-colonnade-05: url("../assets/low-colonnade-05.c4b7e97b1e81e081.webp");
+  --fg-low-colonnade-06: url("../assets/low-colonnade-06.afc6b0d00c34d3ab.webp");
+  --fg-low-colonnade-07: url("../assets/low-colonnade-07.c07df857d92af747.webp");
+  --fg-low-colonnade-08: url("../assets/low-colonnade-08.ec23892ddc884586.webp");
+}
+.fg-low-colonnade-01 { background-color: #180c13; background-image: var(--fg-low-colonnade-01); }
+.fg-low-colonnade-02 { background-color: #f8fafc; background-image: var(--fg-low-colonnade-02); }
+.fg-low-colonnade-03 { background-color: #fcf9f3; background-image: var(--fg-low-colonnade-03); }
+.fg-low-colonnade-04 { background-color: #f5f8f3; background-image: var(--fg-low-colonnade-04); }
+.fg-low-colonnade-05 { background-color: #fcf6fa; background-image: var(--fg-low-colonnade-05); }
+.fg-low-colonnade-06 { background-color: #090b10; background-image: var(--fg-low-colonnade-06); }
+.fg-low-colonnade-07 { background-color: #13100e; background-image: var(--fg-low-colonnade-07); }
+.fg-low-colonnade-08 { background-color: #070d1c; background-image: var(--fg-low-colonnade-08); }

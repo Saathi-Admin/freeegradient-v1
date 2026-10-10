@@ -9,10 +9,11 @@ const { label, role = 'group', class: className, size = 'md' } = Astro.props;
 <style>
   [data-tab-bar] :global(.btn:not(.btn-secondary)) { --btn-bg: transparent; color: var(--text-secondary); }
   @media (hover: hover) {
-    [data-tab-bar] :global(.btn:hover:not(:disabled):not(.btn-secondary):not([aria-selected=true]):not([aria-pressed=true])) { --btn-bg: var(--button-secondary-on-dark-bg); color: var(--text-primary); }
+    [data-tab-bar] :global(.btn:hover:not(:disabled):not(.btn-secondary):not([aria-selected=true]):not([aria-pressed=true]):not([aria-current=page])) { --btn-bg: var(--button-secondary-on-dark-bg); color: var(--text-primary); }
   }
   [data-tab-bar] :global([aria-selected=true]), [data-tab-bar] :global([aria-selected=true]:hover) { --btn-bg: transparent; color: var(--text-primary); }
   [data-tab-bar] :global([aria-pressed=true]), [data-tab-bar] :global([aria-pressed=true]:hover) { --btn-bg: transparent; color: var(--text-primary); }
+  [data-tab-bar] :global([aria-current=page]), [data-tab-bar] :global([aria-current=page]:hover) { --btn-bg: transparent; color: var(--text-primary); }
   [data-tab-bar] :global([role=tab]) { position: relative; z-index: 1; }
   .tab-bar-sm { padding: var(--space-1); gap: var(--space-1); }
   .tab-bar-sm :global(.btn) { --button-height: var(--space-14); --button-padding-x: var(--space-4); height: var(--space-14); font-size: var(--font-size-12); }
@@ -21,13 +22,13 @@ const { label, role = 'group', class: className, size = 'md' } = Astro.props;
 <script>
   document.querySelectorAll<HTMLElement>('[data-tab-bar]').forEach(bar => {
     const update = () => {
-      const active = bar.querySelector<HTMLElement>('[aria-selected=true], [aria-pressed=true]');
+      const active = bar.querySelector<HTMLElement>('[aria-selected=true], [aria-pressed=true], [aria-current=page]');
       if (!active) return;
       bar.style.setProperty('--indicator-x', `${active.offsetLeft}px`);
       bar.style.setProperty('--indicator-width', `${active.offsetWidth}px`);
     };
     new ResizeObserver(update).observe(bar);
-    new MutationObserver(update).observe(bar, { subtree: true, attributes: true, attributeFilter: ['aria-selected', 'aria-pressed'] });
+    new MutationObserver(update).observe(bar, { subtree: true, attributes: true, attributeFilter: ['aria-selected', 'aria-pressed', 'aria-current'] });
     document.fonts.ready.then(update);
     update();
   });

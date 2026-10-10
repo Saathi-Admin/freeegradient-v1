@@ -4,13 +4,19 @@ import '@fontsource/instrument-serif/latin-400.css';
 import '@fontsource/instrument-serif/latin-400-italic.css';
 import '../styles/global.css';
 import BackToTop from '../components/BackToTop.astro';
+import { pageSeo } from '../data/seo';
 
 interface Props {
   title: string;
   description?: string;
   noindex?: boolean;
+  canonicalPath?: string;
+  image?: string;
 }
-const { title, description = 'Free gradient templates and colour variations.', noindex = true } = Astro.props;
+const { title, description = 'Free gradient templates and colour variations.', noindex = false, canonicalPath = Astro.url.pathname, image = '/social/freeegradients.png' } = Astro.props;
+const {canonical,blockIndex} = pageSeo({site:Astro.site,path:canonicalPath,production:import.meta.env.PROD,noindex});
+const socialImage = image && Astro.site ? new URL(image, Astro.site).href : undefined;
+const schema = canonical && !noindex ? {'@context':'https://schema.org','@type':'WebPage',name:title,description,url:canonical,isPartOf:{'@type':'WebSite',name:'FreeeGradients',url:Astro.site?.href}} : undefined;
 ---
 <!doctype html>
 <html lang="en" data-theme="dark">
@@ -25,7 +31,16 @@ const { title, description = 'Free gradient templates and colour variations.', n
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <meta name="description" content={description} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {blockIndex && <meta name="robots" content="noindex, follow" />}
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FreeeGradients" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    {socialImage && <meta property="og:image" content={socialImage} />}
+    <meta name="twitter:card" content={socialImage ? 'summary_large_image' : 'summary'} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema).replaceAll('<','\\u003c')} />}
     <title>{title}</title>
   </head>
   <body>

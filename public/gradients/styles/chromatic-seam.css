@@ -1,0 +1,20 @@
+/* FreeeGradients: Chromatic seam only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-chromatic-seam-01: url("../assets/chromatic-seam-01.6324d1ace2b1229b.webp");
+  --fg-chromatic-seam-02: url("../assets/chromatic-seam-02.73a48b72dfdaad2d.webp");
+  --fg-chromatic-seam-03: url("../assets/chromatic-seam-03.6ac167d630bd3399.webp");
+  --fg-chromatic-seam-04: url("../assets/chromatic-seam-04.b1c297c19880069e.webp");
+  --fg-chromatic-seam-05: url("../assets/chromatic-seam-05.3dccc3d4789109fb.webp");
+  --fg-chromatic-seam-06: url("../assets/chromatic-seam-06.f623f40094218f80.webp");
+  --fg-chromatic-seam-07: url("../assets/chromatic-seam-07.3dffd0e41a279755.webp");
+  --fg-chromatic-seam-08: url("../assets/chromatic-seam-08.3969400fcf5ef137.webp");
+}
+.fg-chromatic-seam-01 { background-color: #02051d; background-image: var(--fg-chromatic-seam-01); }
+.fg-chromatic-seam-02 { background-color: #0c0923; background-image: var(--fg-chromatic-seam-02); }
+.fg-chromatic-seam-03 { background-color: #021917; background-image: var(--fg-chromatic-seam-03); }
+.fg-chromatic-seam-04 { background-color: #210c13; background-image: var(--fg-chromatic-seam-04); }
+.fg-chromatic-seam-05 { background-color: #f9fcff; background-image: var(--fg-chromatic-seam-05); }
+.fg-chromatic-seam-06 { background-color: #fff7f1; background-image: var(--fg-chromatic-seam-06); }
+.fg-chromatic-seam-07 { background-color: #f6fbf4; background-image: var(--fg-chromatic-seam-07); }
+.fg-chromatic-seam-08 { background-color: #faf4ff; background-image: var(--fg-chromatic-seam-08); }

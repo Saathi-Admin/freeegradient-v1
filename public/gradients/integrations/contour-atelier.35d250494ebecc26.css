@@ -1,0 +1,20 @@
+/* FreeeGradients: Contour atelier only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-contour-atelier-01: url("../assets/contour-atelier-01.db2752042c9380e5.webp");
+  --fg-contour-atelier-02: url("../assets/contour-atelier-02.1ac0c6f44c769c71.webp");
+  --fg-contour-atelier-03: url("../assets/contour-atelier-03.ac2a89219c0432af.webp");
+  --fg-contour-atelier-04: url("../assets/contour-atelier-04.0acc6f38f2f4ec28.webp");
+  --fg-contour-atelier-05: url("../assets/contour-atelier-05.27aa735cebde4fb6.webp");
+  --fg-contour-atelier-06: url("../assets/contour-atelier-06.fc3162703229d446.webp");
+  --fg-contour-atelier-07: url("../assets/contour-atelier-07.8bec4faee66480b7.webp");
+  --fg-contour-atelier-08: url("../assets/contour-atelier-08.bfdf2463b0a5bbdb.webp");
+}
+.fg-contour-atelier-01 { background-color: #090b10; background-image: var(--fg-contour-atelier-01); }
+.fg-contour-atelier-02 { background-color: #13100e; background-image: var(--fg-contour-atelier-02); }
+.fg-contour-atelier-03 { background-color: #070d1c; background-image: var(--fg-contour-atelier-03); }
+.fg-contour-atelier-04 { background-color: #180c13; background-image: var(--fg-contour-atelier-04); }
+.fg-contour-atelier-05 { background-color: #f8fafc; background-image: var(--fg-contour-atelier-05); }
+.fg-contour-atelier-06 { background-color: #fcf9f3; background-image: var(--fg-contour-atelier-06); }
+.fg-contour-atelier-07 { background-color: #f5f8f3; background-image: var(--fg-contour-atelier-07); }
+.fg-contour-atelier-08 { background-color: #fcf6fa; background-image: var(--fg-contour-atelier-08); }

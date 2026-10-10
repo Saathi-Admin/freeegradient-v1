@@ -1,0 +1,20 @@
+/* FreeeGradients: Electric capsule only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-electric-capsule-01: radial-gradient(ellipse 70% 52% at 50% 54%,#6ddafa 0%,#6ddafa 12%,#3030de 35%,#3030de99 55%,#3030de00 100%),linear-gradient(#020e25,#020e25),linear-gradient(#020e25,#020e25);
+  --fg-electric-capsule-02: radial-gradient(ellipse 70% 52% at 50% 54%,#a363ef 0%,#a363ef 12%,#5835d4 35%,#5835d499 55%,#5835d400 100%),linear-gradient(#0c0923,#0c0923),linear-gradient(#0c0923,#0c0923);
+  --fg-electric-capsule-03: radial-gradient(ellipse 70% 52% at 50% 54%,#46d7c5 0%,#46d7c5 12%,#087c88 35%,#087c8899 55%,#087c8800 100%),linear-gradient(#021917,#021917),linear-gradient(#021917,#021917);
+  --fg-electric-capsule-04: radial-gradient(ellipse 70% 52% at 50% 54%,#f37957 0%,#f37957 12%,#ca314d 35%,#ca314d99 55%,#ca314d00 100%),linear-gradient(#210c13,#210c13),linear-gradient(#210c13,#210c13);
+  --fg-electric-capsule-05: radial-gradient(ellipse 70% 52% at 50% 54%,#9dddeb 0%,#9dddeb 12%,#508fe0 35%,#508fe099 55%,#508fe000 100%),linear-gradient(#f9fcff,#f9fcff),linear-gradient(#f9fcff,#f9fcff);
+  --fg-electric-capsule-06: radial-gradient(ellipse 70% 52% at 50% 54%,#f5b8ce 0%,#f5b8ce 12%,#f09872 35%,#f0987299 55%,#f0987200 100%),linear-gradient(#fff7f1,#fff7f1),linear-gradient(#fff7f1,#fff7f1);
+  --fg-electric-capsule-07: radial-gradient(ellipse 70% 52% at 50% 54%,#bae4c6 0%,#bae4c6 12%,#6ba891 35%,#6ba89199 55%,#6ba89100 100%),linear-gradient(#f6fbf4,#f6fbf4),linear-gradient(#f6fbf4,#f6fbf4);
+  --fg-electric-capsule-08: radial-gradient(ellipse 70% 52% at 50% 54%,#edb4dd 0%,#edb4dd 12%,#ad80de 35%,#ad80de99 55%,#ad80de00 100%),linear-gradient(#faf4ff,#faf4ff),linear-gradient(#faf4ff,#faf4ff);
+}
+.fg-electric-capsule-01 { background-color: #020e25; background-image: var(--fg-electric-capsule-01); }
+.fg-electric-capsule-02 { background-color: #0c0923; background-image: var(--fg-electric-capsule-02); }
+.fg-electric-capsule-03 { background-color: #021917; background-image: var(--fg-electric-capsule-03); }
+.fg-electric-capsule-04 { background-color: #210c13; background-image: var(--fg-electric-capsule-04); }
+.fg-electric-capsule-05 { background-color: #f9fcff; background-image: var(--fg-electric-capsule-05); }
+.fg-electric-capsule-06 { background-color: #fff7f1; background-image: var(--fg-electric-capsule-06); }
+.fg-electric-capsule-07 { background-color: #f6fbf4; background-image: var(--fg-electric-capsule-07); }
+.fg-electric-capsule-08 { background-color: #faf4ff; background-image: var(--fg-electric-capsule-08); }

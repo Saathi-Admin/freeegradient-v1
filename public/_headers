@@ -2,6 +2,16 @@
   Cache-Control: public, max-age=31536000, immutable
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
+/gradients/styles/*
+  Cache-Control: public, max-age=0, must-revalidate
+/gradients/integrations/*
+  Cache-Control: public, max-age=31536000, immutable
+/gradients/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/gradients/thumbnails/*
+  Cache-Control: public, max-age=31536000, immutable
+/gradients/catalogue/*
+  Cache-Control: public, max-age=0, must-revalidate
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin

@@ -1,0 +1,20 @@
+/* FreeeGradients: Blush atmosphere only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-blush-atmosphere-01: url("../assets/blush-atmosphere-01.45675a499b7ad660.webp");
+  --fg-blush-atmosphere-02: url("../assets/blush-atmosphere-02.b01fb59bece338dc.webp");
+  --fg-blush-atmosphere-03: url("../assets/blush-atmosphere-03.81ae5ae45a6fd379.webp");
+  --fg-blush-atmosphere-04: url("../assets/blush-atmosphere-04.f73b61f0a4c4bb80.webp");
+  --fg-blush-atmosphere-05: url("../assets/blush-atmosphere-05.829c6695bf57fe8e.webp");
+  --fg-blush-atmosphere-06: url("../assets/blush-atmosphere-06.c2c4957821553303.webp");
+  --fg-blush-atmosphere-07: url("../assets/blush-atmosphere-07.203c8c8849dac773.webp");
+  --fg-blush-atmosphere-08: url("../assets/blush-atmosphere-08.37613c1f001de94e.webp");
+}
+.fg-blush-atmosphere-01 { background-color: #dfd6ed; background-image: var(--fg-blush-atmosphere-01); }
+.fg-blush-atmosphere-02 { background-color: #0c0923; background-image: var(--fg-blush-atmosphere-02); }
+.fg-blush-atmosphere-03 { background-color: #021917; background-image: var(--fg-blush-atmosphere-03); }
+.fg-blush-atmosphere-04 { background-color: #210c13; background-image: var(--fg-blush-atmosphere-04); }
+.fg-blush-atmosphere-05 { background-color: #f9fcff; background-image: var(--fg-blush-atmosphere-05); }
+.fg-blush-atmosphere-06 { background-color: #fff7f1; background-image: var(--fg-blush-atmosphere-06); }
+.fg-blush-atmosphere-07 { background-color: #f6fbf4; background-image: var(--fg-blush-atmosphere-07); }
+.fg-blush-atmosphere-08 { background-color: #faf4ff; background-image: var(--fg-blush-atmosphere-08); }

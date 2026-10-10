@@ -1,0 +1,102 @@
+---
+import { ChevronDown, Check } from '@lucide/astro';
+interface Option { value: string; label: string; image?: string; }
+interface Props { id: string; labelId?: string; label?: string; pill?: boolean; compact?: boolean; valueLabel?: string; options: Option[]; value: string; }
+const {id,labelId,label,pill=false,compact=false,valueLabel,options,value}=Astro.props;
+const selected=options.find(option=>option.value===value) ?? options[0];
+---
+<div class:list={["custom-select", {"select-pill":pill,"select-compact":compact}]} id={id} data-custom-select data-value={selected.value}>
+  <button class="select-trigger" type="button" role="combobox" aria-label={label} aria-labelledby={labelId ? `${labelId} ${id}-value` : undefined} aria-haspopup="listbox" aria-controls={`${id}-options`} aria-expanded="false">
+    {selected.image && <img class="select-preview" src={selected.image} alt="" width="40" height="24" />}
+    <span class="select-value" id={`${id}-value`}>{valueLabel ?? selected.label}</span><ChevronDown size={16} aria-hidden="true" />
+  </button>
+  <div class="select-panel" id={`${id}-options`} popover="auto" role="listbox" aria-label={label} aria-labelledby={labelId}>
+    {options.map(option=><button class="select-option" id={`${id}-${option.value}`} type="button" role="option" aria-selected={option.value===selected.value?'true':'false'} tabindex="-1" data-value={option.value}>
+      {option.image && <img class="select-preview" src={option.image} alt="" width="40" height="24" loading="lazy" />}
+      <span>{option.label}</span><Check class="select-check" size={16} aria-hidden="true" />
+    </button>)}
+  </div>
+</div>
+<style>
+  .custom-select { min-width:0; width:220px; max-width:100%; }
+  .select-trigger { width:100%; display:flex; align-items:center; gap:var(--space-4); padding:var(--space-5) var(--space-6); min-height:44px; border:1px solid var(--border-subtle); border-radius:var(--radius-8); background:var(--surface-raised); color:var(--text-primary); font:inherit; font-size:var(--font-size-14); text-align:left; cursor:pointer; transition:background .16s ease,border-color .16s ease; }
+  .select-compact .select-trigger { min-height:36px; height:36px; padding:var(--space-3) var(--space-5); font-size:var(--font-size-12); }
+  .select-pill .select-trigger { border-radius:var(--radius-full); background:var(--surface-card); }
+  .select-trigger:hover, .select-trigger[aria-expanded="true"] { background:var(--surface-overlay); }
+  .select-trigger:focus-visible { outline:2px solid var(--text-primary); outline-offset:3px; }
+  .select-trigger :global(svg) { flex-shrink:0; color:var(--text-secondary); transition:transform .18s ease; }
+  .select-trigger[aria-expanded="true"] :global(svg) { transform:rotate(180deg); }
+  .select-value { min-width:0; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .select-preview { width:40px; height:24px; flex-shrink:0; object-fit:cover; border-radius:var(--radius-3); }
+  .select-panel { box-sizing:border-box; position:fixed; inset:auto; margin:0; width:220px; max-width:calc(100vw - 32px); max-height:320px; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:none; padding:var(--space-4); border:1px solid var(--border-subtle); border-radius:var(--radius-12); background:var(--surface-card); color:var(--text-primary); box-shadow:0 16px 48px #00000055; }
+  .select-panel::-webkit-scrollbar { display:none; }
+  .select-panel:popover-open { display:grid; gap:var(--space-2); }
+  .select-option { width:100%; min-width:0; display:flex; align-items:center; gap:var(--space-4); min-height:44px; padding:var(--space-5) var(--space-6); border:0; border-radius:var(--radius-8); background:transparent; color:var(--text-secondary); text-align:left; font:inherit; font-size:var(--font-size-14); cursor:pointer; }
+  .select-option[hidden] { display:none; }
+  .select-option span { min-width:0; flex:1; }
+  .select-option:hover, .select-option:focus-visible { background:var(--surface-raised); color:var(--text-primary); outline:0; }
+  .select-option[aria-selected="true"] { background:var(--surface-overlay); color:var(--text-primary); }
+  .select-option :global(.select-check) { flex-shrink:0; opacity:0; }
+  .select-option[aria-selected="true"] :global(.select-check) { opacity:1; }
+  @media(prefers-reduced-motion:reduce) { .select-trigger, .select-trigger :global(svg) { transition:none; } }
+</style>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-custom-select]').forEach(root=>{
+    const trigger=root.querySelector<HTMLButtonElement>('.select-trigger')!;
+    const panel=root.querySelector<HTMLElement>('.select-panel')!;
+    let options=Array.from(panel.querySelectorAll<HTMLButtonElement>('[role="option"]'));
+    let query='',lastTyped=0;
+    const isOpen=()=>panel.matches(':popover-open');
+    const position=()=>{
+      const rect=trigger.getBoundingClientRect(),width=Math.min(Math.max(rect.width,240),innerWidth-32);
+      panel.style.width=`${width}px`;
+      const below=innerHeight-rect.bottom-16,above=rect.top-16,flip=below<200 && above>below;
+      const maxHeight=Math.min(320,Math.max(44,flip?above:below));
+      panel.style.maxHeight=`${maxHeight}px`;
+      const height=Math.min(options.length*48+16,maxHeight);
+      panel.style.left=`${Math.max(16,Math.min(rect.left,innerWidth-width-16))}px`;
+      panel.style.top=`${flip?Math.max(16,rect.top-height-8):rect.bottom+8}px`;
+    };
+    const open=(focusOption=false)=>{
+      position(); if(!isOpen())panel.showPopover();
+      trigger.setAttribute('aria-expanded','true');
+      if(focusOption) (options.find(option=>option.dataset.value===root.dataset.value)??options[0]).focus({preventScroll:true});
+    };
+    const close=(restore=false)=>{if(isOpen())panel.hidePopover();trigger.setAttribute('aria-expanded','false');if(restore)trigger.focus({preventScroll:true});};
+    const choose=(option:HTMLButtonElement)=>{
+      root.dataset.value=option.dataset.value;
+      root.querySelector('.select-value')!.textContent=option.querySelector('span')!.textContent;
+      const source=option.querySelector('img'),preview=trigger.querySelector('img');if(source&&preview)preview.src=source.src;
+      options.forEach(item=>item.setAttribute('aria-selected',String(item===option)));
+      close(true);root.dispatchEvent(new CustomEvent('select-change',{bubbles:true,detail:{value:root.dataset.value}}));
+    };
+    root.addEventListener('select-sync',event=>{
+      const detail=(event as CustomEvent<{value:string;label?:string;max?:number}>).detail;
+      const all=Array.from(panel.querySelectorAll<HTMLButtonElement>('[role="option"]'));
+      all.forEach(option=>{option.hidden=detail.max!==undefined && Number(option.dataset.value)>detail.max;option.setAttribute('aria-selected',String(option.dataset.value===detail.value));});
+      options=all.filter(option=>!option.hidden);root.dataset.value=detail.value;
+      root.querySelector('.select-value')!.textContent=detail.label??all.find(option=>option.dataset.value===detail.value)?.querySelector('span')?.textContent??'';
+    });
+    trigger.addEventListener('click',()=>isOpen()?close():open(true));
+    panel.addEventListener('toggle',()=>{trigger.setAttribute('aria-expanded',String(isOpen()));});
+    panel.addEventListener('beforetoggle',event=>{if((event as ToggleEvent).newState==='open')position();});
+    options.forEach(option=>option.addEventListener('click',()=>choose(option)));
+    const onKey=(event:KeyboardEvent)=>{
+      const index=options.indexOf(document.activeElement as HTMLButtonElement);
+      if(event.key==='Escape'){event.preventDefault();close(true);return;}
+      if(event.key==='Tab'){close();return;}
+      if(['ArrowDown','ArrowUp','Home','End'].includes(event.key)){
+        event.preventDefault();if(!isOpen()){open(true);if(event.key==='ArrowDown'||event.key==='ArrowUp')return;}
+        const next=event.key==='Home'?0:event.key==='End'?options.length-1:(index+(event.key==='ArrowDown'?1:-1)+options.length)%options.length;
+        options[next].focus();return;
+      }
+      if(event.key.length===1 && event.key!==' ' && !event.ctrlKey && !event.metaKey && !event.altKey){
+        event.preventDefault();if(!isOpen())open();const now=Date.now();query=now-lastTyped>700?event.key:query+event.key;lastTyped=now;
+        const match=options.find(option=>option.querySelector('span')!.textContent!.toLowerCase().startsWith(query.toLowerCase()));match?.focus();
+      }
+    };
+    trigger.addEventListener('keydown',onKey);panel.addEventListener('keydown',onKey);
+    window.addEventListener('resize',()=>{if(isOpen())position();});
+    window.addEventListener('scroll',event=>{if(isOpen() && !(event.target instanceof Node && panel.contains(event.target)))close();},true);
+  });
+</script>

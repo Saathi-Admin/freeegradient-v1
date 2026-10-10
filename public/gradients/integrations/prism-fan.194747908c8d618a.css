@@ -1,0 +1,20 @@
+/* FreeeGradients: Prism fan only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-prism-fan-01: url("../assets/prism-fan-01.2060ae3eefcd2187.webp");
+  --fg-prism-fan-02: url("../assets/prism-fan-02.821e05425e1c88be.webp");
+  --fg-prism-fan-03: url("../assets/prism-fan-03.38c505047b93f3ea.webp");
+  --fg-prism-fan-04: url("../assets/prism-fan-04.0eb86fae3b5e33f4.webp");
+  --fg-prism-fan-05: url("../assets/prism-fan-05.252e54720f3c9890.webp");
+  --fg-prism-fan-06: url("../assets/prism-fan-06.37830a38161a35a5.webp");
+  --fg-prism-fan-07: url("../assets/prism-fan-07.d7bce57840a242f4.webp");
+  --fg-prism-fan-08: url("../assets/prism-fan-08.0b22c921e583c8a2.webp");
+}
+.fg-prism-fan-01 { background-color: #040a18; background-image: var(--fg-prism-fan-01); }
+.fg-prism-fan-02 { background-color: #0c0923; background-image: var(--fg-prism-fan-02); }
+.fg-prism-fan-03 { background-color: #021917; background-image: var(--fg-prism-fan-03); }
+.fg-prism-fan-04 { background-color: #210c13; background-image: var(--fg-prism-fan-04); }
+.fg-prism-fan-05 { background-color: #f9fcff; background-image: var(--fg-prism-fan-05); }
+.fg-prism-fan-06 { background-color: #fff7f1; background-image: var(--fg-prism-fan-06); }
+.fg-prism-fan-07 { background-color: #f6fbf4; background-image: var(--fg-prism-fan-07); }
+.fg-prism-fan-08 { background-color: #faf4ff; background-image: var(--fg-prism-fan-08); }

@@ -1,43 +1,9 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import TabBar from '../../components/ui/TabBar.astro';
-import Footer from '../../components/Footer.astro';
-import Header from '../../components/Header.astro';
-import GradientCard from '../../components/GradientCard.astro';
-import GradientPreview from '../../components/GradientPreview.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import Button from '../../components/ui/Button.astro';
-import { Sun, Moon } from '@lucide/astro';
+import GradientListing from '../../components/GradientListing.astro';
 import { collections } from '../../data/collections';
-import { collectionVariations } from '../../data/gradients';
-import '../../styles/library.css';
 export function getStaticPaths() {
-  return collections.map(collection => ({ params: { slug: collection.id }, props: { collection } }));
+  return collections.map(collection=>({params:{slug:collection.id},props:{category:collection.id}}));
 }
-const { collection } = Astro.props;
-const cards = collectionVariations(collection.id);
+const { category } = Astro.props;
 ---
-<BaseLayout title={`${collection.title} — FreeeGradients`} description={`${collection.description} Free CSS, SVG, PNG and JPEG gradients for light and dark designs.`}>
-  <Header />
-  <main id="main-content" class="collection-detail container">
-    <div class="collection-detail-hero">
-    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Collections', href: '/collections/' }, { label: collection.title }]} />
-    <div class="collection-detail-intro">
-      <h1 id="collection-title"><span class="hero-heading-neutral">{collection.title}</span></h1>
-      <p class="hero-description text-body-md">{collection.description} Download any colour in CSS, SVG, PNG or JPEG. Completely free.</p>
-      <TabBar label="Filter gradients by design background">
-        <Button size="sm" variant="ghost" data-mode="all" aria-pressed="true">All</Button>
-        <Button size="sm" variant="ghost" data-mode="light" aria-pressed="false"><Sun slot="leading-icon" aria-hidden="true" />For light</Button>
-        <Button size="sm" variant="ghost" data-mode="dark" aria-pressed="false"><Moon slot="leading-icon" aria-hidden="true" />For dark</Button>
-      </TabBar>
-    </div>
-    </div>
-    <section aria-labelledby="collection-title">
-      <div class="grid">{cards.map(({ gradient, variation }, order) => <GradientCard gradient={gradient} variationId={variation.id} designMode={variation.mode} order={order} featured />)}</div>
-      <div class="empty-state" id="library-empty" hidden><p>No gradients for this mode yet.</p><Button variant="secondary" size="sm" id="clear-filters">Show all</Button></div>
-    </section>
-  </main>
-  <Footer />
-  <GradientPreview />
-  <script>import '../../scripts/library';</script>
-</BaseLayout>
+<GradientListing category={category} />

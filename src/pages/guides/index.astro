@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import {guides} from '../../data/guides';
+---
+<BaseLayout title="CSS Gradient Guides — FreeeGradients" description="Learn how to use CSS gradients, choose mesh backgrounds and keep text readable.">
+<Header /><main id="main-content" class="container guides"><h1 class="text-h2">Gradient guides</h1><div>{guides.map(g=><article><h2 class="text-body-md"><a href={`/guides/${g.slug}/`}>{g.title}</a></h2><p class="text-body-sm">{g.description}</p></article>)}</div></main><Footer />
+</BaseLayout>
+<style>.guides{padding-block:var(--section-padding-y)}.guides div{display:grid;gap:var(--space-12);margin-top:var(--space-16)}article{padding:var(--space-12);border-radius:var(--radius-12);background:var(--surface-card)}p{color:var(--text-secondary);margin-top:var(--space-4)}a{color:var(--text-primary)}</style>

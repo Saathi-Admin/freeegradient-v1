@@ -1,0 +1,20 @@
+/* FreeeGradients: Open atmosphere only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-open-atmosphere-01: radial-gradient(ellipse 80% 75% at 6% 25%,#fcf6faf0 0%,#fcf6fa84 42%,#fcf6fa00 100%),radial-gradient(ellipse 56% 54% at 94% 79%,#b49bbca6 0%,#b49bbc5b 42%,#b49bbc00 100%),linear-gradient(158deg,#fcf6fa 0%,#e9d4e1 75%,#b49bbc 100%),linear-gradient(#fcf6fa,#fcf6fa);
+  --fg-open-atmosphere-02: radial-gradient(ellipse 80% 75% at 6% 25%,#090b10f0 0%,#090b1084 42%,#090b1000 100%),radial-gradient(ellipse 56% 54% at 94% 79%,#b7c9d5a6 0%,#b7c9d55b 42%,#b7c9d500 100%),linear-gradient(158deg,#090b10 0%,#526176 75%,#b7c9d5 100%),linear-gradient(#090b10,#090b10);
+  --fg-open-atmosphere-03: radial-gradient(ellipse 80% 75% at 6% 25%,#13100ef0 0%,#13100e84 42%,#13100e00 100%),radial-gradient(ellipse 56% 54% at 94% 79%,#ddc5a3a6 0%,#ddc5a35b 42%,#ddc5a300 100%),linear-gradient(158deg,#13100e 0%,#8b7153 75%,#ddc5a3 100%),linear-gradient(#13100e,#13100e);
+  --fg-open-atmosphere-04: radial-gradient(ellipse 80% 75% at 6% 25%,#070d1cf0 0%,#070d1c84 42%,#070d1c00 100%),radial-gradient(ellipse 56% 54% at 94% 79%,#92badda6 0%,#92badd5b 42%,#92badd00 100%),linear-gradient(158deg,#070d1c 0%,#294f82 75%,#92badd 100%),linear-gradient(#070d1c,#070d1c);
+  --fg-open-atmosphere-05: radial-gradient(ellipse 80% 75% at 6% 25%,#180c13f0 0%,#180c1384 42%,#180c1300 100%),radial-gradient(ellipse 56% 54% at 94% 79%,#c89caaa6 0%,#c89caa5b 42%,#c89caa00 100%),linear-gradient(158deg,#180c13 0%,#793953 75%,#c89caa 100%),linear-gradient(#180c13,#180c13);
+  --fg-open-atmosphere-06: radial-gradient(ellipse 80% 75% at 6% 25%,#f8fafcf0 0%,#f8fafc84 42%,#f8fafc00 100%),radial-gradient(ellipse 56% 54% at 94% 79%,#8aaec6a6 0%,#8aaec65b 42%,#8aaec600 100%),linear-gradient(158deg,#f8fafc 0%,#d4e3ed 75%,#8aaec6 100%),linear-gradient(#f8fafc,#f8fafc);
+  --fg-open-atmosphere-07: radial-gradient(ellipse 80% 75% at 6% 25%,#fcf9f3f0 0%,#fcf9f384 42%,#fcf9f300 100%),radial-gradient(ellipse 56% 54% at 94% 79%,#b5a086a6 0%,#b5a0865b 42%,#b5a08600 100%),linear-gradient(158deg,#fcf9f3 0%,#e4d8c2 75%,#b5a086 100%),linear-gradient(#fcf9f3,#fcf9f3);
+  --fg-open-atmosphere-08: radial-gradient(ellipse 80% 75% at 6% 25%,#f5f8f3f0 0%,#f5f8f384 42%,#f5f8f300 100%),radial-gradient(ellipse 56% 54% at 94% 79%,#88a49ca6 0%,#88a49c5b 42%,#88a49c00 100%),linear-gradient(158deg,#f5f8f3 0%,#d4dfd0 75%,#88a49c 100%),linear-gradient(#f5f8f3,#f5f8f3);
+}
+.fg-open-atmosphere-01 { background-color: #fcf6fa; background-image: var(--fg-open-atmosphere-01); }
+.fg-open-atmosphere-02 { background-color: #090b10; background-image: var(--fg-open-atmosphere-02); }
+.fg-open-atmosphere-03 { background-color: #13100e; background-image: var(--fg-open-atmosphere-03); }
+.fg-open-atmosphere-04 { background-color: #070d1c; background-image: var(--fg-open-atmosphere-04); }
+.fg-open-atmosphere-05 { background-color: #180c13; background-image: var(--fg-open-atmosphere-05); }
+.fg-open-atmosphere-06 { background-color: #f8fafc; background-image: var(--fg-open-atmosphere-06); }
+.fg-open-atmosphere-07 { background-color: #fcf9f3; background-image: var(--fg-open-atmosphere-07); }
+.fg-open-atmosphere-08 { background-color: #f5f8f3; background-image: var(--fg-open-atmosphere-08); }

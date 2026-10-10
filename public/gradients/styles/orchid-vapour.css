@@ -1,0 +1,20 @@
+/* FreeeGradients: Orchid vapour only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-orchid-vapour-01: url("../assets/orchid-vapour-01.fdfd9a4ee601f994.webp");
+  --fg-orchid-vapour-02: url("../assets/orchid-vapour-02.570037a1b259a405.webp");
+  --fg-orchid-vapour-03: url("../assets/orchid-vapour-03.d7bc3311586a3f93.webp");
+  --fg-orchid-vapour-04: url("../assets/orchid-vapour-04.3d31ab09d4dab182.webp");
+  --fg-orchid-vapour-05: url("../assets/orchid-vapour-05.b29627c5bf79b66b.webp");
+  --fg-orchid-vapour-06: url("../assets/orchid-vapour-06.44cc8952f642ee1b.webp");
+  --fg-orchid-vapour-07: url("../assets/orchid-vapour-07.0e161c9f49a0cc6d.webp");
+  --fg-orchid-vapour-08: url("../assets/orchid-vapour-08.42449e36320c6b99.webp");
+}
+.fg-orchid-vapour-01 { background-color: #30153c; background-image: var(--fg-orchid-vapour-01); }
+.fg-orchid-vapour-02 { background-color: #18112d; background-image: var(--fg-orchid-vapour-02); }
+.fg-orchid-vapour-03 { background-color: #092b32; background-image: var(--fg-orchid-vapour-03); }
+.fg-orchid-vapour-04 { background-color: #32202d; background-image: var(--fg-orchid-vapour-04); }
+.fg-orchid-vapour-05 { background-color: #f8f4fd; background-image: var(--fg-orchid-vapour-05); }
+.fg-orchid-vapour-06 { background-color: #fff5e9; background-image: var(--fg-orchid-vapour-06); }
+.fg-orchid-vapour-07 { background-color: #f5f7e6; background-image: var(--fg-orchid-vapour-07); }
+.fg-orchid-vapour-08 { background-color: #fdf0f4; background-image: var(--fg-orchid-vapour-08); }

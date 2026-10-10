@@ -1,0 +1,12 @@
+/* FreeeGradients: Analogue only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-analogue-01: url("../assets/analogue-01.11c6f3481e5fbd55.webp");
+  --fg-analogue-02: url("../assets/analogue-02.9f7dd3a23f350075.webp");
+  --fg-analogue-03: url("../assets/analogue-03.71266d4ab053f5ef.webp");
+  --fg-analogue-04: url("../assets/analogue-04.6a34438c7450117e.webp");
+}
+.fg-analogue-01 { background-color: #080b18; background-image: var(--fg-analogue-01); }
+.fg-analogue-02 { background-color: #eef8ee; background-image: var(--fg-analogue-02); }
+.fg-analogue-03 { background-color: #fff0df; background-image: var(--fg-analogue-03); }
+.fg-analogue-04 { background-color: #06191d; background-image: var(--fg-analogue-04); }

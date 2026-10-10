@@ -1,0 +1,12 @@
+/* FreeeGradients: Flux only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-flux-01: url("../assets/flux-01.2ef8cb5cef7298de.webp");
+  --fg-flux-02: url("../assets/flux-02.07a10e7671a14eaf.webp");
+  --fg-flux-03: url("../assets/flux-03.80d6cdcff7247869.webp");
+  --fg-flux-04: url("../assets/flux-04.a3c130ceb15f2708.webp");
+}
+.fg-flux-01 { background-image: var(--fg-flux-01); }
+.fg-flux-02 { background-image: var(--fg-flux-02); }
+.fg-flux-03 { background-image: var(--fg-flux-03); }
+.fg-flux-04 { background-image: var(--fg-flux-04); }

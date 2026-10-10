@@ -1,0 +1,20 @@
+/* FreeeGradients: Silk passage only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-silk-passage-01: url("../assets/silk-passage-01.0a022dfe1209c552.webp");
+  --fg-silk-passage-02: url("../assets/silk-passage-02.b19dae6374e16998.webp");
+  --fg-silk-passage-03: url("../assets/silk-passage-03.2999c829d9e3d290.webp");
+  --fg-silk-passage-04: url("../assets/silk-passage-04.908222bbe270f70b.webp");
+  --fg-silk-passage-05: url("../assets/silk-passage-05.a249d35e72b9076a.webp");
+  --fg-silk-passage-06: url("../assets/silk-passage-06.fe28d336957db097.webp");
+  --fg-silk-passage-07: url("../assets/silk-passage-07.6f54960147de2fa5.webp");
+  --fg-silk-passage-08: url("../assets/silk-passage-08.c2bfed3fa9dc0512.webp");
+}
+.fg-silk-passage-01 { background-color: #180c13; background-image: var(--fg-silk-passage-01); }
+.fg-silk-passage-02 { background-color: #f8fafc; background-image: var(--fg-silk-passage-02); }
+.fg-silk-passage-03 { background-color: #fcf9f3; background-image: var(--fg-silk-passage-03); }
+.fg-silk-passage-04 { background-color: #f5f8f3; background-image: var(--fg-silk-passage-04); }
+.fg-silk-passage-05 { background-color: #fcf6fa; background-image: var(--fg-silk-passage-05); }
+.fg-silk-passage-06 { background-color: #090b10; background-image: var(--fg-silk-passage-06); }
+.fg-silk-passage-07 { background-color: #13100e; background-image: var(--fg-silk-passage-07); }
+.fg-silk-passage-08 { background-color: #070d1c; background-image: var(--fg-silk-passage-08); }

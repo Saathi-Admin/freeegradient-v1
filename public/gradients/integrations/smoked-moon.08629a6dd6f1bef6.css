@@ -1,0 +1,20 @@
+/* FreeeGradients: Smoked moon only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-smoked-moon-01: radial-gradient(ellipse 33.059999999999995% 45.88% at 101% 116%,#fcf6facc 0%,#fcf6fa70 42%,#fcf6fa00 100%),radial-gradient(ellipse 14.82% 16.28% at 69% 88%,#b49bbc99 0%,#b49bbc54 42%,#b49bbc00 100%),radial-gradient(ellipse 45.6% 60.68% at 87% 108%,#b49bbc 0%,#e9d4e1 29%,#e9d4e1bf 52%,#fcf6fa00 100%),linear-gradient(#fcf6fa,#fcf6fa);
+  --fg-smoked-moon-02: radial-gradient(ellipse 33.059999999999995% 45.88% at 101% 116%,#090b10cc 0%,#090b1070 42%,#090b1000 100%),radial-gradient(ellipse 14.82% 16.28% at 69% 88%,#b7c9d599 0%,#b7c9d554 42%,#b7c9d500 100%),radial-gradient(ellipse 45.6% 60.68% at 87% 108%,#b7c9d5 0%,#526176 29%,#526176bf 52%,#090b1000 100%),linear-gradient(#090b10,#090b10);
+  --fg-smoked-moon-03: radial-gradient(ellipse 33.059999999999995% 45.88% at 101% 116%,#13100ecc 0%,#13100e70 42%,#13100e00 100%),radial-gradient(ellipse 14.82% 16.28% at 69% 88%,#ddc5a399 0%,#ddc5a354 42%,#ddc5a300 100%),radial-gradient(ellipse 45.6% 60.68% at 87% 108%,#ddc5a3 0%,#8b7153 29%,#8b7153bf 52%,#13100e00 100%),linear-gradient(#13100e,#13100e);
+  --fg-smoked-moon-04: radial-gradient(ellipse 33.059999999999995% 45.88% at 101% 116%,#070d1ccc 0%,#070d1c70 42%,#070d1c00 100%),radial-gradient(ellipse 14.82% 16.28% at 69% 88%,#92badd99 0%,#92badd54 42%,#92badd00 100%),radial-gradient(ellipse 45.6% 60.68% at 87% 108%,#92badd 0%,#294f82 29%,#294f82bf 52%,#070d1c00 100%),linear-gradient(#070d1c,#070d1c);
+  --fg-smoked-moon-05: radial-gradient(ellipse 33.059999999999995% 45.88% at 101% 116%,#180c13cc 0%,#180c1370 42%,#180c1300 100%),radial-gradient(ellipse 14.82% 16.28% at 69% 88%,#c89caa99 0%,#c89caa54 42%,#c89caa00 100%),radial-gradient(ellipse 45.6% 60.68% at 87% 108%,#c89caa 0%,#793953 29%,#793953bf 52%,#180c1300 100%),linear-gradient(#180c13,#180c13);
+  --fg-smoked-moon-06: radial-gradient(ellipse 33.059999999999995% 45.88% at 101% 116%,#f8fafccc 0%,#f8fafc70 42%,#f8fafc00 100%),radial-gradient(ellipse 14.82% 16.28% at 69% 88%,#8aaec699 0%,#8aaec654 42%,#8aaec600 100%),radial-gradient(ellipse 45.6% 60.68% at 87% 108%,#8aaec6 0%,#d4e3ed 29%,#d4e3edbf 52%,#f8fafc00 100%),linear-gradient(#f8fafc,#f8fafc);
+  --fg-smoked-moon-07: radial-gradient(ellipse 33.059999999999995% 45.88% at 101% 116%,#fcf9f3cc 0%,#fcf9f370 42%,#fcf9f300 100%),radial-gradient(ellipse 14.82% 16.28% at 69% 88%,#b5a08699 0%,#b5a08654 42%,#b5a08600 100%),radial-gradient(ellipse 45.6% 60.68% at 87% 108%,#b5a086 0%,#e4d8c2 29%,#e4d8c2bf 52%,#fcf9f300 100%),linear-gradient(#fcf9f3,#fcf9f3);
+  --fg-smoked-moon-08: radial-gradient(ellipse 33.059999999999995% 45.88% at 101% 116%,#f5f8f3cc 0%,#f5f8f370 42%,#f5f8f300 100%),radial-gradient(ellipse 14.82% 16.28% at 69% 88%,#88a49c99 0%,#88a49c54 42%,#88a49c00 100%),radial-gradient(ellipse 45.6% 60.68% at 87% 108%,#88a49c 0%,#d4dfd0 29%,#d4dfd0bf 52%,#f5f8f300 100%),linear-gradient(#f5f8f3,#f5f8f3);
+}
+.fg-smoked-moon-01 { background-color: #fcf6fa; background-image: var(--fg-smoked-moon-01); }
+.fg-smoked-moon-02 { background-color: #090b10; background-image: var(--fg-smoked-moon-02); }
+.fg-smoked-moon-03 { background-color: #13100e; background-image: var(--fg-smoked-moon-03); }
+.fg-smoked-moon-04 { background-color: #070d1c; background-image: var(--fg-smoked-moon-04); }
+.fg-smoked-moon-05 { background-color: #180c13; background-image: var(--fg-smoked-moon-05); }
+.fg-smoked-moon-06 { background-color: #f8fafc; background-image: var(--fg-smoked-moon-06); }
+.fg-smoked-moon-07 { background-color: #fcf9f3; background-image: var(--fg-smoked-moon-07); }
+.fg-smoked-moon-08 { background-color: #f5f8f3; background-image: var(--fg-smoked-moon-08); }

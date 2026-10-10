@@ -1,0 +1,20 @@
+/* FreeeGradients: Iris diffusion only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-iris-diffusion-01: url("../assets/iris-diffusion-01.0528369a1cfd8380.webp");
+  --fg-iris-diffusion-02: url("../assets/iris-diffusion-02.31eb03182beb7465.webp");
+  --fg-iris-diffusion-03: url("../assets/iris-diffusion-03.52886bec76890821.webp");
+  --fg-iris-diffusion-04: url("../assets/iris-diffusion-04.79d06f1d6998a6b8.webp");
+  --fg-iris-diffusion-05: url("../assets/iris-diffusion-05.3210617790e1eebc.webp");
+  --fg-iris-diffusion-06: url("../assets/iris-diffusion-06.d513162f953273df.webp");
+  --fg-iris-diffusion-07: url("../assets/iris-diffusion-07.77c14e6e3f2d7af1.webp");
+  --fg-iris-diffusion-08: url("../assets/iris-diffusion-08.e0009bd229a494ef.webp");
+}
+.fg-iris-diffusion-01 { background-color: #100d35; background-image: var(--fg-iris-diffusion-01); }
+.fg-iris-diffusion-02 { background-color: #18112d; background-image: var(--fg-iris-diffusion-02); }
+.fg-iris-diffusion-03 { background-color: #092b32; background-image: var(--fg-iris-diffusion-03); }
+.fg-iris-diffusion-04 { background-color: #32202d; background-image: var(--fg-iris-diffusion-04); }
+.fg-iris-diffusion-05 { background-color: #f8f4fd; background-image: var(--fg-iris-diffusion-05); }
+.fg-iris-diffusion-06 { background-color: #fff5e9; background-image: var(--fg-iris-diffusion-06); }
+.fg-iris-diffusion-07 { background-color: #f5f7e6; background-image: var(--fg-iris-diffusion-07); }
+.fg-iris-diffusion-08 { background-color: #fdf0f4; background-image: var(--fg-iris-diffusion-08); }

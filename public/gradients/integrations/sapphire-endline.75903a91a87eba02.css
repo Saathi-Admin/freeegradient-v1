@@ -1,0 +1,20 @@
+/* FreeeGradients: Sapphire endline only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-sapphire-endline-01: url("../assets/sapphire-endline-01.d552329ca0d055a3.webp");
+  --fg-sapphire-endline-02: url("../assets/sapphire-endline-02.bb017b4bd328a991.webp");
+  --fg-sapphire-endline-03: url("../assets/sapphire-endline-03.bc801c186841e64e.webp");
+  --fg-sapphire-endline-04: url("../assets/sapphire-endline-04.c24ab06997ab3355.webp");
+  --fg-sapphire-endline-05: url("../assets/sapphire-endline-05.453df890d78d8086.webp");
+  --fg-sapphire-endline-06: url("../assets/sapphire-endline-06.2daceb5a3e2a5102.webp");
+  --fg-sapphire-endline-07: url("../assets/sapphire-endline-07.5dc4284f6fe58d2c.webp");
+  --fg-sapphire-endline-08: url("../assets/sapphire-endline-08.25155fac37068c75.webp");
+}
+.fg-sapphire-endline-01 { background-color: #090b10; background-image: var(--fg-sapphire-endline-01); }
+.fg-sapphire-endline-02 { background-color: #13100e; background-image: var(--fg-sapphire-endline-02); }
+.fg-sapphire-endline-03 { background-color: #070d1c; background-image: var(--fg-sapphire-endline-03); }
+.fg-sapphire-endline-04 { background-color: #180c13; background-image: var(--fg-sapphire-endline-04); }
+.fg-sapphire-endline-05 { background-color: #f8fafc; background-image: var(--fg-sapphire-endline-05); }
+.fg-sapphire-endline-06 { background-color: #fcf9f3; background-image: var(--fg-sapphire-endline-06); }
+.fg-sapphire-endline-07 { background-color: #f5f8f3; background-image: var(--fg-sapphire-endline-07); }
+.fg-sapphire-endline-08 { background-color: #fcf6fa; background-image: var(--fg-sapphire-endline-08); }

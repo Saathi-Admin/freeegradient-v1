@@ -1,0 +1,20 @@
+/* FreeeGradients: Hibiscus glow only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-hibiscus-glow-01: url("../assets/hibiscus-glow-01.39d471df9746c889.webp");
+  --fg-hibiscus-glow-02: url("../assets/hibiscus-glow-02.bc8963bf45ed1591.webp");
+  --fg-hibiscus-glow-03: url("../assets/hibiscus-glow-03.a3c3fb4fccd4f478.webp");
+  --fg-hibiscus-glow-04: url("../assets/hibiscus-glow-04.ba54afc3dcb57143.webp");
+  --fg-hibiscus-glow-05: url("../assets/hibiscus-glow-05.32f93c57e5fd4fae.webp");
+  --fg-hibiscus-glow-06: url("../assets/hibiscus-glow-06.ad4d2daf8919e6e6.webp");
+  --fg-hibiscus-glow-07: url("../assets/hibiscus-glow-07.956cf3203531de8b.webp");
+  --fg-hibiscus-glow-08: url("../assets/hibiscus-glow-08.bf9f000e60c9215d.webp");
+}
+.fg-hibiscus-glow-01 { background-color: #392237; background-image: var(--fg-hibiscus-glow-01); }
+.fg-hibiscus-glow-02 { background-color: #18112d; background-image: var(--fg-hibiscus-glow-02); }
+.fg-hibiscus-glow-03 { background-color: #092b32; background-image: var(--fg-hibiscus-glow-03); }
+.fg-hibiscus-glow-04 { background-color: #32202d; background-image: var(--fg-hibiscus-glow-04); }
+.fg-hibiscus-glow-05 { background-color: #f8f4fd; background-image: var(--fg-hibiscus-glow-05); }
+.fg-hibiscus-glow-06 { background-color: #fff5e9; background-image: var(--fg-hibiscus-glow-06); }
+.fg-hibiscus-glow-07 { background-color: #f5f7e6; background-image: var(--fg-hibiscus-glow-07); }
+.fg-hibiscus-glow-08 { background-color: #fdf0f4; background-image: var(--fg-hibiscus-glow-08); }

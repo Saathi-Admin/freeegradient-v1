@@ -1,0 +1,20 @@
+/* FreeeGradients: Solar veil only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-solar-veil-01: url("../assets/solar-veil-01.6210721765247fe7.webp");
+  --fg-solar-veil-02: url("../assets/solar-veil-02.da03b8b02fab701a.webp");
+  --fg-solar-veil-03: url("../assets/solar-veil-03.06838a39286224b4.webp");
+  --fg-solar-veil-04: url("../assets/solar-veil-04.47aa42ff9ef2bfaa.webp");
+  --fg-solar-veil-05: url("../assets/solar-veil-05.5e4b96b79a1c3480.webp");
+  --fg-solar-veil-06: url("../assets/solar-veil-06.6264f9d97a971d35.webp");
+  --fg-solar-veil-07: url("../assets/solar-veil-07.b8f555f06d20c018.webp");
+  --fg-solar-veil-08: url("../assets/solar-veil-08.3c8334138c074f64.webp");
+}
+.fg-solar-veil-01 { background-color: #572b8c; background-image: var(--fg-solar-veil-01); }
+.fg-solar-veil-02 { background-color: #0c0923; background-image: var(--fg-solar-veil-02); }
+.fg-solar-veil-03 { background-color: #021917; background-image: var(--fg-solar-veil-03); }
+.fg-solar-veil-04 { background-color: #210c13; background-image: var(--fg-solar-veil-04); }
+.fg-solar-veil-05 { background-color: #f9fcff; background-image: var(--fg-solar-veil-05); }
+.fg-solar-veil-06 { background-color: #fff7f1; background-image: var(--fg-solar-veil-06); }
+.fg-solar-veil-07 { background-color: #f6fbf4; background-image: var(--fg-solar-veil-07); }
+.fg-solar-veil-08 { background-color: #faf4ff; background-image: var(--fg-solar-veil-08); }

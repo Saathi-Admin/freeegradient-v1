@@ -1,0 +1,20 @@
+/* FreeeGradients: Marshmallow only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-marshmallow-01: radial-gradient(ellipse 40% 70% at 50% 20%, #071526a6 0%, #07152600 100%), radial-gradient(ellipse 58% 76% at 82% 18%, #d7efffb3 0%, #d7efff00 100%), radial-gradient(ellipse 76% 58% at 18% 82%, #386ba8cc 0%, #386ba800 100%), linear-gradient(#071526, #071526);
+  --fg-marshmallow-02: radial-gradient(ellipse 40% 70% at 50% 20%, #0b1915a6 0%, #0b191500 100%), radial-gradient(ellipse 58% 76% at 82% 18%, #aeb8a0b3 0%, #aeb8a000 100%), radial-gradient(ellipse 76% 58% at 18% 82%, #547e66cc 0%, #547e6600 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-marshmallow-03: radial-gradient(ellipse 40% 70% at 50% 20%, #1c101ba6 0%, #1c101b00 100%), radial-gradient(ellipse 58% 76% at 82% 18%, #e8a5c5b3 0%, #e8a5c500 100%), radial-gradient(ellipse 76% 58% at 18% 82%, #813c69cc 0%, #813c6900 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-marshmallow-04: radial-gradient(ellipse 40% 70% at 50% 20%, #25120ea6 0%, #25120e00 100%), radial-gradient(ellipse 58% 76% at 82% 18%, #f4c47cb3 0%, #f4c47c00 100%), radial-gradient(ellipse 76% 58% at 18% 82%, #ff5c34cc 0%, #ff5c3400 100%), linear-gradient(#25120e, #25120e);
+  --fg-marshmallow-05: radial-gradient(ellipse 40% 70% at 50% 20%, #f6fbffa6 0%, #f6fbff00 100%), radial-gradient(ellipse 58% 76% at 82% 18%, #82b5deb3 0%, #82b5de00 100%), radial-gradient(ellipse 76% 58% at 18% 82%, #d7efffcc 0%, #d7efff00 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-marshmallow-06: radial-gradient(ellipse 40% 70% at 50% 20%, #fafbf4a6 0%, #fafbf400 100%), radial-gradient(ellipse 58% 76% at 82% 18%, #aeb8a0b3 0%, #aeb8a000 100%), radial-gradient(ellipse 76% 58% at 18% 82%, #d9e4c7cc 0%, #d9e4c700 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-marshmallow-07: radial-gradient(ellipse 40% 70% at 50% 20%, #fff6f7a6 0%, #fff6f700 100%), radial-gradient(ellipse 58% 76% at 82% 18%, #bb9cddb3 0%, #bb9cdd00 100%), radial-gradient(ellipse 76% 58% at 18% 82%, #f3cadbcc 0%, #f3cadb00 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-marshmallow-08: radial-gradient(ellipse 40% 70% at 50% 20%, #fffbeaa6 0%, #fffbea00 100%), radial-gradient(ellipse 58% 76% at 82% 18%, #ffae87b3 0%, #ffae8700 100%), radial-gradient(ellipse 76% 58% at 18% 82%, #e9f056cc 0%, #e9f05600 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-marshmallow-01 { background-color: #071526; background-image: var(--fg-marshmallow-01); }
+.fg-marshmallow-02 { background-color: #0b1915; background-image: var(--fg-marshmallow-02); }
+.fg-marshmallow-03 { background-color: #1c101b; background-image: var(--fg-marshmallow-03); }
+.fg-marshmallow-04 { background-color: #25120e; background-image: var(--fg-marshmallow-04); }
+.fg-marshmallow-05 { background-color: #f6fbff; background-image: var(--fg-marshmallow-05); }
+.fg-marshmallow-06 { background-color: #fafbf4; background-image: var(--fg-marshmallow-06); }
+.fg-marshmallow-07 { background-color: #fff6f7; background-image: var(--fg-marshmallow-07); }
+.fg-marshmallow-08 { background-color: #fffbea; background-image: var(--fg-marshmallow-08); }

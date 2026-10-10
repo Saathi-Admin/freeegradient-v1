@@ -1,0 +1,20 @@
+/* FreeeGradients: Opaline only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-opaline-01: radial-gradient(ellipse 76% 58% at 18% 82%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(90deg, #07152600 0%, #a1f4da8c 28%, #f4abdf8c 60%, #07152600 100%), linear-gradient(0deg, #071526 0%, #386ba8 23%, #d7efff 47%, #386ba8 72%, #071526 100%), linear-gradient(#071526, #071526);
+  --fg-opaline-02: radial-gradient(ellipse 76% 58% at 18% 82%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(90deg, #0b191500 0%, #a1f4da8c 28%, #f4abdf8c 60%, #0b191500 100%), linear-gradient(0deg, #0b1915 0%, #547e66 23%, #aeb8a0 47%, #547e66 72%, #0b1915 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-opaline-03: radial-gradient(ellipse 76% 58% at 18% 82%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(90deg, #1c101b00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #1c101b00 100%), linear-gradient(0deg, #1c101b 0%, #813c69 23%, #e8a5c5 47%, #813c69 72%, #1c101b 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-opaline-04: radial-gradient(ellipse 76% 58% at 18% 82%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(90deg, #25120e00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #25120e00 100%), linear-gradient(0deg, #25120e 0%, #ff5c34 23%, #f4c47c 47%, #ff5c34 72%, #25120e 100%), linear-gradient(#25120e, #25120e);
+  --fg-opaline-05: radial-gradient(ellipse 76% 58% at 18% 82%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(90deg, #f6fbff00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #f6fbff00 100%), linear-gradient(0deg, #f6fbff 0%, #d7efff 23%, #82b5de 47%, #d7efff 72%, #f6fbff 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-opaline-06: radial-gradient(ellipse 76% 58% at 18% 82%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(90deg, #fafbf400 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fafbf400 100%), linear-gradient(0deg, #fafbf4 0%, #d9e4c7 23%, #aeb8a0 47%, #d9e4c7 72%, #fafbf4 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-opaline-07: radial-gradient(ellipse 76% 58% at 18% 82%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(90deg, #fff6f700 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fff6f700 100%), linear-gradient(0deg, #fff6f7 0%, #f3cadb 23%, #bb9cdd 47%, #f3cadb 72%, #fff6f7 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-opaline-08: radial-gradient(ellipse 76% 58% at 18% 82%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(90deg, #fffbea00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fffbea00 100%), linear-gradient(0deg, #fffbea 0%, #e9f056 23%, #ffae87 47%, #e9f056 72%, #fffbea 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-opaline-01 { background-color: #071526; background-image: var(--fg-opaline-01); }
+.fg-opaline-02 { background-color: #0b1915; background-image: var(--fg-opaline-02); }
+.fg-opaline-03 { background-color: #1c101b; background-image: var(--fg-opaline-03); }
+.fg-opaline-04 { background-color: #25120e; background-image: var(--fg-opaline-04); }
+.fg-opaline-05 { background-color: #f6fbff; background-image: var(--fg-opaline-05); }
+.fg-opaline-06 { background-color: #fafbf4; background-image: var(--fg-opaline-06); }
+.fg-opaline-07 { background-color: #fff6f7; background-image: var(--fg-opaline-07); }
+.fg-opaline-08 { background-color: #fffbea; background-image: var(--fg-opaline-08); }

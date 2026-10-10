@@ -1,0 +1,12 @@
+/* FreeeGradients: Ripple only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-ripple-01: url("../assets/ripple-01.bee277c8e6ffddfd.webp");
+  --fg-ripple-02: url("../assets/ripple-02.8b57f814014f2809.webp");
+  --fg-ripple-03: url("../assets/ripple-03.00c0732a0f317e22.webp");
+  --fg-ripple-04: url("../assets/ripple-04.ae9c1994e8b4010a.webp");
+}
+.fg-ripple-01 { background-image: var(--fg-ripple-01); }
+.fg-ripple-02 { background-image: var(--fg-ripple-02); }
+.fg-ripple-03 { background-image: var(--fg-ripple-03); }
+.fg-ripple-04 { background-image: var(--fg-ripple-04); }

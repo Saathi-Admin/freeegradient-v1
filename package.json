@@ -9,17 +9,20 @@
   "scripts": {
     "assets": "node scripts/build-gradients.mjs",
     "predev": "npm run assets",
-    "prebuild": "npm run assets",
+    "prebuild": "npm run assets && npm run verify",
     "dev": "astro dev",
     "check": "astro check",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "verify": "node scripts/verify-library.mjs && node scripts/verify-seo.mjs",
+    "review": "node scripts/review-templates.mjs"
   },
   "dependencies": {
     "@fontsource-variable/host-grotesk": "5.3.0",
     "@fontsource/instrument-serif": "5.3.0",
     "@lucide/astro": "1.52.0",
-    "astro": "7.3.5"
+    "astro": "7.3.5",
+    "sharp": "0.35.5"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",

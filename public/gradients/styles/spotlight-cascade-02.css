@@ -1,0 +1,20 @@
+/* FreeeGradients: Spotlight cascade 02 only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-spotlight-cascade-02-01: linear-gradient(359deg, #07152600 0%, #d7efff99 35%, #386ba8b3 60%, #07152600 100%), linear-gradient(244deg, #07152600 0%, #071526a6 100%), radial-gradient(ellipse 16.96% 51% at 47.1% 10.5%, #d7efffe6 0%, #d7efff00 100%), radial-gradient(ellipse 53% 68% at 47.1% 10.5%, #386ba899 0%, #386ba800 100%), linear-gradient(#071526, #071526);
+  --fg-spotlight-cascade-02-02: linear-gradient(359deg, #0b191500 0%, #aeb8a099 35%, #547e66b3 60%, #0b191500 100%), linear-gradient(244deg, #0b191500 0%, #0b1915a6 100%), radial-gradient(ellipse 16.96% 51% at 47.1% 10.5%, #aeb8a0e6 0%, #aeb8a000 100%), radial-gradient(ellipse 53% 68% at 47.1% 10.5%, #547e6699 0%, #547e6600 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-spotlight-cascade-02-03: linear-gradient(359deg, #1c101b00 0%, #e8a5c599 35%, #813c69b3 60%, #1c101b00 100%), linear-gradient(244deg, #1c101b00 0%, #1c101ba6 100%), radial-gradient(ellipse 16.96% 51% at 47.1% 10.5%, #e8a5c5e6 0%, #e8a5c500 100%), radial-gradient(ellipse 53% 68% at 47.1% 10.5%, #813c6999 0%, #813c6900 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-spotlight-cascade-02-04: linear-gradient(359deg, #25120e00 0%, #f4c47c99 35%, #ff5c34b3 60%, #25120e00 100%), linear-gradient(244deg, #25120e00 0%, #25120ea6 100%), radial-gradient(ellipse 16.96% 51% at 47.1% 10.5%, #f4c47ce6 0%, #f4c47c00 100%), radial-gradient(ellipse 53% 68% at 47.1% 10.5%, #ff5c3499 0%, #ff5c3400 100%), linear-gradient(#25120e, #25120e);
+  --fg-spotlight-cascade-02-05: linear-gradient(359deg, #f6fbff00 0%, #82b5de99 35%, #d7efffb3 60%, #f6fbff00 100%), linear-gradient(244deg, #f6fbff00 0%, #f6fbffa6 100%), radial-gradient(ellipse 16.96% 51% at 47.1% 10.5%, #82b5dee6 0%, #82b5de00 100%), radial-gradient(ellipse 53% 68% at 47.1% 10.5%, #d7efff99 0%, #d7efff00 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-spotlight-cascade-02-06: linear-gradient(359deg, #fafbf400 0%, #aeb8a099 35%, #d9e4c7b3 60%, #fafbf400 100%), linear-gradient(244deg, #fafbf400 0%, #fafbf4a6 100%), radial-gradient(ellipse 16.96% 51% at 47.1% 10.5%, #aeb8a0e6 0%, #aeb8a000 100%), radial-gradient(ellipse 53% 68% at 47.1% 10.5%, #d9e4c799 0%, #d9e4c700 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-spotlight-cascade-02-07: linear-gradient(359deg, #fff6f700 0%, #bb9cdd99 35%, #f3cadbb3 60%, #fff6f700 100%), linear-gradient(244deg, #fff6f700 0%, #fff6f7a6 100%), radial-gradient(ellipse 16.96% 51% at 47.1% 10.5%, #bb9cdde6 0%, #bb9cdd00 100%), radial-gradient(ellipse 53% 68% at 47.1% 10.5%, #f3cadb99 0%, #f3cadb00 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-spotlight-cascade-02-08: linear-gradient(359deg, #fffbea00 0%, #ffae8799 35%, #e9f056b3 60%, #fffbea00 100%), linear-gradient(244deg, #fffbea00 0%, #fffbeaa6 100%), radial-gradient(ellipse 16.96% 51% at 47.1% 10.5%, #ffae87e6 0%, #ffae8700 100%), radial-gradient(ellipse 53% 68% at 47.1% 10.5%, #e9f05699 0%, #e9f05600 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-spotlight-cascade-02-01 { background-color: #071526; background-image: var(--fg-spotlight-cascade-02-01); }
+.fg-spotlight-cascade-02-02 { background-color: #0b1915; background-image: var(--fg-spotlight-cascade-02-02); }
+.fg-spotlight-cascade-02-03 { background-color: #1c101b; background-image: var(--fg-spotlight-cascade-02-03); }
+.fg-spotlight-cascade-02-04 { background-color: #25120e; background-image: var(--fg-spotlight-cascade-02-04); }
+.fg-spotlight-cascade-02-05 { background-color: #f6fbff; background-image: var(--fg-spotlight-cascade-02-05); }
+.fg-spotlight-cascade-02-06 { background-color: #fafbf4; background-image: var(--fg-spotlight-cascade-02-06); }
+.fg-spotlight-cascade-02-07 { background-color: #fff6f7; background-image: var(--fg-spotlight-cascade-02-07); }
+.fg-spotlight-cascade-02-08 { background-color: #fffbea; background-image: var(--fg-spotlight-cascade-02-08); }

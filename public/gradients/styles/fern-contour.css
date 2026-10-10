@@ -1,0 +1,20 @@
+/* FreeeGradients: Fern contour only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-fern-contour-01: url("../assets/fern-contour-01.798d272c32697e42.webp");
+  --fg-fern-contour-02: url("../assets/fern-contour-02.ede759e2a6e3eeab.webp");
+  --fg-fern-contour-03: url("../assets/fern-contour-03.ca31d4626bf58aac.webp");
+  --fg-fern-contour-04: url("../assets/fern-contour-04.b1bf22df4ae1c90a.webp");
+  --fg-fern-contour-05: url("../assets/fern-contour-05.8985c6b657679b50.webp");
+  --fg-fern-contour-06: url("../assets/fern-contour-06.b0c2b9dba2a8117e.webp");
+  --fg-fern-contour-07: url("../assets/fern-contour-07.f61ced03f08cd7e9.webp");
+  --fg-fern-contour-08: url("../assets/fern-contour-08.ef10d2645cdee0db.webp");
+}
+.fg-fern-contour-01 { background-color: #132a11; background-image: var(--fg-fern-contour-01); }
+.fg-fern-contour-02 { background-color: #0c0923; background-image: var(--fg-fern-contour-02); }
+.fg-fern-contour-03 { background-color: #021917; background-image: var(--fg-fern-contour-03); }
+.fg-fern-contour-04 { background-color: #210c13; background-image: var(--fg-fern-contour-04); }
+.fg-fern-contour-05 { background-color: #f9fcff; background-image: var(--fg-fern-contour-05); }
+.fg-fern-contour-06 { background-color: #fff7f1; background-image: var(--fg-fern-contour-06); }
+.fg-fern-contour-07 { background-color: #f6fbf4; background-image: var(--fg-fern-contour-07); }
+.fg-fern-contour-08 { background-color: #faf4ff; background-image: var(--fg-fern-contour-08); }

@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Select from './ui/Select.astro';
+import { gradients } from '../data/gradients';
+import TabBar from './ui/TabBar.astro';
+import Footer from './Footer.astro';
+import Header from './Header.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import GradientCard from './GradientCard.astro';
+import GradientPreview from './GradientPreview.astro';
+import { Sun, Moon, ArrowLeft, ArrowRight, Search } from '@lucide/astro';
+import { collections } from '../data/collections';
+import type { GradientTemplate } from '../types/gradient';
+import { gradientResults, gradientPageSize, gradientPageUrl, type BrowseMode } from '../data/gradient-pages';
+import '../styles/library.css';
+interface Props { mode?: BrowseMode; page?: number; category?: GradientTemplate['category']; }
+const { mode = 'all', page = 1, category } = Astro.props;
+const collection = collections.find(c=>c.id===category);
+const results = gradientResults(mode,category);
+const pageCount = Math.ceil(results.length / gradientPageSize);
+const start = (page - 1) * gradientPageSize;
+const cards = results.slice(start, start + gradientPageSize);
+const templates = [...new Map(cards.map(card => [card.gradient.slug, card.gradient])).values()];
+const title = collection?.title ?? 'All gradients';
+const searchTitles: Record<string,string> = {floral:'Floral Blur',liquid:'Liquid Glass',iridescent:'Iridescent and Holographic',studies:'Abstract Colour',landing:'Landing Page',smooth:'Smooth',mesh:'Mesh',glow:'Glow and Aurora',vintage:'Grain and Vintage',waves:'Wave',footer:'Footer',sunset:'Sunset',pastel:'Pastel',holographic:'Holographic',metallic:'Metallic',cosmic:'Cosmic',prism:'Prism and Glass',duotone:'Duotone',angular:'Conic',spotlight:'Spotlight',earth:'Earth Tone'};
+const seoTitle = category ? `Free ${searchTitles[category]} Gradient Backgrounds` : 'Free CSS Gradient Backgrounds';
+const pageUrl = (selectedMode: BrowseMode, selectedPage=1) => gradientPageUrl(selectedMode, selectedPage, category);
+---
+<BaseLayout title={`${seoTitle}${page > 1 ? ` — Page ${page}` : ''}${mode !== 'all' ? ` — For ${mode} designs` : ''} | FreeeGradients`} noindex={mode !== 'all'} description={collection ? `${collection.description} Free gradients for light and dark designs.` : 'Browse free gradient colour variations. Explore every collection for light and dark designs. Copy CSS or download SVG, PNG and JPEG.'}>
+  <Header />
+  <main id="main-content" class="collection-detail container">
+    <div class="collection-detail-hero">
+      <Breadcrumbs items={collection ? [{label:'Home',href:'/'},{label:'Collections',href:'/collections/'},{label:collection.title}] : [{ label: 'Home', href: '/' }, { label: 'All gradients' }]} />
+      <div class="collection-detail-intro">
+        <h1 id="all-gradients-title"><span class="hero-heading-neutral">{title}{!collection && '.'}</span></h1>
+        <p class="hero-description text-body-md">{collection?.description ?? 'Every style. Every colour. Find your next background, copy the CSS or download SVG, PNG and JPEG. Completely free.'}</p>
+        <TabBar label="Filter gradients by design background">
+          <a class="btn btn-ghost btn-sm" href={pageUrl('all')} aria-current={mode === 'all' ? 'page' : undefined}>All</a>
+          <a class="btn btn-ghost btn-sm" href={pageUrl('light')} aria-current={mode === 'light' ? 'page' : undefined}><Sun aria-hidden="true" />For light</a>
+          <a class="btn btn-ghost btn-sm" href={pageUrl('dark')} aria-current={mode === 'dark' ? 'page' : undefined}><Moon aria-hidden="true" />For dark</a>
+        </TabBar>
+        <div class="gradient-search-controls" data-gradient-search data-mode={mode} data-category={category ?? 'all'}>
+          <label class="gradient-search-field"><Search size={16} aria-hidden="true" /><input type="search" id="gradient-search" placeholder="Search templates, colours or styles…" aria-label="Search gradient templates" autocomplete="off" /></label>
+          {!category && <Select id="gradient-category" label="Filter by collection" pill options={[{value:'all',label:'All collections'},...collections.map(c=>({value:c.id,label:c.title}))]} value="all" />}
+          <Select id="gradient-colour" label="Filter by colour" pill options={[{value:'all',label:'All colours'},...['blue','green','pink','purple','orange','yellow','mint','jade','rose','peach','lavender'].map(colour=>({value:colour,label:colour[0].toUpperCase()+colour.slice(1)}))]} value="all" />
+        </div>
+      </div>
+    </div>
+    <section aria-labelledby="all-gradients-title">
+      <p class="browse-count text-caption" id="browse-count">{start + 1}–{start + cards.length} of {results.length} colour variations</p>
+      <div class="grid" id="browse-grid">{cards.map(({gradient,variation},order) => <GradientCard gradient={gradient} variationId={variation.id} designMode={variation.mode} order={order} featured />)}</div>
+      <div class="grid" id="search-grid" hidden></div>
+      <p class="text-body-sm search-status" id="gradient-search-status" role="status" hidden></p>
+      <nav class="browse-pagination" id="browse-pagination" aria-label="Gradient pages">
+        {page > 1 ? <a class="btn btn-secondary btn-md" href={pageUrl(mode, page - 1)} rel="prev"><ArrowLeft aria-hidden="true" />Previous</a> : <button class="btn btn-secondary btn-md" disabled><ArrowLeft aria-hidden="true" />Previous</button>}
+        <Select id="browse-page" label="Choose page" pill options={Array.from({length:pageCount},(_,i)=>({value:pageUrl(mode,i+1),label:`Page ${i+1}`}))} value={pageUrl(mode,page)} valueLabel={`Page ${page} of ${pageCount}`} />
+        {page < pageCount ? <a class="btn btn-secondary btn-md" href={pageUrl(mode, page + 1)} rel="next">Next<ArrowRight aria-hidden="true" /></a> : <button class="btn btn-secondary btn-md" disabled>Next<ArrowRight aria-hidden="true" /></button>}
+      </nav>
+      <nav class="browse-pagination" id="search-pagination" aria-label="Search result pages" hidden>
+        <button class="btn btn-secondary btn-md" id="search-prev" type="button"><ArrowLeft aria-hidden="true" />Previous</button>
+        <Select id="search-page" label="Choose search results page" pill options={Array.from({length:Math.ceil(gradients.length/24)},(_,i)=>({value:String(i+1),label:`Page ${i+1}`}))} value="1" />
+        <button class="btn btn-secondary btn-md" id="search-next" type="button">Next<ArrowRight aria-hidden="true" /></button>
+      </nav>
+      <div id="library-empty" hidden></div>
+    </section>
+  </main>
+  <Footer />
+  <GradientPreview templates={templates} />
+  <script>import '../scripts/library';</script>
+  <script>import '../scripts/gradient-search'; document.querySelector('#browse-page')?.addEventListener('select-change',event=>{location.href=(event as CustomEvent).detail.value;});</script>
+</BaseLayout>
+<style>
+  .browse-count { margin-bottom: var(--space-12); color: var(--text-secondary); }
+  .browse-pagination { display: flex; justify-content:center; gap: var(--space-4); align-items: center; margin-top: var(--space-16); }
+  .browse-pagination :global(.custom-select) { width:160px; }
+  .browse-pagination .btn { min-height:44px; cursor:pointer; }
+  .browse-pagination .btn:disabled { cursor:default; }
+  .browse-pagination[hidden] { display:none; }
+  .gradient-search-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-4); width: min(100%, 800px); }
+  .gradient-search-field { display: flex; align-items: center; flex: 1 1 280px; gap: var(--space-4); background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-full); padding: var(--space-5) var(--space-8); color: var(--text-secondary); }
+  .gradient-search-field input { border: 0; background: transparent; color: var(--text-primary); font: inherit; font-size: var(--font-size-14); width: 100%; min-width: 0; outline: none; }
+  .gradient-search-field:focus-within { outline: 2px solid var(--text-primary); outline-offset: 2px; }
+  .gradient-search-controls :global(.custom-select) { width:190px; }
+  .gradient-search-controls :global(.select-trigger), .gradient-search-field { height:44px; box-sizing:border-box; }
+  .search-status { color: var(--text-secondary); margin-top: var(--space-12); }
+  #search-grid :global(.gradient-card) { color: var(--text-primary); text-decoration: none; cursor: pointer; }
+  #search-grid :global(.card-media img) { display: block; width: 100%; height: auto; aspect-ratio: var(--gradient-aspect-ratio); object-fit: cover; border-radius: var(--gradient-card-image-radius); }
+  @media (max-width: 479px) { .gradient-search-controls :global(.custom-select) { flex: 1 1 0; } .browse-pagination :global(.custom-select) { width:140px; } .browse-pagination .btn { padding-inline:var(--space-6); } }
+</style>

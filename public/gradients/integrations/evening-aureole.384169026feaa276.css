@@ -1,0 +1,20 @@
+/* FreeeGradients: Evening aureole only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-evening-aureole-01: radial-gradient(ellipse 54.6% 29.700000000000003% at 50% 106%,#79395366 0%,#79395338 42%,#79395300 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#180c1300 0%,#79395326 48%,#c89caab3 68%,#793953cc 78%,#180c1300 100%),linear-gradient(#180c13,#180c13);
+  --fg-evening-aureole-02: radial-gradient(ellipse 54.6% 29.700000000000003% at 50% 106%,#d4e3ed66 0%,#d4e3ed38 42%,#d4e3ed00 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#f8fafc00 0%,#d4e3ed26 48%,#8aaec6b3 68%,#d4e3edcc 78%,#f8fafc00 100%),linear-gradient(#f8fafc,#f8fafc);
+  --fg-evening-aureole-03: radial-gradient(ellipse 54.6% 29.700000000000003% at 50% 106%,#e4d8c266 0%,#e4d8c238 42%,#e4d8c200 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#fcf9f300 0%,#e4d8c226 48%,#b5a086b3 68%,#e4d8c2cc 78%,#fcf9f300 100%),linear-gradient(#fcf9f3,#fcf9f3);
+  --fg-evening-aureole-04: radial-gradient(ellipse 54.6% 29.700000000000003% at 50% 106%,#d4dfd066 0%,#d4dfd038 42%,#d4dfd000 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#f5f8f300 0%,#d4dfd026 48%,#88a49cb3 68%,#d4dfd0cc 78%,#f5f8f300 100%),linear-gradient(#f5f8f3,#f5f8f3);
+  --fg-evening-aureole-05: radial-gradient(ellipse 54.6% 29.700000000000003% at 50% 106%,#e9d4e166 0%,#e9d4e138 42%,#e9d4e100 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#fcf6fa00 0%,#e9d4e126 48%,#b49bbcb3 68%,#e9d4e1cc 78%,#fcf6fa00 100%),linear-gradient(#fcf6fa,#fcf6fa);
+  --fg-evening-aureole-06: radial-gradient(ellipse 54.6% 29.700000000000003% at 50% 106%,#52617666 0%,#52617638 42%,#52617600 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#090b1000 0%,#52617626 48%,#b7c9d5b3 68%,#526176cc 78%,#090b1000 100%),linear-gradient(#090b10,#090b10);
+  --fg-evening-aureole-07: radial-gradient(ellipse 54.6% 29.700000000000003% at 50% 106%,#8b715366 0%,#8b715338 42%,#8b715300 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#13100e00 0%,#8b715326 48%,#ddc5a3b3 68%,#8b7153cc 78%,#13100e00 100%),linear-gradient(#13100e,#13100e);
+  --fg-evening-aureole-08: radial-gradient(ellipse 54.6% 29.700000000000003% at 50% 106%,#294f8266 0%,#294f8238 42%,#294f8200 100%),radial-gradient(ellipse 91% 54% at 50% 122%,#070d1c00 0%,#294f8226 48%,#92baddb3 68%,#294f82cc 78%,#070d1c00 100%),linear-gradient(#070d1c,#070d1c);
+}
+.fg-evening-aureole-01 { background-color: #180c13; background-image: var(--fg-evening-aureole-01); }
+.fg-evening-aureole-02 { background-color: #f8fafc; background-image: var(--fg-evening-aureole-02); }
+.fg-evening-aureole-03 { background-color: #fcf9f3; background-image: var(--fg-evening-aureole-03); }
+.fg-evening-aureole-04 { background-color: #f5f8f3; background-image: var(--fg-evening-aureole-04); }
+.fg-evening-aureole-05 { background-color: #fcf6fa; background-image: var(--fg-evening-aureole-05); }
+.fg-evening-aureole-06 { background-color: #090b10; background-image: var(--fg-evening-aureole-06); }
+.fg-evening-aureole-07 { background-color: #13100e; background-image: var(--fg-evening-aureole-07); }
+.fg-evening-aureole-08 { background-color: #070d1c; background-image: var(--fg-evening-aureole-08); }

@@ -2,13 +2,16 @@
 import { Coffee } from '@lucide/astro';
 import Button from './ui/Button.astro';
 import { collections } from '../data/collections';
+import { gradients } from '../data/gradients';
+const footerBackground=gradients.find(g=>g.slug==='afterglow')!.variations[0].backgroundSrc;
 const donationUrl = import.meta.env.PUBLIC_DONATION_URL;
-const collectionColumns = [collections.slice(0, 4), collections.slice(4)];
+const columnSize = Math.ceil(collections.length / 3);
+const collectionColumns = Array.from({ length: 3 }, (_, index) => collections.slice(index * columnSize, (index + 1) * columnSize));
 interface Props { preview?: boolean; }
 const { preview = false } = Astro.props;
 const FooterLink = preview ? 'span' : 'a';
 ---
-<footer class:list={['brand-footer', { 'brand-footer-preview': preview }]} style={preview ? 'background-image: var(--preview-gradient);' : undefined}>
+<footer class:list={['brand-footer', { 'brand-footer-preview': preview }]} data-footer-background={preview ? undefined : footerBackground} style={preview ? 'background-image: var(--preview-gradient);' : undefined}>
   <div class="container brand-footer-content">
     {!preview && <section class="footer-support" aria-labelledby="footer-support-title">
       <img class="footer-support-art" src="/love.png" alt="" width="64" height="64" loading="lazy" decoding="async" />
@@ -29,6 +32,7 @@ const FooterLink = preview ? 'span' : 'a';
           <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/collections/'}>Collections</FooterLink>
           <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/#how-to-use'}>How to use</FooterLink>
           <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/#faq'}>FAQs</FooterLink>
+          {!preview && <FooterLink class="btn btn-ghost btn-sm" href="/guides/">Gradient guides</FooterLink>}
         </nav>
         {collectionColumns.map((column, index) => <nav class="brand-footer-links" aria-label={`Footer collections ${index + 1}`}>
           {column.map(collection => <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : `/collections/${collection.id}/`}>{collection.title}</FooterLink>)}
@@ -39,7 +43,7 @@ const FooterLink = preview ? 'span' : 'a';
   </div>
 </footer>
 <style>
-  .brand-footer { background-color: var(--surface-canvas); background-image: linear-gradient(to bottom, var(--surface-canvas) 0%, transparent 45%), url('/gradients/afterglow-01.svg'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+  .brand-footer { background-color: var(--surface-canvas); background-image: linear-gradient(to bottom, var(--surface-canvas) 0%, transparent 45%), var(--footer-gradient, none); background-position: center; background-size: cover; background-repeat: no-repeat; }
   .brand-footer-preview { width: 100%; min-width: 0; border-radius: var(--radius-12); overflow: hidden; }
   .brand-footer-preview .brand-footer-content { padding-block: var(--space-16); }
   .brand-footer-preview .btn { cursor: default; pointer-events: none; }
@@ -49,6 +53,7 @@ const FooterLink = preview ? 'span' : 'a';
   .footer-support .btn:disabled { opacity: 1; }
   .footer-support-art { width: var(--space-32); height: var(--space-32); object-fit: contain; margin-bottom: var(--space-4); }
   .brand-footer-main, .brand-footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-12); }
+  .brand-footer-main { align-items: flex-start; }
   .footer-wordmark { color: var(--text-primary); font-size: var(--font-size-24); font-weight: var(--font-weight-medium); text-decoration: none; }
   .brand-footer-main p { margin-top: var(--space-2); color: var(--text-secondary); }
   .footer-brand-stack { display: grid; gap: var(--space-16); }
@@ -59,10 +64,21 @@ const FooterLink = preview ? 'span' : 'a';
   .footer-creator { display: inline-flex; flex-direction: row; flex-wrap: nowrap; align-items: center; column-gap: 8px; font-size: var(--font-size-16); white-space: nowrap; }
   .footer-creator-logo { display: block; flex: 0 0 24px; width: 24px; height: 24px; border-radius: 25%; overflow: hidden; }
   .footer-creator img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
-  .footer-link-columns { display: grid; grid-template-columns: repeat(3, auto); align-items: start; gap: var(--space-16); margin-left: auto; }
+  .footer-link-columns { display: grid; grid-template-columns: repeat(4, auto); align-items: start; gap: var(--space-12); margin-left: auto; }
   .brand-footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); }
   @media (max-width: 799px) { .footer-link-columns { width: 100%; margin-left: calc(-1 * var(--button-padding-x-sm)); } }
+  @media (min-width: 480px) and (max-width: 999px) { .footer-link-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; margin-left: 0; } }
   @media (max-width: 479px) { .footer-link-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-12); } .brand-footer-links .btn { white-space: normal; height: auto; min-height: var(--button-height-sm); text-align: left; justify-content: flex-start; } }
   .brand-footer-bottom { padding-top: var(--space-16); border-top: 1px solid var(--border-subtle); color: var(--text-secondary); }
   .brand-footer-bottom a { color: inherit; }
 </style>
+<script>
+  const footers=[...document.querySelectorAll<HTMLElement>('[data-footer-background]')];
+  const load=(footer:HTMLElement)=>footer.style.setProperty('--footer-gradient',`url("${footer.dataset.footerBackground}")`);
+  if(footers.length) {
+    if('IntersectionObserver' in window) {
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){load(entry.target as HTMLElement);observer.unobserve(entry.target);}}),{rootMargin:'600px 0px'});
+      footers.forEach(footer=>observer.observe(footer));
+    } else footers.forEach(load);
+  }
+</script>

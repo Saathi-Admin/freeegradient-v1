@@ -1,0 +1,20 @@
+/* FreeeGradients: Angular terrace 03 only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-angular-terrace-03-01: radial-gradient(ellipse 15.5% 44% at 80% 12%, #d7efff40 0%, #d7efff00 100%), conic-gradient(from 185deg at 80% 12%, #071526 0deg, #386ba8 120deg, #d7efff 240deg, #071526 360deg), linear-gradient(#071526, #071526);
+  --fg-angular-terrace-03-02: radial-gradient(ellipse 15.5% 44% at 80% 12%, #aeb8a040 0%, #aeb8a000 100%), conic-gradient(from 185deg at 80% 12%, #0b1915 0deg, #547e66 120deg, #aeb8a0 240deg, #0b1915 360deg), linear-gradient(#0b1915, #0b1915);
+  --fg-angular-terrace-03-03: radial-gradient(ellipse 15.5% 44% at 80% 12%, #e8a5c540 0%, #e8a5c500 100%), conic-gradient(from 185deg at 80% 12%, #1c101b 0deg, #813c69 120deg, #e8a5c5 240deg, #1c101b 360deg), linear-gradient(#1c101b, #1c101b);
+  --fg-angular-terrace-03-04: radial-gradient(ellipse 15.5% 44% at 80% 12%, #f4c47c40 0%, #f4c47c00 100%), conic-gradient(from 185deg at 80% 12%, #25120e 0deg, #ff5c34 120deg, #f4c47c 240deg, #25120e 360deg), linear-gradient(#25120e, #25120e);
+  --fg-angular-terrace-03-05: radial-gradient(ellipse 15.5% 44% at 80% 12%, #82b5de40 0%, #82b5de00 100%), conic-gradient(from 185deg at 80% 12%, #f6fbff 0deg, #d7efff 120deg, #82b5de 240deg, #f6fbff 360deg), linear-gradient(#f6fbff, #f6fbff);
+  --fg-angular-terrace-03-06: radial-gradient(ellipse 15.5% 44% at 80% 12%, #aeb8a040 0%, #aeb8a000 100%), conic-gradient(from 185deg at 80% 12%, #fafbf4 0deg, #d9e4c7 120deg, #aeb8a0 240deg, #fafbf4 360deg), linear-gradient(#fafbf4, #fafbf4);
+  --fg-angular-terrace-03-07: radial-gradient(ellipse 15.5% 44% at 80% 12%, #bb9cdd40 0%, #bb9cdd00 100%), conic-gradient(from 185deg at 80% 12%, #fff6f7 0deg, #f3cadb 120deg, #bb9cdd 240deg, #fff6f7 360deg), linear-gradient(#fff6f7, #fff6f7);
+  --fg-angular-terrace-03-08: radial-gradient(ellipse 15.5% 44% at 80% 12%, #ffae8740 0%, #ffae8700 100%), conic-gradient(from 185deg at 80% 12%, #fffbea 0deg, #e9f056 120deg, #ffae87 240deg, #fffbea 360deg), linear-gradient(#fffbea, #fffbea);
+}
+.fg-angular-terrace-03-01 { background-color: #071526; background-image: var(--fg-angular-terrace-03-01); }
+.fg-angular-terrace-03-02 { background-color: #0b1915; background-image: var(--fg-angular-terrace-03-02); }
+.fg-angular-terrace-03-03 { background-color: #1c101b; background-image: var(--fg-angular-terrace-03-03); }
+.fg-angular-terrace-03-04 { background-color: #25120e; background-image: var(--fg-angular-terrace-03-04); }
+.fg-angular-terrace-03-05 { background-color: #f6fbff; background-image: var(--fg-angular-terrace-03-05); }
+.fg-angular-terrace-03-06 { background-color: #fafbf4; background-image: var(--fg-angular-terrace-03-06); }
+.fg-angular-terrace-03-07 { background-color: #fff6f7; background-image: var(--fg-angular-terrace-03-07); }
+.fg-angular-terrace-03-08 { background-color: #fffbea; background-image: var(--fg-angular-terrace-03-08); }

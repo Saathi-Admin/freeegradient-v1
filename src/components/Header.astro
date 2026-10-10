@@ -1,5 +1,5 @@
 ---
-import { Menu, ArrowUpRight, ChevronDown } from '@lucide/astro';
+import { Menu, X, ArrowUpRight, ChevronDown } from '@lucide/astro';
 import Button from './ui/Button.astro';
 import CollectionCard from './CollectionCard.astro';
 import { collections } from '../data/collections';
@@ -14,14 +14,25 @@ import { gradients } from '../data/gradients';
   </nav>
   <div class="header-actions">
     <a class="btn btn-secondary btn-sm header-cta" href="/playground/">Go to playground <ArrowUpRight aria-hidden="true" /></a>
-    <a class="btn btn-primary btn-sm header-cta" href="/#how-to-use">Get the library</a>
-    <Button size="sm" variant="secondary" iconOnly aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false" id="menu-toggle"><Menu aria-hidden="true" /></Button>
+    <a class="btn btn-primary btn-sm header-cta" href="/#how-to-use">Use in your CSS</a>
+    <Button size="sm" variant="secondary" iconOnly aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false" id="menu-toggle"><Menu class="menu-open-icon" aria-hidden="true" /><X class="menu-close-icon" aria-hidden="true" /></Button>
   </div>
   <nav id="mobile-nav" aria-label="Mobile navigation" hidden>
+    <div class="header-collections-inner mobile-nav-inner">
     <a class="btn btn-ghost btn-sm" href="/gradients/">Gradients</a>
-    <Button variant="ghost" size="sm" data-open-collections popovertarget="header-collections" aria-controls="header-collections" aria-expanded="false">Collections<ChevronDown slot="trailing-icon" aria-hidden="true" /></Button>
+    <Button variant="ghost" size="sm" id="mobile-collections-toggle" aria-controls="mobile-collections" aria-expanded="false">Collections<ChevronDown slot="trailing-icon" aria-hidden="true" /></Button>
+    <div class="collection-grid header-collections-grid mobile-collections-grid" id="mobile-collections" hidden>
+      {collections.map(collection => {
+        const templates = gradients.filter(g => g.category === collection.id);
+        return <CollectionCard id={collection.id} title={collection.title} preview={collection.preview} variations={templates.reduce((count, template) => count + template.variations.length, 0)} />;
+      })}
+    </div>
     <a class="btn btn-ghost btn-sm" href="/#how-to-use">How to use</a>
-    <a class="btn btn-secondary btn-sm" href="/playground/">Go to playground <ArrowUpRight aria-hidden="true" /></a>
+    <div class="mobile-nav-actions">
+      <a class="btn btn-secondary btn-sm" href="/playground/"><span>Go to playground</span><ArrowUpRight aria-hidden="true" /></a>
+      <a class="btn btn-primary btn-sm" href="/#how-to-use"><span>Use in your CSS</span></a>
+    </div>
+    </div>
   </nav>
 </header>
 <div popover="auto" id="header-collections" class="header-collections-dropdown" aria-label="Collections">
@@ -37,14 +48,17 @@ import { gradients } from '../data/gradients';
 <script>
   const toggle = document.querySelector<HTMLButtonElement>('#menu-toggle');
   const nav = document.querySelector<HTMLElement>('#mobile-nav');
-  const close = () => { if (nav && toggle) { nav.hidden = true; toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open menu'); } };
+  const mobileCollectionToggle = document.querySelector<HTMLButtonElement>('#mobile-collections-toggle')!;
+  const mobileCollections = document.querySelector<HTMLElement>('#mobile-collections')!;
+  const close = () => { if (nav && toggle) { nav.hidden = true; toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open menu'); mobileCollections.hidden = true; mobileCollectionToggle.setAttribute('aria-expanded', 'false'); } };
+  mobileCollectionToggle.addEventListener('click', () => { const open = mobileCollections.hidden; mobileCollections.hidden = !open; mobileCollectionToggle.setAttribute('aria-expanded', String(open)); });
+  document.addEventListener('click', event => { if (nav && !nav.hidden && !(event.target as Element).closest('.floating-header')) close(); });
   toggle?.addEventListener('click', () => { if (!nav) return; const open = nav.hidden; nav.hidden = !open; toggle.setAttribute('aria-expanded', String(open)); toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); });
   nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && nav && !nav.hidden) { close(); toggle?.focus(); } });
   matchMedia('(min-width: 800px)').addEventListener('change', close);
   const collectionsDropdown = document.querySelector<HTMLElement>('#header-collections')!;
   const collectionTriggers = document.querySelectorAll<HTMLButtonElement>('[data-open-collections]');
-  collectionTriggers.forEach(button => button.addEventListener('click', () => { if (button.closest('#mobile-nav')) close(); }));
   collectionsDropdown.addEventListener('beforetoggle', event => {
     const open = (event as ToggleEvent).newState === 'open';
     collectionTriggers.forEach(button => button.setAttribute('aria-expanded', String(open)));
@@ -80,18 +94,35 @@ import { gradients } from '../data/gradients';
   .desktop-nav :global(.btn), #mobile-nav :global(.btn) { --button-icon-gap: var(--space-3); }
   .header-actions { gap: var(--space-2); }
   #menu-toggle, #mobile-nav { display: none; }
+  :global(#menu-toggle .menu-close-icon), :global(#menu-toggle[aria-expanded=true] .menu-open-icon) { display: none; }
+  :global(#menu-toggle[aria-expanded=true] .menu-close-icon) { display: block; }
   .header-collections-dropdown { position: fixed; inset: auto 0; top: calc(var(--header-top) + var(--header-height) + var(--space-4)); margin: 0 auto; width: calc(min(100%, var(--page-max-width)) - var(--page-padding) * 2); max-width: none; height: 80svh; max-height: calc(100svh - var(--header-top) - var(--header-height) - var(--space-12)); padding: var(--space-4); border: 0; border-radius: var(--dropdown-outer-radius); background: var(--surface-raised); color: var(--text-primary); overflow: hidden; box-shadow: 0 20px 60px #00000060; }
   .header-collections-inner::-webkit-scrollbar { display: none; }
   [data-open-collections][aria-expanded=true] { --btn-bg: var(--button-secondary-on-dark-bg); color: var(--text-primary); }
   :global([data-open-collections]) { gap: var(--space-3); }
   :global([data-open-collections] svg) { width: 16px; height: 16px; transition: transform 0.2s ease; }
   :global([data-open-collections][aria-expanded=true] svg) { transform: rotate(180deg); }
+  :global(#mobile-collections-toggle svg) { width: 16px; height: 16px; transition: transform 0.2s ease; }
+  :global(#mobile-collections-toggle[aria-expanded=true] svg) { transform: rotate(180deg); }
   @media (prefers-reduced-motion: reduce) { :global([data-open-collections] svg) { transition: none; } }
   .header-collections-inner { height: 100%; min-height: 0; padding: var(--space-12); border-radius: var(--dropdown-inner-radius); background: var(--surface-canvas); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none; }
   .header-collections-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   @media (max-width: 799px) { .header-collections-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 479px) { .header-collections-grid { grid-template-columns: 1fr; } }
-  @media (max-width: 799px) { .desktop-nav, .header-cta { display: none; } #menu-toggle { display: inline-flex; } #mobile-nav:not([hidden]) { display: grid; position: absolute; top: calc(100% + var(--space-4)); left: 0; right: 0; gap: var(--space-4); padding: var(--space-6); border: 1px solid var(--border-default); border-radius: var(--radius-6); background: var(--surface-card); } #mobile-nav a { justify-content: flex-start; } }
+  @media (max-width: 799px) {
+    #mobile-nav { --dropdown-outer-radius: 36px; --dropdown-inner-radius: var(--radius-14); }
+    .floating-header { width: calc(100% - var(--page-padding-mobile) * 2); justify-content: space-between; }
+    .desktop-nav, .header-cta { display: none; }
+    #menu-toggle { display: inline-flex; }
+    #mobile-nav:not([hidden]) { display: block; position: absolute; top: calc(100% + var(--space-4)); left: 0; width: 100%; max-height: calc(100svh - var(--header-top) - var(--header-height) - var(--space-12)); padding: var(--space-4); border: 0; border-radius: var(--dropdown-outer-radius); background: var(--surface-raised); overflow: hidden; box-shadow: 0 20px 60px #00000060; }
+    .mobile-nav-inner { display: grid; align-content: start; gap: var(--space-4); height: auto; max-height: calc(100svh - var(--header-top) - var(--header-height) - var(--space-20)); text-align: left; }
+    #mobile-nav :global(.btn) { justify-content: flex-start; width: 100%; }
+    .mobile-nav-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+    #mobile-nav .mobile-nav-actions :global(.btn) { min-width: 0; height: auto; padding: var(--space-3) var(--space-4); justify-content: center; text-align: center; white-space: normal; }
+    .mobile-nav-actions span { min-width: 0; }
+    .mobile-collections-grid { padding-block: var(--space-4); }
+    .mobile-collections-grid :global(.collection-card-footer) { text-align: left; }
+  }
 </style>
 
 

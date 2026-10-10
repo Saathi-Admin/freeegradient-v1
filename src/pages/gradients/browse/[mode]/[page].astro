@@ -1,0 +1,12 @@
+---
+import GradientListing from '../../../../components/GradientListing.astro';
+import { gradientResults, gradientPageSize, type BrowseMode } from '../../../../data/gradient-pages';
+export function getStaticPaths() {
+  return (['all','light','dark'] as BrowseMode[]).flatMap(mode =>
+    Array.from({length: Math.ceil(gradientResults(mode).length / gradientPageSize)}, (_, index) => ({
+      params: {mode, page: String(index + 1)}, props: {mode, page: index + 1},
+    }))).filter(route => route.params.mode !== 'all' || route.params.page !== '1');
+}
+const { mode, page } = Astro.props;
+---
+<GradientListing mode={mode} page={page} />

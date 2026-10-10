@@ -1,0 +1,12 @@
+/* FreeeGradients: Drift only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-drift-01: url("../assets/drift-01.d3367b44be0a7ed6.webp");
+  --fg-drift-02: url("../assets/drift-02.63bb52c5403a57ed.webp");
+  --fg-drift-03: url("../assets/drift-03.22a44e2deda59640.webp");
+  --fg-drift-04: url("../assets/drift-04.2b61f8cc9f8edb86.webp");
+}
+.fg-drift-01 { background-image: var(--fg-drift-01); }
+.fg-drift-02 { background-image: var(--fg-drift-02); }
+.fg-drift-03 { background-image: var(--fg-drift-03); }
+.fg-drift-04 { background-image: var(--fg-drift-04); }

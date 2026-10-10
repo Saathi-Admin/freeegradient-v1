@@ -1,0 +1,20 @@
+/* FreeeGradients: Iridescence only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-iridescence-01: radial-gradient(ellipse 34% 42% at 50% 50%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(225deg, #07152600 0%, #a1f4da8c 28%, #f4abdf8c 60%, #07152600 100%), linear-gradient(135deg, #071526 0%, #386ba8 23%, #d7efff 47%, #386ba8 72%, #071526 100%), linear-gradient(#071526, #071526);
+  --fg-iridescence-02: radial-gradient(ellipse 34% 42% at 50% 50%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(225deg, #0b191500 0%, #a1f4da8c 28%, #f4abdf8c 60%, #0b191500 100%), linear-gradient(135deg, #0b1915 0%, #547e66 23%, #aeb8a0 47%, #547e66 72%, #0b1915 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-iridescence-03: radial-gradient(ellipse 34% 42% at 50% 50%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(225deg, #1c101b00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #1c101b00 100%), linear-gradient(135deg, #1c101b 0%, #813c69 23%, #e8a5c5 47%, #813c69 72%, #1c101b 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-iridescence-04: radial-gradient(ellipse 34% 42% at 50% 50%, #ffffff4d 0%, #ffffff00 100%), linear-gradient(225deg, #25120e00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #25120e00 100%), linear-gradient(135deg, #25120e 0%, #ff5c34 23%, #f4c47c 47%, #ff5c34 72%, #25120e 100%), linear-gradient(#25120e, #25120e);
+  --fg-iridescence-05: radial-gradient(ellipse 34% 42% at 50% 50%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(225deg, #f6fbff00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #f6fbff00 100%), linear-gradient(135deg, #f6fbff 0%, #d7efff 23%, #82b5de 47%, #d7efff 72%, #f6fbff 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-iridescence-06: radial-gradient(ellipse 34% 42% at 50% 50%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(225deg, #fafbf400 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fafbf400 100%), linear-gradient(135deg, #fafbf4 0%, #d9e4c7 23%, #aeb8a0 47%, #d9e4c7 72%, #fafbf4 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-iridescence-07: radial-gradient(ellipse 34% 42% at 50% 50%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(225deg, #fff6f700 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fff6f700 100%), linear-gradient(135deg, #fff6f7 0%, #f3cadb 23%, #bb9cdd 47%, #f3cadb 72%, #fff6f7 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-iridescence-08: radial-gradient(ellipse 34% 42% at 50% 50%, #ffffffa6 0%, #ffffff00 100%), linear-gradient(225deg, #fffbea00 0%, #a1f4da8c 28%, #f4abdf8c 60%, #fffbea00 100%), linear-gradient(135deg, #fffbea 0%, #e9f056 23%, #ffae87 47%, #e9f056 72%, #fffbea 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-iridescence-01 { background-color: #071526; background-image: var(--fg-iridescence-01); }
+.fg-iridescence-02 { background-color: #0b1915; background-image: var(--fg-iridescence-02); }
+.fg-iridescence-03 { background-color: #1c101b; background-image: var(--fg-iridescence-03); }
+.fg-iridescence-04 { background-color: #25120e; background-image: var(--fg-iridescence-04); }
+.fg-iridescence-05 { background-color: #f6fbff; background-image: var(--fg-iridescence-05); }
+.fg-iridescence-06 { background-color: #fafbf4; background-image: var(--fg-iridescence-06); }
+.fg-iridescence-07 { background-color: #fff6f7; background-image: var(--fg-iridescence-07); }
+.fg-iridescence-08 { background-color: #fffbea; background-image: var(--fg-iridescence-08); }

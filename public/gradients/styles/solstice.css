@@ -1,0 +1,20 @@
+/* FreeeGradients: Solstice only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-solstice-01: radial-gradient(ellipse 27.200000000000003% 21% at 50% 50%, #071526b3 0%, #07152600 100%), radial-gradient(ellipse 34% 42% at 50% 50%, #d7efffa6 0%, #d7efff00 100%), linear-gradient(135deg, #071526 0%, #386ba8 54%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-solstice-02: radial-gradient(ellipse 27.200000000000003% 21% at 50% 50%, #0b1915b3 0%, #0b191500 100%), radial-gradient(ellipse 34% 42% at 50% 50%, #aeb8a0a6 0%, #aeb8a000 100%), linear-gradient(135deg, #0b1915 0%, #547e66 54%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-solstice-03: radial-gradient(ellipse 27.200000000000003% 21% at 50% 50%, #1c101bb3 0%, #1c101b00 100%), radial-gradient(ellipse 34% 42% at 50% 50%, #e8a5c5a6 0%, #e8a5c500 100%), linear-gradient(135deg, #1c101b 0%, #813c69 54%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-solstice-04: radial-gradient(ellipse 27.200000000000003% 21% at 50% 50%, #25120eb3 0%, #25120e00 100%), radial-gradient(ellipse 34% 42% at 50% 50%, #f4c47ca6 0%, #f4c47c00 100%), linear-gradient(135deg, #25120e 0%, #ff5c34 54%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-solstice-05: radial-gradient(ellipse 27.200000000000003% 21% at 50% 50%, #f6fbffb3 0%, #f6fbff00 100%), radial-gradient(ellipse 34% 42% at 50% 50%, #82b5dea6 0%, #82b5de00 100%), linear-gradient(135deg, #f6fbff 0%, #d7efff 54%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-solstice-06: radial-gradient(ellipse 27.200000000000003% 21% at 50% 50%, #fafbf4b3 0%, #fafbf400 100%), radial-gradient(ellipse 34% 42% at 50% 50%, #aeb8a0a6 0%, #aeb8a000 100%), linear-gradient(135deg, #fafbf4 0%, #d9e4c7 54%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-solstice-07: radial-gradient(ellipse 27.200000000000003% 21% at 50% 50%, #fff6f7b3 0%, #fff6f700 100%), radial-gradient(ellipse 34% 42% at 50% 50%, #bb9cdda6 0%, #bb9cdd00 100%), linear-gradient(135deg, #fff6f7 0%, #f3cadb 54%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-solstice-08: radial-gradient(ellipse 27.200000000000003% 21% at 50% 50%, #fffbeab3 0%, #fffbea00 100%), radial-gradient(ellipse 34% 42% at 50% 50%, #ffae87a6 0%, #ffae8700 100%), linear-gradient(135deg, #fffbea 0%, #e9f056 54%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-solstice-01 { background-color: #071526; background-image: var(--fg-solstice-01); }
+.fg-solstice-02 { background-color: #0b1915; background-image: var(--fg-solstice-02); }
+.fg-solstice-03 { background-color: #1c101b; background-image: var(--fg-solstice-03); }
+.fg-solstice-04 { background-color: #25120e; background-image: var(--fg-solstice-04); }
+.fg-solstice-05 { background-color: #f6fbff; background-image: var(--fg-solstice-05); }
+.fg-solstice-06 { background-color: #fafbf4; background-image: var(--fg-solstice-06); }
+.fg-solstice-07 { background-color: #fff6f7; background-image: var(--fg-solstice-07); }
+.fg-solstice-08 { background-color: #fffbea; background-image: var(--fg-solstice-08); }

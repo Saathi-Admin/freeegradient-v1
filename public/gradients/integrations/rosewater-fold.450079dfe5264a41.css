@@ -1,0 +1,20 @@
+/* FreeeGradients: Rosewater fold only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-rosewater-fold-01: radial-gradient(ellipse 53% 47% at 5% 90%,#fff4dbf0 0%,#fff4dba8 32%,#fff4db33 70%,#fff4db00 100%),radial-gradient(ellipse 62% 39% at 72% 76%,#b298d2f0 0%,#b298d2a8 32%,#b298d233 70%,#b298d200 100%),radial-gradient(ellipse 37% 98% at 22% 0%,#ea7d9ff0 0%,#ea7d9fa8 32%,#ea7d9f33 70%,#ea7d9f00 100%),linear-gradient(#f7e4e9,#f7e4e9);
+  --fg-rosewater-fold-02: radial-gradient(ellipse 53% 47% at 5% 90%,#708ad8f0 0%,#708ad8a8 32%,#708ad833 70%,#708ad800 100%),radial-gradient(ellipse 62% 39% at 72% 76%,#dc8fc0f0 0%,#dc8fc0a8 32%,#dc8fc033 70%,#dc8fc000 100%),radial-gradient(ellipse 37% 98% at 22% 0%,#9263daf0 0%,#9263daa8 32%,#9263da33 70%,#9263da00 100%),linear-gradient(#18112d,#18112d);
+  --fg-rosewater-fold-03: radial-gradient(ellipse 53% 47% at 5% 90%,#597baef0 0%,#597baea8 32%,#597bae33 70%,#597bae00 100%),radial-gradient(ellipse 62% 39% at 72% 76%,#a9cabcf0 0%,#a9cabca8 32%,#a9cabc33 70%,#a9cabc00 100%),radial-gradient(ellipse 37% 98% at 22% 0%,#409c9df0 0%,#409c9da8 32%,#409c9d33 70%,#409c9d00 100%),linear-gradient(#092b32,#092b32);
+  --fg-rosewater-fold-04: radial-gradient(ellipse 53% 47% at 5% 90%,#eac792f0 0%,#eac792a8 32%,#eac79233 70%,#eac79200 100%),radial-gradient(ellipse 62% 39% at 72% 76%,#b36194f0 0%,#b36194a8 32%,#b3619433 70%,#b3619400 100%),radial-gradient(ellipse 37% 98% at 22% 0%,#e68e71f0 0%,#e68e71a8 32%,#e68e7133 70%,#e68e7100 100%),linear-gradient(#32202d,#32202d);
+  --fg-rosewater-fold-05: radial-gradient(ellipse 53% 47% at 5% 90%,#e9a7c8f0 0%,#e9a7c8a8 32%,#e9a7c833 70%,#e9a7c800 100%),radial-gradient(ellipse 62% 39% at 72% 76%,#c2dce7f0 0%,#c2dce7a8 32%,#c2dce733 70%,#c2dce700 100%),radial-gradient(ellipse 37% 98% at 22% 0%,#a397dff0 0%,#a397dfa8 32%,#a397df33 70%,#a397df00 100%),linear-gradient(#f8f4fd,#f8f4fd);
+  --fg-rosewater-fold-06: radial-gradient(ellipse 53% 47% at 5% 90%,#d6c2ebf0 0%,#d6c2eba8 32%,#d6c2eb33 70%,#d6c2eb00 100%),radial-gradient(ellipse 62% 39% at 72% 76%,#ebc3d2f0 0%,#ebc3d2a8 32%,#ebc3d233 70%,#ebc3d200 100%),radial-gradient(ellipse 37% 98% at 22% 0%,#edab85f0 0%,#edab85a8 32%,#edab8533 70%,#edab8500 100%),linear-gradient(#fff5e9,#fff5e9);
+  --fg-rosewater-fold-07: radial-gradient(ellipse 53% 47% at 5% 90%,#9cc8c3f0 0%,#9cc8c3a8 32%,#9cc8c333 70%,#9cc8c300 100%),radial-gradient(ellipse 62% 39% at 72% 76%,#d6dfabf0 0%,#d6dfaba8 32%,#d6dfab33 70%,#d6dfab00 100%),radial-gradient(ellipse 37% 98% at 22% 0%,#a5c396f0 0%,#a5c396a8 32%,#a5c39633 70%,#a5c39600 100%),linear-gradient(#f5f7e6,#f5f7e6);
+  --fg-rosewater-fold-08: radial-gradient(ellipse 53% 47% at 5% 90%,#f0dabbf0 0%,#f0dabba8 32%,#f0dabb33 70%,#f0dabb00 100%),radial-gradient(ellipse 62% 39% at 72% 76%,#b5a4daf0 0%,#b5a4daa8 32%,#b5a4da33 70%,#b5a4da00 100%),radial-gradient(ellipse 37% 98% at 22% 0%,#e991b6f0 0%,#e991b6a8 32%,#e991b633 70%,#e991b600 100%),linear-gradient(#fdf0f4,#fdf0f4);
+}
+.fg-rosewater-fold-01 { background-color: #f7e4e9; background-image: var(--fg-rosewater-fold-01); }
+.fg-rosewater-fold-02 { background-color: #18112d; background-image: var(--fg-rosewater-fold-02); }
+.fg-rosewater-fold-03 { background-color: #092b32; background-image: var(--fg-rosewater-fold-03); }
+.fg-rosewater-fold-04 { background-color: #32202d; background-image: var(--fg-rosewater-fold-04); }
+.fg-rosewater-fold-05 { background-color: #f8f4fd; background-image: var(--fg-rosewater-fold-05); }
+.fg-rosewater-fold-06 { background-color: #fff5e9; background-image: var(--fg-rosewater-fold-06); }
+.fg-rosewater-fold-07 { background-color: #f5f7e6; background-image: var(--fg-rosewater-fold-07); }
+.fg-rosewater-fold-08 { background-color: #fdf0f4; background-image: var(--fg-rosewater-fold-08); }

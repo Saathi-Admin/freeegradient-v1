@@ -1,0 +1,20 @@
+/* FreeeGradients: Pollen light only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-pollen-light-01: url("../assets/pollen-light-01.66917779cc67bb77.webp");
+  --fg-pollen-light-02: url("../assets/pollen-light-02.7e576af4dc2f8859.webp");
+  --fg-pollen-light-03: url("../assets/pollen-light-03.68706ddb18c77ed4.webp");
+  --fg-pollen-light-04: url("../assets/pollen-light-04.7f4c22fadcd755aa.webp");
+  --fg-pollen-light-05: url("../assets/pollen-light-05.cdbc7ac215d80ec0.webp");
+  --fg-pollen-light-06: url("../assets/pollen-light-06.35b6335c146eec74.webp");
+  --fg-pollen-light-07: url("../assets/pollen-light-07.9bca7fdd59d12f0d.webp");
+  --fg-pollen-light-08: url("../assets/pollen-light-08.39063ff4971ef633.webp");
+}
+.fg-pollen-light-01 { background-color: #f2f5d5; background-image: var(--fg-pollen-light-01); }
+.fg-pollen-light-02 { background-color: #18112d; background-image: var(--fg-pollen-light-02); }
+.fg-pollen-light-03 { background-color: #092b32; background-image: var(--fg-pollen-light-03); }
+.fg-pollen-light-04 { background-color: #32202d; background-image: var(--fg-pollen-light-04); }
+.fg-pollen-light-05 { background-color: #f8f4fd; background-image: var(--fg-pollen-light-05); }
+.fg-pollen-light-06 { background-color: #fff5e9; background-image: var(--fg-pollen-light-06); }
+.fg-pollen-light-07 { background-color: #f5f7e6; background-image: var(--fg-pollen-light-07); }
+.fg-pollen-light-08 { background-color: #fdf0f4; background-image: var(--fg-pollen-light-08); }

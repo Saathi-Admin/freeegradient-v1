@@ -1,0 +1,20 @@
+/* FreeeGradients: Interstellar only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-interstellar-01: radial-gradient(ellipse 48% 35% at 50% 50%, #071526e6 0%, #07152600 100%), radial-gradient(ellipse 42% 48% at 70% 38%, #d7efffcc 0%, #d7efff00 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #386ba8e6 0%, #386ba800 100%), linear-gradient(#071526, #071526);
+  --fg-interstellar-02: radial-gradient(ellipse 48% 35% at 50% 50%, #0b1915e6 0%, #0b191500 100%), radial-gradient(ellipse 42% 48% at 70% 38%, #aeb8a0cc 0%, #aeb8a000 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #547e66e6 0%, #547e6600 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-interstellar-03: radial-gradient(ellipse 48% 35% at 50% 50%, #1c101be6 0%, #1c101b00 100%), radial-gradient(ellipse 42% 48% at 70% 38%, #e8a5c5cc 0%, #e8a5c500 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #813c69e6 0%, #813c6900 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-interstellar-04: radial-gradient(ellipse 48% 35% at 50% 50%, #25120ee6 0%, #25120e00 100%), radial-gradient(ellipse 42% 48% at 70% 38%, #f4c47ccc 0%, #f4c47c00 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #ff5c34e6 0%, #ff5c3400 100%), linear-gradient(#25120e, #25120e);
+  --fg-interstellar-05: radial-gradient(ellipse 48% 35% at 50% 50%, #f6fbffe6 0%, #f6fbff00 100%), radial-gradient(ellipse 42% 48% at 70% 38%, #82b5decc 0%, #82b5de00 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #d7efffe6 0%, #d7efff00 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-interstellar-06: radial-gradient(ellipse 48% 35% at 50% 50%, #fafbf4e6 0%, #fafbf400 100%), radial-gradient(ellipse 42% 48% at 70% 38%, #aeb8a0cc 0%, #aeb8a000 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #d9e4c7e6 0%, #d9e4c700 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-interstellar-07: radial-gradient(ellipse 48% 35% at 50% 50%, #fff6f7e6 0%, #fff6f700 100%), radial-gradient(ellipse 42% 48% at 70% 38%, #bb9cddcc 0%, #bb9cdd00 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #f3cadbe6 0%, #f3cadb00 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-interstellar-08: radial-gradient(ellipse 48% 35% at 50% 50%, #fffbeae6 0%, #fffbea00 100%), radial-gradient(ellipse 42% 48% at 70% 38%, #ffae87cc 0%, #ffae8700 100%), radial-gradient(ellipse 60% 64% at 30% 62%, #e9f056e6 0%, #e9f05600 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-interstellar-01 { background-image: var(--fg-interstellar-01); }
+.fg-interstellar-02 { background-image: var(--fg-interstellar-02); }
+.fg-interstellar-03 { background-image: var(--fg-interstellar-03); }
+.fg-interstellar-04 { background-image: var(--fg-interstellar-04); }
+.fg-interstellar-05 { background-image: var(--fg-interstellar-05); }
+.fg-interstellar-06 { background-image: var(--fg-interstellar-06); }
+.fg-interstellar-07 { background-image: var(--fg-interstellar-07); }
+.fg-interstellar-08 { background-image: var(--fg-interstellar-08); }

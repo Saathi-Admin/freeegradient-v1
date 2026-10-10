@@ -1,0 +1,20 @@
+/* FreeeGradients: Rosewater fold only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-rosewater-fold-01: url("../assets/rosewater-fold-01.f53b89e4634d1905.webp");
+  --fg-rosewater-fold-02: url("../assets/rosewater-fold-02.9f10fcc05d5abbdf.webp");
+  --fg-rosewater-fold-03: url("../assets/rosewater-fold-03.1c12143ef6d54725.webp");
+  --fg-rosewater-fold-04: url("../assets/rosewater-fold-04.a8a66775daed6d82.webp");
+  --fg-rosewater-fold-05: url("../assets/rosewater-fold-05.9c244a8bd17f870b.webp");
+  --fg-rosewater-fold-06: url("../assets/rosewater-fold-06.17b3d64529735150.webp");
+  --fg-rosewater-fold-07: url("../assets/rosewater-fold-07.58b8e094855b1cd4.webp");
+  --fg-rosewater-fold-08: url("../assets/rosewater-fold-08.c43e8955a6e0e3e6.webp");
+}
+.fg-rosewater-fold-01 { background-color: #f7e4e9; background-image: var(--fg-rosewater-fold-01); }
+.fg-rosewater-fold-02 { background-color: #18112d; background-image: var(--fg-rosewater-fold-02); }
+.fg-rosewater-fold-03 { background-color: #092b32; background-image: var(--fg-rosewater-fold-03); }
+.fg-rosewater-fold-04 { background-color: #32202d; background-image: var(--fg-rosewater-fold-04); }
+.fg-rosewater-fold-05 { background-color: #f8f4fd; background-image: var(--fg-rosewater-fold-05); }
+.fg-rosewater-fold-06 { background-color: #fff5e9; background-image: var(--fg-rosewater-fold-06); }
+.fg-rosewater-fold-07 { background-color: #f5f7e6; background-image: var(--fg-rosewater-fold-07); }
+.fg-rosewater-fold-08 { background-color: #fdf0f4; background-image: var(--fg-rosewater-fold-08); }

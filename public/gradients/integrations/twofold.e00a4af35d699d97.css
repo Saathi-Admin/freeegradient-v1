@@ -1,0 +1,20 @@
+/* FreeeGradients: Twofold only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-twofold-01: radial-gradient(ellipse 76% 58% at 18% 82%, #071526a6 0%, #07152600 100%), linear-gradient(0deg, #386ba8 0%, #386ba8 12%, #d7efff 88%, #d7efff 100%), linear-gradient(#071526, #071526);
+  --fg-twofold-02: radial-gradient(ellipse 76% 58% at 18% 82%, #0b1915a6 0%, #0b191500 100%), linear-gradient(0deg, #547e66 0%, #547e66 12%, #aeb8a0 88%, #aeb8a0 100%), linear-gradient(#0b1915, #0b1915);
+  --fg-twofold-03: radial-gradient(ellipse 76% 58% at 18% 82%, #1c101ba6 0%, #1c101b00 100%), linear-gradient(0deg, #813c69 0%, #813c69 12%, #e8a5c5 88%, #e8a5c5 100%), linear-gradient(#1c101b, #1c101b);
+  --fg-twofold-04: radial-gradient(ellipse 76% 58% at 18% 82%, #25120ea6 0%, #25120e00 100%), linear-gradient(0deg, #ff5c34 0%, #ff5c34 12%, #f4c47c 88%, #f4c47c 100%), linear-gradient(#25120e, #25120e);
+  --fg-twofold-05: radial-gradient(ellipse 76% 58% at 18% 82%, #f6fbffa6 0%, #f6fbff00 100%), linear-gradient(0deg, #d7efff 0%, #d7efff 12%, #82b5de 88%, #82b5de 100%), linear-gradient(#f6fbff, #f6fbff);
+  --fg-twofold-06: radial-gradient(ellipse 76% 58% at 18% 82%, #fafbf4a6 0%, #fafbf400 100%), linear-gradient(0deg, #d9e4c7 0%, #d9e4c7 12%, #aeb8a0 88%, #aeb8a0 100%), linear-gradient(#fafbf4, #fafbf4);
+  --fg-twofold-07: radial-gradient(ellipse 76% 58% at 18% 82%, #fff6f7a6 0%, #fff6f700 100%), linear-gradient(0deg, #f3cadb 0%, #f3cadb 12%, #bb9cdd 88%, #bb9cdd 100%), linear-gradient(#fff6f7, #fff6f7);
+  --fg-twofold-08: radial-gradient(ellipse 76% 58% at 18% 82%, #fffbeaa6 0%, #fffbea00 100%), linear-gradient(0deg, #e9f056 0%, #e9f056 12%, #ffae87 88%, #ffae87 100%), linear-gradient(#fffbea, #fffbea);
+}
+.fg-twofold-01 { background-image: var(--fg-twofold-01); }
+.fg-twofold-02 { background-image: var(--fg-twofold-02); }
+.fg-twofold-03 { background-image: var(--fg-twofold-03); }
+.fg-twofold-04 { background-image: var(--fg-twofold-04); }
+.fg-twofold-05 { background-image: var(--fg-twofold-05); }
+.fg-twofold-06 { background-image: var(--fg-twofold-06); }
+.fg-twofold-07 { background-image: var(--fg-twofold-07); }
+.fg-twofold-08 { background-image: var(--fg-twofold-08); }

@@ -1,0 +1,20 @@
+/* FreeeGradients: Folded coda only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-folded-coda-01: url("../assets/folded-coda-01.935fb7f47ee5a0f1.webp");
+  --fg-folded-coda-02: url("../assets/folded-coda-02.9331e6384b986e5f.webp");
+  --fg-folded-coda-03: url("../assets/folded-coda-03.ef2543b8037df4e2.webp");
+  --fg-folded-coda-04: url("../assets/folded-coda-04.1d996e333e432b17.webp");
+  --fg-folded-coda-05: url("../assets/folded-coda-05.569ccef648e2b9d5.webp");
+  --fg-folded-coda-06: url("../assets/folded-coda-06.5b709efc315c4496.webp");
+  --fg-folded-coda-07: url("../assets/folded-coda-07.16477b8496fd6792.webp");
+  --fg-folded-coda-08: url("../assets/folded-coda-08.d6ea41c08b874796.webp");
+}
+.fg-folded-coda-01 { background-color: #180c13; background-image: var(--fg-folded-coda-01); }
+.fg-folded-coda-02 { background-color: #f8fafc; background-image: var(--fg-folded-coda-02); }
+.fg-folded-coda-03 { background-color: #fcf9f3; background-image: var(--fg-folded-coda-03); }
+.fg-folded-coda-04 { background-color: #f5f8f3; background-image: var(--fg-folded-coda-04); }
+.fg-folded-coda-05 { background-color: #fcf6fa; background-image: var(--fg-folded-coda-05); }
+.fg-folded-coda-06 { background-color: #090b10; background-image: var(--fg-folded-coda-06); }
+.fg-folded-coda-07 { background-color: #13100e; background-image: var(--fg-folded-coda-07); }
+.fg-folded-coda-08 { background-color: #070d1c; background-image: var(--fg-folded-coda-08); }

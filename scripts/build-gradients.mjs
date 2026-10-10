@@ -1,11 +1,27 @@
-import { mkdir, writeFile, readFile } from 'node:fs/promises';
-import { deflateRawSync } from 'node:zlib';
+import { mkdir, writeFile, rm, access, rename } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import sharp from 'sharp';
 import { palettes, recipes } from '../src/data/recipes.mjs';
+import { referenceComposition } from '../src/data/reference-recipes.mjs';
+import { expandedComposition } from '../src/data/expanded-recipes.mjs';
 const assetDir = new URL('../public/gradients/', import.meta.url);
 await mkdir(assetDir, { recursive: true });
-const catalogue = [], variables = [], classes = [];
+const stylesDir = new URL('styles/', assetDir);
+await mkdir(stylesDir, { recursive: true });
+const versionedStylesDir = new URL('integrations/',assetDir);
+await mkdir(versionedStylesDir,{recursive:true});
+const immutableDir = new URL('assets/', assetDir), thumbnailsDir = new URL('thumbnails/', assetDir), catalogueDir = new URL('catalogue/', assetDir);
+await Promise.all([immutableDir, thumbnailsDir, catalogueDir].map(dir=>mkdir(dir,{recursive:true})));
+await mkdir(new URL('templates/',catalogueDir),{recursive:true});
+await mkdir(new URL('pages/',catalogueDir),{recursive:true});
+const hash = value => createHash('sha256').update(value).digest('hex').slice(0,16);
+const exists = async file => { try { await access(file); return true; } catch { return false; } };
+const writeImmutable = async (file, content) => { try { await writeFile(file,content,{flag:'wx'}); } catch(error) { if (error.code !== 'EEXIST') throw error; } };
+const compositions = new Set(), variationIds = new Set();
+const catalogue = [];
 for (const [index, recipe] of recipes.entries()) {
   const variations = [];
+  const templateVariables = [], templateClasses = [];
   for (const palette of recipe.palettes ?? palettes) {
     const [base, one, two] = palette.colors;
     const shift = recipe.position * 13;
@@ -17,7 +33,15 @@ for (const [index, recipe] of recipes.entries()) {
       content += `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="url(#${id})"/>`;
       return `radial-gradient(ellipse ${rx / 16}% ${ry / 9}% at ${x / 16}% ${y / 9}%, ${color}${strength === 1 ? '' : Math.round(strength * 255).toString(16).padStart(2, '0')} 0%, ${color}00 100%)`;
     };
-    if (recipe.shape === 'beam') {
+    if (recipe.study) {
+      const composition=referenceComposition(recipe,palette);
+      background=composition.background;content=composition.content;defs.push(composition.defs);
+    } else if ('composition' in recipe) {
+      const composition = expandedComposition(recipe, palette);
+      background = composition.background;
+      content = composition.content;
+      defs.push(composition.defs);
+    } else if (recipe.shape === 'beam') {
       spot('beam', 1100 - shift * 12, 1250, 950, 1150, one);
       spot('bloom', 1050 - shift * 18, 1080, 1050, 500, two, .9);
     } else if (recipe.shape === 'horizon') {
@@ -49,37 +73,52 @@ for (const [index, recipe] of recipes.entries()) {
     }
     const id = `${recipe.slug}-${palette.id}`;
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs>${defs.join('')}</defs>${content}</svg>`;
+    if (variationIds.has(id)) throw new Error(`Duplicate variation ID: ${id}`);
+    variationIds.add(id);
+    if (!variations.length) { const signature=hash(svg); if(compositions.has(signature)) throw new Error(`Duplicate composition: ${recipe.slug}`); compositions.add(signature); }
     await writeFile(new URL(`${id}.svg`, assetDir), svg);
-    variables.push(`  --fg-${id}: ${background ?? `url("./${id}.svg")`};`);
-    classes.push(`.fg-${id} { background-image: var(--fg-${id}); }`);
-    variations.push({ ...palette, id, src: `/gradients/${id}.svg`, css: background ?? `url("/gradients/${id}.svg")`, cssKind: background ? 'native' : 'asset' });
+    const svgName = `${id}.${hash(svg)}.svg`;
+    await writeImmutable(new URL(svgName,immutableDir),svg);
+    const thumbName = `${id}.${hash(svg+'thumbnail-v1')}.webp`;
+    if (!(await exists(new URL(thumbName,thumbnailsDir)))) await writeImmutable(new URL(thumbName,thumbnailsDir),await sharp(Buffer.from(svg),{density:24}).resize(384,216).webp({quality:72}).toBuffer());
+    let backgroundSrc;
+    if (!background) {
+      const imageName = `${id}.${hash(svg+'background-v2')}.webp`;
+      if (!(await exists(new URL(imageName,immutableDir)))) await writeImmutable(new URL(imageName,immutableDir),await sharp(Buffer.from(svg)).webp({quality:90}).toBuffer());
+      backgroundSrc = `/gradients/assets/${imageName}`;
+    }
+    templateVariables.push(`  --fg-${id}: ${background ?? `url("..${backgroundSrc.slice('/gradients'.length)}")`};`);
+    templateClasses.push(`.fg-${id} { background-color: ${base}; background-image: var(--fg-${id}); }`);
+    variations.push({ ...palette, id, src: `/gradients/assets/${svgName}`, thumbnail: `/gradients/thumbnails/${thumbName}`, backgroundSrc, css: background ?? `url("${backgroundSrc}")`, cssKind: background ? 'native' : 'asset' });
   }
   const { palettes: recipePalettes, ...metadata } = recipe;
-  catalogue.push({ ...metadata, id: `FG-${String(index + 1).padStart(3, '0')}`, variations });
+  const stylesheet = `/* FreeeGradients: ${recipe.name} only. */\n.fg-gradient { background-size: cover; background-position: center; }\n:root {\n${templateVariables.join('\n')}\n}\n${templateClasses.join('\n')}\n`;
+  if(Buffer.byteLength(stylesheet)>8192) throw new Error(`Template CSS exceeds 8 KiB: ${recipe.slug}`);
+  if (!variations.some(v=>v.mode==='light') || !variations.some(v=>v.mode==='dark')) throw new Error(`Missing light/dark variation: ${recipe.slug}`);
+  const stylesheetName = `${recipe.slug}.${hash(stylesheet)}.css`;
+  catalogue.push({ ...metadata, id: `FG-${String(index + 1).padStart(3, '0')}`, stylesheet: `/gradients/integrations/${stylesheetName}`, variations });
+  await writeImmutable(new URL(stylesheetName,versionedStylesDir),stylesheet);
+  // Preserve existing unversioned URLs; new integrations use immutable URLs.
+  await writeFile(new URL(`${recipe.slug}.css`, stylesDir),stylesheet.replaceAll('../../assets/','../assets/'));
 }
-await writeFile(new URL('../src/data/generated-gradients.json', import.meta.url), JSON.stringify(catalogue, null, 2) + '\n');
-await writeFile(new URL('freeegradients.css', assetDir), `/* FreeeGradients: stable IDs; keep SVG assets alongside this file for textured templates. */\n:root {\n${variables.join('\n')}\n}\n.fg-gradient { background-size: cover; background-position: center; }\n${classes.join('\n')}\n`);
+const summaries = catalogue.map((g,index)=>({slug:g.slug,name:g.name,category:g.category,count:g.variations.length,thumbnail:g.variations[index%g.variations.length].thumbnail,tags:[...new Set([...g.tags,...g.variations.flatMap(v=>v.tags)])],previews:g.variations.filter((v,i,all)=>all.findIndex(other=>other.mode===v.mode)===i).map(v=>({id:v.id,mode:v.mode,thumbnail:v.thumbnail}))}));
+await writeFile(new URL('search.json',catalogueDir),JSON.stringify(summaries));
+for(const colour of ['blue','green','pink','purple','orange','yellow','mint','jade','rose','peach','lavender']) {
+  const colourSummaries=summaries.map((summary,index)=>({...summary,previews:catalogue[index].variations.filter(v=>v.tags.includes(colour)).filter((v,i,all)=>all.findIndex(other=>other.mode===v.mode)===i).map(v=>({id:v.id,mode:v.mode,thumbnail:v.thumbnail}))})).filter(summary=>summary.previews.length);
+  await writeFile(new URL(`search-${colour}.json`,catalogueDir),JSON.stringify(colourSummaries));
+}
+for (const template of catalogue) await writeFile(new URL(`templates/${template.slug}.json`,catalogueDir),JSON.stringify(template));
+for(const category of ['all',...new Set(catalogue.map(g=>g.category))]) {
+  const items=summaries.filter(g=>category==='all'||g.category===category),totalPages=Math.ceil(items.length/24);
+  for(let page=1;page<=totalPages;page++) await writeFile(new URL(`pages/${category}-${page}.json`,catalogueDir),JSON.stringify({items:items.slice((page-1)*24,page*24),page,totalPages,total:items.length}));
+}
+const catalogueFile=new URL('../src/data/generated-gradients.json',import.meta.url);
+const stagedCatalogue=new URL('../src/data/generated-gradients.pending.json',import.meta.url);
+await writeFile(stagedCatalogue,JSON.stringify(catalogue,null,2)+'\n');
+for(let attempt=0;;attempt++){try{await rename(stagedCatalogue,catalogueFile);break;}catch(error){if(attempt===5)throw error;await new Promise(resolve=>setTimeout(resolve,250));}}
+// A website integrates only its selected template, never the whole catalogue.
+await rm(new URL('freeegradients.css', assetDir), { force: true });
 console.log(`Prepared ${catalogue.length} templates, ${catalogue.reduce((sum, template) => sum + template.variations.length, 0)} variations and reusable CSS.`);
 
-// Portable ZIP with no runtime API or third-party archive service.
-const entries = [
-  ['gradients/freeegradients.css', await readFile(new URL('freeegradients.css', assetDir))],
-  ['README.txt', Buffer.from('FreeeGradients\n\nFree for personal and commercial use. Attribution appreciated, not required.\n\nKeep the gradients folder intact. Link gradients/freeegradients.css from your HTML.\nUse class="fg-gradient fg-aurora-01". Change the stable variation ID to change the background.\nGrain and wave templates load their adjacent SVG assets; all other templates use native CSS.\nPNG/JPEG exports are available from the website.\n')],
-];
-for (const template of catalogue) for (const v of template.variations) entries.push([`gradients/${v.id}.svg`, await readFile(new URL(`${v.id}.svg`,assetDir))]);
-const crc32 = data => { let crc = 0xffffffff; for (const byte of data) { crc ^= byte; for (let i=0;i<8;i++) crc = (crc >>> 1) ^ ((crc & 1) ? 0xedb88320 : 0); } return (crc ^ 0xffffffff) >>> 0; };
-function zip(entries) {
-const locals = [], central = []; let offset = 0;
-for (const [name, data] of entries) {
-  const filename = Buffer.from(name), compressed = deflateRawSync(data), crc = crc32(data);
-  const local = Buffer.alloc(30); local.writeUInt32LE(0x04034b50); local.writeUInt16LE(20,4); local.writeUInt16LE(8,8); local.writeUInt16LE(0x21,12); local.writeUInt32LE(crc,14); local.writeUInt32LE(compressed.length,18); local.writeUInt32LE(data.length,22); local.writeUInt16LE(filename.length,26);
-  const directory = Buffer.alloc(46); directory.writeUInt32LE(0x02014b50); directory.writeUInt16LE(20,4); directory.writeUInt16LE(20,6); directory.writeUInt16LE(8,10); directory.writeUInt16LE(0x21,14); directory.writeUInt32LE(crc,16); directory.writeUInt32LE(compressed.length,20); directory.writeUInt32LE(data.length,24); directory.writeUInt16LE(filename.length,28); directory.writeUInt32LE(offset,42);
-  locals.push(local,filename,compressed); central.push(directory,filename); offset += local.length+filename.length+compressed.length;
-}
-const centralData = Buffer.concat(central), end = Buffer.alloc(22); end.writeUInt32LE(0x06054b50); end.writeUInt16LE(entries.length,8); end.writeUInt16LE(entries.length,10); end.writeUInt32LE(centralData.length,12); end.writeUInt32LE(offset,16);
-return Buffer.concat([...locals,centralData,end]);
-}
-await writeFile(new URL('freeegradients.zip',assetDir),zip(entries));
-const footerEntries = entries.filter(([name]) => name === 'README.txt' || catalogue.filter(g => g.category === 'footer').some(g => g.variations.some(v => name.endsWith(`/${v.id}.svg`))));
-footerEntries.push(['gradients/freeegradients.css', Buffer.from(`:root {\n${variables.filter(v => /fg-(afterglow|uplift|nightfall)-/.test(v)).join('\n')}\n}\n.fg-gradient {background-size:cover;background-position:center;}\n${classes.filter(v => /fg-(afterglow|uplift|nightfall)-/.test(v)).join('\n')}`)]);
-await writeFile(new URL('footer-glow-pack.zip',assetDir),zip(footerEntries));
+
+await import('./build-social.mjs');

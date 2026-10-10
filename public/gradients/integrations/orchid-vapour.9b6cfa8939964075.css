@@ -1,0 +1,20 @@
+/* FreeeGradients: Orchid vapour only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-orchid-vapour-01: radial-gradient(ellipse 72% 56% at 105% 8%,#f8b7a1f0 0%,#f8b7a1a8 32%,#f8b7a133 70%,#f8b7a100 100%),radial-gradient(ellipse 58% 64% at 0% 95%,#7761def0 0%,#7761dea8 32%,#7761de33 70%,#7761de00 100%),radial-gradient(ellipse 54% 78% at 50% 45%,#cc65baf0 0%,#cc65baa8 32%,#cc65ba33 70%,#cc65ba00 100%),linear-gradient(#30153c,#30153c);
+  --fg-orchid-vapour-02: radial-gradient(ellipse 72% 56% at 105% 8%,#708ad8f0 0%,#708ad8a8 32%,#708ad833 70%,#708ad800 100%),radial-gradient(ellipse 58% 64% at 0% 95%,#dc8fc0f0 0%,#dc8fc0a8 32%,#dc8fc033 70%,#dc8fc000 100%),radial-gradient(ellipse 54% 78% at 50% 45%,#9263daf0 0%,#9263daa8 32%,#9263da33 70%,#9263da00 100%),linear-gradient(#18112d,#18112d);
+  --fg-orchid-vapour-03: radial-gradient(ellipse 72% 56% at 105% 8%,#597baef0 0%,#597baea8 32%,#597bae33 70%,#597bae00 100%),radial-gradient(ellipse 58% 64% at 0% 95%,#a9cabcf0 0%,#a9cabca8 32%,#a9cabc33 70%,#a9cabc00 100%),radial-gradient(ellipse 54% 78% at 50% 45%,#409c9df0 0%,#409c9da8 32%,#409c9d33 70%,#409c9d00 100%),linear-gradient(#092b32,#092b32);
+  --fg-orchid-vapour-04: radial-gradient(ellipse 72% 56% at 105% 8%,#eac792f0 0%,#eac792a8 32%,#eac79233 70%,#eac79200 100%),radial-gradient(ellipse 58% 64% at 0% 95%,#b36194f0 0%,#b36194a8 32%,#b3619433 70%,#b3619400 100%),radial-gradient(ellipse 54% 78% at 50% 45%,#e68e71f0 0%,#e68e71a8 32%,#e68e7133 70%,#e68e7100 100%),linear-gradient(#32202d,#32202d);
+  --fg-orchid-vapour-05: radial-gradient(ellipse 72% 56% at 105% 8%,#e9a7c8f0 0%,#e9a7c8a8 32%,#e9a7c833 70%,#e9a7c800 100%),radial-gradient(ellipse 58% 64% at 0% 95%,#c2dce7f0 0%,#c2dce7a8 32%,#c2dce733 70%,#c2dce700 100%),radial-gradient(ellipse 54% 78% at 50% 45%,#a397dff0 0%,#a397dfa8 32%,#a397df33 70%,#a397df00 100%),linear-gradient(#f8f4fd,#f8f4fd);
+  --fg-orchid-vapour-06: radial-gradient(ellipse 72% 56% at 105% 8%,#d6c2ebf0 0%,#d6c2eba8 32%,#d6c2eb33 70%,#d6c2eb00 100%),radial-gradient(ellipse 58% 64% at 0% 95%,#ebc3d2f0 0%,#ebc3d2a8 32%,#ebc3d233 70%,#ebc3d200 100%),radial-gradient(ellipse 54% 78% at 50% 45%,#edab85f0 0%,#edab85a8 32%,#edab8533 70%,#edab8500 100%),linear-gradient(#fff5e9,#fff5e9);
+  --fg-orchid-vapour-07: radial-gradient(ellipse 72% 56% at 105% 8%,#9cc8c3f0 0%,#9cc8c3a8 32%,#9cc8c333 70%,#9cc8c300 100%),radial-gradient(ellipse 58% 64% at 0% 95%,#d6dfabf0 0%,#d6dfaba8 32%,#d6dfab33 70%,#d6dfab00 100%),radial-gradient(ellipse 54% 78% at 50% 45%,#a5c396f0 0%,#a5c396a8 32%,#a5c39633 70%,#a5c39600 100%),linear-gradient(#f5f7e6,#f5f7e6);
+  --fg-orchid-vapour-08: radial-gradient(ellipse 72% 56% at 105% 8%,#f0dabbf0 0%,#f0dabba8 32%,#f0dabb33 70%,#f0dabb00 100%),radial-gradient(ellipse 58% 64% at 0% 95%,#b5a4daf0 0%,#b5a4daa8 32%,#b5a4da33 70%,#b5a4da00 100%),radial-gradient(ellipse 54% 78% at 50% 45%,#e991b6f0 0%,#e991b6a8 32%,#e991b633 70%,#e991b600 100%),linear-gradient(#fdf0f4,#fdf0f4);
+}
+.fg-orchid-vapour-01 { background-color: #30153c; background-image: var(--fg-orchid-vapour-01); }
+.fg-orchid-vapour-02 { background-color: #18112d; background-image: var(--fg-orchid-vapour-02); }
+.fg-orchid-vapour-03 { background-color: #092b32; background-image: var(--fg-orchid-vapour-03); }
+.fg-orchid-vapour-04 { background-color: #32202d; background-image: var(--fg-orchid-vapour-04); }
+.fg-orchid-vapour-05 { background-color: #f8f4fd; background-image: var(--fg-orchid-vapour-05); }
+.fg-orchid-vapour-06 { background-color: #fff5e9; background-image: var(--fg-orchid-vapour-06); }
+.fg-orchid-vapour-07 { background-color: #f5f7e6; background-image: var(--fg-orchid-vapour-07); }
+.fg-orchid-vapour-08 { background-color: #fdf0f4; background-image: var(--fg-orchid-vapour-08); }

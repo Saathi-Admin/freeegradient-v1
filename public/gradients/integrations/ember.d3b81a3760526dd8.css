@@ -1,0 +1,12 @@
+/* FreeeGradients: Ember only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-ember-01: radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #ee6fbacc 0%, #ee6fba00 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 74.375% 49.55555555555556%, #6655ed 0%, #6655ed00 100%), linear-gradient(#080b18, #080b18);
+  --fg-ember-02: radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #b5c7f4cc 0%, #b5c7f400 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 74.375% 49.55555555555556%, #90e6c1 0%, #90e6c100 100%), linear-gradient(#eef8ee, #eef8ee);
+  --fg-ember-03: radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #f0788ccc 0%, #f0788c00 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 74.375% 49.55555555555556%, #ffad66 0%, #ffad6600 100%), linear-gradient(#fff0df, #fff0df);
+  --fg-ember-04: radial-gradient(ellipse 46.875% 61.111111111111114% at 8.75% 94.44444444444444%, #3078c0cc 0%, #3078c000 100%), radial-gradient(ellipse 61.875% 26.11111111111111% at 74.375% 49.55555555555556%, #32bfae 0%, #32bfae00 100%), linear-gradient(#06191d, #06191d);
+}
+.fg-ember-01 { background-image: var(--fg-ember-01); }
+.fg-ember-02 { background-image: var(--fg-ember-02); }
+.fg-ember-03 { background-image: var(--fg-ember-03); }
+.fg-ember-04 { background-image: var(--fg-ember-04); }
