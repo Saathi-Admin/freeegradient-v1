@@ -30,7 +30,7 @@ const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline',
             {['.css', '.svg', '.png', '.jpeg'].map((format, index) => <span class="hero-format-item" style={`--format-gradient:var(--gradient-format-${index + 1})`}>{format}</span>)}
           </div>
         </div>
-        <h1 id="hero-title"><span class="hero-heading-neutral"><span class="text-serif-italic">{gradientMilestone}</span> gradients <span class="text-serif-italic">free</span> for personal and commercial use.</span></h1>
+        <h1 id="hero-title"><span class="hero-heading-neutral"><span class="text-serif-italic">{gradientMilestone}</span> gradients <span class="text-serif-italic">free</span><span class="hero-for-desktop"> for</span></span><br /><span class="hero-heading-neutral"><span class="hero-for-mobile">for </span>personal and commercial use.</span></h1>
         <p class="hero-description text-body-md">Free gradient backgrounds for personal and commercial use. Copy CSS or download SVG, PNG and JPEG. No sign-up. No download limits.</p>
       </div>
       </div>
@@ -58,5 +58,14 @@ const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline',
     import '../scripts/library';
   </script>
 </BaseLayout>
+
+<style>
+  .hero { --hero-copy-width: 1120px; }
+  .hero-for-mobile { display: none; }
+  @media (max-width: 639px) {
+    .hero-for-desktop { display: none; }
+    .hero-for-mobile { display: inline; }
+  }
+</style>
 
 

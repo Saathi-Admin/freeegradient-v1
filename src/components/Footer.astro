@@ -4,7 +4,7 @@ import Button from './ui/Button.astro';
 import { collections } from '../data/collections';
 import { gradients } from '../data/gradients';
 const footerBackground=gradients.find(g=>g.slug==='afterglow')!.variations[0].backgroundSrc;
-const donationUrl = import.meta.env.PUBLIC_DONATION_URL;
+const donationUrl = import.meta.env.PUBLIC_DONATION_URL || 'https://buymeacoffee.com/arclinkedge';
 const columnSize = Math.ceil(collections.length / 3);
 const collectionColumns = Array.from({ length: 3 }, (_, index) => collections.slice(index * columnSize, (index + 1) * columnSize));
 interface Props { preview?: boolean; }
