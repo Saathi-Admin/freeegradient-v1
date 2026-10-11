@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <radialGradient id="halo" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(800 -430) scale(1350 1050)">
+      <stop offset="0" stop-color="#a3dd3b"/>
+      <stop offset=".38" stop-color="#a3dd3b"/>
+      <stop offset=".56" stop-color="#d9fac5"/>
+      <stop offset=".7" stop-color="#109e72"/>
+      <stop offset=".96" stop-color="#0a0a0b"/>
+      <stop offset="1" stop-color="#0a0a0b"/>
+    </radialGradient>
+    <filter id="halo-soft" filterUnits="userSpaceOnUse" x="-240" y="-240" width="2080" height="1380"><feGaussianBlur stdDeviation="55"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+    <linearGradient id="grain-fade" x2="0" y2="1"><stop offset=".4" stop-color="white"/><stop offset=".9" stop-color="black"/></linearGradient>
+    <mask id="grain-mask"><rect width="1600" height="900" fill="url(#grain-fade)"/></mask>
+  </defs>
+  <rect width="1600" height="900" fill="#0a0a0b"/>
+  <rect x="-180" y="-180" width="1960" height="1260" fill="url(#halo)" opacity=".78" filter="url(#halo-soft)"/>
+  <rect width="1600" height="900" filter="url(#grain)" opacity=".055" mask="url(#grain-mask)"/>
+</svg>

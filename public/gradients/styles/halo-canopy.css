@@ -1,0 +1,16 @@
+/* FreeeGradients: Halo canopy only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-halo-canopy-01: url("../assets/halo-canopy-01.f5e9f61a7cbf8f15.webp");
+  --fg-halo-canopy-02: url("../assets/halo-canopy-02.e141674e9a0bc363.webp");
+  --fg-halo-canopy-03: url("../assets/halo-canopy-03.a7c216d0486ea1b3.webp");
+  --fg-halo-canopy-04: url("../assets/halo-canopy-04.ff40c0a753600728.webp");
+  --fg-halo-canopy-05: url("../assets/halo-canopy-05.e81e4bb75ef4e08a.webp");
+  --fg-halo-canopy-06: url("../assets/halo-canopy-06.1a69b12ed27476e8.webp");
+}
+.fg-halo-canopy-01 { background-color: #10051d; background-image: var(--fg-halo-canopy-01); }
+.fg-halo-canopy-02 { background-color: #030d21; background-image: var(--fg-halo-canopy-02); }
+.fg-halo-canopy-03 { background-color: #1c0712; background-image: var(--fg-halo-canopy-03); }
+.fg-halo-canopy-04 { background-color: #031a15; background-image: var(--fg-halo-canopy-04); }
+.fg-halo-canopy-05 { background-color: #f8edf7; background-image: var(--fg-halo-canopy-05); }
+.fg-halo-canopy-06 { background-color: #eff6fd; background-image: var(--fg-halo-canopy-06); }

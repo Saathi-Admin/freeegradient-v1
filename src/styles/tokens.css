@@ -113,7 +113,7 @@
   --radius-full: 9999px;
   --font-family-sans: var(--font-host-grotesk);
   --font-family-sans-tight: var(--font-host-grotesk);
-  --font-family-serif-accent: var(--font-instrument-serif);
+  --font-family-serif-accent: var(--font-soul);
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-size-12: 12px;
@@ -235,9 +235,9 @@
   --text-button-line-height: var(--button-line-height);
   --text-button-letter-spacing: var(--letter-spacing-normal);
   --icon-stroke-width: 2px;
-  --text-h1-family: var(--font-family-sans-tight);
+  --text-h1-family: var(--font-soul);
   --text-h1-size: clamp(2.25rem, 1.5rem + 3vw, var(--font-size-64));
-  --text-h1-weight: var(--font-weight-medium);
+  --text-h1-weight: var(--font-weight-regular);
   --text-h1-line-height: var(--line-height-tight);
   --text-h1-letter-spacing: var(--letter-spacing-tight);
   --text-h2-family: var(--font-family-sans-tight);
@@ -291,7 +291,7 @@
   --text-caption-sm-line-height: var(--text-caption-line-height);
   --text-caption-sm-letter-spacing: var(--letter-spacing-wide);
   --font-host-grotesk: 'Host Grotesk Variable', system-ui, sans-serif;
-  --font-instrument-serif: 'Instrument Serif', Georgia, serif;
+  --font-soul: 'LT Soul', Georgia, serif;
   --surface-canvas: var(--surface-dark-canvas);
   --surface-card: var(--surface-dark-1);
   --surface-raised: var(--surface-dark-2);

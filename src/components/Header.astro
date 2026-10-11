@@ -22,6 +22,7 @@ import { gradients } from '../data/gradients';
     <a class="btn btn-ghost btn-sm" href="/gradients/">Gradients</a>
     <Button variant="ghost" size="sm" id="mobile-collections-toggle" aria-controls="mobile-collections" aria-expanded="false">Collections<ChevronDown slot="trailing-icon" aria-hidden="true" /></Button>
     <div class="collection-grid header-collections-grid mobile-collections-grid" id="mobile-collections" hidden>
+      <a class="btn btn-secondary btn-sm" href="/collections/">All collections</a>
       {collections.map(collection => {
         const templates = gradients.filter(g => g.category === collection.id);
         return <CollectionCard id={collection.id} title={collection.title} preview={collection.preview} variations={templates.reduce((count, template) => count + template.variations.length, 0)} />;
@@ -37,6 +38,7 @@ import { gradients } from '../data/gradients';
 </header>
 <div popover="auto" id="header-collections" class="header-collections-dropdown" aria-label="Collections">
   <div class="header-collections-inner">
+    <a class="btn btn-secondary btn-sm" href="/collections/">Explore all collections</a>
     <div class="collection-grid header-collections-grid">
       {collections.map(collection => {
         const templates = gradients.filter(g => g.category === collection.id);
@@ -87,7 +89,7 @@ import { gradients } from '../data/gradients';
 <style>
   .floating-header { --button-radius: var(--radius-full); position: fixed; top: var(--header-top); left: 50%; transform: translateX(-50%); z-index: 20; width: max-content; max-width: calc(100% - var(--page-padding-mobile) * 2); min-height: var(--header-height); padding: var(--header-padding) var(--header-padding) var(--header-padding) var(--header-padding-left); border: 1px solid var(--header-border-color); border-radius: var(--radius-full); display: flex; align-items: center; gap: var(--header-group-gap); background: var(--surface-card); box-shadow: 0 8px 32px #00000030; }
   .brand { display: flex; align-items: center; gap: var(--space-4); color: var(--text-primary); font-size: var(--font-size-18); font-weight: var(--font-weight-medium); letter-spacing: var(--letter-spacing-tight); text-decoration: none; }
-  .brand { background-image: var(--gradient-brand-logo); background-clip: text; -webkit-background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+  .brand { color: #fff; }
   .brand-dot { margin-left: calc(-1 * var(--space-4)); }
   .desktop-nav, .header-actions { display: flex; align-items: center; }
   .desktop-nav { gap: var(--space-2); }

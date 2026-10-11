@@ -1,0 +1,33 @@
+---
+import { Search, X } from '@lucide/astro';
+import Button from './Button.astro';
+interface Props { id: string; label: string; placeholder: string; clearId?: string; class?: string; }
+const { id, label, placeholder, clearId = `${id}-clear`, class: className } = Astro.props;
+---
+<div class:list={['search-field', className]} data-search-field>
+  <Search size={16} aria-hidden="true" />
+  <input id={id} type="search" aria-label={label} placeholder={placeholder} autocomplete="off" />
+  <Button variant="ghost" size="sm" iconOnly id={clearId} aria-label={`Clear ${label.toLowerCase()}`} hidden><X aria-hidden="true" /></Button>
+</div>
+<style>
+  .search-field { display: flex; align-items: center; gap: var(--space-4); width: min(100%, var(--search-width)); height: var(--button-height-md); padding-inline: var(--space-6); border-radius: var(--radius-full); background: var(--surface-card); color: var(--text-secondary); transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease; }
+  .search-field:has(button:not([hidden])) { padding-right: var(--space-1); }
+  .search-field:focus-within { outline: none; background: var(--surface-raised); color: var(--text-primary); box-shadow: 0 0 0 var(--focus-width) var(--focus-ring); }
+  .search-field > :global(svg) { flex-shrink: 0; }
+  input { width: 100%; min-width: 0; height: 100%; margin: 0; padding: 0; appearance: none; background: transparent; border: 0; color: var(--text-primary); font: inherit; font-size: var(--font-size-14); line-height: var(--button-line-height); caret-color: var(--focus-ring); }
+  input:focus-visible { outline: none; }
+  input::-webkit-search-cancel-button { appearance: none; -webkit-appearance: none; }
+  input::placeholder { color: var(--text-muted); }
+  @media (hover: hover) { .search-field:hover { background: var(--surface-raised); } }
+  @media (prefers-reduced-motion: reduce) { .search-field { transition: none; } }
+</style>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-search-field]').forEach(field => {
+    const input = field.querySelector<HTMLInputElement>('input')!;
+    const clear = field.querySelector<HTMLButtonElement>('button')!;
+    const update = () => { clear.hidden = !input.value; };
+    input.addEventListener('input', update);
+    clear.addEventListener('click', () => { input.value = ''; input.dispatchEvent(new Event('input', { bubbles: true })); input.focus(); });
+    update();
+  });
+</script>

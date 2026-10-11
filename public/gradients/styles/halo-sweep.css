@@ -1,0 +1,16 @@
+/* FreeeGradients: Halo sweep only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-halo-sweep-01: url("../assets/halo-sweep-01.55bfe6a016ea5120.webp");
+  --fg-halo-sweep-02: url("../assets/halo-sweep-02.0c762fa5cebace36.webp");
+  --fg-halo-sweep-03: url("../assets/halo-sweep-03.b63498fc6345e5e7.webp");
+  --fg-halo-sweep-04: url("../assets/halo-sweep-04.b7381bdb9b854c2a.webp");
+  --fg-halo-sweep-05: url("../assets/halo-sweep-05.4f909f0838e3d91e.webp");
+  --fg-halo-sweep-06: url("../assets/halo-sweep-06.f8e75c2ecfd942d1.webp");
+}
+.fg-halo-sweep-01 { background-color: #10051d; background-image: var(--fg-halo-sweep-01); }
+.fg-halo-sweep-02 { background-color: #030d21; background-image: var(--fg-halo-sweep-02); }
+.fg-halo-sweep-03 { background-color: #1c0712; background-image: var(--fg-halo-sweep-03); }
+.fg-halo-sweep-04 { background-color: #031a15; background-image: var(--fg-halo-sweep-04); }
+.fg-halo-sweep-05 { background-color: #f8edf7; background-image: var(--fg-halo-sweep-05); }
+.fg-halo-sweep-06 { background-color: #eff6fd; background-image: var(--fg-halo-sweep-06); }

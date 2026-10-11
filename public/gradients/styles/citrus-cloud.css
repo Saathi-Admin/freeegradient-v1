@@ -1,0 +1,12 @@
+/* FreeeGradients: Citrus cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-citrus-cloud-01: url("../assets/citrus-cloud-01.919ccafb8bc77f28.webp");
+  --fg-citrus-cloud-02: url("../assets/citrus-cloud-02.b08a6e7b0fdfe418.webp");
+  --fg-citrus-cloud-03: url("../assets/citrus-cloud-03.d73e2b1b9454cffd.webp");
+  --fg-citrus-cloud-04: url("../assets/citrus-cloud-04.b66cb95ec29132d8.webp");
+}
+.fg-citrus-cloud-01 { background-color: #eafad3; background-image: var(--fg-citrus-cloud-01); }
+.fg-citrus-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-citrus-cloud-02); }
+.fg-citrus-cloud-03 { background-color: #101326; background-image: var(--fg-citrus-cloud-03); }
+.fg-citrus-cloud-04 { background-color: #191025; background-image: var(--fg-citrus-cloud-04); }

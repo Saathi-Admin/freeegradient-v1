@@ -13,7 +13,7 @@ const detailsLink = document.querySelector<HTMLAnchorElement>('#preview-details-
 const openButton = document.querySelector<HTMLButtonElement>('.playground-open')!;
 const variationPanel = document.querySelector<HTMLElement>('#playground-variation-panel')!;
 const search = document.querySelector<HTMLInputElement>('#playground-search')!;
-const searchLabel = search.closest<HTMLElement>('label')!;
+const searchLabel = search.closest<HTMLElement>('.playground-search-label')!;
 const pagination = document.querySelector<HTMLElement>('.playground-pagination')!;
 const previous = document.querySelector<HTMLButtonElement>('#template-page-prev')!;
 const next = document.querySelector<HTMLButtonElement>('#template-page-next')!;
@@ -25,11 +25,20 @@ const cache = new Map<string, GradientTemplate>([[initialData.initialTemplate.sl
 let browseMode = 'templates', activeCollection: HTMLButtonElement | undefined, activeTemplate: string | undefined;
 let templateScroll = 0, page = 1, pageCount = initialData.totalPages, browserRequest = 0, templateRequest = 0;
 let selectedId = initialData.initialTemplate.variations[0].id;
-const browserState = () => `${activeCollection?.dataset.collectionChoice ?? 'all'}:${page}:${search.value.trim()}`;
+const browserState = () => `${browseMode}:${activeCollection?.dataset.collectionChoice ?? 'all'}:${page}:${search.value.trim()}`;
+type VariationSummary = { id: string; slug: string; name: string; variationName: string; category: string; mode: string; thumbnail: string; tags: string[] };
+let variationIndex: Promise<VariationSummary[]> | undefined;
+function loadVariationIndex() {
+  return variationIndex ??= fetch('/gradients/catalogue/variations.json').then(response => {
+    if (!response.ok) throw new Error('Could not load gradients');
+    return response.json() as Promise<VariationSummary[]>;
+  }).catch(error => { variationIndex = undefined; throw error; });
+}
 let renderedState = browserState();
 function showStatus(message: string, failed = false) { status.textContent = message; status.hidden = !message; retry.hidden = !failed; }
 function selectVariation(template: GradientTemplate, variation: GradientVariation) {
   selectedId = variation.id;
+  templates.querySelectorAll<HTMLElement>('[data-gradient-choice]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.gradientChoice === selectedId)));
   variationPanel.querySelectorAll<HTMLElement>('[data-variation-choice]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.variationChoice === selectedId)));
   preview.style.setProperty('--preview-gradient', variation.cssKind==='native' ? variation.css : `url("${variation.backgroundSrc ?? variation.src}")`);
   preview.dataset.mode = variation.mode;
@@ -75,13 +84,50 @@ function renderTemplates(items: TemplateSummary[]) {
     const copy=document.createElement('span'); copy.className='playground-card-copy'; const title=document.createElement('span'); title.className='text-body-sm'; title.textContent=item.name; const count=document.createElement('span'); count.className='text-caption'; count.textContent=`${item.count} colours`; copy.append(title,count); button.append(image,copy); templates.append(button);
   }
 }
+function renderAllGradients(items: VariationSummary[]) {
+  templates.replaceChildren();
+  for (const item of items) {
+    const button = document.createElement('button'); button.type = 'button'; button.className = 'playground-template';
+    button.dataset.gradientChoice = item.id; button.dataset.templateSlug = item.slug;
+    button.setAttribute('aria-label', `Preview ${item.name}, ${item.variationName}`);
+    button.setAttribute('aria-pressed', String(item.id === selectedId));
+    const image = document.createElement('img'); image.src = item.thumbnail; image.alt = ''; image.width = 160; image.height = 90; image.loading = 'lazy'; image.decoding = 'async';
+    const copy = document.createElement('span'); copy.className = 'playground-card-copy';
+    const title = document.createElement('span'); title.className = 'text-body-sm'; title.textContent = item.name;
+    copy.append(title); button.append(image, copy); templates.append(button);
+  }
+}
+async function previewGradient(slug: string, id: string) {
+  const request = ++templateRequest;
+  showStatus('Loading gradient…');
+  try {
+    const template = cache.get(slug) ?? await loadTemplate(slug);
+    if (request !== templateRequest || browseMode !== 'all') return;
+    const variation = template.variations.find(item => item.id === id);
+    if (!variation) throw new Error('Missing gradient');
+    cache.set(slug, template); if (cache.size > 8) cache.delete(cache.keys().next().value!);
+    selectVariation(template, variation); showStatus('');
+  } catch { if (request === templateRequest) showStatus('Could not load this gradient. Select it again to retry.'); }
+}
 function updatePagination() { pageLabel.dispatchEvent(new CustomEvent('select-sync',{detail:{value:String(page),label:`${page} / ${pageCount}`,max:pageCount}})); previous.disabled=page<=1; next.disabled=page>=pageCount; }
 async function loadBrowserPage() {
-  const state=browserState(), request=++browserRequest; showStatus('Loading templates…');
+  const state=browserState(), request=++browserRequest; showStatus(browseMode === 'all' ? 'Loading gradients…' : 'Loading templates…');
   templates.setAttribute('aria-busy','true'); previous.disabled=true; next.disabled=true;
   try {
     let data: CataloguePage;
     const category=activeCollection?.dataset.collectionChoice ?? 'all', query=search.value.trim();
+    if (browseMode === 'all') {
+      const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+      const items = (await loadVariationIndex()).filter(item => {
+        const text = [item.id, item.name, item.variationName, item.category, item.mode, ...item.tags].join(' ').toLowerCase();
+        return terms.every(term => text.includes(term));
+      });
+      if (request !== browserRequest || state !== browserState()) return;
+      pageCount = Math.max(1, Math.ceil(items.length / 24));
+      renderAllGradients(items.slice((page - 1) * 24, page * 24)); renderedState = state; updatePagination();
+      showStatus(items.length ? '' : 'No matching gradients. Try another colour or style.');
+      return;
+    }
     if(query) {
       const items=(await loadSearchIndex()).filter(g=>(category==='all'||g.category===category)&&matchesTemplate(g,query));
       data={items:items.slice((page-1)*24,page*24),total:items.length,totalPages:Math.max(1,Math.ceil(items.length/24)),page};
@@ -90,17 +136,25 @@ async function loadBrowserPage() {
     }
     if(request!==browserRequest || state!==browserState()) return;
     pageCount=data.totalPages; renderTemplates(data.items); renderedState=state; updatePagination(); showStatus(data.total ? '' : 'No matching templates. Try another colour or style.');
-  } catch { if(request===browserRequest) {showStatus('Could not load templates.',true); updatePagination();} }
+  } catch { if(request===browserRequest) {showStatus(browseMode === 'all' ? 'Could not load gradients.' : 'Could not load templates.',true); updatePagination();} }
   finally {if(request===browserRequest) templates.removeAttribute('aria-busy');}
 }
 function showBrowser() {
   ++templateRequest; activeTemplate=undefined; variationPanel.hidden=true; showStatus('');
   const collections=browseMode==='collections'&&!activeCollection;
+  search.placeholder = browseMode === 'all' ? 'Search gradients or colours…' : 'Search templates or colours…';
+  search.setAttribute('aria-label', browseMode === 'all' ? 'Search gradients' : 'Search templates');
+  pagination.setAttribute('aria-label', browseMode === 'all' ? 'Gradient pages' : 'Template pages');
   collectionList.hidden=!collections; templates.hidden=collections; searchLabel.hidden=collections; pagination.hidden=collections; sidebarTabs.hidden=!!activeCollection; back.hidden=!activeCollection;
   back.innerHTML=back.innerHTML.replace(/Back to collections|Back to templates/,'Back to collections');
   if(!collections&&renderedState!==browserState()) void loadBrowserPage();
 }
-templates.addEventListener('click',event=>{const button=(event.target as Element).closest<HTMLElement>('[data-template-choice]'); if(button) void openTemplate(button.dataset.templateChoice!);});
+templates.addEventListener('click',event=>{
+  const button=(event.target as Element).closest<HTMLElement>('[data-template-choice], [data-gradient-choice]');
+  if (!button) return;
+  if (button.dataset.gradientChoice) void previewGradient(button.dataset.templateSlug!, button.dataset.gradientChoice);
+  else void openTemplate(button.dataset.templateChoice!);
+});
 back.addEventListener('click',()=>{
   if(activeTemplate) {
     const slug=activeTemplate; showBrowser(); templates.querySelector<HTMLElement>(`[data-template-choice="${slug}"]`)?.focus({preventScroll:true}); sidebarScroll.scrollTop=templateScroll;

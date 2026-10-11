@@ -1,0 +1,12 @@
+/* FreeeGradients: Azure cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-azure-cloud-01: url("../assets/azure-cloud-01.e48f56e8bb2836bd.webp");
+  --fg-azure-cloud-02: url("../assets/azure-cloud-02.eb370f20f27f3ea6.webp");
+  --fg-azure-cloud-03: url("../assets/azure-cloud-03.de2b062b31a25e02.webp");
+  --fg-azure-cloud-04: url("../assets/azure-cloud-04.fb1da7160b89b5e1.webp");
+}
+.fg-azure-cloud-01 { background-color: #c7efff; background-image: var(--fg-azure-cloud-01); }
+.fg-azure-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-azure-cloud-02); }
+.fg-azure-cloud-03 { background-color: #101326; background-image: var(--fg-azure-cloud-03); }
+.fg-azure-cloud-04 { background-color: #191025; background-image: var(--fg-azure-cloud-04); }

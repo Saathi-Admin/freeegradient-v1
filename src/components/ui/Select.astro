@@ -19,19 +19,19 @@ const selected=options.find(option=>option.value===value) ?? options[0];
 </div>
 <style>
   .custom-select { min-width:0; width:220px; max-width:100%; }
-  .select-trigger { width:100%; display:flex; align-items:center; gap:var(--space-4); padding:var(--space-5) var(--space-6); min-height:44px; border:1px solid var(--border-subtle); border-radius:var(--radius-8); background:var(--surface-raised); color:var(--text-primary); font:inherit; font-size:var(--font-size-14); text-align:left; cursor:pointer; transition:background .16s ease,border-color .16s ease; }
+  .select-trigger { width:100%; display:flex; align-items:center; gap:var(--space-4); padding:0 var(--space-6); height:var(--button-height-md); min-height:var(--button-height-md); border:0; border-radius:var(--radius-full); background:var(--surface-card); color:var(--text-primary); font:inherit; font-size:var(--font-size-14); text-align:left; cursor:pointer; transition:background-color .2s ease,box-shadow .2s ease,color .2s ease; }
   .select-compact .select-trigger { min-height:36px; height:36px; padding:var(--space-3) var(--space-5); font-size:var(--font-size-12); }
   .select-pill .select-trigger { border-radius:var(--radius-full); background:var(--surface-card); }
-  .select-trigger:hover, .select-trigger[aria-expanded="true"] { background:var(--surface-overlay); }
-  .select-trigger:focus-visible { outline:2px solid var(--text-primary); outline-offset:3px; }
+  .select-trigger:hover, .select-trigger[aria-expanded="true"] { background:var(--surface-raised); }
+  .select-trigger:focus-visible { outline:none; background:var(--surface-raised); box-shadow:0 0 0 var(--focus-width) var(--focus-ring); }
   .select-trigger :global(svg) { flex-shrink:0; color:var(--text-secondary); transition:transform .18s ease; }
   .select-trigger[aria-expanded="true"] :global(svg) { transform:rotate(180deg); }
   .select-value { min-width:0; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .select-preview { width:40px; height:24px; flex-shrink:0; object-fit:cover; border-radius:var(--radius-3); }
-  .select-panel { box-sizing:border-box; position:fixed; inset:auto; margin:0; width:220px; max-width:calc(100vw - 32px); max-height:320px; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:none; padding:var(--space-4); border:1px solid var(--border-subtle); border-radius:var(--radius-12); background:var(--surface-card); color:var(--text-primary); box-shadow:0 16px 48px #00000055; }
+  .select-panel { box-sizing:border-box; position:fixed; inset:auto; margin:0; width:220px; max-width:calc(100vw - 32px); max-height:320px; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:none; padding:var(--space-4); border:0; border-radius:var(--radius-12); background:var(--surface-card); color:var(--text-primary); box-shadow:0 16px 48px #00000055; }
   .select-panel::-webkit-scrollbar { display:none; }
   .select-panel:popover-open { display:grid; gap:var(--space-2); }
-  .select-option { width:100%; min-width:0; display:flex; align-items:center; gap:var(--space-4); min-height:44px; padding:var(--space-5) var(--space-6); border:0; border-radius:var(--radius-8); background:transparent; color:var(--text-secondary); text-align:left; font:inherit; font-size:var(--font-size-14); cursor:pointer; }
+  .select-option { width:100%; min-width:0; display:flex; align-items:center; gap:var(--space-4); min-height:var(--button-height-md); padding:var(--space-4) var(--space-6); border:0; border-radius:var(--radius-full); background:transparent; color:var(--text-secondary); text-align:left; font:inherit; font-size:var(--font-size-14); cursor:pointer; }
   .select-option[hidden] { display:none; }
   .select-option span { min-width:0; flex:1; }
   .select-option:hover, .select-option:focus-visible { background:var(--surface-raised); color:var(--text-primary); outline:0; }

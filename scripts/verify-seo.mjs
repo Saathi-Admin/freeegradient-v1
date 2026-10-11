@@ -5,4 +5,6 @@ assert.equal(pageSeo({site:new URL('https://example.com'),path:'/',production:fa
 const live=pageSeo({site:new URL('https://example.com'),path:'/gradients/dawnlight-01/',production:true});
 assert.equal(live.blockIndex,false);assert.equal(live.canonical,'https://example.com/gradients/dawnlight-01/');
 assert.equal(pageSeo({site:new URL('https://example.com'),path:'/playground/',production:true,noindex:true}).blockIndex,true);
+assert.equal(pageSeo({site:new URL('https://freeegradients.com'),path:'/',production:true,preview:true}).blockIndex,true);
+assert.equal(pageSeo({site:new URL('https://freeegradients.com'),path:'/gradients/?colour=green#results',production:true}).canonical,'https://freeegradients.com/gradients/');
 console.log('SEO configuration checks passed: previews blocked, permanent production origin indexable, canonical template paths, utility pages blocked.');

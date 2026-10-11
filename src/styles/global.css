@@ -2,6 +2,14 @@
 @import './typography.css';
 @import './buttons.css';
 
+@font-face {
+  font-family: 'LT Soul';
+  src: url('/fonts/soul/LTSoul-Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 html { color-scheme: dark; background: var(--surface-canvas); scrollbar-gutter: stable; }
 body {

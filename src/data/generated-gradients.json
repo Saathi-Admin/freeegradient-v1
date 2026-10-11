@@ -195184,5 +195184,2506 @@
         "cssKind": "asset"
       }
     ]
+  },
+  {
+    "slug": "apricot-cloud",
+    "name": "Apricot cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 0,
+    "fields": [
+      [
+        12,
+        100,
+        65,
+        65,
+        1
+      ],
+      [
+        95,
+        55,
+        75,
+        105,
+        2
+      ],
+      [
+        45,
+        8,
+        60,
+        80,
+        3
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "orange",
+      "peach",
+      "pink"
+    ],
+    "id": "FG-1139",
+    "stylesheet": "/gradients/integrations/apricot-cloud.d636d0cb28a3b8a5.css",
+    "variations": [
+      {
+        "id": "apricot-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#fff0e9",
+          "#ff7300",
+          "#ffb8d6",
+          "#ffe7ad"
+        ],
+        "tags": [
+          "pastel",
+          "orange",
+          "peach",
+          "pink"
+        ],
+        "src": "/gradients/assets/apricot-cloud-01.d6dfbfdfb15f8c1a.svg",
+        "thumbnail": "/gradients/thumbnails/apricot-cloud-01.dcb56dbff06b1fed.webp",
+        "backgroundSrc": "/gradients/assets/apricot-cloud-01.c0f89ee25cb24378.webp",
+        "css": "url(\"/gradients/assets/apricot-cloud-01.c0f89ee25cb24378.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "apricot-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#ffb8d6",
+          "#ffe7ad",
+          "#ff7300"
+        ],
+        "tags": [
+          "pastel",
+          "orange",
+          "peach",
+          "pink"
+        ],
+        "src": "/gradients/assets/apricot-cloud-02.5f9d9bd09fc6a30a.svg",
+        "thumbnail": "/gradients/thumbnails/apricot-cloud-02.81d486d6cd87a061.webp",
+        "backgroundSrc": "/gradients/assets/apricot-cloud-02.8cdbfc419f263c40.webp",
+        "css": "url(\"/gradients/assets/apricot-cloud-02.8cdbfc419f263c40.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "apricot-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#ff7300",
+          "#ffb8d6",
+          "#ffe7ad"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "orange",
+          "peach",
+          "pink"
+        ],
+        "src": "/gradients/assets/apricot-cloud-03.5297bb86196b844a.svg",
+        "thumbnail": "/gradients/thumbnails/apricot-cloud-03.65bf38c7d9651c41.webp",
+        "backgroundSrc": "/gradients/assets/apricot-cloud-03.d5abee293566ff2c.webp",
+        "css": "url(\"/gradients/assets/apricot-cloud-03.d5abee293566ff2c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "apricot-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#ffe7ad",
+          "#ff7300",
+          "#ffb8d6"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "orange",
+          "peach",
+          "pink"
+        ],
+        "src": "/gradients/assets/apricot-cloud-04.8568d0db07e5fbe2.svg",
+        "thumbnail": "/gradients/thumbnails/apricot-cloud-04.29930a43ab52f3f2.webp",
+        "backgroundSrc": "/gradients/assets/apricot-cloud-04.11b48a06187b43c2.webp",
+        "css": "url(\"/gradients/assets/apricot-cloud-04.11b48a06187b43c2.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "orchid-cloud",
+    "name": "Orchid cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 1,
+    "fields": [
+      [
+        58,
+        82,
+        48,
+        65,
+        1
+      ],
+      [
+        105,
+        82,
+        65,
+        75,
+        2
+      ],
+      [
+        2,
+        105,
+        48,
+        40,
+        3
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "purple",
+      "pink",
+      "yellow"
+    ],
+    "id": "FG-1140",
+    "stylesheet": "/gradients/integrations/orchid-cloud.70e9aa26cfb837d2.css",
+    "variations": [
+      {
+        "id": "orchid-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#f7d9ff",
+          "#c600f5",
+          "#ff67c2",
+          "#ffd350"
+        ],
+        "tags": [
+          "pastel",
+          "purple",
+          "pink",
+          "yellow"
+        ],
+        "src": "/gradients/assets/orchid-cloud-01.bd77c5f871e70cc7.svg",
+        "thumbnail": "/gradients/thumbnails/orchid-cloud-01.4d835552f7a1010a.webp",
+        "backgroundSrc": "/gradients/assets/orchid-cloud-01.aee33c0a5c5a5711.webp",
+        "css": "url(\"/gradients/assets/orchid-cloud-01.aee33c0a5c5a5711.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "orchid-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#ff67c2",
+          "#ffd350",
+          "#c600f5"
+        ],
+        "tags": [
+          "pastel",
+          "purple",
+          "pink",
+          "yellow"
+        ],
+        "src": "/gradients/assets/orchid-cloud-02.3d45dfe5ce7c7887.svg",
+        "thumbnail": "/gradients/thumbnails/orchid-cloud-02.b75175c74093a9d3.webp",
+        "backgroundSrc": "/gradients/assets/orchid-cloud-02.8d8311ed6fab31f8.webp",
+        "css": "url(\"/gradients/assets/orchid-cloud-02.8d8311ed6fab31f8.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "orchid-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#c600f5",
+          "#ff67c2",
+          "#ffd350"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "purple",
+          "pink",
+          "yellow"
+        ],
+        "src": "/gradients/assets/orchid-cloud-03.afdf96c8deebce8c.svg",
+        "thumbnail": "/gradients/thumbnails/orchid-cloud-03.8ff2f1f7f9b49548.webp",
+        "backgroundSrc": "/gradients/assets/orchid-cloud-03.b9195aad03e78265.webp",
+        "css": "url(\"/gradients/assets/orchid-cloud-03.b9195aad03e78265.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "orchid-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#ffd350",
+          "#c600f5",
+          "#ff67c2"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "purple",
+          "pink",
+          "yellow"
+        ],
+        "src": "/gradients/assets/orchid-cloud-04.490bfcadf20ea492.svg",
+        "thumbnail": "/gradients/thumbnails/orchid-cloud-04.bd9c7358a24fc03c.webp",
+        "backgroundSrc": "/gradients/assets/orchid-cloud-04.9d966e2781b9fce9.webp",
+        "css": "url(\"/gradients/assets/orchid-cloud-04.9d966e2781b9fce9.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "citrus-cloud",
+    "name": "Citrus cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 2,
+    "fields": [
+      [
+        0,
+        0,
+        46,
+        70,
+        1
+      ],
+      [
+        60,
+        18,
+        57,
+        95,
+        2
+      ],
+      [
+        0,
+        105,
+        80,
+        43,
+        3
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "green",
+      "mint",
+      "yellow",
+      "orange"
+    ],
+    "id": "FG-1141",
+    "stylesheet": "/gradients/integrations/citrus-cloud.8bb8609efc3119db.css",
+    "variations": [
+      {
+        "id": "citrus-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#eafad3",
+          "#00c887",
+          "#dbf424",
+          "#ffad68"
+        ],
+        "tags": [
+          "pastel",
+          "green",
+          "mint",
+          "yellow",
+          "orange"
+        ],
+        "src": "/gradients/assets/citrus-cloud-01.117c8d201fb98d95.svg",
+        "thumbnail": "/gradients/thumbnails/citrus-cloud-01.e95536a34375f604.webp",
+        "backgroundSrc": "/gradients/assets/citrus-cloud-01.919ccafb8bc77f28.webp",
+        "css": "url(\"/gradients/assets/citrus-cloud-01.919ccafb8bc77f28.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "citrus-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#dbf424",
+          "#ffad68",
+          "#00c887"
+        ],
+        "tags": [
+          "pastel",
+          "green",
+          "mint",
+          "yellow",
+          "orange"
+        ],
+        "src": "/gradients/assets/citrus-cloud-02.8b37478e26e3aa2b.svg",
+        "thumbnail": "/gradients/thumbnails/citrus-cloud-02.1f0a1c417ba22d4e.webp",
+        "backgroundSrc": "/gradients/assets/citrus-cloud-02.b08a6e7b0fdfe418.webp",
+        "css": "url(\"/gradients/assets/citrus-cloud-02.b08a6e7b0fdfe418.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "citrus-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#00c887",
+          "#dbf424",
+          "#ffad68"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "green",
+          "mint",
+          "yellow",
+          "orange"
+        ],
+        "src": "/gradients/assets/citrus-cloud-03.16108f456177a72e.svg",
+        "thumbnail": "/gradients/thumbnails/citrus-cloud-03.4c2fe9c63c588fe5.webp",
+        "backgroundSrc": "/gradients/assets/citrus-cloud-03.d73e2b1b9454cffd.webp",
+        "css": "url(\"/gradients/assets/citrus-cloud-03.d73e2b1b9454cffd.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "citrus-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#ffad68",
+          "#00c887",
+          "#dbf424"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "green",
+          "mint",
+          "yellow",
+          "orange"
+        ],
+        "src": "/gradients/assets/citrus-cloud-04.ed08cdc6bfe091a2.svg",
+        "thumbnail": "/gradients/thumbnails/citrus-cloud-04.eb0e2fc75cb6ddcb.webp",
+        "backgroundSrc": "/gradients/assets/citrus-cloud-04.b66cb95ec29132d8.webp",
+        "css": "url(\"/gradients/assets/citrus-cloud-04.b66cb95ec29132d8.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "candy-cloud",
+    "name": "Candy cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 3,
+    "fields": [
+      [
+        28,
+        104,
+        85,
+        65,
+        1
+      ],
+      [
+        105,
+        90,
+        56,
+        72,
+        2
+      ],
+      [
+        75,
+        0,
+        68,
+        65,
+        3
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "pink",
+      "purple",
+      "blue",
+      "lavender"
+    ],
+    "id": "FG-1142",
+    "stylesheet": "/gradients/integrations/candy-cloud.dda4a33a9031231d.css",
+    "variations": [
+      {
+        "id": "candy-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#e6edff",
+          "#fb26d3",
+          "#b77bff",
+          "#bce8ff"
+        ],
+        "tags": [
+          "pastel",
+          "pink",
+          "purple",
+          "blue",
+          "lavender"
+        ],
+        "src": "/gradients/assets/candy-cloud-01.4c2ac9c50a722055.svg",
+        "thumbnail": "/gradients/thumbnails/candy-cloud-01.30420762c00229f4.webp",
+        "backgroundSrc": "/gradients/assets/candy-cloud-01.f5a483d625e8049c.webp",
+        "css": "url(\"/gradients/assets/candy-cloud-01.f5a483d625e8049c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "candy-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#b77bff",
+          "#bce8ff",
+          "#fb26d3"
+        ],
+        "tags": [
+          "pastel",
+          "pink",
+          "purple",
+          "blue",
+          "lavender"
+        ],
+        "src": "/gradients/assets/candy-cloud-02.1a77fe819ac15c3d.svg",
+        "thumbnail": "/gradients/thumbnails/candy-cloud-02.865974b7d44f2382.webp",
+        "backgroundSrc": "/gradients/assets/candy-cloud-02.c5ff1f1e6cbfcb56.webp",
+        "css": "url(\"/gradients/assets/candy-cloud-02.c5ff1f1e6cbfcb56.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "candy-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#fb26d3",
+          "#b77bff",
+          "#bce8ff"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "pink",
+          "purple",
+          "blue",
+          "lavender"
+        ],
+        "src": "/gradients/assets/candy-cloud-03.699b61da9ccada6b.svg",
+        "thumbnail": "/gradients/thumbnails/candy-cloud-03.dbed9fb5f61b2702.webp",
+        "backgroundSrc": "/gradients/assets/candy-cloud-03.fe4bec749886aa59.webp",
+        "css": "url(\"/gradients/assets/candy-cloud-03.fe4bec749886aa59.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "candy-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#bce8ff",
+          "#fb26d3",
+          "#b77bff"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "pink",
+          "purple",
+          "blue",
+          "lavender"
+        ],
+        "src": "/gradients/assets/candy-cloud-04.237508bbd1f610cd.svg",
+        "thumbnail": "/gradients/thumbnails/candy-cloud-04.ab5839fde26aa41d.webp",
+        "backgroundSrc": "/gradients/assets/candy-cloud-04.1078b3e0c3a3d124.webp",
+        "css": "url(\"/gradients/assets/candy-cloud-04.1078b3e0c3a3d124.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "azure-cloud",
+    "name": "Azure cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 4,
+    "fields": [
+      [
+        0,
+        30,
+        68,
+        108,
+        1
+      ],
+      [
+        100,
+        72,
+        55,
+        110,
+        2
+      ],
+      [
+        70,
+        5,
+        40,
+        80,
+        3
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "blue",
+      "cyan"
+    ],
+    "id": "FG-1143",
+    "stylesheet": "/gradients/integrations/azure-cloud.0f0247fd4b5fd5f8.css",
+    "variations": [
+      {
+        "id": "azure-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#c7efff",
+          "#006bda",
+          "#00c7e4",
+          "#d8f9ff"
+        ],
+        "tags": [
+          "pastel",
+          "blue",
+          "cyan"
+        ],
+        "src": "/gradients/assets/azure-cloud-01.406b44620313fad9.svg",
+        "thumbnail": "/gradients/thumbnails/azure-cloud-01.ba586b379166170c.webp",
+        "backgroundSrc": "/gradients/assets/azure-cloud-01.e48f56e8bb2836bd.webp",
+        "css": "url(\"/gradients/assets/azure-cloud-01.e48f56e8bb2836bd.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "azure-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#00c7e4",
+          "#d8f9ff",
+          "#006bda"
+        ],
+        "tags": [
+          "pastel",
+          "blue",
+          "cyan"
+        ],
+        "src": "/gradients/assets/azure-cloud-02.dadcd45de4682d0f.svg",
+        "thumbnail": "/gradients/thumbnails/azure-cloud-02.033ddac56a6ed985.webp",
+        "backgroundSrc": "/gradients/assets/azure-cloud-02.eb370f20f27f3ea6.webp",
+        "css": "url(\"/gradients/assets/azure-cloud-02.eb370f20f27f3ea6.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "azure-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#006bda",
+          "#00c7e4",
+          "#d8f9ff"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "blue",
+          "cyan"
+        ],
+        "src": "/gradients/assets/azure-cloud-03.3738e807da53c5a4.svg",
+        "thumbnail": "/gradients/thumbnails/azure-cloud-03.9a9b4eea17a14b91.webp",
+        "backgroundSrc": "/gradients/assets/azure-cloud-03.de2b062b31a25e02.webp",
+        "css": "url(\"/gradients/assets/azure-cloud-03.de2b062b31a25e02.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "azure-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#d8f9ff",
+          "#006bda",
+          "#00c7e4"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "blue",
+          "cyan"
+        ],
+        "src": "/gradients/assets/azure-cloud-04.8bcfca1dcd59d555.svg",
+        "thumbnail": "/gradients/thumbnails/azure-cloud-04.5bd577a3e88edd7d.webp",
+        "backgroundSrc": "/gradients/assets/azure-cloud-04.fb1da7160b89b5e1.webp",
+        "css": "url(\"/gradients/assets/azure-cloud-04.fb1da7160b89b5e1.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "confetti-cloud",
+    "name": "Confetti cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 5,
+    "fields": [
+      [
+        20,
+        12,
+        30,
+        62,
+        1
+      ],
+      [
+        83,
+        55,
+        24,
+        44,
+        2
+      ],
+      [
+        40,
+        82,
+        44,
+        75,
+        3
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "pink",
+      "yellow",
+      "purple",
+      "orange"
+    ],
+    "id": "FG-1144",
+    "stylesheet": "/gradients/integrations/confetti-cloud.23a59287c4c5ffcb.css",
+    "variations": [
+      {
+        "id": "confetti-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#ffb5e8",
+          "#ffe450",
+          "#acacff",
+          "#ffb55d"
+        ],
+        "tags": [
+          "pastel",
+          "pink",
+          "yellow",
+          "purple",
+          "orange"
+        ],
+        "src": "/gradients/assets/confetti-cloud-01.fd0df42361bee821.svg",
+        "thumbnail": "/gradients/thumbnails/confetti-cloud-01.89e977b2a99fbb0b.webp",
+        "backgroundSrc": "/gradients/assets/confetti-cloud-01.2077cd6c90804c70.webp",
+        "css": "url(\"/gradients/assets/confetti-cloud-01.2077cd6c90804c70.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "confetti-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#acacff",
+          "#ffb55d",
+          "#ffe450"
+        ],
+        "tags": [
+          "pastel",
+          "pink",
+          "yellow",
+          "purple",
+          "orange"
+        ],
+        "src": "/gradients/assets/confetti-cloud-02.f1c09e3b9afd46d2.svg",
+        "thumbnail": "/gradients/thumbnails/confetti-cloud-02.b5461b62705f956b.webp",
+        "backgroundSrc": "/gradients/assets/confetti-cloud-02.590319662df5987c.webp",
+        "css": "url(\"/gradients/assets/confetti-cloud-02.590319662df5987c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "confetti-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#ffe450",
+          "#acacff",
+          "#ffb55d"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "pink",
+          "yellow",
+          "purple",
+          "orange"
+        ],
+        "src": "/gradients/assets/confetti-cloud-03.c90f7e8d2c82b4e3.svg",
+        "thumbnail": "/gradients/thumbnails/confetti-cloud-03.b4e2be840cca4124.webp",
+        "backgroundSrc": "/gradients/assets/confetti-cloud-03.ce722821760f77ee.webp",
+        "css": "url(\"/gradients/assets/confetti-cloud-03.ce722821760f77ee.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "confetti-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#ffb55d",
+          "#ffe450",
+          "#acacff"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "pink",
+          "yellow",
+          "purple",
+          "orange"
+        ],
+        "src": "/gradients/assets/confetti-cloud-04.1b2cf51810055dd6.svg",
+        "thumbnail": "/gradients/thumbnails/confetti-cloud-04.cb717e9eac3c3bbe.webp",
+        "backgroundSrc": "/gradients/assets/confetti-cloud-04.b6b9ae991bb7d1b0.webp",
+        "css": "url(\"/gradients/assets/confetti-cloud-04.b6b9ae991bb7d1b0.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "mango-cloud",
+    "name": "Mango cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 6,
+    "fields": [
+      [
+        50,
+        22,
+        45,
+        83,
+        1
+      ],
+      [
+        55,
+        82,
+        66,
+        56,
+        2
+      ],
+      [
+        100,
+        95,
+        45,
+        78,
+        3
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "orange",
+      "yellow",
+      "pink",
+      "blue",
+      "lavender"
+    ],
+    "id": "FG-1145",
+    "stylesheet": "/gradients/integrations/mango-cloud.ed8d2ab25989397d.css",
+    "variations": [
+      {
+        "id": "mango-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#d7edff",
+          "#ffb50a",
+          "#ff818c",
+          "#beb0ff"
+        ],
+        "tags": [
+          "pastel",
+          "orange",
+          "yellow",
+          "pink",
+          "blue",
+          "lavender"
+        ],
+        "src": "/gradients/assets/mango-cloud-01.4c5b722231a1b522.svg",
+        "thumbnail": "/gradients/thumbnails/mango-cloud-01.727c857f71ffc7d4.webp",
+        "backgroundSrc": "/gradients/assets/mango-cloud-01.546729f96100409f.webp",
+        "css": "url(\"/gradients/assets/mango-cloud-01.546729f96100409f.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "mango-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#ff818c",
+          "#beb0ff",
+          "#ffb50a"
+        ],
+        "tags": [
+          "pastel",
+          "orange",
+          "yellow",
+          "pink",
+          "blue",
+          "lavender"
+        ],
+        "src": "/gradients/assets/mango-cloud-02.457c165e852d0dc8.svg",
+        "thumbnail": "/gradients/thumbnails/mango-cloud-02.db40e416390b858d.webp",
+        "backgroundSrc": "/gradients/assets/mango-cloud-02.d308d2f1021f8dcb.webp",
+        "css": "url(\"/gradients/assets/mango-cloud-02.d308d2f1021f8dcb.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "mango-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#ffb50a",
+          "#ff818c",
+          "#beb0ff"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "orange",
+          "yellow",
+          "pink",
+          "blue",
+          "lavender"
+        ],
+        "src": "/gradients/assets/mango-cloud-03.456bd6e855b25a6d.svg",
+        "thumbnail": "/gradients/thumbnails/mango-cloud-03.c6d5fb199f5facd1.webp",
+        "backgroundSrc": "/gradients/assets/mango-cloud-03.0e0765c6d67790be.webp",
+        "css": "url(\"/gradients/assets/mango-cloud-03.0e0765c6d67790be.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "mango-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#beb0ff",
+          "#ffb50a",
+          "#ff818c"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "orange",
+          "yellow",
+          "pink",
+          "blue",
+          "lavender"
+        ],
+        "src": "/gradients/assets/mango-cloud-04.5e384755731ce293.svg",
+        "thumbnail": "/gradients/thumbnails/mango-cloud-04.bff2026b75e87b68.webp",
+        "backgroundSrc": "/gradients/assets/mango-cloud-04.0c906d02868f3125.webp",
+        "css": "url(\"/gradients/assets/mango-cloud-04.0c906d02868f3125.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "sorbet-cloud",
+    "name": "Sorbet cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 7,
+    "fields": [
+      [
+        58,
+        110,
+        76,
+        63,
+        1
+      ],
+      [
+        63,
+        30,
+        76,
+        56,
+        2
+      ],
+      [
+        2,
+        60,
+        65,
+        60,
+        3
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "orange",
+      "peach",
+      "pink",
+      "mint"
+    ],
+    "id": "FG-1146",
+    "stylesheet": "/gradients/integrations/sorbet-cloud.e48128ecce92d300.css",
+    "variations": [
+      {
+        "id": "sorbet-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#e2fbf7",
+          "#ff9b00",
+          "#ffc9d6",
+          "#fff0cf"
+        ],
+        "tags": [
+          "pastel",
+          "orange",
+          "peach",
+          "pink",
+          "mint"
+        ],
+        "src": "/gradients/assets/sorbet-cloud-01.489a606b5dc472b0.svg",
+        "thumbnail": "/gradients/thumbnails/sorbet-cloud-01.f3698932c843f92b.webp",
+        "backgroundSrc": "/gradients/assets/sorbet-cloud-01.543d10ecb0394c62.webp",
+        "css": "url(\"/gradients/assets/sorbet-cloud-01.543d10ecb0394c62.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "sorbet-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#ffc9d6",
+          "#fff0cf",
+          "#ff9b00"
+        ],
+        "tags": [
+          "pastel",
+          "orange",
+          "peach",
+          "pink",
+          "mint"
+        ],
+        "src": "/gradients/assets/sorbet-cloud-02.a73e5a9f1a69d158.svg",
+        "thumbnail": "/gradients/thumbnails/sorbet-cloud-02.eba9f4d0e5f931fc.webp",
+        "backgroundSrc": "/gradients/assets/sorbet-cloud-02.cdb9a7c806ca2530.webp",
+        "css": "url(\"/gradients/assets/sorbet-cloud-02.cdb9a7c806ca2530.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "sorbet-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#ff9b00",
+          "#ffc9d6",
+          "#fff0cf"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "orange",
+          "peach",
+          "pink",
+          "mint"
+        ],
+        "src": "/gradients/assets/sorbet-cloud-03.84a59212a72c6f7c.svg",
+        "thumbnail": "/gradients/thumbnails/sorbet-cloud-03.72cdec4162da3666.webp",
+        "backgroundSrc": "/gradients/assets/sorbet-cloud-03.9deab4012522ad6f.webp",
+        "css": "url(\"/gradients/assets/sorbet-cloud-03.9deab4012522ad6f.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "sorbet-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#fff0cf",
+          "#ff9b00",
+          "#ffc9d6"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "orange",
+          "peach",
+          "pink",
+          "mint"
+        ],
+        "src": "/gradients/assets/sorbet-cloud-04.79441f05a58e676b.svg",
+        "thumbnail": "/gradients/thumbnails/sorbet-cloud-04.759bc2f122add82b.webp",
+        "backgroundSrc": "/gradients/assets/sorbet-cloud-04.94dcbcc3f716d36a.webp",
+        "css": "url(\"/gradients/assets/sorbet-cloud-04.94dcbcc3f716d36a.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "iris-cloud",
+    "name": "Iris cloud",
+    "category": "colour-clouds",
+    "shape": "study",
+    "study": "colour-cloud",
+    "position": 8,
+    "fields": [
+      [
+        23,
+        55,
+        30,
+        83,
+        1
+      ],
+      [
+        49,
+        47,
+        21,
+        40,
+        2
+      ],
+      [
+        53,
+        104,
+        80,
+        55,
+        3
+      ],
+      [
+        78,
+        56,
+        30,
+        38,
+        1
+      ]
+    ],
+    "tags": [
+      "blur",
+      "mesh",
+      "soft",
+      "colourful",
+      "cloud",
+      "grain",
+      "purple",
+      "lavender",
+      "yellow",
+      "blue"
+    ],
+    "id": "FG-1147",
+    "stylesheet": "/gradients/integrations/iris-cloud.023053cf65132ff1.css",
+    "variations": [
+      {
+        "id": "iris-cloud-01",
+        "name": "Daylight",
+        "mode": "light",
+        "colors": [
+          "#f0e3ff",
+          "#a396ff",
+          "#ffcf42",
+          "#56c1fa"
+        ],
+        "tags": [
+          "pastel",
+          "purple",
+          "lavender",
+          "yellow",
+          "blue"
+        ],
+        "src": "/gradients/assets/iris-cloud-01.e08bba6b75724ab3.svg",
+        "thumbnail": "/gradients/thumbnails/iris-cloud-01.9659925ad4301521.webp",
+        "backgroundSrc": "/gradients/assets/iris-cloud-01.73ed3bdd98185b5d.webp",
+        "css": "url(\"/gradients/assets/iris-cloud-01.73ed3bdd98185b5d.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "iris-cloud-02",
+        "name": "Candy drift",
+        "mode": "light",
+        "colors": [
+          "#f5f1ff",
+          "#ffcf42",
+          "#56c1fa",
+          "#a396ff"
+        ],
+        "tags": [
+          "pastel",
+          "purple",
+          "lavender",
+          "yellow",
+          "blue"
+        ],
+        "src": "/gradients/assets/iris-cloud-02.4bc5018236d40385.svg",
+        "thumbnail": "/gradients/thumbnails/iris-cloud-02.ab563c6be74c53fd.webp",
+        "backgroundSrc": "/gradients/assets/iris-cloud-02.06c99f2b5c2ca87c.webp",
+        "css": "url(\"/gradients/assets/iris-cloud-02.06c99f2b5c2ca87c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "iris-cloud-03",
+        "name": "After dark",
+        "mode": "dark",
+        "colors": [
+          "#101326",
+          "#a396ff",
+          "#ffcf42",
+          "#56c1fa"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "purple",
+          "lavender",
+          "yellow",
+          "blue"
+        ],
+        "src": "/gradients/assets/iris-cloud-03.edb050e1850ffde1.svg",
+        "thumbnail": "/gradients/thumbnails/iris-cloud-03.dd6c858708c30126.webp",
+        "backgroundSrc": "/gradients/assets/iris-cloud-03.fed50e690efce08e.webp",
+        "css": "url(\"/gradients/assets/iris-cloud-03.fed50e690efce08e.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "iris-cloud-04",
+        "name": "Midnight drift",
+        "mode": "dark",
+        "colors": [
+          "#191025",
+          "#56c1fa",
+          "#a396ff",
+          "#ffcf42"
+        ],
+        "tags": [
+          "night",
+          "glow",
+          "purple",
+          "lavender",
+          "yellow",
+          "blue"
+        ],
+        "src": "/gradients/assets/iris-cloud-04.0e1d47b8a8bb26a0.svg",
+        "thumbnail": "/gradients/thumbnails/iris-cloud-04.de4c875a14ec4418.webp",
+        "backgroundSrc": "/gradients/assets/iris-cloud-04.17fdbd9b5b26198e.webp",
+        "css": "url(\"/gradients/assets/iris-cloud-04.17fdbd9b5b26198e.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "halo-canopy",
+    "name": "Halo canopy",
+    "category": "halo-horizons",
+    "shape": "study",
+    "study": "halo-horizon",
+    "position": 0,
+    "halo": {
+      "x": 800,
+      "y": -430,
+      "rx": 1250,
+      "ry": 970,
+      "angle": 0
+    },
+    "tags": [
+      "halo",
+      "horizon",
+      "arc",
+      "glow",
+      "soft",
+      "grain",
+      "spectral"
+    ],
+    "id": "FG-1148",
+    "stylesheet": "/gradients/integrations/halo-canopy.6604a9b4887181a7.css",
+    "variations": [
+      {
+        "id": "halo-canopy-01",
+        "name": "Violet coral",
+        "mode": "dark",
+        "colors": [
+          "#10051d",
+          "#b526ee",
+          "#d9e4d3",
+          "#ff657d"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "coral"
+        ],
+        "src": "/gradients/assets/halo-canopy-01.3dff92d9bced57a5.svg",
+        "thumbnail": "/gradients/thumbnails/halo-canopy-01.74008e22a863a23f.webp",
+        "backgroundSrc": "/gradients/assets/halo-canopy-01.f5e9f61a7cbf8f15.webp",
+        "css": "url(\"/gradients/assets/halo-canopy-01.f5e9f61a7cbf8f15.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-canopy-02",
+        "name": "Blue aurora",
+        "mode": "dark",
+        "colors": [
+          "#030d21",
+          "#226deb",
+          "#bfeef0",
+          "#31ceba"
+        ],
+        "tags": [
+          "blue",
+          "cyan",
+          "green"
+        ],
+        "src": "/gradients/assets/halo-canopy-02.a81e969eae38073c.svg",
+        "thumbnail": "/gradients/thumbnails/halo-canopy-02.7083723ad4536411.webp",
+        "backgroundSrc": "/gradients/assets/halo-canopy-02.e141674e9a0bc363.webp",
+        "css": "url(\"/gradients/assets/halo-canopy-02.e141674e9a0bc363.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-canopy-03",
+        "name": "Amber dusk",
+        "mode": "dark",
+        "colors": [
+          "#1c0712",
+          "#e94765",
+          "#ffe7b2",
+          "#ff9829"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink"
+        ],
+        "src": "/gradients/assets/halo-canopy-03.43eafa7b16996f13.svg",
+        "thumbnail": "/gradients/thumbnails/halo-canopy-03.0e61090c9adb13af.webp",
+        "backgroundSrc": "/gradients/assets/halo-canopy-03.a7c216d0486ea1b3.webp",
+        "css": "url(\"/gradients/assets/halo-canopy-03.a7c216d0486ea1b3.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-canopy-04",
+        "name": "Emerald halo",
+        "mode": "dark",
+        "colors": [
+          "#031a15",
+          "#109e72",
+          "#d9fac5",
+          "#a3dd3b"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "yellow"
+        ],
+        "src": "/gradients/assets/halo-canopy-04.cf1e89e76c6ab69d.svg",
+        "thumbnail": "/gradients/thumbnails/halo-canopy-04.9633e3f3c78973da.webp",
+        "backgroundSrc": "/gradients/assets/halo-canopy-04.ff40c0a753600728.webp",
+        "css": "url(\"/gradients/assets/halo-canopy-04.ff40c0a753600728.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-canopy-05",
+        "name": "Rose daylight",
+        "mode": "light",
+        "colors": [
+          "#f8edf7",
+          "#b5a0e5",
+          "#fff8da",
+          "#f88aaa"
+        ],
+        "tags": [
+          "pink",
+          "rose",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-canopy-05.53f26f553831c1e7.svg",
+        "thumbnail": "/gradients/thumbnails/halo-canopy-05.3418dc7c4a5ced76.webp",
+        "backgroundSrc": "/gradients/assets/halo-canopy-05.e81e4bb75ef4e08a.webp",
+        "css": "url(\"/gradients/assets/halo-canopy-05.e81e4bb75ef4e08a.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-canopy-06",
+        "name": "Ocean daylight",
+        "mode": "light",
+        "colors": [
+          "#eff6fd",
+          "#83bce8",
+          "#e7ffee",
+          "#8edbc9"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-canopy-06.5eaf4cdd9240064c.svg",
+        "thumbnail": "/gradients/thumbnails/halo-canopy-06.f261ff6eeefb0f9f.webp",
+        "backgroundSrc": "/gradients/assets/halo-canopy-06.1a69b12ed27476e8.webp",
+        "css": "url(\"/gradients/assets/halo-canopy-06.1a69b12ed27476e8.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "halo-vault",
+    "name": "Halo vault",
+    "category": "halo-horizons",
+    "shape": "study",
+    "study": "halo-horizon",
+    "position": 1,
+    "halo": {
+      "x": 800,
+      "y": -170,
+      "rx": 960,
+      "ry": 650,
+      "angle": 0
+    },
+    "tags": [
+      "halo",
+      "horizon",
+      "arc",
+      "glow",
+      "soft",
+      "grain",
+      "spectral"
+    ],
+    "id": "FG-1149",
+    "stylesheet": "/gradients/integrations/halo-vault.972951a7630afe05.css",
+    "variations": [
+      {
+        "id": "halo-vault-01",
+        "name": "Violet coral",
+        "mode": "dark",
+        "colors": [
+          "#10051d",
+          "#b526ee",
+          "#d9e4d3",
+          "#ff657d"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "coral"
+        ],
+        "src": "/gradients/assets/halo-vault-01.e7877b239197ef9a.svg",
+        "thumbnail": "/gradients/thumbnails/halo-vault-01.0718d05a503f8610.webp",
+        "backgroundSrc": "/gradients/assets/halo-vault-01.cd6a3964d9bcc6d0.webp",
+        "css": "url(\"/gradients/assets/halo-vault-01.cd6a3964d9bcc6d0.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-vault-02",
+        "name": "Blue aurora",
+        "mode": "dark",
+        "colors": [
+          "#030d21",
+          "#226deb",
+          "#bfeef0",
+          "#31ceba"
+        ],
+        "tags": [
+          "blue",
+          "cyan",
+          "green"
+        ],
+        "src": "/gradients/assets/halo-vault-02.076bb2577ec75fca.svg",
+        "thumbnail": "/gradients/thumbnails/halo-vault-02.5eb5686024b9e725.webp",
+        "backgroundSrc": "/gradients/assets/halo-vault-02.a6b112918d42a859.webp",
+        "css": "url(\"/gradients/assets/halo-vault-02.a6b112918d42a859.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-vault-03",
+        "name": "Amber dusk",
+        "mode": "dark",
+        "colors": [
+          "#1c0712",
+          "#e94765",
+          "#ffe7b2",
+          "#ff9829"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink"
+        ],
+        "src": "/gradients/assets/halo-vault-03.f986f8426c8416c6.svg",
+        "thumbnail": "/gradients/thumbnails/halo-vault-03.1eda1e3576697204.webp",
+        "backgroundSrc": "/gradients/assets/halo-vault-03.763cc9acd00ccb70.webp",
+        "css": "url(\"/gradients/assets/halo-vault-03.763cc9acd00ccb70.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-vault-04",
+        "name": "Emerald halo",
+        "mode": "dark",
+        "colors": [
+          "#031a15",
+          "#109e72",
+          "#d9fac5",
+          "#a3dd3b"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "yellow"
+        ],
+        "src": "/gradients/assets/halo-vault-04.d4129b477584c067.svg",
+        "thumbnail": "/gradients/thumbnails/halo-vault-04.df2f9502458542ed.webp",
+        "backgroundSrc": "/gradients/assets/halo-vault-04.370e96d94e2c7bcb.webp",
+        "css": "url(\"/gradients/assets/halo-vault-04.370e96d94e2c7bcb.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-vault-05",
+        "name": "Rose daylight",
+        "mode": "light",
+        "colors": [
+          "#f8edf7",
+          "#b5a0e5",
+          "#fff8da",
+          "#f88aaa"
+        ],
+        "tags": [
+          "pink",
+          "rose",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-vault-05.7a876472b9a57966.svg",
+        "thumbnail": "/gradients/thumbnails/halo-vault-05.941d833bb705c4a7.webp",
+        "backgroundSrc": "/gradients/assets/halo-vault-05.44bd25f01f4ad5a9.webp",
+        "css": "url(\"/gradients/assets/halo-vault-05.44bd25f01f4ad5a9.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-vault-06",
+        "name": "Ocean daylight",
+        "mode": "light",
+        "colors": [
+          "#eff6fd",
+          "#83bce8",
+          "#e7ffee",
+          "#8edbc9"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-vault-06.7027c11d29cf4efc.svg",
+        "thumbnail": "/gradients/thumbnails/halo-vault-06.a969f281b2e3ad09.webp",
+        "backgroundSrc": "/gradients/assets/halo-vault-06.908e1c2b3093b7d6.webp",
+        "css": "url(\"/gradients/assets/halo-vault-06.908e1c2b3093b7d6.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "halo-lean",
+    "name": "Halo lean",
+    "category": "halo-horizons",
+    "shape": "study",
+    "study": "halo-horizon",
+    "position": 2,
+    "halo": {
+      "x": 620,
+      "y": -340,
+      "rx": 1350,
+      "ry": 900,
+      "angle": -12
+    },
+    "tags": [
+      "halo",
+      "horizon",
+      "arc",
+      "glow",
+      "soft",
+      "grain",
+      "spectral"
+    ],
+    "id": "FG-1150",
+    "stylesheet": "/gradients/integrations/halo-lean.907710e6472f3282.css",
+    "variations": [
+      {
+        "id": "halo-lean-01",
+        "name": "Violet coral",
+        "mode": "dark",
+        "colors": [
+          "#10051d",
+          "#b526ee",
+          "#d9e4d3",
+          "#ff657d"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "coral"
+        ],
+        "src": "/gradients/assets/halo-lean-01.16359f3c67c3b2ab.svg",
+        "thumbnail": "/gradients/thumbnails/halo-lean-01.fe79d66b04b10017.webp",
+        "backgroundSrc": "/gradients/assets/halo-lean-01.a3c7aff52d307f9b.webp",
+        "css": "url(\"/gradients/assets/halo-lean-01.a3c7aff52d307f9b.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-lean-02",
+        "name": "Blue aurora",
+        "mode": "dark",
+        "colors": [
+          "#030d21",
+          "#226deb",
+          "#bfeef0",
+          "#31ceba"
+        ],
+        "tags": [
+          "blue",
+          "cyan",
+          "green"
+        ],
+        "src": "/gradients/assets/halo-lean-02.735685d0d96c13d4.svg",
+        "thumbnail": "/gradients/thumbnails/halo-lean-02.25f7f794c4898c87.webp",
+        "backgroundSrc": "/gradients/assets/halo-lean-02.6731ee24febce3ff.webp",
+        "css": "url(\"/gradients/assets/halo-lean-02.6731ee24febce3ff.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-lean-03",
+        "name": "Amber dusk",
+        "mode": "dark",
+        "colors": [
+          "#1c0712",
+          "#e94765",
+          "#ffe7b2",
+          "#ff9829"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink"
+        ],
+        "src": "/gradients/assets/halo-lean-03.aa3cdacad0731790.svg",
+        "thumbnail": "/gradients/thumbnails/halo-lean-03.f7cfbb7a113516b5.webp",
+        "backgroundSrc": "/gradients/assets/halo-lean-03.2b3916c9806434af.webp",
+        "css": "url(\"/gradients/assets/halo-lean-03.2b3916c9806434af.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-lean-04",
+        "name": "Emerald halo",
+        "mode": "dark",
+        "colors": [
+          "#031a15",
+          "#109e72",
+          "#d9fac5",
+          "#a3dd3b"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "yellow"
+        ],
+        "src": "/gradients/assets/halo-lean-04.a822cfb735fe7b07.svg",
+        "thumbnail": "/gradients/thumbnails/halo-lean-04.2c5a599700d7482b.webp",
+        "backgroundSrc": "/gradients/assets/halo-lean-04.c9638f24ab7fd080.webp",
+        "css": "url(\"/gradients/assets/halo-lean-04.c9638f24ab7fd080.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-lean-05",
+        "name": "Rose daylight",
+        "mode": "light",
+        "colors": [
+          "#f8edf7",
+          "#b5a0e5",
+          "#fff8da",
+          "#f88aaa"
+        ],
+        "tags": [
+          "pink",
+          "rose",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-lean-05.65f84badf4268816.svg",
+        "thumbnail": "/gradients/thumbnails/halo-lean-05.3da3376cfb50672e.webp",
+        "backgroundSrc": "/gradients/assets/halo-lean-05.cbc600828a097aa1.webp",
+        "css": "url(\"/gradients/assets/halo-lean-05.cbc600828a097aa1.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-lean-06",
+        "name": "Ocean daylight",
+        "mode": "light",
+        "colors": [
+          "#eff6fd",
+          "#83bce8",
+          "#e7ffee",
+          "#8edbc9"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-lean-06.5a0ddc9b5ab95e00.svg",
+        "thumbnail": "/gradients/thumbnails/halo-lean-06.cdb5684e73d3b638.webp",
+        "backgroundSrc": "/gradients/assets/halo-lean-06.048667ccca648892.webp",
+        "css": "url(\"/gradients/assets/halo-lean-06.048667ccca648892.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "halo-sweep",
+    "name": "Halo sweep",
+    "category": "halo-horizons",
+    "shape": "study",
+    "study": "halo-horizon",
+    "position": 3,
+    "halo": {
+      "x": 1090,
+      "y": -280,
+      "rx": 1420,
+      "ry": 890,
+      "angle": 14
+    },
+    "tags": [
+      "halo",
+      "horizon",
+      "arc",
+      "glow",
+      "soft",
+      "grain",
+      "spectral"
+    ],
+    "id": "FG-1151",
+    "stylesheet": "/gradients/integrations/halo-sweep.35f9736299f38b87.css",
+    "variations": [
+      {
+        "id": "halo-sweep-01",
+        "name": "Violet coral",
+        "mode": "dark",
+        "colors": [
+          "#10051d",
+          "#b526ee",
+          "#d9e4d3",
+          "#ff657d"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "coral"
+        ],
+        "src": "/gradients/assets/halo-sweep-01.c09271a908f97e16.svg",
+        "thumbnail": "/gradients/thumbnails/halo-sweep-01.b3b93d1d7ed03875.webp",
+        "backgroundSrc": "/gradients/assets/halo-sweep-01.55bfe6a016ea5120.webp",
+        "css": "url(\"/gradients/assets/halo-sweep-01.55bfe6a016ea5120.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-sweep-02",
+        "name": "Blue aurora",
+        "mode": "dark",
+        "colors": [
+          "#030d21",
+          "#226deb",
+          "#bfeef0",
+          "#31ceba"
+        ],
+        "tags": [
+          "blue",
+          "cyan",
+          "green"
+        ],
+        "src": "/gradients/assets/halo-sweep-02.b760ce7f58dae130.svg",
+        "thumbnail": "/gradients/thumbnails/halo-sweep-02.78f0cc483c85928a.webp",
+        "backgroundSrc": "/gradients/assets/halo-sweep-02.0c762fa5cebace36.webp",
+        "css": "url(\"/gradients/assets/halo-sweep-02.0c762fa5cebace36.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-sweep-03",
+        "name": "Amber dusk",
+        "mode": "dark",
+        "colors": [
+          "#1c0712",
+          "#e94765",
+          "#ffe7b2",
+          "#ff9829"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink"
+        ],
+        "src": "/gradients/assets/halo-sweep-03.11206c34cabe6695.svg",
+        "thumbnail": "/gradients/thumbnails/halo-sweep-03.6fc6c404c38dd437.webp",
+        "backgroundSrc": "/gradients/assets/halo-sweep-03.b63498fc6345e5e7.webp",
+        "css": "url(\"/gradients/assets/halo-sweep-03.b63498fc6345e5e7.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-sweep-04",
+        "name": "Emerald halo",
+        "mode": "dark",
+        "colors": [
+          "#031a15",
+          "#109e72",
+          "#d9fac5",
+          "#a3dd3b"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "yellow"
+        ],
+        "src": "/gradients/assets/halo-sweep-04.5c66439cc7523703.svg",
+        "thumbnail": "/gradients/thumbnails/halo-sweep-04.783d7ca96aaee72a.webp",
+        "backgroundSrc": "/gradients/assets/halo-sweep-04.b7381bdb9b854c2a.webp",
+        "css": "url(\"/gradients/assets/halo-sweep-04.b7381bdb9b854c2a.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-sweep-05",
+        "name": "Rose daylight",
+        "mode": "light",
+        "colors": [
+          "#f8edf7",
+          "#b5a0e5",
+          "#fff8da",
+          "#f88aaa"
+        ],
+        "tags": [
+          "pink",
+          "rose",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-sweep-05.9f2b1aaf601a6af0.svg",
+        "thumbnail": "/gradients/thumbnails/halo-sweep-05.06f61db11b7d0571.webp",
+        "backgroundSrc": "/gradients/assets/halo-sweep-05.4f909f0838e3d91e.webp",
+        "css": "url(\"/gradients/assets/halo-sweep-05.4f909f0838e3d91e.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-sweep-06",
+        "name": "Ocean daylight",
+        "mode": "light",
+        "colors": [
+          "#eff6fd",
+          "#83bce8",
+          "#e7ffee",
+          "#8edbc9"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-sweep-06.c3a492f62ca0ad45.svg",
+        "thumbnail": "/gradients/thumbnails/halo-sweep-06.989f8d9f4d3d68c2.webp",
+        "backgroundSrc": "/gradients/assets/halo-sweep-06.f8e75c2ecfd942d1.webp",
+        "css": "url(\"/gradients/assets/halo-sweep-06.f8e75c2ecfd942d1.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "halo-dawn",
+    "name": "Halo dawn",
+    "category": "halo-horizons",
+    "shape": "study",
+    "study": "halo-horizon",
+    "position": 4,
+    "halo": {
+      "x": 800,
+      "y": -680,
+      "rx": 1700,
+      "ry": 1350,
+      "angle": 0
+    },
+    "tags": [
+      "halo",
+      "horizon",
+      "arc",
+      "glow",
+      "soft",
+      "grain",
+      "spectral"
+    ],
+    "id": "FG-1152",
+    "stylesheet": "/gradients/integrations/halo-dawn.046cc1475bf16634.css",
+    "variations": [
+      {
+        "id": "halo-dawn-01",
+        "name": "Violet coral",
+        "mode": "dark",
+        "colors": [
+          "#10051d",
+          "#b526ee",
+          "#d9e4d3",
+          "#ff657d"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "coral"
+        ],
+        "src": "/gradients/assets/halo-dawn-01.93eb75afd048a6c4.svg",
+        "thumbnail": "/gradients/thumbnails/halo-dawn-01.d9089079bbbc2c14.webp",
+        "backgroundSrc": "/gradients/assets/halo-dawn-01.9272d5c93518a76d.webp",
+        "css": "url(\"/gradients/assets/halo-dawn-01.9272d5c93518a76d.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-dawn-02",
+        "name": "Blue aurora",
+        "mode": "dark",
+        "colors": [
+          "#030d21",
+          "#226deb",
+          "#bfeef0",
+          "#31ceba"
+        ],
+        "tags": [
+          "blue",
+          "cyan",
+          "green"
+        ],
+        "src": "/gradients/assets/halo-dawn-02.f72fee72662489fc.svg",
+        "thumbnail": "/gradients/thumbnails/halo-dawn-02.eb0c0c4b01076999.webp",
+        "backgroundSrc": "/gradients/assets/halo-dawn-02.f4707d512a6f1b1d.webp",
+        "css": "url(\"/gradients/assets/halo-dawn-02.f4707d512a6f1b1d.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-dawn-03",
+        "name": "Amber dusk",
+        "mode": "dark",
+        "colors": [
+          "#1c0712",
+          "#e94765",
+          "#ffe7b2",
+          "#ff9829"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink"
+        ],
+        "src": "/gradients/assets/halo-dawn-03.afd40762631c0431.svg",
+        "thumbnail": "/gradients/thumbnails/halo-dawn-03.36d6619c59b67586.webp",
+        "backgroundSrc": "/gradients/assets/halo-dawn-03.d0a188c3282edad8.webp",
+        "css": "url(\"/gradients/assets/halo-dawn-03.d0a188c3282edad8.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-dawn-04",
+        "name": "Emerald halo",
+        "mode": "dark",
+        "colors": [
+          "#031a15",
+          "#109e72",
+          "#d9fac5",
+          "#a3dd3b"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "yellow"
+        ],
+        "src": "/gradients/assets/halo-dawn-04.3200adbd027e720a.svg",
+        "thumbnail": "/gradients/thumbnails/halo-dawn-04.ac9d88b5ff2d09b1.webp",
+        "backgroundSrc": "/gradients/assets/halo-dawn-04.e59c4a031aa39401.webp",
+        "css": "url(\"/gradients/assets/halo-dawn-04.e59c4a031aa39401.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-dawn-05",
+        "name": "Rose daylight",
+        "mode": "light",
+        "colors": [
+          "#f8edf7",
+          "#b5a0e5",
+          "#fff8da",
+          "#f88aaa"
+        ],
+        "tags": [
+          "pink",
+          "rose",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-dawn-05.175eaf928ca4f6cc.svg",
+        "thumbnail": "/gradients/thumbnails/halo-dawn-05.544606d9ba861660.webp",
+        "backgroundSrc": "/gradients/assets/halo-dawn-05.83b5e37075ca2aff.webp",
+        "css": "url(\"/gradients/assets/halo-dawn-05.83b5e37075ca2aff.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-dawn-06",
+        "name": "Ocean daylight",
+        "mode": "light",
+        "colors": [
+          "#eff6fd",
+          "#83bce8",
+          "#e7ffee",
+          "#8edbc9"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-dawn-06.78eca6ac7f8f8182.svg",
+        "thumbnail": "/gradients/thumbnails/halo-dawn-06.a783445253d2218c.webp",
+        "backgroundSrc": "/gradients/assets/halo-dawn-06.b64c420332027a6f.webp",
+        "css": "url(\"/gradients/assets/halo-dawn-06.b64c420332027a6f.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "halo-crescent",
+    "name": "Halo crescent",
+    "category": "halo-horizons",
+    "shape": "study",
+    "study": "halo-horizon",
+    "position": 5,
+    "halo": {
+      "x": 330,
+      "y": -380,
+      "rx": 1250,
+      "ry": 1150,
+      "angle": -22
+    },
+    "tags": [
+      "halo",
+      "horizon",
+      "arc",
+      "glow",
+      "soft",
+      "grain",
+      "spectral"
+    ],
+    "id": "FG-1153",
+    "stylesheet": "/gradients/integrations/halo-crescent.1893f58d60a25e18.css",
+    "variations": [
+      {
+        "id": "halo-crescent-01",
+        "name": "Violet coral",
+        "mode": "dark",
+        "colors": [
+          "#10051d",
+          "#b526ee",
+          "#d9e4d3",
+          "#ff657d"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "coral"
+        ],
+        "src": "/gradients/assets/halo-crescent-01.d9c8018d8908ce3c.svg",
+        "thumbnail": "/gradients/thumbnails/halo-crescent-01.98482c40948a5110.webp",
+        "backgroundSrc": "/gradients/assets/halo-crescent-01.ee815a1cd41b830c.webp",
+        "css": "url(\"/gradients/assets/halo-crescent-01.ee815a1cd41b830c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-crescent-02",
+        "name": "Blue aurora",
+        "mode": "dark",
+        "colors": [
+          "#030d21",
+          "#226deb",
+          "#bfeef0",
+          "#31ceba"
+        ],
+        "tags": [
+          "blue",
+          "cyan",
+          "green"
+        ],
+        "src": "/gradients/assets/halo-crescent-02.345a813448a70139.svg",
+        "thumbnail": "/gradients/thumbnails/halo-crescent-02.e4b484305a2446e5.webp",
+        "backgroundSrc": "/gradients/assets/halo-crescent-02.8c6d3ea9d9df1fa5.webp",
+        "css": "url(\"/gradients/assets/halo-crescent-02.8c6d3ea9d9df1fa5.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-crescent-03",
+        "name": "Amber dusk",
+        "mode": "dark",
+        "colors": [
+          "#1c0712",
+          "#e94765",
+          "#ffe7b2",
+          "#ff9829"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink"
+        ],
+        "src": "/gradients/assets/halo-crescent-03.92ce890fed3ad93a.svg",
+        "thumbnail": "/gradients/thumbnails/halo-crescent-03.f6baf4c296d4f0c3.webp",
+        "backgroundSrc": "/gradients/assets/halo-crescent-03.b0699aff58b004a7.webp",
+        "css": "url(\"/gradients/assets/halo-crescent-03.b0699aff58b004a7.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-crescent-04",
+        "name": "Emerald halo",
+        "mode": "dark",
+        "colors": [
+          "#031a15",
+          "#109e72",
+          "#d9fac5",
+          "#a3dd3b"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "yellow"
+        ],
+        "src": "/gradients/assets/halo-crescent-04.6621ca31b0257601.svg",
+        "thumbnail": "/gradients/thumbnails/halo-crescent-04.cd20366435ab4197.webp",
+        "backgroundSrc": "/gradients/assets/halo-crescent-04.8d28ac80fe0f831a.webp",
+        "css": "url(\"/gradients/assets/halo-crescent-04.8d28ac80fe0f831a.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-crescent-05",
+        "name": "Rose daylight",
+        "mode": "light",
+        "colors": [
+          "#f8edf7",
+          "#b5a0e5",
+          "#fff8da",
+          "#f88aaa"
+        ],
+        "tags": [
+          "pink",
+          "rose",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-crescent-05.0845a6b3f3e3a772.svg",
+        "thumbnail": "/gradients/thumbnails/halo-crescent-05.ddf94a8e2172611d.webp",
+        "backgroundSrc": "/gradients/assets/halo-crescent-05.f0f6a4da319132da.webp",
+        "css": "url(\"/gradients/assets/halo-crescent-05.f0f6a4da319132da.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-crescent-06",
+        "name": "Ocean daylight",
+        "mode": "light",
+        "colors": [
+          "#eff6fd",
+          "#83bce8",
+          "#e7ffee",
+          "#8edbc9"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-crescent-06.30de262eafc322b5.svg",
+        "thumbnail": "/gradients/thumbnails/halo-crescent-06.8f3814df08eb12bc.webp",
+        "backgroundSrc": "/gradients/assets/halo-crescent-06.f9e502d4e05d6f42.webp",
+        "css": "url(\"/gradients/assets/halo-crescent-06.f9e502d4e05d6f42.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "halo-archway",
+    "name": "Halo archway",
+    "category": "halo-horizons",
+    "shape": "study",
+    "study": "halo-horizon",
+    "position": 6,
+    "halo": {
+      "x": 1250,
+      "y": -420,
+      "rx": 1220,
+      "ry": 1160,
+      "angle": 22
+    },
+    "tags": [
+      "halo",
+      "horizon",
+      "arc",
+      "glow",
+      "soft",
+      "grain",
+      "spectral"
+    ],
+    "id": "FG-1154",
+    "stylesheet": "/gradients/integrations/halo-archway.05438a305bd4384f.css",
+    "variations": [
+      {
+        "id": "halo-archway-01",
+        "name": "Violet coral",
+        "mode": "dark",
+        "colors": [
+          "#10051d",
+          "#b526ee",
+          "#d9e4d3",
+          "#ff657d"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "coral"
+        ],
+        "src": "/gradients/assets/halo-archway-01.c7444b2f876ce6c1.svg",
+        "thumbnail": "/gradients/thumbnails/halo-archway-01.e4dfa2ef5852dde6.webp",
+        "backgroundSrc": "/gradients/assets/halo-archway-01.1b4cb05330e23d85.webp",
+        "css": "url(\"/gradients/assets/halo-archway-01.1b4cb05330e23d85.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-archway-02",
+        "name": "Blue aurora",
+        "mode": "dark",
+        "colors": [
+          "#030d21",
+          "#226deb",
+          "#bfeef0",
+          "#31ceba"
+        ],
+        "tags": [
+          "blue",
+          "cyan",
+          "green"
+        ],
+        "src": "/gradients/assets/halo-archway-02.27136ab3ae99ae35.svg",
+        "thumbnail": "/gradients/thumbnails/halo-archway-02.8b02281da277151b.webp",
+        "backgroundSrc": "/gradients/assets/halo-archway-02.e85f1812e894db00.webp",
+        "css": "url(\"/gradients/assets/halo-archway-02.e85f1812e894db00.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-archway-03",
+        "name": "Amber dusk",
+        "mode": "dark",
+        "colors": [
+          "#1c0712",
+          "#e94765",
+          "#ffe7b2",
+          "#ff9829"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink"
+        ],
+        "src": "/gradients/assets/halo-archway-03.20bb11d4152fb4a6.svg",
+        "thumbnail": "/gradients/thumbnails/halo-archway-03.9a115f3d3be66ff0.webp",
+        "backgroundSrc": "/gradients/assets/halo-archway-03.5996c094e228af66.webp",
+        "css": "url(\"/gradients/assets/halo-archway-03.5996c094e228af66.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-archway-04",
+        "name": "Emerald halo",
+        "mode": "dark",
+        "colors": [
+          "#031a15",
+          "#109e72",
+          "#d9fac5",
+          "#a3dd3b"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "yellow"
+        ],
+        "src": "/gradients/assets/halo-archway-04.d10dd27cea888d86.svg",
+        "thumbnail": "/gradients/thumbnails/halo-archway-04.297d1ce579fd7fb1.webp",
+        "backgroundSrc": "/gradients/assets/halo-archway-04.e73de41a7b327f20.webp",
+        "css": "url(\"/gradients/assets/halo-archway-04.e73de41a7b327f20.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-archway-05",
+        "name": "Rose daylight",
+        "mode": "light",
+        "colors": [
+          "#f8edf7",
+          "#b5a0e5",
+          "#fff8da",
+          "#f88aaa"
+        ],
+        "tags": [
+          "pink",
+          "rose",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-archway-05.3869562ee6932fa9.svg",
+        "thumbnail": "/gradients/thumbnails/halo-archway-05.f8e39f35b9c6034e.webp",
+        "backgroundSrc": "/gradients/assets/halo-archway-05.88ec56e130a56575.webp",
+        "css": "url(\"/gradients/assets/halo-archway-05.88ec56e130a56575.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-archway-06",
+        "name": "Ocean daylight",
+        "mode": "light",
+        "colors": [
+          "#eff6fd",
+          "#83bce8",
+          "#e7ffee",
+          "#8edbc9"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-archway-06.6adb9e117e290233.svg",
+        "thumbnail": "/gradients/thumbnails/halo-archway-06.0d21efe2faba7148.webp",
+        "backgroundSrc": "/gradients/assets/halo-archway-06.3cd82d6ef4608a40.webp",
+        "css": "url(\"/gradients/assets/halo-archway-06.3cd82d6ef4608a40.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "halo-aperture",
+    "name": "Halo aperture",
+    "category": "halo-horizons",
+    "shape": "study",
+    "study": "halo-horizon",
+    "position": 7,
+    "halo": {
+      "x": 800,
+      "y": -120,
+      "rx": 1470,
+      "ry": 470,
+      "angle": 0
+    },
+    "tags": [
+      "halo",
+      "horizon",
+      "arc",
+      "glow",
+      "soft",
+      "grain",
+      "spectral"
+    ],
+    "id": "FG-1155",
+    "stylesheet": "/gradients/integrations/halo-aperture.121ff5af7eebaee8.css",
+    "variations": [
+      {
+        "id": "halo-aperture-01",
+        "name": "Violet coral",
+        "mode": "dark",
+        "colors": [
+          "#10051d",
+          "#b526ee",
+          "#d9e4d3",
+          "#ff657d"
+        ],
+        "tags": [
+          "purple",
+          "pink",
+          "coral"
+        ],
+        "src": "/gradients/assets/halo-aperture-01.22cb80046938f488.svg",
+        "thumbnail": "/gradients/thumbnails/halo-aperture-01.531cc860c49f66c3.webp",
+        "backgroundSrc": "/gradients/assets/halo-aperture-01.6fa339dfa0d85c59.webp",
+        "css": "url(\"/gradients/assets/halo-aperture-01.6fa339dfa0d85c59.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-aperture-02",
+        "name": "Blue aurora",
+        "mode": "dark",
+        "colors": [
+          "#030d21",
+          "#226deb",
+          "#bfeef0",
+          "#31ceba"
+        ],
+        "tags": [
+          "blue",
+          "cyan",
+          "green"
+        ],
+        "src": "/gradients/assets/halo-aperture-02.cff41c1fa9ee5f96.svg",
+        "thumbnail": "/gradients/thumbnails/halo-aperture-02.1b52177fd44b1b03.webp",
+        "backgroundSrc": "/gradients/assets/halo-aperture-02.e489e3701f5f34d8.webp",
+        "css": "url(\"/gradients/assets/halo-aperture-02.e489e3701f5f34d8.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-aperture-03",
+        "name": "Amber dusk",
+        "mode": "dark",
+        "colors": [
+          "#1c0712",
+          "#e94765",
+          "#ffe7b2",
+          "#ff9829"
+        ],
+        "tags": [
+          "orange",
+          "yellow",
+          "pink"
+        ],
+        "src": "/gradients/assets/halo-aperture-03.e20c66baf5efeae2.svg",
+        "thumbnail": "/gradients/thumbnails/halo-aperture-03.2a1076b1c99d13bf.webp",
+        "backgroundSrc": "/gradients/assets/halo-aperture-03.acd178a4537353d5.webp",
+        "css": "url(\"/gradients/assets/halo-aperture-03.acd178a4537353d5.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-aperture-04",
+        "name": "Emerald halo",
+        "mode": "dark",
+        "colors": [
+          "#031a15",
+          "#109e72",
+          "#d9fac5",
+          "#a3dd3b"
+        ],
+        "tags": [
+          "green",
+          "mint",
+          "yellow"
+        ],
+        "src": "/gradients/assets/halo-aperture-04.0f30fa40efe472e2.svg",
+        "thumbnail": "/gradients/thumbnails/halo-aperture-04.8ae9bbd6576c3ee0.webp",
+        "backgroundSrc": "/gradients/assets/halo-aperture-04.b774abd75e35f458.webp",
+        "css": "url(\"/gradients/assets/halo-aperture-04.b774abd75e35f458.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-aperture-05",
+        "name": "Rose daylight",
+        "mode": "light",
+        "colors": [
+          "#f8edf7",
+          "#b5a0e5",
+          "#fff8da",
+          "#f88aaa"
+        ],
+        "tags": [
+          "pink",
+          "rose",
+          "lavender",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-aperture-05.7192df5ada550069.svg",
+        "thumbnail": "/gradients/thumbnails/halo-aperture-05.0ef584f5c9bd6d99.webp",
+        "backgroundSrc": "/gradients/assets/halo-aperture-05.e6836d8fa833eec1.webp",
+        "css": "url(\"/gradients/assets/halo-aperture-05.e6836d8fa833eec1.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "halo-aperture-06",
+        "name": "Ocean daylight",
+        "mode": "light",
+        "colors": [
+          "#eff6fd",
+          "#83bce8",
+          "#e7ffee",
+          "#8edbc9"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "pastel"
+        ],
+        "src": "/gradients/assets/halo-aperture-06.eb38736e18fecd3b.svg",
+        "thumbnail": "/gradients/thumbnails/halo-aperture-06.92e764b5cc9ecf92.webp",
+        "backgroundSrc": "/gradients/assets/halo-aperture-06.5fd020dbb40b040c.webp",
+        "css": "url(\"/gradients/assets/halo-aperture-06.5fd020dbb40b040c.webp\")",
+        "cssKind": "asset"
+      }
+    ]
   }
 ]

@@ -1,3 +1,5 @@
-export function pageSeo({site,path,production,noindex=false}:{site?:URL;path:string;production:boolean;noindex?:boolean}) {
-  return {canonical:site ? new URL(path,site).href : undefined,blockIndex:!production || !site || noindex};
+export function pageSeo({site,path,production,noindex=false,preview=false}:{site?:URL;path:string;production:boolean;noindex?:boolean;preview?:boolean}) {
+  const url=site ? new URL(path,site) : undefined;
+  if(url) { url.search=''; url.hash=''; }
+  return {canonical:url?.href,blockIndex:!production || !site || noindex || preview};
 }

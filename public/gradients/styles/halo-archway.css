@@ -1,0 +1,16 @@
+/* FreeeGradients: Halo archway only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-halo-archway-01: url("../assets/halo-archway-01.1b4cb05330e23d85.webp");
+  --fg-halo-archway-02: url("../assets/halo-archway-02.e85f1812e894db00.webp");
+  --fg-halo-archway-03: url("../assets/halo-archway-03.5996c094e228af66.webp");
+  --fg-halo-archway-04: url("../assets/halo-archway-04.e73de41a7b327f20.webp");
+  --fg-halo-archway-05: url("../assets/halo-archway-05.88ec56e130a56575.webp");
+  --fg-halo-archway-06: url("../assets/halo-archway-06.3cd82d6ef4608a40.webp");
+}
+.fg-halo-archway-01 { background-color: #10051d; background-image: var(--fg-halo-archway-01); }
+.fg-halo-archway-02 { background-color: #030d21; background-image: var(--fg-halo-archway-02); }
+.fg-halo-archway-03 { background-color: #1c0712; background-image: var(--fg-halo-archway-03); }
+.fg-halo-archway-04 { background-color: #031a15; background-image: var(--fg-halo-archway-04); }
+.fg-halo-archway-05 { background-color: #f8edf7; background-image: var(--fg-halo-archway-05); }
+.fg-halo-archway-06 { background-color: #eff6fd; background-image: var(--fg-halo-archway-06); }

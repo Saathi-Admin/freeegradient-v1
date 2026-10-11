@@ -15,11 +15,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "verify": "node scripts/verify-library.mjs && node scripts/verify-seo.mjs",
+    "verify:seo-build": "node scripts/verify-seo-build.mjs",
     "review": "node scripts/review-templates.mjs"
   },
   "dependencies": {
     "@fontsource-variable/host-grotesk": "5.3.0",
-    "@fontsource/instrument-serif": "5.3.0",
     "@lucide/astro": "1.52.0",
     "astro": "7.3.5",
     "sharp": "0.35.5"

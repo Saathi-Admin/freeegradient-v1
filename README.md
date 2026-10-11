@@ -14,7 +14,7 @@ npm run build
 node scripts/verify-library.mjs
 ```
 
-`npm run assets` regenerates catalogue data and artwork after recipe changes. Sharp is a direct dependency for WebP generation. Builds are static and currently noindex. No permanent domain or hosting account has been configured.
+`npm run assets` regenerates catalogue data and artwork after recipe changes. Sharp is a direct dependency for WebP generation. Builds are static. The permanent production domain is https://freeegradients.com. Local development and Vercel preview builds stay noindex.
 
 ## User integration
 
@@ -68,7 +68,7 @@ Official hosting references: [Cloudflare Pages limits](https://developers.cloudf
 
 ## SEO launch configuration
 
-Set `PUBLIC_SITE_URL` to the permanent HTTPS origin in the production build environment, then build. Development and unconfigured builds remain noindex. Production builds with this origin emit canonical URLs, Open Graph metadata, WebPage structured data, an indexable robots.txt and a sitemap. Each template has one canonical variation page; sibling variations canonicalize to it. Light/dark filter pages and playground are not indexed; all-mode paginated listings remain crawlable. No final domain, Search Console verification or public deployment has been configured.
+Set `PUBLIC_SITE_URL` to the permanent HTTPS origin in the production build environment, then build. The default origin is `https://freeegradients.com`. Development and Vercel preview builds remain noindex; `PUBLIC_NOINDEX=true` also blocks indexing for staging builds. Production builds with this origin emit canonical URLs, Open Graph metadata, WebPage structured data, an indexable robots.txt and a sitemap. Each template has one canonical variation page; sibling variations canonicalize to it. Light/dark filter pages and playground are not indexed; all-mode paginated listings remain crawlable. Connect `freeegradients.com` (and redirect www to the canonical apex domain) in Vercel before publishing. Search Console ownership verification and sitemap submission require the domain owner's account. Submit `https://freeegradients.com/sitemap.xml` after deployment. Ranking and Google sitelinks are determined by Google and cannot be guaranteed.
 
 Three guides live at `/guides/`, linked from the footer and template detail pages. The homepage remains curated. Template detail pages include copyable palette hex values and related designs.
 

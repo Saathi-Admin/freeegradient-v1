@@ -17,11 +17,19 @@ const featuredCollections = collections.slice(0, 7);
 const gradientTotal = new Set(gradients.flatMap(template => template.variations.map(variation => variation.id))).size;
 const gradientCount = gradientTotal.toLocaleString('en-US');
 const gradientMilestone = gradientTotal >= 1000 ? `${Math.floor(gradientTotal / 1000) * 1000}+` : gradientCount;
+const heroBackground = 'url("/gradients/hero-emerald.svg")';
 const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline','orbit','bloom','nectar','halo','aurora','ember','analogue','haze','film','ripple','drift','flux','horizon','dawnlight','atmosphere','afterglow','uplift','nightfall'].includes(g.slug));
+const allGradientCards = collections.slice(0, 12).map((collection, index) => {
+  const gradient = gradients.find(template => template.category === collection.id)!;
+  const mode = index % 2 === 0 ? 'dark' : 'light';
+  const variation = gradient.variations.find(item => item.mode === mode)!;
+  return { gradient, variation };
+});
+const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCards.map(card => card.gradient)].map(template => [template.slug, template])).values()];
 ---
 <BaseLayout title={`${gradientCount} Free CSS Gradients for Personal & Commercial Use | FreeeGradients`} description={`Explore ${gradientCount} free gradient backgrounds for personal and commercial use. Copy CSS or download SVG, PNG and JPEG. No sign-up. No download limits.`}>
   <Header />
-  <main id="main-content">
+  <main id="main-content" class="homepage-main" style={`--hero-gradient: ${heroBackground}`}>
     <section class="hero container" id="gradients" aria-labelledby="hero-title">
       <div class="hero-intro">
       <div class="hero-copy">
@@ -30,7 +38,7 @@ const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline',
             {['.css', '.svg', '.png', '.jpeg'].map((format, index) => <span class="hero-format-item" style={`--format-gradient:var(--gradient-format-${index + 1})`}>{format}</span>)}
           </div>
         </div>
-        <h1 id="hero-title"><span class="hero-heading-neutral"><span class="text-serif-italic">{gradientMilestone}</span> gradients <span class="text-serif-italic">free</span><span class="hero-for-desktop"> for</span></span><br /><span class="hero-heading-neutral"><span class="hero-for-mobile">for </span>personal and commercial use.</span></h1>
+        <h1 id="hero-title"><span class="hero-heading-neutral">{gradientMilestone} gradients <span class="text-serif-italic">free</span><span class="hero-for-desktop"> for</span></span><br /><span class="hero-heading-neutral"><span class="hero-for-mobile">for </span><span class="text-serif-italic">personal</span> and <span class="hero-commercial"><span class="text-serif-italic">commercial</span> use.</span></span></h1>
         <p class="hero-description text-body-md">Free gradient backgrounds for personal and commercial use. Copy CSS or download SVG, PNG and JPEG. No sign-up. No download limits.</p>
       </div>
       </div>
@@ -39,6 +47,13 @@ const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline',
         return <CollectionCard id={collection.id} title={collection.title} preview={collection.preview} variations={templates.reduce((count, template) => count + template.variations.length, 0)} />;
       })}</div>
       <div class="section-link"><a class="btn btn-secondary btn-md" href="/collections/">Explore all collections <ArrowUpRight aria-hidden="true" /></a></div>
+    </section>
+    <section class="section container" id="all-gradients" aria-labelledby="all-gradients-title">
+      <div class="section-heading"><h2 id="all-gradients-title">All gradients</h2><p class="text-body-md">A little of every style. Find the colours for your next idea.</p></div>
+      <div class="grid all-gradient-grid">
+        {allGradientCards.map(({ gradient, variation }, order) => <GradientCard gradient={gradient} variationId={variation.id} order={order} />)}
+      </div>
+      <div class="section-link"><a class="btn btn-secondary btn-md" href="/gradients/">Explore all gradients <ArrowUpRight aria-hidden="true" /></a></div>
     </section>
     <div id="collections" class="container">
       {featuredCollections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
@@ -53,18 +68,44 @@ const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline',
     <Faq />
   </main>
   <Footer />
-  <GradientPreview templates={featuredGradients} />
+  <GradientPreview templates={homePreviewTemplates} />
   <script>
     import '../scripts/library';
   </script>
 </BaseLayout>
 
 <style>
-  .hero { --hero-copy-width: 1120px; }
+  .homepage-main { position: relative; isolation: isolate; }
+  .homepage-main::before { content: ''; position: absolute; inset: 0 0 auto; width: 100%; aspect-ratio: 16 / 9; z-index: -1; pointer-events: none; background-image: var(--hero-gradient); background-size: 100% 100%; background-position: center top; background-repeat: no-repeat; }
+  .hero {
+    --hero-copy-width: 1120px;
+    --gradient-hero-heading: linear-gradient(135deg, #fffde9 0%, #e6ffe8 25%, #ffffff 50%, #d9fac5 75%, #fffde9 100%);
+    --chip-glass-bg: linear-gradient(135deg, #03291fe6, #092f29d9);
+    --chip-glass-border: #d9fac540;
+    --chip-glass-shadow: inset 0 1px 0 #e6ffe826, 0 6px 20px #001b1833;
+    --gradient-format-1: linear-gradient(135deg, #d9fac5, #8ee8ba);
+    --gradient-format-2: linear-gradient(135deg, #d7f2ff, #9dcfff);
+    --gradient-format-3: linear-gradient(135deg, #ffe2cc, #ffb9b0);
+    --gradient-format-4: linear-gradient(135deg, #efe3ff, #cbbaff);
+  }
+  .hero .hero-format-item { color: #10251e; }
+  #hero-title { font-family: var(--font-soul); font-weight: 400; letter-spacing: -0.05556em; }
+  .hero .hero-heading-neutral { filter: drop-shadow(0 2px 8px #001b1833); }
   .hero-for-mobile { display: none; }
+  @media (min-width: 640px) {
+    #hero-title { letter-spacing: -3.2px; }
+  }
+  @media (min-width: 480px) and (max-width: 799px) {
+    .all-gradient-grid :global(.gradient-card:nth-child(n + 9)) { display: none; }
+  }
+  @media (max-width: 479px) {
+    .all-gradient-grid :global(.gradient-card:nth-child(n + 5)) { display: none; }
+  }
   @media (max-width: 639px) {
+    .homepage-main::before { aspect-ratio: auto; height: max(560px, var(--hero-intro-viewport-share)); background-image: url('/gradients/hero-emerald-mobile.svg'); }
     .hero-for-desktop { display: none; }
     .hero-for-mobile { display: inline; }
+    .hero-commercial { display: block; white-space: nowrap; }
   }
 </style>
 

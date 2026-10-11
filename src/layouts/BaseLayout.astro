@@ -1,7 +1,5 @@
 ---
 import '@fontsource-variable/host-grotesk/wght.css';
-import '@fontsource/instrument-serif/latin-400.css';
-import '@fontsource/instrument-serif/latin-400-italic.css';
 import '../styles/global.css';
 import BackToTop from '../components/BackToTop.astro';
 import { pageSeo } from '../data/seo';
@@ -12,11 +10,19 @@ interface Props {
   noindex?: boolean;
   canonicalPath?: string;
   image?: string;
+  pageType?: 'WebPage' | 'CollectionPage' | 'Article';
+  items?: {name: string; path: string}[];
 }
 const { title, description = 'Free gradient templates and colour variations.', noindex = false, canonicalPath = Astro.url.pathname, image = '/social/freeegradients.png' } = Astro.props;
-const {canonical,blockIndex} = pageSeo({site:Astro.site,path:canonicalPath,production:import.meta.env.PROD,noindex});
+const { pageType = 'WebPage', items = [] } = Astro.props;
+const {canonical,blockIndex} = pageSeo({site:Astro.site,path:canonicalPath,production:import.meta.env.PROD,noindex,preview:import.meta.env.SEO_PREVIEW});
 const socialImage = image && Astro.site ? new URL(image, Astro.site).href : undefined;
-const schema = canonical && !noindex ? {'@context':'https://schema.org','@type':'WebPage',name:title,description,url:canonical,isPartOf:{'@type':'WebSite',name:'FreeeGradients',url:Astro.site?.href}} : undefined;
+const siteId = `${Astro.site?.href}#website`;
+const schema = canonical && !blockIndex ? {'@context':'https://schema.org','@graph':[
+  {'@type':'WebSite','@id':siteId,name:'FreeeGradients',alternateName:'Freee Gradients',url:Astro.site?.href,inLanguage:'en'},
+  {'@type':pageType,'@id':`${canonical}#page`,name:title,description,url:canonical,inLanguage:'en',isPartOf:{'@id':siteId},primaryImageOfPage:{'@type':'ImageObject',url:socialImage},...(pageType === 'Article' ? {headline:title,author:{'@type':'Organization',name:'FreeeGradients',url:Astro.site?.href}} : {}),...(items.length ? {mainEntity:{'@type':'ItemList',itemListElement:items.map((item,index)=>({'@type':'ListItem',position:index+1,name:item.name,url:new URL(item.path,Astro.site!).href}))}} : {})},
+  ...(canonicalPath === '/' ? [{'@type':'SiteNavigationElement',name:['Gradients','Collections','Gradient guides'],url:['gradients/','collections/','guides/'].map(path=>new URL(path,Astro.site!).href)}] : [])
+]} : undefined;
 ---
 <!doctype html>
 <html lang="en" data-theme="dark">
@@ -31,7 +37,7 @@ const schema = canonical && !noindex ? {'@context':'https://schema.org','@type':
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <meta name="description" content={description} />
-    {blockIndex && <meta name="robots" content="noindex, follow" />}
+    <meta name="robots" content={blockIndex ? 'noindex, follow' : 'index, follow, max-image-preview:large'} />
     {canonical && <link rel="canonical" href={canonical} />}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="FreeeGradients" />
@@ -39,7 +45,11 @@ const schema = canonical && !noindex ? {'@context':'https://schema.org','@type':
     <meta property="og:description" content={description} />
     {canonical && <meta property="og:url" content={canonical} />}
     {socialImage && <meta property="og:image" content={socialImage} />}
+    {socialImage && <meta property="og:image:alt" content={title} />}
     <meta name="twitter:card" content={socialImage ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {socialImage && <meta name="twitter:image" content={socialImage} />}
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema).replaceAll('<','\\u003c')} />}
     <title>{title}</title>
   </head>

@@ -20,4 +20,6 @@ export const collections = [
   { id: 'liquid', preview: '/gradients/reeded-lustre-01.svg', title: 'Liquid flow', description: 'Rippled surfaces, sculpted contours and light that flows.' },
   { id: 'iridescent', preview: '/gradients/aurora-fold-01.svg', title: 'Iridescent silk', description: 'Pearlescent folds, luminous ribbons and sculpted holographic colour.' },
   { id: 'floral', preview: '/gradients/petal-haze-01.svg', title: 'Floral blur', description: 'Soft petal-shaped colour fields, botanical palettes and airy blurred transitions.' },
+  { id: 'colour-clouds', preview: '/gradients/orchid-cloud-01.svg', title: 'Colour clouds', description: 'Bright colour clouds, soft blurred folds and a touch of grain. Playful backgrounds for light and dark designs.' },
+  { id: 'halo-horizons', preview: '/gradients/halo-canopy-01.svg', title: 'Halo horizons', description: 'Curved colour halos, luminous edges and soft grain. Light from above, fading into a calm horizon.' },
 ] as const;

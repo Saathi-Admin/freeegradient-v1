@@ -1,5 +1,7 @@
 import { premiumComposition } from './premium-recipes.mjs';
 import { floralComposition } from './floral-recipes.mjs';
+import { colourCloudComposition } from './colour-cloud-recipes.mjs';
+import { haloHorizonComposition } from './halo-horizon-recipes.mjs';
 // Hand-composed studies inspired by supplied visual references. Artwork has no text or overlays.
 const studies = [
  ['ion-ribbon','Ion ribbon','ribbon','#020518','#0755ed','#17d8dd','#c88eea','dark',['blue','cyan','glow','ribbon']],
@@ -46,6 +48,8 @@ export const referenceRecipes=studies.map(([slug,name,study,base,one,two,three,m
 export function referenceComposition(recipe,palette){
  if(recipe.study==='premium') return premiumComposition(recipe,palette);
  if(recipe.study==='floral') return floralComposition(recipe,palette);
+ if(recipe.study==='colour-cloud') return colourCloudComposition(recipe,palette);
+ if(recipe.study==='halo-horizon') return haloHorizonComposition(recipe,palette);
  const [base,a,b,c]=palette.colors;
  const defs=[],layers=[];
  const alpha=(hex,n)=>hex+Math.round(n*255).toString(16).padStart(2,'0');

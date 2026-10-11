@@ -1,0 +1,12 @@
+/* FreeeGradients: Orchid cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-orchid-cloud-01: url("../assets/orchid-cloud-01.aee33c0a5c5a5711.webp");
+  --fg-orchid-cloud-02: url("../assets/orchid-cloud-02.8d8311ed6fab31f8.webp");
+  --fg-orchid-cloud-03: url("../assets/orchid-cloud-03.b9195aad03e78265.webp");
+  --fg-orchid-cloud-04: url("../assets/orchid-cloud-04.9d966e2781b9fce9.webp");
+}
+.fg-orchid-cloud-01 { background-color: #f7d9ff; background-image: var(--fg-orchid-cloud-01); }
+.fg-orchid-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-orchid-cloud-02); }
+.fg-orchid-cloud-03 { background-color: #101326; background-image: var(--fg-orchid-cloud-03); }
+.fg-orchid-cloud-04 { background-color: #191025; background-image: var(--fg-orchid-cloud-04); }

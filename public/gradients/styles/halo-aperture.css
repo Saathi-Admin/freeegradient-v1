@@ -1,0 +1,16 @@
+/* FreeeGradients: Halo aperture only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-halo-aperture-01: url("../assets/halo-aperture-01.6fa339dfa0d85c59.webp");
+  --fg-halo-aperture-02: url("../assets/halo-aperture-02.e489e3701f5f34d8.webp");
+  --fg-halo-aperture-03: url("../assets/halo-aperture-03.acd178a4537353d5.webp");
+  --fg-halo-aperture-04: url("../assets/halo-aperture-04.b774abd75e35f458.webp");
+  --fg-halo-aperture-05: url("../assets/halo-aperture-05.e6836d8fa833eec1.webp");
+  --fg-halo-aperture-06: url("../assets/halo-aperture-06.5fd020dbb40b040c.webp");
+}
+.fg-halo-aperture-01 { background-color: #10051d; background-image: var(--fg-halo-aperture-01); }
+.fg-halo-aperture-02 { background-color: #030d21; background-image: var(--fg-halo-aperture-02); }
+.fg-halo-aperture-03 { background-color: #1c0712; background-image: var(--fg-halo-aperture-03); }
+.fg-halo-aperture-04 { background-color: #031a15; background-image: var(--fg-halo-aperture-04); }
+.fg-halo-aperture-05 { background-color: #f8edf7; background-image: var(--fg-halo-aperture-05); }
+.fg-halo-aperture-06 { background-color: #eff6fd; background-image: var(--fg-halo-aperture-06); }

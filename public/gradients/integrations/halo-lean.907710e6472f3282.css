@@ -1,0 +1,16 @@
+/* FreeeGradients: Halo lean only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-halo-lean-01: url("../assets/halo-lean-01.a3c7aff52d307f9b.webp");
+  --fg-halo-lean-02: url("../assets/halo-lean-02.6731ee24febce3ff.webp");
+  --fg-halo-lean-03: url("../assets/halo-lean-03.2b3916c9806434af.webp");
+  --fg-halo-lean-04: url("../assets/halo-lean-04.c9638f24ab7fd080.webp");
+  --fg-halo-lean-05: url("../assets/halo-lean-05.cbc600828a097aa1.webp");
+  --fg-halo-lean-06: url("../assets/halo-lean-06.048667ccca648892.webp");
+}
+.fg-halo-lean-01 { background-color: #10051d; background-image: var(--fg-halo-lean-01); }
+.fg-halo-lean-02 { background-color: #030d21; background-image: var(--fg-halo-lean-02); }
+.fg-halo-lean-03 { background-color: #1c0712; background-image: var(--fg-halo-lean-03); }
+.fg-halo-lean-04 { background-color: #031a15; background-image: var(--fg-halo-lean-04); }
+.fg-halo-lean-05 { background-color: #f8edf7; background-image: var(--fg-halo-lean-05); }
+.fg-halo-lean-06 { background-color: #eff6fd; background-image: var(--fg-halo-lean-06); }

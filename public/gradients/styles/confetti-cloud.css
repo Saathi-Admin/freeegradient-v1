@@ -1,0 +1,12 @@
+/* FreeeGradients: Confetti cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-confetti-cloud-01: url("../assets/confetti-cloud-01.2077cd6c90804c70.webp");
+  --fg-confetti-cloud-02: url("../assets/confetti-cloud-02.590319662df5987c.webp");
+  --fg-confetti-cloud-03: url("../assets/confetti-cloud-03.ce722821760f77ee.webp");
+  --fg-confetti-cloud-04: url("../assets/confetti-cloud-04.b6b9ae991bb7d1b0.webp");
+}
+.fg-confetti-cloud-01 { background-color: #ffb5e8; background-image: var(--fg-confetti-cloud-01); }
+.fg-confetti-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-confetti-cloud-02); }
+.fg-confetti-cloud-03 { background-color: #101326; background-image: var(--fg-confetti-cloud-03); }
+.fg-confetti-cloud-04 { background-color: #191025; background-image: var(--fg-confetti-cloud-04); }

@@ -109,4 +109,5 @@ h6, .text-h6 {
 }
 
 .text-serif { font-family: var(--text-serif-family); font-weight: var(--text-serif-weight); line-height: var(--text-serif-line-height); }
-.text-serif-italic { font-family: var(--text-serif-family); font-weight: var(--text-serif-weight); font-style: italic; line-height: var(--text-serif-line-height); }
+.text-serif-italic { font-family: var(--text-serif-family); font-weight: var(--text-serif-weight); font-style: normal; line-height: var(--text-serif-line-height); }
+h1.text-h2 { font-family: var(--font-soul); font-weight: var(--font-weight-regular); }

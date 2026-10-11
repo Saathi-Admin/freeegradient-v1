@@ -1,0 +1,12 @@
+/* FreeeGradients: Apricot cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-apricot-cloud-01: url("../assets/apricot-cloud-01.c0f89ee25cb24378.webp");
+  --fg-apricot-cloud-02: url("../assets/apricot-cloud-02.8cdbfc419f263c40.webp");
+  --fg-apricot-cloud-03: url("../assets/apricot-cloud-03.d5abee293566ff2c.webp");
+  --fg-apricot-cloud-04: url("../assets/apricot-cloud-04.11b48a06187b43c2.webp");
+}
+.fg-apricot-cloud-01 { background-color: #fff0e9; background-image: var(--fg-apricot-cloud-01); }
+.fg-apricot-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-apricot-cloud-02); }
+.fg-apricot-cloud-03 { background-color: #101326; background-image: var(--fg-apricot-cloud-03); }
+.fg-apricot-cloud-04 { background-color: #191025; background-image: var(--fg-apricot-cloud-04); }

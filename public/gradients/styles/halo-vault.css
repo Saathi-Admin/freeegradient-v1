@@ -1,0 +1,16 @@
+/* FreeeGradients: Halo vault only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-halo-vault-01: url("../assets/halo-vault-01.cd6a3964d9bcc6d0.webp");
+  --fg-halo-vault-02: url("../assets/halo-vault-02.a6b112918d42a859.webp");
+  --fg-halo-vault-03: url("../assets/halo-vault-03.763cc9acd00ccb70.webp");
+  --fg-halo-vault-04: url("../assets/halo-vault-04.370e96d94e2c7bcb.webp");
+  --fg-halo-vault-05: url("../assets/halo-vault-05.44bd25f01f4ad5a9.webp");
+  --fg-halo-vault-06: url("../assets/halo-vault-06.908e1c2b3093b7d6.webp");
+}
+.fg-halo-vault-01 { background-color: #10051d; background-image: var(--fg-halo-vault-01); }
+.fg-halo-vault-02 { background-color: #030d21; background-image: var(--fg-halo-vault-02); }
+.fg-halo-vault-03 { background-color: #1c0712; background-image: var(--fg-halo-vault-03); }
+.fg-halo-vault-04 { background-color: #031a15; background-image: var(--fg-halo-vault-04); }
+.fg-halo-vault-05 { background-color: #f8edf7; background-image: var(--fg-halo-vault-05); }
+.fg-halo-vault-06 { background-color: #eff6fd; background-image: var(--fg-halo-vault-06); }

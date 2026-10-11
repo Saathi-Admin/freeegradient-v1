@@ -1,10 +1,43 @@
----
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import {guides} from '../../data/guides';
----
-<BaseLayout title="CSS Gradient Guides — FreeeGradients" description="Learn how to use CSS gradients, choose mesh backgrounds and keep text readable.">
-<Header /><main id="main-content" class="container guides"><h1 class="text-h2">Gradient guides</h1><div>{guides.map(g=><article><h2 class="text-body-md"><a href={`/guides/${g.slug}/`}>{g.title}</a></h2><p class="text-body-sm">{g.description}</p></article>)}</div></main><Footer />
-</BaseLayout>
-<style>.guides{padding-block:var(--section-padding-y)}.guides div{display:grid;gap:var(--space-12);margin-top:var(--space-16)}article{padding:var(--space-12);border-radius:var(--radius-12);background:var(--surface-card)}p{color:var(--text-secondary);margin-top:var(--space-4)}a{color:var(--text-primary)}</style>
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import '../../styles/library.css';
+import {guides} from '../../data/guides';
+import { gradients } from '../../data/gradients';
+
+const cardVariationIds = ['refraction-05', 'light-leak-06', 'glassline-08'];
+const cardVariations = cardVariationIds.map(id => gradients.flatMap(template => template.variations).find(variation => variation.id === id)!);
+---
+<BaseLayout pageType="CollectionPage" items={guides.map(guide => ({name:guide.title,path:`/guides/${guide.slug}/`}))} title="CSS Gradient Guides — FreeeGradients" description="Learn how to use CSS gradients, choose mesh backgrounds and keep text readable.">
+<Header />
+<main id="main-content" class="collection-detail container guides">
+  <div class="collection-detail-hero">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Guides' }]} />
+    <div class="collection-detail-intro">
+      <h1 id="guides-title"><span class="hero-heading-neutral">Gradient guides.</span></h1>
+      <p class="hero-description text-body-md">Learn how to use CSS gradients, choose mesh backgrounds and keep text readable.</p>
+    </div>
+  </div>
+  <div class="guide-grid">
+    {guides.map((guide, index) => {
+      const variation = cardVariations[index];
+      const background = variation.cssKind === 'native' ? variation.css : `url("${variation.backgroundSrc ?? variation.src}")`;
+      return <a class="guide-card" href={`/guides/${guide.slug}/`} data-mode={variation.mode} style={`--guide-gradient: ${background}`}>
+        <h2 class="text-h4">{guide.title}</h2>
+        <p class="text-body-sm">{guide.description}</p>
+      </a>;
+    })}
+  </div>
+</main>
+<Footer />
+</BaseLayout>
+<style>
+  .guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); }
+  .guide-card { min-width: 0; min-height: 300px; padding: var(--space-12); border-radius: var(--gradient-card-image-radius); background-image: var(--guide-gradient); background-size: cover; background-position: center; color: #f8f8fa; display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-12); text-decoration: none; }
+  .guide-card[data-mode=light] { color: #15151a; }
+  .guide-card p { color: inherit; }
+  @media (hover: hover) { .guide-card:hover h2 { text-decoration: underline; } }
+  @media (max-width: 639px) { .guide-grid { grid-template-columns: 1fr; } .guide-card { min-height: 260px; } }
+</style>

@@ -12,12 +12,12 @@ const swatches = [
   ['Primary text', '--text-primary'], ['Secondary text', '--text-secondary'],
 ];
 ---
-<BaseLayout title="Design System — FreeeGradients" description="FreeeGradients foundation: colour, typography, spacing and 36px buttons.">
+<BaseLayout noindex title="Design System — FreeeGradients" description="FreeeGradients foundation: colour, typography, spacing and 36px buttons.">
   <main id="main-content" class="container specimen">
     <header>
       <a class="text-caption" href="/">FREEEGRADIENTS ↗</a>
       <h1 class="text-h1">Design <span class="text-serif-italic">foundation.</span></h1>
-      <p class="text-body-md">Dark by default. Host Grotesk for clarity. Instrument Serif for character.</p>
+      <p class="text-body-md">Dark by default. Host Grotesk for clarity. Soul for character.</p>
     </header>
     <section aria-labelledby="colour-title">
       <h2 id="colour-title" class="text-h4">01 / Colour & surfaces</h2>
@@ -30,7 +30,7 @@ const swatches = [
       <h2 id="type-title" class="text-h4">02 / Typography</h2>
       <p class="text-body-sm muted">Only Regular (400) and Medium (500). Fluid headings scale from mobile to desktop; captions start at 12px.</p>
       <div class="type-sample"><p class="text-caption muted">HOST GROTESK · HEADINGS 500 / BODY 400</p><p class="text-h2">Every colour. Every possibility.</p><p class="text-body-md muted">A generous library of free gradients for your next idea.</p></div>
-      <div class="type-sample"><p class="text-caption muted">INSTRUMENT SERIF · REGULAR / ITALIC 400</p><p class="text-h2 text-serif">Made of colour.</p><p class="text-h2 text-serif-italic">Made for everyone.</p></div>
+      <div class="type-sample"><p class="text-caption muted">SOUL · REGULAR 400</p><p class="text-h2 text-serif">Made of colour.</p><p class="text-h2 text-serif-italic">Made for everyone.</p></div>
       <div class="type-scale">{['h1','h2','h3','h4','h5','h6'].map(level => <p class={`text-${level}`}>{level.toUpperCase()} — Gradient library</p>)}</div>
       <div class="type-sample">
         <p class="text-caption muted">BODY & UI · REGULAR 400</p>
