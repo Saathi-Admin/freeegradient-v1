@@ -26,6 +26,8 @@ const { label, role = 'group', class: className, size = 'md' } = Astro.props;
       if (!active) return;
       bar.style.setProperty('--indicator-x', `${active.offsetLeft}px`);
       bar.style.setProperty('--indicator-width', `${active.offsetWidth}px`);
+      bar.style.setProperty('--indicator-y', `${active.offsetTop}px`);
+      bar.style.setProperty('--indicator-height', `${active.offsetHeight}px`);
     };
     new ResizeObserver(update).observe(bar);
     new MutationObserver(update).observe(bar, { subtree: true, attributes: true, attributeFilter: ['aria-selected', 'aria-pressed', 'aria-current'] });

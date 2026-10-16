@@ -2,6 +2,7 @@ import { premiumRecipes } from './premium-recipes.mjs';
 import { floralRecipes } from './floral-recipes.mjs';
 import { colourCloudRecipes } from './colour-cloud-recipes.mjs';
 import { haloHorizonRecipes } from './halo-horizon-recipes.mjs';
+import { lightFormRecipes } from './light-form-recipes.mjs';
 // Original procedural compositions. Keep published IDs stable.
 import { referenceRecipes } from './reference-recipes.mjs';
 import { expandedRecipes } from './expanded-recipes.mjs';
@@ -40,3 +41,4 @@ recipes.push(...floralRecipes);
 recipes.push(...premiumRecipes);
 recipes.push(...colourCloudRecipes);
 recipes.push(...haloHorizonRecipes);
+recipes.push(...lightFormRecipes);

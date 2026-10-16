@@ -2,7 +2,7 @@
 import { Code, Copy, Check } from '@lucide/astro';
 import Select from './ui/Select.astro';
 import { gradients } from '../data/gradients';
-const demoTemplates = gradients.filter(g=>['aurora','horizon','velvet','orbit','opaline','liquid-chrome','nebula','refraction','twofold','pivot'].includes(g.slug));
+const demoTemplates = gradients.filter(g=>['aurora','horizon','velvet','orbit','opaline','nebula','refraction','twofold','pivot'].includes(g.slug));
 const demoOptions=demoTemplates.map(g=>({value:g.slug,label:g.name,image:g.variations[0].thumbnail}));
 const demoSetup=demoTemplates.map(g=>({value:g.slug,stylesheet:g.stylesheet,firstClass:`fg-${g.variations[0].id}`,secondClass:`fg-${g.variations[1].id}`}));
 const setupCode = '<section class="fg-gradient fg-aurora-01">\n  Your next idea\n</section>';

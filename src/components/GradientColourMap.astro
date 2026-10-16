@@ -1,0 +1,31 @@
+---
+interface Props { src: string; name: string; palette: string; colors: string[]; }
+const { src, name, palette, colors } = Astro.props;
+---
+<div class="gradient-detail-preview colour-map" data-colour-map>
+  <img src={src} alt={`${name}, ${palette} gradient`} width="1600" height="900" fetchpriority="high" decoding="async" />
+  <div class="colour-map-overlay" aria-label="Gradient colours" data-colour-labels>
+    <svg class="colour-map-lines" aria-hidden="true"></svg>
+    {colors.map(colour=><div class="colour-map-item" data-colour={colour}>
+      <span class="colour-map-pin" style={`--map-colour:${colour}`} aria-hidden="true"></span>
+      <button class="colour-map-chip" type="button" data-copy-class={colour} aria-label={`Copy colour ${colour}`} title={`Copy ${colour}`}><span class="colour-map-swatch" style={`background:${colour}`}></span><code>{colour}</code></button>
+    </div>)}
+  </div>
+</div>
+<script>import '../scripts/colour-map';</script>
+<style>
+  .colour-map { position: relative; }
+  .colour-map img { display: block; width: 100%; height: auto; aspect-ratio: var(--gradient-aspect-ratio); object-fit: cover; }
+  .colour-map-overlay, .colour-map-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .colour-map-item { visibility: hidden; }
+  .colour-map[data-ready] .colour-map-item { visibility: visible; }
+  .colour-map-chip { position: absolute; display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-5); border: 1px solid var(--border-default); border-radius: var(--radius-full); background: color-mix(in srgb, var(--surface-card) 88%, transparent); color: var(--text-primary); font-family: var(--font-family-sans); font-size: var(--font-size-12); line-height: var(--line-height-normal); white-space: nowrap; cursor: pointer; pointer-events: auto; backdrop-filter: blur(var(--space-4)); }
+  .colour-map-chip:hover { background: var(--surface-overlay); }
+  .colour-map-swatch { width: var(--space-6); height: var(--space-6); border: 1px solid var(--border-default); border-radius: var(--radius-full); flex-shrink: 0; }
+  .colour-map-pin { position: absolute; width: var(--space-5); height: var(--space-5); transform: translate(-50%, -50%); background: var(--map-colour); border: 1px solid var(--color-white); border-radius: var(--radius-full); outline: 1px solid var(--surface-canvas); }
+  .colour-map-lines :global(line) { stroke: var(--color-white); stroke-opacity: .65; stroke-width: 1; }
+  .colour-map[data-unavailable] .colour-map-overlay { position: static; display: flex; flex-wrap: wrap; gap: var(--space-4); padding: var(--space-4); }
+  .colour-map[data-unavailable] .colour-map-chip { position: static; }
+  .colour-map[data-unavailable] .colour-map-pin, .colour-map[data-unavailable] .colour-map-lines { display: none; }
+  @media (max-width: 479px) { .colour-map-chip { padding: var(--space-2) var(--space-3); gap: var(--space-2); } }
+</style>

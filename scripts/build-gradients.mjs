@@ -103,7 +103,7 @@ for (const [index, recipe] of recipes.entries()) {
 }
 const summaries = catalogue.map((g,index)=>({slug:g.slug,name:g.name,category:g.category,count:g.variations.length,thumbnail:g.variations[index%g.variations.length].thumbnail,tags:[...new Set([...g.tags,...g.variations.flatMap(v=>v.tags)])],previews:g.variations.filter((v,i,all)=>all.findIndex(other=>other.mode===v.mode)===i).map(v=>({id:v.id,mode:v.mode,thumbnail:v.thumbnail}))}));
 await writeFile(new URL('search.json',catalogueDir),JSON.stringify(summaries));
-for(const colour of ['blue','green','pink','purple','orange','yellow','mint','jade','rose','peach','lavender']) {
+for(const colour of ['blue','red','green','pink','purple','orange','yellow','mint','jade','rose','peach','lavender']) {
   const colourSummaries=summaries.map((summary,index)=>({...summary,previews:catalogue[index].variations.filter(v=>v.tags.includes(colour)).filter((v,i,all)=>all.findIndex(other=>other.mode===v.mode)===i).map(v=>({id:v.id,mode:v.mode,thumbnail:v.thumbnail}))})).filter(summary=>summary.previews.length);
   await writeFile(new URL(`search-${colour}.json`,catalogueDir),JSON.stringify(colourSummaries));
 }

@@ -1,0 +1,36 @@
+/* FreeeGradients: Glass cascade only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-glass-cascade-01: url("../assets/glass-cascade-01.e8884f4a770bffb9.webp");
+  --fg-glass-cascade-02: url("../assets/glass-cascade-02.4810d7c3c4f34ded.webp");
+  --fg-glass-cascade-03: url("../assets/glass-cascade-03.5f402e7260fc86cb.webp");
+  --fg-glass-cascade-04: url("../assets/glass-cascade-04.4080b6c7415ff99e.webp");
+  --fg-glass-cascade-05: url("../assets/glass-cascade-05.e2568138d908f567.webp");
+  --fg-glass-cascade-06: url("../assets/glass-cascade-06.ca4351bcf72dbc71.webp");
+  --fg-glass-cascade-07: url("../assets/glass-cascade-07.8b9403593c2a00a7.webp");
+  --fg-glass-cascade-08: url("../assets/glass-cascade-08.84dbc2b194e0486d.webp");
+  --fg-glass-cascade-09: url("../assets/glass-cascade-09.1e6a2e072842e34d.webp");
+  --fg-glass-cascade-10: url("../assets/glass-cascade-10.76a54e6fcaec4b48.webp");
+  --fg-glass-cascade-11: url("../assets/glass-cascade-11.f82d7062c1a49a9a.webp");
+  --fg-glass-cascade-12: url("../assets/glass-cascade-12.dca8862b5ae6c56d.webp");
+  --fg-glass-cascade-13: url("../assets/glass-cascade-13.f0c1c362ffb9005b.webp");
+  --fg-glass-cascade-14: url("../assets/glass-cascade-14.db3f88e4c92f8aed.webp");
+  --fg-glass-cascade-15: url("../assets/glass-cascade-15.faf15f195716c052.webp");
+  --fg-glass-cascade-16: url("../assets/glass-cascade-16.0fc7a68957fc7920.webp");
+}
+.fg-glass-cascade-01 { background-color: #fff6ef; background-image: var(--fg-glass-cascade-01); }
+.fg-glass-cascade-02 { background-color: #10132b; background-image: var(--fg-glass-cascade-02); }
+.fg-glass-cascade-03 { background-color: #071e25; background-image: var(--fg-glass-cascade-03); }
+.fg-glass-cascade-04 { background-color: #260e28; background-image: var(--fg-glass-cascade-04); }
+.fg-glass-cascade-05 { background-color: #10231f; background-image: var(--fg-glass-cascade-05); }
+.fg-glass-cascade-06 { background-color: #fff2e8; background-image: var(--fg-glass-cascade-06); }
+.fg-glass-cascade-07 { background-color: #eef4ff; background-image: var(--fg-glass-cascade-07); }
+.fg-glass-cascade-08 { background-color: #f2f4e7; background-image: var(--fg-glass-cascade-08); }
+.fg-glass-cascade-09 { background-color: #071127; background-image: var(--fg-glass-cascade-09); }
+.fg-glass-cascade-10 { background-color: #f1f6ff; background-image: var(--fg-glass-cascade-10); }
+.fg-glass-cascade-11 { background-color: #241007; background-image: var(--fg-glass-cascade-11); }
+.fg-glass-cascade-12 { background-color: #fff6eb; background-image: var(--fg-glass-cascade-12); }
+.fg-glass-cascade-13 { background-color: #240a16; background-image: var(--fg-glass-cascade-13); }
+.fg-glass-cascade-14 { background-color: #fff1f1; background-image: var(--fg-glass-cascade-14); }
+.fg-glass-cascade-15 { background-color: #1d1b07; background-image: var(--fg-glass-cascade-15); }
+.fg-glass-cascade-16 { background-color: #fffdf0; background-image: var(--fg-glass-cascade-16); }

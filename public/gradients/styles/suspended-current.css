@@ -1,0 +1,20 @@
+/* FreeeGradients: Suspended current only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-suspended-current-01: url("../assets/suspended-current-01.f523c498f922be22.webp");
+  --fg-suspended-current-02: url("../assets/suspended-current-02.8411ee917188eb1f.webp");
+  --fg-suspended-current-03: url("../assets/suspended-current-03.24a085682a8580a6.webp");
+  --fg-suspended-current-04: url("../assets/suspended-current-04.404f25d7368d1d2d.webp");
+  --fg-suspended-current-05: url("../assets/suspended-current-05.b348a8f2bb1a3fad.webp");
+  --fg-suspended-current-06: url("../assets/suspended-current-06.4a840adb77920b07.webp");
+  --fg-suspended-current-07: url("../assets/suspended-current-07.94c4a2b1e106bc57.webp");
+  --fg-suspended-current-08: url("../assets/suspended-current-08.93fcc19b1fb2c38f.webp");
+}
+.fg-suspended-current-01 { background-color: #071e25; background-image: var(--fg-suspended-current-01); }
+.fg-suspended-current-02 { background-color: #260e28; background-image: var(--fg-suspended-current-02); }
+.fg-suspended-current-03 { background-color: #10231f; background-image: var(--fg-suspended-current-03); }
+.fg-suspended-current-04 { background-color: #fff2e8; background-image: var(--fg-suspended-current-04); }
+.fg-suspended-current-05 { background-color: #eef4ff; background-image: var(--fg-suspended-current-05); }
+.fg-suspended-current-06 { background-color: #f2f4e7; background-image: var(--fg-suspended-current-06); }
+.fg-suspended-current-07 { background-color: #fff6ef; background-image: var(--fg-suspended-current-07); }
+.fg-suspended-current-08 { background-color: #10132b; background-image: var(--fg-suspended-current-08); }

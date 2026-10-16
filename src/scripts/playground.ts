@@ -22,7 +22,7 @@ const status = document.querySelector<HTMLElement>('#playground-browser-status')
 const retry = document.querySelector<HTMLButtonElement>('#playground-retry')!;
 const initialData = JSON.parse(document.querySelector('#playground-initial')!.textContent!) as {initialTemplate: GradientTemplate; totalPages: number; total: number};
 const cache = new Map<string, GradientTemplate>([[initialData.initialTemplate.slug, initialData.initialTemplate]]);
-let browseMode = 'templates', activeCollection: HTMLButtonElement | undefined, activeTemplate: string | undefined;
+let browseMode = 'all', activeCollection: HTMLButtonElement | undefined, activeTemplate: string | undefined;
 let templateScroll = 0, page = 1, pageCount = initialData.totalPages, browserRequest = 0, templateRequest = 0;
 let selectedId = initialData.initialTemplate.variations[0].id;
 const browserState = () => `${browseMode}:${activeCollection?.dataset.collectionChoice ?? 'all'}:${page}:${search.value.trim()}`;
@@ -184,8 +184,8 @@ async function initializeRequested(id: string) {
   const slug=id.replace(/-\d+$/,'');
   try {
     const template=cache.get(slug)??await loadTemplate(slug); const variation=template.variations.find(v=>v.id===id); if(!variation)throw new Error();
-    cache.set(slug,template); selectVariation(template,variation); await openTemplate(slug,false);
-  } catch {showStatus('That gradient is unavailable. Choose another template.');}
+    cache.set(slug,template); selectVariation(template,variation);
+  } catch {showStatus('That gradient is unavailable. Choose another gradient.');}
 }
 if(originalRequestedGradient) void initializeRequested(originalRequestedGradient);
 const tabs = [...document.querySelectorAll<HTMLButtonElement>('[data-preview-tab]')];

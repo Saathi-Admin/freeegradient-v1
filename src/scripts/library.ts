@@ -1,4 +1,5 @@
 import type { GradientTemplate, GradientVariation } from '../types/gradient';
+import { openGradientExport } from './gradient-export';
 const gradients = JSON.parse(document.querySelector('#gradient-catalogue')?.textContent ?? '[]') as GradientTemplate[];
 
 const cards = [...document.querySelectorAll<HTMLElement>('.gradient-card')];
@@ -40,7 +41,7 @@ const variationFor = (card: HTMLElement) => {
 function updateCard(card: HTMLElement, variation: GradientVariation) {
   card.dataset.variation = variation.id;
   const image = card.querySelector<HTMLImageElement>('img')!;
-  image.src = variation.thumbnail;
+  image.src = card.classList.contains('gradient-detail-layout') ? (variation.backgroundSrc ?? variation.src) : variation.thumbnail;
   image.alt = `${variationFor(card).template.name}, ${variation.name} colour palette`;
   const previewLink = card.querySelector<HTMLAnchorElement>('a.card-preview');
   if (previewLink) {
@@ -152,6 +153,11 @@ document.addEventListener('click', async event => {
   }
   const variation = card ? variationFor(card).variation : active?.variations.find(v => v.id === selected.get(active!.slug));
   if (!variation) return;
+  if ((target.dataset.action ?? target.dataset.export) === 'export') {
+    const template = card ? variationFor(card).template : active;
+    if (template) openGradientExport(template, variation);
+    return;
+  }
   const button = target as HTMLButtonElement; button.disabled = true;
   try { await exportGradient(variation,target.dataset.action ?? target.dataset.export!); }
   catch { notify('Could not export this gradient. Please try again.'); }

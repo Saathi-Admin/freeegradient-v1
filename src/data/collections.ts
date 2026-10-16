@@ -1,6 +1,9 @@
 export const collections = [
   { id: 'landing', preview: '/gradients/horizon-02.svg', title: 'Landing page', description: 'Soft horizons and a little glow. Made for your first impression.' },
   { id: 'footer', preview: '/gradients/afterglow-03.svg', title: 'Footer glow', description: 'Deep shadows, rising light and soft grain. A memorable finish.' },
+  { id: 'colour-clouds', preview: '/gradients/orchid-cloud-01.svg', title: 'Colour clouds', description: 'Bright colour clouds, soft blurred folds and a touch of grain. Playful backgrounds for light and dark designs.' },
+  { id: 'fluid-fields', preview: '/gradients/estuary-fold-01.svg', title: 'Fluid fields', description: 'Flowing colour seams, soft folds and organic currents. Sculpted blends in eight colourways.' },
+  { id: 'prismatic-light', preview: '/gradients/lumen-stair-01.svg', title: 'Prismatic light', description: 'Stepped light, luminous glass strips and refracted colour. Geometric rhythm with a soft finish.' },
   { id: 'smooth', preview: '/gradients/velvet-03.svg', title: 'Soft & smooth', description: 'Quiet colour blends. A little room to breathe.' },
   { id: 'mesh', preview: '/gradients/nectar-04.svg', title: 'Meet the mesh', description: 'Colours that mingle, drift and find their own shape.' },
   { id: 'glow', preview: '/gradients/aurora-01.svg', title: 'Glow & aurora', description: 'A little light goes a long way.' },
@@ -9,7 +12,6 @@ export const collections = [
   { id: 'sunset', preview: '/gradients/sundown-04.svg', title: 'Sunset skies', description: 'Warm horizons, coral skies and the last light of the day.' },
   { id: 'pastel', preview: '/gradients/cloud-nine-07.svg', title: 'Pastel dreams', description: 'Airy colour clouds, soft blush and gentle washes.' },
   { id: 'holographic', preview: '/gradients/opaline-05.svg', title: 'Holographic', description: 'Pearlescent colour shifts and iridescent layers of light.' },
-  { id: 'metallic', preview: '/gradients/liquid-chrome-01.svg', title: 'Liquid metals', description: 'Reflective bands, polished highlights and luminous foil.' },
   { id: 'cosmic', preview: '/gradients/nebula-03.svg', title: 'Cosmic colour', description: 'Deep space, soft nebulae and distant pools of light.' },
   { id: 'prism', preview: '/gradients/refraction-08.svg', title: 'Prism & glass', description: 'Light leaks, layered refractions and colourful edges.' },
   { id: 'duotone', preview: '/gradients/twofold-02.svg', title: 'Duotone', description: 'Two colours in balance, with room for your content.' },
@@ -18,8 +20,6 @@ export const collections = [
   { id: 'earth', preview: '/gradients/dune-06.svg', title: 'Earth & organic', description: 'Natural colour fields inspired by clay, stone and moss.' },
   { id: 'studies', preview: '/gradients/ion-ribbon-01.svg', title: 'Colour studies', description: 'Sculpted neon, soft colour clouds and expressive blends. Carefully composed, ready for your next layout.' },
   { id: 'liquid', preview: '/gradients/reeded-lustre-01.svg', title: 'Liquid flow', description: 'Rippled surfaces, sculpted contours and light that flows.' },
-  { id: 'iridescent', preview: '/gradients/aurora-fold-01.svg', title: 'Iridescent silk', description: 'Pearlescent folds, luminous ribbons and sculpted holographic colour.' },
   { id: 'floral', preview: '/gradients/petal-haze-01.svg', title: 'Floral blur', description: 'Soft petal-shaped colour fields, botanical palettes and airy blurred transitions.' },
-  { id: 'colour-clouds', preview: '/gradients/orchid-cloud-01.svg', title: 'Colour clouds', description: 'Bright colour clouds, soft blurred folds and a touch of grain. Playful backgrounds for light and dark designs.' },
   { id: 'halo-horizons', preview: '/gradients/halo-canopy-01.svg', title: 'Halo horizons', description: 'Curved colour halos, luminous edges and soft grain. Light from above, fading into a calm horizon.' },
 ] as const;

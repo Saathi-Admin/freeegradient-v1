@@ -1,0 +1,20 @@
+/* FreeeGradients: Petal confluence only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-petal-confluence-01: url("../assets/petal-confluence-01.a9d09e82dc819753.webp");
+  --fg-petal-confluence-02: url("../assets/petal-confluence-02.62a0e350fb6c1a32.webp");
+  --fg-petal-confluence-03: url("../assets/petal-confluence-03.6b270a1234c4431a.webp");
+  --fg-petal-confluence-04: url("../assets/petal-confluence-04.8b014efa556f6523.webp");
+  --fg-petal-confluence-05: url("../assets/petal-confluence-05.4edc526ace5780d2.webp");
+  --fg-petal-confluence-06: url("../assets/petal-confluence-06.1b06a25efc9970fe.webp");
+  --fg-petal-confluence-07: url("../assets/petal-confluence-07.232019aa2306eb0d.webp");
+  --fg-petal-confluence-08: url("../assets/petal-confluence-08.649e0bc808e828d3.webp");
+}
+.fg-petal-confluence-01 { background-color: #260e28; background-image: var(--fg-petal-confluence-01); }
+.fg-petal-confluence-02 { background-color: #10231f; background-image: var(--fg-petal-confluence-02); }
+.fg-petal-confluence-03 { background-color: #fff2e8; background-image: var(--fg-petal-confluence-03); }
+.fg-petal-confluence-04 { background-color: #eef4ff; background-image: var(--fg-petal-confluence-04); }
+.fg-petal-confluence-05 { background-color: #f2f4e7; background-image: var(--fg-petal-confluence-05); }
+.fg-petal-confluence-06 { background-color: #fff6ef; background-image: var(--fg-petal-confluence-06); }
+.fg-petal-confluence-07 { background-color: #10132b; background-image: var(--fg-petal-confluence-07); }
+.fg-petal-confluence-08 { background-color: #071e25; background-image: var(--fg-petal-confluence-08); }

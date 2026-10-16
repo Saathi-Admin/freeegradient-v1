@@ -12,27 +12,30 @@ import '../styles/library.css';
 import '../styles/playground.css';
 const initialTemplate = gradients[0];
 const initial = initialTemplate.variations[0];
-const allGradientPages = Math.ceil(gradients.reduce((total, template) => total + template.variations.length, 0) / 24);
+const variationTotal = gradients.reduce((total, template) => total + template.variations.length, 0);
+const allGradientPages = Math.ceil(variationTotal / 24);
+const initialVariations = gradients.flatMap(template => template.variations.map(variation => ({ template, variation }))).slice(0, 24);
 ---
 <BaseLayout noindex title="Gradient playground | FreeeGradients" description="Preview free gradients in a landing page, cards and a page background. Choose a template and try its colour variations.">
   <div class="playground-shell">
     <aside class="playground-sidebar" id="playground-sidebar" aria-label="Gradient controls">
       <div class="playground-sidebar-heading"><button class="btn btn-ghost btn-sm btn-icon playground-close" aria-label="Close gradient controls" type="button"><X size={16} /></button></div>
-      <TabBar size="sm" class="playground-sidebar-tabs" role="tablist" label="Browse gradients"><button class="btn btn-sm" id="browse-all" role="tab" aria-controls="sidebar-scroll" aria-selected="false" tabindex="-1" data-browse-tab="all" type="button">All</button><button class="btn btn-sm" id="browse-collections" role="tab" aria-controls="sidebar-scroll" aria-selected="false" tabindex="-1" data-browse-tab="collections" type="button">Collections</button><button class="btn btn-sm" id="browse-templates" role="tab" aria-controls="sidebar-scroll" aria-selected="true" data-browse-tab="templates" type="button">Templates</button></TabBar>
+      <TabBar size="sm" class="playground-sidebar-tabs" role="tablist" label="Browse gradients"><button class="btn btn-sm" id="browse-all" role="tab" aria-controls="sidebar-scroll" aria-selected="true" data-browse-tab="all" type="button">All</button><button class="btn btn-sm" id="browse-collections" role="tab" aria-controls="sidebar-scroll" aria-selected="false" tabindex="-1" data-browse-tab="collections" type="button">Collections</button><button class="btn btn-sm" id="browse-templates" role="tab" aria-controls="sidebar-scroll" aria-selected="false" tabindex="-1" data-browse-tab="templates" type="button">Templates</button></TabBar>
       <div class="playground-sidebar-toolbar"><Button variant="ghost" size="xs" id="templates-back" hidden><ArrowLeft slot="leading-icon" size={16} />Back to templates</Button></div>
-      <div class="playground-sidebar-scroll" id="sidebar-scroll" role="tabpanel" aria-labelledby="browse-templates">
+      <div class="playground-sidebar-scroll" id="sidebar-scroll" role="tabpanel" aria-labelledby="browse-all">
         <div class="playground-templates" id="playground-collections" hidden>
           {collections.map(collection => { const items = gradients.filter(g => g.category === collection.id); return <button class="playground-template" type="button" data-collection-choice={collection.id} data-title={collection.title}><img src={collectionThumbnail(collection.preview)} alt="" width="160" height="90" loading="lazy" /><span class="playground-card-copy"><span class="text-body-sm">{collection.title}</span><span class="text-caption">{items.length} templates</span></span></button>; })}
         </div>
-        <div class="playground-search-label"><SearchField id="playground-search" label="Search templates" placeholder="Search templates or colours…" /></div>
+        <div class="playground-search-label"><SearchField id="playground-search" label="Search gradients" placeholder="Search gradients or colours…" /></div>
         <div class="playground-templates" id="playground-templates">
-          {gradients.slice(0, 24).map((g, index) => <button class="playground-template" type="button" data-template-choice={g.slug} data-category={g.category} aria-label={`Choose ${g.name} template`}><img src={g.variations[index % g.variations.length].thumbnail} alt="" width="160" height="90" loading="lazy" /><span class="playground-card-copy"><span class="text-body-sm">{g.name}</span><span class="text-caption">{g.variations.length} colours</span></span></button>)}
+          {initialVariations.map(({template,variation}) => <button class="playground-template" type="button" data-gradient-choice={variation.id} data-template-slug={template.slug} aria-label={`Preview ${template.name}, ${variation.name}`} aria-pressed={variation.id===initial.id?'true':'false'}><img src={variation.thumbnail} alt="" width="160" height="90" loading="lazy" /><span class="playground-card-copy"><span class="text-body-sm">{template.name}</span></span></button>)}
+
         </div>
         <div id="playground-variation-panel" class="playground-variations" hidden></div>
         <p id="playground-browser-status" class="text-caption" role="status" hidden></p>
         <button id="playground-retry" class="btn btn-secondary btn-xs" type="button" hidden>Try again</button>
       </div>
-      <nav class="playground-pagination" aria-label="Template pages"><Button variant="secondary" size="sm" id="template-page-prev" disabled>Previous</Button><Select id="template-page-select" label="Choose gradient page" pill compact options={Array.from({length:allGradientPages},(_,i)=>({value:String(i+1),label:`Page ${i+1}`}))} value="1" valueLabel={`1 / ${Math.ceil(gradients.length/24)}`} /><Button variant="secondary" size="sm" id="template-page-next">Next</Button></nav>
+      <nav class="playground-pagination" aria-label="Gradient pages"><Button variant="secondary" size="sm" id="template-page-prev" disabled>Previous</Button><Select id="template-page-select" label="Choose gradient page" pill compact options={Array.from({length:allGradientPages},(_,i)=>({value:String(i+1),label:`Page ${i+1}`}))} value="1" valueLabel={`1 / ${allGradientPages}`} /><Button variant="secondary" size="sm" id="template-page-next">Next</Button></nav>
       <a class="btn btn-ghost btn-sm playground-home" href="/gradients/"><ArrowLeft size={16} />All gradients</a>
     </aside>
     <div class="playground-right">
@@ -52,6 +55,6 @@ const allGradientPages = Math.ceil(gradients.reduce((total, template) => total +
       </main>
     </div>
   </div>
-  <script id="playground-initial" type="application/json" is:inline set:html={JSON.stringify({initialTemplate, totalPages: Math.ceil(gradients.length / 24), total: gradients.length}).replaceAll('<', '\\u003c')} />
+  <script id="playground-initial" type="application/json" is:inline set:html={JSON.stringify({initialTemplate, totalPages: allGradientPages, total: variationTotal}).replaceAll('<', '\\u003c')} />
   <script>import '../scripts/playground';</script>
 </BaseLayout>

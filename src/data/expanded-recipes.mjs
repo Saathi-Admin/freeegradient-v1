@@ -15,7 +15,6 @@ const families = [
   ['sunset', 'sunset', ['Sundown','Apricity','Solstice','Coral sky','Blue hour','Saffron sky','Last light','Dayglow']],
   ['pastel', 'pastel', ['Marshmallow','Cloud nine','Petal soft','Sorbet','Cotton mist','Watercolour','Powder room','Quiet morning']],
   ['holographic', 'holographic', ['Opaline','Pearlescent','Iridescence','Soap bubble','Lustre','Rainbow silk','Prismatic veil','Iris film']],
-  ['metallic', 'metallic', ['Liquid chrome','Silverline','Brushed gold','Rose foil','Polished steel','Titanium','Mercury','Copper fold']],
   ['cosmic', 'cosmic', ['Nebula','Eventide','Deep orbit','Stardust','Eclipse','Lunar bloom','Quasar','Interstellar']],
   ['prism', 'prism', ['Refraction','Spectral','Light leak','Crystal edge','Spectrum','Split light','Glassline','Colour flare']],
   ['duotone', 'duotone', ['Twofold','Counterpoint','Colour field','Crossfade','Halfway','Soft divide','Balance','Double take']],
@@ -38,12 +37,15 @@ const layouts = [
 const toSlug = name => name.toLowerCase().replaceAll(' ', '-');
 export const expandedRecipes = families.flatMap(([category, shape, names]) => names.map((name, position) => ({
   slug: toSlug(name), name, category, shape, position, composition: layouts[position], palettes: colourways,
-  tags: [category, shape, ...({ pastel: ['soft','blur'], holographic: ['iridescent','pearl'], metallic: ['chrome','foil'], cosmic: ['space','nebula'], prism: ['glass','rainbow'], angular: ['conic','radial'], earth: ['natural','organic'] }[category] ?? [])],
+  tags: [category, shape, ...({ pastel: ['soft','blur'], holographic: ['iridescent','pearl'], cosmic: ['space','nebula'], prism: ['glass','rainbow'], angular: ['conic','radial'], earth: ['natural','organic'] }[category] ?? [])],
 })));
 
 // Additional templates vary geometry and layer structure, never just palette.
 const seriesNames = ['Terrace','Ribbon','Lattice','Cascade','Arc','Veil','Window','Contour','Fan','Field'];
-for (const [familyIndex, [category, shape]] of families.entries()) {
+// Preserve the published geometry of remaining families after collection removal.
+const geometryOffsets = { sunset:0, pastel:1, holographic:2, cosmic:4, prism:5, duotone:6, angular:7, spotlight:8, earth:9 };
+for (const [category, shape] of families) {
+  const familyIndex = geometryOffsets[category];
   for (let i=0;i<90;i++) {
     const series=Math.floor(i/9), cell=i%9;
     const name=`${category[0].toUpperCase()+category.slice(1)} ${seriesNames[series].toLowerCase()} ${String(cell+1).padStart(2,'0')}`;
@@ -85,9 +87,6 @@ export function expandedComposition(recipe, palette) {
       linear(angle, [[base,0],[one,23],[two,47],[one,72],[base,100]]);
       linear(angle+90, [[alpha(base,0),0],[alpha('#a1f4da',.55),28],[alpha('#f4abdf',.55),60],[alpha(base,0),100]]);
       radial(x,y,rx,ry,'#ffffff',palette.mode==='light'?.65:.3); break;
-    case 'metallic':
-      linear(angle, [[base,0],[one,18],[two,25],[base,39],[one,52],[two,58],[one,67],[base,83],[two,100]]);
-      radial(x,y,rx,ry,'#ffffff',.3); break;
     case 'cosmic':
       radial(x,y,rx,ry,one,.9); radial(100-x,100-y,rx*.7,ry*.75,two,.8);
       radial(50,50,20 + recipe.position*4,35,base,.9); break;

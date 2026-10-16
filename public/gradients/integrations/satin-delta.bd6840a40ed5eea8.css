@@ -1,0 +1,20 @@
+/* FreeeGradients: Satin delta only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-satin-delta-01: url("../assets/satin-delta-01.ed0d8c2323d66bc1.webp");
+  --fg-satin-delta-02: url("../assets/satin-delta-02.887d622415eba15e.webp");
+  --fg-satin-delta-03: url("../assets/satin-delta-03.20e5cff866b49809.webp");
+  --fg-satin-delta-04: url("../assets/satin-delta-04.4be6378ad28cf109.webp");
+  --fg-satin-delta-05: url("../assets/satin-delta-05.8af7a6cac01a5638.webp");
+  --fg-satin-delta-06: url("../assets/satin-delta-06.7d062fdddbf76640.webp");
+  --fg-satin-delta-07: url("../assets/satin-delta-07.f9c1286ed8f454b7.webp");
+  --fg-satin-delta-08: url("../assets/satin-delta-08.29ef920bda718623.webp");
+}
+.fg-satin-delta-01 { background-color: #10231f; background-image: var(--fg-satin-delta-01); }
+.fg-satin-delta-02 { background-color: #fff2e8; background-image: var(--fg-satin-delta-02); }
+.fg-satin-delta-03 { background-color: #eef4ff; background-image: var(--fg-satin-delta-03); }
+.fg-satin-delta-04 { background-color: #f2f4e7; background-image: var(--fg-satin-delta-04); }
+.fg-satin-delta-05 { background-color: #fff6ef; background-image: var(--fg-satin-delta-05); }
+.fg-satin-delta-06 { background-color: #10132b; background-image: var(--fg-satin-delta-06); }
+.fg-satin-delta-07 { background-color: #071e25; background-image: var(--fg-satin-delta-07); }
+.fg-satin-delta-08 { background-color: #260e28; background-image: var(--fg-satin-delta-08); }

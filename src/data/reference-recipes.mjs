@@ -2,6 +2,7 @@ import { premiumComposition } from './premium-recipes.mjs';
 import { floralComposition } from './floral-recipes.mjs';
 import { colourCloudComposition } from './colour-cloud-recipes.mjs';
 import { haloHorizonComposition } from './halo-horizon-recipes.mjs';
+import { lightFormComposition } from './light-form-recipes.mjs';
 // Hand-composed studies inspired by supplied visual references. Artwork has no text or overlays.
 const studies = [
  ['ion-ribbon','Ion ribbon','ribbon','#020518','#0755ed','#17d8dd','#c88eea','dark',['blue','cyan','glow','ribbon']],
@@ -26,12 +27,6 @@ studies.push(
  ['chromatic-seam','Chromatic seam','seam','#02051d','#345beb','#ed7abd','#b8e8fb','dark',['blue','pink','horizon','reflection']],
  ['bloom-cushion','Bloom cushion','cushion','#101327','#4765ed','#f3d4f1','#e06d94','dark',['blue','pink','glow']],
  ['fern-contour','Fern contour','fern','#132a11','#8eaa59','#d0e3a5','#355224','dark',['green','organic','wave']],
- ['aurora-fold','Aurora fold','holo-fold','#01070d','#286be7','#f4b9d4','#f9e6b3','dark',['holographic','blue','pink','silk']],
- ['pearl-current','Pearl current','holo-current','#06101c','#67d9d4','#bca5ee','#ffb5d2','dark',['holographic','mint','purple','glass']],
- ['chromatic-sail','Chromatic sail','holo-sail','#120c25','#7979e7','#e7b8dd','#eaf5ad','dark',['holographic','purple','prism']],
- ['opal-loop','Opal loop','holo-loop','#f2f5f4','#8ad9d9','#bda6ec','#ffd2a5','light',['holographic','pastel','pearl']],
- ['prism-fan','Prism fan','holo-fan','#040a18','#2384c9','#ee9fd9','#d9f9cc','dark',['holographic','blue','pink','glass']],
- ['silk-orbit','Silk orbit','holo-orbit','#f8f3fb','#9cb7ed','#dc9ec6','#e9f5be','light',['holographic','lavender','silk']]
 );
 const alternates = [
  ['Midnight iris','dark',['#0c0923','#5835d4','#a363ef','#eacbf9'],['purple','lavender']],
@@ -42,10 +37,11 @@ const alternates = [
  ['Sage light','light',['#f6fbf4','#6ba891','#bae4c6','#d5e5a2'],['green','jade']],
  ['Lilac mist','light',['#faf4ff','#ad80de','#edb4dd','#d6e5f4'],['purple','lavender','rose']],
 ];
-export const referenceRecipes=studies.map(([slug,name,study,base,one,two,three,mode,tags])=>({slug,name,category:study.startsWith('holo-')?'iridescent':['reeded','fern'].includes(study)?'liquid':'studies',shape:'study',study,position:0,tags,
+export const referenceRecipes=studies.map(([slug,name,study,base,one,two,three,mode,tags])=>({slug,name,category:['reeded','fern'].includes(study)?'liquid':'studies',shape:'study',study,position:0,tags,
  palettes:[{id:'01',name:'Original study',mode,colors:[base,one,two,three],tags},...alternates.map(([name,mode,colors,tags],i)=>({id:String(i+2).padStart(2,'0'),name,mode,colors,tags}))]}));
 
 export function referenceComposition(recipe,palette){
+ if(recipe.study==='light-form') return lightFormComposition(recipe,palette);
  if(recipe.study==='premium') return premiumComposition(recipe,palette);
  if(recipe.study==='floral') return floralComposition(recipe,palette);
  if(recipe.study==='colour-cloud') return colourCloudComposition(recipe,palette);
@@ -112,32 +108,7 @@ export function referenceComposition(recipe,palette){
    defs.push(`<linearGradient id="fernfill" x2="0" y2="1"><stop stop-color="${b}"/><stop offset=".16" stop-color="${a}"/><stop offset=".45" stop-color="${base}"/><stop offset="1" stop-color="${c}"/></linearGradient><filter id="fernblur" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>`);
    layers.push({svg:'<path d="M-100 695 C400 580 780 670 1060 325 C1250 90 1490 160 1700 35 L1700 1000 L-100 1000Z" fill="url(#fernfill)" filter="url(#fernblur)"/>'});custom=true;textured=true;break;
   }
-  case 'holo-fold':case 'holo-current':case 'holo-sail':case 'holo-loop':case 'holo-fan':case 'holo-orbit':{
-   const pearly=palette.mode==='light'?'#ffffff':'#f2fdff';
-   defs.push(`<linearGradient id="silk" x1=".1" y1="0" x2=".8" y2="1"><stop stop-color="${a}" stop-opacity=".25"/><stop offset=".14" stop-color="${b}"/><stop offset=".26" stop-color="${a}"/><stop offset=".42" stop-color="${c}"/><stop offset=".48" stop-color="${pearly}"/><stop offset=".59" stop-color="${b}"/><stop offset=".76" stop-color="${a}"/><stop offset=".9" stop-color="${c}" stop-opacity=".65"/><stop offset="1" stop-color="${a}" stop-opacity=".1"/></linearGradient><linearGradient id="silkedge"><stop stop-color="${a}" stop-opacity="0"/><stop offset=".35" stop-color="${pearly}"/><stop offset=".65" stop-color="${b}"/><stop offset="1" stop-color="${c}" stop-opacity="0"/></linearGradient><filter id="silkglow" x="-50%" y="-70%" width="200%" height="240%"><feGaussianBlur stdDeviation="21"/></filter>`);
-   const paths={
-    'holo-fold':'M-150 670 C240 200 520 60 890 265 C1170 420 1290 860 1780 670 L1780 900 C1170 1030 1020 520 750 380 C420 180 100 430 -150 860Z',
-    'holo-current':'M-100 60 C300 -100 1160 90 930 410 C780 600 360 550 460 810 C520 1000 1380 760 1700 980 L1700 1140 C1050 830 580 1140 250 860 C-130 530 900 330 710 190 C530 65 190 230 -100 260Z',
-    'holo-sail':'M160 -100 C240 360 400 300 950 490 C1350 635 1340 940 1500 1100 L1220 1100 C1080 725 960 700 650 630 C230 530 50 250 -100 -100Z',
-    'holo-loop':'M190 450 C190 50 1440 30 1440 460 C1440 940 190 920 190 450Z M425 460 C425 700 1200 735 1200 455 C1200 235 425 195 425 460Z',
-    'holo-fan':'M-100 900 C80 250 480 240 780 330 C1140 445 1370 210 1740 -70 L1740 90 C1300 560 920 730 690 490 C410 195 125 760 -100 1060Z',
-    'holo-orbit':'M-100 530 C430 -200 1280 -40 1650 440 L1700 665 C1360 100 570 100 -100 790Z'
-   };
-   const edgepaths={
-    'holo-fold':'M-150 670 C240 200 520 60 890 265 C1170 420 1290 860 1780 670',
-    'holo-current':'M-100 60 C300 -100 1160 90 930 410 C780 600 360 550 460 810 C520 1000 1380 760 1700 980',
-    'holo-sail':'M160 -100 C240 360 400 300 950 490 C1350 635 1340 940 1500 1100',
-    'holo-loop':'M190 450 C190 50 1440 30 1440 460 C1440 940 190 920 190 450Z',
-    'holo-fan':'M-100 900 C80 250 480 240 780 330 C1140 445 1370 210 1740 -70',
-    'holo-orbit':'M-100 530 C430 -200 1280 -40 1650 440'
-   };
-   const path=paths[recipe.study],edge=edgepaths[recipe.study];
-   layers.push({svg:`<path d="${path}" fill="url(#silk)" fill-rule="evenodd" opacity=".65" filter="url(#silkglow)"/><path d="${path}" fill="url(#silk)" fill-rule="evenodd"/><path d="${edge}" fill="none" stroke="url(#silkedge)" stroke-width="5"/>`});
-   let filaments='';for(let n=1;n<=16;n++){filaments+=`<path d="${edge}" transform="translate(${n*2.5} ${n*3.5})" fill="none" stroke="url(#silkedge)" stroke-width="${n%3===0?2:.7}" opacity="${.45-n*.02}"/>`;}
-   layers.push({svg:filaments});
-   if(recipe.study==='holo-orbit')layers.push({svg:`<path d="${path}" transform="translate(0 360) rotate(-12 800 450)" fill="url(#silk)" opacity=".7"/><path d="${edge}" transform="translate(0 360) rotate(-12 800 450)" fill="none" stroke="url(#silkedge)" stroke-width="3"/>`});
-   custom=true;break;
-  }
+
   default:throw new Error('Unknown reference study');
  }
  if(textured){defs.push('<filter id="studygrain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>');layers.push({svg:'<rect width="1600" height="900" filter="url(#studygrain)" opacity=".045"/>'});}

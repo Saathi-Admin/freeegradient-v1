@@ -7,7 +7,7 @@ export interface TemplateSummary {
 export interface CataloguePage { items: TemplateSummary[]; page: number; totalPages: number; total: number; }
 const indices = new Map<string, Promise<TemplateSummary[]>>();
 export function loadSearchIndex(colour = 'all') {
-  if (!['all','blue','green','pink','purple','orange','yellow','mint','jade','rose','peach','lavender'].includes(colour)) colour='all';
+  if (!['all','blue','red','green','pink','purple','orange','yellow','mint','jade','rose','peach','lavender'].includes(colour)) colour='all';
   let indexPromise=indices.get(colour);
   if(indexPromise) return indexPromise;
   indexPromise = fetch(`/gradients/catalogue/search${colour==='all'?'':`-${colour}`}.json`).then(async response => {

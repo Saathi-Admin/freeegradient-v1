@@ -1,5 +1,11 @@
 # FreeeGradients
 
+## Light form studies
+
+8 original static compositions (96 colour variations) live in **Fluid fields** and **Prismatic light**. Each collection contains four different geometries. Fluid fields has eight palettes per template; Prismatic light has sixteen (eight light and eight dark), including paired blue, orange, red and yellow palettes. The procedural artwork is authored in `src/data/light-form-recipes.mjs`; it contains no reference images, text or logos. Detailed forms use the existing versioned WebP background and stylesheet integration, with individual SVG/PNG/JPEG exports. Header/footer navigation, collection filters and the playground discover them through the shared catalogue. Existing homepage features remain curated.
+
+Run `node scripts/review-light-forms.mjs` to regenerate `reports/light-form-studies.png`, showing every new composition in light and dark palettes. Run `node scripts/review-prism-palettes.mjs` to preview all 32 added prism variations.
+
 Static Astro gradient library with 1,026 templates and 8,148 light/dark colour variations. New collections appear in the header, footer, collection directory and playground; the homepage keeps its curated featured sections.
 
 ## Development
@@ -17,6 +23,10 @@ node scripts/verify-library.mjs
 `npm run assets` regenerates catalogue data and artwork after recipe changes. Sharp is a direct dependency for WebP generation. Builds are static. The permanent production domain is https://freeegradients.com. Local development and Vercel preview builds stay noindex.
 
 ## User integration
+
+The **Export** button on gallery cards and detail pages opens a shared modal built with the existing Button, TabBar and design tokens. Image exports support PNG, JPG, SVG and WebP with Full HD, 4K, square, social and phone presets, plus custom dimensions from 64 to 4096 px per side. The preview and exported artwork use the same centred crop. JPG/WebP offer quality controls. PNG and SVG can be copied where browser clipboard permissions allow.
+
+The unified, full-width format tabs select PNG, JPG, SVG, WebP, HTML, CSS, React or JSON. Code formats preview, copy and download CSS, self-contained HTML, React JSX and JSON metadata. Native gradients retain native CSS; complex CSS backgrounds reference the selected versioned asset. HTML embeds the SVG, and React embeds complex artwork, so those downloads do not depend on a development server. JSON exports contain integration metadata and asset URLs; they are not an editor import format. Video export is not included.
 
 Details pages offer two independent approaches:
 
@@ -78,6 +88,6 @@ The current public asset directory has 27,302 files before adding generated HTML
 
 ## Reference-inspired original studies
 
-26 hand-composed templates (208 variants) are added in Colour studies, Liquid flow and Iridescent silk. They are authored in `src/data/reference-recipes.mjs`, rather than importing the supplied Pinterest screenshots. The artwork contains no text, watermark, grid overlay, logo or card frame. Native blends use CSS; sculpted paths, glass textures and grain use an optimized image fetched only when used. Six different holographic compositions include a fold, current, sail, loop, fan and orbit.
+20 hand-composed templates (160 variants) are available in Colour studies and Liquid flow. They are authored in `src/data/reference-recipes.mjs`, rather than importing the supplied Pinterest screenshots. The artwork contains no text, watermark, grid overlay, logo or card frame. Native blends use CSS; sculpted paths, glass textures and grain use an optimized image fetched only when used.
 
 `node scripts/review-studies.mjs` generates a text-free contact sheet. Each study has eight variants, a versioned stylesheet, copyable classes and all existing export formats. Homepage featured content remains curated; header/footer collections, listing and playground include these collections.

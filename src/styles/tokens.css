@@ -24,6 +24,9 @@
   --blue-700: #00379d;
   --blue-800: #012868;
   --blue-900: #051026;
+  --surface-hero-glass: color-mix(in srgb, var(--blue-900) 82%, transparent);
+  --surface-hero-glass-hover: color-mix(in srgb, var(--blue-900) 92%, transparent);
+  --border-hero-glass: color-mix(in srgb, var(--blue-100) 20%, transparent);
   --surface-neutral-dark-0: #0a0a0b;
   --surface-neutral-dark-1: #141416;
   --surface-neutral-dark-2: #1c1c1f;

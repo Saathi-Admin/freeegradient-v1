@@ -1,0 +1,20 @@
+/* FreeeGradients: Refracted saddle only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-refracted-saddle-01: url("../assets/refracted-saddle-01.368631fdf50980e9.webp");
+  --fg-refracted-saddle-02: url("../assets/refracted-saddle-02.7c44eb582b6834d4.webp");
+  --fg-refracted-saddle-03: url("../assets/refracted-saddle-03.ffe4fd2a3948f9e0.webp");
+  --fg-refracted-saddle-04: url("../assets/refracted-saddle-04.2a527e2dfae2ac63.webp");
+  --fg-refracted-saddle-05: url("../assets/refracted-saddle-05.1e22e63b64800235.webp");
+  --fg-refracted-saddle-06: url("../assets/refracted-saddle-06.8882c163212bbef8.webp");
+  --fg-refracted-saddle-07: url("../assets/refracted-saddle-07.9a0444a3af8f08f1.webp");
+  --fg-refracted-saddle-08: url("../assets/refracted-saddle-08.44e48f70a02c339b.webp");
+}
+.fg-refracted-saddle-01 { background-color: #eef4ff; background-image: var(--fg-refracted-saddle-01); }
+.fg-refracted-saddle-02 { background-color: #f2f4e7; background-image: var(--fg-refracted-saddle-02); }
+.fg-refracted-saddle-03 { background-color: #fff6ef; background-image: var(--fg-refracted-saddle-03); }
+.fg-refracted-saddle-04 { background-color: #10132b; background-image: var(--fg-refracted-saddle-04); }
+.fg-refracted-saddle-05 { background-color: #071e25; background-image: var(--fg-refracted-saddle-05); }
+.fg-refracted-saddle-06 { background-color: #260e28; background-image: var(--fg-refracted-saddle-06); }
+.fg-refracted-saddle-07 { background-color: #10231f; background-image: var(--fg-refracted-saddle-07); }
+.fg-refracted-saddle-08 { background-color: #fff2e8; background-image: var(--fg-refracted-saddle-08); }

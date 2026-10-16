@@ -1,0 +1,20 @@
+/* FreeeGradients: Lumen stair only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-lumen-stair-01: url("../assets/lumen-stair-01.ebef010864660528.webp");
+  --fg-lumen-stair-02: url("../assets/lumen-stair-02.c1f17fb75cd2cc33.webp");
+  --fg-lumen-stair-03: url("../assets/lumen-stair-03.94b5ca85cacc2416.webp");
+  --fg-lumen-stair-04: url("../assets/lumen-stair-04.a59754f4e33fe9d5.webp");
+  --fg-lumen-stair-05: url("../assets/lumen-stair-05.6fe30a2a0b1d9827.webp");
+  --fg-lumen-stair-06: url("../assets/lumen-stair-06.f1aceebf67bd9f16.webp");
+  --fg-lumen-stair-07: url("../assets/lumen-stair-07.cada02b4da279b98.webp");
+  --fg-lumen-stair-08: url("../assets/lumen-stair-08.1c63d68e216091ef.webp");
+}
+.fg-lumen-stair-01 { background-color: #fff2e8; background-image: var(--fg-lumen-stair-01); }
+.fg-lumen-stair-02 { background-color: #eef4ff; background-image: var(--fg-lumen-stair-02); }
+.fg-lumen-stair-03 { background-color: #f2f4e7; background-image: var(--fg-lumen-stair-03); }
+.fg-lumen-stair-04 { background-color: #fff6ef; background-image: var(--fg-lumen-stair-04); }
+.fg-lumen-stair-05 { background-color: #10132b; background-image: var(--fg-lumen-stair-05); }
+.fg-lumen-stair-06 { background-color: #071e25; background-image: var(--fg-lumen-stair-06); }
+.fg-lumen-stair-07 { background-color: #260e28; background-image: var(--fg-lumen-stair-07); }
+.fg-lumen-stair-08 { background-color: #10231f; background-image: var(--fg-lumen-stair-08); }

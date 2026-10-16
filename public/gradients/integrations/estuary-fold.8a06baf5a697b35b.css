@@ -1,0 +1,20 @@
+/* FreeeGradients: Estuary fold only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-estuary-fold-01: url("../assets/estuary-fold-01.4fb6dd3feeba0778.webp");
+  --fg-estuary-fold-02: url("../assets/estuary-fold-02.3b5210ed081cd98d.webp");
+  --fg-estuary-fold-03: url("../assets/estuary-fold-03.7fa86d8f0e09b859.webp");
+  --fg-estuary-fold-04: url("../assets/estuary-fold-04.f9b4e5d1b34f3171.webp");
+  --fg-estuary-fold-05: url("../assets/estuary-fold-05.3f687a599e2e7f1b.webp");
+  --fg-estuary-fold-06: url("../assets/estuary-fold-06.ee3e0d5349be3247.webp");
+  --fg-estuary-fold-07: url("../assets/estuary-fold-07.4839c7c6adede00c.webp");
+  --fg-estuary-fold-08: url("../assets/estuary-fold-08.a5528ab9e7c783ce.webp");
+}
+.fg-estuary-fold-01 { background-color: #10132b; background-image: var(--fg-estuary-fold-01); }
+.fg-estuary-fold-02 { background-color: #071e25; background-image: var(--fg-estuary-fold-02); }
+.fg-estuary-fold-03 { background-color: #260e28; background-image: var(--fg-estuary-fold-03); }
+.fg-estuary-fold-04 { background-color: #10231f; background-image: var(--fg-estuary-fold-04); }
+.fg-estuary-fold-05 { background-color: #fff2e8; background-image: var(--fg-estuary-fold-05); }
+.fg-estuary-fold-06 { background-color: #eef4ff; background-image: var(--fg-estuary-fold-06); }
+.fg-estuary-fold-07 { background-color: #f2f4e7; background-image: var(--fg-estuary-fold-07); }
+.fg-estuary-fold-08 { background-color: #fff6ef; background-image: var(--fg-estuary-fold-08); }

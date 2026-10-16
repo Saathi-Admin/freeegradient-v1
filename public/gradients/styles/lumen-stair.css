@@ -1,0 +1,36 @@
+/* FreeeGradients: Lumen stair only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-lumen-stair-01: url("../assets/lumen-stair-01.ebef010864660528.webp");
+  --fg-lumen-stair-02: url("../assets/lumen-stair-02.c1f17fb75cd2cc33.webp");
+  --fg-lumen-stair-03: url("../assets/lumen-stair-03.94b5ca85cacc2416.webp");
+  --fg-lumen-stair-04: url("../assets/lumen-stair-04.a59754f4e33fe9d5.webp");
+  --fg-lumen-stair-05: url("../assets/lumen-stair-05.6fe30a2a0b1d9827.webp");
+  --fg-lumen-stair-06: url("../assets/lumen-stair-06.f1aceebf67bd9f16.webp");
+  --fg-lumen-stair-07: url("../assets/lumen-stair-07.cada02b4da279b98.webp");
+  --fg-lumen-stair-08: url("../assets/lumen-stair-08.1c63d68e216091ef.webp");
+  --fg-lumen-stair-09: url("../assets/lumen-stair-09.3c949bddfbdb5eb4.webp");
+  --fg-lumen-stair-10: url("../assets/lumen-stair-10.7a2815c1216df287.webp");
+  --fg-lumen-stair-11: url("../assets/lumen-stair-11.0ab78b6c560a2db5.webp");
+  --fg-lumen-stair-12: url("../assets/lumen-stair-12.76e996b545c0bd1c.webp");
+  --fg-lumen-stair-13: url("../assets/lumen-stair-13.02f16022d0d8c365.webp");
+  --fg-lumen-stair-14: url("../assets/lumen-stair-14.b4cf656dc372e364.webp");
+  --fg-lumen-stair-15: url("../assets/lumen-stair-15.eb154a1966eef8e9.webp");
+  --fg-lumen-stair-16: url("../assets/lumen-stair-16.be0c4f3bf949798a.webp");
+}
+.fg-lumen-stair-01 { background-color: #fff2e8; background-image: var(--fg-lumen-stair-01); }
+.fg-lumen-stair-02 { background-color: #eef4ff; background-image: var(--fg-lumen-stair-02); }
+.fg-lumen-stair-03 { background-color: #f2f4e7; background-image: var(--fg-lumen-stair-03); }
+.fg-lumen-stair-04 { background-color: #fff6ef; background-image: var(--fg-lumen-stair-04); }
+.fg-lumen-stair-05 { background-color: #10132b; background-image: var(--fg-lumen-stair-05); }
+.fg-lumen-stair-06 { background-color: #071e25; background-image: var(--fg-lumen-stair-06); }
+.fg-lumen-stair-07 { background-color: #260e28; background-image: var(--fg-lumen-stair-07); }
+.fg-lumen-stair-08 { background-color: #10231f; background-image: var(--fg-lumen-stair-08); }
+.fg-lumen-stair-09 { background-color: #071127; background-image: var(--fg-lumen-stair-09); }
+.fg-lumen-stair-10 { background-color: #f1f6ff; background-image: var(--fg-lumen-stair-10); }
+.fg-lumen-stair-11 { background-color: #241007; background-image: var(--fg-lumen-stair-11); }
+.fg-lumen-stair-12 { background-color: #fff6eb; background-image: var(--fg-lumen-stair-12); }
+.fg-lumen-stair-13 { background-color: #240a16; background-image: var(--fg-lumen-stair-13); }
+.fg-lumen-stair-14 { background-color: #fff1f1; background-image: var(--fg-lumen-stair-14); }
+.fg-lumen-stair-15 { background-color: #1d1b07; background-image: var(--fg-lumen-stair-15); }
+.fg-lumen-stair-16 { background-color: #fffdf0; background-image: var(--fg-lumen-stair-16); }

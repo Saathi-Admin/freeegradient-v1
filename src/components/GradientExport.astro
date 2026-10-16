@@ -1,0 +1,97 @@
+---
+import Button from './ui/Button.astro';
+import TabBar from './ui/TabBar.astro';
+import { X, Download, Copy } from '@lucide/astro';
+const presets = [
+  ['wide','Full HD',1920,1080], ['4k','4K',3840,2160],
+  ['square','Square',1080,1080], ['post','Instagram post',1080,1350],
+  ['story','Instagram story',1080,1920], ['phone','Phone',1290,2796],
+];
+---
+<dialog class="export-modal" aria-labelledby="export-title" aria-describedby="export-subtitle">
+  <header class="export-header">
+    <div><h2 id="export-title" class="text-h5">Export gradient</h2><p id="export-subtitle" class="text-caption"></p></div>
+    <Button variant="secondary" size="sm" iconOnly aria-label="Close export" data-export-close><X aria-hidden="true" /></Button>
+  </header>
+  <div class="export-body">
+    <section class="export-artwork" aria-label="Export preview">
+      <div class="export-preview-stage"><img id="export-image" alt="" /></div>
+    </section>
+    <div class="export-options">
+      <section id="export-panel" class="export-settings">
+        <div><p class="text-caption export-label">Format</p>
+          <TabBar label="Export format" role="tablist" class="export-format-tabs" size="sm">
+            {['png','jpeg','svg','webp','html','css','react','json'].map((format,i)=><Button variant="ghost" size="sm" role="tab" id={`export-format-${format}`} aria-selected={i===0?'true':'false'} aria-controls="export-format-panel" tabindex={i===0?0:-1} data-export-format={format}>{format==='jpeg'?'JPG':format==='react'?'React':format==='webp'?'WebP':format.toUpperCase()}</Button>)}
+          </TabBar>
+        </div>
+        <div id="export-format-panel" role="tabpanel" class="export-settings">
+          <div id="export-image-settings" class="export-settings">
+            <fieldset class="export-presets"><legend class="text-caption export-label">Size</legend>
+              {presets.map(([id,label,width,height],i)=><Button variant="secondary" size="md" class="export-size" aria-pressed={i===0?'true':'false'} data-export-size={id} data-width={width} data-height={height}><span>{label}</span><span class="text-caption">{width} × {height}</span></Button>)}
+              <Button variant="secondary" size="md" class="export-size" aria-pressed="false" data-export-size="custom"><span>Custom</span><span class="text-caption">Choose dimensions</span></Button>
+            </fieldset>
+            <div id="export-custom" class="export-dimensions" hidden>
+              <label class="text-caption">Width (px)<input id="export-width" type="number" min="64" max="4096" step="1" value="1920" inputmode="numeric" /></label>
+              <label class="text-caption">Height (px)<input id="export-height" type="number" min="64" max="4096" step="1" value="1080" inputmode="numeric" /></label>
+            </div>
+            <label id="export-quality-field" class="text-caption export-settings" hidden><span>Quality <output id="export-quality-value">95%</output></span><input id="export-quality" type="range" min="10" max="100" value="95" /></label>
+          </div>
+          <div id="export-code-settings" class="export-settings" hidden>
+            <p id="export-code-note" class="text-caption"></p>
+            <label class="text-caption" for="export-code">Code preview</label>
+            <textarea id="export-code" readonly spellcheck="false" aria-label="Export code preview"></textarea>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="export-footer">
+    <p id="export-status" class="text-caption" role="status" aria-live="polite"></p>
+    <div class="export-buttons"><Button variant="secondary" size="md" data-export-copy><Copy slot="leading-icon" aria-hidden="true" /><span>Copy image</span></Button><Button variant="primary" size="md" data-export-download><Download slot="leading-icon" aria-hidden="true" /><span>Download PNG</span></Button></div>
+  </footer>
+</dialog>
+<style>
+  .export-modal { width: min(calc(var(--space-64) * 8.75), calc(100% - var(--space-16))); height: min(calc(var(--space-64) * 6.25), calc(100svh - var(--space-16))); max-height: calc(100svh - var(--space-16)); padding: 0; margin: auto; overflow: hidden; color: var(--text-primary); background: var(--surface-card); border: 1px solid var(--border-default); border-radius: var(--radius-12); font-family: var(--font-family-sans); }
+  .export-modal[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; }
+  .export-modal::backdrop { background: color-mix(in srgb, var(--surface-canvas) 80%, transparent); backdrop-filter: blur(var(--space-2)); }
+  .export-header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-8); padding: var(--space-12); border-bottom: 1px solid var(--border-subtle); }
+  .export-header p { color: var(--text-secondary); margin-top: var(--space-2); }
+  .export-body { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); padding: var(--space-12); min-height: 0; overflow: hidden; }
+  .export-artwork, .export-options { min-width: 0; }
+  .export-options { overflow-y: auto; scrollbar-gutter: stable; min-height: 0; padding: var(--space-3); }
+  .export-preview-stage { display: grid; place-items: center; height: 100%; background: var(--surface-canvas); border: 1px solid var(--border-subtle); border-radius: var(--radius-8); overflow: hidden; padding: var(--space-8); }
+  #export-image { object-fit: cover; flex-shrink: 0; border-radius: var(--radius-4); max-width: 100%; max-height: 100%; }
+  .export-settings { display: grid; gap: var(--space-8); }
+  :global(.export-modal .export-format-tabs) { width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-radius: var(--radius-8); }
+  :global(.export-modal .export-format-tabs .btn) { width: 100%; min-width: 0; padding-inline: var(--space-2); }
+  :global(.export-modal [data-tab-bar].export-format-tabs.tab-bar-sm .mode-indicator) { top: var(--indicator-y, var(--space-1)); height: var(--indicator-height, var(--space-14)); }
+  .export-label { display: block; color: var(--text-secondary); margin-bottom: var(--space-4); }
+  .export-presets { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); padding: 0; margin: 0; border: 0; min-width: 0; }
+  .export-size { height: auto; padding: var(--space-6) var(--space-8); display: grid; justify-content: start; gap: var(--space-1); border: 1px solid transparent; border-radius: var(--radius-6); text-align: left; white-space: normal; }
+  .export-size .text-caption { color: var(--text-muted); }
+  .export-size[aria-pressed=true] { border-color: var(--focus-ring); background: var(--surface-overlay); }
+  .export-dimensions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+  .export-dimensions label { display: grid; gap: var(--space-3); color: var(--text-secondary); }
+  .export-modal input[type=number], #export-code { min-width: 0; width: 100%; color: var(--text-primary); background: var(--surface-canvas); border: 1px solid var(--border-default); border-radius: var(--radius-4); padding: var(--space-5) var(--space-6); font: inherit; }
+  .export-modal input[type=number] { scroll-margin: var(--space-3); }
+  #export-code { height: calc(var(--space-64) * 2); resize: vertical; font-family: monospace; font-size: var(--font-size-12); line-height: var(--line-height-relaxed); }
+  #export-code-note { color: var(--text-secondary); }
+  #export-quality-field span { display: flex; justify-content: space-between; color: var(--text-secondary); }
+  #export-quality { width: 100%; accent-color: var(--focus-ring); }
+  .export-footer { padding: var(--space-12); border-top: 1px solid var(--border-subtle); background: var(--surface-card); display: flex; align-items: center; gap: var(--space-8); min-height: calc(var(--button-height-md) + var(--space-12) * 2 + 1px); }
+  #export-status { color: var(--text-secondary); min-width: 0; flex: 1; }
+  #export-status:empty { display: none; }
+  .export-buttons { display: flex; justify-content: flex-end; gap: var(--space-4); flex-shrink: 0; margin-left: auto; }
+  .export-modal [hidden] { display: none !important; }
+  @media (max-width: 640px) {
+    .export-modal { width: calc(100% - var(--space-8)); height: calc(100svh - var(--space-8)); max-height: calc(100svh - var(--space-8)); border-radius: var(--radius-8); }
+    .export-header, .export-body, .export-footer { padding: var(--space-8); }
+    .export-body { grid-template-columns: 1fr; grid-auto-rows: min-content; align-content: start; gap: var(--space-10); overflow-y: auto; scrollbar-gutter: stable; }
+    .export-options { overflow: visible; }
+    .export-preview-stage { height: calc(var(--space-64) * 1.4); }
+    .export-footer { position: relative; min-height: calc(var(--button-height-md) + var(--space-8) * 2 + 1px); }
+    #export-status { position: absolute; bottom: 100%; left: 0; right: 0; background: var(--surface-card); padding: var(--space-4) var(--space-8); border-top: 1px solid var(--border-subtle); }
+    .export-buttons { width: 100%; }
+    .export-buttons .btn { flex: 1; }
+  }
+</style>
