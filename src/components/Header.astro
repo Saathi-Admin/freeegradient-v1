@@ -47,7 +47,7 @@ const { hero = false } = Astro.props;
 </div>
 <script>
   const heroHeader = document.querySelector<HTMLElement>('.floating-header.hero-header');
-  const landingHero = document.querySelector<HTMLElement>('.homepage-main > .hero');
+  const landingHero = document.querySelector<HTMLElement>('.homepage-hero');
   if (heroHeader && landingHero) {
     let heroObserver: IntersectionObserver;
     const observeHero = () => {

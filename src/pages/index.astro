@@ -33,6 +33,7 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
 <BaseLayout title={`${gradientCount} Free CSS Gradients for Personal & Commercial Use | FreeeGradients`} description={`Explore ${gradientCount} free gradient backgrounds for personal and commercial use. Copy CSS or download SVG, PNG and JPEG. No sign-up. No download limits.`}>
   <Header hero />
   <main id="main-content" class="homepage-main" style={`--hero-gradient: ${heroBackground}`}>
+    <div class="homepage-hero">
     <section class="hero container" id="gradients" aria-labelledby="hero-title">
       <div class="hero-intro">
       <div class="hero-copy">
@@ -51,6 +52,7 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
       })}</div>
       <div class="section-link"><a class="btn btn-md hero-collections-cta" href="/collections/">Explore all collections <ArrowUpRight aria-hidden="true" /></a></div>
     </section>
+    </div>
     <section class="section container" id="all-gradients" aria-labelledby="all-gradients-title">
       <div class="section-heading"><h2 id="all-gradients-title">All gradients</h2><p class="text-body-md">A little of every style. Find the colours for your next idea.</p></div>
       <div class="grid all-gradient-grid">
@@ -79,7 +81,7 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
 
 <style>
   .homepage-main { position: relative; isolation: isolate; }
-  .homepage-main::before { content: ''; position: absolute; inset: 0 0 auto; width: 100%; aspect-ratio: 16 / 9; z-index: -1; pointer-events: none; background-image: var(--hero-gradient); background-size: cover; background-position: center; background-repeat: no-repeat; }
+  .homepage-hero { background-image: var(--hero-gradient); background-size: cover; background-position: center; background-repeat: no-repeat; }
   .hero {
     --hero-copy-width: 1120px;
     --chip-glass-bg: var(--surface-hero-glass);
@@ -110,7 +112,6 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
     .all-gradient-grid :global(.gradient-card:nth-child(n + 5)) { display: none; }
   }
   @media (max-width: 639px) {
-    .homepage-main::before { aspect-ratio: auto; height: max(560px, var(--hero-intro-viewport-share)); }
     .hero-for-desktop { display: none; }
     .hero-for-mobile { display: inline; }
     .hero-commercial { display: block; white-space: nowrap; }
