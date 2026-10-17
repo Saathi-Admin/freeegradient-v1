@@ -61,6 +61,7 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
       </div>
       <div class="section-link"><a class="btn btn-secondary btn-md" href="/gradients/">Explore all gradients <ArrowUpRight aria-hidden="true" /></a></div>
     </section>
+    <PlaygroundShowcase />
     <div id="collections" class="container">
       {featuredCollections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
         <div class="section-heading"><h2 id={`${collection.id}-title`}>{collection.title}</h2><p class="text-body-md">{collection.description}</p></div>
@@ -79,7 +80,6 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
       </div>
       <div class="section-link"><Button variant="secondary" size="md" href="/collections/">Explore all collections<ArrowUpRight slot="trailing-icon" aria-hidden="true" /></Button></div>
     </section>
-    <PlaygroundShowcase />
     <HowTo />
     <Faq />
   </main>

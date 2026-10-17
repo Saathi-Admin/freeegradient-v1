@@ -2,6 +2,7 @@
 [data-skeleton] {
   pointer-events: none; user-select: none;
   --surface-hero-glass: var(--surface-card);
+  --surface-hero-header: var(--surface-card);
   --surface-hero-glass-hover: var(--surface-raised);
   --border-hero-glass: var(--border-subtle);
 }

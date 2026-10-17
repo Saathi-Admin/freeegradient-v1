@@ -4,21 +4,32 @@ import { ArrowUpRight } from '@lucide/astro';
 <section class="section container playground-showcase" id="try-playground" aria-labelledby="playground-showcase-title">
   <div class="section-heading"><h2 id="playground-showcase-title">See your gradient.<br /><span class="text-serif-italic">In a real layout.</span></h2><p class="text-body-md">Try colours on landing pages, cards and footers. Find your perfect fit.</p></div>
   <div class="playground-showcase-frame">
-    <iframe src="/playground/?embed=1" title="Interactive gradient playground preview" loading="lazy" width="1280" height="800"></iframe>
+    <video class="playground-showcase-video" src="/playground.mp4" poster="/playground-poster.webp" preload="none" muted loop playsinline disablepictureinpicture disableRemotePlayback width="1664" height="838" aria-label="Playground demo: explore templates, change colours and preview layouts"></video>
   </div>
   <div class="section-link"><a class="btn btn-primary btn-md" href="/playground/">Open the playground<ArrowUpRight aria-hidden="true" /></a></div>
 </section>
 <style>
-  .playground-showcase-frame { position: relative; width: 100%; aspect-ratio: 1280 / 800; border-radius: var(--gradient-card-radius); border: 1px solid var(--border-subtle); overflow: hidden; background: var(--surface-canvas); }
-  iframe { display: block; position: absolute; inset: 0; width: 1280px; height: 800px; border: 0; transform-origin: top left; }
-  @media (max-width: 639px) { .playground-showcase-frame { border-radius: var(--radius-8); } }
+  .playground-showcase { container-type: inline-size; }
+  .playground-showcase-frame { --video-radius: 3cqi; position: relative; width: 100%; overflow: hidden; isolation: isolate; border-radius: var(--video-radius); }
+  .playground-showcase-frame::after { content: ''; position: absolute; inset: 0; border: 1px solid var(--border-subtle); border-radius: inherit; pointer-events: none; }
+  .playground-showcase-video { display: block; width: 100%; height: auto; object-fit: contain; }
 </style>
 <script>
-  const frame = document.querySelector<HTMLElement>('.playground-showcase-frame');
-  const iframe = frame?.querySelector<HTMLIFrameElement>('iframe');
-  if (frame && iframe) {
-    const fit = () => { iframe.style.transform = `scale(${frame.clientWidth / 1280})`; };
-    new ResizeObserver(fit).observe(frame);
-    fit();
+  const video = document.querySelector<HTMLVideoElement>('.playground-showcase-video');
+  if (video && 'IntersectionObserver' in window) {
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    let visible = false;
+    const updatePlayback = () => {
+      if (!visible || document.hidden) { video.pause(); return; }
+      if (!reducedMotion.matches) void video.play().catch(() => { /* Keep the poster if autoplay is unavailable. */ });
+    };
+    new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      updatePlayback();
+    }, { threshold: 0.15 }).observe(video);
+    document.addEventListener('visibilitychange', updatePlayback);
+    reducedMotion.addEventListener('change', () => {
+      if (reducedMotion.matches) video.pause(); else updatePlayback();
+    });
   }
 </script>
