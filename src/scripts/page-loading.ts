@@ -1,23 +1,31 @@
 import { skeletonize } from './skeleton';
 
-let restore: (() => void) | undefined;
-function reset() { restore?.(); restore = undefined; }
-function start() { reset(); restore = skeletonize(document.body); }
-// Keep normal browser navigation, history, downloads and modified clicks intact.
-document.addEventListener('click', event => {
-  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-  const link = (event.target as Element).closest<HTMLAnchorElement>('a[href]');
-  if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
-  const destination = new URL(link.href);
-  if (destination.origin !== location.origin || destination.pathname === location.pathname && destination.search === location.search) return;
-  if (!['http:', 'https:'].includes(destination.protocol)) return;
-  start();
-});
-document.addEventListener('select-change', event => {
-  if ((event.target as HTMLElement).id !== 'browse-page') return;
-  const destination=new URL((event as CustomEvent<{value:string}>).detail.value,location.href);
-  if(destination.href!==location.href) start();
-});
-window.addEventListener('pageshow', reset);
+// Run in the destination document; native navigation preserves links and history.
+let restore: (() => void) | undefined = skeletonize(document.body);
+document.documentElement.removeAttribute('data-page-loading');
+
+function reset() {
+  restore?.();
+  restore = undefined;
+}
+
+async function reveal() {
+  const images = [...document.images].filter(image => {
+    const bounds = image.getBoundingClientRect();
+    return bounds.width > 0 && bounds.height > 0 && bounds.top < innerHeight && bounds.bottom > 0;
+  });
+  let timeout: ReturnType<typeof setTimeout> | undefined;
+  await Promise.race([
+    Promise.allSettled([document.fonts.ready, ...images.map(image => image.decode())]),
+    new Promise<void>(resolve => { timeout = setTimeout(resolve, 6000); }),
+  ]);
+  clearTimeout(timeout);
+  // Paint the destination layout before revealing its content.
+  await new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
+  reset();
+}
+
+void reveal();
 window.addEventListener('pagehide', reset);
+window.addEventListener('pageshow', event => { if (event.persisted) reset(); });
 document.addEventListener('keydown', event => { if (event.key === 'Escape') reset(); });

@@ -29,6 +29,12 @@ const schema = canonical && !blockIndex ? {'@context':'https://schema.org','@gra
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
+    <script is:inline>
+      // Hide unmasked destination content until its own DOM is skeletonized.
+      document.documentElement.setAttribute('data-page-loading', '');
+      setTimeout(() => document.documentElement.removeAttribute('data-page-loading'), 8000);
+    </script>
+    <style is:inline>html[data-page-loading] body { visibility: hidden; }</style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#0a0a0b" />
