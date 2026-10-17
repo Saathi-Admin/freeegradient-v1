@@ -61,6 +61,14 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
       </div>
       <div class="section-link"><a class="btn btn-secondary btn-md" href="/gradients/">Explore all gradients <ArrowUpRight aria-hidden="true" /></a></div>
     </section>
+    <div id="collections" class="container">
+      {featuredCollections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
+        <div class="section-heading"><h2 id={`${collection.id}-title`}>{collection.title}</h2><p class="text-body-md">{collection.description}</p></div>
+        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => featuredGradients.filter(g => g.category === collection.id).slice(0, 3).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
+        <div class="section-link"><a class="btn btn-secondary btn-md" href={`/collections/${collection.id}/`} aria-label={`Explore ${collection.title}`}>Explore the collection <ArrowUpRight aria-hidden="true" /></a></div>
+      </section>)}
+      <div class="empty-state" id="library-empty" hidden><p>No gradients for this mode yet. Try another design background.</p><Button variant="secondary" size="sm" id="clear-filters">Clear filters</Button></div>
+    </div>
     <section class="section container" id="all-collections" aria-labelledby="all-collections-title">
       <div class="section-heading"><h2 id="all-collections-title">All collections</h2><p class="text-body-md">Explore every style. Find a collection for your next idea.</p></div>
       <div class="collection-grid collections-list-grid">
@@ -71,14 +79,6 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
       </div>
       <div class="section-link"><Button variant="secondary" size="md" href="/collections/">Explore all collections<ArrowUpRight slot="trailing-icon" aria-hidden="true" /></Button></div>
     </section>
-    <div id="collections" class="container">
-      {featuredCollections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
-        <div class="section-heading"><h2 id={`${collection.id}-title`}>{collection.title}</h2><p class="text-body-md">{collection.description}</p></div>
-        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => featuredGradients.filter(g => g.category === collection.id).slice(0, 3).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
-        <div class="section-link"><a class="btn btn-secondary btn-md" href={`/collections/${collection.id}/`} aria-label={`Explore ${collection.title}`}>Explore the collection <ArrowUpRight aria-hidden="true" /></a></div>
-      </section>)}
-      <div class="empty-state" id="library-empty" hidden><p>No gradients for this mode yet. Try another design background.</p><Button variant="secondary" size="sm" id="clear-filters">Clear filters</Button></div>
-    </div>
     <PlaygroundShowcase />
     <HowTo />
     <Faq />
