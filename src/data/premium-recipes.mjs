@@ -1,4 +1,5 @@
-// Original editorial backgrounds: 50 hero compositions and 50 footer compositions.
+import { modernLightComposition } from './modern-light-compositions.mjs';
+// Original editorial backgrounds: 40 hero compositions and 50 footer compositions.
 // Stable IDs, eight colourways each, no text, logos, animation or runtime dependency.
 const palettes=[
  ['Graphite silver','dark',['#090b10','#526176','#b7c9d5'],['blue','silver','graphite']],
@@ -41,8 +42,9 @@ export const premiumRecipes=['landing','footer'].flatMap((category,ci)=>families
  slug:slug(name),name,category,shape:'premium',study:'premium',family,position,composition:(ci?footerLayouts:heroLayouts)[position],
  tags:[category,'premium','luxury','editorial','minimal',family],
  palettes:palettes.map(([name,mode,colors,tags],i)=>({id:String(i+1).padStart(2,'0'),name,mode,colors,tags})).map((_p,i,all)=>({...all[(i+fi+position)%all.length],id:String(i+1).padStart(2,'0')})),
-}))));
+})))).filter(recipe=>recipe.category!=='landing'||!['halo','satin'].includes(recipe.family));
 export function premiumComposition(recipe,palette){
+ if(recipe.category==='landing'&&['beam','orb','arch'].includes(recipe.family)) return modernLightComposition(recipe,palette);
  const [base,a,b]=palette.colors,{x,y,rx,ry,angle,bend}=recipe.composition;
  const defs=[],layers=[];let asset=false;
  const alpha=(color,n)=>color+Math.round(n*255).toString(16).padStart(2,'0');
@@ -66,7 +68,20 @@ export function premiumComposition(recipe,palette){
   case 'veil':linear(footer?angle+135:angle,[[base,0],[a,75],[b,100]]);glow(x,y,rx,ry,b,.65);if(footer)glow(100-x,100,rx*.7,ry*.32,a,.9);glow(100-x,footer?0:25,80,75,base,.94);break;
   case 'aurora':glow(x,footer?110:y,rx,ry*.36,a,.92);glow(100-x,footer?107:y+10,rx*.8,ry*.58,b,.55);glow(x,footer?70:y-24,rx*.4,ry*.72,a,.4);glow(50,footer?14:40,70,52,base,.7);break;
   case 'beam':linear(angle,[[alpha(base,0),0],[alpha(base,0),36],[alpha(a,.5),46],[alpha(b,.8),50],[alpha(a,.22),55],[alpha(base,0),67],[alpha(base,0),100]]);glow(x,y,rx,ry,a,.6);glow(100-x,footer?0:30,60,68,base,.75);break;
-  case 'orb':radial(x,y,rx*.8,ry*.82,[[b,0],[a,29],[alpha(a,.75),52],[alpha(base,0),100]]);glow(x-18,y-20,rx*.26,ry*.22,b,.6);glow(x+14,y+8,rx*.58,ry*.62,base,.8);break;
+  case 'orb':
+   // Keep these hero forms inside the frame so they read at picker size too.
+   if(recipe.slug==='floating-lumen'){
+    glow(43,52,58,76,a,.65);
+    radial(40,47,34,57,[[b,0],[alpha(b,.9),18],[a,43],[alpha(a,.28),72],[alpha(a,0),100]]);
+    glow(55,66,34,46,base,.83);
+   }else if(recipe.slug==='quiet-sphere'){
+    glow(62,54,52,78,a,.55);
+    radial(61,51,24,43,[[b,0],[alpha(b,.95),23],[a,54],[alpha(a,.65),77],[alpha(a,0),100]]);
+    glow(69,64,23,39,base,.86);
+   }else{
+    radial(x,y,rx*.8,ry*.82,[[b,0],[a,29],[alpha(a,.75),52],[alpha(base,0),100]]);glow(x-18,y-20,rx*.26,ry*.22,b,.6);glow(x+14,y+8,rx*.58,ry*.62,base,.8);
+   }
+   break;
   case 'ridge':case 'ribbon':case 'arch':{
    glow(x,y,rx,ry,a,.4);asset=true;
    defs.push(`<linearGradient id="material" x1="0" y1="0" x2=".7" y2="1">${stops([[base,0],[a,32],[b,48],[a,61],[base,100]])}</linearGradient><filter id="softmaterial" x="-40%" y="-80%" width="180%" height="260%"><feGaussianBlur stdDeviation="${recipe.family==='ribbon'?32:18}"/></filter>`);

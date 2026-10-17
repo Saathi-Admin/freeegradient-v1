@@ -1,0 +1,28 @@
+/* FreeeGradients: Grain bloom only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-grain-bloom-01: url("../assets/grain-bloom-01.98c4347e36f4cea2.webp");
+  --fg-grain-bloom-02: url("../assets/grain-bloom-02.9f9a59b0c24e10a5.webp");
+  --fg-grain-bloom-03: url("../assets/grain-bloom-03.515be90cb4d04ee1.webp");
+  --fg-grain-bloom-04: url("../assets/grain-bloom-04.ceed9ebe2f324de8.webp");
+  --fg-grain-bloom-05: url("../assets/grain-bloom-05.e9d9cbb245632966.webp");
+  --fg-grain-bloom-06: url("../assets/grain-bloom-06.c392791bab52a45e.webp");
+  --fg-grain-bloom-07: url("../assets/grain-bloom-07.3e8ede9a9970dfa1.webp");
+  --fg-grain-bloom-08: url("../assets/grain-bloom-08.f8c54b453ebfa3a4.webp");
+  --fg-grain-bloom-09: url("../assets/grain-bloom-09.27fa4e951e98d68a.webp");
+  --fg-grain-bloom-10: url("../assets/grain-bloom-10.0b088edd8345495c.webp");
+  --fg-grain-bloom-11: url("../assets/grain-bloom-11.595c672a04b2f0e6.webp");
+  --fg-grain-bloom-12: url("../assets/grain-bloom-12.2f2edf58b3dc39a9.webp");
+}
+.fg-grain-bloom-01 { background-color: #f3f8ee; background-image: var(--fg-grain-bloom-01); }
+.fg-grain-bloom-02 { background-color: #eef9f2; background-image: var(--fg-grain-bloom-02); }
+.fg-grain-bloom-03 { background-color: #eef8f9; background-image: var(--fg-grain-bloom-03); }
+.fg-grain-bloom-04 { background-color: #f2f7fe; background-image: var(--fg-grain-bloom-04); }
+.fg-grain-bloom-05 { background-color: #f9f4fe; background-image: var(--fg-grain-bloom-05); }
+.fg-grain-bloom-06 { background-color: #fef3fa; background-image: var(--fg-grain-bloom-06); }
+.fg-grain-bloom-07 { background-color: #fef4f3; background-image: var(--fg-grain-bloom-07); }
+.fg-grain-bloom-08 { background-color: #faf6ee; background-image: var(--fg-grain-bloom-08); }
+.fg-grain-bloom-09 { background-color: #16111b; background-image: var(--fg-grain-bloom-09); }
+.fg-grain-bloom-10 { background-color: #1b1110; background-image: var(--fg-grain-bloom-10); }
+.fg-grain-bloom-11 { background-color: #10140b; background-image: var(--fg-grain-bloom-11); }
+.fg-grain-bloom-12 { background-color: #0b1516; background-image: var(--fg-grain-bloom-12); }

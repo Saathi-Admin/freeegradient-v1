@@ -1,0 +1,20 @@
+/* FreeeGradients: Soft colonnade only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-soft-colonnade-01: url("../assets/soft-colonnade-01.8d845314e503b4cc.webp");
+  --fg-soft-colonnade-02: url("../assets/soft-colonnade-02.5a498f6b787c73e2.webp");
+  --fg-soft-colonnade-03: url("../assets/soft-colonnade-03.1cafbe81cdf6047f.webp");
+  --fg-soft-colonnade-04: url("../assets/soft-colonnade-04.416fb6bfa8d81763.webp");
+  --fg-soft-colonnade-05: url("../assets/soft-colonnade-05.c5f50f59e133bc8f.webp");
+  --fg-soft-colonnade-06: url("../assets/soft-colonnade-06.6f990eb062f69bd9.webp");
+  --fg-soft-colonnade-07: url("../assets/soft-colonnade-07.a262a849c69130bc.webp");
+  --fg-soft-colonnade-08: url("../assets/soft-colonnade-08.33fff265e11c3126.webp");
+}
+.fg-soft-colonnade-01 { background-color: #180c13; background-image: var(--fg-soft-colonnade-01); }
+.fg-soft-colonnade-02 { background-color: #f8fafc; background-image: var(--fg-soft-colonnade-02); }
+.fg-soft-colonnade-03 { background-color: #fcf9f3; background-image: var(--fg-soft-colonnade-03); }
+.fg-soft-colonnade-04 { background-color: #f5f8f3; background-image: var(--fg-soft-colonnade-04); }
+.fg-soft-colonnade-05 { background-color: #fcf6fa; background-image: var(--fg-soft-colonnade-05); }
+.fg-soft-colonnade-06 { background-color: #090b10; background-image: var(--fg-soft-colonnade-06); }
+.fg-soft-colonnade-07 { background-color: #13100e; background-image: var(--fg-soft-colonnade-07); }
+.fg-soft-colonnade-08 { background-color: #070d1c; background-image: var(--fg-soft-colonnade-08); }

@@ -4,8 +4,9 @@ import Button from './ui/Button.astro';
 import CollectionCard from './CollectionCard.astro';
 import { collections } from '../data/collections';
 import { gradients } from '../data/gradients';
-interface Props { hero?: boolean; }
-const { hero = false } = Astro.props;
+interface Props { hero?: boolean; playgroundGradient?: string; }
+const { hero = false, playgroundGradient } = Astro.props;
+const playgroundHref=playgroundGradient?`/playground/?gradient=${encodeURIComponent(playgroundGradient)}`:'/playground/';
 ---
 <header class:list={['floating-header', { 'hero-header': hero }]}>
   <a href="/" class="brand" aria-label="FreeeGradients home">freeegradients<span class="brand-dot">.</span></a>
@@ -15,7 +16,7 @@ const { hero = false } = Astro.props;
     <a class="btn btn-ghost btn-sm" href="/#how-to-use">How to use</a>
   </nav>
   <div class="header-actions">
-    <a class="btn btn-primary btn-sm header-cta" href="/playground/">Go to playground <ArrowUpRight aria-hidden="true" /></a>
+    <a class="btn btn-primary btn-sm header-cta" href={playgroundHref}>Go to playground <ArrowUpRight aria-hidden="true" /></a>
     <Button size="sm" variant="secondary" iconOnly aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false" id="menu-toggle"><Menu class="menu-open-icon" aria-hidden="true" /><X class="menu-close-icon" aria-hidden="true" /></Button>
   </div>
   <nav id="mobile-nav" aria-label="Mobile navigation" hidden>
@@ -30,7 +31,7 @@ const { hero = false } = Astro.props;
     </div>
     <a class="btn btn-ghost btn-sm" href="/#how-to-use">How to use</a>
     <div class="mobile-nav-actions">
-      <a class="btn btn-primary btn-sm" href="/playground/"><span>Go to playground</span><ArrowUpRight aria-hidden="true" /></a>
+      <a class="btn btn-primary btn-sm" href={playgroundHref}><span>Go to playground</span><ArrowUpRight aria-hidden="true" /></a>
     </div>
     </div>
   </nav>

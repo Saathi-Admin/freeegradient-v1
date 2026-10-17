@@ -36,7 +36,6 @@ const initialVariations = gradients.flatMap(template => template.variations.map(
         <button id="playground-retry" class="btn btn-secondary btn-xs" type="button" hidden>Try again</button>
       </div>
       <nav class="playground-pagination" aria-label="Gradient pages"><Button variant="secondary" size="sm" id="template-page-prev" disabled>Previous</Button><Select id="template-page-select" label="Choose gradient page" pill compact options={Array.from({length:allGradientPages},(_,i)=>({value:String(i+1),label:`Page ${i+1}`}))} value="1" valueLabel={`1 / ${allGradientPages}`} /><Button variant="secondary" size="sm" id="template-page-next">Next</Button></nav>
-      <a class="btn btn-ghost btn-sm playground-home" href="/gradients/"><ArrowLeft size={16} />All gradients</a>
     </aside>
     <div class="playground-right">
 

@@ -1,0 +1,28 @@
+/* FreeeGradients: Sunlit haze only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-sunlit-haze-01: url("../assets/sunlit-haze-01.78898b161bec3ef8.webp");
+  --fg-sunlit-haze-02: url("../assets/sunlit-haze-02.882a8fff9e53fb59.webp");
+  --fg-sunlit-haze-03: url("../assets/sunlit-haze-03.b315329be3e3d4ff.webp");
+  --fg-sunlit-haze-04: url("../assets/sunlit-haze-04.fce31cc84f2b7983.webp");
+  --fg-sunlit-haze-05: url("../assets/sunlit-haze-05.927aaa87741625d9.webp");
+  --fg-sunlit-haze-06: url("../assets/sunlit-haze-06.45b589ee4588c840.webp");
+  --fg-sunlit-haze-07: url("../assets/sunlit-haze-07.e880f7bfd644b6ed.webp");
+  --fg-sunlit-haze-08: url("../assets/sunlit-haze-08.ba44e824ee792714.webp");
+  --fg-sunlit-haze-09: url("../assets/sunlit-haze-09.62d57e22148dcabe.webp");
+  --fg-sunlit-haze-10: url("../assets/sunlit-haze-10.a73d825fd483f16c.webp");
+  --fg-sunlit-haze-11: url("../assets/sunlit-haze-11.fecfe4da464d978f.webp");
+  --fg-sunlit-haze-12: url("../assets/sunlit-haze-12.c059b4d5ca845607.webp");
+}
+.fg-sunlit-haze-01 { background-color: #fffde9; background-image: var(--fg-sunlit-haze-01); }
+.fg-sunlit-haze-02 { background-color: #fff5e9; background-image: var(--fg-sunlit-haze-02); }
+.fg-sunlit-haze-03 { background-color: #fff9ed; background-image: var(--fg-sunlit-haze-03); }
+.fg-sunlit-haze-04 { background-color: #f9fce9; background-image: var(--fg-sunlit-haze-04); }
+.fg-sunlit-haze-05 { background-color: #fff4eb; background-image: var(--fg-sunlit-haze-05); }
+.fg-sunlit-haze-06 { background-color: #fffbea; background-image: var(--fg-sunlit-haze-06); }
+.fg-sunlit-haze-07 { background-color: #fcf7ff; background-image: var(--fg-sunlit-haze-07); }
+.fg-sunlit-haze-08 { background-color: #fffbe7; background-image: var(--fg-sunlit-haze-08); }
+.fg-sunlit-haze-09 { background-color: #286457; background-image: var(--fg-sunlit-haze-09); }
+.fg-sunlit-haze-10 { background-color: #684a79; background-image: var(--fg-sunlit-haze-10); }
+.fg-sunlit-haze-11 { background-color: #345784; background-image: var(--fg-sunlit-haze-11); }
+.fg-sunlit-haze-12 { background-color: #81564f; background-image: var(--fg-sunlit-haze-12); }

@@ -1,0 +1,12 @@
+/* FreeeGradients: Mango cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-mango-cloud-01: url("../assets/mango-cloud-01.41534156603921ce.webp");
+  --fg-mango-cloud-02: url("../assets/mango-cloud-02.e244b68a39102e5b.webp");
+  --fg-mango-cloud-03: url("../assets/mango-cloud-03.7d8ff1282765f89b.webp");
+  --fg-mango-cloud-04: url("../assets/mango-cloud-04.a7d4271640e4642a.webp");
+}
+.fg-mango-cloud-01 { background-color: #d7edff; background-image: var(--fg-mango-cloud-01); }
+.fg-mango-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-mango-cloud-02); }
+.fg-mango-cloud-03 { background-color: #b87036; background-image: var(--fg-mango-cloud-03); }
+.fg-mango-cloud-04 { background-color: #a0815f; background-image: var(--fg-mango-cloud-04); }

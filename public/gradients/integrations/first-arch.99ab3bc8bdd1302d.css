@@ -1,0 +1,20 @@
+/* FreeeGradients: First arch only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-first-arch-01: url("../assets/first-arch-01.454f497f316641b5.webp");
+  --fg-first-arch-02: url("../assets/first-arch-02.2d47c02d4ec412e7.webp");
+  --fg-first-arch-03: url("../assets/first-arch-03.612104364111ff32.webp");
+  --fg-first-arch-04: url("../assets/first-arch-04.c38f523507cf6704.webp");
+  --fg-first-arch-05: url("../assets/first-arch-05.1d64d02add976453.webp");
+  --fg-first-arch-06: url("../assets/first-arch-06.ab3fee564cc49e15.webp");
+  --fg-first-arch-07: url("../assets/first-arch-07.4294ad976d9d6049.webp");
+  --fg-first-arch-08: url("../assets/first-arch-08.162a3a9fd8d41c22.webp");
+}
+.fg-first-arch-01 { background-color: #fcf9f3; background-image: var(--fg-first-arch-01); }
+.fg-first-arch-02 { background-color: #f5f8f3; background-image: var(--fg-first-arch-02); }
+.fg-first-arch-03 { background-color: #fcf6fa; background-image: var(--fg-first-arch-03); }
+.fg-first-arch-04 { background-color: #090b10; background-image: var(--fg-first-arch-04); }
+.fg-first-arch-05 { background-color: #13100e; background-image: var(--fg-first-arch-05); }
+.fg-first-arch-06 { background-color: #070d1c; background-image: var(--fg-first-arch-06); }
+.fg-first-arch-07 { background-color: #180c13; background-image: var(--fg-first-arch-07); }
+.fg-first-arch-08 { background-color: #f8fafc; background-image: var(--fg-first-arch-08); }

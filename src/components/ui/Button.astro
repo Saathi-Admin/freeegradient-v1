@@ -6,6 +6,8 @@ type Props = HTMLAttributes<'button'> & {
   variant?: Variant;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   iconOnly?: boolean;
+  href?: string;
+  rel?: string;
 };
 
 const {
@@ -14,14 +16,16 @@ const {
   iconOnly = false,
   class: className,
   type = 'button',
+  href,
   ...attributes
 } = Astro.props;
+const Tag = href ? 'a' : 'button';
 if (iconOnly && !attributes['aria-label'] && !attributes['aria-labelledby']) {
   throw new Error('Icon-only buttons need aria-label or aria-labelledby.');
 }
 ---
-<button type={type} class:list={['btn', `btn-${variant}`, `btn-${size}`, { 'btn-icon': iconOnly }, className]} {...attributes}>
+<Tag type={href ? undefined : type} href={href} class:list={['btn', `btn-${variant}`, `btn-${size}`, { 'btn-icon': iconOnly }, className]} {...attributes}>
   <slot name="leading-icon" />
   <slot />
   <slot name="trailing-icon" />
-</button>
+</Tag>

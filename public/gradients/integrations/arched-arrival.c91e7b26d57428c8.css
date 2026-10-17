@@ -1,0 +1,20 @@
+/* FreeeGradients: Arched arrival only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-arched-arrival-01: url("../assets/arched-arrival-01.7f0f30be335a360e.webp");
+  --fg-arched-arrival-02: url("../assets/arched-arrival-02.960bdd9323bafedb.webp");
+  --fg-arched-arrival-03: url("../assets/arched-arrival-03.7b3a2f24ec851951.webp");
+  --fg-arched-arrival-04: url("../assets/arched-arrival-04.0c37c9a0b914cd0b.webp");
+  --fg-arched-arrival-05: url("../assets/arched-arrival-05.71fd4d7cb28bc39b.webp");
+  --fg-arched-arrival-06: url("../assets/arched-arrival-06.730128722b2e2163.webp");
+  --fg-arched-arrival-07: url("../assets/arched-arrival-07.9e7e9946c1d94de3.webp");
+  --fg-arched-arrival-08: url("../assets/arched-arrival-08.3e328c9a52c1b742.webp");
+}
+.fg-arched-arrival-01 { background-color: #13100e; background-image: var(--fg-arched-arrival-01); }
+.fg-arched-arrival-02 { background-color: #070d1c; background-image: var(--fg-arched-arrival-02); }
+.fg-arched-arrival-03 { background-color: #180c13; background-image: var(--fg-arched-arrival-03); }
+.fg-arched-arrival-04 { background-color: #f8fafc; background-image: var(--fg-arched-arrival-04); }
+.fg-arched-arrival-05 { background-color: #fcf9f3; background-image: var(--fg-arched-arrival-05); }
+.fg-arched-arrival-06 { background-color: #f5f8f3; background-image: var(--fg-arched-arrival-06); }
+.fg-arched-arrival-07 { background-color: #fcf6fa; background-image: var(--fg-arched-arrival-07); }
+.fg-arched-arrival-08 { background-color: #090b10; background-image: var(--fg-arched-arrival-08); }

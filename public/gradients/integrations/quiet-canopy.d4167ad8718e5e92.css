@@ -1,0 +1,20 @@
+/* FreeeGradients: Quiet canopy only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-quiet-canopy-01: url("../assets/quiet-canopy-01.f4802cb93709d27c.webp");
+  --fg-quiet-canopy-02: url("../assets/quiet-canopy-02.ddce34454ddf1596.webp");
+  --fg-quiet-canopy-03: url("../assets/quiet-canopy-03.f7b092b8b6e22ae1.webp");
+  --fg-quiet-canopy-04: url("../assets/quiet-canopy-04.a9ae8b035170106d.webp");
+  --fg-quiet-canopy-05: url("../assets/quiet-canopy-05.a4f58f4be9e9df90.webp");
+  --fg-quiet-canopy-06: url("../assets/quiet-canopy-06.69c87c3ead88b05f.webp");
+  --fg-quiet-canopy-07: url("../assets/quiet-canopy-07.d8fca52b0522c540.webp");
+  --fg-quiet-canopy-08: url("../assets/quiet-canopy-08.5145a5ed7f5cf379.webp");
+}
+.fg-quiet-canopy-01 { background-color: #f8fafc; background-image: var(--fg-quiet-canopy-01); }
+.fg-quiet-canopy-02 { background-color: #fcf9f3; background-image: var(--fg-quiet-canopy-02); }
+.fg-quiet-canopy-03 { background-color: #f5f8f3; background-image: var(--fg-quiet-canopy-03); }
+.fg-quiet-canopy-04 { background-color: #fcf6fa; background-image: var(--fg-quiet-canopy-04); }
+.fg-quiet-canopy-05 { background-color: #090b10; background-image: var(--fg-quiet-canopy-05); }
+.fg-quiet-canopy-06 { background-color: #13100e; background-image: var(--fg-quiet-canopy-06); }
+.fg-quiet-canopy-07 { background-color: #070d1c; background-image: var(--fg-quiet-canopy-07); }
+.fg-quiet-canopy-08 { background-color: #180c13; background-image: var(--fg-quiet-canopy-08); }

@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/host-grotesk/wght.css';
 import '../styles/global.css';
+import '../styles/skeleton.css';
 import BackToTop from '../components/BackToTop.astro';
 import { pageSeo } from '../data/seo';
 
@@ -57,5 +58,6 @@ const schema = canonical && !blockIndex ? {'@context':'https://schema.org','@gra
     <a class="skip-link" href="#main-content">Skip to content</a>
     <slot />
     <BackToTop />
+    <script>import '../scripts/page-loading';</script>
   </body>
 </html>

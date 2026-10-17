@@ -18,10 +18,20 @@ for(const template of catalogue) {
     assert(!ids.has(variation.id),`Duplicate variation ${variation.id}`);ids.add(variation.id);stats.variations++;
     assert(css.includes(`.fg-${variation.id} {`),`Missing variation class ${variation.id}`);
     assert(css.includes(`.fg-${variation.id} { background-color: ${variation.colors[0]};`),`Missing loading fallback for ${variation.id}`);
-    if(template.study){const svg=await readFile(file(variation.src),'utf8');assert(!/<text\b|<image\b/i.test(svg),`Artwork must have no text or embedded references: ${variation.id}`);}
+    if(template.study||variation.sourceKind){
+      const svg=await readFile(file(variation.src),'utf8');
+      assert(!/<text\b/i.test(svg),`Unexpected artwork text: ${variation.id}`);
+      if(variation.sourceKind) {
+        const images=[...svg.matchAll(/<image\b[^>]*href="([^"]+)"[^>]*\/>/g)];
+        assert.equal(images.length,1,`Original artwork must contain one self-contained image: ${variation.id}`);
+        assert(/^data:image\/png;base64,[A-Za-z0-9+/=]+$/.test(images[0][1]),`Original artwork must embed PNG bytes without external references: ${variation.id}`);
+        assert(variation.sourceWidth>0&&variation.sourceHeight>0,`Missing original image dimensions: ${variation.id}`);
+      }else assert(!/<image\b/i.test(svg),`Procedural artwork must not embed images: ${variation.id}`);
+    }
     await stat(file(variation.src));const thumbnail=await stat(file(variation.thumbnail));
     assert(thumbnail.size<=16384,`Thumbnail exceeds 16 KiB for ${variation.id}`);stats.maxThumbnailBytes=Math.max(stats.maxThumbnailBytes,thumbnail.size);
-    if(variation.backgroundSrc){const image=await stat(file(variation.backgroundSrc));assert(image.size<=262144,`Background exceeds 256 KiB for ${variation.id}`);stats.maxBackgroundBytes=Math.max(stats.maxBackgroundBytes,image.size);}
+    // Lossless reference artwork retains original grain; procedural backgrounds keep their smaller budget.
+    if(variation.backgroundSrc){const image=await stat(file(variation.backgroundSrc));const budget=variation.sourceKind?4194304:262144;assert(image.size<=budget,`Background exceeds ${budget} bytes for ${variation.id}`);stats.maxBackgroundBytes=Math.max(stats.maxBackgroundBytes,image.size);}
   }
   const endpoint=JSON.parse(await readFile(file(`/gradients/catalogue/templates/${template.slug}.json`),'utf8'));
   assert.equal(endpoint.stylesheet,template.stylesheet,`Stale template endpoint ${template.slug}`);

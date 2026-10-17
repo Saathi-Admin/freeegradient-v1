@@ -1,0 +1,12 @@
+/* FreeeGradients: Iris cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-iris-cloud-01: url("../assets/iris-cloud-01.1cbf5e328eca4220.webp");
+  --fg-iris-cloud-02: url("../assets/iris-cloud-02.4e8bbcdf9e2f3bfa.webp");
+  --fg-iris-cloud-03: url("../assets/iris-cloud-03.3dc0242642bbeb6c.webp");
+  --fg-iris-cloud-04: url("../assets/iris-cloud-04.8d310ebf124fbe4a.webp");
+}
+.fg-iris-cloud-01 { background-color: #f0e3ff; background-image: var(--fg-iris-cloud-01); }
+.fg-iris-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-iris-cloud-02); }
+.fg-iris-cloud-03 { background-color: #968174; background-image: var(--fg-iris-cloud-03); }
+.fg-iris-cloud-04 { background-color: #5a7bb6; background-image: var(--fg-iris-cloud-04); }

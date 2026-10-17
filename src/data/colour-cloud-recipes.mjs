@@ -16,31 +16,30 @@ const colourTags = [
   ['pink', 'purple', 'blue', 'lavender'], ['blue', 'cyan'], ['pink', 'yellow', 'purple', 'orange'],
   ['orange', 'yellow', 'pink', 'blue', 'lavender'], ['orange', 'peach', 'pink', 'mint'], ['purple', 'lavender', 'yellow', 'blue'],
 ];
+// A coloured foundation keeps translucent fields from exposing near-black gaps.
+const cloudBase=(a,b)=>'#'+[1,3,5].map(i=>Math.round((parseInt(a.slice(i,i+2),16)+parseInt(b.slice(i,i+2),16))*.36).toString(16).padStart(2,'0')).join('');
 export const colourCloudRecipes = designs.map(([slug, name, colors, fields], position) => ({
   slug, name, category: 'colour-clouds', shape: 'study', study: 'colour-cloud', position, fields,
   tags: ['blur', 'mesh', 'soft', 'colourful', 'cloud', 'grain', ...colourTags[position]],
   palettes: [
     { id: '01', name: 'Daylight', mode: 'light', colors, tags: ['pastel', ...colourTags[position]] },
     { id: '02', name: 'Candy drift', mode: 'light', colors: ['#f5f1ff', colors[2], colors[3], colors[1]], tags: ['pastel', ...colourTags[position]] },
-    { id: '03', name: 'After dark', mode: 'dark', colors: ['#101326', ...colors.slice(1)], tags: ['night', 'glow', ...colourTags[position]] },
-    { id: '04', name: 'Midnight drift', mode: 'dark', colors: ['#191025', colors[3], colors[1], colors[2]], tags: ['night', 'glow', ...colourTags[position]] },
+    { id: '03', name: 'After dark', mode: 'dark', colors: [cloudBase(colors[1],colors[2]), ...colors.slice(1)], tags: ['night', 'glow', ...colourTags[position]] },
+    { id: '04', name: 'Midnight drift', mode: 'dark', colors: [cloudBase(colors[3],colors[1]), colors[3], colors[1], colors[2]], tags: ['night', 'glow', ...colourTags[position]] },
   ],
 }));
 
 export function colourCloudComposition(recipe, palette) {
-  const defs = ['<filter id="cloud-soft" filterUnits="userSpaceOnUse" x="-800" y="-800" width="3200" height="2500"><feGaussianBlur stdDeviation="38"/></filter>'];
+  const defs = [];
   const fields = recipe.fields.map(([x, y, rx, ry, index], i) => {
     const color = palette.colors[index];
     defs.push(`<radialGradient id="cloud-${i}"><stop stop-color="${color}" stop-opacity=".98"/><stop offset=".38" stop-color="${color}" stop-opacity=".85"/><stop offset=".72" stop-color="${color}" stop-opacity=".4"/><stop offset="1" stop-color="${color}" stop-opacity="0"/></radialGradient>`);
-    return `<ellipse cx="${x * 16}" cy="${y * 9}" rx="${rx * 16}" ry="${ry * 9}" fill="url(#cloud-${i})"/>`;
+    return `<ellipse cx="${x * 16}" cy="${y * 9}" rx="${rx * 16 * 1.4}" ry="${ry * 9 * 1.4}" fill="url(#cloud-${i})"/>`;
   }).join('');
-  // Broad translucent folds soften the transitions without hard edges.
-  const fold = [1, 3, 4, 7].includes(recipe.position)
-    ? `<path d="M${100 + recipe.position * 70} -180 C220 250 960 370 1250 1090" fill="none" stroke="${palette.colors[0]}" stroke-width="170" opacity=".5"/>` : '';
   defs.push('<filter id="cloud-grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="1" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>');
   return {
     background: undefined,
     defs: defs.join(''),
-    content: `<rect width="1600" height="900" fill="${palette.colors[0]}"/><g filter="url(#cloud-soft)">${fields}${fold}</g><rect width="1600" height="900" filter="url(#cloud-grain)" opacity=".025"/>`,
+    content: `<rect width="1600" height="900" fill="${palette.colors[0]}"/>${fields}<rect width="1600" height="900" filter="url(#cloud-grain)" opacity=".025"/>`,
   };
 }

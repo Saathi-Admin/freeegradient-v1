@@ -1,0 +1,20 @@
+/* FreeeGradients: Quiet ray only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-quiet-ray-01: url("../assets/quiet-ray-01.5f7ed6f4d36d37f7.webp");
+  --fg-quiet-ray-02: url("../assets/quiet-ray-02.7dfdfb9e7c941c28.webp");
+  --fg-quiet-ray-03: url("../assets/quiet-ray-03.5532c2af08034a8b.webp");
+  --fg-quiet-ray-04: url("../assets/quiet-ray-04.369bef7b09afeed3.webp");
+  --fg-quiet-ray-05: url("../assets/quiet-ray-05.c6b536409c009928.webp");
+  --fg-quiet-ray-06: url("../assets/quiet-ray-06.2f1e4de2fedffa6c.webp");
+  --fg-quiet-ray-07: url("../assets/quiet-ray-07.5872a5b4f43a6662.webp");
+  --fg-quiet-ray-08: url("../assets/quiet-ray-08.a0aae3da18dcec17.webp");
+}
+.fg-quiet-ray-01 { background-color: #fcf6fa; background-image: var(--fg-quiet-ray-01); }
+.fg-quiet-ray-02 { background-color: #090b10; background-image: var(--fg-quiet-ray-02); }
+.fg-quiet-ray-03 { background-color: #13100e; background-image: var(--fg-quiet-ray-03); }
+.fg-quiet-ray-04 { background-color: #070d1c; background-image: var(--fg-quiet-ray-04); }
+.fg-quiet-ray-05 { background-color: #180c13; background-image: var(--fg-quiet-ray-05); }
+.fg-quiet-ray-06 { background-color: #f8fafc; background-image: var(--fg-quiet-ray-06); }
+.fg-quiet-ray-07 { background-color: #fcf9f3; background-image: var(--fg-quiet-ray-07); }
+.fg-quiet-ray-08 { background-color: #f5f8f3; background-image: var(--fg-quiet-ray-08); }

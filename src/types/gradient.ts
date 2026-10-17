@@ -9,6 +9,9 @@ export interface GradientVariation {
   backgroundSrc?: string;
   css: string;
   cssKind: 'native' | 'asset';
+  sourceKind?: 'original-raster' | 'recoloured-raster';
+  sourceWidth?: number;
+  sourceHeight?: number;
   tags: string[];
 }
 

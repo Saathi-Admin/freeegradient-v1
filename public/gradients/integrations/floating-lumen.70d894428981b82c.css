@@ -1,0 +1,20 @@
+/* FreeeGradients: Floating lumen only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-floating-lumen-01: url("../assets/floating-lumen-01.eb8a7a33e5e52a93.webp");
+  --fg-floating-lumen-02: url("../assets/floating-lumen-02.6978298193c90ea4.webp");
+  --fg-floating-lumen-03: url("../assets/floating-lumen-03.d9d025cd5bf7e1dd.webp");
+  --fg-floating-lumen-04: url("../assets/floating-lumen-04.ece6dd53299c9c91.webp");
+  --fg-floating-lumen-05: url("../assets/floating-lumen-05.f8d24c70513f41bc.webp");
+  --fg-floating-lumen-06: url("../assets/floating-lumen-06.cddc215170c381bb.webp");
+  --fg-floating-lumen-07: url("../assets/floating-lumen-07.2734fb48d769dcfc.webp");
+  --fg-floating-lumen-08: url("../assets/floating-lumen-08.13e353f0cb65a4f1.webp");
+}
+.fg-floating-lumen-01 { background-color: #13100e; background-image: var(--fg-floating-lumen-01); }
+.fg-floating-lumen-02 { background-color: #070d1c; background-image: var(--fg-floating-lumen-02); }
+.fg-floating-lumen-03 { background-color: #180c13; background-image: var(--fg-floating-lumen-03); }
+.fg-floating-lumen-04 { background-color: #f8fafc; background-image: var(--fg-floating-lumen-04); }
+.fg-floating-lumen-05 { background-color: #fcf9f3; background-image: var(--fg-floating-lumen-05); }
+.fg-floating-lumen-06 { background-color: #f5f8f3; background-image: var(--fg-floating-lumen-06); }
+.fg-floating-lumen-07 { background-color: #fcf6fa; background-image: var(--fg-floating-lumen-07); }
+.fg-floating-lumen-08 { background-color: #090b10; background-image: var(--fg-floating-lumen-08); }

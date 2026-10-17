@@ -1,12 +1,12 @@
 /* FreeeGradients: Candy cloud only. */
 .fg-gradient { background-size: cover; background-position: center; }
 :root {
-  --fg-candy-cloud-01: url("../assets/candy-cloud-01.f5a483d625e8049c.webp");
-  --fg-candy-cloud-02: url("../assets/candy-cloud-02.c5ff1f1e6cbfcb56.webp");
-  --fg-candy-cloud-03: url("../assets/candy-cloud-03.fe4bec749886aa59.webp");
-  --fg-candy-cloud-04: url("../assets/candy-cloud-04.1078b3e0c3a3d124.webp");
+  --fg-candy-cloud-01: url("../assets/candy-cloud-01.53af1670ee3eed15.webp");
+  --fg-candy-cloud-02: url("../assets/candy-cloud-02.1c304ba1a68bd364.webp");
+  --fg-candy-cloud-03: url("../assets/candy-cloud-03.3daf34d46996c723.webp");
+  --fg-candy-cloud-04: url("../assets/candy-cloud-04.8ed2b3edae7fb416.webp");
 }
 .fg-candy-cloud-01 { background-color: #e6edff; background-image: var(--fg-candy-cloud-01); }
 .fg-candy-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-candy-cloud-02); }
-.fg-candy-cloud-03 { background-color: #101326; background-image: var(--fg-candy-cloud-03); }
-.fg-candy-cloud-04 { background-color: #191025; background-image: var(--fg-candy-cloud-04); }
+.fg-candy-cloud-03 { background-color: #9c3aa8; background-image: var(--fg-candy-cloud-03); }
+.fg-candy-cloud-04 { background-color: #9e61a8; background-image: var(--fg-candy-cloud-04); }

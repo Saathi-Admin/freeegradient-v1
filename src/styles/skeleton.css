@@ -1,0 +1,53 @@
+/* Loading uses the existing DOM and design tokens; no alternate card geometry. */
+[data-skeleton] {
+  pointer-events: none; user-select: none;
+  --surface-hero-glass: var(--surface-card);
+  --surface-hero-glass-hover: var(--surface-raised);
+  --border-hero-glass: var(--border-subtle);
+}
+[data-skeleton] *, [data-skeleton] *::before, [data-skeleton] *::after {
+  background-image: none !important;
+  transition: none !important;
+}
+[data-skeleton] .btn-brand { --btn-bg: var(--surface-raised); }
+[data-skeleton-text] {
+  color: transparent !important;
+  background: var(--surface-overlay);
+  border-radius: var(--radius-full);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  animation: skeleton-pulse 1.6s ease-in-out infinite;
+}
+[data-skeleton] img, [data-skeleton] textarea, [data-skeleton] input,
+[data-skeleton] .card-media, [data-skeleton] .card-preview,
+[data-skeleton] .preview-panel, [data-skeleton] .sample-gradient-card,
+[data-skeleton] .sample-card-art, [data-skeleton] .palette-swatch,
+[data-skeleton] .brand-footer, [data-skeleton] [style*="background-image"] {
+  background: var(--surface-overlay) !important;
+  color: transparent !important;
+  animation: skeleton-pulse 1.6s ease-in-out infinite;
+}
+[data-skeleton] img { object-fit: none !important; object-position: -99999px -99999px !important; }
+[data-skeleton] svg {
+  background: var(--surface-overlay) !important;
+  color: transparent !important;
+  border-radius: var(--radius-full);
+  animation: skeleton-pulse 1.6s ease-in-out infinite;
+}
+[data-skeleton] svg * { visibility: hidden; }
+[data-skeleton] .card-actions { visibility: hidden !important; }
+[data-skeleton] [aria-pressed=true] { outline-color: transparent; }
+[data-skeleton] textarea::placeholder, [data-skeleton] input::placeholder { color: transparent; }
+.skeleton-code { position: relative; }
+.skeleton-code-lines { display: none; }
+.skeleton-code .skeleton-code-lines {
+  display: grid; position: absolute; inset: var(--space-6);
+  grid-auto-rows: var(--space-6); gap: var(--space-6); align-content: start; overflow: hidden;
+  pointer-events: none; animation: skeleton-pulse 1.6s ease-in-out infinite;
+}
+.skeleton-code-lines span { background: var(--surface-overlay); border-radius: var(--radius-full); }
+.skeleton-code textarea { color: transparent !important; background: var(--surface-canvas) !important; }
+@keyframes skeleton-pulse { 50% { opacity: .5; } }
+@media (prefers-reduced-motion: reduce) {
+  [data-skeleton-text], [data-skeleton] *, .skeleton-code-lines { animation: none !important; }
+}

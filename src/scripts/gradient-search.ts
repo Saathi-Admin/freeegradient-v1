@@ -1,4 +1,5 @@
 import { loadSearchIndex, matchesTemplate, type TemplateSummary } from './catalogue';
+import { skeletonGrid } from './skeleton';
 const controls=document.querySelector<HTMLElement>('[data-gradient-search]')!;
 const input=document.querySelector<HTMLInputElement>('#gradient-search')!;
 const category=document.querySelector<HTMLElement>('#gradient-category');
@@ -16,6 +17,7 @@ const initialCount=count.textContent!;
 const mode=controls.dataset.mode!;
 let page=1, request=0, timer:ReturnType<typeof setTimeout>;
 const pageSize=24;
+const cardSource=browseGrid.querySelector<HTMLElement>('.gradient-card')!;
 function saveFilters() {
   const url=new URL(location.href);
   for(const [key,value] of [['q',input.value.trim()],['collection',category?.dataset.value??'all'],['colour',colour.dataset.value!],['results',String(page)]]) {
@@ -35,8 +37,8 @@ async function search() {
   const query=input.value.trim(), selectedCategory=category?.dataset.value??controls.dataset.category!, selectedColour=colour.dataset.value!;
   const active=!!query||selectedCategory!==(controls.dataset.category??'all')||selectedColour!=='all';
   saveFilters();browseGrid.hidden=active;browsePagination.hidden=active;grid.hidden=!active;pagination.hidden=true;
-  if(!active){count.textContent=initialCount;status.hidden=true;return;}
-  status.textContent='Finding gradients…';status.hidden=false;grid.setAttribute('aria-busy','true');previous.disabled=true;next.disabled=true;
+  if(!active){count.textContent=initialCount;status.hidden=true;grid.replaceChildren();grid.removeAttribute('aria-busy');return;}
+  status.textContent='';status.hidden=true;skeletonGrid(grid,cardSource,pageSize);previous.disabled=true;next.disabled=true;
   try {
     const items=(await loadSearchIndex(selectedColour)).filter(item=>(selectedCategory==='all'||item.category===selectedCategory)&&matchesTemplate(item,query)&&(mode==='all'||item.previews.some(v=>v.mode===mode)));
     if(id!==request)return;
@@ -44,7 +46,7 @@ async function search() {
     grid.replaceChildren(...items.slice((page-1)*pageSize,page*pageSize).map(resultCard));
     count.textContent=`${items.length} matching templates`;status.textContent=items.length?'':'No matches. Try another colour, collection or search.';status.hidden=!!items.length;
     pagination.hidden=pages<=1;pageLabel.dispatchEvent(new CustomEvent('select-sync',{detail:{value:String(page),label:`Page ${page} of ${pages}`,max:pages}}));previous.disabled=page<=1;next.disabled=page>=pages;saveFilters();
-  }catch{if(id===request){status.textContent='Search is unavailable. Change a filter to try again.';grid.replaceChildren();count.textContent='';}}
+  }catch{if(id===request){status.textContent='Search is unavailable. Change a filter to try again.';status.hidden=false;grid.replaceChildren();count.textContent='';}}
   finally{if(id===request)grid.removeAttribute('aria-busy');}
 }
 input.addEventListener('input',()=>{++request;clearTimeout(timer);timer=setTimeout(()=>{page=1;void search();},200);});

@@ -1,0 +1,20 @@
+/* FreeeGradients: Aperture dawn only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-aperture-dawn-01: url("../assets/aperture-dawn-01.f70156a8aeb74166.webp");
+  --fg-aperture-dawn-02: url("../assets/aperture-dawn-02.3664f0dadef9dd7c.webp");
+  --fg-aperture-dawn-03: url("../assets/aperture-dawn-03.fe209e923d68f00b.webp");
+  --fg-aperture-dawn-04: url("../assets/aperture-dawn-04.1ba001c3c71f6704.webp");
+  --fg-aperture-dawn-05: url("../assets/aperture-dawn-05.24d7cdec7a95e486.webp");
+  --fg-aperture-dawn-06: url("../assets/aperture-dawn-06.a530f6e637d561e0.webp");
+  --fg-aperture-dawn-07: url("../assets/aperture-dawn-07.62944d6870647ab9.webp");
+  --fg-aperture-dawn-08: url("../assets/aperture-dawn-08.e9572f7cfa6d6f73.webp");
+}
+.fg-aperture-dawn-01 { background-color: #f5f8f3; background-image: var(--fg-aperture-dawn-01); }
+.fg-aperture-dawn-02 { background-color: #fcf6fa; background-image: var(--fg-aperture-dawn-02); }
+.fg-aperture-dawn-03 { background-color: #090b10; background-image: var(--fg-aperture-dawn-03); }
+.fg-aperture-dawn-04 { background-color: #13100e; background-image: var(--fg-aperture-dawn-04); }
+.fg-aperture-dawn-05 { background-color: #070d1c; background-image: var(--fg-aperture-dawn-05); }
+.fg-aperture-dawn-06 { background-color: #180c13; background-image: var(--fg-aperture-dawn-06); }
+.fg-aperture-dawn-07 { background-color: #f8fafc; background-image: var(--fg-aperture-dawn-07); }
+.fg-aperture-dawn-08 { background-color: #fcf9f3; background-image: var(--fg-aperture-dawn-08); }

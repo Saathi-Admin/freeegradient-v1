@@ -1,0 +1,20 @@
+/* FreeeGradients: Centre stage only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-centre-stage-01: url("../assets/centre-stage-01.c84d41294a582795.webp");
+  --fg-centre-stage-02: url("../assets/centre-stage-02.8e3be61353aae2fa.webp");
+  --fg-centre-stage-03: url("../assets/centre-stage-03.9338331154b15f46.webp");
+  --fg-centre-stage-04: url("../assets/centre-stage-04.69aa1d05adb999f2.webp");
+  --fg-centre-stage-05: url("../assets/centre-stage-05.ef1554b23ff8aa1c.webp");
+  --fg-centre-stage-06: url("../assets/centre-stage-06.4c6ab8855ea77f9d.webp");
+  --fg-centre-stage-07: url("../assets/centre-stage-07.ec78727067cc519c.webp");
+  --fg-centre-stage-08: url("../assets/centre-stage-08.5624fee5ffc8b76e.webp");
+}
+.fg-centre-stage-01 { background-color: #071526; background-image: var(--fg-centre-stage-01); }
+.fg-centre-stage-02 { background-color: #0b1915; background-image: var(--fg-centre-stage-02); }
+.fg-centre-stage-03 { background-color: #1c101b; background-image: var(--fg-centre-stage-03); }
+.fg-centre-stage-04 { background-color: #25120e; background-image: var(--fg-centre-stage-04); }
+.fg-centre-stage-05 { background-color: #f6fbff; background-image: var(--fg-centre-stage-05); }
+.fg-centre-stage-06 { background-color: #fafbf4; background-image: var(--fg-centre-stage-06); }
+.fg-centre-stage-07 { background-color: #fff6f7; background-image: var(--fg-centre-stage-07); }
+.fg-centre-stage-08 { background-color: #fffbea; background-image: var(--fg-centre-stage-08); }

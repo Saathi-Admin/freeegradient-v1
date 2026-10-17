@@ -1,9 +1,20 @@
-import { mkdir, writeFile, rm, access, rename } from 'node:fs/promises';
+import { mkdir, writeFile as writeFileOnce, rm, access, rename, readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import sharp from 'sharp';
 import { palettes, recipes } from '../src/data/recipes.mjs';
 import { referenceComposition } from '../src/data/reference-recipes.mjs';
 import { expandedComposition } from '../src/data/expanded-recipes.mjs';
+import { modernLightComposition } from '../src/data/modern-light-compositions.mjs';
+// Windows file watchers can briefly hold generated assets open during a rebuild.
+async function writeFile(...args) {
+  for(let attempt=0;;attempt++) {
+    try { return await writeFileOnce(...args); }
+    catch(error) {
+      if(!['EBUSY','EPERM','UNKNOWN'].includes(error.code)||attempt>=5) throw error;
+      await new Promise(resolve=>setTimeout(resolve,100*(attempt+1)));
+    }
+  }
+}
 const assetDir = new URL('../public/gradients/', import.meta.url);
 await mkdir(assetDir, { recursive: true });
 const stylesDir = new URL('styles/', assetDir);
@@ -33,7 +44,12 @@ for (const [index, recipe] of recipes.entries()) {
       content += `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="url(#${id})"/>`;
       return `radial-gradient(ellipse ${rx / 16}% ${ry / 9}% at ${x / 16}% ${y / 9}%, ${color}${strength === 1 ? '' : Math.round(strength * 255).toString(16).padStart(2, '0')} 0%, ${color}00 100%)`;
     };
-    if (recipe.study) {
+    if (recipe.sourceImages?.[palette.id]) {
+      // Raster-backed SVG compositions are prepared after the procedural branches.
+    } else if (recipe.slug === 'aurora' || recipe.slug === 'centre-stage') {
+      const composition=modernLightComposition(recipe,palette);
+      background=composition.background;content=composition.content;defs.push(composition.defs);
+    } else if (recipe.study) {
       const composition=referenceComposition(recipe,palette);
       background=composition.background;content=composition.content;defs.push(composition.defs);
     } else if ('composition' in recipe) {
@@ -72,7 +88,25 @@ for (const [index, recipe] of recipes.entries()) {
       background = undefined;
     }
     const id = `${recipe.slug}-${palette.id}`;
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs>${defs.join('')}</defs>${content}</svg>`;
+    const sourceImage=recipe.sourceImages?.[palette.id];
+    const sourcePath=typeof sourceImage==='string'?sourceImage:sourceImage?.path;
+    const original=sourcePath?await readFile(new URL(`../src/data/${sourcePath}`,import.meta.url)):undefined;
+    const hue=typeof sourceImage==='object'?sourceImage.hue??0:0;
+    const lift=typeof sourceImage==='object'?sourceImage.lift??0:0;
+    const invert=typeof sourceImage==='object'?sourceImage.invert??false:false;
+    const cover=typeof sourceImage==='object'?sourceImage.cover:undefined;
+    const colourFiltered=!!(hue||lift||invert);
+    const recoloured=!!(colourFiltered||cover);
+    const sourceSize=original?await sharp(original).metadata():undefined;
+    const width=sourceSize?.width??1600,height=sourceSize?.height??900;
+    if(original){
+      background=undefined;defs.length=0;
+      if(colourFiltered) defs.push(`<filter id="palette" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feColorMatrix type="hueRotate" values="${hue}"/><feComponentTransfer>${['R','G','B'].map(channel=>`<feFunc${channel} type="linear" slope="${invert?-(1-lift):1-lift}" intercept="${invert?1:lift}"/>`).join('')}</feComponentTransfer></filter>`);
+      const image=`<image width="${width}" height="${height}" href="data:image/png;base64,${original.toString('base64')}"/>`;
+      const annotationCover=cover?`<rect x="${cover.x}" y="${cover.y}" width="${cover.width}" height="${cover.height}" fill="${cover.fill}"/>`:'';
+      content=colourFiltered?`<g filter="url(#palette)">${image}${annotationCover}</g>`:image+annotationCover;
+    }
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><defs>${defs.join('')}</defs>${content}</svg>`;
     if (variationIds.has(id)) throw new Error(`Duplicate variation ID: ${id}`);
     variationIds.add(id);
     if (!variations.length) { const signature=hash(svg); if(compositions.has(signature)) throw new Error(`Duplicate composition: ${recipe.slug}`); compositions.add(signature); }
@@ -83,15 +117,15 @@ for (const [index, recipe] of recipes.entries()) {
     if (!(await exists(new URL(thumbName,thumbnailsDir)))) await writeImmutable(new URL(thumbName,thumbnailsDir),await sharp(Buffer.from(svg),{density:24}).resize(384,216).webp({quality:72}).toBuffer());
     let backgroundSrc;
     if (!background) {
-      const imageName = `${id}.${hash(svg+'background-v2')}.webp`;
-      if (!(await exists(new URL(imageName,immutableDir)))) await writeImmutable(new URL(imageName,immutableDir),await sharp(Buffer.from(svg)).webp({quality:90}).toBuffer());
+      const imageName = `${id}.${hash(svg+(original?'original-lossless-v1':'background-v2'))}.webp`;
+      if (!(await exists(new URL(imageName,immutableDir)))) await writeImmutable(new URL(imageName,immutableDir),original?await sharp(recoloured?Buffer.from(svg):original).webp({lossless:true}).toBuffer():await sharp(Buffer.from(svg)).webp({quality:90}).toBuffer());
       backgroundSrc = `/gradients/assets/${imageName}`;
     }
     templateVariables.push(`  --fg-${id}: ${background ?? `url("..${backgroundSrc.slice('/gradients'.length)}")`};`);
     templateClasses.push(`.fg-${id} { background-color: ${base}; background-image: var(--fg-${id}); }`);
-    variations.push({ ...palette, id, src: `/gradients/assets/${svgName}`, thumbnail: `/gradients/thumbnails/${thumbName}`, backgroundSrc, css: background ?? `url("${backgroundSrc}")`, cssKind: background ? 'native' : 'asset' });
+    variations.push({ ...palette, id, src: `/gradients/assets/${svgName}`, thumbnail: `/gradients/thumbnails/${thumbName}`, backgroundSrc, ...(original?{sourceKind:recoloured?'recoloured-raster':'original-raster',sourceWidth:width,sourceHeight:height}:{}), css: background ?? `url("${backgroundSrc}")`, cssKind: background ? 'native' : 'asset' });
   }
-  const { palettes: recipePalettes, ...metadata } = recipe;
+  const { palettes: recipePalettes, sourceImages: recipeSourceImages, ...metadata } = recipe;
   const stylesheet = `/* FreeeGradients: ${recipe.name} only. */\n.fg-gradient { background-size: cover; background-position: center; }\n:root {\n${templateVariables.join('\n')}\n}\n${templateClasses.join('\n')}\n`;
   if(Buffer.byteLength(stylesheet)>8192) throw new Error(`Template CSS exceeds 8 KiB: ${recipe.slug}`);
   if (!variations.some(v=>v.mode==='light') || !variations.some(v=>v.mode==='dark')) throw new Error(`Missing light/dark variation: ${recipe.slug}`);

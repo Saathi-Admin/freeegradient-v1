@@ -1,0 +1,20 @@
+/* FreeeGradients: Opal entrance only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-opal-entrance-01: url("../assets/opal-entrance-01.47ea4fdd2db7b39f.webp");
+  --fg-opal-entrance-02: url("../assets/opal-entrance-02.99ef63e1d6dd1568.webp");
+  --fg-opal-entrance-03: url("../assets/opal-entrance-03.4517e1d0d598a053.webp");
+  --fg-opal-entrance-04: url("../assets/opal-entrance-04.ea4f914cf07fdc0d.webp");
+  --fg-opal-entrance-05: url("../assets/opal-entrance-05.f86a1461f97f1fb2.webp");
+  --fg-opal-entrance-06: url("../assets/opal-entrance-06.df16a97e97a9c5b7.webp");
+  --fg-opal-entrance-07: url("../assets/opal-entrance-07.8b6833187bbc9c71.webp");
+  --fg-opal-entrance-08: url("../assets/opal-entrance-08.2f3a470139965624.webp");
+}
+.fg-opal-entrance-01 { background-color: #090b10; background-image: var(--fg-opal-entrance-01); }
+.fg-opal-entrance-02 { background-color: #13100e; background-image: var(--fg-opal-entrance-02); }
+.fg-opal-entrance-03 { background-color: #070d1c; background-image: var(--fg-opal-entrance-03); }
+.fg-opal-entrance-04 { background-color: #180c13; background-image: var(--fg-opal-entrance-04); }
+.fg-opal-entrance-05 { background-color: #f8fafc; background-image: var(--fg-opal-entrance-05); }
+.fg-opal-entrance-06 { background-color: #fcf9f3; background-image: var(--fg-opal-entrance-06); }
+.fg-opal-entrance-07 { background-color: #f5f8f3; background-image: var(--fg-opal-entrance-07); }
+.fg-opal-entrance-08 { background-color: #fcf6fa; background-image: var(--fg-opal-entrance-08); }

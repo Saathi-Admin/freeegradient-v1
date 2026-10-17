@@ -1,4 +1,5 @@
 import type { GradientTemplate, GradientVariation } from '../types/gradient';
+import { skeletonize } from './skeleton';
 
 type Format = 'png' | 'jpeg' | 'svg' | 'webp' | 'html' | 'css' | 'react' | 'json';
 const images: Format[] = ['png','jpeg','svg','webp'];
@@ -25,6 +26,12 @@ function initialize() {
   const status = el('#export-status');
   const image = el<HTMLImageElement>('#export-image');
   const code = el<HTMLTextAreaElement>('#export-code');
+  const codePreview=el('.export-code-preview');
+  let restoreCode: (()=>void)|undefined, restoreImage: (()=>void)|undefined;
+  const finishCode=()=>{restoreCode?.();restoreCode=undefined;codePreview.classList.remove('skeleton-code');};
+  const finishImage=()=>{restoreImage?.();restoreImage=undefined;};
+  image.addEventListener('load',finishImage);
+  image.addEventListener('error',()=>{finishImage();status.textContent='Preview unavailable. Close the export and try again.';});
   let template: GradientTemplate, variation: GradientVariation;
   let format: Format = 'png', kind = 'image', width = 1920, height = 1080;
   let busy = false, preparing = false, revision = 0, source: Promise<string> | undefined;
@@ -65,6 +72,7 @@ function initialize() {
   }
   async function render() {
     const current = ++revision;
+    finishCode();
     el('#export-image-settings').hidden = kind !== 'image';
     el('#export-code-settings').hidden = kind !== 'code';
     el('#export-quality-field').hidden = !['jpeg','webp'].includes(format);
@@ -81,11 +89,11 @@ function initialize() {
     status.textContent = '';
     preparing = kind === 'code'; syncButtons();
     if (kind === 'code') {
-      code.value = 'Preparing export…';
+      code.value = '';codePreview.classList.add('skeleton-code');restoreCode=skeletonize(codePreview);
       el('#export-code-note').textContent = {html:'Self-contained HTML page with the artwork embedded. Responsive, with no external assets.',css:variation.cssKind==='native'?'Native CSS for this exact gradient.':'CSS uses this variation’s optimized background image URL. Keep that image available when using the code.',react:'A responsive React component. Artwork is embedded where needed; no extra packages.',json:'Palette, template and integration metadata. Asset URLs refer to the current website.'}[format as 'html'|'css'|'react'|'json'];
       try { const value = await codeText(); if (current === revision) code.value = value; }
       catch(error) { if(current === revision) { code.value=''; status.textContent = (error as Error).message; } }
-      finally { if(current === revision) { preparing=false; syncButtons(); if(!code.value) {downloadButton.disabled=true;copyButton.disabled=true;} } }
+      finally { if(current === revision) { finishCode();preparing=false; syncButtons(); if(!code.value) {downloadButton.disabled=true;copyButton.disabled=true;} } }
     }
   }
   function choose(button: HTMLElement, selector: string) {
@@ -156,7 +164,8 @@ function initialize() {
   }
   async function run(copy: boolean) {
     if(busy||preparing||(kind==='image'&&!validSize())) return;
-    busy=true;syncButtons();modal.setAttribute('aria-busy','true');status.textContent=copy?'Preparing clipboard…':'Preparing download…';
+    busy=true;syncButtons();modal.setAttribute('aria-busy','true');status.textContent='';
+    const restoreAction=skeletonize(copy?copyButton:downloadButton);
     try {
       if(kind==='code'||format==='svg') {
         const text=kind==='code'?code.value:await artwork();
@@ -172,7 +181,7 @@ function initialize() {
       }
       status.textContent=copy?`${names[format]} copied.`:`${names[format]} downloaded${kind==='image'?` at ${width} × ${height} px`:''}.`;
     }catch(error){status.textContent=error instanceof Error&&error.name!=='NotAllowedError'?error.message:'Clipboard access was blocked. Use Download instead.';}
-    finally{busy=false;modal.removeAttribute('aria-busy');syncButtons();}
+    finally{restoreAction();busy=false;modal.removeAttribute('aria-busy');syncButtons();}
   }
   downloadButton.addEventListener('click',()=>void run(false));copyButton.addEventListener('click',()=>void run(true));
   modal.addEventListener('cancel',event=>{if(busy)event.preventDefault();});
@@ -181,15 +190,24 @@ function initialize() {
     const bounds=modal.getBoundingClientRect();
     if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom)modal.close();
   });
-  modal.addEventListener('close',()=>{++revision;document.body.style.overflow=priorOverflow;trigger?.focus({preventScroll:true});});
+  modal.addEventListener('close',()=>{++revision;finishCode();finishImage();preparing=false;document.body.style.overflow=priorOverflow;trigger?.focus({preventScroll:true});});
   open=(nextTemplate,nextVariation)=>{
     if(modal.open)return;
     template=nextTemplate;variation=nextVariation;source=undefined;kind='image';format='png';width=1920;height=1080;busy=false;
-    widthInput.value='1920';heightInput.value='1080';quality.value='95';el('#export-quality-value').textContent='95%';
+    const originalSize=el('[data-export-size="original"]');
+    originalSize.hidden=!variation.sourceKind;
+    if(!originalSize.hidden){
+      width=variation.sourceWidth!;height=variation.sourceHeight!;
+      originalSize.dataset.width=String(width);originalSize.dataset.height=String(height);
+      el('[data-export-original-size]').textContent=`${width} × ${height}`;
+    }
+    widthInput.value=String(width);heightInput.value=String(height);quality.value='95';el('#export-quality-value').textContent='95%';
     el('#export-custom').hidden=true;
-    choose(el('[data-export-size="wide"]'),'[data-export-size]');
+    choose(originalSize.hidden?el('[data-export-size="wide"]'):originalSize,'[data-export-size]');
     el('#export-title').textContent=`Export ${template.name}`;el('#export-subtitle').textContent=`${variation.name} · ${variation.id}`;
+    finishImage();restoreImage=skeletonize(el('.export-preview-stage'));
     image.src=variation.backgroundSrc??variation.src;image.alt=`${template.name}, ${variation.name} export preview`;
+    if(image.complete&&image.naturalWidth) finishImage();
     trigger=document.activeElement as HTMLElement;priorOverflow=document.body.style.overflow;document.body.style.overflow='hidden';
     modal.showModal();void render();
   };

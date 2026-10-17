@@ -1,0 +1,28 @@
+/* FreeeGradients: Reflected dawn only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-reflected-dawn-01: url("../assets/reflected-dawn-01.f4356bdae2c49899.webp");
+  --fg-reflected-dawn-02: url("../assets/reflected-dawn-02.ab3f188a3aedfc09.webp");
+  --fg-reflected-dawn-03: url("../assets/reflected-dawn-03.753f371225b40a70.webp");
+  --fg-reflected-dawn-04: url("../assets/reflected-dawn-04.796ba29ae37db478.webp");
+  --fg-reflected-dawn-05: url("../assets/reflected-dawn-05.33d5fccc50b7b728.webp");
+  --fg-reflected-dawn-06: url("../assets/reflected-dawn-06.86243c644e316e7b.webp");
+  --fg-reflected-dawn-07: url("../assets/reflected-dawn-07.59cd14bd27b10d16.webp");
+  --fg-reflected-dawn-08: url("../assets/reflected-dawn-08.abcf4ff0a16c9046.webp");
+  --fg-reflected-dawn-09: url("../assets/reflected-dawn-09.d13da7ae0beaa69a.webp");
+  --fg-reflected-dawn-10: url("../assets/reflected-dawn-10.e6e9a3066d915148.webp");
+  --fg-reflected-dawn-11: url("../assets/reflected-dawn-11.2fa62d2cfb0ea860.webp");
+  --fg-reflected-dawn-12: url("../assets/reflected-dawn-12.d947cb2a85129c48.webp");
+}
+.fg-reflected-dawn-01 { background-color: #010b18; background-image: var(--fg-reflected-dawn-01); }
+.fg-reflected-dawn-02 { background-color: #10091e; background-image: var(--fg-reflected-dawn-02); }
+.fg-reflected-dawn-03 { background-color: #190b0a; background-image: var(--fg-reflected-dawn-03); }
+.fg-reflected-dawn-04 { background-color: #031510; background-image: var(--fg-reflected-dawn-04); }
+.fg-reflected-dawn-05 { background-color: #080b24; background-image: var(--fg-reflected-dawn-05); }
+.fg-reflected-dawn-06 { background-color: #1b0b17; background-image: var(--fg-reflected-dawn-06); }
+.fg-reflected-dawn-07 { background-color: #115c88; background-image: var(--fg-reflected-dawn-07); }
+.fg-reflected-dawn-08 { background-color: #37786d; background-image: var(--fg-reflected-dawn-08); }
+.fg-reflected-dawn-09 { background-color: #9a547e; background-image: var(--fg-reflected-dawn-09); }
+.fg-reflected-dawn-10 { background-color: #6b5a9e; background-image: var(--fg-reflected-dawn-10); }
+.fg-reflected-dawn-11 { background-color: #bc713f; background-image: var(--fg-reflected-dawn-11); }
+.fg-reflected-dawn-12 { background-color: #267e92; background-image: var(--fg-reflected-dawn-12); }

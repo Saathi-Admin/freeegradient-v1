@@ -1,4 +1,6 @@
 export const collections = [
+  { id: 'soft-auras', preview: '/gradients/grain-bloom-01.svg', title: 'Soft auras', description: 'Soft organic colour forms, delicate blur and fine grain. Three distinct compositions with coordinated colour variations.' },
+  { id: 'light-atmospheres', preview: '/gradients/luminous-drift-01.svg', title: 'Light atmospheres', description: 'Grainy light washes and glowing reflected horizons. Atmospheric gradients in coordinated colour palettes.' },
   { id: 'landing', preview: '/gradients/horizon-02.svg', title: 'Landing page', description: 'Soft horizons and a little glow. Made for your first impression.' },
   { id: 'footer', preview: '/gradients/afterglow-03.svg', title: 'Footer glow', description: 'Deep shadows, rising light and soft grain. A memorable finish.' },
   { id: 'colour-clouds', preview: '/gradients/orchid-cloud-01.svg', title: 'Colour clouds', description: 'Bright colour clouds, soft blurred folds and a touch of grain. Playful backgrounds for light and dark designs.' },

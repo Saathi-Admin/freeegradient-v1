@@ -19,7 +19,7 @@ const families = [
   ['prism', 'prism', ['Refraction','Spectral','Light leak','Crystal edge','Spectrum','Split light','Glassline','Colour flare']],
   ['duotone', 'duotone', ['Twofold','Counterpoint','Colour field','Crossfade','Halfway','Soft divide','Balance','Double take']],
   ['angular', 'angular', ['Colour wheel','Pivot','Turntable','Compass','Pinwheel','Vortex','Chromatic turn','Off centre']],
-  ['spotlight', 'spotlight', ['Centre stage','Pool of light','Limelight','Overhead','Side light','Daybeam','Curtain call','Beacon']],
+  ['spotlight', 'spotlight', ['Centre stage']],
   ['earth', 'earth', ['Dune','Terracotta','Mossland','Sandstone','Clay valley','Forest floor','Stonewash']],
 ];
 
@@ -45,6 +45,8 @@ const seriesNames = ['Terrace','Ribbon','Lattice','Cascade','Arc','Veil','Window
 // Preserve the published geometry of remaining families after collection removal.
 const geometryOffsets = { sunset:0, pastel:1, holographic:2, cosmic:4, prism:5, duotone:6, angular:7, spotlight:8, earth:9 };
 for (const [category, shape] of families) {
+  // Spotlight retains the curated Centre stage composition and its colourways.
+  if (category === 'spotlight') continue;
   const familyIndex = geometryOffsets[category];
   for (let i=0;i<90;i++) {
     const series=Math.floor(i/9), cell=i%9;

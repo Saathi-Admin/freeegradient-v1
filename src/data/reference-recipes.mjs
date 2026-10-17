@@ -3,6 +3,8 @@ import { floralComposition } from './floral-recipes.mjs';
 import { colourCloudComposition } from './colour-cloud-recipes.mjs';
 import { haloHorizonComposition } from './halo-horizon-recipes.mjs';
 import { lightFormComposition } from './light-form-recipes.mjs';
+import { sunlitHazeComposition } from './sunlit-haze-recipes.mjs';
+import { atmosphericLightComposition } from './atmospheric-light-recipes.mjs';
 // Hand-composed studies inspired by supplied visual references. Artwork has no text or overlays.
 const studies = [
  ['ion-ribbon','Ion ribbon','ribbon','#020518','#0755ed','#17d8dd','#c88eea','dark',['blue','cyan','glow','ribbon']],
@@ -41,6 +43,8 @@ export const referenceRecipes=studies.map(([slug,name,study,base,one,two,three,m
  palettes:[{id:'01',name:'Original study',mode,colors:[base,one,two,three],tags},...alternates.map(([name,mode,colors,tags],i)=>({id:String(i+2).padStart(2,'0'),name,mode,colors,tags}))]}));
 
 export function referenceComposition(recipe,palette){
+ if(recipe.study==='atmospheric-light') return atmosphericLightComposition(recipe,palette);
+ if(recipe.study==='sunlit-haze') return sunlitHazeComposition(recipe,palette);
  if(recipe.study==='light-form') return lightFormComposition(recipe,palette);
  if(recipe.study==='premium') return premiumComposition(recipe,palette);
  if(recipe.study==='floral') return floralComposition(recipe,palette);

@@ -1,0 +1,20 @@
+/* FreeeGradients: Gallery beam only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-gallery-beam-01: url("../assets/gallery-beam-01.ea16d6de364a34ab.webp");
+  --fg-gallery-beam-02: url("../assets/gallery-beam-02.dd61f0bea8c6045c.webp");
+  --fg-gallery-beam-03: url("../assets/gallery-beam-03.4d2f2c08ae52ed2f.webp");
+  --fg-gallery-beam-04: url("../assets/gallery-beam-04.4f5dd1d949489536.webp");
+  --fg-gallery-beam-05: url("../assets/gallery-beam-05.8444165b248c6874.webp");
+  --fg-gallery-beam-06: url("../assets/gallery-beam-06.0de118c675a374b8.webp");
+  --fg-gallery-beam-07: url("../assets/gallery-beam-07.61ac4e5880021ef2.webp");
+  --fg-gallery-beam-08: url("../assets/gallery-beam-08.de9e34db4e3e8522.webp");
+}
+.fg-gallery-beam-01 { background-color: #fcf9f3; background-image: var(--fg-gallery-beam-01); }
+.fg-gallery-beam-02 { background-color: #f5f8f3; background-image: var(--fg-gallery-beam-02); }
+.fg-gallery-beam-03 { background-color: #fcf6fa; background-image: var(--fg-gallery-beam-03); }
+.fg-gallery-beam-04 { background-color: #090b10; background-image: var(--fg-gallery-beam-04); }
+.fg-gallery-beam-05 { background-color: #13100e; background-image: var(--fg-gallery-beam-05); }
+.fg-gallery-beam-06 { background-color: #070d1c; background-image: var(--fg-gallery-beam-06); }
+.fg-gallery-beam-07 { background-color: #180c13; background-image: var(--fg-gallery-beam-07); }
+.fg-gallery-beam-08 { background-color: #f8fafc; background-image: var(--fg-gallery-beam-08); }

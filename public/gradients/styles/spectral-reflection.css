@@ -1,0 +1,28 @@
+/* FreeeGradients: Spectral reflection only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-spectral-reflection-01: url("../assets/spectral-reflection-01.06db64dc25c8b422.webp");
+  --fg-spectral-reflection-02: url("../assets/spectral-reflection-02.0aed47cecb27673e.webp");
+  --fg-spectral-reflection-03: url("../assets/spectral-reflection-03.512ebac5ed1b0d15.webp");
+  --fg-spectral-reflection-04: url("../assets/spectral-reflection-04.be5031fd8431251d.webp");
+  --fg-spectral-reflection-05: url("../assets/spectral-reflection-05.5ad1e13a7926e73d.webp");
+  --fg-spectral-reflection-06: url("../assets/spectral-reflection-06.79915a1bf992d0dc.webp");
+  --fg-spectral-reflection-07: url("../assets/spectral-reflection-07.6b11642db91f2173.webp");
+  --fg-spectral-reflection-08: url("../assets/spectral-reflection-08.08dba8bbc83989a1.webp");
+  --fg-spectral-reflection-09: url("../assets/spectral-reflection-09.503974ebe54d040e.webp");
+  --fg-spectral-reflection-10: url("../assets/spectral-reflection-10.9f2a853ec082d3c8.webp");
+  --fg-spectral-reflection-11: url("../assets/spectral-reflection-11.d913b5064e5a95d0.webp");
+  --fg-spectral-reflection-12: url("../assets/spectral-reflection-12.fc355f36db5d9c82.webp");
+}
+.fg-spectral-reflection-01 { background-color: #020616; background-image: var(--fg-spectral-reflection-01); }
+.fg-spectral-reflection-02 { background-color: #0d0315; background-image: var(--fg-spectral-reflection-02); }
+.fg-spectral-reflection-03 { background-color: #16010c; background-image: var(--fg-spectral-reflection-03); }
+.fg-spectral-reflection-04 { background-color: #150300; background-image: var(--fg-spectral-reflection-04); }
+.fg-spectral-reflection-05 { background-color: #0b0700; background-image: var(--fg-spectral-reflection-05); }
+.fg-spectral-reflection-06 { background-color: #000a00; background-image: var(--fg-spectral-reflection-06); }
+.fg-spectral-reflection-07 { background-color: #000b02; background-image: var(--fg-spectral-reflection-07); }
+.fg-spectral-reflection-08 { background-color: #000a0e; background-image: var(--fg-spectral-reflection-08); }
+.fg-spectral-reflection-09 { background-color: #b8b9be; background-image: var(--fg-spectral-reflection-09); }
+.fg-spectral-reflection-10 { background-color: #beb8bb; background-image: var(--fg-spectral-reflection-10); }
+.fg-spectral-reflection-11 { background-color: #bbb9b8; background-image: var(--fg-spectral-reflection-11); }
+.fg-spectral-reflection-12 { background-color: #b8bbb8; background-image: var(--fg-spectral-reflection-12); }

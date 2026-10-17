@@ -3,6 +3,10 @@ import { floralRecipes } from './floral-recipes.mjs';
 import { colourCloudRecipes } from './colour-cloud-recipes.mjs';
 import { haloHorizonRecipes } from './halo-horizon-recipes.mjs';
 import { lightFormRecipes } from './light-form-recipes.mjs';
+import { sunlitHazeRecipes } from './sunlit-haze-recipes.mjs';
+import { atmosphericLightRecipes } from './atmospheric-light-recipes.mjs';
+import { spectralReflectionRecipes } from './spectral-reflection-recipes.mjs';
+import { softAuraRecipes } from './soft-aura-recipes.mjs';
 // Original procedural compositions. Keep published IDs stable.
 import { referenceRecipes } from './reference-recipes.mjs';
 import { expandedRecipes } from './expanded-recipes.mjs';
@@ -30,7 +34,7 @@ export const recipes = [
   ['ripple','Ripple','waves','wave'], ['drift','Drift','waves','wave'], ['flux','Flux','waves','wave'],
   ['horizon','Horizon','landing','horizon'], ['dawnlight','Dawnlight','landing','horizon'], ['atmosphere','Atmosphere','landing','horizon'],
   ['afterglow','Afterglow','footer','beam'], ['uplift','Uplift','footer','beam'], ['nightfall','Nightfall','footer','beam'],
-].map(([slug,name,category,shape],i)=>({slug,name,category,shape,position:i%3,tags:[category,shape,...({smooth:['soft','blur'],mesh:['organic'],glow:['aurora','light'],vintage:['grain','retro','texture'],waves:['wave','abstract','flow']}[category] ?? [])]}));
+].map(([slug,name,category,shape],i)=>({slug,name,category,shape,position:i%3,tags:[category,shape,...({smooth:['soft','blur'],mesh:['organic'],glow:['aurora','light'],vintage:['grain','retro','texture'],waves:['wave','abstract','flow']}[category] ?? [])]})).filter(recipe=>!['halo','ember'].includes(recipe.slug));
 for (const recipe of recipes) if (recipe.category === 'landing' || recipe.category === 'footer') recipe.palettes = landingPalettes;
 recipes.push(...expandedRecipes);
 
@@ -42,3 +46,7 @@ recipes.push(...premiumRecipes);
 recipes.push(...colourCloudRecipes);
 recipes.push(...haloHorizonRecipes);
 recipes.push(...lightFormRecipes);
+recipes.push(...sunlitHazeRecipes);
+recipes.push(...atmosphericLightRecipes);
+recipes.push(...spectralReflectionRecipes);
+recipes.push(...softAuraRecipes);

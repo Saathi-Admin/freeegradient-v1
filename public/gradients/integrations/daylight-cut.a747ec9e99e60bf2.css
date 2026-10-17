@@ -1,0 +1,20 @@
+/* FreeeGradients: Daylight cut only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-daylight-cut-01: url("../assets/daylight-cut-01.b8f0e3585c78a669.webp");
+  --fg-daylight-cut-02: url("../assets/daylight-cut-02.0fe7011a256f3fc9.webp");
+  --fg-daylight-cut-03: url("../assets/daylight-cut-03.aea0cd1071422bbd.webp");
+  --fg-daylight-cut-04: url("../assets/daylight-cut-04.16370ffcd14a3017.webp");
+  --fg-daylight-cut-05: url("../assets/daylight-cut-05.e31efd4e4d0ce4e7.webp");
+  --fg-daylight-cut-06: url("../assets/daylight-cut-06.e2b19ac8f71a0fd7.webp");
+  --fg-daylight-cut-07: url("../assets/daylight-cut-07.af659a680f81b73c.webp");
+  --fg-daylight-cut-08: url("../assets/daylight-cut-08.5dd5630ed234bc24.webp");
+}
+.fg-daylight-cut-01 { background-color: #090b10; background-image: var(--fg-daylight-cut-01); }
+.fg-daylight-cut-02 { background-color: #13100e; background-image: var(--fg-daylight-cut-02); }
+.fg-daylight-cut-03 { background-color: #070d1c; background-image: var(--fg-daylight-cut-03); }
+.fg-daylight-cut-04 { background-color: #180c13; background-image: var(--fg-daylight-cut-04); }
+.fg-daylight-cut-05 { background-color: #f8fafc; background-image: var(--fg-daylight-cut-05); }
+.fg-daylight-cut-06 { background-color: #fcf9f3; background-image: var(--fg-daylight-cut-06); }
+.fg-daylight-cut-07 { background-color: #f5f8f3; background-image: var(--fg-daylight-cut-07); }
+.fg-daylight-cut-08 { background-color: #fcf6fa; background-image: var(--fg-daylight-cut-08); }

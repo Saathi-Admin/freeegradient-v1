@@ -1,12 +1,12 @@
 /* FreeeGradients: Sorbet cloud only. */
 .fg-gradient { background-size: cover; background-position: center; }
 :root {
-  --fg-sorbet-cloud-01: url("../assets/sorbet-cloud-01.543d10ecb0394c62.webp");
-  --fg-sorbet-cloud-02: url("../assets/sorbet-cloud-02.cdb9a7c806ca2530.webp");
-  --fg-sorbet-cloud-03: url("../assets/sorbet-cloud-03.9deab4012522ad6f.webp");
-  --fg-sorbet-cloud-04: url("../assets/sorbet-cloud-04.94dcbcc3f716d36a.webp");
+  --fg-sorbet-cloud-01: url("../assets/sorbet-cloud-01.742e3f8cc6682f74.webp");
+  --fg-sorbet-cloud-02: url("../assets/sorbet-cloud-02.4268ca88f9f29e1b.webp");
+  --fg-sorbet-cloud-03: url("../assets/sorbet-cloud-03.53caa49c05a386da.webp");
+  --fg-sorbet-cloud-04: url("../assets/sorbet-cloud-04.12754c6030070a84.webp");
 }
 .fg-sorbet-cloud-01 { background-color: #e2fbf7; background-image: var(--fg-sorbet-cloud-01); }
 .fg-sorbet-cloud-02 { background-color: #f5f1ff; background-image: var(--fg-sorbet-cloud-02); }
-.fg-sorbet-cloud-03 { background-color: #101326; background-image: var(--fg-sorbet-cloud-03); }
-.fg-sorbet-cloud-04 { background-color: #191025; background-image: var(--fg-sorbet-cloud-04); }
+.fg-sorbet-cloud-03 { background-color: #b8804d; background-image: var(--fg-sorbet-cloud-03); }
+.fg-sorbet-cloud-04 { background-color: #b88e4b; background-image: var(--fg-sorbet-cloud-04); }

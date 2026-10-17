@@ -1,0 +1,20 @@
+/* FreeeGradients: Luminous vault only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-luminous-vault-01: url("../assets/luminous-vault-01.aa7e8813360d4f7d.webp");
+  --fg-luminous-vault-02: url("../assets/luminous-vault-02.387d79febd3f6eb2.webp");
+  --fg-luminous-vault-03: url("../assets/luminous-vault-03.1cbcfcb5f89c1e76.webp");
+  --fg-luminous-vault-04: url("../assets/luminous-vault-04.3d104ef9af53220d.webp");
+  --fg-luminous-vault-05: url("../assets/luminous-vault-05.047d017e1e0eb824.webp");
+  --fg-luminous-vault-06: url("../assets/luminous-vault-06.39aa4b29e02e9e1e.webp");
+  --fg-luminous-vault-07: url("../assets/luminous-vault-07.6515b17db709e63b.webp");
+  --fg-luminous-vault-08: url("../assets/luminous-vault-08.28350d1b11448b9e.webp");
+}
+.fg-luminous-vault-01 { background-color: #070d1c; background-image: var(--fg-luminous-vault-01); }
+.fg-luminous-vault-02 { background-color: #180c13; background-image: var(--fg-luminous-vault-02); }
+.fg-luminous-vault-03 { background-color: #f8fafc; background-image: var(--fg-luminous-vault-03); }
+.fg-luminous-vault-04 { background-color: #fcf9f3; background-image: var(--fg-luminous-vault-04); }
+.fg-luminous-vault-05 { background-color: #f5f8f3; background-image: var(--fg-luminous-vault-05); }
+.fg-luminous-vault-06 { background-color: #fcf6fa; background-image: var(--fg-luminous-vault-06); }
+.fg-luminous-vault-07 { background-color: #090b10; background-image: var(--fg-luminous-vault-07); }
+.fg-luminous-vault-08 { background-color: #13100e; background-image: var(--fg-luminous-vault-08); }

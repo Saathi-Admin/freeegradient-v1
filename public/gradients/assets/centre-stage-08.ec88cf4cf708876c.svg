@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffbea"/><stop offset="1" stop-color="#e9f056" stop-opacity="0.18"/></linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="1" x2=".65" y2="0"><stop stop-color="#e9f056"/><stop offset=".48" stop-color="#ffae87"/><stop offset=".74" stop-color="#e9f056"/><stop offset="1" stop-color="#fffbea"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#e9f056" stop-opacity="0"/><stop offset=".5" stop-color="#ffae87"/><stop offset="1" stop-color="#e9f056" stop-opacity=".12"/></linearGradient>
+    <linearGradient id="beam" x1=".85" y1="0" x2=".3" y2="1"><stop stop-color="#ffae87"/><stop offset=".4" stop-color="#e9f056" stop-opacity=".9"/><stop offset="1" stop-color="#e9f056" stop-opacity="0"/></linearGradient>
+    <radialGradient id="pool"><stop stop-color="#ffae87" stop-opacity="0.8"/><stop offset=".55" stop-color="#e9f056" stop-opacity=".35"/><stop offset="1" stop-color="#fffbea" stop-opacity="0"/></radialGradient></defs><rect width="1600" height="900" fill="#fffbea"/><rect width="1600" height="900" fill="url(#field)"/><ellipse cx="820" cy="700" rx="920" ry="520" fill="url(#pool)"/>
+       <path d="M1100 -120 L1420 -120 L790 1080 L-250 1080Z" fill="url(#beam)"/>
+       <path d="M1420 -120 L790 1080" fill="none" stroke="url(#rim)" stroke-width="4"/>
+       <path d="M1530 -120 L1680 -120 L1130 1080 L950 1080Z" fill="url(#beam)" opacity=".15"/></svg>

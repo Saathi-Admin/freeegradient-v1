@@ -1,0 +1,28 @@
+/* FreeeGradients: Luminous wisp only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-luminous-wisp-01: url("../assets/luminous-wisp-01.c290c7a9ecb7e146.webp");
+  --fg-luminous-wisp-02: url("../assets/luminous-wisp-02.169b44f8310fbcb4.webp");
+  --fg-luminous-wisp-03: url("../assets/luminous-wisp-03.6e2166492c35b132.webp");
+  --fg-luminous-wisp-04: url("../assets/luminous-wisp-04.98f2addbd81dc14e.webp");
+  --fg-luminous-wisp-05: url("../assets/luminous-wisp-05.6056c338695fa4ce.webp");
+  --fg-luminous-wisp-06: url("../assets/luminous-wisp-06.093aca4397eda220.webp");
+  --fg-luminous-wisp-07: url("../assets/luminous-wisp-07.e70ddb4d1f463601.webp");
+  --fg-luminous-wisp-08: url("../assets/luminous-wisp-08.84222a71c6c90adf.webp");
+  --fg-luminous-wisp-09: url("../assets/luminous-wisp-09.fdeff7a8a0b79629.webp");
+  --fg-luminous-wisp-10: url("../assets/luminous-wisp-10.74f37bbf50fad760.webp");
+  --fg-luminous-wisp-11: url("../assets/luminous-wisp-11.e2cc842f3df82ca0.webp");
+  --fg-luminous-wisp-12: url("../assets/luminous-wisp-12.0c8b9b42574a2585.webp");
+}
+.fg-luminous-wisp-01 { background-color: #ffffff; background-image: var(--fg-luminous-wisp-01); }
+.fg-luminous-wisp-02 { background-color: #ffffff; background-image: var(--fg-luminous-wisp-02); }
+.fg-luminous-wisp-03 { background-color: #ffffff; background-image: var(--fg-luminous-wisp-03); }
+.fg-luminous-wisp-04 { background-color: #ffffff; background-image: var(--fg-luminous-wisp-04); }
+.fg-luminous-wisp-05 { background-color: #ffffff; background-image: var(--fg-luminous-wisp-05); }
+.fg-luminous-wisp-06 { background-color: #ffffff; background-image: var(--fg-luminous-wisp-06); }
+.fg-luminous-wisp-07 { background-color: #ffffff; background-image: var(--fg-luminous-wisp-07); }
+.fg-luminous-wisp-08 { background-color: #ffffff; background-image: var(--fg-luminous-wisp-08); }
+.fg-luminous-wisp-09 { background-color: #0a0a0a; background-image: var(--fg-luminous-wisp-09); }
+.fg-luminous-wisp-10 { background-color: #0a0a0a; background-image: var(--fg-luminous-wisp-10); }
+.fg-luminous-wisp-11 { background-color: #0a0a0a; background-image: var(--fg-luminous-wisp-11); }
+.fg-luminous-wisp-12 { background-color: #0a0a0a; background-image: var(--fg-luminous-wisp-12); }

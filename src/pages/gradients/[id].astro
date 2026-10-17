@@ -21,7 +21,7 @@ const related = gradients.filter(g=>g.category===gradient.category && g.slug!==g
 
 ---
 <BaseLayout canonicalPath={`/gradients/${gradient.variations[0].id}/`} image={variation.thumbnail} title={primary ? `${gradient.name} CSS Gradient — ${gradient.variations.length} Colour Variations | FreeeGradients` : `${gradient.name} — ${variation.name} gradient | FreeeGradients`} description={primary ? `${gradient.name}: a ${collection.title.toLowerCase()} background with ${gradient.variations.length} light and dark colour variations. Copy CSS, preview a real layout or download SVG, PNG and JPEG. No sign-up.` : `Download ${variation.name}, a ${variation.mode} ${gradient.name} gradient, free as CSS, SVG, PNG or JPEG. No sign-up required.`}>
-  <Header />
+  <Header playgroundGradient={variation.id} />
   <main id="main-content" class="gradient-detail container">
     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Collections', href: '/collections/' }, { label: collection.title, href: `/collections/${collection.id}/` }, { label: variation.id }]} />
     <article class="gradient-card gradient-detail-layout" data-template={gradient.slug} data-variation={variation.id} data-fixed-variation={variation.id}>

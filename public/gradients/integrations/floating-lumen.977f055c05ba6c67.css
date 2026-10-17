@@ -1,0 +1,20 @@
+/* FreeeGradients: Floating lumen only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-floating-lumen-01: radial-gradient(ellipse 34% 46% at 55% 66%,#13100ed4 0%,#13100e74 42%,#13100e00 100%),radial-gradient(ellipse 34% 57% at 40% 47%,#ddc5a3 0%,#ddc5a3e6 18%,#8b7153 43%,#8b715347 72%,#8b715300 100%),radial-gradient(ellipse 58% 76% at 43% 52%,#8b7153a6 0%,#8b71535b 42%,#8b715300 100%),linear-gradient(#13100e,#13100e);
+  --fg-floating-lumen-02: radial-gradient(ellipse 34% 46% at 55% 66%,#070d1cd4 0%,#070d1c74 42%,#070d1c00 100%),radial-gradient(ellipse 34% 57% at 40% 47%,#92badd 0%,#92badde6 18%,#294f82 43%,#294f8247 72%,#294f8200 100%),radial-gradient(ellipse 58% 76% at 43% 52%,#294f82a6 0%,#294f825b 42%,#294f8200 100%),linear-gradient(#070d1c,#070d1c);
+  --fg-floating-lumen-03: radial-gradient(ellipse 34% 46% at 55% 66%,#180c13d4 0%,#180c1374 42%,#180c1300 100%),radial-gradient(ellipse 34% 57% at 40% 47%,#c89caa 0%,#c89caae6 18%,#793953 43%,#79395347 72%,#79395300 100%),radial-gradient(ellipse 58% 76% at 43% 52%,#793953a6 0%,#7939535b 42%,#79395300 100%),linear-gradient(#180c13,#180c13);
+  --fg-floating-lumen-04: radial-gradient(ellipse 34% 46% at 55% 66%,#f8fafcd4 0%,#f8fafc74 42%,#f8fafc00 100%),radial-gradient(ellipse 34% 57% at 40% 47%,#8aaec6 0%,#8aaec6e6 18%,#d4e3ed 43%,#d4e3ed47 72%,#d4e3ed00 100%),radial-gradient(ellipse 58% 76% at 43% 52%,#d4e3eda6 0%,#d4e3ed5b 42%,#d4e3ed00 100%),linear-gradient(#f8fafc,#f8fafc);
+  --fg-floating-lumen-05: radial-gradient(ellipse 34% 46% at 55% 66%,#fcf9f3d4 0%,#fcf9f374 42%,#fcf9f300 100%),radial-gradient(ellipse 34% 57% at 40% 47%,#b5a086 0%,#b5a086e6 18%,#e4d8c2 43%,#e4d8c247 72%,#e4d8c200 100%),radial-gradient(ellipse 58% 76% at 43% 52%,#e4d8c2a6 0%,#e4d8c25b 42%,#e4d8c200 100%),linear-gradient(#fcf9f3,#fcf9f3);
+  --fg-floating-lumen-06: radial-gradient(ellipse 34% 46% at 55% 66%,#f5f8f3d4 0%,#f5f8f374 42%,#f5f8f300 100%),radial-gradient(ellipse 34% 57% at 40% 47%,#88a49c 0%,#88a49ce6 18%,#d4dfd0 43%,#d4dfd047 72%,#d4dfd000 100%),radial-gradient(ellipse 58% 76% at 43% 52%,#d4dfd0a6 0%,#d4dfd05b 42%,#d4dfd000 100%),linear-gradient(#f5f8f3,#f5f8f3);
+  --fg-floating-lumen-07: radial-gradient(ellipse 34% 46% at 55% 66%,#fcf6fad4 0%,#fcf6fa74 42%,#fcf6fa00 100%),radial-gradient(ellipse 34% 57% at 40% 47%,#b49bbc 0%,#b49bbce6 18%,#e9d4e1 43%,#e9d4e147 72%,#e9d4e100 100%),radial-gradient(ellipse 58% 76% at 43% 52%,#e9d4e1a6 0%,#e9d4e15b 42%,#e9d4e100 100%),linear-gradient(#fcf6fa,#fcf6fa);
+  --fg-floating-lumen-08: radial-gradient(ellipse 34% 46% at 55% 66%,#090b10d4 0%,#090b1074 42%,#090b1000 100%),radial-gradient(ellipse 34% 57% at 40% 47%,#b7c9d5 0%,#b7c9d5e6 18%,#526176 43%,#52617647 72%,#52617600 100%),radial-gradient(ellipse 58% 76% at 43% 52%,#526176a6 0%,#5261765b 42%,#52617600 100%),linear-gradient(#090b10,#090b10);
+}
+.fg-floating-lumen-01 { background-color: #13100e; background-image: var(--fg-floating-lumen-01); }
+.fg-floating-lumen-02 { background-color: #070d1c; background-image: var(--fg-floating-lumen-02); }
+.fg-floating-lumen-03 { background-color: #180c13; background-image: var(--fg-floating-lumen-03); }
+.fg-floating-lumen-04 { background-color: #f8fafc; background-image: var(--fg-floating-lumen-04); }
+.fg-floating-lumen-05 { background-color: #fcf9f3; background-image: var(--fg-floating-lumen-05); }
+.fg-floating-lumen-06 { background-color: #f5f8f3; background-image: var(--fg-floating-lumen-06); }
+.fg-floating-lumen-07 { background-color: #fcf6fa; background-image: var(--fg-floating-lumen-07); }
+.fg-floating-lumen-08 { background-color: #090b10; background-image: var(--fg-floating-lumen-08); }

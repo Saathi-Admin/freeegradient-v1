@@ -1,0 +1,12 @@
+/* FreeeGradients: Aurora only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-aurora-01: url("../assets/aurora-01.72793b1e2f34f2c5.webp");
+  --fg-aurora-02: url("../assets/aurora-02.b45b77e5efa41536.webp");
+  --fg-aurora-03: url("../assets/aurora-03.907414535efe615f.webp");
+  --fg-aurora-04: url("../assets/aurora-04.fba87b709e8c3356.webp");
+}
+.fg-aurora-01 { background-color: #080b18; background-image: var(--fg-aurora-01); }
+.fg-aurora-02 { background-color: #eef8ee; background-image: var(--fg-aurora-02); }
+.fg-aurora-03 { background-color: #fff0df; background-image: var(--fg-aurora-03); }
+.fg-aurora-04 { background-color: #06191d; background-image: var(--fg-aurora-04); }

@@ -27,6 +27,7 @@ const presets = [
         <div id="export-format-panel" role="tabpanel" class="export-settings">
           <div id="export-image-settings" class="export-settings">
             <fieldset class="export-presets"><legend class="text-caption export-label">Size</legend>
+              <Button variant="secondary" size="md" class="export-size" aria-pressed="false" data-export-size="original" hidden><span>Original</span><span class="text-caption" data-export-original-size></span></Button>
               {presets.map(([id,label,width,height],i)=><Button variant="secondary" size="md" class="export-size" aria-pressed={i===0?'true':'false'} data-export-size={id} data-width={width} data-height={height}><span>{label}</span><span class="text-caption">{width} × {height}</span></Button>)}
               <Button variant="secondary" size="md" class="export-size" aria-pressed="false" data-export-size="custom"><span>Custom</span><span class="text-caption">Choose dimensions</span></Button>
             </fieldset>
@@ -39,7 +40,7 @@ const presets = [
           <div id="export-code-settings" class="export-settings" hidden>
             <p id="export-code-note" class="text-caption"></p>
             <label class="text-caption" for="export-code">Code preview</label>
-            <textarea id="export-code" readonly spellcheck="false" aria-label="Export code preview"></textarea>
+            <div class="export-code-preview"><textarea id="export-code" readonly spellcheck="false" aria-label="Export code preview"></textarea><div class="skeleton-code-lines" aria-hidden="true">{Array.from({length:8},()=> <span />)}</div></div>
           </div>
         </div>
       </section>
@@ -75,6 +76,7 @@ const presets = [
   .export-modal input[type=number], #export-code { min-width: 0; width: 100%; color: var(--text-primary); background: var(--surface-canvas); border: 1px solid var(--border-default); border-radius: var(--radius-4); padding: var(--space-5) var(--space-6); font: inherit; }
   .export-modal input[type=number] { scroll-margin: var(--space-3); }
   #export-code { height: calc(var(--space-64) * 2); resize: vertical; font-family: monospace; font-size: var(--font-size-12); line-height: var(--line-height-relaxed); }
+  .export-code-preview { display: grid; min-width: 0; }
   #export-code-note { color: var(--text-secondary); }
   #export-quality-field span { display: flex; justify-content: space-between; color: var(--text-secondary); }
   #export-quality { width: 100%; accent-color: var(--focus-ring); }

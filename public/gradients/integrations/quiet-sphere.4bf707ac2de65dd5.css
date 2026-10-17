@@ -1,0 +1,20 @@
+/* FreeeGradients: Quiet sphere only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-quiet-sphere-01: url("../assets/quiet-sphere-01.0b1ee846c312b300.webp");
+  --fg-quiet-sphere-02: url("../assets/quiet-sphere-02.c1814dd996ae9f8b.webp");
+  --fg-quiet-sphere-03: url("../assets/quiet-sphere-03.c2e17afcf6c1590c.webp");
+  --fg-quiet-sphere-04: url("../assets/quiet-sphere-04.2e82f8a765865d2d.webp");
+  --fg-quiet-sphere-05: url("../assets/quiet-sphere-05.625fc20b15d5a50f.webp");
+  --fg-quiet-sphere-06: url("../assets/quiet-sphere-06.42b505187842a0cf.webp");
+  --fg-quiet-sphere-07: url("../assets/quiet-sphere-07.2e257f615e4791e2.webp");
+  --fg-quiet-sphere-08: url("../assets/quiet-sphere-08.05e6d3c4e22fd02c.webp");
+}
+.fg-quiet-sphere-01 { background-color: #070d1c; background-image: var(--fg-quiet-sphere-01); }
+.fg-quiet-sphere-02 { background-color: #180c13; background-image: var(--fg-quiet-sphere-02); }
+.fg-quiet-sphere-03 { background-color: #f8fafc; background-image: var(--fg-quiet-sphere-03); }
+.fg-quiet-sphere-04 { background-color: #fcf9f3; background-image: var(--fg-quiet-sphere-04); }
+.fg-quiet-sphere-05 { background-color: #f5f8f3; background-image: var(--fg-quiet-sphere-05); }
+.fg-quiet-sphere-06 { background-color: #fcf6fa; background-image: var(--fg-quiet-sphere-06); }
+.fg-quiet-sphere-07 { background-color: #090b10; background-image: var(--fg-quiet-sphere-07); }
+.fg-quiet-sphere-08 { background-color: #13100e; background-image: var(--fg-quiet-sphere-08); }

@@ -1,0 +1,28 @@
+/* FreeeGradients: Soft gesture only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-soft-gesture-01: url("../assets/soft-gesture-01.69b0a5ce94a6e6c1.webp");
+  --fg-soft-gesture-02: url("../assets/soft-gesture-02.a992ed0a437f8290.webp");
+  --fg-soft-gesture-03: url("../assets/soft-gesture-03.8a26a5942d68b5a8.webp");
+  --fg-soft-gesture-04: url("../assets/soft-gesture-04.634235e2fc152e4f.webp");
+  --fg-soft-gesture-05: url("../assets/soft-gesture-05.720dc47d536c84ae.webp");
+  --fg-soft-gesture-06: url("../assets/soft-gesture-06.b373e2803acd24da.webp");
+  --fg-soft-gesture-07: url("../assets/soft-gesture-07.5646015fabcb5285.webp");
+  --fg-soft-gesture-08: url("../assets/soft-gesture-08.ce096168d6a7562c.webp");
+  --fg-soft-gesture-09: url("../assets/soft-gesture-09.324ba4568c0e1196.webp");
+  --fg-soft-gesture-10: url("../assets/soft-gesture-10.0cd154dcd5f284b4.webp");
+  --fg-soft-gesture-11: url("../assets/soft-gesture-11.3c9eb9bf0245a7db.webp");
+  --fg-soft-gesture-12: url("../assets/soft-gesture-12.9d12987446393f04.webp");
+}
+.fg-soft-gesture-01 { background-color: #ffffff; background-image: var(--fg-soft-gesture-01); }
+.fg-soft-gesture-02 { background-color: #ffffff; background-image: var(--fg-soft-gesture-02); }
+.fg-soft-gesture-03 { background-color: #ffffff; background-image: var(--fg-soft-gesture-03); }
+.fg-soft-gesture-04 { background-color: #ffffff; background-image: var(--fg-soft-gesture-04); }
+.fg-soft-gesture-05 { background-color: #ffffff; background-image: var(--fg-soft-gesture-05); }
+.fg-soft-gesture-06 { background-color: #ffffff; background-image: var(--fg-soft-gesture-06); }
+.fg-soft-gesture-07 { background-color: #ffffff; background-image: var(--fg-soft-gesture-07); }
+.fg-soft-gesture-08 { background-color: #ffffff; background-image: var(--fg-soft-gesture-08); }
+.fg-soft-gesture-09 { background-color: #0a0a0a; background-image: var(--fg-soft-gesture-09); }
+.fg-soft-gesture-10 { background-color: #0a0a0a; background-image: var(--fg-soft-gesture-10); }
+.fg-soft-gesture-11 { background-color: #0a0a0a; background-image: var(--fg-soft-gesture-11); }
+.fg-soft-gesture-12 { background-color: #0a0a0a; background-image: var(--fg-soft-gesture-12); }

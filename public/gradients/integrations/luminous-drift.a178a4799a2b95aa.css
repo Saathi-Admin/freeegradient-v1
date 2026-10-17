@@ -1,0 +1,28 @@
+/* FreeeGradients: Luminous drift only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-luminous-drift-01: url("../assets/luminous-drift-01.764ef247c220eb90.webp");
+  --fg-luminous-drift-02: url("../assets/luminous-drift-02.0476dd3113977030.webp");
+  --fg-luminous-drift-03: url("../assets/luminous-drift-03.c0aca2d47899628d.webp");
+  --fg-luminous-drift-04: url("../assets/luminous-drift-04.216d2cc734cf2cd8.webp");
+  --fg-luminous-drift-05: url("../assets/luminous-drift-05.dd7627d06d523ede.webp");
+  --fg-luminous-drift-06: url("../assets/luminous-drift-06.b3442e36c0e789cf.webp");
+  --fg-luminous-drift-07: url("../assets/luminous-drift-07.134893f7dd9b6fd4.webp");
+  --fg-luminous-drift-08: url("../assets/luminous-drift-08.1de213e625d77974.webp");
+  --fg-luminous-drift-09: url("../assets/luminous-drift-09.4218679936586614.webp");
+  --fg-luminous-drift-10: url("../assets/luminous-drift-10.7c7d853e9880a03b.webp");
+  --fg-luminous-drift-11: url("../assets/luminous-drift-11.cecb5af86cc926ef.webp");
+  --fg-luminous-drift-12: url("../assets/luminous-drift-12.4672088d8d05645f.webp");
+}
+.fg-luminous-drift-01 { background-color: #115c88; background-image: var(--fg-luminous-drift-01); }
+.fg-luminous-drift-02 { background-color: #37786d; background-image: var(--fg-luminous-drift-02); }
+.fg-luminous-drift-03 { background-color: #9a547e; background-image: var(--fg-luminous-drift-03); }
+.fg-luminous-drift-04 { background-color: #6b5a9e; background-image: var(--fg-luminous-drift-04); }
+.fg-luminous-drift-05 { background-color: #bc713f; background-image: var(--fg-luminous-drift-05); }
+.fg-luminous-drift-06 { background-color: #267e92; background-image: var(--fg-luminous-drift-06); }
+.fg-luminous-drift-07 { background-color: #010b18; background-image: var(--fg-luminous-drift-07); }
+.fg-luminous-drift-08 { background-color: #10091e; background-image: var(--fg-luminous-drift-08); }
+.fg-luminous-drift-09 { background-color: #190b0a; background-image: var(--fg-luminous-drift-09); }
+.fg-luminous-drift-10 { background-color: #031510; background-image: var(--fg-luminous-drift-10); }
+.fg-luminous-drift-11 { background-color: #080b24; background-image: var(--fg-luminous-drift-11); }
+.fg-luminous-drift-12 { background-color: #1b0b17; background-image: var(--fg-luminous-drift-12); }
