@@ -14,6 +14,7 @@ import { ArrowUpRight } from '@lucide/astro';
 import { gradients } from '../data/gradients';
 import '../styles/library.css';
 const featuredCollections = collections.slice(0, 7);
+const collectionPreview = collections.slice(0, 6);
 const heroCollections = ['landing', 'colour-clouds', 'fluid-fields', 'prismatic-light'].map(id => collections.find(collection => collection.id === id)!);
 const gradientTotal = new Set(gradients.flatMap(template => template.variations.map(variation => variation.id))).size;
 const gradientCount = gradientTotal.toLocaleString('en-US');
@@ -22,7 +23,7 @@ const heroTemplate = gradients.find(template => template.slug === 'refracted-sad
 const heroVariation = heroTemplate.variations.find(variation => variation.name === 'Cobalt signal')!;
 const heroBackground = `url("${heroVariation.backgroundSrc ?? heroVariation.src}")`;
 const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline','orbit','bloom','nectar','halo','aurora','ember','analogue','haze','film','ripple','drift','flux','horizon','dawnlight','atmosphere','afterglow','uplift','nightfall'].includes(g.slug) || ['colour-clouds', 'fluid-fields', 'prismatic-light'].includes(g.category));
-const allGradientCards = collections.slice(0, 12).map((collection, index) => {
+const allGradientCards = collections.slice(0, 6).map((collection, index) => {
   const gradient = gradients.find(template => template.category === collection.id)!;
   const mode = index % 2 === 0 ? 'dark' : 'light';
   const variation = gradient.variations.find(item => item.mode === mode)!;
@@ -60,10 +61,20 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
       </div>
       <div class="section-link"><a class="btn btn-secondary btn-md" href="/gradients/">Explore all gradients <ArrowUpRight aria-hidden="true" /></a></div>
     </section>
+    <section class="section container" id="all-collections" aria-labelledby="all-collections-title">
+      <div class="section-heading"><h2 id="all-collections-title">All collections</h2><p class="text-body-md">Explore every style. Find a collection for your next idea.</p></div>
+      <div class="collection-grid collections-list-grid">
+        {collectionPreview.map(collection => {
+          const variations = gradients.filter(template => template.category === collection.id).reduce((count, template) => count + template.variations.length, 0);
+          return <CollectionCard id={collection.id} title={collection.title} preview={collection.preview} variations={variations} />;
+        })}
+      </div>
+      <div class="section-link"><Button variant="secondary" size="md" href="/collections/">Explore all collections<ArrowUpRight slot="trailing-icon" aria-hidden="true" /></Button></div>
+    </section>
     <div id="collections" class="container">
       {featuredCollections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
         <div class="section-heading"><h2 id={`${collection.id}-title`}>{collection.title}</h2><p class="text-body-md">{collection.description}</p></div>
-        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => featuredGradients.filter(g => g.category === collection.id).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
+        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => featuredGradients.filter(g => g.category === collection.id).slice(0, 3).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
         <div class="section-link"><a class="btn btn-secondary btn-md" href={`/collections/${collection.id}/`} aria-label={`Explore ${collection.title}`}>Explore the collection <ArrowUpRight aria-hidden="true" /></a></div>
       </section>)}
       <div class="empty-state" id="library-empty" hidden><p>No gradients for this mode yet. Try another design background.</p><Button variant="secondary" size="sm" id="clear-filters">Clear filters</Button></div>
@@ -102,14 +113,16 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
   .hero .hero-heading-neutral { background-image: linear-gradient(115deg, var(--text-primary) 15%, #d6f7ff 55%, #a4dfff 100%); background-size: 100% 100%; background-clip: text; -webkit-background-clip: text; color: #d6f7ff; -webkit-text-fill-color: transparent; animation: none; filter: none; text-shadow: none; }
   @media (forced-colors: active) { .hero .hero-heading-neutral { background: none; color: CanvasText; -webkit-text-fill-color: CanvasText; } }
   .hero-for-mobile { display: none; }
-  @media (min-width: 640px) {
-    #hero-title { letter-spacing: -3.2px; }
-  }
-  @media (min-width: 480px) and (max-width: 799px) {
-    .all-gradient-grid :global(.gradient-card:nth-child(n + 9)) { display: none; }
+  @media (max-width: 799px) {
+    :is(#all-gradients, .collection) :global(.gradient-card:nth-child(n + 5)),
+    #all-collections :global(.collection-card:nth-child(n + 5)) { display: none; }
   }
   @media (max-width: 479px) {
-    .all-gradient-grid :global(.gradient-card:nth-child(n + 5)) { display: none; }
+    :is(#all-gradients, .collection) :global(.gradient-card:nth-child(n + 3)),
+    :is(.hero, #all-collections) :global(.collection-card:nth-child(n + 3)) { display: none; }
+  }
+  @media (min-width: 640px) {
+    #hero-title { letter-spacing: -3.2px; }
   }
   @media (max-width: 639px) {
     .hero-for-desktop { display: none; }
