@@ -3,21 +3,72 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import {guides} from '../../data/guides';
+import GradientCard from '../../components/GradientCard.astro';
+import GradientPreview from '../../components/GradientPreview.astro';
+import {guides, type Guide} from '../../data/guides';
+import {gradients} from '../../data/gradients';
+import {collections} from '../../data/collections';
+import {guideCardVariation} from '../../data/guide-cards';
+import '../../styles/content-cards.css';
+import '../../styles/library.css';
 export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
+interface Props { guide: Guide; }
 const {guide}=Astro.props;
+const examples=gradients.filter(g=>g.category===guide.collection).slice(0,3);
+const collection=collections.find(c=>c.id===guide.collection)!;
+const related=guides.filter(g=>g.slug!==guide.slug).sort((a,b)=>Number(b.collection===guide.collection)-Number(a.collection===guide.collection)).slice(0,3);
 ---
 <BaseLayout pageType="Article" title={`${guide.title} | FreeeGradients`} description={guide.description}>
-<Header /><main id="main-content" class="container guide"><Breadcrumbs items={[{label:'Home',href:'/'},{label:'Guides',href:'/guides/'},{label:guide.title}]} /><article><h1 class="text-h2">{guide.title}</h1><p class="text-body-md">{guide.description}</p>{guide.sections.map(([heading,text])=><section><h2 class="text-body-md">{heading}</h2><p class="text-body-sm">{text}</p></section>)}{'source' in guide && <p><a href={guide.source}>WCAG contrast requirements</a></p>}<a class="btn btn-secondary btn-md" href={`/collections/${guide.collection}/`}>Explore these gradients</a><a class="btn btn-secondary btn-md" href="/playground/">Try a real layout</a></article></main><Footer />
+<Header />
+<main id="main-content" class="container guide">
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Guides',href:'/guides/'},{label:guide.title}]} />
+  <article class="guide-article">
+    <h1 class="text-h2">{guide.title}</h1>
+    <p class="byline text-caption">By <a href="/about/">FreeeGradients · Arclink Edge</a></p>
+    <p class="answer text-body-md">{guide.description}</p>
+    <nav class="contents" aria-label="In this guide"><h2 class="text-body-md">In this guide</h2><ul>{guide.sections.map(([heading],index)=><li><a href={`#section-${index+1}`}>{heading}</a></li>)}</ul></nav>
+    {guide.sections.map(([heading,text],index)=><section id={`section-${index+1}`}><h2 class="text-h5">{heading}</h2><p class="text-body-md">{text}</p></section>)}
+    {guide.comparison && <section aria-labelledby="format-comparison"><h2 class="text-h5" id="format-comparison">At a glance</h2><div class="table-scroll" role="region" aria-label="Gradient comparison" tabindex="0"><table><caption>{guide.title}</caption><thead><tr>{guide.comparison.headings.map(heading=><th scope="col">{heading}</th>)}</tr></thead><tbody>{guide.comparison.rows.map(row=><tr>{row.map((cell,index)=>index===0?<th scope="row">{cell}</th>:<td>{cell}</td>)}</tr>)}</tbody></table></div></section>}
+    {guide.code && <section><h2 class="text-h5">A working starting point</h2><p class="text-body-md">This example shows the integration pattern. Use a gradient’s Copy CSS or Export controls for its actual artwork.</p><pre><code>{guide.code}</code></pre></section>}
+    {guide.source && <p><a href={guide.source}>Source: WCAG contrast requirements</a></p>}
+    <section class="guide-examples" aria-labelledby="examples-title"><h2 class="text-h5" id="examples-title">Try these {collection.title.toLowerCase()} backgrounds</h2><p class="text-body-md">Open an example to compare palettes and export the background.</p><div class="examples">{examples.map((gradient,index)=><GradientCard gradient={gradient} designMode="dark" order={index} />)}</div></section>
+    <div class="actions"><a class="btn btn-secondary btn-md" href={`/collections/${guide.collection}/`}>Explore {collection.title.toLowerCase()}</a><a class="btn btn-secondary btn-md" href="/playground/">Try a real layout</a></div>
+    <nav class="related" id="related-guides" aria-label="Related gradient guides"><h2 class="text-h5">Related guides</h2><div class="related-guide-grid">{related.map(g=>{
+      const variation=guideCardVariation(g.slug);
+      const background=variation.cssKind==='native' ? variation.css : `url("${variation.backgroundSrc ?? variation.src}")`;
+      return <a class="related-guide-card content-card" href={`/guides/${g.slug}/`} data-mode={variation.mode} style={{'--card-gradient':background}}><h3 class="text-h4">{g.title}</h3></a>;
+    })}</div><a class="btn btn-secondary btn-md related-all" href="/guides/">All gradient guides</a></nav>
+  </article>
+  <div id="library-empty" hidden></div>
+</main><Footer />
+<GradientPreview templates={examples} />
+<script>import '../../scripts/library';</script>
 </BaseLayout>
 <style>
   .guide { padding-block: var(--header-clearance) var(--section-padding-y); }
-  article { max-width: 780px; margin: var(--space-24) auto 0; }
-  section { display: grid; gap: var(--space-4); margin-top: var(--space-16); }
+  .guide-article { max-width: 880px; margin: var(--space-24) auto 0; }
+  section { display: grid; gap: var(--space-4); margin-top: var(--space-16); scroll-margin-top: var(--header-clearance); }
   p { color: var(--text-secondary); margin-block: var(--space-8); line-height: 1.7; }
   section p { margin: 0; }
   h1 + p { margin-top: var(--space-8); }
   a { color: var(--text-primary); }
-  .btn { margin: var(--space-8) var(--space-4) 0 0; }
-  h1 { line-height: 1.15; }
+  .answer, .contents { padding: var(--space-12); background: var(--surface-card); border-radius: var(--radius-12); }
+  ul { padding-left: var(--space-12); display: grid; gap: var(--space-6); margin-block: var(--space-8); }
+  li { line-height: 1.6; }
+  .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-8); margin-top: var(--space-12); }
+  h1 { line-height: 1.15; overflow-wrap: anywhere; }
+  pre { overflow: auto; padding: var(--space-8); background: var(--surface-card); border-radius: var(--radius-12); line-height: 1.6; max-width: 100%; }
+  .table-scroll { overflow: auto; }
+  table { width: 100%; border-collapse: collapse; text-align: left; line-height: 1.6; }
+  caption { text-align: left; color: var(--text-secondary); margin-bottom: var(--space-6); }
+  th, td { padding: var(--space-8); border-bottom: 1px solid var(--border-subtle); min-width: 140px; vertical-align: top; }
+  td { color: var(--text-secondary); }
+  .examples { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-8); margin-top: var(--space-8); }
+  @media (max-width: 639px) { .examples { grid-template-columns: 1fr; } }
+</style>
+<style is:global>
+  .guide .related { display: grid; gap: var(--space-4); margin-top: var(--space-16); scroll-margin-top: var(--header-clearance); }
+  .guide .related-guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); margin-top: var(--space-4); }
+  .guide .related-all { justify-self: center; margin-top: var(--space-8); }
+  @media (max-width: 639px) { .guide .related-guide-grid { grid-template-columns: 1fr; } }
 </style>

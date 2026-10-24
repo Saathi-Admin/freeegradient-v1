@@ -4,6 +4,7 @@ import Button from './ui/Button.astro';
 import CollectionCard from './CollectionCard.astro';
 import { collections } from '../data/collections';
 import { gradients } from '../data/gradients';
+import '../styles/library.css';
 interface Props { hero?: boolean; playgroundGradient?: string; }
 const { hero = false, playgroundGradient } = Astro.props;
 const playgroundHref=playgroundGradient?`/playground/?gradient=${encodeURIComponent(playgroundGradient)}`:'/playground/';
@@ -123,8 +124,8 @@ const playgroundHref=playgroundGradient?`/playground/?gradient=${encodeURICompon
   collectionsDropdown.addEventListener('pointerleave', scheduleCollectionsClose);
 </script>
 <style>
-  .floating-header.hero-header { background: var(--surface-hero-header); border-color: var(--border-hero-glass); -webkit-backdrop-filter: blur(80px); backdrop-filter: blur(80px); }
-  .floating-header { --button-radius: var(--radius-full); position: fixed; top: var(--header-top); left: 50%; transform: translateX(-50%); z-index: 20; width: max-content; max-width: calc(100% - var(--page-padding-mobile) * 2); min-height: var(--header-height); padding: var(--header-padding); border: 1px solid var(--header-border-color); border-radius: var(--radius-full); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: var(--header-group-gap); background: var(--surface-card); box-shadow: 0 8px 32px #00000030; }
+  .floating-header.hero-header { background: var(--surface-hero-header); -webkit-backdrop-filter: blur(80px); backdrop-filter: blur(80px); }
+  .floating-header { --button-radius: var(--radius-full); position: fixed; top: var(--header-top); left: 50%; transform: translateX(-50%); z-index: 20; width: max-content; max-width: calc(100% - var(--page-padding-mobile) * 2); min-height: var(--header-height); padding: var(--header-padding); border: 0; border-radius: var(--radius-full); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: var(--header-group-gap); background: var(--surface-card); box-shadow: 0 8px 32px #00000030; }
   .floating-header { transition: transform 240ms ease, visibility 240ms; }
   .floating-header.header-hidden { transform: translate(-50%, calc(-100% - var(--header-top) - var(--space-8))); visibility: hidden; pointer-events: none; }
   @media (prefers-reduced-motion: reduce) { .floating-header { transition: none; } }

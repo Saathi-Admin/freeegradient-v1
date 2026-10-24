@@ -18,9 +18,10 @@ const { gradient, variation } = Astro.props;
 const collection = collections.find(c => c.id === gradient.category)!;
 const primary = gradient.variations[0].id === variation.id;
 const related = gradients.filter(g=>g.category===gradient.category && g.slug!==gradient.slug).slice(0,3);
+const artworkDescription = `${gradient.name}, ${variation.name}: a ${variation.mode} ${collection.title.toLowerCase()} gradient with palette ${variation.colors.join(', ')}. ${variation.cssKind === 'native' ? 'Uses native CSS gradient functions.' : 'Uses detailed image artwork for its background.'} Free for personal and commercial use.`;
 
 ---
-<BaseLayout canonicalPath={`/gradients/${gradient.variations[0].id}/`} image={variation.thumbnail} title={primary ? `${gradient.name} CSS Gradient — ${gradient.variations.length} Colour Variations | FreeeGradients` : `${gradient.name} — ${variation.name} gradient | FreeeGradients`} description={primary ? `${gradient.name}: a ${collection.title.toLowerCase()} background with ${gradient.variations.length} light and dark colour variations. Copy CSS, preview a real layout or download SVG, PNG and JPEG. No sign-up.` : `Download ${variation.name}, a ${variation.mode} ${gradient.name} gradient, free as CSS, SVG, PNG or JPEG. No sign-up required.`}>
+<BaseLayout artwork={{name:`${gradient.name} — ${variation.name}`,description:artworkDescription,src:variation.src,colors:variation.colors}} canonicalPath={`/gradients/${gradient.variations[0].id}/`} image={variation.thumbnail} title={primary ? `${gradient.name} CSS Gradient — ${gradient.variations.length} Colour Variations | FreeeGradients` : `${gradient.name} — ${variation.name} gradient | FreeeGradients`} description={primary ? `${gradient.name}: a ${collection.title.toLowerCase()} background with ${gradient.variations.length} light and dark colour variations. Copy CSS, preview a real layout or download SVG, PNG and JPEG. No sign-up.` : `Download ${variation.name}, a ${variation.mode} ${gradient.name} gradient, free as CSS, SVG, PNG or JPEG. No sign-up required.`}>
   <Header playgroundGradient={variation.id} />
   <main id="main-content" class="gradient-detail container">
     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Collections', href: '/collections/' }, { label: collection.title, href: `/collections/${collection.id}/` }, { label: variation.id }]} />
@@ -31,6 +32,7 @@ const related = gradients.filter(g=>g.category===gradient.category && g.slug!==g
           <h1 class="text-h2">{gradient.name}</h1>
           <div class="gradient-detail-meta text-caption"><a class="gradient-meta-chip gradient-collection-chip" href={`/collections/${collection.id}/`}>Collection: {collection.title}</a><span class="gradient-meta-chip"><Hash size={14} aria-hidden="true" /><span class="card-id">{variation.id}</span></span><span class="gradient-meta-chip">{variation.mode === 'light' ? <Sun size={14} aria-hidden="true" /> : <Moon size={14} aria-hidden="true" />}For {variation.mode} mode</span></div>
         </div>
+        <p class="gradient-description text-body-sm">{artworkDescription}</p>
         <div class="gradient-detail-colours"><h2 class="text-body-sm gradient-variations-title">More colour variations</h2><div class="gradient-variation-links">{gradient.variations.map(v => <a class="palette-swatch" style={`--swatch:url("${v.thumbnail}")`} href={`/gradients/${v.id}/`} aria-label={`${v.name}, ${v.mode} designs`} aria-current={v.id === variation.id ? 'page' : undefined} title={v.name}></a>)}</div></div>
         <div class="gradient-install">
           <div class="gradient-install-heading"><h2 class="text-body-sm">Use with a class</h2><Button size="sm" variant="secondary" data-copy-stylesheet={gradient.stylesheet}><Copy slot="leading-icon" aria-hidden="true" />Copy stylesheet link</Button></div>
@@ -54,6 +56,7 @@ const related = gradients.filter(g=>g.category===gradient.category && g.slug!==g
   <script>import '../../scripts/library';</script>
 </BaseLayout>
 <style>
+  .gradient-description { color: var(--text-secondary); line-height: 1.7; }
   .gradient-related { display: grid; gap: var(--space-12); margin-top: var(--space-16); }
   .gradient-related-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-8); }
   .gradient-related-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--grid-gap); }

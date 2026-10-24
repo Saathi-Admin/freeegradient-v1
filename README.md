@@ -1,5 +1,7 @@
 # FreeeGradients
 
+Search/AEO query mapping, implemented content improvements, verification results and production launch steps are documented in [AEO.md](AEO.md).
+
 ## Light form studies
 
 8 original static compositions (96 colour variations) live in **Fluid fields** and **Prismatic light**. Each collection contains four different geometries. Fluid fields has eight palettes per template; Prismatic light has sixteen (eight light and eight dark), including paired blue, orange, red and yellow palettes. The procedural artwork is authored in `src/data/light-form-recipes.mjs`; it contains no reference images, text or logos. Detailed forms use the existing versioned WebP background and stylesheet integration, with individual SVG/PNG/JPEG exports. Header/footer navigation, collection filters and the playground discover them through the shared catalogue. Existing homepage features remain curated.
@@ -77,6 +79,8 @@ Official hosting references: [Cloudflare Pages limits](https://developers.cloudf
 - `references/`, `images/`: preserved reference material; not included as library downloads.
 
 ## SEO launch configuration
+
+Review submissions and the private moderation dashboard at `/studio-vault-7k9m4x/` are documented in [ADMIN.md](ADMIN.md). Run `npm run admin:setup` and `npm run serve:reviews` for the functional local preview. Production review APIs require the server-side environment variables and durable database described there.
 
 Set `PUBLIC_SITE_URL` to the permanent HTTPS origin in the production build environment, then build. The default origin is `https://freeegradients.com`. Development and Vercel preview builds remain noindex; `PUBLIC_NOINDEX=true` also blocks indexing for staging builds. Production builds with this origin emit canonical URLs, Open Graph metadata, WebPage structured data, an indexable robots.txt and a sitemap. Each template has one canonical variation page; sibling variations canonicalize to it. Light/dark filter pages and playground are not indexed; all-mode paginated listings remain crawlable. Connect `freeegradients.com` (and redirect www to the canonical apex domain) in Vercel before publishing. Search Console ownership verification and sitemap submission require the domain owner's account. Submit `https://freeegradients.com/sitemap.xml` after deployment. Ranking and Google sitelinks are determined by Google and cannot be guaranteed.
 

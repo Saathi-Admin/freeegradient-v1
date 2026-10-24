@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
 import Faq from '../components/Faq.astro';
+import Testimonials from '../components/Testimonials.astro';
+import { questions } from '../data/answers';
 import HowTo from '../components/HowTo.astro';
 import PlaygroundShowcase from '../components/PlaygroundShowcase.astro';
 import Header from '../components/Header.astro';
@@ -31,7 +33,7 @@ const allGradientCards = collections.slice(0, 6).map((collection, index) => {
 });
 const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCards.map(card => card.gradient)].map(template => [template.slug, template])).values()];
 ---
-<BaseLayout title={`${gradientCount} Free CSS Gradients for Personal & Commercial Use | FreeeGradients`} description={`Explore ${gradientCount} free gradient backgrounds for personal and commercial use. Copy CSS or download SVG, PNG and JPEG. No sign-up. No download limits.`}>
+<BaseLayout faqs={questions} title={`${gradientCount} Free CSS Gradients for Personal & Commercial Use | FreeeGradients`} description={`Explore ${gradientCount} free gradient backgrounds for personal and commercial use. Copy CSS or download SVG, PNG and JPEG. No sign-up. No download limits.`}>
   <Header hero />
   <main id="main-content" class="homepage-main" style={`--hero-gradient: ${heroBackground}`}>
     <div class="homepage-hero">
@@ -81,6 +83,7 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
       <div class="section-link"><Button variant="secondary" size="md" href="/collections/">Explore all collections<ArrowUpRight slot="trailing-icon" aria-hidden="true" /></Button></div>
     </section>
     <HowTo />
+    <Testimonials />
     <Faq />
   </main>
   <Footer />
@@ -125,6 +128,7 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
     #hero-title { letter-spacing: -3.2px; }
   }
   @media (max-width: 639px) {
+    #hero-title { font-size: var(--font-size-40); }
     .hero-for-desktop { display: none; }
     .hero-for-mobile { display: inline; }
     .hero-commercial { display: block; white-space: nowrap; }

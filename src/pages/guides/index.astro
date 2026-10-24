@@ -4,29 +4,26 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import '../../styles/library.css';
+import '../../styles/content-cards.css';
 import {guides} from '../../data/guides';
-import { gradients } from '../../data/gradients';
-
-const cardVariationIds = ['refraction-05', 'light-leak-06', 'glassline-08'];
-const cardVariations = cardVariationIds.map(id => gradients.flatMap(template => template.variations).find(variation => variation.id === id)!);
+import { guideCardVariation } from '../../data/guide-cards';
 ---
-<BaseLayout pageType="CollectionPage" items={guides.map(guide => ({name:guide.title,path:`/guides/${guide.slug}/`}))} title="CSS Gradient Guides — FreeeGradients" description="Learn how to use CSS gradients, choose mesh backgrounds and keep text readable.">
+<BaseLayout pageType="CollectionPage" items={guides.map(guide => ({name:guide.title,path:`/guides/${guide.slug}/`}))} title="Free Gradient Guides: CSS, React, 4K & Design Tools | FreeeGradients" description="Choose free gradient backgrounds, compare export formats, download 4K images and use gradients in CSS, React, Tailwind, Figma, Canva and slides.">
 <Header />
 <main id="main-content" class="collection-detail container guides">
   <div class="collection-detail-hero">
     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Guides' }]} />
     <div class="collection-detail-intro">
       <h1 id="guides-title"><span class="hero-heading-neutral">Gradient guides.</span></h1>
-      <p class="hero-description text-body-md">Learn how to use CSS gradients, choose mesh backgrounds and keep text readable.</p>
+      <p class="hero-description text-body-md">Choose a background, compare formats and bring your gradient into code, design tools or slides.</p>
     </div>
   </div>
   <div class="guide-grid">
-    {guides.map((guide, index) => {
-      const variation = cardVariations[index];
+    {guides.map(guide => {
+      const variation = guideCardVariation(guide.slug);
       const background = variation.cssKind === 'native' ? variation.css : `url("${variation.backgroundSrc ?? variation.src}")`;
-      return <a class="guide-card" href={`/guides/${guide.slug}/`} data-mode={variation.mode} style={`--guide-gradient: ${background}`}>
+      return <a class="guide-card content-card" href={`/guides/${guide.slug}/`} data-mode={variation.mode} style={`--card-gradient: ${background}`}>
         <h2 class="text-h4">{guide.title}</h2>
-        <p class="text-body-sm">{guide.description}</p>
       </a>;
     })}
   </div>
@@ -35,9 +32,5 @@ const cardVariations = cardVariationIds.map(id => gradients.flatMap(template => 
 </BaseLayout>
 <style>
   .guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); }
-  .guide-card { min-width: 0; min-height: 300px; padding: var(--space-12); border-radius: var(--gradient-card-image-radius); background-image: var(--guide-gradient); background-size: cover; background-position: center; color: #f8f8fa; display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-12); text-decoration: none; }
-  .guide-card[data-mode=light] { color: #15151a; }
-  .guide-card p { color: inherit; }
-  @media (hover: hover) { .guide-card:hover h2 { text-decoration: underline; } }
-  @media (max-width: 639px) { .guide-grid { grid-template-columns: 1fr; } .guide-card { min-height: 260px; } }
+  @media (max-width: 639px) { .guide-grid { grid-template-columns: 1fr; } }
 </style>

@@ -1,0 +1,48 @@
+---
+import { Star } from '@lucide/astro';
+---
+<div class="testimonial-feedback" id="give-feedback">
+  <h3 class="text-h4">Share a little feedback.</h3>
+  <form id="testimonial-feedback-form" class="testimonial-feedback-form" aria-label="Share your review">
+    <input type="text" name="company_url" tabindex="-1" autocomplete="off" aria-hidden="true" class="feedback-trap" />
+    <fieldset class="feedback-rating" aria-label="Rate your experience">
+      {[1, 2, 3, 4, 5].map(rating => <label><input type="radio" name="rating" value={rating} aria-label={`${rating} ${rating === 1 ? 'star' : 'stars'}`} required={rating === 1} /><Star size={24} stroke-width={1.5} aria-hidden="true" /></label>)}
+    </fieldset>
+    <div class="feedback-fields">
+      <input class="feedback-input" type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" maxlength="80" required />
+      <input class="feedback-input" type="email" name="email" placeholder="Email (kept private)" aria-label="Email, kept private" autocomplete="email" maxlength="254" required />
+      <input class="feedback-input" type="text" name="role" placeholder="Role / company (optional)" aria-label="Role or company, optional" autocomplete="organization-title" maxlength="100" />
+      <input class="feedback-input" type="url" name="website" placeholder="Website / portfolio (optional)" aria-label="Website or portfolio, optional" autocomplete="url" maxlength="300" />
+      <input class="feedback-input feedback-review" type="text" name="review" placeholder="Write your review…" aria-label="Your review, up to 500 characters" maxlength="500" required />
+    </div>
+    <div class="feedback-footer">
+      <p id="feedback-status" role="status" hidden></p>
+      <button type="submit" class="btn btn-primary btn-lg">Submit review</button>
+    </div>
+  </form>
+</div>
+<script>import '../scripts/feedback';</script>
+<style is:global>
+  .testimonial-feedback { width: min(100%, 760px); margin: var(--space-24) auto 0; padding: var(--space-16); border: 1px solid var(--border-subtle); border-radius: var(--radius-16); background: var(--surface-card); }
+  .testimonial-feedback > h3 { text-align: center; }
+  .testimonial-feedback-form { display: grid; gap: var(--space-8); margin-top: var(--space-8); }
+  .feedback-rating { display: flex; justify-content: center; justify-self: center; gap: 0; padding: var(--space-2); margin: 0 0 var(--space-4); border: 1px solid var(--border-subtle); border-radius: var(--radius-full); background: var(--surface-canvas); }
+  .feedback-rating label { display: grid; place-items: center; position: relative; width: 40px; height: 40px; border-radius: var(--radius-full); color: var(--text-muted); cursor: pointer; transition: background-color 0.2s ease; }
+  .feedback-rating input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  .feedback-rating svg { width: 24px; height: 24px; fill: none; }
+  .feedback-rating label:has(input:checked), .feedback-rating label:has(~ label input:checked) { color: #efc779; }
+  .feedback-rating label:has(input:checked) svg, .feedback-rating label:has(~ label input:checked) svg { fill: currentColor; }
+  .feedback-rating label:has(input:focus-visible) { background: var(--surface-raised); outline: var(--focus-width) solid var(--focus-ring); outline-offset: 2px; }
+  .feedback-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); }
+  .feedback-input { display: block; width: 100%; min-width: 0; height: 48px; padding: 0 var(--space-12); border: 1px solid var(--border-subtle); border-radius: var(--radius-full); background: var(--surface-canvas); color: var(--text-primary); font: inherit; font-size: var(--font-size-16); caret-color: var(--focus-ring); }
+  .feedback-input::placeholder { color: var(--text-muted); opacity: 1; }
+  .feedback-input:focus-visible { background: var(--surface-raised); outline: var(--focus-width) solid var(--focus-ring); outline-offset: 2px; }
+  .feedback-review { grid-column: 1 / -1; }
+  .feedback-footer { display: flex; align-items: center; justify-content: space-between; gap: var(--space-6); }
+  .feedback-footer .btn { flex: 0 0 auto; margin-left: auto; white-space: nowrap; }
+  .feedback-trap { position: absolute; left: -10000px; width: 1px; height: 1px; }
+  #feedback-status { flex: 1; min-width: 0; margin: 0; font-size: 14px; color: var(--text-secondary); text-align: left; }
+  @media (hover: hover) { .feedback-rating label:hover, .feedback-input:hover { background: var(--surface-raised); } }
+  @media (prefers-reduced-motion: reduce) { .feedback-rating label { transition: none; } }
+  @media (max-width: 639px) { .testimonial-feedback { padding: var(--space-12); } .feedback-fields { grid-template-columns: 1fr; } }
+</style>

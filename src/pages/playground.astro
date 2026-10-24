@@ -6,15 +6,15 @@ import TabBar from '../components/ui/TabBar.astro';
 import Button from '../components/ui/Button.astro';
 import SearchField from '../components/ui/SearchField.astro';
 import { ArrowLeft, ArrowUpRight, SlidersHorizontal, X } from '@lucide/astro';
-import { gradients, collectionThumbnail } from '../data/gradients';
+import { gradients, collectionOrderedGradients, collectionThumbnail } from '../data/gradients';
 import { collections } from '../data/collections';
 import '../styles/library.css';
 import '../styles/playground.css';
-const initialTemplate = gradients[0];
+const initialTemplate = collectionOrderedGradients[0];
 const initial = initialTemplate.variations[0];
 const variationTotal = gradients.reduce((total, template) => total + template.variations.length, 0);
 const allGradientPages = Math.ceil(variationTotal / 24);
-const initialVariations = gradients.flatMap(template => template.variations.map(variation => ({ template, variation }))).slice(0, 24);
+const initialVariations = collectionOrderedGradients.flatMap(template => template.variations.map(variation => ({ template, variation }))).slice(0, 24);
 ---
 <BaseLayout noindex title="Gradient playground | FreeeGradients" description="Preview free gradients in a landing page, cards and a page background. Choose a template and try its colour variations.">
   <div class="playground-shell">

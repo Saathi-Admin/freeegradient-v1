@@ -4,7 +4,7 @@ import { collections } from '../data/collections';
 import { gradientPageUrl, gradientResults, gradientPageSize } from '../data/gradient-pages';
 import { guides } from '../data/guides';
 export const GET: APIRoute = ({site}) => {
-  const paths=['/','/collections/','/gradients/','/guides/',...guides.map(g=>`/guides/${g.slug}/`),...collections.map(c=>`/collections/${c.id}/`),...gradients.map(g=>`/gradients/${g.variations[0].id}/`)];
+  const paths=['/','/about/','/collections/','/gradients/','/guides/',...guides.map(g=>`/guides/${g.slug}/`),...collections.map(c=>`/collections/${c.id}/`),...gradients.map(g=>`/gradients/${g.variations[0].id}/`)];
   for(const category of [undefined,...collections.map(c=>c.id)]) {
     const pages=Math.ceil(gradientResults('all',category).length/gradientPageSize);
     for(let page=2;page<=pages;page++) paths.push(gradientPageUrl('all',page,category));

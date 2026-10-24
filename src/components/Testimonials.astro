@@ -1,0 +1,55 @@
+---
+import { Star } from '@lucide/astro';
+import FeedbackForm from './FeedbackForm.astro';
+
+import columns from '../data/testimonials.json';
+---
+<section id="testimonials" class="section container testimonials-section" aria-labelledby="testimonials-title">
+  <div class="section-heading">
+    <h2 id="testimonials-title">Made for your next idea.</h2>
+    <p class="text-body-md">A place for the people behind the projects.</p>
+  </div>
+  <div class="testimonials-stage" hidden role="region" aria-label="Three columns of sample testimonials. Swipe sideways to see all columns on a small screen." tabindex="0">
+    <div class="testimonials-columns">
+      {columns.map((reviews, column) => <div class:list={['testimonial-column', { 'testimonial-column-reverse': column === 1 }]}>
+        <div class="testimonial-track">
+          {[false, true].map(duplicate => <div class="testimonial-group" aria-hidden={duplicate ? 'true' : undefined} inert={duplicate}>
+            {reviews.map(review => <article class:list={['testimonial-card', `testimonial-card-${review.tone}`]}>
+              <div class="testimonial-card-top"><span class="testimonial-stars" role="img" aria-label="Example five-star rating">{Array.from({length:5}, () => <Star size={16} fill="currentColor" stroke-width={1.5} aria-hidden="true" />)}</span></div>
+              <blockquote><p>{review.text}</p></blockquote>
+              <div class="testimonial-person"><div><p class="text-body-sm">{review.role}</p><p class="text-caption">{review.tag}</p></div></div>
+            </article>)}
+          </div>)}
+        </div>
+      </div>)}
+    </div>
+  </div>
+  <FeedbackForm />
+</section>
+<style>
+  .testimonials-stage[hidden] { display: none; }
+  .testimonials-section { --testimonial-gap: var(--space-8); }
+  .testimonials-stage { max-width: 100%; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--border-subtle) transparent; border-radius: var(--radius-12); }
+  .testimonials-columns { display: grid; grid-template-columns: repeat(3, minmax(240px, 1fr)); gap: var(--testimonial-gap); }
+  .testimonial-column { height: 680px; overflow: hidden; min-width: 0; mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 88%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 88%, transparent); }
+  .testimonial-track { display: flex; flex-direction: column; width: 100%; animation: testimonial-drift 44s linear infinite; will-change: transform; }
+  .testimonial-column-reverse .testimonial-track { animation-direction: reverse; }
+  .testimonial-group { display: grid; align-content: start; gap: var(--testimonial-gap); padding-bottom: var(--testimonial-gap); flex: 0 0 auto; }
+  .testimonial-card { display: flex; flex-direction: column; gap: var(--space-12); min-width: 0; padding: var(--space-12); border-radius: var(--gradient-card-image-radius); background: var(--surface-card); border: 1px solid var(--border-subtle); }
+  .testimonial-card-blue { background: radial-gradient(ellipse at 0 0, #16375780, transparent 80%), var(--surface-card); }
+  .testimonial-card-violet { background: radial-gradient(ellipse at 100% 0, #38225480, transparent 80%), var(--surface-card); }
+  .testimonial-card-pink { background: radial-gradient(ellipse at 0 0, #51263c80, transparent 80%), var(--surface-card); }
+  .testimonial-card-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+  .testimonial-stars { display: inline-flex; gap: var(--space-2); color: #efc779; }
+  blockquote { margin: 0; }
+  blockquote p { font-size: var(--text-body-md-size); line-height: 1.65; color: var(--text-primary); }
+  .testimonial-person { display: flex; align-items: center; gap: var(--space-6); margin-top: var(--space-4); }
+  .testimonial-person > div { min-width: 0; }
+  .testimonial-person .text-body-sm { color: var(--text-primary); font-weight: var(--font-weight-medium); }
+  .testimonial-person .text-caption { margin-top: var(--space-2); color: var(--text-secondary); }
+  .testimonials-stage:focus-within .testimonial-track { animation-play-state: paused; }
+  @media (hover: hover) { .testimonials-stage:hover .testimonial-track { animation-play-state: paused; } }
+  @keyframes testimonial-drift { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+  @media (max-width: 799px) { .testimonials-columns { grid-template-columns: repeat(3, minmax(260px, 1fr)); } .testimonial-column { height: 600px; } }
+  @media (prefers-reduced-motion: reduce) { .testimonial-track { animation: none; will-change: auto; } .testimonial-column { height: 600px; overflow-y: auto; mask-image: none; -webkit-mask-image: none; } .testimonial-group[aria-hidden=true] { display: none; } }
+</style>

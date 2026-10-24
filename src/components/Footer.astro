@@ -33,6 +33,7 @@ const FooterLink = preview ? 'span' : 'a';
           <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/#how-to-use'}>How to use</FooterLink>
           <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : '/#faq'}>FAQs</FooterLink>
           {!preview && <FooterLink class="btn btn-ghost btn-sm" href="/guides/">Gradient guides</FooterLink>}
+          {!preview && <FooterLink class="btn btn-ghost btn-sm" href="/about/">About FreeeGradients</FooterLink>}
         </nav>
         {collectionColumns.map((column, index) => <nav class="brand-footer-links" aria-label={`Footer collections ${index + 1}`}>
           {column.map(collection => <FooterLink class="btn btn-ghost btn-sm" href={preview ? undefined : `/collections/${collection.id}/`}>{collection.title}</FooterLink>)}

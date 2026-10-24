@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {pageSeo} from '../src/data/seo.ts';
+import {questions} from '../src/data/answers.ts';
+import {guides} from '../src/data/guides.ts';
 const gradients = JSON.parse(await readFile('src/data/generated-gradients.json','utf8'));
 
 const origin = process.env.PUBLIC_SITE_URL || 'https://freeegradients.com';
@@ -9,6 +11,32 @@ const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match=>match
 assert(locations.length > gradients.length, 'Sitemap must include templates and listing hubs');
 assert.equal(new Set(locations).size, locations.length, 'Sitemap URLs must be unique');
 const sitemapUrls = new Set(locations);
+const home = await readFile('dist/index.html','utf8');
+const homeGraph = JSON.parse(home.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+const faq = homeGraph.find(node=>node['@type']==='FAQPage');
+assert.equal(faq.mainEntity.length, questions.length, 'Every visible FAQ must be in the FAQ graph');
+const escapeHtml = text=>text.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
+for (const {question,answer} of questions) {
+  assert(home.includes(escapeHtml(question)) && home.includes(escapeHtml(answer)), `FAQ missing from server HTML: ${question}`);
+  assert(faq.mainEntity.some(node=>node.name===question && node.acceptedAnswer.text===answer), `FAQ schema differs from visible answer: ${question}`);
+}
+assert(homeGraph.some(node=>node['@type']==='Organization' && node.name==='Arclink Edge'), 'Missing creator identity');
+assert(sitemapUrls.has(new URL('/about/',origin).href), 'About page absent from sitemap');
+for (const guide of guides) {
+  const path=`/guides/${guide.slug}/`;
+  assert(sitemapUrls.has(new URL(path,origin).href), `Guide absent from sitemap: ${guide.slug}`);
+  const html=await readFile(`dist${path}index.html`,'utf8');
+  assert(html.includes(escapeHtml(guide.description)), `Guide answer missing from server HTML: ${guide.slug}`);
+  for (const [heading,text] of guide.sections) assert(html.includes(escapeHtml(heading)) && html.includes(escapeHtml(text)), `Guide content missing: ${guide.slug}`);
+  assert(html.includes('property="og:type" content="article"'), `Wrong social type: ${guide.slug}`);
+  // Verify authored links and preview images resolve to build artifacts, including fragments.
+  for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)(#[^"]*)?"/g)) {
+    const [,target,fragment]=match;
+    const file=target.endsWith('/') ? `dist${target}index.html` : `dist${target}`;
+    const contents=await readFile(file);
+    if(fragment && target.endsWith('/')) assert(contents.toString().includes(`id="${fragment.slice(1)}"`), `Broken fragment: ${target}${fragment}`);
+  }
+}
 const titles = new Map();
 for (const location of locations) {
   const url = new URL(location);
@@ -30,7 +58,7 @@ for (const location of locations) {
     assert(schema['@graph'].some(node=>node.url === location), `Schema URL mismatch: ${location}`);
   }
 }
-for (const path of ['/playground/','/design-system/','/gradients/browse/light/1/','/gradients/browse/dark/1/']) {
+for (const path of ['/studio-vault-7k9m4x/','/playground/','/design-system/','/gradients/browse/light/1/','/gradients/browse/dark/1/']) {
   const html = await readFile(`dist${path}index.html`,'utf8');
   assert(/<meta name="robots" content="noindex, follow"/.test(html), `Utility/filter indexable: ${path}`);
   assert(!sitemapUrls.has(new URL(path,origin).href), `Utility/filter in sitemap: ${path}`);
@@ -38,6 +66,11 @@ for (const path of ['/playground/','/design-system/','/gradients/browse/light/1/
 for (const template of gradients) {
   const canonical = new URL(`/gradients/${template.variations[0].id}/`,origin).href;
   assert(sitemapUrls.has(canonical), `Template absent from sitemap: ${template.slug}`);
+  const html = await readFile(`dist/gradients/${template.variations[0].id}/index.html`,'utf8');
+  const graph = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+  const image = graph.find(node=>node['@type']==='ImageObject');
+  assert.equal(image.contentUrl,new URL(template.variations[0].src,origin).href, `Wrong artwork: ${template.slug}`);
+  assert(html.includes(escapeHtml(image.description)), `Artwork description not visible: ${template.slug}`);
   for (const variation of template.variations.slice(1)) {
     const html = await readFile(`dist/gradients/${variation.id}/index.html`,'utf8');
     assert(html.includes(`rel="canonical" href="${canonical}"`), `Variation canonical mismatch: ${variation.id}`);

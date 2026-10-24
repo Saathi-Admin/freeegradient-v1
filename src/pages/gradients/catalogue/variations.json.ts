@@ -1,7 +1,7 @@
-import { gradients } from '../../../data/gradients';
+import { collectionOrderedGradients } from '../../../data/gradients';
 
 export function GET() {
-  const items = gradients.flatMap(template => template.variations.map(variation => ({
+  const items = collectionOrderedGradients.flatMap(template => template.variations.map(variation => ({
     id: variation.id,
     slug: template.slug,
     name: template.name,

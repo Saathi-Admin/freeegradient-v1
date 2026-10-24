@@ -15,6 +15,8 @@ import { collections } from '../data/collections';
 import type { GradientTemplate } from '../types/gradient';
 import { gradientResults, gradientPageSize, gradientPageUrl, type BrowseMode } from '../data/gradient-pages';
 import '../styles/library.css';
+import { collectionContent } from '../data/collection-content';
+import { guides } from '../data/guides';
 interface Props { mode?: BrowseMode; page?: number; category?: GradientTemplate['category']; }
 const { mode = 'all', page = 1, category } = Astro.props;
 const collection = collections.find(c=>c.id===category);
@@ -27,6 +29,9 @@ const title = collection?.title ?? 'All gradients';
 const searchTitles: Record<string,string> = {floral:'Floral Blur',liquid:'Liquid Glass',studies:'Abstract Colour',landing:'Landing Page',smooth:'Smooth',mesh:'Mesh',glow:'Glow and Aurora',vintage:'Grain and Vintage',waves:'Wave',footer:'Footer',sunset:'Sunset',pastel:'Pastel',holographic:'Holographic',cosmic:'Cosmic',prism:'Prism and Glass',duotone:'Duotone',angular:'Conic',spotlight:'Spotlight',earth:'Earth Tone'};
 const seoTitle = category ? `Free ${category === 'halo-horizons' ? 'Halo Horizon' : category === 'colour-clouds' ? 'Colour Cloud' : (searchTitles[category] ?? collection?.title ?? category)} Gradient Backgrounds` : 'Free CSS Gradient Backgrounds';
 const pageUrl = (selectedMode: BrowseMode, selectedPage=1) => gradientPageUrl(selectedMode, selectedPage, category);
+const content = category ? collectionContent[category] : undefined;
+const guide = guides.find(g=>g.slug===(content?.guide ?? 'gradient-styles-explained'))!;
+const adviceGuides = [guide,...guides.filter(g=>['gradient-export-formats','readable-text-on-gradients'].includes(g.slug) && g.slug!==guide.slug)];
 ---
 <BaseLayout pageType="CollectionPage" items={cards.map(({gradient}) => ({name:gradient.name,path:`/gradients/${gradient.variations[0].id}/`}))} title={`${seoTitle}${page > 1 ? ` — Page ${page}` : ''}${mode !== 'all' ? ` — For ${mode} designs` : ''} | FreeeGradients`} noindex={mode !== 'all'} description={collection ? `${collection.description} Copy free ${collection.title.toLowerCase()} CSS gradients or download SVG, PNG and JPEG backgrounds.${page > 1 ? ` Page ${page}.` : ""}` : `Browse free CSS gradients and SVG backgrounds for light and dark designs. Copy CSS or download PNG and JPEG for personal and commercial use.${page > 1 ? ` Page ${page}.` : ""}`}>
   <Header />
@@ -68,6 +73,13 @@ const pageUrl = (selectedMode: BrowseMode, selectedPage=1) => gradientPageUrl(se
       </nav>
       <div id="library-empty" hidden></div>
     </section>
+    {page === 1 && mode === 'all' && <section class="collection-advice" aria-labelledby="collection-advice-title">
+      <h2 class="text-h4" id="collection-advice-title">{collection ? `How to use ${seoTitle.replace('Free ','').toLowerCase()}` : 'How to find and use a free gradient background'}</h2>
+      <p class="text-body-md">{content?.summary ?? 'Browse by style, filter by colour and compare light and dark variations. Open any gradient to see its palette, copy its CSS or export an image. Every background is free for personal and commercial projects, with no account required.'}</p>
+      {content && <p class="text-body-md">{content.tip}</p>}
+      <p class="text-body-md">Choose CSS for a website background or export PNG, JPG, SVG or WebP for your project. The exporter includes Full HD, 4K, square, story and phone presets, plus custom sizes. Some SVG designs contain raster artwork; output dimensions do not increase their source detail.</p>
+      <nav aria-label="Learn about these gradients">{adviceGuides.map(g=><a href={`/guides/${g.slug}/`}>{g.title}</a>)}</nav>
+    </section>}
   </main>
   <Footer />
   <GradientPreview templates={templates} />
@@ -75,6 +87,10 @@ const pageUrl = (selectedMode: BrowseMode, selectedPage=1) => gradientPageUrl(se
   <script>import '../scripts/gradient-search'; document.querySelector('#browse-page')?.addEventListener('select-change',event=>{location.href=(event as CustomEvent).detail.value;});</script>
 </BaseLayout>
 <style>
+  .collection-advice { display: grid; gap: var(--space-8); max-width: 880px; margin-top: var(--space-24); line-height: 1.7; }
+  .collection-advice p { color: var(--text-secondary); }
+  .collection-advice nav { display: flex; flex-wrap: wrap; gap: var(--space-8) var(--space-12); }
+  .collection-advice a { color: var(--text-primary); }
   .listing-toolbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-12); margin-bottom: var(--space-12); }
   .browse-count { margin: 0; color: var(--text-secondary); flex-shrink: 0; }
   .browse-pagination { display: flex; justify-content:center; gap: var(--space-4); align-items: center; margin-top: var(--space-16); }

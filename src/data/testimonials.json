@@ -1,0 +1,62 @@
+[
+  [
+    {
+      "text": "A soft backdrop for a bold idea. This is the kind of colour I would use behind a portfolio hero.",
+      "role": "UI designer",
+      "tag": "Portfolio design",
+      "tone": "blue"
+    },
+    {
+      "text": "Pick a palette, preview the layout and bring the background into a project. A simple workflow makes all the difference.",
+      "role": "Frontend developer",
+      "tag": "Website backgrounds",
+      "tone": "neutral"
+    },
+    {
+      "text": "Subtle grain and a little glow can give a presentation cover so much character.",
+      "role": "Brand designer",
+      "tag": "Presentation design",
+      "tone": "violet"
+    }
+  ],
+  [
+    {
+      "text": "The small details matter: a quiet space for the headline, a little light around the product and colours that sit well together.",
+      "role": "Product designer",
+      "tag": "Landing pages",
+      "tone": "neutral"
+    },
+    {
+      "text": "One composition, a different palette, a whole new mood. That is a lovely starting point for exploring a visual direction.",
+      "role": "Creative developer",
+      "tag": "Colour exploration",
+      "tone": "pink"
+    },
+    {
+      "text": "A background should make room for the content. Soft blends are a useful place to start.",
+      "role": "Web designer",
+      "tag": "Interface design",
+      "tone": "neutral"
+    }
+  ],
+  [
+    {
+      "text": "A little colour goes a long way when the rest of the layout is kept simple.",
+      "role": "Independent designer",
+      "tag": "Creative projects",
+      "tone": "violet"
+    },
+    {
+      "text": "Previewing the same background on a card and a full page helps me imagine where it belongs.",
+      "role": "Design engineer",
+      "tag": "Layout exploration",
+      "tone": "neutral"
+    },
+    {
+      "text": "From a wide cover to a portrait graphic, it is useful to see how a composition changes with the crop.",
+      "role": "Visual designer",
+      "tag": "Social graphics",
+      "tone": "blue"
+    }
+  ]
+]
