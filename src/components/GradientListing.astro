@@ -15,8 +15,10 @@ import { collections } from '../data/collections';
 import type { GradientTemplate } from '../types/gradient';
 import { gradientResults, gradientPageSize, gradientPageUrl, type BrowseMode } from '../data/gradient-pages';
 import '../styles/library.css';
+import '../styles/content-cards.css';
 import { collectionContent } from '../data/collection-content';
 import { guides } from '../data/guides';
+import { guideCardVariation } from '../data/guide-cards';
 interface Props { mode?: BrowseMode; page?: number; category?: GradientTemplate['category']; }
 const { mode = 'all', page = 1, category } = Astro.props;
 const collection = collections.find(c=>c.id===category);
@@ -74,11 +76,17 @@ const adviceGuides = [guide,...guides.filter(g=>['gradient-export-formats','read
       <div id="library-empty" hidden></div>
     </section>
     {page === 1 && mode === 'all' && <section class="collection-advice" aria-labelledby="collection-advice-title">
-      <h2 class="text-h4" id="collection-advice-title">{collection ? `How to use ${seoTitle.replace('Free ','').toLowerCase()}` : 'How to find and use a free gradient background'}</h2>
-      <p class="text-body-md">{content?.summary ?? 'Browse by style, filter by colour and compare light and dark variations. Open any gradient to see its palette, copy its CSS or export an image. Every background is free for personal and commercial projects, with no account required.'}</p>
-      {content && <p class="text-body-md">{content.tip}</p>}
-      <p class="text-body-md">Choose CSS for a website background or export PNG, JPG, SVG or WebP for your project. The exporter includes Full HD, 4K, square, story and phone presets, plus custom sizes. Some SVG designs contain raster artwork; output dimensions do not increase their source detail.</p>
-      <nav aria-label="Learn about these gradients">{adviceGuides.map(g=><a href={`/guides/${g.slug}/`}>{g.title}</a>)}</nav>
+      <div class="section-heading collection-advice-heading">
+        <h2 class="text-h3" id="collection-advice-title">{collection ? `How to use ${seoTitle.replace('Free ','').toLowerCase()}` : 'How to find and use a free gradient background'}</h2>
+        <p class="text-body-md">{content?.summary ?? 'Browse by style, filter by colour and compare light and dark variations. Open any gradient to see its palette, copy its CSS or export an image. Every background is free for personal and commercial projects, with no account required.'}</p>
+        {content && <p class="text-body-md">{content.tip}</p>}
+        <p class="text-body-md">Choose CSS for a website background or export PNG, JPG, SVG or WebP for your project. The exporter includes Full HD, 4K, square, story and phone presets, plus custom sizes. Some SVG designs contain raster artwork; output dimensions do not increase their source detail.</p>
+      </div>
+      <nav class="collection-advice-grid" aria-label="Learn about these gradients">{adviceGuides.map(g=>{
+        const variation = guideCardVariation(g.slug);
+        const background = variation.cssKind === 'native' ? variation.css : `url("${variation.backgroundSrc ?? variation.src}")`;
+        return <a class="content-card" href={`/guides/${g.slug}/`} data-mode={variation.mode} style={`--card-gradient: ${background}`}><h3 class="text-h4">{g.title}</h3></a>;
+      })}</nav>
     </section>}
   </main>
   <Footer />
@@ -87,10 +95,10 @@ const adviceGuides = [guide,...guides.filter(g=>['gradient-export-formats','read
   <script>import '../scripts/gradient-search'; document.querySelector('#browse-page')?.addEventListener('select-change',event=>{location.href=(event as CustomEvent).detail.value;});</script>
 </BaseLayout>
 <style>
-  .collection-advice { display: grid; gap: var(--space-8); max-width: 880px; margin-top: var(--space-24); line-height: 1.7; }
-  .collection-advice p { color: var(--text-secondary); }
-  .collection-advice nav { display: flex; flex-wrap: wrap; gap: var(--space-8) var(--space-12); }
-  .collection-advice a { color: var(--text-primary); }
+  .collection-advice { margin-top: var(--space-32); }
+  .collection-advice-heading { max-width: 880px; margin-inline: auto; }
+  .collection-advice-heading p { color: var(--text-secondary); }
+  .collection-advice-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); }
   .listing-toolbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-12); margin-bottom: var(--space-12); }
   .browse-count { margin: 0; color: var(--text-secondary); flex-shrink: 0; }
   .browse-pagination { display: flex; justify-content:center; gap: var(--space-4); align-items: center; margin-top: var(--space-16); }
@@ -107,6 +115,7 @@ const adviceGuides = [guide,...guides.filter(g=>['gradient-export-formats','read
     .gradient-search-controls { width: 100%; }
   }
   @media (max-width: 639px) {
+    .collection-advice-grid { grid-template-columns: 1fr; }
     .gradient-search-controls { flex-wrap: wrap; }
 
     .gradient-search-controls :global(.gradient-search-field) { flex: 1 1 120px; width: auto; min-width: 0; }
