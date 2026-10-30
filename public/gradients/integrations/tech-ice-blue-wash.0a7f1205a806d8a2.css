@@ -1,0 +1,6 @@
+/* FreeeGradients: Ice blue wash only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-ice-blue-wash-01: url("../assets/tech-ice-blue-wash-01.bd26945025329bf0.webp");
+}
+.fg-tech-ice-blue-wash-01 { background-color: #f5f7f7; background-image: var(--fg-tech-ice-blue-wash-01); }

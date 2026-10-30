@@ -40,6 +40,8 @@ const variationFor = (card: HTMLElement) => {
 };
 function updateCard(card: HTMLElement, variation: GradientVariation) {
   card.dataset.variation = variation.id;
+  const cssButton=card.querySelector<HTMLElement>('[data-action="css"]');
+  if(cssButton) cssButton.hidden=variation.cssKind!=='native';
   const image = card.querySelector<HTMLImageElement>('img')!;
   image.src = card.classList.contains('gradient-detail-layout') ? (variation.backgroundSrc ?? variation.src) : variation.thumbnail;
   image.alt = `${variationFor(card).template.name}, ${variation.name} colour palette`;
@@ -98,7 +100,8 @@ function populateDialog(template: GradientTemplate) {
   image.src = v.backgroundSrc ?? v.src; image.alt = `${template.name}, ${v.name}`;
   document.querySelector<HTMLElement>('#preview-copy')!.dataset.mode = v.mode;
   document.querySelector('#dialog-palette-name')!.textContent = v.name;
-  document.querySelector('#dialog-note')!.textContent = v.cssKind === 'native' ? 'Native CSS · Scalable SVG · PNG / JPEG: 1920 × 1080. Downloads contain only the gradient.' : 'CSS loads only this gradient’s optimized background. SVG, PNG and JPEG downloads are also available.';
+  document.querySelector('#dialog-note')!.textContent = v.cssKind === 'native' ? 'Native CSS · Scalable SVG · PNG / JPEG: 1920 × 1080. Downloads contain only the gradient.' : 'Image artwork · Download PNG, JPG or WebP.';
+  dialog.querySelectorAll<HTMLElement>('[data-export="css"]').forEach(button=>button.hidden=v.cssKind!=='native');
   const swatches = document.querySelector('#dialog-palettes')!;
   swatches.replaceChildren(...template.variations.filter(palette => palette.mode === v.mode).map(palette => {
     const button = document.createElement('button'); button.className = 'palette-swatch';
@@ -115,6 +118,7 @@ const download = (blob: Blob, name: string) => {
 };
 async function exportGradient(v: GradientVariation, format: string) {
   if (format === 'css') {
+    if(v.cssKind!=='native') return;
     const value = v.cssKind === 'native' ? v.css : `url("${new URL(v.backgroundSrc ?? v.src, location.origin).href}")`;
     const snippet = `.fg-${v.id} {\n  background-color: ${v.colors[0]};\n  background-image: ${value};\n  background-size: cover;\n  background-position: center;\n}`;
     try { await navigator.clipboard.writeText(snippet); notify(`${v.id} CSS copied.`); }

@@ -1,0 +1,10 @@
+/* FreeeGradients: Magenta Digital Streak only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-magenta-digital-streak-01: url("../assets/studio-magenta-digital-streak-01.d1fe1d5f6ee47b60.webp");
+  --fg-studio-magenta-digital-streak-02: url("../assets/studio-magenta-digital-streak-02.231ce2a9aeb5a488.webp");
+  --fg-studio-magenta-digital-streak-03: url("../assets/studio-magenta-digital-streak-03.b1632b19edc8a8fb.webp");
+}
+.fg-studio-magenta-digital-streak-01 { background-color: #080b24; background-image: var(--fg-studio-magenta-digital-streak-01); }
+.fg-studio-magenta-digital-streak-02 { background-color: #faf4ed; background-image: var(--fg-studio-magenta-digital-streak-02); }
+.fg-studio-magenta-digital-streak-03 { background-color: #10251f; background-image: var(--fg-studio-magenta-digital-streak-03); }

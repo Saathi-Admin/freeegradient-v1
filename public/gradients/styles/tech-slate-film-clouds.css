@@ -1,0 +1,6 @@
+/* FreeeGradients: Slate film clouds only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-slate-film-clouds-01: url("../assets/tech-slate-film-clouds-01.278fd639e9649e51.webp");
+}
+.fg-tech-slate-film-clouds-01 { background-color: #c6d6e5; background-image: var(--fg-tech-slate-film-clouds-01); }

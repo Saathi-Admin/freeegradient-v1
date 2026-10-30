@@ -1,0 +1,6 @@
+/* FreeeGradients: Fractal Glass Hero only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-fractal-glass-hero-02: url("../assets/studio-fractal-glass-hero-02.3ccd63d3a6330944.webp");
+}
+.fg-studio-fractal-glass-hero-02 { background-color: #faf4ed; background-image: var(--fg-studio-fractal-glass-hero-02); }

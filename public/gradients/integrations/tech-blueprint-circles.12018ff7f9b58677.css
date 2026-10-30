@@ -1,0 +1,6 @@
+/* FreeeGradients: Blueprint circles only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-blueprint-circles-01: url("../assets/tech-blueprint-circles-01.d7c137315258708a.webp");
+}
+.fg-tech-blueprint-circles-01 { background-color: #102b50; background-image: var(--fg-tech-blueprint-circles-01); }

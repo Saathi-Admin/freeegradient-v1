@@ -13,7 +13,9 @@ for(const template of catalogue) {
   assert(Buffer.byteLength(css)<=8192,`CSS exceeds 8 KiB for ${template.slug}`);
   stats.maxCssBytes=Math.max(stats.maxCssBytes,Buffer.byteLength(css));stats.maxCssGzipBytes=Math.max(stats.maxCssGzipBytes,gzipSync(css).length);
   for(const reference of css.matchAll(/url\("([^"]+)"\)/g)) await stat(new URL(reference[1],file(template.stylesheet)));
-  assert(template.variations.some(v=>v.mode==='light')&&template.variations.some(v=>v.mode==='dark'),`Missing design mode for ${template.slug}`);
+  if(template.singlePalette) assert.equal(template.variations.length,1,`Expected one reference palette for ${template.slug}`);
+  else assert(template.variations.some(v=>v.mode==='light')&&template.variations.some(v=>v.mode==='dark'),`Missing design mode for ${template.slug}`);
+  assert(template.variations.every(v=>['light','dark'].includes(v.mode)),`Unknown design mode for ${template.slug}`);
   for(const variation of template.variations) {
     assert(!ids.has(variation.id),`Duplicate variation ${variation.id}`);ids.add(variation.id);stats.variations++;
     assert(css.includes(`.fg-${variation.id} {`),`Missing variation class ${variation.id}`);

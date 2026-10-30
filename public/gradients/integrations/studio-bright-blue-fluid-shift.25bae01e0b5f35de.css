@@ -1,0 +1,10 @@
+/* FreeeGradients: Bright Blue Fluid Shift only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-bright-blue-fluid-shift-01: url("../assets/studio-bright-blue-fluid-shift-01.41c7e6763a176df6.webp");
+  --fg-studio-bright-blue-fluid-shift-02: url("../assets/studio-bright-blue-fluid-shift-02.8361818d024836d7.webp");
+  --fg-studio-bright-blue-fluid-shift-03: url("../assets/studio-bright-blue-fluid-shift-03.1c93dc8713251314.webp");
+}
+.fg-studio-bright-blue-fluid-shift-01 { background-color: #080b24; background-image: var(--fg-studio-bright-blue-fluid-shift-01); }
+.fg-studio-bright-blue-fluid-shift-02 { background-color: #faf4ed; background-image: var(--fg-studio-bright-blue-fluid-shift-02); }
+.fg-studio-bright-blue-fluid-shift-03 { background-color: #10251f; background-image: var(--fg-studio-bright-blue-fluid-shift-03); }

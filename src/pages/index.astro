@@ -24,11 +24,11 @@ const gradientMilestone = gradientTotal >= 1000 ? `${Math.floor(gradientTotal / 
 const heroTemplate = gradients.find(template => template.slug === 'refracted-saddle')!;
 const heroVariation = heroTemplate.variations.find(variation => variation.name === 'Cobalt signal')!;
 const heroBackground = `url("${heroVariation.backgroundSrc ?? heroVariation.src}")`;
-const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline','orbit','bloom','nectar','halo','aurora','ember','analogue','haze','film','ripple','drift','flux','horizon','dawnlight','atmosphere','afterglow','uplift','nightfall'].includes(g.slug) || ['colour-clouds', 'fluid-fields', 'prismatic-light'].includes(g.category));
+const featuredGradients = gradients.filter(g => ['velvet','daybreak','tideline','orbit','bloom','nectar','halo','aurora','ember','analogue','haze','film','ripple','drift','flux','horizon','dawnlight','atmosphere','afterglow','uplift','nightfall'].includes(g.slug) || ['tech-atmospheres', 'colour-clouds', 'fluid-fields', 'prismatic-light'].includes(g.category));
 const allGradientCards = collections.slice(0, 6).map((collection, index) => {
-  const gradient = gradients.find(template => template.category === collection.id)!;
   const mode = index % 2 === 0 ? 'dark' : 'light';
-  const variation = gradient.variations.find(item => item.mode === mode)!;
+  const gradient = gradients.find(template => template.category === collection.id && template.variations.some(item=>item.mode===mode)) ?? gradients.find(template=>template.category===collection.id)!;
+  const variation = gradient.variations.find(item => item.mode === mode) ?? gradient.variations[0];
   return { gradient, variation };
 });
 const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCards.map(card => card.gradient)].map(template => [template.slug, template])).values()];
@@ -67,7 +67,7 @@ const homePreviewTemplates = [...new Map([...featuredGradients, ...allGradientCa
     <div id="collections" class="container">
       {featuredCollections.map(collection => <section class="section collection" data-category={collection.id} id={collection.id} aria-labelledby={`${collection.id}-title`}>
         <div class="section-heading"><h2 id={`${collection.id}-title`}>{collection.title}</h2><p class="text-body-md">{collection.description}</p></div>
-        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => featuredGradients.filter(g => g.category === collection.id).slice(0, 3).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
+        <div class="grid">{(['dark', 'light'] as const).flatMap(designMode => featuredGradients.filter(g => g.category === collection.id && g.variations.some(v=>v.mode===designMode)).slice(0, 3).map((gradient, order) => <GradientCard gradient={gradient} order={order} designMode={designMode} />))}</div>
         <div class="section-link"><a class="btn btn-secondary btn-md" href={`/collections/${collection.id}/`} aria-label={`Explore ${collection.title}`}>Explore the collection <ArrowUpRight aria-hidden="true" /></a></div>
       </section>)}
       <div class="empty-state" id="library-empty" hidden><p>No gradients for this mode yet. Try another design background.</p><Button variant="secondary" size="sm" id="clear-filters">Clear filters</Button></div>

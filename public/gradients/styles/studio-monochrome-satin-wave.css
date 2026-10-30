@@ -1,0 +1,10 @@
+/* FreeeGradients: Monochrome Satin Wave only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-monochrome-satin-wave-01: url("../assets/studio-monochrome-satin-wave-01.49911258a45c1ad3.webp");
+  --fg-studio-monochrome-satin-wave-02: url("../assets/studio-monochrome-satin-wave-02.66bfe4c62f282034.webp");
+  --fg-studio-monochrome-satin-wave-03: url("../assets/studio-monochrome-satin-wave-03.8efbe7f7defa7662.webp");
+}
+.fg-studio-monochrome-satin-wave-01 { background-color: #080b24; background-image: var(--fg-studio-monochrome-satin-wave-01); }
+.fg-studio-monochrome-satin-wave-02 { background-color: #faf4ed; background-image: var(--fg-studio-monochrome-satin-wave-02); }
+.fg-studio-monochrome-satin-wave-03 { background-color: #10251f; background-image: var(--fg-studio-monochrome-satin-wave-03); }

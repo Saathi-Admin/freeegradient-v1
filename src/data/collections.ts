@@ -1,4 +1,5 @@
 export const collections = [
+  { id: 'tech-atmospheres', preview: '/gradients/tech-violet-crescent-reflection-01.svg', title: 'Tech atmospheres', description: 'Luminous blue horizons, violet halos, fine technical grids and tactile dark textures. Original image backgrounds in carefully chosen colours.' },
   { id: 'soft-auras', preview: '/gradients/grain-bloom-01.svg', title: 'Soft auras', description: 'Soft organic colour forms, delicate blur and fine grain. Three distinct compositions with coordinated colour variations.' },
   { id: 'light-atmospheres', preview: '/gradients/luminous-drift-01.svg', title: 'Light atmospheres', description: 'Grainy light washes and glowing reflected horizons. Atmospheric gradients in coordinated colour palettes.' },
   { id: 'landing', preview: '/gradients/horizon-02.svg', title: 'Landing page', description: 'Soft horizons and a little glow. Made for your first impression.' },

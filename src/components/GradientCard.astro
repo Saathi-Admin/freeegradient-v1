@@ -13,7 +13,7 @@ const variation = available.find(v => v.id === variationId) ?? available[(order 
     <img src={variation.thumbnail} alt={`${gradient.name}, ${variation.name} colour palette`} width="384" height="216" loading={featured && order < 3 ? 'eager' : 'lazy'} fetchpriority={featured && order === 0 ? 'high' : 'auto'} decoding="async" />
   </a>
     <div class="card-actions">
-      <Button size="sm" variant="secondary" data-action="css" aria-label={`Copy CSS: ${gradient.name}`}><Copy slot="leading-icon" aria-hidden="true" />CSS</Button>
+      <Button size="sm" variant="secondary" data-action="css" hidden={variation.cssKind !== 'native'} aria-label={`Copy CSS: ${gradient.name}`}><Copy slot="leading-icon" aria-hidden="true" />CSS</Button>
       <Button size="sm" variant="secondary" data-action="export" aria-label={`Export: ${gradient.name}`}><Download slot="leading-icon" aria-hidden="true" />Export</Button>
     </div>
   </div>

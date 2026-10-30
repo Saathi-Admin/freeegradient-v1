@@ -1,0 +1,6 @@
+/* FreeeGradients: Indigo shadow fold only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-indigo-shadow-fold-01: url("../assets/tech-indigo-shadow-fold-01.a9acae08ba6b6927.webp");
+}
+.fg-tech-indigo-shadow-fold-01 { background-color: #040610; background-image: var(--fg-tech-indigo-shadow-fold-01); }

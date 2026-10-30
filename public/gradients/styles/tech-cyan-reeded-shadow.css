@@ -1,0 +1,6 @@
+/* FreeeGradients: Cyan reeded shadow only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-cyan-reeded-shadow-01: url("../assets/tech-cyan-reeded-shadow-01.8cc73ee3fbec301d.webp");
+}
+.fg-tech-cyan-reeded-shadow-01 { background-color: #020914; background-image: var(--fg-tech-cyan-reeded-shadow-01); }

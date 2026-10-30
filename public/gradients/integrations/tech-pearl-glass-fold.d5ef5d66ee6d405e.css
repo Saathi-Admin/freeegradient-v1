@@ -1,0 +1,6 @@
+/* FreeeGradients: Pearl glass fold only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-pearl-glass-fold-01: url("../assets/tech-pearl-glass-fold-01.f15a9d74ba870e61.webp");
+}
+.fg-tech-pearl-glass-fold-01 { background-color: #f6f6fa; background-image: var(--fg-tech-pearl-glass-fold-01); }

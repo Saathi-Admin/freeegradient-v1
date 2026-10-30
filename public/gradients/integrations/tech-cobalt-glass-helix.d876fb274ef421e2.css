@@ -1,0 +1,6 @@
+/* FreeeGradients: Cobalt glass helix only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-cobalt-glass-helix-01: url("../assets/tech-cobalt-glass-helix-01.b72372109ac8412c.webp");
+}
+.fg-tech-cobalt-glass-helix-01 { background-color: #01051e; background-image: var(--fg-tech-cobalt-glass-helix-01); }

@@ -1,0 +1,10 @@
+/* FreeeGradients: Colour Fractal only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-colour-fractal-01: url("../assets/studio-colour-fractal-01.136ae08f16b859d7.webp");
+  --fg-studio-colour-fractal-02: url("../assets/studio-colour-fractal-02.0ba83029e21f065c.webp");
+  --fg-studio-colour-fractal-03: url("../assets/studio-colour-fractal-03.f6354193336b99d3.webp");
+}
+.fg-studio-colour-fractal-01 { background-color: #080b24; background-image: var(--fg-studio-colour-fractal-01); }
+.fg-studio-colour-fractal-02 { background-color: #faf4ed; background-image: var(--fg-studio-colour-fractal-02); }
+.fg-studio-colour-fractal-03 { background-color: #10251f; background-image: var(--fg-studio-colour-fractal-03); }

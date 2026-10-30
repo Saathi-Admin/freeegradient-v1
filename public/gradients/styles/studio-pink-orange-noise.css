@@ -1,0 +1,10 @@
+/* FreeeGradients: Pink Orange Noise only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-pink-orange-noise-01: url("../assets/studio-pink-orange-noise-01.9564b437bc69baae.webp");
+  --fg-studio-pink-orange-noise-02: url("../assets/studio-pink-orange-noise-02.cf6a24ab0a081f4c.webp");
+  --fg-studio-pink-orange-noise-03: url("../assets/studio-pink-orange-noise-03.c86ca8f248ed9e2b.webp");
+}
+.fg-studio-pink-orange-noise-01 { background-color: #080b24; background-image: var(--fg-studio-pink-orange-noise-01); }
+.fg-studio-pink-orange-noise-02 { background-color: #faf4ed; background-image: var(--fg-studio-pink-orange-noise-02); }
+.fg-studio-pink-orange-noise-03 { background-color: #10251f; background-image: var(--fg-studio-pink-orange-noise-03); }

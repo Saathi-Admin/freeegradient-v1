@@ -1,0 +1,6 @@
+/* FreeeGradients: Muted blue air only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-muted-blue-air-01: url("../assets/tech-muted-blue-air-01.0832d9138d37dc0d.webp");
+}
+.fg-tech-muted-blue-air-01 { background-color: #a2beda; background-image: var(--fg-tech-muted-blue-air-01); }

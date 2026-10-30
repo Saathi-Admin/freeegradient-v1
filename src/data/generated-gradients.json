@@ -165617,5 +165617,3774 @@
         "cssKind": "asset"
       }
     ]
+  },
+  {
+    "slug": "studio-pink-purple-fade",
+    "name": "Pink Purple Fade",
+    "category": "smooth",
+    "shape": "artwork",
+    "position": 0,
+    "tags": [
+      "smooth",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-958",
+    "stylesheet": "/gradients/integrations/studio-pink-purple-fade.2ff926550505f073.css",
+    "variations": [
+      {
+        "id": "studio-pink-purple-fade-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-pink-purple-fade-01.1529d6418480ef19.svg",
+        "thumbnail": "/gradients/thumbnails/studio-pink-purple-fade-01.8f96ef50e8eb5344.webp",
+        "backgroundSrc": "/gradients/assets/studio-pink-purple-fade-01.cf10474362ea98b9.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-pink-purple-fade-01.cf10474362ea98b9.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-pink-purple-fade-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-pink-purple-fade-02.adbe1b204a73ae8f.svg",
+        "thumbnail": "/gradients/thumbnails/studio-pink-purple-fade-02.e577c1a8dba0e1e3.webp",
+        "backgroundSrc": "/gradients/assets/studio-pink-purple-fade-02.bd76ec2fda9978b3.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-pink-purple-fade-02.bd76ec2fda9978b3.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-pink-purple-fade-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-pink-purple-fade-03.fb8c9a7a5b25db56.svg",
+        "thumbnail": "/gradients/thumbnails/studio-pink-purple-fade-03.b8685a387b3d9ed8.webp",
+        "backgroundSrc": "/gradients/assets/studio-pink-purple-fade-03.30fe031175f299c0.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-pink-purple-fade-03.30fe031175f299c0.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-bright-blue-fluid-shift",
+    "name": "Bright Blue Fluid Shift",
+    "category": "liquid",
+    "shape": "artwork",
+    "position": 1,
+    "tags": [
+      "liquid",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-959",
+    "stylesheet": "/gradients/integrations/studio-bright-blue-fluid-shift.25bae01e0b5f35de.css",
+    "variations": [
+      {
+        "id": "studio-bright-blue-fluid-shift-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-bright-blue-fluid-shift-01.e757ac18abd622c5.svg",
+        "thumbnail": "/gradients/thumbnails/studio-bright-blue-fluid-shift-01.5d47f07a65ec617e.webp",
+        "backgroundSrc": "/gradients/assets/studio-bright-blue-fluid-shift-01.41c7e6763a176df6.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-bright-blue-fluid-shift-01.41c7e6763a176df6.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-bright-blue-fluid-shift-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-bright-blue-fluid-shift-02.c65edb59de80c3c8.svg",
+        "thumbnail": "/gradients/thumbnails/studio-bright-blue-fluid-shift-02.fce311c06a8ded2b.webp",
+        "backgroundSrc": "/gradients/assets/studio-bright-blue-fluid-shift-02.8361818d024836d7.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-bright-blue-fluid-shift-02.8361818d024836d7.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-bright-blue-fluid-shift-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-bright-blue-fluid-shift-03.2bf2794bfdea568b.svg",
+        "thumbnail": "/gradients/thumbnails/studio-bright-blue-fluid-shift-03.1f0e6f34ae3467d9.webp",
+        "backgroundSrc": "/gradients/assets/studio-bright-blue-fluid-shift-03.1c93dc8713251314.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-bright-blue-fluid-shift-03.1c93dc8713251314.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-deep-blue-satin-swirl",
+    "name": "Deep Blue Satin Swirl",
+    "category": "liquid",
+    "shape": "artwork",
+    "position": 2,
+    "tags": [
+      "liquid",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-960",
+    "stylesheet": "/gradients/integrations/studio-deep-blue-satin-swirl.51ce0ed39619fbc6.css",
+    "variations": [
+      {
+        "id": "studio-deep-blue-satin-swirl-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-deep-blue-satin-swirl-01.8cf73c0caa6f48f1.svg",
+        "thumbnail": "/gradients/thumbnails/studio-deep-blue-satin-swirl-01.9ecb7f8794121a0e.webp",
+        "backgroundSrc": "/gradients/assets/studio-deep-blue-satin-swirl-01.8df17f987b62cf4f.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-deep-blue-satin-swirl-01.8df17f987b62cf4f.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-deep-blue-satin-swirl-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-deep-blue-satin-swirl-02.2b05615e086fe561.svg",
+        "thumbnail": "/gradients/thumbnails/studio-deep-blue-satin-swirl-02.3c134db3f39a3f9d.webp",
+        "backgroundSrc": "/gradients/assets/studio-deep-blue-satin-swirl-02.9e0a638a0d1fedc3.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-deep-blue-satin-swirl-02.9e0a638a0d1fedc3.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-deep-blue-satin-swirl-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-deep-blue-satin-swirl-03.23773ae60a793746.svg",
+        "thumbnail": "/gradients/thumbnails/studio-deep-blue-satin-swirl-03.59e3c7a5fa68a0a9.webp",
+        "backgroundSrc": "/gradients/assets/studio-deep-blue-satin-swirl-03.e27560c6eac941d8.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-deep-blue-satin-swirl-03.e27560c6eac941d8.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-cyan-dark-stripe-fade",
+    "name": "Cyan Dark Stripe Fade",
+    "category": "studies",
+    "shape": "artwork",
+    "position": 3,
+    "tags": [
+      "studies",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-961",
+    "stylesheet": "/gradients/integrations/studio-cyan-dark-stripe-fade.412ae44553099a58.css",
+    "variations": [
+      {
+        "id": "studio-cyan-dark-stripe-fade-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-cyan-dark-stripe-fade-01.03f98b2ab07cc554.svg",
+        "thumbnail": "/gradients/thumbnails/studio-cyan-dark-stripe-fade-01.a5fe00e596d6aef2.webp",
+        "backgroundSrc": "/gradients/assets/studio-cyan-dark-stripe-fade-01.260776f49e47cb2f.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-cyan-dark-stripe-fade-01.260776f49e47cb2f.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-cyan-dark-stripe-fade-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-cyan-dark-stripe-fade-02.367ed92f3878f9d1.svg",
+        "thumbnail": "/gradients/thumbnails/studio-cyan-dark-stripe-fade-02.a9676b34d6bb4317.webp",
+        "backgroundSrc": "/gradients/assets/studio-cyan-dark-stripe-fade-02.8a321b6f52748db6.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-cyan-dark-stripe-fade-02.8a321b6f52748db6.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-cyan-dark-stripe-fade-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-cyan-dark-stripe-fade-03.bf3b6cbbbfd4ec47.svg",
+        "thumbnail": "/gradients/thumbnails/studio-cyan-dark-stripe-fade-03.1ea59acab64dc665.webp",
+        "backgroundSrc": "/gradients/assets/studio-cyan-dark-stripe-fade-03.1d56c6a2010106c7.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-cyan-dark-stripe-fade-03.1d56c6a2010106c7.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-blue-white-wave-flow",
+    "name": "Blue White Wave Flow",
+    "category": "liquid",
+    "shape": "artwork",
+    "position": 4,
+    "tags": [
+      "liquid",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-962",
+    "stylesheet": "/gradients/integrations/studio-blue-white-wave-flow.634c51bbbea63b13.css",
+    "variations": [
+      {
+        "id": "studio-blue-white-wave-flow-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-blue-white-wave-flow-01.1c9c2c50ac2c7b14.svg",
+        "thumbnail": "/gradients/thumbnails/studio-blue-white-wave-flow-01.38fd381ce99400ca.webp",
+        "backgroundSrc": "/gradients/assets/studio-blue-white-wave-flow-01.bfce08d54747601f.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-blue-white-wave-flow-01.bfce08d54747601f.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-blue-white-wave-flow-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-blue-white-wave-flow-02.235043930841cd2b.svg",
+        "thumbnail": "/gradients/thumbnails/studio-blue-white-wave-flow-02.a5e8415033c851ed.webp",
+        "backgroundSrc": "/gradients/assets/studio-blue-white-wave-flow-02.29750c9e43066c7d.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-blue-white-wave-flow-02.29750c9e43066c7d.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-blue-white-wave-flow-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-blue-white-wave-flow-03.90dd8a46d40f3ce9.svg",
+        "thumbnail": "/gradients/thumbnails/studio-blue-white-wave-flow-03.d242fda84ad4a266.webp",
+        "backgroundSrc": "/gradients/assets/studio-blue-white-wave-flow-03.1c6a81080b74d4e2.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-blue-white-wave-flow-03.1c6a81080b74d4e2.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-teal-burst-noise",
+    "name": "Teal Burst Noise",
+    "category": "vintage",
+    "shape": "artwork",
+    "position": 11,
+    "tags": [
+      "vintage",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-963",
+    "stylesheet": "/gradients/integrations/studio-teal-burst-noise.ea5250d7e73dfedf.css",
+    "variations": [
+      {
+        "id": "studio-teal-burst-noise-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-teal-burst-noise-01.b96a8991202a9c53.svg",
+        "thumbnail": "/gradients/thumbnails/studio-teal-burst-noise-01.e157563bfd139bef.webp",
+        "backgroundSrc": "/gradients/assets/studio-teal-burst-noise-01.dc8febba30a7f4e3.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-teal-burst-noise-01.dc8febba30a7f4e3.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-teal-burst-noise-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-teal-burst-noise-02.6918becbed0688c6.svg",
+        "thumbnail": "/gradients/thumbnails/studio-teal-burst-noise-02.342a4a5ba075450c.webp",
+        "backgroundSrc": "/gradients/assets/studio-teal-burst-noise-02.28a3f78ad0bec03f.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-teal-burst-noise-02.28a3f78ad0bec03f.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-teal-burst-noise-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-teal-burst-noise-03.16578e43b7949cca.svg",
+        "thumbnail": "/gradients/thumbnails/studio-teal-burst-noise-03.bc1d9d7983a246e4.webp",
+        "backgroundSrc": "/gradients/assets/studio-teal-burst-noise-03.c51606f0e9014747.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-teal-burst-noise-03.c51606f0e9014747.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-magenta-digital-streak",
+    "name": "Magenta Digital Streak",
+    "category": "studies",
+    "shape": "artwork",
+    "position": 12,
+    "tags": [
+      "studies",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-964",
+    "stylesheet": "/gradients/integrations/studio-magenta-digital-streak.e6eb8fc4f88c2dd2.css",
+    "variations": [
+      {
+        "id": "studio-magenta-digital-streak-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-magenta-digital-streak-01.de6cf11323b92adc.svg",
+        "thumbnail": "/gradients/thumbnails/studio-magenta-digital-streak-01.917d717e90462eb8.webp",
+        "backgroundSrc": "/gradients/assets/studio-magenta-digital-streak-01.d1fe1d5f6ee47b60.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-magenta-digital-streak-01.d1fe1d5f6ee47b60.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-magenta-digital-streak-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-magenta-digital-streak-02.a9cfccf889f6c94e.svg",
+        "thumbnail": "/gradients/thumbnails/studio-magenta-digital-streak-02.fec1a221ffa4e251.webp",
+        "backgroundSrc": "/gradients/assets/studio-magenta-digital-streak-02.231ce2a9aeb5a488.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-magenta-digital-streak-02.231ce2a9aeb5a488.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-magenta-digital-streak-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-magenta-digital-streak-03.7b88c6416e9659b8.svg",
+        "thumbnail": "/gradients/thumbnails/studio-magenta-digital-streak-03.e4c4f3d63640769e.webp",
+        "backgroundSrc": "/gradients/assets/studio-magenta-digital-streak-03.b1632b19edc8a8fb.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-magenta-digital-streak-03.b1632b19edc8a8fb.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-cyan-aqua-fluid",
+    "name": "Cyan Aqua Fluid",
+    "category": "liquid",
+    "shape": "artwork",
+    "position": 13,
+    "tags": [
+      "liquid",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-965",
+    "stylesheet": "/gradients/integrations/studio-cyan-aqua-fluid.051a9c858010d0b5.css",
+    "variations": [
+      {
+        "id": "studio-cyan-aqua-fluid-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-cyan-aqua-fluid-01.b70a3b1275aac94a.svg",
+        "thumbnail": "/gradients/thumbnails/studio-cyan-aqua-fluid-01.763b34d71f473b9e.webp",
+        "backgroundSrc": "/gradients/assets/studio-cyan-aqua-fluid-01.0d73403955d680d6.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-cyan-aqua-fluid-01.0d73403955d680d6.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-cyan-aqua-fluid-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-cyan-aqua-fluid-02.b6f2edd130c2294f.svg",
+        "thumbnail": "/gradients/thumbnails/studio-cyan-aqua-fluid-02.6a1f7163865ae008.webp",
+        "backgroundSrc": "/gradients/assets/studio-cyan-aqua-fluid-02.8bb6d62c5a78274f.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-cyan-aqua-fluid-02.8bb6d62c5a78274f.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-cyan-aqua-fluid-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-cyan-aqua-fluid-03.a113782dab3dd48d.svg",
+        "thumbnail": "/gradients/thumbnails/studio-cyan-aqua-fluid-03.4ffade50eae0be0b.webp",
+        "backgroundSrc": "/gradients/assets/studio-cyan-aqua-fluid-03.732789e36fe0bd2c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-cyan-aqua-fluid-03.732789e36fe0bd2c.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-monochrome-satin-wave",
+    "name": "Monochrome Satin Wave",
+    "category": "liquid",
+    "shape": "artwork",
+    "position": 14,
+    "tags": [
+      "liquid",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-966",
+    "stylesheet": "/gradients/integrations/studio-monochrome-satin-wave.10ee162d8d5cac03.css",
+    "variations": [
+      {
+        "id": "studio-monochrome-satin-wave-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-monochrome-satin-wave-01.8bad7c47acfe8111.svg",
+        "thumbnail": "/gradients/thumbnails/studio-monochrome-satin-wave-01.685a5f7dcba5627a.webp",
+        "backgroundSrc": "/gradients/assets/studio-monochrome-satin-wave-01.49911258a45c1ad3.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-monochrome-satin-wave-01.49911258a45c1ad3.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-monochrome-satin-wave-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-monochrome-satin-wave-02.4f8383039f3e041a.svg",
+        "thumbnail": "/gradients/thumbnails/studio-monochrome-satin-wave-02.5c76ba97ffe550d2.webp",
+        "backgroundSrc": "/gradients/assets/studio-monochrome-satin-wave-02.66bfe4c62f282034.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-monochrome-satin-wave-02.66bfe4c62f282034.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-monochrome-satin-wave-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-monochrome-satin-wave-03.86786f4a878c9cc1.svg",
+        "thumbnail": "/gradients/thumbnails/studio-monochrome-satin-wave-03.93b005853893ac73.webp",
+        "backgroundSrc": "/gradients/assets/studio-monochrome-satin-wave-03.8efbe7f7defa7662.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-monochrome-satin-wave-03.8efbe7f7defa7662.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-phantom-gradient-stripes",
+    "name": "Phantom Gradient Stripes",
+    "category": "studies",
+    "shape": "artwork",
+    "position": 18,
+    "tags": [
+      "studies",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-967",
+    "stylesheet": "/gradients/integrations/studio-phantom-gradient-stripes.c2397a263e561e37.css",
+    "variations": [
+      {
+        "id": "studio-phantom-gradient-stripes-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-phantom-gradient-stripes-01.e5dfa77d1804477e.svg",
+        "thumbnail": "/gradients/thumbnails/studio-phantom-gradient-stripes-01.d126c42a9edb1351.webp",
+        "backgroundSrc": "/gradients/assets/studio-phantom-gradient-stripes-01.9ba30666124f0dee.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-phantom-gradient-stripes-01.9ba30666124f0dee.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-phantom-gradient-stripes-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-phantom-gradient-stripes-02.01425f41647ca163.svg",
+        "thumbnail": "/gradients/thumbnails/studio-phantom-gradient-stripes-02.00aacfa5d27a4a20.webp",
+        "backgroundSrc": "/gradients/assets/studio-phantom-gradient-stripes-02.125004d5b2e0280c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-phantom-gradient-stripes-02.125004d5b2e0280c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-phantom-gradient-stripes-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-phantom-gradient-stripes-03.46bad784f2820a4e.svg",
+        "thumbnail": "/gradients/thumbnails/studio-phantom-gradient-stripes-03.a3e7e6f8eab2e8c3.webp",
+        "backgroundSrc": "/gradients/assets/studio-phantom-gradient-stripes-03.b6601739a81570de.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-phantom-gradient-stripes-03.b6601739a81570de.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-retro-blue",
+    "name": "Retro Blue",
+    "category": "vintage",
+    "shape": "artwork",
+    "position": 29,
+    "tags": [
+      "vintage",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-968",
+    "stylesheet": "/gradients/integrations/studio-retro-blue.6e8796838ee28027.css",
+    "variations": [
+      {
+        "id": "studio-retro-blue-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-retro-blue-01.a589bbdbc625bb8c.svg",
+        "thumbnail": "/gradients/thumbnails/studio-retro-blue-01.fb55b9f5cef4e8fa.webp",
+        "backgroundSrc": "/gradients/assets/studio-retro-blue-01.5ea3f91af9304dca.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-retro-blue-01.5ea3f91af9304dca.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-retro-blue-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-retro-blue-02.b23d15cb152962bd.svg",
+        "thumbnail": "/gradients/thumbnails/studio-retro-blue-02.e4ba722109baf513.webp",
+        "backgroundSrc": "/gradients/assets/studio-retro-blue-02.3415cff70af66eb5.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-retro-blue-02.3415cff70af66eb5.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-retro-blue-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-retro-blue-03.1e16aeaa5d3aff55.svg",
+        "thumbnail": "/gradients/thumbnails/studio-retro-blue-03.da91c31d75f27dc0.webp",
+        "backgroundSrc": "/gradients/assets/studio-retro-blue-03.64c2e09bde9878bc.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-retro-blue-03.64c2e09bde9878bc.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-pink-orange-noise",
+    "name": "Pink Orange Noise",
+    "category": "vintage",
+    "shape": "artwork",
+    "position": 31,
+    "tags": [
+      "vintage",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-969",
+    "stylesheet": "/gradients/integrations/studio-pink-orange-noise.a7974dd7767f9da5.css",
+    "variations": [
+      {
+        "id": "studio-pink-orange-noise-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-pink-orange-noise-01.fa668e2983965dcc.svg",
+        "thumbnail": "/gradients/thumbnails/studio-pink-orange-noise-01.1a3539d27c010ca5.webp",
+        "backgroundSrc": "/gradients/assets/studio-pink-orange-noise-01.9564b437bc69baae.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-pink-orange-noise-01.9564b437bc69baae.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-pink-orange-noise-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-pink-orange-noise-02.70e065d15fc3e037.svg",
+        "thumbnail": "/gradients/thumbnails/studio-pink-orange-noise-02.5824cc6397861306.webp",
+        "backgroundSrc": "/gradients/assets/studio-pink-orange-noise-02.cf6a24ab0a081f4c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-pink-orange-noise-02.cf6a24ab0a081f4c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-pink-orange-noise-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-pink-orange-noise-03.b6de594c1eec1577.svg",
+        "thumbnail": "/gradients/thumbnails/studio-pink-orange-noise-03.b0ed062f4dc51cf1.webp",
+        "backgroundSrc": "/gradients/assets/studio-pink-orange-noise-03.c86ca8f248ed9e2b.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-pink-orange-noise-03.c86ca8f248ed9e2b.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-orange-silk-blur",
+    "name": "Orange Silk Blur",
+    "category": "liquid",
+    "shape": "artwork",
+    "position": 38,
+    "tags": [
+      "liquid",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-970",
+    "stylesheet": "/gradients/integrations/studio-orange-silk-blur.f986305198699392.css",
+    "variations": [
+      {
+        "id": "studio-orange-silk-blur-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-orange-silk-blur-01.f6c5870a0ad6c955.svg",
+        "thumbnail": "/gradients/thumbnails/studio-orange-silk-blur-01.03ad6958793c994c.webp",
+        "backgroundSrc": "/gradients/assets/studio-orange-silk-blur-01.abc75026b43185f4.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-orange-silk-blur-01.abc75026b43185f4.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-orange-silk-blur-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-orange-silk-blur-02.76edfd6c7c1d1ca8.svg",
+        "thumbnail": "/gradients/thumbnails/studio-orange-silk-blur-02.42a94c1c1777557e.webp",
+        "backgroundSrc": "/gradients/assets/studio-orange-silk-blur-02.47e59f862f4025ba.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-orange-silk-blur-02.47e59f862f4025ba.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-orange-silk-blur-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-orange-silk-blur-03.f4842c231b6a9b78.svg",
+        "thumbnail": "/gradients/thumbnails/studio-orange-silk-blur-03.63c892a0de994556.webp",
+        "backgroundSrc": "/gradients/assets/studio-orange-silk-blur-03.34346ff2b847fc93.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-orange-silk-blur-03.34346ff2b847fc93.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-blue-fractal-light",
+    "name": "Blue Fractal Light",
+    "category": "studies",
+    "shape": "artwork",
+    "position": 44,
+    "tags": [
+      "studies",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-971",
+    "stylesheet": "/gradients/integrations/studio-blue-fractal-light.4e5d3630e152576b.css",
+    "variations": [
+      {
+        "id": "studio-blue-fractal-light-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-blue-fractal-light-01.752bcd7ff18769e8.svg",
+        "thumbnail": "/gradients/thumbnails/studio-blue-fractal-light-01.20f5b308e9f06b99.webp",
+        "backgroundSrc": "/gradients/assets/studio-blue-fractal-light-01.aaec9f608e979ea1.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-blue-fractal-light-01.aaec9f608e979ea1.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-blue-fractal-light-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-blue-fractal-light-02.a72fc6671c2eaf0f.svg",
+        "thumbnail": "/gradients/thumbnails/studio-blue-fractal-light-02.a9ef051d55f42505.webp",
+        "backgroundSrc": "/gradients/assets/studio-blue-fractal-light-02.6c7fd635bec4919c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-blue-fractal-light-02.6c7fd635bec4919c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-blue-fractal-light-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-blue-fractal-light-03.103acb6b24a863ca.svg",
+        "thumbnail": "/gradients/thumbnails/studio-blue-fractal-light-03.e1375b1ac399a245.webp",
+        "backgroundSrc": "/gradients/assets/studio-blue-fractal-light-03.e743e2886bb387dc.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-blue-fractal-light-03.e743e2886bb387dc.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-colour-fractal",
+    "name": "Colour Fractal",
+    "category": "studies",
+    "shape": "artwork",
+    "position": 46,
+    "tags": [
+      "studies",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "id": "FG-972",
+    "stylesheet": "/gradients/integrations/studio-colour-fractal.1cf1514cbacb2fcc.css",
+    "variations": [
+      {
+        "id": "studio-colour-fractal-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-colour-fractal-01.54556bea7566299a.svg",
+        "thumbnail": "/gradients/thumbnails/studio-colour-fractal-01.2cb944c26489b49d.webp",
+        "backgroundSrc": "/gradients/assets/studio-colour-fractal-01.136ae08f16b859d7.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-colour-fractal-01.136ae08f16b859d7.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-colour-fractal-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-colour-fractal-02.d4445f1bff6701cb.svg",
+        "thumbnail": "/gradients/thumbnails/studio-colour-fractal-02.f89921c20e8105a3.webp",
+        "backgroundSrc": "/gradients/assets/studio-colour-fractal-02.0ba83029e21f065c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-colour-fractal-02.0ba83029e21f065c.webp\")",
+        "cssKind": "asset"
+      },
+      {
+        "id": "studio-colour-fractal-03",
+        "name": "Ember jade",
+        "mode": "dark",
+        "colors": [
+          "#10251f",
+          "#e59b47",
+          "#45b69a"
+        ],
+        "tags": [
+          "green",
+          "orange",
+          "teal",
+          "amber"
+        ],
+        "src": "/gradients/assets/studio-colour-fractal-03.69f10fe531f90c27.svg",
+        "thumbnail": "/gradients/thumbnails/studio-colour-fractal-03.78d022483aa86210.webp",
+        "backgroundSrc": "/gradients/assets/studio-colour-fractal-03.f6354193336b99d3.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-colour-fractal-03.f6354193336b99d3.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-fractal-glass-hero",
+    "name": "Fractal Glass Hero",
+    "category": "prism",
+    "shape": "artwork",
+    "position": 47,
+    "tags": [
+      "prism",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "singlePalette": true,
+    "id": "FG-973",
+    "stylesheet": "/gradients/integrations/studio-fractal-glass-hero.642ada5305f7a05d.css",
+    "variations": [
+      {
+        "id": "studio-fractal-glass-hero-02",
+        "name": "Pearl daylight",
+        "mode": "light",
+        "colors": [
+          "#faf4ed",
+          "#f3b8b0",
+          "#b7c7ed"
+        ],
+        "tags": [
+          "peach",
+          "pastel",
+          "lavender",
+          "light"
+        ],
+        "src": "/gradients/assets/studio-fractal-glass-hero-02.ccb36aca438063a8.svg",
+        "thumbnail": "/gradients/thumbnails/studio-fractal-glass-hero-02.408fa6128a355874.webp",
+        "backgroundSrc": "/gradients/assets/studio-fractal-glass-hero-02.3ccd63d3a6330944.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-fractal-glass-hero-02.3ccd63d3a6330944.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-fractal-glass-texture",
+    "name": "Fractal Glass Texture",
+    "category": "prism",
+    "shape": "artwork",
+    "position": 48,
+    "tags": [
+      "prism",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "singlePalette": true,
+    "id": "FG-974",
+    "stylesheet": "/gradients/integrations/studio-fractal-glass-texture.8f016eab73d685aa.css",
+    "variations": [
+      {
+        "id": "studio-fractal-glass-texture-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-fractal-glass-texture-01.8a4db21d781eff73.svg",
+        "thumbnail": "/gradients/thumbnails/studio-fractal-glass-texture-01.e170c572cfaeade1.webp",
+        "backgroundSrc": "/gradients/assets/studio-fractal-glass-texture-01.60d0aff0e29d759a.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-fractal-glass-texture-01.60d0aff0e29d759a.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "studio-fluted-glass-flow",
+    "name": "Fluted Glass Flow",
+    "category": "prism",
+    "shape": "artwork",
+    "position": 65,
+    "tags": [
+      "prism",
+      "studio",
+      "abstract",
+      "image"
+    ],
+    "singlePalette": true,
+    "id": "FG-975",
+    "stylesheet": "/gradients/integrations/studio-fluted-glass-flow.2f0dd138d4c09c03.css",
+    "variations": [
+      {
+        "id": "studio-fluted-glass-flow-01",
+        "name": "Midnight spectrum",
+        "mode": "dark",
+        "colors": [
+          "#080b24",
+          "#267bdf",
+          "#be54cc"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "cyan",
+          "night"
+        ],
+        "src": "/gradients/assets/studio-fluted-glass-flow-01.60529b8d3762e9a0.svg",
+        "thumbnail": "/gradients/thumbnails/studio-fluted-glass-flow-01.903191411d39d17e.webp",
+        "backgroundSrc": "/gradients/assets/studio-fluted-glass-flow-01.766610b501a351cf.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/studio-fluted-glass-flow-01.766610b501a351cf.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cyan-halftone-flow",
+    "name": "Cyan halftone flow",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 0,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cyan",
+      "halftone",
+      "flow"
+    ],
+    "id": "FG-976",
+    "stylesheet": "/gradients/integrations/tech-cyan-halftone-flow.0482204674660da1.css",
+    "variations": [
+      {
+        "id": "tech-cyan-halftone-flow-01",
+        "name": "Reference palette",
+        "mode": "light",
+        "colors": [
+          "#c4dedf",
+          "#68bacb",
+          "#344d72"
+        ],
+        "tags": [
+          "mint",
+          "blue",
+          "light"
+        ],
+        "src": "/gradients/assets/tech-cyan-halftone-flow-01.eb78a49ac1081f33.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cyan-halftone-flow-01.e6fa83f7f691e023.webp",
+        "backgroundSrc": "/gradients/assets/tech-cyan-halftone-flow-01.8a78d8b01a3ab7a6.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cyan-halftone-flow-01.8a78d8b01a3ab7a6.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-blueprint-circles",
+    "name": "Blueprint circles",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 1,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "blueprint",
+      "circles"
+    ],
+    "id": "FG-977",
+    "stylesheet": "/gradients/integrations/tech-blueprint-circles.12018ff7f9b58677.css",
+    "variations": [
+      {
+        "id": "tech-blueprint-circles-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#102b50",
+          "#1464bb",
+          "#a2b5c8"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-blueprint-circles-01.99c5ca5440561c2d.svg",
+        "thumbnail": "/gradients/thumbnails/tech-blueprint-circles-01.b10deb38edb904a6.webp",
+        "backgroundSrc": "/gradients/assets/tech-blueprint-circles-01.d7c137315258708a.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-blueprint-circles-01.d7c137315258708a.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-silver-cross-grid",
+    "name": "Silver cross grid",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 2,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "silver",
+      "cross",
+      "grid"
+    ],
+    "id": "FG-978",
+    "stylesheet": "/gradients/integrations/tech-silver-cross-grid.8caf6050e518ad71.css",
+    "variations": [
+      {
+        "id": "tech-silver-cross-grid-01",
+        "name": "Reference palette",
+        "mode": "light",
+        "colors": [
+          "#e8e9e9",
+          "#c1c4c6",
+          "#92999c"
+        ],
+        "tags": [
+          "monochrome",
+          "light"
+        ],
+        "src": "/gradients/assets/tech-silver-cross-grid-01.5e3bc00fe1470ef6.svg",
+        "thumbnail": "/gradients/thumbnails/tech-silver-cross-grid-01.ee0db3ec2f7f0720.webp",
+        "backgroundSrc": "/gradients/assets/tech-silver-cross-grid-01.8a21983820857e2f.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-silver-cross-grid-01.8a21983820857e2f.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-grain-cloud",
+    "name": "Violet grain cloud",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 3,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "grain",
+      "cloud"
+    ],
+    "id": "FG-979",
+    "stylesheet": "/gradients/integrations/tech-violet-grain-cloud.c3f650b095d9af7f.css",
+    "variations": [
+      {
+        "id": "tech-violet-grain-cloud-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#07040e",
+          "#6822a7",
+          "#b450eb"
+        ],
+        "tags": [
+          "monochrome",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-grain-cloud-01.a6e9f15ef008c0bc.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-grain-cloud-01.e0adb7e53a32d7c1.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-grain-cloud-01.7aba82afcdbce081.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-grain-cloud-01.7aba82afcdbce081.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-crescent-reflection",
+    "name": "Violet crescent reflection",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 4,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "crescent",
+      "reflection"
+    ],
+    "id": "FG-980",
+    "stylesheet": "/gradients/integrations/tech-violet-crescent-reflection.df1aa45f7c53d66d.css",
+    "variations": [
+      {
+        "id": "tech-violet-crescent-reflection-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#050313",
+          "#5635e8",
+          "#c3a3ff"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-crescent-reflection-01.47ae55876da3a008.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-crescent-reflection-01.b976d65495e909c4.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-crescent-reflection-01.84dac6ac6ebb20c3.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-crescent-reflection-01.84dac6ac6ebb20c3.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-pastel-spectrum-mist",
+    "name": "Pastel spectrum mist",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 5,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "pastel",
+      "spectrum",
+      "mist"
+    ],
+    "id": "FG-981",
+    "stylesheet": "/gradients/integrations/tech-pastel-spectrum-mist.a504f9f3b886ee69.css",
+    "variations": [
+      {
+        "id": "tech-pastel-spectrum-mist-01",
+        "name": "Reference palette",
+        "mode": "light",
+        "colors": [
+          "#fff7df",
+          "#efc8dd",
+          "#b8ecf2"
+        ],
+        "tags": [
+          "yellow",
+          "pink",
+          "mint",
+          "light"
+        ],
+        "src": "/gradients/assets/tech-pastel-spectrum-mist-01.a0baa34a512895f8.svg",
+        "thumbnail": "/gradients/thumbnails/tech-pastel-spectrum-mist-01.5322f9960996b961.webp",
+        "backgroundSrc": "/gradients/assets/tech-pastel-spectrum-mist-01.0f14a5318abd2404.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-pastel-spectrum-mist-01.0f14a5318abd2404.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-graphite-micro-wave",
+    "name": "Graphite micro wave",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 6,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "graphite",
+      "micro",
+      "wave"
+    ],
+    "id": "FG-982",
+    "stylesheet": "/gradients/integrations/tech-graphite-micro-wave.bd40ed2196cfe43a.css",
+    "variations": [
+      {
+        "id": "tech-graphite-micro-wave-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#030405",
+          "#1c232a",
+          "#687780"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-graphite-micro-wave-01.fdfc0c94f1912a3f.svg",
+        "thumbnail": "/gradients/thumbnails/tech-graphite-micro-wave-01.400cbd82a02a16ef.webp",
+        "backgroundSrc": "/gradients/assets/tech-graphite-micro-wave-01.412f4ac3c198a530.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-graphite-micro-wave-01.412f4ac3c198a530.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cobalt-fine-grid",
+    "name": "Cobalt fine grid",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 7,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cobalt",
+      "fine",
+      "grid"
+    ],
+    "id": "FG-983",
+    "stylesheet": "/gradients/integrations/tech-cobalt-fine-grid.5a1532a1bbc62866.css",
+    "variations": [
+      {
+        "id": "tech-cobalt-fine-grid-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#061538",
+          "#0c2b70",
+          "#234fc0"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-cobalt-fine-grid-01.115a061ec6dbbd8f.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cobalt-fine-grid-01.284b7e261e1a7027.webp",
+        "backgroundSrc": "/gradients/assets/tech-cobalt-fine-grid-01.2a52fe1bf629698c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cobalt-fine-grid-01.2a52fe1bf629698c.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-azure-soft-sweep",
+    "name": "Azure soft sweep",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 8,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "azure",
+      "soft",
+      "sweep"
+    ],
+    "id": "FG-984",
+    "stylesheet": "/gradients/integrations/tech-azure-soft-sweep.8d37731fdcafa724.css",
+    "variations": [
+      {
+        "id": "tech-azure-soft-sweep-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#0c1b6d",
+          "#145bca",
+          "#65d5fa"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-azure-soft-sweep-01.c190814473e3b4cd.svg",
+        "thumbnail": "/gradients/thumbnails/tech-azure-soft-sweep-01.daf639b1130a49ce.webp",
+        "backgroundSrc": "/gradients/assets/tech-azure-soft-sweep-01.6bf855ae349fc85b.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-azure-soft-sweep-01.6bf855ae349fc85b.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cobalt-reeded-tunnel",
+    "name": "Cobalt reeded tunnel",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 9,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cobalt",
+      "reeded",
+      "tunnel"
+    ],
+    "id": "FG-985",
+    "stylesheet": "/gradients/integrations/tech-cobalt-reeded-tunnel.cd5ab830728f0107.css",
+    "variations": [
+      {
+        "id": "tech-cobalt-reeded-tunnel-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#020721",
+          "#123daa",
+          "#6ca9ff"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-cobalt-reeded-tunnel-01.985d8af1dc7dddfd.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cobalt-reeded-tunnel-01.7ae343f9cb744826.webp",
+        "backgroundSrc": "/gradients/assets/tech-cobalt-reeded-tunnel-01.560b8239d34c9e7b.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cobalt-reeded-tunnel-01.560b8239d34c9e7b.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-sky-halftone-clouds",
+    "name": "Sky halftone clouds",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 10,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "sky",
+      "halftone",
+      "clouds"
+    ],
+    "id": "FG-986",
+    "stylesheet": "/gradients/integrations/tech-sky-halftone-clouds.770d67059d54a683.css",
+    "variations": [
+      {
+        "id": "tech-sky-halftone-clouds-01",
+        "name": "Reference palette",
+        "mode": "light",
+        "colors": [
+          "#e8f1ff",
+          "#99bbec",
+          "#7295d0"
+        ],
+        "tags": [
+          "blue",
+          "light"
+        ],
+        "src": "/gradients/assets/tech-sky-halftone-clouds-01.1929928ce1cdeb27.svg",
+        "thumbnail": "/gradients/thumbnails/tech-sky-halftone-clouds-01.8f538df655e4ffce.webp",
+        "backgroundSrc": "/gradients/assets/tech-sky-halftone-clouds-01.914ac26c3f0eda5e.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-sky-halftone-clouds-01.914ac26c3f0eda5e.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-ice-blue-wash",
+    "name": "Ice blue wash",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 11,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "ice",
+      "blue",
+      "wash"
+    ],
+    "id": "FG-987",
+    "stylesheet": "/gradients/integrations/tech-ice-blue-wash.0a7f1205a806d8a2.css",
+    "variations": [
+      {
+        "id": "tech-ice-blue-wash-01",
+        "name": "Reference palette",
+        "mode": "light",
+        "colors": [
+          "#f5f7f7",
+          "#cce3ef",
+          "#9bc7df"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "light"
+        ],
+        "src": "/gradients/assets/tech-ice-blue-wash-01.70685270e4b3136a.svg",
+        "thumbnail": "/gradients/thumbnails/tech-ice-blue-wash-01.ca08f5c10316f670.webp",
+        "backgroundSrc": "/gradients/assets/tech-ice-blue-wash-01.bd26945025329bf0.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-ice-blue-wash-01.bd26945025329bf0.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cyan-reeded-shadow",
+    "name": "Cyan reeded shadow",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 12,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cyan",
+      "reeded",
+      "shadow"
+    ],
+    "id": "FG-988",
+    "stylesheet": "/gradients/integrations/tech-cyan-reeded-shadow.b367d2aad0473569.css",
+    "variations": [
+      {
+        "id": "tech-cyan-reeded-shadow-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#020914",
+          "#064183",
+          "#11b3ed"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-cyan-reeded-shadow-01.f9926378551c91e4.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cyan-reeded-shadow-01.9ef8c3075a40c530.webp",
+        "backgroundSrc": "/gradients/assets/tech-cyan-reeded-shadow-01.8cc73ee3fbec301d.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cyan-reeded-shadow-01.8cc73ee3fbec301d.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-grid-horizon",
+    "name": "Violet grid horizon",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 13,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "grid",
+      "horizon"
+    ],
+    "id": "FG-989",
+    "stylesheet": "/gradients/integrations/tech-violet-grid-horizon.ba69ec8636281af4.css",
+    "variations": [
+      {
+        "id": "tech-violet-grid-horizon-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#080819",
+          "#32227a",
+          "#537fff"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-grid-horizon-01.d0580f3b9b7088aa.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-grid-horizon-01.44432dacc17b18b9.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-grid-horizon-01.f47e11e804289bcc.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-grid-horizon-01.f47e11e804289bcc.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-royal-blue-blueprint",
+    "name": "Royal blue blueprint",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 14,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "royal",
+      "blue",
+      "blueprint"
+    ],
+    "id": "FG-990",
+    "stylesheet": "/gradients/integrations/tech-royal-blue-blueprint.ee0aa24cb436c402.css",
+    "variations": [
+      {
+        "id": "tech-royal-blue-blueprint-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#103c7d",
+          "#225ea9",
+          "#497ab8"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-royal-blue-blueprint-01.f225edafd5772bcb.svg",
+        "thumbnail": "/gradients/thumbnails/tech-royal-blue-blueprint-01.77838725e5b15a2c.webp",
+        "backgroundSrc": "/gradients/assets/tech-royal-blue-blueprint-01.634ef03edcbd17b9.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-royal-blue-blueprint-01.634ef03edcbd17b9.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-graphite-woven-silk",
+    "name": "Graphite woven silk",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 15,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "graphite",
+      "woven",
+      "silk"
+    ],
+    "id": "FG-991",
+    "stylesheet": "/gradients/integrations/tech-graphite-woven-silk.2e5839f8434b0dd6.css",
+    "variations": [
+      {
+        "id": "tech-graphite-woven-silk-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#050506",
+          "#222426",
+          "#797b7c"
+        ],
+        "tags": [
+          "monochrome",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-graphite-woven-silk-01.37996cc67987186a.svg",
+        "thumbnail": "/gradients/thumbnails/tech-graphite-woven-silk-01.187a268855dbe334.webp",
+        "backgroundSrc": "/gradients/assets/tech-graphite-woven-silk-01.ec7452ef748a5bb0.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-graphite-woven-silk-01.ec7452ef748a5bb0.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-slate-film-clouds",
+    "name": "Slate film clouds",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 16,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "slate",
+      "film",
+      "clouds"
+    ],
+    "id": "FG-992",
+    "stylesheet": "/gradients/integrations/tech-slate-film-clouds.7de2eed15fae519c.css",
+    "variations": [
+      {
+        "id": "tech-slate-film-clouds-01",
+        "name": "Reference palette",
+        "mode": "light",
+        "colors": [
+          "#c6d6e5",
+          "#809fc0",
+          "#496f99"
+        ],
+        "tags": [
+          "blue",
+          "light"
+        ],
+        "src": "/gradients/assets/tech-slate-film-clouds-01.76cbd1246189f9a2.svg",
+        "thumbnail": "/gradients/thumbnails/tech-slate-film-clouds-01.cd304aac67ce5d38.webp",
+        "backgroundSrc": "/gradients/assets/tech-slate-film-clouds-01.278fd639e9649e51.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-slate-film-clouds-01.278fd639e9649e51.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-monochrome-grain-folds",
+    "name": "Monochrome grain folds",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 17,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "monochrome",
+      "grain",
+      "folds"
+    ],
+    "id": "FG-993",
+    "stylesheet": "/gradients/integrations/tech-monochrome-grain-folds.d07fbc07485c9f8c.css",
+    "variations": [
+      {
+        "id": "tech-monochrome-grain-folds-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#0b0c0d",
+          "#77766e",
+          "#dddccd"
+        ],
+        "tags": [
+          "monochrome",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-monochrome-grain-folds-01.0facfb2b810ee1f8.svg",
+        "thumbnail": "/gradients/thumbnails/tech-monochrome-grain-folds-01.0191ad6d196b7c93.webp",
+        "backgroundSrc": "/gradients/assets/tech-monochrome-grain-folds-01.914d415213fa0855.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-monochrome-grain-folds-01.914d415213fa0855.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-glacial-blue-curve",
+    "name": "Glacial blue curve",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 18,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "glacial",
+      "blue",
+      "curve"
+    ],
+    "id": "FG-994",
+    "stylesheet": "/gradients/integrations/tech-glacial-blue-curve.d89fb4942ee9e50c.css",
+    "variations": [
+      {
+        "id": "tech-glacial-blue-curve-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#020714",
+          "#103b78",
+          "#9be5ff"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-glacial-blue-curve-01.fea0908427b1201c.svg",
+        "thumbnail": "/gradients/thumbnails/tech-glacial-blue-curve-01.08c0e397ac44f96f.webp",
+        "backgroundSrc": "/gradients/assets/tech-glacial-blue-curve-01.0c78257f556dc484.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-glacial-blue-curve-01.0c78257f556dc484.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-pearl-glass-fold",
+    "name": "Pearl glass fold",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 19,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "pearl",
+      "glass",
+      "fold"
+    ],
+    "id": "FG-995",
+    "stylesheet": "/gradients/integrations/tech-pearl-glass-fold.d5ef5d66ee6d405e.css",
+    "variations": [
+      {
+        "id": "tech-pearl-glass-fold-01",
+        "name": "Reference palette",
+        "mode": "light",
+        "colors": [
+          "#f6f6fa",
+          "#cbdcf8",
+          "#8aafe9"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "light"
+        ],
+        "src": "/gradients/assets/tech-pearl-glass-fold-01.11aeb953390cdf82.svg",
+        "thumbnail": "/gradients/thumbnails/tech-pearl-glass-fold-01.b1d76ccb5fb2027e.webp",
+        "backgroundSrc": "/gradients/assets/tech-pearl-glass-fold-01.f15a9d74ba870e61.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-pearl-glass-fold-01.f15a9d74ba870e61.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-midnight-vertical-panels",
+    "name": "Midnight vertical panels",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 20,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "midnight",
+      "vertical",
+      "panels"
+    ],
+    "id": "FG-996",
+    "stylesheet": "/gradients/integrations/tech-midnight-vertical-panels.638d199922809847.css",
+    "variations": [
+      {
+        "id": "tech-midnight-vertical-panels-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#050609",
+          "#0f1422",
+          "#252d44"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-midnight-vertical-panels-01.e6b6b7b646eed529.svg",
+        "thumbnail": "/gradients/thumbnails/tech-midnight-vertical-panels-01.022e629a74143c51.webp",
+        "backgroundSrc": "/gradients/assets/tech-midnight-vertical-panels-01.2f5c216f8bdbe8fe.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-midnight-vertical-panels-01.2f5c216f8bdbe8fe.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-muted-blue-air",
+    "name": "Muted blue air",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 21,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "muted",
+      "blue",
+      "air"
+    ],
+    "id": "FG-997",
+    "stylesheet": "/gradients/integrations/tech-muted-blue-air.2e28270573439933.css",
+    "variations": [
+      {
+        "id": "tech-muted-blue-air-01",
+        "name": "Reference palette",
+        "mode": "light",
+        "colors": [
+          "#a2beda",
+          "#6c95c4",
+          "#4777b3"
+        ],
+        "tags": [
+          "blue",
+          "light"
+        ],
+        "src": "/gradients/assets/tech-muted-blue-air-01.a0a28e5291f01ce1.svg",
+        "thumbnail": "/gradients/thumbnails/tech-muted-blue-air-01.08217a6dc801ba5a.webp",
+        "backgroundSrc": "/gradients/assets/tech-muted-blue-air-01.0832d9138d37dc0d.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-muted-blue-air-01.0832d9138d37dc0d.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-defocused-code-light",
+    "name": "Defocused code light",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 22,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "defocused",
+      "code",
+      "light"
+    ],
+    "id": "FG-998",
+    "stylesheet": "/gradients/integrations/tech-defocused-code-light.d48e22efec2f5337.css",
+    "variations": [
+      {
+        "id": "tech-defocused-code-light-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#041c26",
+          "#06a7b7",
+          "#d59d4b"
+        ],
+        "tags": [
+          "blue",
+          "mint",
+          "orange",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-defocused-code-light-01.a584aa5149618150.svg",
+        "thumbnail": "/gradients/thumbnails/tech-defocused-code-light-01.ff7852866030c6e6.webp",
+        "backgroundSrc": "/gradients/assets/tech-defocused-code-light-01.60adcffb80fa6e10.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-defocused-code-light-01.60adcffb80fa6e10.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-blue-fibre-stream",
+    "name": "Blue fibre stream",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 23,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "blue",
+      "fibre",
+      "stream"
+    ],
+    "id": "FG-999",
+    "stylesheet": "/gradients/integrations/tech-blue-fibre-stream.7d044d9bbb5194ff.css",
+    "variations": [
+      {
+        "id": "tech-blue-fibre-stream-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#020b19",
+          "#163b78",
+          "#72b5ff"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-blue-fibre-stream-01.78c61e4313643876.svg",
+        "thumbnail": "/gradients/thumbnails/tech-blue-fibre-stream-01.b80e39f1ed81cc27.webp",
+        "backgroundSrc": "/gradients/assets/tech-blue-fibre-stream-01.e14aa9a91f116c4c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-blue-fibre-stream-01.e14aa9a91f116c4c.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-magenta-orbit-bokeh",
+    "name": "Magenta orbit bokeh",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 24,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "magenta",
+      "orbit",
+      "bokeh"
+    ],
+    "id": "FG-1000",
+    "stylesheet": "/gradients/integrations/tech-magenta-orbit-bokeh.ba892b4776200d62.css",
+    "variations": [
+      {
+        "id": "tech-magenta-orbit-bokeh-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#27052d",
+          "#79118e",
+          "#bb37b0"
+        ],
+        "tags": [
+          "pink",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-magenta-orbit-bokeh-01.06e21b7616b624fb.svg",
+        "thumbnail": "/gradients/thumbnails/tech-magenta-orbit-bokeh-01.64730750fc279599.webp",
+        "backgroundSrc": "/gradients/assets/tech-magenta-orbit-bokeh-01.47032ce4dfbaaf8b.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-magenta-orbit-bokeh-01.47032ce4dfbaaf8b.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-indigo-shadow-fold",
+    "name": "Indigo shadow fold",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 25,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "indigo",
+      "shadow",
+      "fold"
+    ],
+    "id": "FG-1001",
+    "stylesheet": "/gradients/integrations/tech-indigo-shadow-fold.985509c76ea1e9e2.css",
+    "variations": [
+      {
+        "id": "tech-indigo-shadow-fold-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#040610",
+          "#161a39",
+          "#414178"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-indigo-shadow-fold-01.67e06ca1c6be752c.svg",
+        "thumbnail": "/gradients/thumbnails/tech-indigo-shadow-fold-01.78e4130fa5f578c9.webp",
+        "backgroundSrc": "/gradients/assets/tech-indigo-shadow-fold-01.a9acae08ba6b6927.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-indigo-shadow-fold-01.a9acae08ba6b6927.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-coral-violet-sunrise",
+    "name": "Coral violet sunrise",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 26,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "coral",
+      "violet",
+      "sunrise"
+    ],
+    "id": "FG-1002",
+    "stylesheet": "/gradients/integrations/tech-coral-violet-sunrise.6f45537ff28b9daf.css",
+    "variations": [
+      {
+        "id": "tech-coral-violet-sunrise-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#100318",
+          "#9e3bda",
+          "#ff6b81"
+        ],
+        "tags": [
+          "purple",
+          "red",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-coral-violet-sunrise-01.ecffc9f2de5f526e.svg",
+        "thumbnail": "/gradients/thumbnails/tech-coral-violet-sunrise-01.5ecf7891857373ad.webp",
+        "backgroundSrc": "/gradients/assets/tech-coral-violet-sunrise-01.a4aa4bbc91afb7fe.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-coral-violet-sunrise-01.a4aa4bbc91afb7fe.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-thin-horizon",
+    "name": "Violet thin horizon",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 27,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "thin",
+      "horizon"
+    ],
+    "id": "FG-1003",
+    "stylesheet": "/gradients/integrations/tech-violet-thin-horizon.7ccc56d6fb86e2c0.css",
+    "variations": [
+      {
+        "id": "tech-violet-thin-horizon-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#000000",
+          "#3d1767",
+          "#e0b3ff"
+        ],
+        "tags": [
+          "monochrome",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-thin-horizon-01.f4d9689137d78f72.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-thin-horizon-01.3129988bccdc6ea6.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-thin-horizon-01.4ca453b0bb9d5e8f.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-thin-horizon-01.4ca453b0bb9d5e8f.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-amethyst-fringe-wave",
+    "name": "Amethyst fringe wave",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 28,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "amethyst",
+      "fringe",
+      "wave"
+    ],
+    "id": "FG-1004",
+    "stylesheet": "/gradients/integrations/tech-amethyst-fringe-wave.4411f70d7b49c581.css",
+    "variations": [
+      {
+        "id": "tech-amethyst-fringe-wave-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#08070c",
+          "#572a91",
+          "#c07cff"
+        ],
+        "tags": [
+          "monochrome",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-amethyst-fringe-wave-01.0cf903645e9ec5b6.svg",
+        "thumbnail": "/gradients/thumbnails/tech-amethyst-fringe-wave-01.8324677a4e02fee6.webp",
+        "backgroundSrc": "/gradients/assets/tech-amethyst-fringe-wave-01.e6e8f9217acfaa29.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-amethyst-fringe-wave-01.e6e8f9217acfaa29.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-stacked-bloom",
+    "name": "Violet stacked bloom",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 29,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "stacked",
+      "bloom"
+    ],
+    "id": "FG-1005",
+    "stylesheet": "/gradients/integrations/tech-violet-stacked-bloom.9398b1fd957afe59.css",
+    "variations": [
+      {
+        "id": "tech-violet-stacked-bloom-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#090212",
+          "#45118b",
+          "#aa6dff"
+        ],
+        "tags": [
+          "monochrome",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-stacked-bloom-01.574304caf393dfc6.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-stacked-bloom-01.a4820e51bf4e1b04.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-stacked-bloom-01.afc2d3fb6f3c41df.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-stacked-bloom-01.afc2d3fb6f3c41df.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-crossing-light-horizons",
+    "name": "Crossing light horizons",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 30,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "crossing",
+      "light",
+      "horizons"
+    ],
+    "id": "FG-1006",
+    "stylesheet": "/gradients/integrations/tech-crossing-light-horizons.978eb8c793bdd0c4.css",
+    "variations": [
+      {
+        "id": "tech-crossing-light-horizons-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#03040e",
+          "#3b3c87",
+          "#ddd9ff"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-crossing-light-horizons-01.51f2064358baaa7f.svg",
+        "thumbnail": "/gradients/thumbnails/tech-crossing-light-horizons-01.54115687b85dd3ec.webp",
+        "backgroundSrc": "/gradients/assets/tech-crossing-light-horizons-01.ce25915c0aa8381c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-crossing-light-horizons-01.ce25915c0aa8381c.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-reeded-violet-arch",
+    "name": "Reeded violet arch",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 31,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "reeded",
+      "violet",
+      "arch"
+    ],
+    "id": "FG-1007",
+    "stylesheet": "/gradients/integrations/tech-reeded-violet-arch.a3444b8037ac4676.css",
+    "variations": [
+      {
+        "id": "tech-reeded-violet-arch-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#02030a",
+          "#1437aa",
+          "#b8a2f6"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-reeded-violet-arch-01.75ad3986afacae8d.svg",
+        "thumbnail": "/gradients/thumbnails/tech-reeded-violet-arch-01.fbff6308a041296f.webp",
+        "backgroundSrc": "/gradients/assets/tech-reeded-violet-arch-01.d6f765c9f9ce6650.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-reeded-violet-arch-01.d6f765c9f9ce6650.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cyan-horizon-arc",
+    "name": "Cyan horizon arc",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 32,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cyan",
+      "horizon",
+      "arc"
+    ],
+    "id": "FG-1008",
+    "stylesheet": "/gradients/integrations/tech-cyan-horizon-arc.5c97be0a0956fdd6.css",
+    "variations": [
+      {
+        "id": "tech-cyan-horizon-arc-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#04111b",
+          "#094565",
+          "#8ce9ff"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-cyan-horizon-arc-01.b18596436274a0e2.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cyan-horizon-arc-01.dfb5b364572d9ddf.webp",
+        "backgroundSrc": "/gradients/assets/tech-cyan-horizon-arc-01.cba9f5f04c3f1b24.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cyan-horizon-arc-01.cba9f5f04c3f1b24.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-blue-planet-dawn",
+    "name": "Blue planet dawn",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 33,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "blue",
+      "planet",
+      "dawn"
+    ],
+    "id": "FG-1009",
+    "stylesheet": "/gradients/integrations/tech-blue-planet-dawn.eef9e6880b4a897a.css",
+    "variations": [
+      {
+        "id": "tech-blue-planet-dawn-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#010818",
+          "#0752a3",
+          "#33caff"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-blue-planet-dawn-01.8d91b5ff2900261e.svg",
+        "thumbnail": "/gradients/thumbnails/tech-blue-planet-dawn-01.54332a2d76f70c4a.webp",
+        "backgroundSrc": "/gradients/assets/tech-blue-planet-dawn-01.8333c2a0efdf1fd4.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-blue-planet-dawn-01.8333c2a0efdf1fd4.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-lavender-orb-rise",
+    "name": "Lavender orb rise",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 34,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "lavender",
+      "orb",
+      "rise"
+    ],
+    "id": "FG-1010",
+    "stylesheet": "/gradients/integrations/tech-lavender-orb-rise.309c3eecc712d6b0.css",
+    "variations": [
+      {
+        "id": "tech-lavender-orb-rise-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#17131f",
+          "#6f35d5",
+          "#e7d9ff"
+        ],
+        "tags": [
+          "monochrome",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-lavender-orb-rise-01.cb62db728f7685d9.svg",
+        "thumbnail": "/gradients/thumbnails/tech-lavender-orb-rise-01.dc4974e9f21c8936.webp",
+        "backgroundSrc": "/gradients/assets/tech-lavender-orb-rise-01.d6c2cc0d94ce1296.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-lavender-orb-rise-01.d6c2cc0d94ce1296.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-purple-concentric-fields",
+    "name": "Purple concentric fields",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 35,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "purple",
+      "concentric",
+      "fields"
+    ],
+    "id": "FG-1011",
+    "stylesheet": "/gradients/integrations/tech-purple-concentric-fields.d97e92c53c121db4.css",
+    "variations": [
+      {
+        "id": "tech-purple-concentric-fields-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#0c0b2d",
+          "#342483",
+          "#7853d6"
+        ],
+        "tags": [
+          "blue",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-purple-concentric-fields-01.db2a4d08418115a2.svg",
+        "thumbnail": "/gradients/thumbnails/tech-purple-concentric-fields-01.8e33815f804491a7.webp",
+        "backgroundSrc": "/gradients/assets/tech-purple-concentric-fields-01.1962e9dde6b7f9a4.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-purple-concentric-fields-01.1962e9dde6b7f9a4.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-smoky-spotlight",
+    "name": "Smoky spotlight",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 36,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "smoky",
+      "spotlight"
+    ],
+    "id": "FG-1012",
+    "stylesheet": "/gradients/integrations/tech-smoky-spotlight.5a830355f5cbd1da.css",
+    "variations": [
+      {
+        "id": "tech-smoky-spotlight-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#050607",
+          "#24292d",
+          "#c7cac4"
+        ],
+        "tags": [
+          "monochrome",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-smoky-spotlight-01.81c1dd822ed0d236.svg",
+        "thumbnail": "/gradients/thumbnails/tech-smoky-spotlight-01.4c6bd7611c7cfe86.webp",
+        "backgroundSrc": "/gradients/assets/tech-smoky-spotlight-01.82bdabfc2df6b8f7.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-smoky-spotlight-01.82bdabfc2df6b8f7.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-emerald-light-loop",
+    "name": "Emerald light loop",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 37,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "emerald",
+      "light",
+      "loop"
+    ],
+    "id": "FG-1013",
+    "stylesheet": "/gradients/integrations/tech-emerald-light-loop.1a9464787e132865.css",
+    "variations": [
+      {
+        "id": "tech-emerald-light-loop-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#001415",
+          "#006553",
+          "#0fcda0"
+        ],
+        "tags": [
+          "mint",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-emerald-light-loop-01.1d4ff202d5a99d94.svg",
+        "thumbnail": "/gradients/thumbnails/tech-emerald-light-loop-01.b138eae892d4bf4a.webp",
+        "backgroundSrc": "/gradients/assets/tech-emerald-light-loop-01.33ebb3b18a8cd779.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-emerald-light-loop-01.33ebb3b18a8cd779.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-wisp-ribbons",
+    "name": "Violet wisp ribbons",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 38,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "wisp",
+      "ribbons"
+    ],
+    "id": "FG-1014",
+    "stylesheet": "/gradients/integrations/tech-violet-wisp-ribbons.24eea1fe5fbb3713.css",
+    "variations": [
+      {
+        "id": "tech-violet-wisp-ribbons-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#030208",
+          "#4b258c",
+          "#af79f1"
+        ],
+        "tags": [
+          "monochrome",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-wisp-ribbons-01.afbe43bcde9a82a8.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-wisp-ribbons-01.6b4493d31d03883b.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-wisp-ribbons-01.34ef91e70edc7800.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-wisp-ribbons-01.34ef91e70edc7800.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cobalt-eclipse-ring",
+    "name": "Cobalt eclipse ring",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 39,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cobalt",
+      "eclipse",
+      "ring"
+    ],
+    "id": "FG-1015",
+    "stylesheet": "/gradients/integrations/tech-cobalt-eclipse-ring.b64f235f9e3fecb1.css",
+    "variations": [
+      {
+        "id": "tech-cobalt-eclipse-ring-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#000000",
+          "#353dcd",
+          "#d1b7ff"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-cobalt-eclipse-ring-01.ca51f95f583827ca.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cobalt-eclipse-ring-01.0a5791474da5437d.webp",
+        "backgroundSrc": "/gradients/assets/tech-cobalt-eclipse-ring-01.43d5ce0056d2decd.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cobalt-eclipse-ring-01.43d5ce0056d2decd.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-emerald-particle-wave",
+    "name": "Emerald particle wave",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 40,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "emerald",
+      "particle",
+      "wave"
+    ],
+    "id": "FG-1016",
+    "stylesheet": "/gradients/integrations/tech-emerald-particle-wave.c7ce3db72516350f.css",
+    "variations": [
+      {
+        "id": "tech-emerald-particle-wave-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#030c08",
+          "#086b44",
+          "#35c58b"
+        ],
+        "tags": [
+          "monochrome",
+          "green",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-emerald-particle-wave-01.bda6a5d842fbcb28.svg",
+        "thumbnail": "/gradients/thumbnails/tech-emerald-particle-wave-01.b5332dc6e97b8be5.webp",
+        "backgroundSrc": "/gradients/assets/tech-emerald-particle-wave-01.2571499e0a9c521f.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-emerald-particle-wave-01.2571499e0a9c521f.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-corner-haze",
+    "name": "Violet corner haze",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 41,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "corner",
+      "haze"
+    ],
+    "id": "FG-1017",
+    "stylesheet": "/gradients/integrations/tech-violet-corner-haze.fe297e5cbaeacde6.css",
+    "variations": [
+      {
+        "id": "tech-violet-corner-haze-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#050309",
+          "#603a9b",
+          "#b88fad"
+        ],
+        "tags": [
+          "monochrome",
+          "purple",
+          "pink",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-corner-haze-01.75ef822d1c723386.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-corner-haze-01.4d29a29ba3aeb345.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-corner-haze-01.42fe3a57ec43db0b.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-corner-haze-01.42fe3a57ec43db0b.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cobalt-glass-helix",
+    "name": "Cobalt glass helix",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 42,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cobalt",
+      "glass",
+      "helix"
+    ],
+    "id": "FG-1018",
+    "stylesheet": "/gradients/integrations/tech-cobalt-glass-helix.d876fb274ef421e2.css",
+    "variations": [
+      {
+        "id": "tech-cobalt-glass-helix-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#01051e",
+          "#124ec6",
+          "#8ee5ff"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-cobalt-glass-helix-01.00c7c7b637cd3583.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cobalt-glass-helix-01.132756bac581b9ca.webp",
+        "backgroundSrc": "/gradients/assets/tech-cobalt-glass-helix-01.b72372109ac8412c.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cobalt-glass-helix-01.b72372109ac8412c.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-upward-wash",
+    "name": "Violet upward wash",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 43,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "upward",
+      "wash"
+    ],
+    "id": "FG-1019",
+    "stylesheet": "/gradients/integrations/tech-violet-upward-wash.88a13ef4a1f06cf9.css",
+    "variations": [
+      {
+        "id": "tech-violet-upward-wash-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#04020b",
+          "#27116b",
+          "#7138de"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-upward-wash-01.32aadee944eb1e2e.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-upward-wash-01.2d7d04f0ad0e0929.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-upward-wash-01.ba402a4abf563088.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-upward-wash-01.ba402a4abf563088.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-magenta-crescent-bowl",
+    "name": "Magenta crescent bowl",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 44,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "magenta",
+      "crescent",
+      "bowl"
+    ],
+    "id": "FG-1020",
+    "stylesheet": "/gradients/integrations/tech-magenta-crescent-bowl.10ea1668b2cab093.css",
+    "variations": [
+      {
+        "id": "tech-magenta-crescent-bowl-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#13041b",
+          "#8524bd",
+          "#ff6449"
+        ],
+        "tags": [
+          "purple",
+          "red",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-magenta-crescent-bowl-01.416b54823f5c4c3e.svg",
+        "thumbnail": "/gradients/thumbnails/tech-magenta-crescent-bowl-01.478bf9c8d3899ab3.webp",
+        "backgroundSrc": "/gradients/assets/tech-magenta-crescent-bowl-01.7fe106add394295e.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-magenta-crescent-bowl-01.7fe106add394295e.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cobalt-liquid-tubes",
+    "name": "Cobalt liquid tubes",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 45,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cobalt",
+      "liquid",
+      "tubes"
+    ],
+    "id": "FG-1021",
+    "stylesheet": "/gradients/integrations/tech-cobalt-liquid-tubes.29b869bb21fc755a.css",
+    "variations": [
+      {
+        "id": "tech-cobalt-liquid-tubes-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#00020d",
+          "#0628a0",
+          "#006bff"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-cobalt-liquid-tubes-01.27fc10839bb99787.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cobalt-liquid-tubes-01.591cc0ec81155426.webp",
+        "backgroundSrc": "/gradients/assets/tech-cobalt-liquid-tubes-01.1cb09287ea9abadc.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cobalt-liquid-tubes-01.1cb09287ea9abadc.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-opposing-blue-portals",
+    "name": "Opposing blue portals",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 46,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "opposing",
+      "blue",
+      "portals"
+    ],
+    "id": "FG-1022",
+    "stylesheet": "/gradients/integrations/tech-opposing-blue-portals.de45c675b1764688.css",
+    "variations": [
+      {
+        "id": "tech-opposing-blue-portals-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#010622",
+          "#1f56c6",
+          "#d3ebff"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-opposing-blue-portals-01.9d99254aa51848aa.svg",
+        "thumbnail": "/gradients/thumbnails/tech-opposing-blue-portals-01.e002749f44fb71a5.webp",
+        "backgroundSrc": "/gradients/assets/tech-opposing-blue-portals-01.e36e302079ac46c5.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-opposing-blue-portals-01.e36e302079ac46c5.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-blue-grain-corners",
+    "name": "Blue grain corners",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 47,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "blue",
+      "grain",
+      "corners"
+    ],
+    "id": "FG-1023",
+    "stylesheet": "/gradients/integrations/tech-blue-grain-corners.8d04b7abcd35af39.css",
+    "variations": [
+      {
+        "id": "tech-blue-grain-corners-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#071020",
+          "#325d8a",
+          "#bad5e5"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-blue-grain-corners-01.d1367604b0edecb8.svg",
+        "thumbnail": "/gradients/thumbnails/tech-blue-grain-corners-01.90315c6bbdda955c.webp",
+        "backgroundSrc": "/gradients/assets/tech-blue-grain-corners-01.72c5b09ec44441b9.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-blue-grain-corners-01.72c5b09ec44441b9.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-prismatic-horizon-fan",
+    "name": "Prismatic horizon fan",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 48,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "prismatic",
+      "horizon",
+      "fan"
+    ],
+    "id": "FG-1024",
+    "stylesheet": "/gradients/integrations/tech-prismatic-horizon-fan.4a5b8e498618d00d.css",
+    "variations": [
+      {
+        "id": "tech-prismatic-horizon-fan-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#08103b",
+          "#366dca",
+          "#eb77b8"
+        ],
+        "tags": [
+          "blue",
+          "pink",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-prismatic-horizon-fan-01.5c611b7bb49b7726.svg",
+        "thumbnail": "/gradients/thumbnails/tech-prismatic-horizon-fan-01.e14ded4d4ca6a341.webp",
+        "backgroundSrc": "/gradients/assets/tech-prismatic-horizon-fan-01.79b65b73df558a43.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-prismatic-horizon-fan-01.79b65b73df558a43.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-cobalt-circuit-field",
+    "name": "Cobalt circuit field",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 49,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "cobalt",
+      "circuit",
+      "field"
+    ],
+    "id": "FG-1025",
+    "stylesheet": "/gradients/integrations/tech-cobalt-circuit-field.74bfeb811b73dd0c.css",
+    "variations": [
+      {
+        "id": "tech-cobalt-circuit-field-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#080c32",
+          "#19256a",
+          "#4358bb"
+        ],
+        "tags": [
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-cobalt-circuit-field-01.ae3d8a2258098635.svg",
+        "thumbnail": "/gradients/thumbnails/tech-cobalt-circuit-field-01.5ed66f3f6b9c5d20.webp",
+        "backgroundSrc": "/gradients/assets/tech-cobalt-circuit-field-01.fe53953346efcddc.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-cobalt-circuit-field-01.fe53953346efcddc.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-deep-teal-atmosphere",
+    "name": "Deep teal atmosphere",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 50,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "deep",
+      "teal",
+      "atmosphere"
+    ],
+    "id": "FG-1026",
+    "stylesheet": "/gradients/integrations/tech-deep-teal-atmosphere.b1d7525a5f3d7611.css",
+    "variations": [
+      {
+        "id": "tech-deep-teal-atmosphere-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#020b12",
+          "#0b252c",
+          "#284c50"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "mint",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-deep-teal-atmosphere-01.d952fad0348bf5a5.svg",
+        "thumbnail": "/gradients/thumbnails/tech-deep-teal-atmosphere-01.5303d224f53c3db3.webp",
+        "backgroundSrc": "/gradients/assets/tech-deep-teal-atmosphere-01.403a84df9b3343e4.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-deep-teal-atmosphere-01.403a84df9b3343e4.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-amber-lens-star",
+    "name": "Amber lens star",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 51,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "amber",
+      "lens",
+      "star"
+    ],
+    "id": "FG-1027",
+    "stylesheet": "/gradients/integrations/tech-amber-lens-star.7b014a5547dfe1c4.css",
+    "variations": [
+      {
+        "id": "tech-amber-lens-star-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#050301",
+          "#734112",
+          "#f6bd62"
+        ],
+        "tags": [
+          "monochrome",
+          "orange",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-amber-lens-star-01.40fac88273cd9d8c.svg",
+        "thumbnail": "/gradients/thumbnails/tech-amber-lens-star-01.cf43001ced142566.webp",
+        "backgroundSrc": "/gradients/assets/tech-amber-lens-star-01.61c8a5528b9195d1.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-amber-lens-star-01.61c8a5528b9195d1.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-violet-horizon-bloom",
+    "name": "Violet horizon bloom",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 52,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "violet",
+      "horizon",
+      "bloom"
+    ],
+    "id": "FG-1028",
+    "stylesheet": "/gradients/integrations/tech-violet-horizon-bloom.7b16aacf0d63a940.css",
+    "variations": [
+      {
+        "id": "tech-violet-horizon-bloom-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#030108",
+          "#6020c7",
+          "#d5aaff"
+        ],
+        "tags": [
+          "monochrome",
+          "purple",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-violet-horizon-bloom-01.175ddd0df4f1fd8f.svg",
+        "thumbnail": "/gradients/thumbnails/tech-violet-horizon-bloom-01.57923b880fbcffe8.webp",
+        "backgroundSrc": "/gradients/assets/tech-violet-horizon-bloom-01.abffee69d89e1e8b.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-violet-horizon-bloom-01.abffee69d89e1e8b.webp\")",
+        "cssKind": "asset"
+      }
+    ]
+  },
+  {
+    "slug": "tech-electric-blue-orbit",
+    "name": "Electric blue orbit",
+    "category": "tech-atmospheres",
+    "shape": "artwork",
+    "position": 53,
+    "singlePalette": true,
+    "tags": [
+      "tech",
+      "background",
+      "image",
+      "electric",
+      "blue",
+      "orbit"
+    ],
+    "id": "FG-1029",
+    "stylesheet": "/gradients/integrations/tech-electric-blue-orbit.7690a5f42ffaf6d2.css",
+    "variations": [
+      {
+        "id": "tech-electric-blue-orbit-01",
+        "name": "Reference palette",
+        "mode": "dark",
+        "colors": [
+          "#000000",
+          "#1e39af",
+          "#a3b8ff"
+        ],
+        "tags": [
+          "monochrome",
+          "blue",
+          "dark"
+        ],
+        "src": "/gradients/assets/tech-electric-blue-orbit-01.d92a3a7598b5c08a.svg",
+        "thumbnail": "/gradients/thumbnails/tech-electric-blue-orbit-01.9a84403981fcf1c6.webp",
+        "backgroundSrc": "/gradients/assets/tech-electric-blue-orbit-01.72b2e06f8c66ffdf.webp",
+        "sourceKind": "original-raster",
+        "sourceWidth": 1536,
+        "sourceHeight": 1024,
+        "css": "url(\"/gradients/assets/tech-electric-blue-orbit-01.72b2e06f8c66ffdf.webp\")",
+        "cssKind": "asset"
+      }
+    ]
   }
 ]

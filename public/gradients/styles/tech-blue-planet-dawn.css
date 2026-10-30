@@ -1,0 +1,6 @@
+/* FreeeGradients: Blue planet dawn only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-blue-planet-dawn-01: url("../assets/tech-blue-planet-dawn-01.8333c2a0efdf1fd4.webp");
+}
+.fg-tech-blue-planet-dawn-01 { background-color: #010818; background-image: var(--fg-tech-blue-planet-dawn-01); }

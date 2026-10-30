@@ -1,0 +1,6 @@
+/* FreeeGradients: Glacial blue curve only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-glacial-blue-curve-01: url("../assets/tech-glacial-blue-curve-01.0c78257f556dc484.webp");
+}
+.fg-tech-glacial-blue-curve-01 { background-color: #020714; background-image: var(--fg-tech-glacial-blue-curve-01); }

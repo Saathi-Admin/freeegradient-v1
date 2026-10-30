@@ -1,0 +1,6 @@
+/* FreeeGradients: Electric blue orbit only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-electric-blue-orbit-01: url("../assets/tech-electric-blue-orbit-01.72b2e06f8c66ffdf.webp");
+}
+.fg-tech-electric-blue-orbit-01 { background-color: #000000; background-image: var(--fg-tech-electric-blue-orbit-01); }

@@ -1,0 +1,6 @@
+/* FreeeGradients: Opposing blue portals only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-opposing-blue-portals-01: url("../assets/tech-opposing-blue-portals-01.e36e302079ac46c5.webp");
+}
+.fg-tech-opposing-blue-portals-01 { background-color: #010622; background-image: var(--fg-tech-opposing-blue-portals-01); }

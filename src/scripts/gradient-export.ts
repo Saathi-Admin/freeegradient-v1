@@ -108,6 +108,7 @@ function initialize() {
     if(!button || busy) return;
     if(button.hasAttribute('data-export-close')) {modal.close();return;}
     if(button.dataset.exportFormat) {
+      if(button.hidden || (variation.cssKind!=='native'&&!images.includes(button.dataset.exportFormat as Format))) return;
       format=button.dataset.exportFormat as Format;
       kind=images.includes(format)?'image':'code';
       void render();
@@ -194,6 +195,10 @@ function initialize() {
   open=(nextTemplate,nextVariation)=>{
     if(modal.open)return;
     template=nextTemplate;variation=nextVariation;source=undefined;kind='image';format='png';width=1920;height=1080;busy=false;
+    modal.querySelectorAll<HTMLElement>('[data-export-format]').forEach(button=>{
+      const value=button.dataset.exportFormat as Format;
+      button.hidden=variation.cssKind!=='native'&&(!images.includes(value)||(value==='svg'&&!!variation.sourceKind));
+    });
     const originalSize=el('[data-export-size="original"]');
     originalSize.hidden=!variation.sourceKind;
     if(!originalSize.hidden){

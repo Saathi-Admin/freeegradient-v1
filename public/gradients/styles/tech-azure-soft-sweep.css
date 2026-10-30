@@ -1,0 +1,6 @@
+/* FreeeGradients: Azure soft sweep only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-azure-soft-sweep-01: url("../assets/tech-azure-soft-sweep-01.6bf855ae349fc85b.webp");
+}
+.fg-tech-azure-soft-sweep-01 { background-color: #0c1b6d; background-image: var(--fg-tech-azure-soft-sweep-01); }

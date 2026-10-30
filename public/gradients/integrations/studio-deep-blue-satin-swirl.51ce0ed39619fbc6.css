@@ -1,0 +1,10 @@
+/* FreeeGradients: Deep Blue Satin Swirl only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-deep-blue-satin-swirl-01: url("../assets/studio-deep-blue-satin-swirl-01.8df17f987b62cf4f.webp");
+  --fg-studio-deep-blue-satin-swirl-02: url("../assets/studio-deep-blue-satin-swirl-02.9e0a638a0d1fedc3.webp");
+  --fg-studio-deep-blue-satin-swirl-03: url("../assets/studio-deep-blue-satin-swirl-03.e27560c6eac941d8.webp");
+}
+.fg-studio-deep-blue-satin-swirl-01 { background-color: #080b24; background-image: var(--fg-studio-deep-blue-satin-swirl-01); }
+.fg-studio-deep-blue-satin-swirl-02 { background-color: #faf4ed; background-image: var(--fg-studio-deep-blue-satin-swirl-02); }
+.fg-studio-deep-blue-satin-swirl-03 { background-color: #10251f; background-image: var(--fg-studio-deep-blue-satin-swirl-03); }

@@ -1,0 +1,6 @@
+/* FreeeGradients: Fluted Glass Flow only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-fluted-glass-flow-01: url("../assets/studio-fluted-glass-flow-01.766610b501a351cf.webp");
+}
+.fg-studio-fluted-glass-flow-01 { background-color: #080b24; background-image: var(--fg-studio-fluted-glass-flow-01); }

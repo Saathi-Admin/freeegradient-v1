@@ -1,0 +1,6 @@
+/* FreeeGradients: Violet grain cloud only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-violet-grain-cloud-01: url("../assets/tech-violet-grain-cloud-01.7aba82afcdbce081.webp");
+}
+.fg-tech-violet-grain-cloud-01 { background-color: #07040e; background-image: var(--fg-tech-violet-grain-cloud-01); }

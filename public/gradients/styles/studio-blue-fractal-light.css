@@ -1,0 +1,10 @@
+/* FreeeGradients: Blue Fractal Light only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-blue-fractal-light-01: url("../assets/studio-blue-fractal-light-01.aaec9f608e979ea1.webp");
+  --fg-studio-blue-fractal-light-02: url("../assets/studio-blue-fractal-light-02.6c7fd635bec4919c.webp");
+  --fg-studio-blue-fractal-light-03: url("../assets/studio-blue-fractal-light-03.e743e2886bb387dc.webp");
+}
+.fg-studio-blue-fractal-light-01 { background-color: #080b24; background-image: var(--fg-studio-blue-fractal-light-01); }
+.fg-studio-blue-fractal-light-02 { background-color: #faf4ed; background-image: var(--fg-studio-blue-fractal-light-02); }
+.fg-studio-blue-fractal-light-03 { background-color: #10251f; background-image: var(--fg-studio-blue-fractal-light-03); }

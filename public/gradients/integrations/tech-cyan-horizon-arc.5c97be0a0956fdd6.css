@@ -1,0 +1,6 @@
+/* FreeeGradients: Cyan horizon arc only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-cyan-horizon-arc-01: url("../assets/tech-cyan-horizon-arc-01.cba9f5f04c3f1b24.webp");
+}
+.fg-tech-cyan-horizon-arc-01 { background-color: #04111b; background-image: var(--fg-tech-cyan-horizon-arc-01); }

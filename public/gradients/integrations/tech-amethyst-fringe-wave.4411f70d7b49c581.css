@@ -1,0 +1,6 @@
+/* FreeeGradients: Amethyst fringe wave only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-amethyst-fringe-wave-01: url("../assets/tech-amethyst-fringe-wave-01.e6e8f9217acfaa29.webp");
+}
+.fg-tech-amethyst-fringe-wave-01 { background-color: #08070c; background-image: var(--fg-tech-amethyst-fringe-wave-01); }

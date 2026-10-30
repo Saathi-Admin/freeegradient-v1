@@ -1,4 +1,6 @@
 import { premiumRecipes } from './premium-recipes.mjs';
+import { studioRecipes } from './studio-recipes.mjs';
+import { techReferenceRecipes } from './tech-reference-recipes.mjs';
 import { floralRecipes } from './floral-recipes.mjs';
 import { colourCloudRecipes } from './colour-cloud-recipes.mjs';
 import { haloHorizonRecipes } from './halo-horizon-recipes.mjs';
@@ -50,3 +52,5 @@ recipes.push(...sunlitHazeRecipes);
 recipes.push(...atmosphericLightRecipes);
 recipes.push(...spectralReflectionRecipes);
 recipes.push(...softAuraRecipes);
+recipes.push(...studioRecipes);
+recipes.push(...techReferenceRecipes);

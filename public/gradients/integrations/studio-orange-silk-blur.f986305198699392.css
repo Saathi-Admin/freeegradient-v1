@@ -1,0 +1,10 @@
+/* FreeeGradients: Orange Silk Blur only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-orange-silk-blur-01: url("../assets/studio-orange-silk-blur-01.abc75026b43185f4.webp");
+  --fg-studio-orange-silk-blur-02: url("../assets/studio-orange-silk-blur-02.47e59f862f4025ba.webp");
+  --fg-studio-orange-silk-blur-03: url("../assets/studio-orange-silk-blur-03.34346ff2b847fc93.webp");
+}
+.fg-studio-orange-silk-blur-01 { background-color: #080b24; background-image: var(--fg-studio-orange-silk-blur-01); }
+.fg-studio-orange-silk-blur-02 { background-color: #faf4ed; background-image: var(--fg-studio-orange-silk-blur-02); }
+.fg-studio-orange-silk-blur-03 { background-color: #10251f; background-image: var(--fg-studio-orange-silk-blur-03); }

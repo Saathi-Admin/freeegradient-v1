@@ -1,0 +1,6 @@
+/* FreeeGradients: Violet stacked bloom only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-violet-stacked-bloom-01: url("../assets/tech-violet-stacked-bloom-01.afc2d3fb6f3c41df.webp");
+}
+.fg-tech-violet-stacked-bloom-01 { background-color: #090212; background-image: var(--fg-tech-violet-stacked-bloom-01); }

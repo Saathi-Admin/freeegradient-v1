@@ -1,0 +1,6 @@
+/* FreeeGradients: Violet wisp ribbons only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-violet-wisp-ribbons-01: url("../assets/tech-violet-wisp-ribbons-01.34ef91e70edc7800.webp");
+}
+.fg-tech-violet-wisp-ribbons-01 { background-color: #030208; background-image: var(--fg-tech-violet-wisp-ribbons-01); }

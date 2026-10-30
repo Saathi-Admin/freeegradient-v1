@@ -1,0 +1,6 @@
+/* FreeeGradients: Amber lens star only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-amber-lens-star-01: url("../assets/tech-amber-lens-star-01.61c8a5528b9195d1.webp");
+}
+.fg-tech-amber-lens-star-01 { background-color: #050301; background-image: var(--fg-tech-amber-lens-star-01); }

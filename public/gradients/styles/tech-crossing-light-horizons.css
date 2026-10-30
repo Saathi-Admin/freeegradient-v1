@@ -1,0 +1,6 @@
+/* FreeeGradients: Crossing light horizons only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-crossing-light-horizons-01: url("../assets/tech-crossing-light-horizons-01.ce25915c0aa8381c.webp");
+}
+.fg-tech-crossing-light-horizons-01 { background-color: #03040e; background-image: var(--fg-tech-crossing-light-horizons-01); }

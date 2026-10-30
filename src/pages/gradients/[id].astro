@@ -17,11 +17,13 @@ export function getStaticPaths() {
 const { gradient, variation } = Astro.props;
 const collection = collections.find(c => c.id === gradient.category)!;
 const primary = gradient.variations[0].id === variation.id;
-const related = gradients.filter(g=>g.category===gradient.category && g.slug!==gradient.slug).slice(0,3);
+const related = gradients.filter(g=>g.category===gradient.category && g.slug!==gradient.slug && g.variations.some(v=>v.mode===variation.mode)).slice(0,3);
 const artworkDescription = `${gradient.name}, ${variation.name}: a ${variation.mode} ${collection.title.toLowerCase()} gradient with palette ${variation.colors.join(', ')}. ${variation.cssKind === 'native' ? 'Uses native CSS gradient functions.' : 'Uses detailed image artwork for its background.'} Free for personal and commercial use.`;
+const formatDescription=variation.cssKind==='native'?'Copy CSS or download SVG, PNG, JPG and WebP.':'Download PNG, JPG and WebP image artwork.';
+const paletteDescription=gradient.variations.length===1?`its original ${variation.mode} palette`:`${gradient.variations.length} light and dark colour variations`;
 
 ---
-<BaseLayout artwork={{name:`${gradient.name} — ${variation.name}`,description:artworkDescription,src:variation.src,colors:variation.colors}} canonicalPath={`/gradients/${gradient.variations[0].id}/`} image={variation.thumbnail} title={primary ? `${gradient.name} CSS Gradient — ${gradient.variations.length} Colour Variations | FreeeGradients` : `${gradient.name} — ${variation.name} gradient | FreeeGradients`} description={primary ? `${gradient.name}: a ${collection.title.toLowerCase()} background with ${gradient.variations.length} light and dark colour variations. Copy CSS, preview a real layout or download SVG, PNG and JPEG. No sign-up.` : `Download ${variation.name}, a ${variation.mode} ${gradient.name} gradient, free as CSS, SVG, PNG or JPEG. No sign-up required.`}>
+<BaseLayout artwork={{name:`${gradient.name} — ${variation.name}`,description:artworkDescription,src:variation.src,colors:variation.colors}} canonicalPath={`/gradients/${gradient.variations[0].id}/`} image={variation.thumbnail} title={primary ? `${gradient.name} ${variation.cssKind==='native'?'CSS Gradient':'Gradient Background'}${gradient.variations.length>1?` — ${gradient.variations.length} Colour Variations`:''} | FreeeGradients` : `${gradient.name} — ${variation.name} gradient | FreeeGradients`} description={`${gradient.name}: a ${collection.title.toLowerCase()} background with ${paletteDescription}. ${formatDescription} No sign-up.`}>
   <Header playgroundGradient={variation.id} />
   <main id="main-content" class="gradient-detail container">
     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Collections', href: '/collections/' }, { label: collection.title, href: `/collections/${collection.id}/` }, { label: variation.id }]} />
@@ -33,13 +35,14 @@ const artworkDescription = `${gradient.name}, ${variation.name}: a ${variation.m
           <div class="gradient-detail-meta text-caption"><a class="gradient-meta-chip gradient-collection-chip" href={`/collections/${collection.id}/`}>Collection: {collection.title}</a><span class="gradient-meta-chip"><Hash size={14} aria-hidden="true" /><span class="card-id">{variation.id}</span></span><span class="gradient-meta-chip">{variation.mode === 'light' ? <Sun size={14} aria-hidden="true" /> : <Moon size={14} aria-hidden="true" />}For {variation.mode} mode</span></div>
         </div>
         <p class="gradient-description text-body-sm">{artworkDescription}</p>
-        <div class="gradient-detail-colours"><h2 class="text-body-sm gradient-variations-title">More colour variations</h2><div class="gradient-variation-links">{gradient.variations.map(v => <a class="palette-swatch" style={`--swatch:url("${v.thumbnail}")`} href={`/gradients/${v.id}/`} aria-label={`${v.name}, ${v.mode} designs`} aria-current={v.id === variation.id ? 'page' : undefined} title={v.name}></a>)}</div></div>
-        <div class="gradient-install">
+        {gradient.variations.length>1 && <div class="gradient-detail-colours"><h2 class="text-body-sm gradient-variations-title">More colour variations</h2><div class="gradient-variation-links">{gradient.variations.map(v => <a class="palette-swatch" style={`--swatch:url("${v.thumbnail}")`} href={`/gradients/${v.id}/`} aria-label={`${v.name}, ${v.mode} designs`} aria-current={v.id === variation.id ? 'page' : undefined} title={v.name}></a>)}</div></div>}
+        {variation.cssKind === 'native' && <div class="gradient-install">
           <div class="gradient-install-heading"><h2 class="text-body-sm">Use with a class</h2><Button size="sm" variant="secondary" data-copy-stylesheet={gradient.stylesheet}><Copy slot="leading-icon" aria-hidden="true" />Copy stylesheet link</Button></div>
           <button class="gradient-class-copy" type="button" data-copy-class={`fg-gradient fg-${variation.id}`} aria-label={`Copy HTML classes for ${variation.id}`}><code>fg-gradient fg-{variation.id}</code><span class="text-caption"><Copy size={16} aria-hidden="true" />Copy class</span></button>
           <p class="text-caption">Link once in your HTML head. Add these classes to your element.</p>
-        </div>
+        </div>}
         <div class="gradient-detail-downloads">
+          {(gradient.slug.startsWith('studio-') || gradient.category==='tech-atmospheres') && <a class="btn btn-secondary btn-md" href={`/gradients/downloads/${gradient.category==='tech-atmospheres'?'tech':'studio'}/${variation.id}.png`} download={`${variation.id}.png`}><Download size={16} aria-hidden="true" />Download PNG</a>}
           <a class="btn btn-secondary btn-md" href={`/playground/?gradient=${variation.id}`}>Try on a real layout<ArrowUpRight aria-hidden="true" /></a>
           <Button size="md" variant="primary" data-action="export"><Download slot="leading-icon" aria-hidden="true" />Export</Button>
         </div>

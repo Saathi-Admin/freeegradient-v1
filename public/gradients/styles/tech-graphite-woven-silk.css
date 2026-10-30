@@ -1,0 +1,6 @@
+/* FreeeGradients: Graphite woven silk only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-graphite-woven-silk-01: url("../assets/tech-graphite-woven-silk-01.ec7452ef748a5bb0.webp");
+}
+.fg-tech-graphite-woven-silk-01 { background-color: #050506; background-image: var(--fg-tech-graphite-woven-silk-01); }

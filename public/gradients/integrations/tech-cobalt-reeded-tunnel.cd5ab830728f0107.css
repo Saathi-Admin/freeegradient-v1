@@ -1,0 +1,6 @@
+/* FreeeGradients: Cobalt reeded tunnel only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-cobalt-reeded-tunnel-01: url("../assets/tech-cobalt-reeded-tunnel-01.560b8239d34c9e7b.webp");
+}
+.fg-tech-cobalt-reeded-tunnel-01 { background-color: #020721; background-image: var(--fg-tech-cobalt-reeded-tunnel-01); }

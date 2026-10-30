@@ -1,0 +1,10 @@
+/* FreeeGradients: Cyan Aqua Fluid only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-cyan-aqua-fluid-01: url("../assets/studio-cyan-aqua-fluid-01.0d73403955d680d6.webp");
+  --fg-studio-cyan-aqua-fluid-02: url("../assets/studio-cyan-aqua-fluid-02.8bb6d62c5a78274f.webp");
+  --fg-studio-cyan-aqua-fluid-03: url("../assets/studio-cyan-aqua-fluid-03.732789e36fe0bd2c.webp");
+}
+.fg-studio-cyan-aqua-fluid-01 { background-color: #080b24; background-image: var(--fg-studio-cyan-aqua-fluid-01); }
+.fg-studio-cyan-aqua-fluid-02 { background-color: #faf4ed; background-image: var(--fg-studio-cyan-aqua-fluid-02); }
+.fg-studio-cyan-aqua-fluid-03 { background-color: #10251f; background-image: var(--fg-studio-cyan-aqua-fluid-03); }

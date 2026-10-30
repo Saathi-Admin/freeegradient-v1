@@ -1,0 +1,10 @@
+/* FreeeGradients: Cyan Dark Stripe Fade only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-cyan-dark-stripe-fade-01: url("../assets/studio-cyan-dark-stripe-fade-01.260776f49e47cb2f.webp");
+  --fg-studio-cyan-dark-stripe-fade-02: url("../assets/studio-cyan-dark-stripe-fade-02.8a321b6f52748db6.webp");
+  --fg-studio-cyan-dark-stripe-fade-03: url("../assets/studio-cyan-dark-stripe-fade-03.1d56c6a2010106c7.webp");
+}
+.fg-studio-cyan-dark-stripe-fade-01 { background-color: #080b24; background-image: var(--fg-studio-cyan-dark-stripe-fade-01); }
+.fg-studio-cyan-dark-stripe-fade-02 { background-color: #faf4ed; background-image: var(--fg-studio-cyan-dark-stripe-fade-02); }
+.fg-studio-cyan-dark-stripe-fade-03 { background-color: #10251f; background-image: var(--fg-studio-cyan-dark-stripe-fade-03); }

@@ -1,0 +1,6 @@
+/* FreeeGradients: Magenta orbit bokeh only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-magenta-orbit-bokeh-01: url("../assets/tech-magenta-orbit-bokeh-01.47032ce4dfbaaf8b.webp");
+}
+.fg-tech-magenta-orbit-bokeh-01 { background-color: #27052d; background-image: var(--fg-tech-magenta-orbit-bokeh-01); }

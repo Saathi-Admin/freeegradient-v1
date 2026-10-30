@@ -1,0 +1,6 @@
+/* FreeeGradients: Fractal Glass Texture only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-fractal-glass-texture-01: url("../assets/studio-fractal-glass-texture-01.60d0aff0e29d759a.webp");
+}
+.fg-studio-fractal-glass-texture-01 { background-color: #080b24; background-image: var(--fg-studio-fractal-glass-texture-01); }

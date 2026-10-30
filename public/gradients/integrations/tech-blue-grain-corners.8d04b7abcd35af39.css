@@ -1,0 +1,6 @@
+/* FreeeGradients: Blue grain corners only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-blue-grain-corners-01: url("../assets/tech-blue-grain-corners-01.72c5b09ec44441b9.webp");
+}
+.fg-tech-blue-grain-corners-01 { background-color: #071020; background-image: var(--fg-tech-blue-grain-corners-01); }

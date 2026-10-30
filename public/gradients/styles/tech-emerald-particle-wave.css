@@ -1,0 +1,6 @@
+/* FreeeGradients: Emerald particle wave only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-emerald-particle-wave-01: url("../assets/tech-emerald-particle-wave-01.2571499e0a9c521f.webp");
+}
+.fg-tech-emerald-particle-wave-01 { background-color: #030c08; background-image: var(--fg-tech-emerald-particle-wave-01); }

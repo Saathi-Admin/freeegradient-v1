@@ -1,0 +1,6 @@
+/* FreeeGradients: Emerald light loop only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-emerald-light-loop-01: url("../assets/tech-emerald-light-loop-01.33ebb3b18a8cd779.webp");
+}
+.fg-tech-emerald-light-loop-01 { background-color: #001415; background-image: var(--fg-tech-emerald-light-loop-01); }

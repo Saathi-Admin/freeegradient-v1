@@ -1,0 +1,6 @@
+/* FreeeGradients: Royal blue blueprint only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-royal-blue-blueprint-01: url("../assets/tech-royal-blue-blueprint-01.634ef03edcbd17b9.webp");
+}
+.fg-tech-royal-blue-blueprint-01 { background-color: #103c7d; background-image: var(--fg-tech-royal-blue-blueprint-01); }

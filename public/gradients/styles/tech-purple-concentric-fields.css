@@ -1,0 +1,6 @@
+/* FreeeGradients: Purple concentric fields only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-purple-concentric-fields-01: url("../assets/tech-purple-concentric-fields-01.1962e9dde6b7f9a4.webp");
+}
+.fg-tech-purple-concentric-fields-01 { background-color: #0c0b2d; background-image: var(--fg-tech-purple-concentric-fields-01); }

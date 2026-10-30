@@ -1,0 +1,6 @@
+/* FreeeGradients: Magenta crescent bowl only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-magenta-crescent-bowl-01: url("../assets/tech-magenta-crescent-bowl-01.7fe106add394295e.webp");
+}
+.fg-tech-magenta-crescent-bowl-01 { background-color: #13041b; background-image: var(--fg-tech-magenta-crescent-bowl-01); }

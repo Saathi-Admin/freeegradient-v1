@@ -1,0 +1,6 @@
+/* FreeeGradients: Defocused code light only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-defocused-code-light-01: url("../assets/tech-defocused-code-light-01.60adcffb80fa6e10.webp");
+}
+.fg-tech-defocused-code-light-01 { background-color: #041c26; background-image: var(--fg-tech-defocused-code-light-01); }

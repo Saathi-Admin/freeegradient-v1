@@ -1,0 +1,6 @@
+/* FreeeGradients: Prismatic horizon fan only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-prismatic-horizon-fan-01: url("../assets/tech-prismatic-horizon-fan-01.79b65b73df558a43.webp");
+}
+.fg-tech-prismatic-horizon-fan-01 { background-color: #08103b; background-image: var(--fg-tech-prismatic-horizon-fan-01); }

@@ -1,0 +1,10 @@
+/* FreeeGradients: Pink Purple Fade only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-pink-purple-fade-01: url("../assets/studio-pink-purple-fade-01.cf10474362ea98b9.webp");
+  --fg-studio-pink-purple-fade-02: url("../assets/studio-pink-purple-fade-02.bd76ec2fda9978b3.webp");
+  --fg-studio-pink-purple-fade-03: url("../assets/studio-pink-purple-fade-03.30fe031175f299c0.webp");
+}
+.fg-studio-pink-purple-fade-01 { background-color: #080b24; background-image: var(--fg-studio-pink-purple-fade-01); }
+.fg-studio-pink-purple-fade-02 { background-color: #faf4ed; background-image: var(--fg-studio-pink-purple-fade-02); }
+.fg-studio-pink-purple-fade-03 { background-color: #10251f; background-image: var(--fg-studio-pink-purple-fade-03); }

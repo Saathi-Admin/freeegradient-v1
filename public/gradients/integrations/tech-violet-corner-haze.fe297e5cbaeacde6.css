@@ -1,0 +1,6 @@
+/* FreeeGradients: Violet corner haze only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-violet-corner-haze-01: url("../assets/tech-violet-corner-haze-01.42fe3a57ec43db0b.webp");
+}
+.fg-tech-violet-corner-haze-01 { background-color: #050309; background-image: var(--fg-tech-violet-corner-haze-01); }

@@ -34,8 +34,9 @@ const pageUrl = (selectedMode: BrowseMode, selectedPage=1) => gradientPageUrl(se
 const content = category ? collectionContent[category] : undefined;
 const guide = guides.find(g=>g.slug===(content?.guide ?? 'gradient-styles-explained'))!;
 const adviceGuides = [guide,...guides.filter(g=>['gradient-export-formats','readable-text-on-gradients'].includes(g.slug) && g.slug!==guide.slug)];
+const downloadDescription=category==='tech-atmospheres'?'Download original PNG backgrounds or export JPG and WebP.':`Copy free ${collection?.title.toLowerCase()} CSS gradients or download SVG, PNG and JPEG backgrounds.`;
 ---
-<BaseLayout pageType="CollectionPage" items={cards.map(({gradient}) => ({name:gradient.name,path:`/gradients/${gradient.variations[0].id}/`}))} title={`${seoTitle}${page > 1 ? ` — Page ${page}` : ''}${mode !== 'all' ? ` — For ${mode} designs` : ''} | FreeeGradients`} noindex={mode !== 'all'} description={collection ? `${collection.description} Copy free ${collection.title.toLowerCase()} CSS gradients or download SVG, PNG and JPEG backgrounds.${page > 1 ? ` Page ${page}.` : ""}` : `Browse free CSS gradients and SVG backgrounds for light and dark designs. Copy CSS or download PNG and JPEG for personal and commercial use.${page > 1 ? ` Page ${page}.` : ""}`}>
+<BaseLayout pageType="CollectionPage" items={cards.map(({gradient}) => ({name:gradient.name,path:`/gradients/${gradient.variations[0].id}/`}))} title={`${seoTitle}${page > 1 ? ` — Page ${page}` : ''}${mode !== 'all' ? ` — For ${mode} designs` : ''} | FreeeGradients`} noindex={mode !== 'all'} description={collection ? `${collection.description} ${downloadDescription}${page > 1 ? ` Page ${page}.` : ""}` : `Browse free CSS gradients and SVG backgrounds for light and dark designs. Copy CSS or download PNG and JPEG for personal and commercial use.${page > 1 ? ` Page ${page}.` : ""}`}>
   <Header />
   <main id="main-content" class="collection-detail container">
     <div class="collection-detail-hero">
@@ -43,6 +44,7 @@ const adviceGuides = [guide,...guides.filter(g=>['gradient-export-formats','read
       <div class="collection-detail-intro">
         <h1 id="all-gradients-title"><span class="hero-heading-neutral">{title}{!collection && '.'}</span></h1>
         <p class="hero-description text-body-md">{collection?.description ?? 'Every style. Every colour. Find your next background, copy the CSS or download SVG, PNG and JPEG. Completely free.'}</p>
+        {category==='tech-atmospheres' && <a class="btn btn-secondary btn-md" href="/gradients/downloads/tech-atmospheres.zip" download>Download all backgrounds</a>}
         <TabBar label="Filter gradients by design background">
           <a class="btn btn-ghost btn-sm" href={pageUrl('all')} aria-current={mode === 'all' ? 'page' : undefined}>All</a>
           <a class="btn btn-ghost btn-sm" href={pageUrl('light')} aria-current={mode === 'light' ? 'page' : undefined}><Sun aria-hidden="true" />For light</a>
@@ -80,7 +82,7 @@ const adviceGuides = [guide,...guides.filter(g=>['gradient-export-formats','read
         <h2 class="text-h3" id="collection-advice-title">{collection ? `How to use ${seoTitle.replace('Free ','').toLowerCase()}` : 'How to find and use a free gradient background'}</h2>
         <p class="text-body-md">{content?.summary ?? 'Browse by style, filter by colour and compare light and dark variations. Open any gradient to see its palette, copy its CSS or export an image. Every background is free for personal and commercial projects, with no account required.'}</p>
         {content && <p class="text-body-md">{content.tip}</p>}
-        <p class="text-body-md">Choose CSS for a website background or export PNG, JPG, SVG or WebP for your project. The exporter includes Full HD, 4K, square, story and phone presets, plus custom sizes. Some SVG designs contain raster artwork; output dimensions do not increase their source detail.</p>
+        <p class="text-body-md">{category==='tech-atmospheres'?'Download the original PNG or export JPG and WebP for your project. These backgrounds are image artwork.':'Choose CSS for a website background or export PNG, JPG, SVG or WebP for your project.'} The exporter includes Full HD, 4K, square, story and phone presets, plus custom sizes. Output dimensions do not increase source detail.</p>
       </div>
       <nav class="collection-advice-grid" aria-label="Learn about these gradients">{adviceGuides.map(g=>{
         const variation = guideCardVariation(g.slug);

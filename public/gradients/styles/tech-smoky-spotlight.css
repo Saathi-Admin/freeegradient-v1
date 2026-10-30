@@ -1,0 +1,6 @@
+/* FreeeGradients: Smoky spotlight only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-smoky-spotlight-01: url("../assets/tech-smoky-spotlight-01.82bdabfc2df6b8f7.webp");
+}
+.fg-tech-smoky-spotlight-01 { background-color: #050607; background-image: var(--fg-tech-smoky-spotlight-01); }

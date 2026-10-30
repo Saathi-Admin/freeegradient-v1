@@ -1,0 +1,6 @@
+/* FreeeGradients: Graphite micro wave only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-graphite-micro-wave-01: url("../assets/tech-graphite-micro-wave-01.412f4ac3c198a530.webp");
+}
+.fg-tech-graphite-micro-wave-01 { background-color: #030405; background-image: var(--fg-tech-graphite-micro-wave-01); }

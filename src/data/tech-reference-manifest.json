@@ -1,0 +1,758 @@
+[
+  {
+    "slug": "tech-cyan-halftone-flow",
+    "name": "Cyan halftone flow",
+    "screenshot": 1,
+    "region": "first column large tall card: pale icy cyan and slate blue fine halftone flowing texture",
+    "mode": "light",
+    "colors": [
+      "#c4dedf",
+      "#68bacb",
+      "#344d72"
+    ],
+    "composition": "An extremely fine uniform dot-screen texture over a sweeping soft cyan and slate light wave; quiet airy depth.",
+    "id": "01"
+  },
+  {
+    "slug": "tech-blueprint-circles",
+    "name": "Blueprint circles",
+    "screenshot": 1,
+    "region": "second column tall blue card with faint technical circles",
+    "mode": "dark",
+    "colors": [
+      "#102b50",
+      "#1464bb",
+      "#a2b5c8"
+    ],
+    "composition": "Soft blue gradient with delicate architectural drafting circles, thin grid guide lines and tiny cross marks. Precise understated blueprint.",
+    "id": "02"
+  },
+  {
+    "slug": "tech-silver-cross-grid",
+    "name": "Silver cross grid",
+    "screenshot": 1,
+    "region": "third column tall pale gray card with fine tiny crosses",
+    "mode": "light",
+    "colors": [
+      "#e8e9e9",
+      "#c1c4c6",
+      "#92999c"
+    ],
+    "composition": "Pale silver gray tonal gradient, extremely fine square grid and sparse tiny gray plus intersections. Minimal technical paper.",
+    "id": "03"
+  },
+  {
+    "slug": "tech-violet-grain-cloud",
+    "name": "Violet grain cloud",
+    "screenshot": 1,
+    "region": "fourth column large black and purple soft grain card",
+    "mode": "dark",
+    "colors": [
+      "#07040e",
+      "#6822a7",
+      "#b450eb"
+    ],
+    "composition": "Broad deeply blurred violet and lilac organic light clouds separated by irregular black negative space; subtle fine photographic grain.",
+    "id": "04"
+  },
+  {
+    "slug": "tech-violet-crescent-reflection",
+    "name": "Violet crescent reflection",
+    "screenshot": 3,
+    "region": "large main image at left: luminous purple upper crescent with reflected dark curved band",
+    "mode": "dark",
+    "colors": [
+      "#050313",
+      "#5635e8",
+      "#c3a3ff"
+    ],
+    "composition": "One broad upward arch of luminous violet and icy lilac light across centre on near-black indigo; a second quiet dark reflected arc beneath, symmetrical restrained glow.",
+    "id": "05"
+  },
+  {
+    "slug": "tech-pastel-spectrum-mist",
+    "name": "Pastel spectrum mist",
+    "screenshot": 1,
+    "region": "fifth column tall light pastel card",
+    "mode": "light",
+    "colors": [
+      "#fff7df",
+      "#efc8dd",
+      "#b8ecf2"
+    ],
+    "composition": "A delicate bright creamy ivory field with pale butter yellow top left, subtle blush pink centre, powder cyan lower right; smooth diffuse colour with no hard shapes.",
+    "id": "06"
+  },
+  {
+    "slug": "tech-graphite-micro-wave",
+    "name": "Graphite micro wave",
+    "screenshot": 1,
+    "region": "far right large black card showing a fine silver rippling lattice",
+    "mode": "dark",
+    "colors": [
+      "#030405",
+      "#1c232a",
+      "#687780"
+    ],
+    "composition": "An almost black finely tessellated micro-dot lattice bending into a flowing vertical silver wave, restrained metallic specular detail.",
+    "id": "07"
+  },
+  {
+    "slug": "tech-cobalt-fine-grid",
+    "name": "Cobalt fine grid",
+    "screenshot": 1,
+    "region": "lower first column dark blue technical grid",
+    "mode": "dark",
+    "colors": [
+      "#061538",
+      "#0c2b70",
+      "#234fc0"
+    ],
+    "composition": "A deep navy field with a very fine regular blue square grid, slight blue luminosity rising from the lower right, restrained flat technical background.",
+    "id": "08"
+  },
+  {
+    "slug": "tech-azure-soft-sweep",
+    "name": "Azure soft sweep",
+    "screenshot": 1,
+    "region": "lower second column horizontal blue cyan sweep",
+    "mode": "dark",
+    "colors": [
+      "#0c1b6d",
+      "#145bca",
+      "#65d5fa"
+    ],
+    "composition": "An abstract ultramarine blue gradient with a broad glowing soft cyan sweep curling gently across the bottom edge and fading into white-blue at one corner.",
+    "id": "09"
+  },
+  {
+    "slug": "tech-cobalt-reeded-tunnel",
+    "name": "Cobalt reeded tunnel",
+    "screenshot": 1,
+    "region": "lower third column horizontal blue fluted perspective tunnel",
+    "mode": "dark",
+    "colors": [
+      "#020721",
+      "#123daa",
+      "#6ca9ff"
+    ],
+    "composition": "Fine parallel glossy cobalt ribs descend vertically then curve toward the viewer like a seamless futuristic floor and wall; centred perspective and a silver-blue focal highlight.",
+    "id": "10"
+  },
+  {
+    "slug": "tech-sky-halftone-clouds",
+    "name": "Sky halftone clouds",
+    "screenshot": 1,
+    "region": "lower fourth column cropped blue halftone cloud image",
+    "mode": "light",
+    "colors": [
+      "#e8f1ff",
+      "#99bbec",
+      "#7295d0"
+    ],
+    "composition": "Soft white cloud-like shapes over sky blue, interpreted through a precise fine halftone dot screen, airy editorial texture.",
+    "id": "11"
+  },
+  {
+    "slug": "tech-ice-blue-wash",
+    "name": "Ice blue wash",
+    "screenshot": 1,
+    "region": "lower far right pale blue and white gradient card",
+    "mode": "light",
+    "colors": [
+      "#f5f7f7",
+      "#cce3ef",
+      "#9bc7df"
+    ],
+    "composition": "A minimalist pale icy blue haze blending smoothly into cool white, broad blurred light fields and generous empty space.",
+    "id": "12"
+  },
+  {
+    "slug": "tech-cyan-reeded-shadow",
+    "name": "Cyan reeded shadow",
+    "screenshot": 2,
+    "region": "upper first column tall cyan blue and black vertical ribbed image",
+    "mode": "dark",
+    "colors": [
+      "#020914",
+      "#064183",
+      "#11b3ed"
+    ],
+    "composition": "Closely spaced slender vertical fluted glass ribs; luminous cyan on left and cobalt lower half, a deep black curved soft shadow falling over the centre-right.",
+    "id": "13"
+  },
+  {
+    "slug": "tech-violet-grid-horizon",
+    "name": "Violet grid horizon",
+    "screenshot": 2,
+    "region": "second column dark purple grid with bright blue lower horizon",
+    "mode": "dark",
+    "colors": [
+      "#080819",
+      "#32227a",
+      "#537fff"
+    ],
+    "composition": "Fine luminous blue-violet square grid on midnight purple; blue glow rises evenly from the lower edge with a few tiny bright cross intersections.",
+    "id": "14"
+  },
+  {
+    "slug": "tech-royal-blue-blueprint",
+    "name": "Royal blue blueprint",
+    "screenshot": 2,
+    "region": "third column large royal blue fine grid rectangle",
+    "mode": "dark",
+    "colors": [
+      "#103c7d",
+      "#225ea9",
+      "#497ab8"
+    ],
+    "composition": "A softly textured royal blue drafting surface with exceptionally fine regular square grid lines; quiet uniform tone with a gentle central lift.",
+    "id": "15"
+  },
+  {
+    "slug": "tech-graphite-woven-silk",
+    "name": "Graphite woven silk",
+    "screenshot": 2,
+    "region": "fourth column upper black gray fabric-like image",
+    "mode": "dark",
+    "colors": [
+      "#050506",
+      "#222426",
+      "#797b7c"
+    ],
+    "composition": "Dark charcoal woven microtexture with broad soft silk-like diagonal folds reflecting silver highlights; understated black-on-black material.",
+    "id": "16"
+  },
+  {
+    "slug": "tech-slate-film-clouds",
+    "name": "Slate film clouds",
+    "screenshot": 2,
+    "region": "fifth column tall muted blue grainy blurred cloud image",
+    "mode": "light",
+    "colors": [
+      "#c6d6e5",
+      "#809fc0",
+      "#496f99"
+    ],
+    "composition": "Muted slate powder blue blurred cloud forms, soft pale light at left and middle, rich fine analog film grain throughout.",
+    "id": "17"
+  },
+  {
+    "slug": "tech-monochrome-grain-folds",
+    "name": "Monochrome grain folds",
+    "screenshot": 2,
+    "region": "far right tall black and cream heavily grainy soft folded image",
+    "mode": "dark",
+    "colors": [
+      "#0b0c0d",
+      "#77766e",
+      "#dddccd"
+    ],
+    "composition": "Creamy off-white organic highlights and deep charcoal shadows flowing like defocused folded fabric; tactile fine photographic grain, no recognisable object.",
+    "id": "18"
+  },
+  {
+    "slug": "tech-glacial-blue-curve",
+    "name": "Glacial blue curve",
+    "screenshot": 2,
+    "region": "first column middle horizontal dark blue card with cyan sharp curve",
+    "mode": "dark",
+    "colors": [
+      "#020714",
+      "#103b78",
+      "#9be5ff"
+    ],
+    "composition": "A single fluid cyan-white luminous edge sweeps from bottom left and rises toward upper right, separating midnight navy shadow from electric icy blue glow.",
+    "id": "19"
+  },
+  {
+    "slug": "tech-pearl-glass-fold",
+    "name": "Pearl glass fold",
+    "screenshot": 2,
+    "region": "bottom left partial pale blue translucent glass fold",
+    "mode": "light",
+    "colors": [
+      "#f6f6fa",
+      "#cbdcf8",
+      "#8aafe9"
+    ],
+    "composition": "Pale icy lavender and blue translucent curved glass ribbons folding diagonally over an almost white background; restrained elegant refraction.",
+    "id": "20"
+  },
+  {
+    "slug": "tech-midnight-vertical-panels",
+    "name": "Midnight vertical panels",
+    "screenshot": 2,
+    "region": "bottom second column dark vertical rectangular planes",
+    "mode": "dark",
+    "colors": [
+      "#050609",
+      "#0f1422",
+      "#252d44"
+    ],
+    "composition": "Minimal almost black vertical architectural panels, three broad staggered rectangular planes with faint blue-violet ambient edge lighting.",
+    "id": "21"
+  },
+  {
+    "slug": "tech-muted-blue-air",
+    "name": "Muted blue air",
+    "screenshot": 2,
+    "region": "bottom third column simple muted blue wash",
+    "mode": "light",
+    "colors": [
+      "#a2beda",
+      "#6c95c4",
+      "#4777b3"
+    ],
+    "composition": "A soft desaturated blue atmospheric colour field, broad subtle blur and lightly diffused edge lighting, absolutely minimal.",
+    "id": "22"
+  },
+  {
+    "slug": "tech-defocused-code-light",
+    "name": "Defocused code light",
+    "screenshot": 2,
+    "region": "fourth column middle landscape out-of-focus cyan and amber code photograph",
+    "mode": "dark",
+    "colors": [
+      "#041c26",
+      "#06a7b7",
+      "#d59d4b"
+    ],
+    "composition": "An abstract photographic tech background of heavily defocused cyan light and small amber luminous dashes receding diagonally. Suggest a code screen through pure bokeh, no readable text or actual letters.",
+    "id": "23"
+  },
+  {
+    "slug": "tech-blue-fibre-stream",
+    "name": "Blue fibre stream",
+    "screenshot": 2,
+    "region": "fourth column bottom partial blue fibre optic strands",
+    "mode": "dark",
+    "colors": [
+      "#020b19",
+      "#163b78",
+      "#72b5ff"
+    ],
+    "composition": "Fine luminous blue fibre-optic curves sweeping gracefully from the lower left into a navy void, delicate blue-white specular threads.",
+    "id": "24"
+  },
+  {
+    "slug": "tech-magenta-orbit-bokeh",
+    "name": "Magenta orbit bokeh",
+    "screenshot": 2,
+    "region": "fifth column bottom purple magenta background with faint circular guides",
+    "mode": "dark",
+    "colors": [
+      "#27052d",
+      "#79118e",
+      "#bb37b0"
+    ],
+    "composition": "Rich purple-magenta gradient with very subtle wide circular orbit outlines and a few soft translucent bokeh dots, polished restrained glow.",
+    "id": "25"
+  },
+  {
+    "slug": "tech-indigo-shadow-fold",
+    "name": "Indigo shadow fold",
+    "screenshot": 2,
+    "region": "far right bottom partial dark folded violet blue shape",
+    "mode": "dark",
+    "colors": [
+      "#040610",
+      "#161a39",
+      "#414178"
+    ],
+    "composition": "A broad softly folded diagonal midnight indigo surface, subtle violet reflection and deep black negative space, no distinct object.",
+    "id": "26"
+  },
+  {
+    "slug": "tech-coral-violet-sunrise",
+    "name": "Coral violet sunrise",
+    "screenshot": 3,
+    "region": "upper right first small card: cropped concentric coral white violet sun halo",
+    "mode": "dark",
+    "colors": [
+      "#100318",
+      "#9e3bda",
+      "#ff6b81"
+    ],
+    "composition": "An oversized glowing concentric halo cropped by the top edge: warm coral core, thin creamy-white rim, purple and magenta outer glow fading into near black.",
+    "id": "27"
+  },
+  {
+    "slug": "tech-violet-thin-horizon",
+    "name": "Violet thin horizon",
+    "screenshot": 3,
+    "region": "upper right far-right card with one fine violet horizon arc",
+    "mode": "dark",
+    "colors": [
+      "#000000",
+      "#3d1767",
+      "#e0b3ff"
+    ],
+    "composition": "A very thin gently bowed luminous lavender horizon in the lower middle of pure black, a tiny concentrated soft white-violet central bloom and delicate purple glow.",
+    "id": "28"
+  },
+  {
+    "slug": "tech-amethyst-fringe-wave",
+    "name": "Amethyst fringe wave",
+    "screenshot": 3,
+    "region": "right middle left diagonal purple ridged light wave",
+    "mode": "dark",
+    "colors": [
+      "#08070c",
+      "#572a91",
+      "#c07cff"
+    ],
+    "composition": "A diagonal softly rippled violet light band with delicate repeated feathery fringes, sweeping down from upper left to lower right on charcoal black.",
+    "id": "29"
+  },
+  {
+    "slug": "tech-violet-stacked-bloom",
+    "name": "Violet stacked bloom",
+    "screenshot": 3,
+    "region": "right middle far-right small card with three stacked soft violet glows",
+    "mode": "dark",
+    "colors": [
+      "#090212",
+      "#45118b",
+      "#aa6dff"
+    ],
+    "composition": "Three soft elongated horizontal violet light blooms stacked in a loose rising arc, centre luminous lilac, feathered purple edges fading into deep black.",
+    "id": "30"
+  },
+  {
+    "slug": "tech-crossing-light-horizons",
+    "name": "Crossing light horizons",
+    "screenshot": 3,
+    "region": "right lower left: two opposing curved horizons crossing in a white purple centre",
+    "mode": "dark",
+    "colors": [
+      "#03040e",
+      "#3b3c87",
+      "#ddd9ff"
+    ],
+    "composition": "Two thin gracefully curved blue-violet luminous horizons facing each other and nearly crossing at centre, brilliant delicate white central glow and a thin horizontal light flare.",
+    "id": "31"
+  },
+  {
+    "slug": "tech-reeded-violet-arch",
+    "name": "Reeded violet arch",
+    "screenshot": 3,
+    "region": "right lower far-right blue purple arch behind vertical glass ribs",
+    "mode": "dark",
+    "colors": [
+      "#02030a",
+      "#1437aa",
+      "#b8a2f6"
+    ],
+    "composition": "A soft luminous violet and pearl upper arch diffused behind fine vertical blue fluted glass columns, lower half deep cobalt fading to black.",
+    "id": "32"
+  },
+  {
+    "slug": "tech-cyan-horizon-arc",
+    "name": "Cyan horizon arc",
+    "screenshot": 3,
+    "region": "bottom first small card: thin cyan blue arc on dark teal navy",
+    "mode": "dark",
+    "colors": [
+      "#04111b",
+      "#094565",
+      "#8ce9ff"
+    ],
+    "composition": "One slender glowing cyan arc rising gently across the lower centre of a deep teal-black field, icy white-blue highlight at the top of the arc and smooth restrained blue halo.",
+    "id": "33"
+  },
+  {
+    "slug": "tech-blue-planet-dawn",
+    "name": "Blue planet dawn",
+    "screenshot": 3,
+    "region": "bottom second small card: earth-like blue horizon with atmospheric particles",
+    "mode": "dark",
+    "colors": [
+      "#010818",
+      "#0752a3",
+      "#33caff"
+    ],
+    "composition": "A stylized dark planetary curvature at the bottom edge with a luminous electric blue atmospheric rim; subtle tiny blue particles drift above the horizon in a midnight void, no identifiable geography.",
+    "id": "34"
+  },
+  {
+    "slug": "tech-lavender-orb-rise",
+    "name": "Lavender orb rise",
+    "screenshot": 3,
+    "region": "bottom third card: large pale lavender hemisphere",
+    "mode": "dark",
+    "colors": [
+      "#17131f",
+      "#6f35d5",
+      "#e7d9ff"
+    ],
+    "composition": "The top half of a giant lavender orb rises from the bottom edge, a softly luminous creamy lilac crown grading into saturated purple below, set against dark aubergine.",
+    "id": "35"
+  },
+  {
+    "slug": "tech-purple-concentric-fields",
+    "name": "Purple concentric fields",
+    "screenshot": 3,
+    "region": "bottom fourth webpage card: purple concentric arc background only, omit webpage text and buttons",
+    "mode": "dark",
+    "colors": [
+      "#0c0b2d",
+      "#342483",
+      "#7853d6"
+    ],
+    "composition": "Large smooth concentric indigo and violet bands, offset to the lower right and radiating outward, elegant flat tonal steps with subtly softened transitions.",
+    "id": "36"
+  },
+  {
+    "slug": "tech-smoky-spotlight",
+    "name": "Smoky spotlight",
+    "screenshot": 3,
+    "region": "bottom fifth small video card: dark white downward light beam",
+    "mode": "dark",
+    "colors": [
+      "#050607",
+      "#24292d",
+      "#c7cac4"
+    ],
+    "composition": "A narrow soft white beam falling diagonally downward through a charcoal smoky atmosphere, illuminated dust haze only; no lamp, object or structure.",
+    "id": "37"
+  },
+  {
+    "slug": "tech-emerald-light-loop",
+    "name": "Emerald light loop",
+    "screenshot": 3,
+    "region": "bottom far-right green looping ribbon on dark teal",
+    "mode": "dark",
+    "colors": [
+      "#001415",
+      "#006553",
+      "#0fcda0"
+    ],
+    "composition": "One broad defocused emerald luminous ribbon curves into an open organic loop from the top right across the middle; deep teal-black background, soft smooth glow.",
+    "id": "38"
+  },
+  {
+    "slug": "tech-violet-wisp-ribbons",
+    "name": "Violet wisp ribbons",
+    "screenshot": 4,
+    "region": "top left horizontal violet wispy flowing ribbons on black",
+    "mode": "dark",
+    "colors": [
+      "#030208",
+      "#4b258c",
+      "#af79f1"
+    ],
+    "composition": "Several delicate translucent violet wisps undulate gently across the middle of a black canvas like a low flowing silk wave, thin luminous ridges and generous negative space.",
+    "id": "39"
+  },
+  {
+    "slug": "tech-cobalt-eclipse-ring",
+    "name": "Cobalt eclipse ring",
+    "screenshot": 4,
+    "region": "first column second card: large black eclipse with blue violet upper glow",
+    "mode": "dark",
+    "colors": [
+      "#000000",
+      "#353dcd",
+      "#d1b7ff"
+    ],
+    "composition": "An enormous black circular eclipse rises from below the bottom edge, luminous white-lilac upper rim and a broad cobalt-violet halo against black, balanced symmetrical composition.",
+    "id": "40"
+  },
+  {
+    "slug": "tech-emerald-particle-wave",
+    "name": "Emerald particle wave",
+    "screenshot": 4,
+    "region": "bottom left partial green wave made of fine lines and points",
+    "mode": "dark",
+    "colors": [
+      "#030c08",
+      "#086b44",
+      "#35c58b"
+    ],
+    "composition": "A low rolling emerald wave made of many fine parallel luminous lines and tiny points, flowing across the lower third on almost black forest-green.",
+    "id": "41"
+  },
+  {
+    "slug": "tech-violet-corner-haze",
+    "name": "Violet corner haze",
+    "screenshot": 4,
+    "region": "top second column small black card with muted lavender corner glow",
+    "mode": "dark",
+    "colors": [
+      "#050309",
+      "#603a9b",
+      "#b88fad"
+    ],
+    "composition": "Minimal black colour field with a softly blurred dusty violet-pink wash entering from upper left and a restrained lilac glow at lower right.",
+    "id": "42"
+  },
+  {
+    "slug": "tech-cobalt-glass-helix",
+    "name": "Cobalt glass helix",
+    "screenshot": 4,
+    "region": "second column middle image: repeated bright blue glass fins twisting diagonally",
+    "mode": "dark",
+    "colors": [
+      "#01051e",
+      "#124ec6",
+      "#8ee5ff"
+    ],
+    "composition": "A sculptural twisting ribbon built from closely spaced translucent cyan and cobalt glass fins, flowing diagonally from lower left to upper right, dark navy negative space.",
+    "id": "43"
+  },
+  {
+    "slug": "tech-violet-upward-wash",
+    "name": "Violet upward wash",
+    "screenshot": 4,
+    "region": "second column tall lower image: purple light rising from lower edge into black",
+    "mode": "dark",
+    "colors": [
+      "#04020b",
+      "#27116b",
+      "#7138de"
+    ],
+    "composition": "A very quiet deep black field with a large diffuse violet light wash rising from the bottom right, luminous purple low in frame and broad empty shadows above.",
+    "id": "44"
+  },
+  {
+    "slug": "tech-magenta-crescent-bowl",
+    "name": "Magenta crescent bowl",
+    "screenshot": 4,
+    "region": "third column middle: pink purple red glowing lower crescent bowl",
+    "mode": "dark",
+    "colors": [
+      "#13041b",
+      "#8524bd",
+      "#ff6449"
+    ],
+    "composition": "A large softly defined circular bowl of magenta light, the lower rim glows warm pale peach and lilac, deep violet inside, subtle red-orange ambient wash to the right on dark aubergine.",
+    "id": "45"
+  },
+  {
+    "slug": "tech-cobalt-liquid-tubes",
+    "name": "Cobalt liquid tubes",
+    "screenshot": 4,
+    "region": "fourth column top: glossy rounded cobalt curved shapes on black",
+    "mode": "dark",
+    "colors": [
+      "#00020d",
+      "#0628a0",
+      "#006bff"
+    ],
+    "composition": "Abstract thick rounded glossy cobalt liquid curves, two broad U-like arcs rising from the bottom edge, blue specular light fading into black, no recognisable object.",
+    "id": "46"
+  },
+  {
+    "slug": "tech-opposing-blue-portals",
+    "name": "Opposing blue portals",
+    "screenshot": 4,
+    "region": "fourth column second card: symmetrical luminous blue panels facing each other",
+    "mode": "dark",
+    "colors": [
+      "#010622",
+      "#1f56c6",
+      "#d3ebff"
+    ],
+    "composition": "Two symmetrical groups of luminous vertical blue glass planes facing each other from left and right, bright pearl-cyan edges and a dark central hourglass-shaped negative space, architectural optical depth.",
+    "id": "47"
+  },
+  {
+    "slug": "tech-blue-grain-corners",
+    "name": "Blue grain corners",
+    "screenshot": 4,
+    "region": "fourth column bottom landscape: powder blue light at corners and dark centre",
+    "mode": "dark",
+    "colors": [
+      "#071020",
+      "#325d8a",
+      "#bad5e5"
+    ],
+    "composition": "A soft charcoal navy diagonal shadow across centre, powder blue and pale icy light washing in from the top right and bottom left, subtle fine film grain.",
+    "id": "48"
+  },
+  {
+    "slug": "tech-prismatic-horizon-fan",
+    "name": "Prismatic horizon fan",
+    "screenshot": 4,
+    "region": "fifth column tall lower image: pink blue horizon fans meeting at bright points",
+    "mode": "dark",
+    "colors": [
+      "#08103b",
+      "#366dca",
+      "#eb77b8"
+    ],
+    "composition": "Two thin luminous horizon fans converge toward the right across a dark navy field; pink-peach and violet light from the left, icy cyan-white focal point at right, soft reflected blue beneath.",
+    "id": "49"
+  },
+  {
+    "slug": "tech-cobalt-circuit-field",
+    "name": "Cobalt circuit field",
+    "screenshot": 4,
+    "region": "far-right related card titled Tech background: use just blue circuit pattern, no lettering",
+    "mode": "dark",
+    "colors": [
+      "#080c32",
+      "#19256a",
+      "#4358bb"
+    ],
+    "composition": "An understated midnight cobalt circuit-board-like abstract field of thin orthogonal blue paths and a few tiny illuminated intersections, no symbols, letters or text.",
+    "id": "50"
+  },
+  {
+    "slug": "tech-deep-teal-atmosphere",
+    "name": "Deep teal atmosphere",
+    "screenshot": 4,
+    "region": "far-right related card titled Gradient bg: dark teal plain atmospheric background only",
+    "mode": "dark",
+    "colors": [
+      "#020b12",
+      "#0b252c",
+      "#284c50"
+    ],
+    "composition": "Extremely restrained dark petrol teal gradient, a soft hazy blue-green pool near the upper left and gentle charcoal shadows, minimal spacious backdrop.",
+    "id": "51"
+  },
+  {
+    "slug": "tech-amber-lens-star",
+    "name": "Amber lens star",
+    "screenshot": 4,
+    "region": "far-right related card titled Light effect: warm amber starburst on black, no text",
+    "mode": "dark",
+    "colors": [
+      "#050301",
+      "#734112",
+      "#f6bd62"
+    ],
+    "composition": "One elegant small warm amber-white lens flare just off centre, long slender diagonal golden rays crossing over a black background, faint subtle warm haze.",
+    "id": "52"
+  },
+  {
+    "slug": "tech-violet-horizon-bloom",
+    "name": "Violet horizon bloom",
+    "screenshot": 4,
+    "region": "far-right middle black and purple card: diffuse purple white light pooling along bottom",
+    "mode": "dark",
+    "colors": [
+      "#030108",
+      "#6020c7",
+      "#d5aaff"
+    ],
+    "composition": "An irregular soft violet light bank rises along the lower edge, pale lilac-white glow near bottom centre and rich purple diffused upward into a large black empty field.",
+    "id": "53"
+  },
+  {
+    "slug": "tech-electric-blue-orbit",
+    "name": "Electric blue orbit",
+    "screenshot": 4,
+    "region": "far-right bottom card: slender blue luminous circular eclipse arc",
+    "mode": "dark",
+    "colors": [
+      "#000000",
+      "#1e39af",
+      "#a3b8ff"
+    ],
+    "composition": "A thin sharply luminous upper blue orbital arc rises from the bottom edge, tiny icy white highlight at crown, smooth electric cobalt halo against pure black; minimalist celestial outline.",
+    "id": "54"
+  }
+]

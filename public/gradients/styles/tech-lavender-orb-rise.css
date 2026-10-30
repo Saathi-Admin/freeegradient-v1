@@ -1,0 +1,6 @@
+/* FreeeGradients: Lavender orb rise only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-lavender-orb-rise-01: url("../assets/tech-lavender-orb-rise-01.d6c2cc0d94ce1296.webp");
+}
+.fg-tech-lavender-orb-rise-01 { background-color: #17131f; background-image: var(--fg-tech-lavender-orb-rise-01); }

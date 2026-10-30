@@ -1,0 +1,6 @@
+/* FreeeGradients: Silver cross grid only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-silver-cross-grid-01: url("../assets/tech-silver-cross-grid-01.8a21983820857e2f.webp");
+}
+.fg-tech-silver-cross-grid-01 { background-color: #e8e9e9; background-image: var(--fg-tech-silver-cross-grid-01); }

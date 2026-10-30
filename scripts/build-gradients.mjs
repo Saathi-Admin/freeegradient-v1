@@ -113,13 +113,27 @@ for (const [index, recipe] of recipes.entries()) {
     await writeFile(new URL(`${id}.svg`, assetDir), svg);
     const svgName = `${id}.${hash(svg)}.svg`;
     await writeImmutable(new URL(svgName,immutableDir),svg);
-    const thumbName = `${id}.${hash(svg+'thumbnail-v1')}.webp`;
-    if (!(await exists(new URL(thumbName,thumbnailsDir)))) await writeImmutable(new URL(thumbName,thumbnailsDir),await sharp(Buffer.from(svg),{density:24}).resize(384,216).webp({quality:72}).toBuffer());
+    const thumbName = `${id}.${hash(svg+(recipe.category==='tech-atmospheres'||recipe.slug.startsWith('studio-')?'thumbnail-v2-budget':'thumbnail-v1'))}.webp`;
+    if (!(await exists(new URL(thumbName,thumbnailsDir)))) {
+      let thumbnail;
+      for(const quality of [72,60,48,36,24,12]) {
+        thumbnail=await sharp(Buffer.from(svg),{density:24}).resize(384,216).webp({quality}).toBuffer();
+        if(thumbnail.length<=16384) break;
+      }
+      await writeImmutable(new URL(thumbName,thumbnailsDir),thumbnail);
+    }
     let backgroundSrc;
     if (!background) {
       const imageName = `${id}.${hash(svg+(original?'original-lossless-v1':'background-v2'))}.webp`;
       if (!(await exists(new URL(imageName,immutableDir)))) await writeImmutable(new URL(imageName,immutableDir),original?await sharp(recoloured?Buffer.from(svg):original).webp({lossless:true}).toBuffer():await sharp(Buffer.from(svg)).webp({quality:90}).toBuffer());
       backgroundSrc = `/gradients/assets/${imageName}`;
+    }
+    // Keep a ready-to-use PNG for every new studio colourway, including CSS art.
+    if(recipe.slug.startsWith('studio-')||recipe.category==='tech-atmospheres') {
+      const downloadDir=new URL(recipe.category==='tech-atmospheres'?'downloads/tech/':'downloads/studio/',assetDir);
+      await mkdir(downloadDir,{recursive:true});
+      const pngFile=new URL(`${id}.png`,downloadDir);
+      if(!(await exists(pngFile))) await writeFile(pngFile,original??await sharp(Buffer.from(svg)).png().toBuffer());
     }
     templateVariables.push(`  --fg-${id}: ${background ?? `url("..${backgroundSrc.slice('/gradients'.length)}")`};`);
     templateClasses.push(`.fg-${id} { background-color: ${base}; background-image: var(--fg-${id}); }`);
@@ -128,7 +142,7 @@ for (const [index, recipe] of recipes.entries()) {
   const { palettes: recipePalettes, sourceImages: recipeSourceImages, ...metadata } = recipe;
   const stylesheet = `/* FreeeGradients: ${recipe.name} only. */\n.fg-gradient { background-size: cover; background-position: center; }\n:root {\n${templateVariables.join('\n')}\n}\n${templateClasses.join('\n')}\n`;
   if(Buffer.byteLength(stylesheet)>8192) throw new Error(`Template CSS exceeds 8 KiB: ${recipe.slug}`);
-  if (!variations.some(v=>v.mode==='light') || !variations.some(v=>v.mode==='dark')) throw new Error(`Missing light/dark variation: ${recipe.slug}`);
+  if (!recipe.singlePalette && (!variations.some(v=>v.mode==='light') || !variations.some(v=>v.mode==='dark'))) throw new Error(`Missing light/dark variation: ${recipe.slug}`);
   const stylesheetName = `${recipe.slug}.${hash(stylesheet)}.css`;
   catalogue.push({ ...metadata, id: `FG-${String(index + 1).padStart(3, '0')}`, stylesheet: `/gradients/integrations/${stylesheetName}`, variations });
   await writeImmutable(new URL(stylesheetName,versionedStylesDir),stylesheet);

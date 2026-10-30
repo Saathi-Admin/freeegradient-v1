@@ -1,0 +1,6 @@
+/* FreeeGradients: Coral violet sunrise only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-coral-violet-sunrise-01: url("../assets/tech-coral-violet-sunrise-01.a4aa4bbc91afb7fe.webp");
+}
+.fg-tech-coral-violet-sunrise-01 { background-color: #100318; background-image: var(--fg-tech-coral-violet-sunrise-01); }

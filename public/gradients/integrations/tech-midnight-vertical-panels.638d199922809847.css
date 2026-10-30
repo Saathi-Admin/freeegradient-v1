@@ -1,0 +1,6 @@
+/* FreeeGradients: Midnight vertical panels only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-midnight-vertical-panels-01: url("../assets/tech-midnight-vertical-panels-01.2f5c216f8bdbe8fe.webp");
+}
+.fg-tech-midnight-vertical-panels-01 { background-color: #050609; background-image: var(--fg-tech-midnight-vertical-panels-01); }

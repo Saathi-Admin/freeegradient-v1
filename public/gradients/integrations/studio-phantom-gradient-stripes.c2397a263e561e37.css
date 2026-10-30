@@ -1,0 +1,10 @@
+/* FreeeGradients: Phantom Gradient Stripes only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-studio-phantom-gradient-stripes-01: url("../assets/studio-phantom-gradient-stripes-01.9ba30666124f0dee.webp");
+  --fg-studio-phantom-gradient-stripes-02: url("../assets/studio-phantom-gradient-stripes-02.125004d5b2e0280c.webp");
+  --fg-studio-phantom-gradient-stripes-03: url("../assets/studio-phantom-gradient-stripes-03.b6601739a81570de.webp");
+}
+.fg-studio-phantom-gradient-stripes-01 { background-color: #080b24; background-image: var(--fg-studio-phantom-gradient-stripes-01); }
+.fg-studio-phantom-gradient-stripes-02 { background-color: #faf4ed; background-image: var(--fg-studio-phantom-gradient-stripes-02); }
+.fg-studio-phantom-gradient-stripes-03 { background-color: #10251f; background-image: var(--fg-studio-phantom-gradient-stripes-03); }

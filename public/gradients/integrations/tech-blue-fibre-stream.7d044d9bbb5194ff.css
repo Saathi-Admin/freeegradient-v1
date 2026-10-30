@@ -1,0 +1,6 @@
+/* FreeeGradients: Blue fibre stream only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-blue-fibre-stream-01: url("../assets/tech-blue-fibre-stream-01.e14aa9a91f116c4c.webp");
+}
+.fg-tech-blue-fibre-stream-01 { background-color: #020b19; background-image: var(--fg-tech-blue-fibre-stream-01); }

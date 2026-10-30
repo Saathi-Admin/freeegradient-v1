@@ -1,10 +1,12 @@
-import { loadSearchIndex, loadTemplate, matchesTemplate, type CataloguePage, type TemplateSummary } from './catalogue';
+import { loadSearchIndex, loadTemplate, matchesTemplate, type TemplateSummary } from './catalogue';
 import type { GradientTemplate, GradientVariation } from '../types/gradient';
 import { skeletonGrid, skeletonize } from './skeleton';
 const sidebar = document.querySelector<HTMLElement>('#playground-sidebar')!;
 const sidebarScroll = document.querySelector<HTMLElement>('#sidebar-scroll')!;
 const templates = document.querySelector<HTMLElement>('#playground-templates')!;
 const collectionList = document.querySelector<HTMLElement>('#playground-collections')!;
+// Use the same collection order shown by the sidebar and the rest of the site.
+const collectionOrder = new Map([...collectionList.querySelectorAll<HTMLElement>('[data-collection-choice]')].map((item,index)=>[item.dataset.collectionChoice!,index]));
 const browseTabs = [...document.querySelectorAll<HTMLButtonElement>('[data-browse-tab]')];
 const sidebarTabs = document.querySelector<HTMLElement>('.playground-sidebar-tabs')!;
 const back = document.querySelector<HTMLButtonElement>('#templates-back')!;
@@ -74,6 +76,7 @@ function renderVariations(template: GradientTemplate) {
   variationPanel.replaceChildren();
   variationPanel.dataset.templatePanel = template.slug;
   for (const mode of ['dark','light'] as const) {
+    if(!template.variations.some(v=>v.mode===mode)) continue;
     const section = document.createElement('section'); section.className='playground-palette-group'; section.setAttribute('aria-label',`${mode} variations`);
     const heading = document.createElement('h3'); heading.className='text-caption'; heading.textContent=`For ${mode} mode`;
     const grid = document.createElement('div'); grid.className='playground-palette-grid';
@@ -143,7 +146,6 @@ async function loadBrowserPage() {
   const state=browserState(), request=++browserRequest; showStatus('');
   skeletonGrid(templates,browseMode==='all'?gradientCardSource:templateCardSource,24); previous.disabled=true; next.disabled=true;
   try {
-    let data: CataloguePage;
     const category=activeCollection?.dataset.collectionChoice ?? 'all', query=search.value.trim();
     if (browseMode === 'all') {
       const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
@@ -157,14 +159,13 @@ async function loadBrowserPage() {
       showStatus(items.length ? '' : 'No matching gradients. Try another colour or style.');
       return;
     }
-    if(query) {
-      const items=(await loadSearchIndex()).filter(g=>(category==='all'||g.category===category)&&matchesTemplate(g,query));
-      data={items:items.slice((page-1)*24,page*24),total:items.length,totalPages:Math.max(1,Math.ceil(items.length/24)),page};
-    } else {
-      const response=await fetch(`/gradients/catalogue/pages/${category}-${page}.json`); if(!response.ok) throw new Error(); data=await response.json();
-    }
+    // Order the complete result set before pagination, including search results.
+    const items=(await loadSearchIndex())
+      .filter(g=>(category==='all'||g.category===category)&&matchesTemplate(g,query))
+      .sort((a,b)=>(collectionOrder.get(a.category)??Number.MAX_SAFE_INTEGER)-(collectionOrder.get(b.category)??Number.MAX_SAFE_INTEGER));
     if(request!==browserRequest || state!==browserState()) return;
-    pageCount=data.totalPages; renderTemplates(data.items); renderedState=state; updatePagination(); showStatus(data.total ? '' : 'No matching templates. Try another colour or style.');
+    pageCount=Math.max(1,Math.ceil(items.length/24));page=Math.min(page,pageCount);
+    renderTemplates(items.slice((page-1)*24,page*24)); renderedState=browserState(); updatePagination(); showStatus(items.length ? '' : 'No matching templates. Try another colour or style.');
   } catch { if(request===browserRequest) {templates.replaceChildren();showStatus(browseMode === 'all' ? 'Could not load gradients.' : 'Could not load templates.',true); updatePagination();} }
   finally {if(request===browserRequest) templates.removeAttribute('aria-busy');}
 }

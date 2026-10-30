@@ -1,0 +1,6 @@
+/* FreeeGradients: Cobalt eclipse ring only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-cobalt-eclipse-ring-01: url("../assets/tech-cobalt-eclipse-ring-01.43d5ce0056d2decd.webp");
+}
+.fg-tech-cobalt-eclipse-ring-01 { background-color: #000000; background-image: var(--fg-tech-cobalt-eclipse-ring-01); }

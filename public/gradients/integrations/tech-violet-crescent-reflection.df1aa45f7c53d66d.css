@@ -1,0 +1,6 @@
+/* FreeeGradients: Violet crescent reflection only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-violet-crescent-reflection-01: url("../assets/tech-violet-crescent-reflection-01.84dac6ac6ebb20c3.webp");
+}
+.fg-tech-violet-crescent-reflection-01 { background-color: #050313; background-image: var(--fg-tech-violet-crescent-reflection-01); }

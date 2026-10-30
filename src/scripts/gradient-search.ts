@@ -30,7 +30,7 @@ function resultCard(item:TemplateSummary) {
   const selected=item.previews.find(v=>v.mode===mode)??item.previews[0];
   const card=document.createElement('a');card.className='gradient-card';card.href=`/gradients/${selected.id}/`;card.setAttribute('aria-label',`View ${item.name} gradient`);
   const media=document.createElement('div');media.className='card-media';const image=document.createElement('img');image.src=selected.thumbnail;image.alt=`${item.name} gradient preview`;image.width=384;image.height=216;image.loading='lazy';image.decoding='async';media.append(image);
-  const footer=document.createElement('div');footer.className='card-footer';const title=document.createElement('div');title.className='card-title';const name=document.createElement('h3');name.className='text-body-sm';name.textContent=item.name;const subtitle=document.createElement('span');subtitle.className='card-id text-caption';subtitle.textContent=`${item.count} colour variations`;title.append(name,subtitle);footer.append(title);card.append(media,footer);return card;
+  const footer=document.createElement('div');footer.className='card-footer';const title=document.createElement('div');title.className='card-title';const name=document.createElement('h3');name.className='text-body-sm';name.textContent=item.name;const subtitle=document.createElement('span');subtitle.className='card-id text-caption';subtitle.textContent=item.count===1?'Original palette':`${item.count} colour variations`;title.append(name,subtitle);footer.append(title);card.append(media,footer);return card;
 }
 async function search() {
   const id=++request;

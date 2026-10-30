@@ -1,0 +1,6 @@
+/* FreeeGradients: Monochrome grain folds only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-monochrome-grain-folds-01: url("../assets/tech-monochrome-grain-folds-01.914d415213fa0855.webp");
+}
+.fg-tech-monochrome-grain-folds-01 { background-color: #0b0c0d; background-image: var(--fg-tech-monochrome-grain-folds-01); }

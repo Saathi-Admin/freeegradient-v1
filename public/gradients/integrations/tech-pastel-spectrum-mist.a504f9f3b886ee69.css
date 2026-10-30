@@ -1,0 +1,6 @@
+/* FreeeGradients: Pastel spectrum mist only. */
+.fg-gradient { background-size: cover; background-position: center; }
+:root {
+  --fg-tech-pastel-spectrum-mist-01: url("../assets/tech-pastel-spectrum-mist-01.0f14a5318abd2404.webp");
+}
+.fg-tech-pastel-spectrum-mist-01 { background-color: #fff7df; background-image: var(--fg-tech-pastel-spectrum-mist-01); }
