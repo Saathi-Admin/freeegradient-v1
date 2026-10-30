@@ -70,6 +70,10 @@ for (const template of gradients) {
   const graph = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
   const image = graph.find(node=>node['@type']==='ImageObject');
   assert.equal(image.contentUrl,new URL(template.variations[0].src,origin).href, `Wrong artwork: ${template.slug}`);
+  assert.equal(image.license, new URL('/about/#usage',origin).href, `Missing image license: ${template.slug}`);
+  assert.equal(image.acquireLicensePage, image.license, `Missing image licensing page: ${template.slug}`);
+  assert.equal(image.creditText, 'FreeeGradients by Arclink Edge', `Missing image credit: ${template.slug}`);
+  assert.equal(image.copyrightNotice, `© ${new Date().getFullYear()} FreeeGradients`, `Missing image copyright notice: ${template.slug}`);
   assert(html.includes(escapeHtml(image.description)), `Artwork description not visible: ${template.slug}`);
   for (const variation of template.variations.slice(1)) {
     const html = await readFile(`dist/gradients/${variation.id}/index.html`,'utf8');
@@ -78,6 +82,8 @@ for (const template of gradients) {
   }
 }
 const robots = await readFile('dist/robots.txt','utf8');
+const about = await readFile('dist/about/index.html','utf8');
+assert(about.includes('id="usage"') && about.includes('free for personal and commercial use'), 'Image license must link to visible usage terms');
 assert(robots.includes('Allow: /') && !robots.includes('Disallow: /'), 'Production crawling blocked');
 assert(robots.includes(new URL('/sitemap.xml',origin).href), 'Wrong robots sitemap');
 assert.equal(pageSeo({site:new URL(origin),path:'/',production:true,preview:true}).blockIndex,true);

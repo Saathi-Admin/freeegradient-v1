@@ -23,12 +23,18 @@ const {canonical,blockIndex} = pageSeo({site:Astro.site,path:canonicalPath,produ
 const socialImage = image && Astro.site ? new URL(image, Astro.site).href : undefined;
 const siteId = `${Astro.site?.href}#website`;
 const organizationId = `${Astro.site?.href}#organization`;
+const artworkRights = {
+  license: new URL('/about/#usage', Astro.site!).href,
+  acquireLicensePage: new URL('/about/#usage', Astro.site!).href,
+  creditText: 'FreeeGradients by Arclink Edge',
+  copyrightNotice: `© ${new Date().getFullYear()} FreeeGradients`,
+};
 const schema = canonical && !blockIndex ? {'@context':'https://schema.org','@graph':[
   {'@type':'Organization','@id':organizationId,name:'Arclink Edge',url:'https://www.arclinkedge.com/'},
   {'@type':'WebSite','@id':siteId,name:'FreeeGradients',alternateName:'Freee Gradients',url:Astro.site?.href,inLanguage:'en',publisher:{'@id':organizationId},description:'Free gradient backgrounds for personal and commercial use. Download images or export CSS, HTML and React without signing up.'},
   {'@type':pageType,'@id':`${canonical}#page`,name:title,description,url:canonical,inLanguage:'en',isPartOf:{'@id':siteId},primaryImageOfPage:{'@type':'ImageObject',url:socialImage},...(pageType === 'Article' ? {headline:title,author:{'@type':'Organization',name:'FreeeGradients',url:Astro.site?.href}} : {}),...(items.length ? {mainEntity:{'@type':'ItemList',itemListElement:items.map((item,index)=>({'@type':'ListItem',position:index+1,name:item.name,url:new URL(item.path,Astro.site!).href}))}} : {})},
   ...(faqs.length ? [{'@type':'FAQPage','@id':`${canonical}#faq`,url:canonical,isPartOf:{'@id':`${canonical}#page`},mainEntity:faqs.map(({question,answer})=>({'@type':'Question',name:question,acceptedAnswer:{'@type':'Answer',text:answer}}))}] : []),
-  ...(artwork ? [{'@type':'ImageObject','@id':`${canonical}#artwork`,name:artwork.name,description:artwork.description,contentUrl:new URL(artwork.src,Astro.site!).href,url:canonical,encodingFormat:'image/svg+xml',creator:{'@id':organizationId},keywords:artwork.colors.join(', '),isPartOf:{'@id':`${canonical}#page`}}] : []),
+  ...(artwork ? [{'@type':'ImageObject','@id':`${canonical}#artwork`,name:artwork.name,description:artwork.description,contentUrl:new URL(artwork.src,Astro.site!).href,url:canonical,encodingFormat:'image/svg+xml',creator:{'@id':organizationId},...artworkRights,keywords:artwork.colors.join(', '),isPartOf:{'@id':`${canonical}#page`}}] : []),
   ...(canonicalPath === '/' ? [{'@type':'SiteNavigationElement',name:['Gradients','Collections','Gradient guides','About FreeeGradients'],url:['gradients/','collections/','guides/','about/'].map(path=>new URL(path,Astro.site!).href)}] : [])
 ]} : undefined;
 ---
